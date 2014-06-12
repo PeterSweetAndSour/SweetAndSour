@@ -1,0 +1,9 @@
+img#logoMobile {
+	display:inline;
+}
+div#logo {
+	display:none;
+}
+p#jumpToContent a {
+	display:block;
+}

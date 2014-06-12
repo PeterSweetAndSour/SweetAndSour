@@ -1,0 +1,233 @@
+/* 
+
+keyFeatures.css 
+
+This file is used by both the institutions and mutual fund modules for the box above each sortable table.
+
+*/
+
+
+
+
+
+div.keyFeatures {
+
+	float:left;
+
+	width:100%;
+
+	border-top:1px solid #e7e7e7;
+
+	border-bottom:1px solid #e7e7e7;
+
+	color:#313031;
+
+}
+
+
+
+div.keyFeatures div.bevel {
+
+	float:left;
+
+	width:100%;
+
+	background-color:#f7f7f7;
+
+	border-top:1px solid #efefef;
+
+	border-bottom:1px solid #efefef;
+
+}
+
+
+
+div.keyFeatures div.boxRightLine {
+
+	width:80%;
+
+	float:left;
+
+	background:transparent url(../img/dottedLineVert.gif) repeat-y scroll right;
+
+	margin:3px;
+
+}
+
+
+
+div.keyFeatures div.turnover {
+
+	float:left;
+
+	margin:12px 3px 0 10px;
+
+}
+
+
+
+div.keyFeatures a, div.keyFeatures a:hover, div.keyFeatures a:visited {
+
+	color:#636563;
+
+	text-decoration:underline;
+
+}
+
+
+
+div.keyFeatures span {
+
+	color:#636563;
+
+}
+
+
+
+div.keyFeatures b {
+
+	font-size:120%;
+
+}
+
+
+
+div.greyLine {
+
+	background-color:#cecfce;
+
+	height:1px;
+
+	clear:both;
+
+	margin:0;
+
+}
+
+
+
+div.colorChip {
+
+	width:5px;
+
+	height:5px;
+
+	float:left;
+
+	display:inline;
+
+	margin:4px 5px 0 0;
+
+}
+
+
+
+/* ----------------------------------------------------------------- 
+
+MUTUAL FUNDS
+
+----------------------------------------------------------------- */
+
+div#holdingsStyle {
+
+	width:75%;
+
+	float:left;
+
+}
+
+
+
+div#holdingsStyle img#investmentStyleChart {
+
+	float:left;
+
+	margin:5px 5px 5px 20px;
+
+	border-style:none;
+
+}
+
+
+
+div#holdingsStyle div.box {
+
+	float:left;
+
+	display:inline;
+
+	margin-left:15px;
+
+}
+
+
+
+div#holdingsStyle div.row {
+
+	clear:both;
+
+	white-space:no-wrap;
+
+}
+
+
+
+div#rollover {
+
+	float:left;
+
+}
+
+
+
+/* -----------------------------------------------------------------
+
+INSTITUTIONS
+
+----------------------------------------------------------------- */
+
+div#pctHeld div.colorChip {
+
+	background-color:#b5b673;
+
+}
+
+
+
+div#pctHeld div#legendConcentration {
+
+	float:right;
+
+	margin-right:15px;
+
+}
+
+
+
+div#pctHeld table#tblConcentration {
+
+	margin:3px 0 0 0;
+
+	padding:0;
+
+	border-collapse:collapse;
+
+}
+
+
+
+div#pctHeld table#tblConcentration td {
+
+	font-size:10px;
+
+	vertical-align:bottom;
+
+}
+
+
+
+div#pctHeld table#tblConcentration img {
+
+	margin:0 5px 0 1px;
+
+}

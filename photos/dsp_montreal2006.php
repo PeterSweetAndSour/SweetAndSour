@@ -1,0 +1,102 @@
+<? //dsp_montreal2006.php ?>
+<h3>Montréal, 30 Sep 06 &ndash; 3 Oct 06</h3>
+<div class="story noSpaceBelow">
+   <p>Montréal is the largest city in French-speaking province of Quebec and was the first destination on our trip. Happily for me, virtually everyone is bilingual.</p>
+	<p>Samual de Champlain arrived in 1611 to set a trading post on the island that Montreal now completely fills so he could barter European manufactured goods for furs of animals captured by the native peoples. However, the founding of the city is usually set at 1642 when a few dozen colonists arrived with the aim of converting the indians and started Ville-Marie or the City of Mary. </p>
+	<p>The bilingual city is a result of events in 1760, when the French surrendered to British forces although formal control was not handed over until the Treaty of Paris in 1763. Then something interesting happened. After a decade of failing to make the French colonists British, the British passed the Quebec Act in 1774 over the objections of English merchants recognizing French law, the Catholic religion and the use of French language. Prior to that Catholics were excluded from public office. So the colonists were able to continue French culture although Lan says that she often could not understand what they were saying as their French is so different to that spoken in France. I imagine the differences are similar to those between BBC English and that of African-Americans, those from the deep South or rural Australia.</p> 
+	<p>At Chateaux Ramezay, the governor&rsquo;s house, I learned the single most interesting thing of the whole trip&mdash;that America had attempted to invade Canada in 1775 during the Revolutionary War. The Americans wanted to get the British out of all of North America and prior to hostilities, Benjamin Franklin had visited Montreal to determine if he could get French Canadians to join in the uprising. However, the British had given the French-speaking and Catholic people of &quot;Lower Canada&quot; a reasonably good deal that allowed them to keep their language and religioni so Franklin came away disappointed. He was later to comment that &quot;It would have been easier to buy Canada than invade it&quot;</p>
+	<p>Incidentally, the Americans tried to invade again in 1812. Thomas Jefferson had forcast that capturing Canada would &quot;merely be a matter of marching&quot; since the populace would rise up against the British and join in to overthrow the Crown. It didn&rsquo;t happen but the conflict finally settled the borders between the two countries.</p>
+	<p>There is one feature of the city that can&rsquo;t be adequetely shown in pictures and that is the network of underground shops and train stations that allow you to get around a good bit of downtown without needing to go outside. This <a href="http://www.stcum.qc.ca/English/metro/souterrain2006.pdf" target="_blank" class="external">map</a> might give you some clue though you really have to walk it to fully comprehend it. Given the ferocity of winter, this is a marvellous innovation though one of the guidebooks noted that there was no real plan but developers kepting adding more to the system. I believe Toronto has something similar.</p>
+	<p><a href="http://en.wikipedia.org/wiki/Montreal" target="_blank" class="external">Learn more</a> about Montreal.</p>
+</div>
+<?
+   setThumbnail(
+		array(
+			"CanadaMapSm.gif",
+			"montreal001SideStreetSm.jpg",
+			"montreal002WaterfrontSm.jpg",
+			"montreal003PlJacqueCartierSm.jpg",
+			"montreal004NearTownHallSm.jpg",
+			"montreal005TownHall1Sm.jpg",
+			"montreal006TownHallFloorSm.jpg",
+			"montreal009TownHall4Sm.jpg"
+		)
+	);
+?>
+<div class="photoAlbum">
+	<?
+   setThumbnail(
+		array(
+			"montreal010GovernorsHouseSm.jpg",
+			"montreal011OldTown1Sm.jpg",
+			"montreal012OldTown2Sm.jpg",
+			"montreal013CourtyardSm.jpg",
+			"montreal014NunsHospitalSm.jpg",
+			"montreal015HistoryMuseumSm.jpg",
+			"montreal016NguyetSm.jpg",
+			"montreal017McCordMuseumSm.jpg",
+			"montreal018CelloOctetSm.jpg",
+			"montreal019FineArtsMusuemSm.jpg",
+			"montreal020Fountain1Sm.jpg",
+			"montreal021Fountain2Sm.jpg",
+			"montreal022PickPocketSm.jpg",
+			"montreal023NiceBldgSm.jpg",
+			"montreal024PlaceDArmesSm.jpg",
+			"montreal025NotreDame1Sm.jpg",
+			"montreal026NotreDame2Sm.jpg",
+			"montreal027NotreDame3Sm.jpg",
+			"montreal028NotreDame4Sm.jpg",
+			"montreal029NotreDame5Sm.jpg",
+			"montreal030RiverSm.jpg",
+			"montreal031ClockTower1Sm.jpg",
+			"montreal032ClockTower2Sm.jpg",
+			"montreal032ClockTower3Sm.jpg",
+			"montreal033Biosphere1Sm.jpg",
+			"montreal034Biosphere2Sm.jpg",
+			"montreal035OlympicStadium1Sm.jpg",
+			"montreal036OlympicStadium2Sm.jpg",
+			"montreal037Gardens1Sm.jpg",
+			"montreal038Gardens2Sm.jpg",
+			"montreal039Gardens3Sm.jpg",
+			"montreal040Gardens4Sm.jpg",
+			"montreal041Gardens5Sm.jpg",
+			"montreal042Gardens6Sm.jpg",
+			"montreal043Gardens7Sm.jpg",
+			"montreal044Gardens8Sm.jpg",
+			"montreal045Bugs1Sm.jpg",
+			"montreal046Bugs2Sm.jpg",
+			"montreal047Bugs3Sm.jpg",
+			"montreal048Bugs4Sm.jpg",
+			"montreal049Bugs5Sm.jpg",
+			"montreal050Bugs6Sm.jpg",
+			"montreal051china01Sm.jpg",
+			"montreal052china02Sm.jpg",
+			"montreal053china03Sm.jpg",
+			"montreal054china04Sm.jpg",
+			"montreal055china05Sm.jpg",
+			"montreal056china06Sm.jpg",
+			"montreal057china07Sm.jpg",
+			"montreal058china08Sm.jpg",
+			"montreal059china09Sm.jpg",
+			"montreal060china10Sm.jpg",
+			"montreal061MontRoyal1Sm.jpg",
+			"montreal062MontRoyal2Sm.jpg",
+			"montreal063MontRoyal3Sm.jpg",
+			"montreal064MontRoyal4Sm.jpg",
+			"montreal065MontRoyal5Sm.jpg",
+			"montreal066StJoseph1Sm.jpg",
+			"montreal067StJoseph2Sm.jpg",
+			"montreal068LachineCanal1Sm.jpg",
+			"montreal069LachineCanal2Sm.jpg",
+			"montreal070LachineCanal3Sm.jpg",
+			"montreal071LachineRapids1Sm.jpg",
+			"montreal072LachineRapids2Sm.jpg",
+			"montreal073LachineRapids3Sm.jpg",
+			"montreal074LachineRapids4Sm.jpg",
+			"montreal075LachineRapids5Sm.jpg",
+			"montreal076OldAndNewSm.jpg"
+		)
+	);
+
+  ?>
+</div>

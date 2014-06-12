@@ -1,0 +1,50 @@
+<? //dsp_letter4a.php ?>
+
+<div class="story">
+	<p class="endText">26th November 1995</p>
+</div>
+
+<div class="story">
+   <p>Dear ......................................,</p>
+   <p class="endText">Thankyou to all the many people who have sent us a letter or a fax.  It is great to know that we have not been forgotten.  I now realise that I have not kept my promise of writing every 3 months, so don't feel bad if you haven't quite put pen to paper (or fingers to keyboard) yet.</p>
+</div>
+
+<h3>Our life - serious stuff</h3>
+<div class="story">
+   <p>The weather:  We have been having some beautiful autumn weather with temperatures up to 24&deg;C although there have been some cool days.  One day in early November, it was 12&deg; when I drove to work.  Regrettably, this was 12&deg;F and not 12&deg;C since it converts to  -11&deg;C!  We also received 15 cm of snow on September 20 which is quite unseasonal.  Since the trees had not yet shed their leaves, much more snow accumulated in the trees than usual and this caused many branches to break.  Unfortunately, power lines were often in the way and 100,000 homes lost electricity.  We were out for 48 hours and Lan was sent home to a cold house (the gas heater needs electricity to work) because there was no power for the computer, no heat and only emergency lighting.  We were able to save everything in the freezer by taking it outside and packing it in snow!</p>
+   <p>Lan seems to get a new boss at least every month and the work goes in cycles of panic followed by not having enough to do.  There was a month where she had just one day off and it nearly killed her.  Even worse, her boss never gave any positive feedback but constantly pushed her to do more and more overtime so she could get the glory of being the most "effective" team leader.  At the moment, life is much easier and she is working for someone who appreciates what she does.  There was talk of Lan being sent to Spain for 2 or 3 weeks in December but we have heard nothing more about it.  There is a possibility that Lan may get another job but not before December 13, or we will have to pay back the cost of airfares, hotel and car rental charges.  It partly depends on what happens with me.</p>
+   <p>My job continues to be fairly uneventful.  The work I am doing seems to be appreciated though it is sometimes hard to tell because my boss is too busy with her own work to worry much about me.  I am doing a trivial amount of engineering work but this may increase to a small amount.  I'm not sure where, if anywhere, my career is headed - I seem to have spent the last few years going nowhere fast.  My problem is I don't know where I want to go.  Specifically, I'm not sure if I should be an engineer or a technical writer.  I didn't think I wanted to be a technical writer but I have discovered that I can't do much as an engineer.  When I get back to Australia, I think I'll have to do more study.  As a foreigner, it is far too expensive to do anything here.</p>
+   <p class="endText">Lan hopes that my visa comes through even more than me.  She made a "deal" with me which I had little choice but to accept.  I am obviously running up expenses for food, petrol, half the rent etc.  She said she is keeping track of all these expenses but for the moment, she will pay for all of them.  She has generously offered to waive all my expenses if my visa is denied.  However, if the visa comes through and I get paid, I have to pay her back double!</p>
+</div>
+
+<h3>Our life - fun stuff</h3>
+<div class="story">
+   <p>We have finally started to get to know a few people.  One day in September, it hit us that we had been here 6 months and had basically no friends.  Then there was a party for all the people in our block of townhouses and we met two other couples about our age and we have had one of them over for dinner (though we have not seen them since).  More surprisingly, we have got to know the real estate agent who brought us here and her husband who is a deputy sheriff (he brings the "company" car home occasionally).  They live 3 doors away.</p>
+   <p>Although I have not made any real friends at my office, there have been several people from Lan&rsquo;s work.  I should particularly mention Steve and his (on again/off again) girlfriend Tracey who we have seen severas.  Steve took Lan to a real American professional baseball match (I didn't really want to go and Steve had only two tickets and he was interested).  Lan didn't get the complete experience though as she skipped the hot dog which everyone eats.</p>
+   <p>Incidentally, Americans speak of franchises for baseball and football teams which makes it all the more transparent (to me at least) that spectator sport is just a business.</p>
+   <p>We have only been on one significant trip since our last letter and that was to the Black Canyon of the Gunnison (river) in western Colorado.  Unlike the Grand Canyon for example, which has sloping sides, the Black Canyon has walls which very steep.  At one lookout, there is a 550m (almost two Centrepoint towers) vertical drop to the river below.  Some (mentally deranged) people actually start at the bottom and climb up!  It takes just 2 days if you are really good.</p>
+   <p>Lan also did a trip to Mt. Rushmore, Devil&rsquo;s Tower (as seen in the movie Close Encounters of the Third Kind) and the Yellowstone National Park when her sister and family and brother came to visit us for a week.</p>
+   <p>Lan decided it would be a good idea to get a bicycle so that she could come home from work without waiting for me to pick her up.  It is only 4 km, fairly flat and there is a bike lane for most of the distance.  We visited several garage sales and bought a bike for me ($20) before we found one for her (also $20).  We then went to looking for a BBQ but found a much nicer bike for only $15 (I think it must be a least 20 years old but it was bright yellow and had a proper chain guard, a basket, a wide seat and traditional styling).  We now own 3 bicycles even though there are only two of us to ride them.  Lan has ridden it home a few times but it is now cold and dark at 5pm.</p>
+   <p>I've given up on the Baptist church here.  The final straw was when the minister spoke in glowing terms of a church he had visited in Oklahoma which had a well-equipped gymnasium but they didn't have enough money to put up even a basketball hoop.  We're still going to a Catholic church where we grow in admiration for the 74 year old priest who has very progressive views on the role of women in the church and has spoken about gun control (the only sermon I can recall where the congregation clapped at the end).  This church has quite a different feel to it than the other Catholic church that we went to for the first few months we were here.  In both though, the congregation is 99% white.</p>
+   <p>Lan finally got her own driver&rsquo;s license.  She has had the learner&rsquo;s permit for months but we never got her back to do the driving test before I started work.  Lan is pleased as the photo on the learner&rsquo;s license was dreadful.</p>
+   <p>Music:  We both enjoyed The Beatles Anthology which I assume was shown on Australian TV at the same time as it was here (starting Nov 19).  I have been wanting to buy Abbey Road for well over a year and since CDs are a little cheaper here, we bought it and The Beatles 1962 66.  (There are few things cuter than Lan singing along to Michelle and Yellow Submarine when she has the headphones on.)  I fear it is too late for me to learn guitar so I can be a rock star too but I've been encouraging Lan&rsquo;s 9-year old cousin to take it up.  He doesn't seem interested though.</p>
+   <p class="endText">You may recall in our first letter from Denver, I included a picture of the Red Rocks outdoor theatre that is close to us.  Apparently the Beatles played there and U2&rsquo;s Live under a blood red sky was recorded there.  I've heard INXS played many times on the radio, Crowded House several times and the Divinyls and Icehouse once or twice.  Unfortunately, there is no government station like JJJ which means that to listen to music, you have to listen to advertising or constantly change stations.  I tend to stay with current affairs on public radio.</p>
+</div>
+<?
+setThumbnail("LanBlackCanyon1.jpg");
+setThumbnail("BlackCanyon1.jpg");
+setThumbnail("MtRushmore1.jpg");
+setThumbnail("DevilsTower1.jpg");
+setThumbnail("OldFaithful1.jpg");
+setThumbnail("Buffalo1.jpg");
+setThumbnail("RedRocks1.jpg");
+?>
+
+<div class="story">
+   <p>Continue to <a href="index.php?fuseAction=letter4b">News in America</a> (page 2) <a href="index.php?fuseAction=letter4b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Jump to:</p>
+   <ul>
+   	<li><a href="index.php?fuseAction=letter4c">Strange and curious things</a> (page 3)</li>
+   	<li><a href="index.php?fuseAction=letter4d">Lan&rsquo;s letter</a> (page 4)</li>
+   </ul>
+</div>

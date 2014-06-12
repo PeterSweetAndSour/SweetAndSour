@@ -1,0 +1,126 @@
+*				{font-family:verdana; }
+body			{margin:0px; background-color:white}
+h1				{font-size:20px}
+h2				{font-size:18px; margin-bottom:5px; margin-top:3px}
+h3				{font-size:14px; margin-bottom: 5px; margin-top:15px}
+h4				{font-size:12px; margin-bottom: 5px; margin-top:3px}
+h5				{font-size:10px; margin-bottom: 5px; margin-top:3px}
+table			{font-family:verdana; font-size:10px; border:0px; padding:0px; background-color:white}
+tr.normal 			{background-color:white}
+tr.hilite    			{background-color:#eeeeee}
+tr				{text-align:left;}
+th				{padding-right:10px; border-bottom: solid 2px #333333;}
+td				{padding-right:10px; border-bottom: solid 1px #CCCCCC;
+				padding-top:3px; padding-bottom:1px;}
+p, li, input, textarea, select	{font-size:10px;}
+div				{font-size:10px; color:#333}
+		
+input {
+	color:#333;
+	border: 1px solid #999;
+	background-color:#eee;
+}
+
+input.radio {
+	color:#333;
+	border: none;
+	background-color:white
+}
+
+input	text {font-weight:bold;}
+
+form			{margin:0px; padding:0px}
+		
+a			{text-decoration:none; font-size:10px; font-weight:bold;color:#666666;}
+a:link			{color:#666666;}
+a:visited		{}
+a:hover			{color:green}
+
+.NameValues		{border:none;}
+.NameValues		th {text-align:right; border:none; color:#333}
+.NameValues		td {text-align:left; border:none}
+.NameValues		tr.normal    {background-color:white}
+.NameValues		tr.hilite    {background-color:#eeeeee}
+
+.simple			{border: 0px;}
+
+.tabs			{padding-left:35px; margin-bottom:30px; padding-top:1px; border-bottom: solid 1px #666666; width:100%}
+.tabs			table {margin-bottom:20px}
+.tabs			a	{color:#333333;
+				padding-left:20px; padding-right:20px;
+				border: solid 1px #666666; }
+.tabs			a.selected {background-color:#EEEEEE; color:#333333}
+.tabs			a:hover {background-color:#EEEEEE}
+.tabs.NameValues	span {font-weight: bold; color: #999999}
+		
+.warning		{color:#CC0000; font-weight:bold}
+.info			{color:#009966; font-weight:bold}
+
+.Development		{color:#006600;font-weight:bold;}
+.Acceptance		{color:#FFCC33;font-weight:bold;}
+.Production		{color:#990000;font-weight:bold;}
+.Littleton		{color:#FF3300;font-weight:bold;}
+
+.hiddenItems		{display:none;}
+.sidebar {
+    position: absolute; 
+    top: 40px; 
+    left: 0; 
+    width: 130px; 
+    padding: 0; 
+    margin: 1em; 
+    border-width: 0; 
+    background-color: white;
+    font-size:10px;
+}
+		
+div.menu {padding-bottom: 20px;}
+div.menu a {display: block; margin: 0; padding: 0.33em; letter-spacing: 1px; text-align: left; font-weight: bold; border-bottom: 1px solid #999; color: #666; text-decoration: none;}
+div.menu.sub {margin:5px 0 10px 10px;}
+
+div.menu a:link {color: #999;}
+div.menu a:hover {background: #ccc;}
+div.menu a:visited {color: #999;}
+
+a.Development {background:#006600; color:white;}
+div.menu a.Development	{background-color:#006600;}
+div.menu a.Development:link	{color:white;}
+div.menu a.Development:visited	{color:white;}
+div.menu a.Development:hover {background:#006600;}
+
+a.Acceptance	{background-color:#FFCC33; color:white;}
+div.menu a.Acceptance:link {color:#333333;}
+div.menu a.Acceptance:visited {color:#333333;}
+div.menu a.Acceptance:hover {background: #FFCC33;}
+
+a.Boulder	{background-color:#990000; color:white;}
+div.menu a.Boulder:link {color:white;}
+div.menu a.Boulder:visited {color:white;}
+div.menu a.Boulder:hover {background: #990000;}
+
+a.Production	{background-color:#990000; color:white;}
+div.menu a.Production:link {color:white;}
+div.menu a.Production:visited {color:white;}
+div.menu a.Production:hover {background: #990000;}
+
+a.Littleton	{background-color:#FF3300; color:white;}
+div.menu a.Littleton:link {color:white;}
+div.menu a.Littleton:visited {color:white;}
+div.menu a.Littleton:hover {background: #FF3300;}
+
+div.menu H4 { font-size: 12px; padding: 0.33em; margin: 0; background: #666; color: white;}
+div.menu.sub H4{font-size:12px; padding: 0px; background: #777;}
+div.menu a:visited.menuSelected {color: black; background: #ccc;}
+div.menu a:link.menuSelected {color: black; background: #ccc;}
+
+		
+#mainContent {
+	margin:0px 50px 50px 150px;
+	padding:10px;
+}
+
+
+#title	{
+	border-bottom: solid 1px #CCCCCC;
+	color:#009966;
+}

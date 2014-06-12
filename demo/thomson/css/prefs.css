@@ -1,0 +1,27 @@
+.fontPgHd { font: 24px arial;}
+
+		.fontSubHd { font: 18px arial;}
+
+		.fontBody { font: 11px arial;}
+
+		body, table {font: 11px arial;}
+
+			.fontLg { font: 14px arial;}
+
+		.fontSm { font: 9px arial;}
+
+		.fontTitle { font: 12px arial;}
+
+		.colPgHd { color: #000000;}
+
+.colSubHd { color: #000000;}
+
+.colHiLite { background-color: #FCF6DA;}
+
+.colPos { color: #406C05;}
+
+.colNeg { color: #82191C;}
+
+.colUnch { color: #000000;}
+
+.colTitle { color: #000000;}

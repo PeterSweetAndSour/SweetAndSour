@@ -1,0 +1,34 @@
+<? //dsp_letter3b.php ?>
+
+<h3>Life in America</h3>
+<div class="story">
+   <p>Seen on a T-shirt.  In large letters: <i>I don't have a drinking problem.</i> In small letters underneath: <i>I drink.  I fall down. No problem.</i> Neither of us drink at all but we had to laugh.  Also, <i>If you are climbing the ladder of success, make sure it is leaning against the right wall.</i></p>
+   <p>I've been referring to blacks and indians but those terms appear to have fallen from favour.  They are now referred to as African- Americans and native-Americans.  Though it is a mouthful, both of these terms are more accurate.  Just look at Michael Jackson.  As you may be aware, Christopher Columbus thought he had landed in India, so he thought the locals were indians and the name stuck.</p>
+   <p>We saw an excellent documentary series about native-Americans and it was appalling to see the way they were treated.  It was hardly surprising that they fought back.  Unfortunately, this only confirmed in peoples' minds that they were savages who should be exterminated, or at least pushed off land of any value.  Apparently, the US government had relocated all tribes east of the Mississippi to the western side in the 1800s and promised that it would forever stay "indian territories".  They lied.  As late as 1845 there were only 20,000 whites from the Mississippi all the way to the Pacific coast.  Gold discoveries in California and elsewhere caused a surge of people that was swelled by others looking for land.  The first trans-continental railroad was finished in 1869, by which time the indians had basically lost everything.  There were once 60 million buffalo roaming across the plains and many tribes relied on them for food.  In 1890, scientists attempting to count them could only find 200.  It has to be noted too, that there was often tension between what the Federal government wanted and what the states on the frontier actually did.   The chief Red Cloud (on the stamp) drew huge crowds and public sympathy when he went on a speaking tour of the eastern states to plead for the right to keep their traditional lands.  I would like to see a similar program about the Australian aborigines as I know little about their history.</p>
+   <p>We saw a program which followed up on the 4th-grade class of 1981-82 in one of the worst neighbourhoods of New York.  It was depressing but also inspiring as some of them had fought so hard against odds stacked against them.  Virtually all lived with just their mother, aunt or grandmother.  Many of the boys had criminal records and had spent time in jail and most of them had dropped out of education before they finished high school.  They spoke of drug dealing and guns.  One young man came to the reunion with 6 bullet wounds.  Another had done well at school and college but spoke of police harassment because he was black.  On the other hand, the girls had generally done well.  Although one or two had become teenage mothers, most had finished high school and some had gone on to college.   They put the difference in outcome down to absentee fathers affecting the boys more.</p>
+   <p class="endText">I had thought that the big problem for those advocating gun control in the US was a part of the Constitution which guaranteed the right of citizens to bear arms.  This turns out to be a lie successfully promoted by the National Rifle Association ((NRA).  The "right to bear arms" applies to state military organisations, now the National Guard, not individuals.  The problem is that there are at least as many guns in the country as people and gun owners make a huge voting block. No politician is ever likely to confront the myth as it makes for political suicide.   The NRA now has frightening political power.  The current (supposedly impartial) Congressional hearings on what happened at Waco where 80 people died, have been organised and I believe paid for, by the NRA.  They selected the witnesses to support their view that innocent civilians died because of an out-of-control government and therefore everyone has the right to guns so we can defend ourselves.  The NRA hates (Democrat) Bill Clinton's administration because they banned semi-automatic rifles and the Republicans are only to happy to help the NRA if they get votes. </p>
+</div>
+
+<h3>On other subjects</h3>
+<div class="story">
+   <p>Due to the high altitude, cakes take longer to cook and the recipe has to be altered.</p>
+   <p>At the supermarket checkout, you are asked <i>"paper or plastic?"</i>. Fortunately, we had been warned about this.  They are not asking whether you want to pay with cash or credit card but asking what type of bag you want your groceries packed in.</p>
+   <p>Racism is alive and well in the US:</p>
+   <ul class="endText">
+   	<li>An article in the newspaper noted that while the majority of crack cocaine users are white, 96% (!) of convictions under federal laws are of non-whites.
+   	<li>Affirmative action is a hot political issue.  Pete Wilson and Jesse Helmes, 1996 presidential canditates, have been attacking it shamelessly to get the "angry white male" vote.  Few blacks vote.
+   	<li>News has broken recently of hundreds of men from Alabama, all black, who were denied medical treatment for a particular disease, so their progress (and often death) could be compared against those (of all races) who were given treatment.  The subjects were not told they had the disease, or that they were part of a medical experiment.  Even when some moved out of the area, the people conducting the study tracked them down so that treatment could be denied or withdrawn.  What is remarkable about this is not that it was done by government scientists but that this deception went on for 40 years ending in the late 70s!   Most of the study "participants" have now died so it is too late to tell them.
+   	<li>One of the biggest obstacles, of course, is the expectations of white community, since they fill most of the management positions in industry and government and therefore are the ones awarding jobs.  One of our friends told us of a black doctor attending a medical conference, who was asked by a white doctor to park his car for him.  The white doctor had assumed that any well-dressed black person must have worked for the hotel.
+   </ul>
+</div>
+
+<div class="story">
+   <p>Go back to <a href="index.php?fuseAction=letter3a">What we have been doing</a> (page 1)</p>
+   <p>Continue to <a href="index.php?fuseAction=letter3c">Travels</a> (page 3) <a href="index.php?fuseAction=letter3c"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Jump to:</p>
+   <ul class="endText">
+   	<li><a href="index.php?fuseAction=letter3d">I do like ...</a> (page 4)</li>
+   	<li><a href="index.php?fuseAction=letter3e">In brief</a> (page 5)</li>
+   	<li><a href="index.php?fuseAction=letter3f">The world</a> (page 6)</li>
+   </ul>
+</div>

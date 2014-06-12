@@ -1,0 +1,44 @@
+<? //dsp_letter3a.php ?>
+
+<div class="story">
+   <p>4 August 95</p>
+   <p>Dear ........................ ,</p>
+   <p class="endText">Thank you to all the people who have sent us a letter or fax.  We greatly enjoyed reading both of them.  Actually, there have been more than just two and unfortunately, all the shopping vouchers have now been won, so I'm sorry to all those who were disappointed.  We've looked at our mailing list and decided that if each of you write to us every 3 months, we would get a letter every day! Wouldn't that be great?  I'll write to you at least that often - that's a promise, not a threat.</p>
+</div>
+
+<h3>What we have been doing</h3>
+<div class="story">
+   <p>Mark Twain once said, <i>&quot;Everyone complains about the weather but no-one ever does anything about it.&quot;</i>  Since we have been in Colorado, many of the locals have felt it necessary to apologise about the weather this year.  Winter came months late and spring didn't really start until mid-May.  Now it is too hot.  This week, the temperature is expected to be in the mid-30s (&deg;C) every day.  The week before last was like that too. At least the humidity is low so it is reasonably bearable.   Americans appear to be obsessed with the weather.  Our SMH-sized newspaper devotes a full page with coloured diagrams to it and the TV stations urge you to watch their news because they have the best, most technologically-advanced weather report.  One station in Detroit claimed its weather report was so accurate, that it would give a viewer (not every viewer) $1000 for every degree they were wrong on yesterday's forecast.  They must have had a large budget.</p>
+   <p>I think I may have been in America too long.  Have you ever watched a TV program from Europe or the US, a car has pulled out of a driveway on to the right side of an empty road and you've gasped, <i>&quot;They're on the wrong side of the road!&quot;</i>?  I have.  We saw a program about Australia and a car pulled out of a driveway on to the left side of an empty road and I gasped.  I'd forgotten that the left is the correct side.</p>
+   <p>Lan has been working very long hours - she has been back to work after dinner occasionally and often on the weekend.  She has trouble sleeping if she can't get a program to run, so she says it is better to go in and fix it.  There is a lot of politics at work but since she is a contractor, not a staff member, it doesn't really affect her.  In that regard, this is a great improvement over Telecom.  Her bosses (they change week by week) seem to like what she has done and what she has taught them.The company she is contracted to (AMS) is very rude to its own staff however. AMS charges its clients when overtime is necessary but they don't pass any of it on to their staff.  It is not surprising that such greed leads to a high staff turnover.</p>
+   <p>Our normal routine is that after I collect Lan from work, we race home to watch the Cosby Show.  Although it's been on in Australia,  neither of us had seen it before.  I had thought that all American commercial TV was rubbish.  Most of it is but this is a great exception.  I've also enjoyed <i>Bill Nye the Science Guy</i>, a brilliant educational program on the Public Broadcasting Service (PBS).</p>
+   <p>I started a course to learn AutoCAD (computer software) to fill a big gap in my r&eacute;sum&eacute; but it cost $1500 for just 6 weeks.  Although the commercial software costs $4000, I discovered I could buy an identical student edition for just $250.  I decided to drop out and use the full refund to buy the software, a printer and half a computer.</p>
+   <p>I've always thought it was silly to buy a computer for home, when I could use one at work for free.  However, being unemployed, I didn't have that option.  I now know enough AutoCAD to be dangerous and I've learned to touch-type slowly with lots of errors.  It has also been useful for job applications and letters like this.</p>
+   <p>I've sent out about 40 job applications and finally one has been successful.  I started work on the 1st of August as a technical writer for a company that makes equipment for the pharmaceuticals industry.  They have a workforce of about 40.  Their products aim to keep tdrugs and the human operators separated, so they use filters and carefully controlled airflow.  My experience with air conditioning was seen as very helpful.   I'm pleased with this job because most technical writing jobs here are for software which I don't find very interesting.  It is a very casual atmosphere; on my first day, I was the only one to wear a tie.  I had to buy some new sandshoes to wear with my jeans so I could dress in the company "uniform".  I noticed today that the owner/CEO went to someone else's office but the visitor's chair was already full so he sat on the floor!  Everyone seems friendly. Reading materials (Fortune and Business Week) are provided in the toilet.</p>
+   <p class="endText">We borrowed a book from the library which included Henry Lawson's short story <i>The Loaded Dog</i>.  If you haven't read it since you were a child, or haven't read it all, make a priority to read it soon.  It&rsquo;s hilarious.</p>
+</div>
+<?
+setThumbnail("UnionBlvd1.jpg");
+setThumbnail("ShovellingSnow1.jpg");
+setThumbnail("SnowOnCar1.jpg");
+setThumbnail("Icicle1.jpg");
+?>
+
+<h3>Church</h3>
+<div class="story">
+   <p>The vast majority of the churches here make themselves easy targets for those who think that churches exist only as businesses to make money.  Almost all have fancy architecture, immaculate gardens and carparks with kerbs and gutters.  We had been going to a Catholic church but we grew disgusted by their greed.  It is quite unlike the Australian Catholic church which has a strong focus on social justice issues.  I had thought that the desperately poor of (largely Catholic) central and south America would be high priorities for them but in a recent "charitable works" appeal, it was emphasised that all the money would stay in metropolitan Denver.  They even had a tele- marketing operation.  You were asked to make a pledge and they wanted your phone number so they could have someone call you up to hassle you when you hadn't sent in your cheque.  On Father&rsquo;s Day they wasted money on helium balloons for all the men and on some other occasion, all the women received flowers.  The protestant churches seem to be no better.  One near us has an a huge satellite dish outside.</p>
+   <p>I started going to a baptist church which seems to be OK.  They have a largely dirt carpark and no air conditioning.  The people seem genuine and the preaching is solid.  They are about to buy a minivan though which I can't see is justified.  I was interested and disappointed to learn that there are Southern Baptists and Northern Baptists.  Like the rest of the country last century, the church was split on the issue of slavery.  Those from the north said it was a deplorable practice, all slaves should be freed and no slave owner was welcome in any of their churches.  In the south, the church's position was that while slavery wasn't a good thing and it would be wrong for slave owners to buy new slaves, they could keep those they had already and it would be nice if they treated them fairly.  There was no requirement to set them free.  The Southern Baptists made a public apology to blacks in May. Better late than never.</p>
+   <p>In Sydney, we normally went to church on Sunday evening.  Unfortunately, this option doesn't appear to exist in Denver.  As one of my good friends has commented, <i>&quot;the trouble with church on Sunday morning, is that it is on Sunday morning&quot;</i>&ndash; it means nothing else gets done in the morning and if you go away for the weekend, you miss it altogether.</p>
+   <p class="endText">We have found that all the 6 churches we've been to in America have a totally different repertoire of songs from those in Australia.  It reinforces my view that singing is a major turn-off for people outside the church, as not knowing the songs immediately makes you feel that you aren't part of the group.  I reckon we should ban singing in church, though I know most people don't agree with me on that.</p>
+</div>
+
+<div class="story">
+   <p>Continue to <a href="index.php?fuseAction=letter3b">Life in America</a> (page 2) <a href="index.php?fuseAction=letter3b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Jump to:</p>
+   <ul class="endText">
+   	<li><a href="index.php?fuseAction=letter3c">Travels</a> (page 3)</li>
+   	<li><a href="index.php?fuseAction=letter3d">I do like ...</a> (page 4)</li>
+   	<li><a href="index.php?fuseAction=letter3e">In brief</a> (page 5)</li>
+   	<li><a href="index.php?fuseAction=letter3f">The world</a> (page 6)</li>
+   </ul>
+</div>

@@ -1,0 +1,1577 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<script type="text/javascript">
+		//<![CDATA[
+		//dragColumnsJS.asp
+		//Functions to support adjustment of columns widths by dragging.
+		
+		//Create an array with initial column widths. Will be updated as columns are dragged. Note that it is suffixed "JS"
+		//for Javascript to indicate its existance on the client, rather than columnWidthsASP that exists on the server.
+		var columnWidthsJS = new Array();
+		columnWidthsJS[0]   =  0; //Placeholder only.
+		columnWidthsJS[1]   = 25;
+		columnWidthsJS[2]   = 100;
+		columnWidthsJS[3]   = 100;
+		columnWidthsJS[4]   = 136;
+		columnWidthsJS[5]   = 230;
+		columnWidthsJS[6]   = 90;
+		columnWidthsJS[7]   = 68;
+		columnWidthsJS[8]   = 68;
+		columnWidthsJS[9]   = 50;
+		columnWidthsJS[10]  = 100;
+		columnWidthsJS[11]  = 115;
+		columnWidthsJS[12]  = 105;
+
+		// Determine browser and version.
+		function Browser() {
+		
+			var ua, s, i;
+		
+			this.isIE    = false;
+			this.isNS    = false;
+			this.version = null;
+		
+			ua = navigator.userAgent;
+		
+			s = "MSIE";
+			if ((i = ua.indexOf(s)) >= 0) {
+				this.isIE = true;
+				this.version = parseFloat(ua.substr(i + s.length));
+				return;
+			}
+		
+			s = "Netscape6/";
+			if ((i = ua.indexOf(s)) >= 0) {
+				this.isNS = true;
+				this.version = parseFloat(ua.substr(i + s.length));
+				return;
+			}
+		
+			// Treat any other "Gecko" browser as NS 6.1.
+		
+			s = "Gecko";
+			if ((i = ua.indexOf(s)) >= 0) {
+				this.isNS = true;
+				this.version = 6.1;
+				return;
+			}
+		}
+		
+		// -------------------------------------------------------------------------------------------------------------------------------
+		var browser = new Browser();
+		
+		// Global object to hold drag information.
+		var dragObj = new Object();
+		dragObj.zIndex = 0;
+		
+		// Global object to hold preceediing column
+		var colToResize;
+		
+		// Global variables
+		var numColToDrag;
+		var numColToResize;
+		var colToResizeWidth;
+		var colToResizeLeft;
+		var changeX, changeY;
+		var inputToResize;
+
+
+		// -------------------------------------------------------------------------------------------------------------------------------
+		function dragStart(event, id, inputCtrlToResize) {
+			var el;
+			var x, y;
+
+			// If an element id was given, find it. Otherwise use the element being clicked on.
+			if (id)
+				dragObj.elNode = document.getElementById(id);
+			else {
+				if (browser.isIE)
+					dragObj.elNode = window.event.srcElement;
+				if (browser.isNS)
+					dragObj.elNode = event.target;
+		
+				// If this is a text node, use its parent element.
+				if (dragObj.elNode.nodeType == 3)
+					dragObj.elNode = dragObj.elNode.parentNode;
+			}
+
+			// Get cursor position with respect to the page.
+			if (browser.isIE) {
+				x = window.event.clientX + document.documentElement.scrollLeft + document.body.scrollLeft;
+				y = window.event.clientY + document.documentElement.scrollTop  + document.body.scrollTop;
+			}
+			if (browser.isNS) {
+				x = event.clientX + window.scrollX;
+				y = event.clientY + window.scrollY;
+			}
+
+			// Save starting positions of cursor and element.
+			dragObj.cursorStartX = x;
+			dragObj.cursorStartY = y;
+			dragObj.elStartLeft  = parseInt(dragObj.elNode.style.left, 10);
+			dragObj.elStartTop   = parseInt(dragObj.elNode.style.top,  10);
+
+			if (isNaN(dragObj.elStartLeft))
+					dragObj.elStartLeft = 0;
+			if (isNaN(dragObj.elStartTop))
+				dragObj.elStartTop  = 0;
+
+			// Update element's z-index.
+			dragObj.elNode.style.zIndex = ++dragObj.zIndex;
+
+			// Capture mousemove and mouseup events on the page.
+			if (browser.isIE) {
+				document.attachEvent("onmousemove", dragGo);
+				document.attachEvent("onmouseup",   dragStop);
+				window.event.cancelBubble = true;
+				window.event.returnValue = false;
+			}
+			if (browser.isNS) {
+				document.addEventListener("mousemove", dragGo,   true);
+				document.addEventListener("mouseup",   dragStop, true);
+				event.preventDefault();
+			}
+
+			// ------------------------------------------------------------
+			//Additional code to resize column
+			//Get column number based on ID of drag icon. MUST HAVE NUMBER AT END OF NAME
+			numColToResize = id.replace(/[^0-9]/g, "");
+			var colID = "column" + numColToResize;
+			
+			//Get column and current column width
+			colToResize = document.getElementById(colID);
+			colToResizeWidth = columnWidthsJS[numColToResize];
+			
+			//If 'inputCtrlToResize' is set, get handle on input control to resize. Will be 10px narrower than containing column.
+			if(inputCtrlToResize == "")
+				inputToResize = "";
+			else
+				inputToResize = document.getElementById(inputCtrlToResize);
+		}
+		
+		// -------------------------------------------------------------------------------------------------------------------------------
+		function dragGo(event) {
+		
+			var x, y, columnWidth;
+		
+			// Get cursor position with respect to the page.
+			if (browser.isIE) {
+				x = window.event.clientX + document.documentElement.scrollLeft + document.body.scrollLeft;
+				y = window.event.clientY + document.documentElement.scrollTop + document.body.scrollTop;
+			}
+			if (browser.isNS) {
+				x = event.clientX + window.scrollX;
+				y = event.clientY + window.scrollY;
+			}
+
+			changeX = x - dragObj.cursorStartX;
+			changeY = y - dragObj.cursorStartY;
+
+			// Resize column by the same amount the cursor has moved. (but no further left than to leave the column 20px wide)
+			//Drag icon moves with the column since it is included in the TH element then relatively positioned 5px further right
+			if((columnWidthsJS[numColToResize] + changeX) > 20) {
+				// ------------------------------------------------------------
+				//Additional code to resize column and if required, entry/select control
+				
+				//The "cheap and nasty" way without resetting widths of td,th and divs, works in IE and slowly in Safari. Fails in Navigator 7:
+				columnWidth = Number(colToResizeWidth) + changeX;
+				colToResize.style.width = columnWidth.toString() + "px";
+				
+				
+					if(inputToResize != "") {
+						var inputWidth = columnWidth - 10;
+						inputToResize.style.width = inputWidth.toString() + "px";
+					}
+				
+				// ------------------------------------------------------------
+			}
+		
+			if (browser.isIE) {
+				window.event.cancelBubble = true;
+				window.event.returnValue = false;
+			}
+			if (browser.isNS)
+				event.preventDefault();
+					
+		}
+		
+		// -------------------------------------------------------------------------------------------------------------------------------
+		function dragStop(event) {
+		
+			// Stop capturing mousemove and mouseup events.
+			if (browser.isIE) {
+				document.detachEvent("onmousemove", dragGo);
+				document.detachEvent("onmouseup",   dragStop);
+			}
+			if (browser.isNS) {
+				document.removeEventListener("mousemove", dragGo,   true);
+				document.removeEventListener("mouseup",   dragStop, true);
+			}
+			
+			//Update column widths array
+			columnWidthsJS[numColToResize] = columnWidthsJS[numColToResize] + changeX;
+
+			window.status = "";
+		}
+
+		// -------------------------------------------------------------------------------------------------------------------------------
+		//Change the mouse pointer
+		function changeCursor(dir, icon) {
+			var icon = document.getElementById(icon);
+			
+			if(dir == "in") {
+				if (browser.isIE)
+					icon.style.cursor = "col-resize";
+				else
+					icon.style.cursor = "move";
+			}
+			else {
+				icon.style.cursor = "default" 
+			}
+		}
+				// -----------------------------------------------------------------------------------------------------------------------------
+		//Change the color of the table row. Switch styles so colors are not hard coded in content page.
+		function changeRowStyle(rowID, newStyle) {
+			if(document.getElementById(rowID).className != "hilite")
+				document.getElementById(rowID).className = newStyle; 
+		}
+		
+		function toggleHilite(rowID) {
+			if(document.getElementById(rowID).className == "hilite")
+				document.getElementById(rowID).className = "std";
+			else
+				document.getElementById(rowID).className = "hilite";
+		}
+		
+		// -----------------------------------------------------------------------------------------------------------------------------
+		//Generic function to redraw page. Must have previously set "pageAction" hidden form variable
+		function redrawPage() {
+			//Get current column widths. Returns comma-separated list of values in array columnWidth
+			colWidthStr = columnWidthsJS.toString();
+
+			//Set hidden form variable
+			document.getElementById("colWidthStr").value = colWidthStr;
+			
+			//Set form action
+			document.forms[0].action = "edit.htm";
+			
+			//Submit the form
+			document.forms[0].submit();
+		}
+		
+		// -----------------------------------------------------------------------------------------------------------------------------
+		function changeEnvironment(env) {
+			//Get current column widths. Returns comma-separated list of values in array columnWidth
+			colWidthStr = columnWidthsJS.toString();
+
+			//Reset hidden form variables
+			document.getElementById("colWidthStr").value = colWidthStr;
+			document.getElementById("pageAction").value = "updatePage";
+			
+			//Set form action
+			if(env == "production")
+				document.forms[0].action = "display.htm";
+			else if (env == "development")
+				document.forms[0].action = "display.htm";
+			else {
+				alert("New environment '" + env + "' not recognized!\nPlease notify system administrator.");
+				return false;
+			}		
+			
+			//Submit the form
+			document.forms[0].submit();
+		}
+		
+		// -----------------------------------------------------------------------------------------------------------------------------
+		function changeNumRows() {
+			//Reset hidden form variable
+			document.getElementById("pageAction").value = "changeNumRows";
+			
+			redrawPage();
+		}
+		
+		// -----------------------------------------------------------------------------------------------------------------------------
+		//Function to redraw page starting at a particular line number
+		function goToPage(firstLine) {
+			//Set hidden form variables
+			document.getElementById("pageAction").value = "goToPage";
+			document.getElementById("firstLine").value = firstLine;
+			
+			redrawPage();
+		}
+
+		//Function to go to a specified page or set of records
+		function goToPageFromBox(boxNumber, maxPages) {
+			//Get user entry
+			page = document.getElementById("goToBox" + boxNumber).value;
+			if((page > 0) && (page <= maxPages)) {
+				//Determine number of first record to request
+				var firstLine = (page - 1) * 10 + 1;
+				
+				goToPage(firstLine);
+			}
+			else {
+				document.getElementById("goToError" + boxNumber).innerHTML = "Page number must be in range 1 to " + maxPages + ".";
+			}
+		}
+
+		// -----------------------------------------------------------------------------------------------------------------------------
+		//Function to reload page with editable fields
+		function editRow(rowNum) {
+			//Reset hidden form variables
+			document.getElementById("pageAction").value = "editRow";
+			document.getElementById("rowToEdit").value = rowNum;
+			
+			redrawPage();
+		}
+
+		// -----------------------------------------------------------------------------------------------------------------------------
+		//Function to submit form when editing a record
+		function validateForm () {
+			//Get current column widths. Returns comma-separated list of values in array columnWidth
+			colWidthStr = columnWidthsJS.toString();
+
+			//Set hidden form variable
+			document.getElementById("colWidthStr").value = colWidthStr;
+
+			//Set form action
+			document.forms[0].action = "display.htm";
+			
+			//Submit the form
+			//document.forms[0].submit();
+			window.location.href = "display.htm";
+		}	
+
+		// -----------------------------------------------------------------------------------------------------------------------------
+		//Function to reload page with new parameters
+		function updatePage(firstLine) {
+			var filterStr = "";
+			var errorMsg = "";
+			var errorColor = "#ffffcc";
+			var stdColor = "#ffffff";
+			var filterSet_1 = false;
+			var filterSet_2 = false;
+			var filterSet_3 = false;
+
+			//Check each of the three filter sets for completeness and consistancy
+			for(var i=1; i<=3; i++) {
+				var fieldValue = document.getElementById("where_" + i)[document.getElementById("where_" + i).selectedIndex].value;
+				var fieldType = fieldTypesArrayJS[fieldValue];
+				var condition = document.getElementById("condition_" + i)[document.getElementById("condition_" + i).selectedIndex].value;
+				var compareText = document.getElementById("compareText_" + i).value;
+				//alert("Field: " + fieldValue + "\nfieldType: " + fieldType + "\nCondition: " + condition + "\nCompare text: " + compareText);
+				
+				//For a condition to be valid, must have specified a field, comparison type and something to compare the field to
+				//(compare text can be empty string for string field).
+				if((fieldValue != "") || (condition != "") || (compareText != "")) { 
+					if(fieldValue == "") {
+						errorMsg += "<li>You must specify the field for the " + (i==1 ? "first" : (i==2 ? "second" : "third")) + " filter set.</li>";
+						document.getElementById("where_" + i).style.backgroundColor = errorColor;
+					} else {
+						document.getElementById("where_" + i).style.backgroundColor = stdColor;
+					}
+					if(condition == "") {
+						errorMsg += "<li>You must specify the condition for the " + (i==1 ? "first" : (i==2 ? "second" : "third")) + " filter set.</li>";
+						document.getElementById("condition_" + i).style.backgroundColor = errorColor;
+					} else {
+						document.getElementById("condition_" + i).style.backgroundColor = stdColor;
+					}
+					if(fieldType != "string") {
+						if(compareText == "") {
+							errorMsg += "<li>You must enter something to compare the field to for the " + (i==1 ? "first" : (i==2 ? "second" : "third")) + " filter set.</li>";
+							document.getElementById("compareText_" + i).style.backgroundColor = errorColor;
+						} else {
+							document.getElementById("compareText_" + i).style.backgroundColor = stdColor;
+						}
+					}
+					
+					//If field selected is numeric, then entry must be numeric or NULL
+					if(fieldType == "numeric") {
+						if((compareText.replace(/[0-9]/g, "") != "") && (compareText.toUpperCase() != "NULL")) {
+							errorMsg += "<li>The text entry for the " + (i==1 ? "first" : (i==2 ? "second" : "third")) + " filter set can only contain numbers or &quot;NULL&quot;.</li>"
+							document.getElementById("compareText_" + i).style.backgroundColor = errorColor;
+						} else {
+							document.getElementById("compareText_" + i).style.backgroundColor = stdColor;
+						}
+					}
+					
+					//If field type is ExcludeReporting, then entry can only be 0, 1 or 2
+					if(fieldValue == "ExcludeReporting") {
+						if(compareText.replace(/[012]/g, "") != "") {
+							errorMsg += "<li>The text entry for New/Hide in the " + (i==1 ? "first" : (i==2 ? "second" : "third")) + " filter set can only be 0 (normal), 1 (hide) or 2 (new).</li>"
+							document.getElementById("compareText_" + i).style.backgroundColor = errorColor;
+						} else {
+							document.getElementById("compareText_" + i).style.backgroundColor = stdColor;
+						}
+					}
+					
+					//If field is date, confirm correct entry format.
+					if((fieldType == "date") && (compareText.toUpperCase() != "NULL")) {
+						dateErrors = checkDate(compareText);
+						if(dateErrors != "") {
+							errorMsg += "<li>The date entry in the " + (i==1 ? "first" : (i==2 ? "second" : "third")) + " filter set has one or more problems:<ul>" + dateErrors + "</ul></li>"
+							document.getElementById("compareText_" + i).style.backgroundColor = errorColor;
+						} else {
+							document.getElementById("compareText_" + i).style.backgroundColor = stdColor;
+						}
+					}
+					//Set a variable to record that this filter set was used
+					eval("filterSet_" + i + " = true");
+				
+					//If text entry is "NULL", make sure that the condition is "is" or "is NOT".
+					if(compareText.toUpperCase() == "NULL") {
+						if((condition != " = ") && (condition != " <> ")) {
+							if(fieldType == "numeric")
+								var conditionsAllowed = "&quot;equals&quot; or &quot;does NOT equal&quot;";
+							else
+								var conditionsAllowed = "&quot;is&quot; or &quot;is NOT&quot;";
+							errorMsg += "<li>Since you entered &quot;NULL&quot; in the " + (i==1 ? "first" : (i==2 ? "second" : "third")) + " filter set, the condition must be " + conditionsAllowed + ".</li>"
+							document.getElementById("condition_" + i).style.backgroundColor = errorColor;
+						} else {
+							document.getElementById("condition_" + i).style.backgroundColor = stdColor;
+						}
+					}
+				}
+			}
+			
+			//Check for consistant use of AND/OR
+			if((document.getElementById("andOr_1").selectedIndex != 0) && ((! filterSet_1) || (! filterSet_2))) {
+				errorMsg += "<li>The first AND/OR control has been set but one or both filter sets surrounding it are blank.</li>";
+				document.getElementById("andOr_1").style.backgroundColor = errorColor;
+			}
+			else {
+				document.getElementById("andOr_1").style.backgroundColor = stdColor;
+			}
+			if((document.getElementById("andOr_2").selectedIndex != 0) && ((! filterSet_2) ||(! filterSet_3))) {
+				errorMsg += "<li>The second AND/OR control has been set but one or both filter sets surrounding it are blank.</li>";
+				document.getElementById("andOr_2").style.backgroundColor = errorColor;
+			}
+			else {
+				document.getElementById("andOr_2").style.backgroundColor = stdColor;
+			}
+	
+			//If there is an error message, display it and return
+			if(errorMsg != "") {
+				errorMsg = "Error(s):<ul>" + errorMsg + "</ul>";
+				
+				//Display error message
+				document.getElementById("filterError").innerHTML = errorMsg;
+				return false;
+			}
+		
+			//Set hidden form variables
+			document.getElementById("pageAction").value = "updatePage";
+			document.getElementById("firstLine").value = 1; //Original line number may no longer exist in new record set.
+			
+			redrawPage();
+		}
+		
+
+		// -----------------------------------------------------------------------------------------------------------------------------
+		//Function to block non-numeric entry
+		function numHandle(val, deci, neg) {
+			// Handle Text box Number values only; onKeyPress event function numHandle(val,deci,neg){
+			var reNumberChars = /\d/; 
+			var deciChar = /[\x2E]/; 
+			var negChar = /[\x2D]/;
+			var reSpecialChars = /[\x08\x09\x0D\x2D\x2E]/;  //backspace, tab, return, minus sign, decimal point. Used to include \x20 (space)
+			var charCode = (document.all) ? window.event.keyCode : val.which;	
+		
+			// don't show decimal if deci is false . = \x2E
+			if(!deci && deciChar.test(String.fromCharCode(charCode)))
+				return false
+			// don't show negative sign if neg is false - = \x2D
+			if(!neg && negChar.test(String.fromCharCode(charCode)))
+				return false
+				
+			// allow for ( = \x28; ) = \x29;
+			// var reSpecialChars = /[\x08\x09\x0D\x28\x29\x2D\x20\x1C\x1D\x1E\x1F\x2E]/;
+		
+			if ((reNumberChars.test(String.fromCharCode(charCode)))|| (reSpecialChars.test(String.fromCharCode(charCode))))
+				return true
+			else
+				return false	
+		}
+
+		// -----------------------------------------------------------------------------------------------------------------------------
+		//Function to check date entered in a single field. Returns list items <li> of problems. Correct format if nothing returned.
+		function checkDate (dateEntry) {
+			var errors = "";
+		
+			//Verify that there are two "/" separators
+			dateArray = dateEntry.split("/")
+			if(dateArray.length != 3) {
+				errors += "<li>Date entry must be in the form mm/dd/yy.</li>";
+				return errors;
+			}
+		
+			var month = dateArray[0];
+			var day   = dateArray[1];
+			var year  = dateArray[2];
+			//alert("year: " + year + "\nmonth: " + month + "\nday: " + day);
+		
+			//Check that the year has either 2 or 4 digits. 
+			if((year.length != 2) && (year.length != 4))
+				errors += "<li>The year must have two or four digits.</li>";
+			
+			
+			//Confirm month is in range 1 to 12. Entry of anything but numbers already disabled by numHandle function.
+			if((month < 1) || (month > 12)) {
+				errors += "<li>The month entry must be in the range 1 to 12.</li>";
+			}
+
+			//Check the number of days in chosen month
+			if( ((month == 9) || (month == 4) || (month == 6) || (month == 11)) &&  ((day < 1) || (day > 30)) ) { //Sep, Apr, Jun, Nov
+				errors += "<li>This month must have dates in the range 1 to 30.</li>";
+			}
+			else if(month == 2){ //Feb
+				var maxDaysFeb = 28;
+				if(year % 4 == 0) //Adjust for leap year if necessary
+					maxDaysFeb = 29;
+				
+				if((day < 1) || (day > maxDaysFeb))
+					errors += "<li>February must have dates in the range 1 to " + maxDaysFeb + "</li>";
+			
+			} 
+			else { //All the other months
+				if((day < 1) || (day > 31))
+					errors += "<li>The month must have dates in the range 1 to 31.</li>";
+			}
+					
+			return errors;
+		}
+		
+		//For demo only
+		function sorry() {
+			window.status = "Sorry. This functionality does not work in this demo.";
+		}
+
+		//]]>
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Web Action Update Tool</title>
+	<link rel="stylesheet" href="intranet.css" />
+	<link rel="stylesheet" href="webReport.css" />
+</head>
+
+<body>
+<form method="post" action=""> <!-- Form action set by Javascript -->
+	<h1 id="title">Web Actions</h1>
+	<div class="inputBlock">
+		<div class="environment">
+			<div class="menu">
+				<h4 class="env">Environment</h4>
+			    <a href="javascript:void(0)" onclick="changeEnvironment('development'); return false"  class="Development">Development</a>
+			    <a href="javascript:void(0)" onclick="changeEnvironment('production'); return false" >Production</a>
+			</div>
+		</div>
+		
+		<div class="actionInputs">
+			<!-- Set site to view. -->
+			<div class="inputRow">
+				<div class="inputLabel">Site ID:</div>
+				<div class="input">
+					<input type="text" name="siteNumber" id="siteNumber" value="534" /> &nbsp; Waterhouse WebBroker Redesign (research.TDWaterhouse.com) <br />
+				</div>
+			</div>
+			<!-- Display drop-down list to set number of rows to show. -->
+			
+
+	<div class="inputRow">
+		<div class="inputLabel">Display</div>
+		<div class="input">
+			<select name="numRowsToShow" id="numRowsToShow" onchange="sorry()">
+				
+						<option value="10" selected="selected">10</option>
+					
+						<option value="25">25</option>
+					
+						<option value="50">50</option>
+					
+						<option value="100">100</option>
+					
+						<option value="250">250</option>
+					
+						<option value="500">500</option>
+					
+			</select> records.
+		</div>
+	</div>
+
+ 
+
+			
+			<!-- Display fields for sorting. -->
+			
+
+	<script language="JavaScript" type="text/javascript">
+		//<![CDATA[
+		//When the first drop-down list is changed, strip the selected option from the second and third drop-down lists
+		function sortBy_1_Changed() {
+			//Determine the index of the selected opton
+			index = document.getElementById("sortBy_1").selectedIndex;
+			selectedOption = document.getElementById("sortBy_1")[index].value;
+			
+			/*Reset second drop-down list to be the same as the first minus the selected option. Can't just 
+			remove selected option from next drop-down: if changed multiple times, all options in following 
+			drop-down will be removed.  Instead, remove all and then rebuild omitting selected option.*/
+			numOptions_1 = document.getElementById("sortBy_1").options.length;
+			numOptions_2 = document.getElementById("sortBy_2").options.length;
+			//Delete existing options in second drop-down list
+			for(i=0; i < numOptions_2 ; i++) {
+				document.getElementById("sortBy_2").options[0] =  null; //Keep removing first array element till all gone.
+			}
+			//Rebuild 
+			var j=0;
+			for(i=0; i < numOptions_1; i++) {
+				value = document.getElementById("sortBy_1").options[i].value;
+				text  = document.getElementById("sortBy_1").options[i].text;
+				if(value != selectedOption) {
+					document.getElementById("sortBy_2").options[j] = new Option(text, value, false, false);
+					j++;
+				}
+			} 
+			
+			//Update third drop-down list
+			sortBy_2_Changed();
+		}
+		
+		//When the second drop-down list is changed, strip the selected option from the third drop-down lists
+		function sortBy_2_Changed() {
+			//Determine the index of the selected opton
+			index = document.getElementById("sortBy_2").selectedIndex;
+			selectedOption = document.getElementById("sortBy_2")[index].value;
+			
+			/*Reset second drop-down list to be the same as the first minus the selected option. Can't just 
+			remove selected option from next drop-down: if changed multiple times, all options in following 
+			drop-down will be removed.  Instead, remove all and then rebuild omitting selected option.*/
+			numOptions_2 = document.getElementById("sortBy_2").options.length;
+			numOptions_3 = document.getElementById("sortBy_3").options.length;
+			//Delete existing options in third drop-down list
+			for(i=0; i < numOptions_3; i++)
+				document.getElementById("sortBy_3").options[0] =  null; //Keep removing first array element till all gone.
+
+			//Rebuild 
+			var j=0;
+			for(i=0; i < numOptions_2; i++) {
+				value = document.getElementById("sortBy_2").options[i].value;
+				text  = document.getElementById("sortBy_2").options[i].text;
+				if(value != selectedOption) {
+					document.getElementById("sortBy_3").options[j] = new Option(text, value, false, false);
+					j++;
+				}
+			} 
+		}
+		//]]>
+	</script>
+
+	<div class="inputRow">
+		<div class="inputLabel">Sort by</div>
+		<div class="input">
+			<div class="orderSet">
+				<select class="fieldSelect" name="sortBy_1" id="sortBy_1" onchange="sortBy_1_Changed()">
+					
+						<option value="Page" selected="selected">Page</option>
+						<option value="Note" >Note</option>
+						<option value="Description" >Description</option>
+						<option value="ProjectNote" >Project Note</option>
+						<option value="ActionCategory" >Category</option>
+						<option value="ExcludeReporting" >Excl. Report (0,1,2)</option>
+						<option value="HitsLastMonth" >Hits Last Month</option>
+						<option value="HitsLastWeek" >Hits Last Week</option>
+						<option value="Action" >Action</option>
+						<option value="ModifiedDate" >Modified Date</option>
+						<option value="ModifiedBy" >Modified By</option>
+				</select>
+				<input type="radio" name="sortDir_1" id="sortDirA_1" value="ASC"  checked="checked" /><label for="sortDirA_1">asc</label>
+				<input type="radio" name="sortDir_1" id="sortDirD_1" value="DESC"  /><label for="sortDirD_1">desc</label>
+			</div>
+		
+			<div class="then">then</div>
+			<div class="orderSet">
+				<select class="fieldSelect" name="sortBy_2" id="sortBy_2" onchange="sortBy_2_Changed()">
+					
+						<option value="Note" >Note</option>
+						
+						<option value="Description" >Description</option>
+						
+						<option value="ProjectNote" >Project Note</option>
+						
+						<option value="ActionCategory" >Category</option>
+						
+						<option value="ExcludeReporting" selected="selected">Excl. Report (0,1,2)</option>
+						
+						<option value="HitsLastMonth" >Hits Last Month</option>
+						
+						<option value="HitsLastWeek" >Hits Last Week</option>
+						
+						<option value="Action" >Action</option>
+						
+						<option value="ModifiedDate" >Modified Date</option>
+						
+						<option value="ModifiedBy" >Modified By</option>
+						
+				</select>
+				<input type="radio" name="sortDir_2" id="sortDirA_2" value="ASC"  checked="checked" /><label for="sortDirA_2">asc</label>
+				<input type="radio" name="sortDir_2" id="sortDirD_2" value="DESC"  /><label for="sortDirD_2">desc</label>
+			</div>
+		
+			<div class="then">then</div>
+			<div class="orderSet">
+				<select class="fieldSelect" name="sortBy_3" id="sortBy_3" onchange="">
+					
+						<option value="Note" selected="selected">Note</option>
+						
+						<option value="Description" >Description</option>
+						
+						<option value="ProjectNote" >Project Note</option>
+						
+						<option value="ActionCategory" >Category</option>
+						
+						<option value="HitsLastMonth" >Hits Last Month</option>
+						
+						<option value="HitsLastWeek" >Hits Last Week</option>
+						
+						<option value="Action" >Action</option>
+						
+						<option value="ModifiedDate" >Modified Date</option>
+						
+						<option value="ModifiedBy" >Modified By</option>
+						
+				</select>
+				<input type="radio" name="sortDir_3" id="sortDirA_3" value="ASC"  checked="checked" /><label for="sortDirA_3">asc</label>
+				<input type="radio" name="sortDir_3" id="sortDirD_3" value="DESC"  /><label for="sortDirD_3">desc</label>
+			</div>
+		</div>
+	</div>
+
+			
+			<!-- Display fields for filtering. -->
+			
+	<script language="JavaScript" type="text/javascript">
+		//<![CDATA[
+		fieldTypesArrayJS = new Array(); 
+fieldTypesArrayJS["Page"] = "string"; 
+fieldTypesArrayJS["Note"] = "string"; 
+fieldTypesArrayJS["Description"] = "string"; 
+fieldTypesArrayJS["ProjectNote"] = "string"; 
+fieldTypesArrayJS["ActionCategory"] = "string"; 
+fieldTypesArrayJS["ExcludeReporting"] = "numeric"; 
+fieldTypesArrayJS["HitsLastMonth"] = "numeric"; 
+fieldTypesArrayJS["HitsLastWeek"] = "numeric"; 
+fieldTypesArrayJS["Action"] = "numeric"; 
+fieldTypesArrayJS["ModifiedDate"] = "date"; 
+fieldTypesArrayJS["ModifiedBy"] = "string"; 
+
+conditionValsJS_string = new Array(); 
+conditionValsJS_string["0"] = " = "; 
+conditionValsJS_string["1"] = " <> "; 
+conditionValsJS_string["2"] = " LIKE "; 
+conditionValsJS_string["3"] = " NOT LIKE "; 
+
+conditionDispJS_string = new Array(); 
+conditionDispJS_string["0"] = "is"; 
+conditionDispJS_string["1"] = "is NOT"; 
+conditionDispJS_string["2"] = "includes"; 
+conditionDispJS_string["3"] = "does NOT include"; 
+
+conditionValsJS_numeric = new Array(); 
+conditionValsJS_numeric["0"] = " = "; 
+conditionValsJS_numeric["1"] = " <> "; 
+conditionValsJS_numeric["2"] = " < "; 
+conditionValsJS_numeric["3"] = " > "; 
+
+conditionDispJS_numeric = new Array(); 
+conditionDispJS_numeric["0"] = "equals"; 
+conditionDispJS_numeric["1"] = "does NOT equal"; 
+conditionDispJS_numeric["2"] = "is less than"; 
+conditionDispJS_numeric["3"] = "is greater than"; 
+
+conditionValsJS_date = new Array(); 
+conditionValsJS_date["0"] = " = "; 
+conditionValsJS_date["1"] = " <> "; 
+conditionValsJS_date["2"] = " >= "; 
+conditionValsJS_date["3"] = " <= "; 
+
+conditionDispJS_date = new Array(); 
+conditionDispJS_date["0"] = "is"; 
+conditionDispJS_date["1"] = "is NOT"; 
+conditionDispJS_date["2"] = "is on or after"; 
+conditionDispJS_date["3"] = "is on or before"; 
+
+
+	
+		//If user sets opening bracket, change closing bracket to match
+		function setBrackets() {
+			//Determine the index of the selected opton
+			var newIndex = document.getElementById("openBracket").selectedIndex;
+			var openBracket = document.getElementById("openBracket")[newIndex].value;
+			if(openBracket == "(") {
+				document.getElementById("closeBracketDisplay").innerHTML = ")";
+				document.getElementById("closeBracketDisplay").style.display = "inline";
+			}
+			else {
+				document.getElementById("closeBracketDisplay").innerHTML = "";
+				document.getElementById("closeBracketDisplay").style.display = "none";
+			}
+		}
+		
+		//If user changes AND/OR selector back to nothing, reset other controls as required.
+		function andOrReset(numAndOrCtrl) {
+			var nextNumber = Number(numAndOrCtrl) + 1;
+			if(document.getElementById("andOr_" + numAndOrCtrl).selectedIndex == 0) { //Was "AND" or "OR" but changed back to nothing
+				
+				document.getElementById("where_" + nextNumber).selectedIndex = 0;
+				document.getElementById("condition_" + nextNumber).selectedIndex = 0;
+				document.getElementById("compareText_" + nextNumber).value = "";
+				
+				//Hide the following filter set
+				document.getElementById("filterSet_" + nextNumber).style.display = "none";
+				
+				if(numAndOrCtrl == 1) {				
+					//Reset and hide second AND/OR control
+					document.getElementById("andOr_2").selectedIndex = 0;
+					document.getElementById("andOr_2").style.display = "none";
+					
+					//Call the function again to reset the last set of conditions
+					andOrReset(2);
+				}
+				if(numAndOrCtrl == 2) {
+					//Reset and hide the brackets since only one or two conditions
+					document.getElementById("openBracket").selectedIndex = 0;
+					document.getElementById("openBracket").style.display = "none";
+					
+					document.getElementById("closeBracketDisplay").innerHTML = "";
+					document.getElementById("closeBracketDisplay").style.display = "none";
+				}
+			}
+			else {
+				//Expose the following filter set
+				document.getElementById("filterSet_" + nextNumber).style.display = "inline";
+				
+				//Expose second AND/OR control
+				if(numAndOrCtrl == 1) {
+					document.getElementById("andOr_2").style.display = "inline";
+				}
+				//Expose open bracket control since there can now be three conditions
+				if(numAndOrCtrl == 2) {
+					document.getElementById("openBracket").style.display = "inline";
+				}
+			}
+		}
+		
+		//When user resets field control, rebuild comparison types drop down with applicable types
+		//Also enable/disable text entry box as required and apply numHandler function for numeric entries.
+		 function fieldReset(numFieldCtrl) {
+			//Get value of current setting for field
+		 	var index = document.getElementById("where_" + numFieldCtrl).selectedIndex;
+		 	var fieldValue = document.getElementById("where_" + numFieldCtrl)[index].value;
+			
+		 	if(fieldValue == "") { //No field selected
+				//Remove existing condition options (except first which is empty)
+				numOptions = document.getElementById("condition_" + numFieldCtrl).options.length;
+				for(var i=1; i < numOptions; i++)
+					document.getElementById("condition_" + numFieldCtrl).options[1] =  null; //Keep removing second array element till all but first have been removed.
+				
+				//Clear and disable text field
+				document.getElementById("compareText_" + numFieldCtrl).value = "";
+				document.getElementById("compareText_" + numFieldCtrl).disabled = true;
+			}
+			else { //A field has been selected
+				var fieldType = fieldTypesArrayJS[fieldValue];
+			
+				//Now have field type so populate condition drop down list with appropriate options
+				var numOptions = eval("conditionValsJS_" + fieldType).length;
+				var value, text;
+				for(var i=0; i < numOptions; i++) {
+					value = eval("conditionValsJS_" + fieldType)[i];
+					text  = eval("conditionDispJS_" + fieldType)[i];
+					document.getElementById("condition_" + numFieldCtrl).options[i+1] = new Option(text, value, false, false);
+				} 
+			
+				//Ensure that text field is enabled and clear it in case previously set.
+				document.getElementById("compareText_" + numFieldCtrl).disabled = false;
+				document.getElementById("compareText_" + numFieldCtrl).value = "";
+
+			}
+		 }
+		 //]]>
+	</script>
+
+	<div class="inputRow">
+		<div class="inputLabel">Where</div>
+		<div class="input">
+			<!-- Open bracket. -->
+			<select class="bracketSelect" name="openBracket" id="openBracket" onchange="setBrackets()" style="display:none">
+				<option value="" selected="selected"></option>
+				<option value="(" >(</option>
+			</select>
+			
+			<div> <!-- When bracketSelect is displayed, want both the following two filter sets moved to the side. -->
+				<div class="filterRow">
+					<!-- Filter set 1. -->
+					<div class="filterSet" id="filterSet_1">
+						<select class="fieldSelect" name="where_1" id="where_1" onchange="fieldReset(1)">
+							<option value="" />
+							
+								<option value="Page" >Page</option>
+								<option value="Note" >Note</option>
+								<option value="Description" >Description</option>
+								<option value="ProjectNote" >Project Note</option>
+								<option value="ActionCategory" >Category</option>
+								<option value="ExcludeReporting" >Excl. Report (0,1,2)</option>
+								<option value="HitsLastMonth" >Hits Last Month</option>
+								<option value="HitsLastWeek" >Hits Last Week</option>
+								<option value="Action" >Action</option>
+								<option value="ModifiedDate" >Modified Date</option>
+								<option value="ModifiedBy" >Modified By</option>
+						</select>
+						<select class="conditionSelect" name="condition_1" id="condition_1">
+							<option value="" />
+							
+						</select>
+						<input type="text" class="txt compareText" name="compareText_1" id="compareText_1" value="" disabled="disabled" />
+					</div>
+					
+					<!-- AND/OR control 1. -->
+					<select class="andOrSelect" name="andOr_1" id="andOr_1" onchange="andOrReset(1)">
+						<option value="" selected="selected" />
+						<option value=" AND " >AND</option>
+						<option value=" OR " >OR</option>
+					</select>
+				</div>
+				
+				<div class="filterRow">
+					<!-- Filter set 2. -->
+					<div class="filterSet" id="filterSet_2" style="display:none">
+						<select class="fieldSelect" name="where_2" id="where_2" onchange="fieldReset(2)">
+							<option value="" />
+							
+								<option value="Page" >Page</option>
+								<option value="Note" >Note</option>
+								<option value="Description" >Description</option>
+								<option value="ProjectNote" >Project Note</option>
+								<option value="ActionCategory" >Category</option>
+								<option value="ExcludeReporting" >Excl. Report (0,1,2)</option>
+								<option value="HitsLastMonth" >Hits Last Month</option>
+								<option value="HitsLastWeek" >Hits Last Week</option>
+								<option value="Action" >Action</option>
+								<option value="ModifiedDate" >Modified Date</option>
+								<option value="ModifiedBy" >Modified By</option>
+						</select>
+						<select class="conditionSelect" name="condition_2" id="condition_2">
+							<option value="" />
+							
+						</select>
+						<input type="text" class="txt compareText" name="compareText_2" id="compareText_2" value="" disabled="disabled" />
+					</div>
+					
+					<!-- Close bracket. -->
+					<div id="closeBracketDisplay"></div>
+					
+					<!-- AND/OR control 2. -->
+					<select class="andOrSelect" name="andOr_2" id="andOr_2" onchange="andOrReset(2)" style="display:none">
+						<option value="" selected="selected" />
+						<option value=" AND " >AND</option>
+						<option value=" OR " >OR</option>
+					</select>
+				</div>
+			</div>
+		
+			<!-- Filter set 3. -->
+			<div class="filterRow">
+				<div class="filterSet" id="filterSet_3" style="display:none">
+					<select class="fieldSelect" name="where_3" id="where_3" onchange="fieldReset(3)">
+						<option value="" />
+						
+							<option value="Page" >Page</option>
+							<option value="Note" >Note</option>
+							<option value="Description" >Description</option>
+							<option value="ProjectNote" >Project Note</option>
+							<option value="ActionCategory" >Category</option>
+							<option value="ExcludeReporting" >Excl. Report (0,1,2)</option>
+							<option value="HitsLastMonth" >Hits Last Month</option>
+							<option value="HitsLastWeek" >Hits Last Week</option>
+							<option value="Action" >Action</option>
+							<option value="ModifiedDate" >Modified Date</option>
+							<option value="ModifiedBy" >Modified By</option>
+					</select>
+					<select class="conditionSelect" name="condition_3" id="condition_3">
+						<option value="" />
+						
+					</select>
+					<input type="text" class="txt compareText" name="compareText_3" id="compareText_3" value="" disabled="disabled" />
+				</div>
+			</div>
+			<div id="filterError" class="warning"></div>
+		</div>
+	</div>
+
+		 
+
+			
+			<div class="inputRow">
+				<div class="inputLabel">&nbsp;</div>
+				<div class="input">
+					<input type="button" name="update" id="updateButton" value="Update" onclick="updatePage(1)" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="resultsBlock">
+		
+			<!-- Paging controls above records listing. --> <div class="paging">
+			<a href="javascript:void(0)" onclick="sorry(); return false">Next &gt;&gt;</a>
+			
+			Page <input type="text" name="goToBox1" class="goTo" id="goToBox1" value="" onkeypress="return numHandle(event,false,false)" />&nbsp;<a href="javascript:void(0)" onclick="goToPageFromBox(1, 299);return false">Go</a> &nbsp;&nbsp;<span id="goToError1" class="warning"></span>
+			
+			</div>
+			
+			<table class="slider" id="slider">
+				<col id="column1" />
+				<col id="column2" />
+				<col id="column3" />
+				<col id="column4" />
+				<col id="column5" />
+				<col id="column6" />
+				<col id="column7" />
+				<col id="column8" />
+				<col id="column9" />
+				<col id="column10" />
+				<col id="column11" />
+				<col id="column12" />
+				
+				<tr>
+					<th>&nbsp;</th>
+					<th><div class="space">Page</div></th>
+					<th><img class="drag" id="drag2" onmousedown="dragStart(event, 'drag2', '')"                 onmouseover="changeCursor('in', 'drag2')" onmouseout="changeCursor('out', 'drag2')" src="images/drag_development.gif" alt="" /><div class="noHSpace">Note</div></th>
+					<th><img class="drag" id="drag3" onmousedown="dragStart(event, 'drag3', '')"                 onmouseover="changeCursor('in', 'drag3')" onmouseout="changeCursor('out', 'drag3')" src="images/drag_development.gif" alt="" /><div class="noHSpace">Description</div></th>
+					<th><img class="drag" id="drag4" onmousedown="dragStart(event, 'drag4', 'inputDescription')" onmouseover="changeCursor('in', 'drag4')" onmouseout="changeCursor('out', 'drag4')" src="images/drag_development.gif" alt="" /><div class="noHSpace">Category</div></th>
+					<th><img class="drag" id="drag5" onmousedown="dragStart(event, 'drag5', 'selectCategory')"   onmouseover="changeCursor('in', 'drag5')" onmouseout="changeCursor('out', 'drag5')" src="images/drag_development.gif" alt="" /><div class="noHSpace">Excl. Report</div></th>
+					<th><div class="space">Last Mth*</div></th>
+					<th><div class="space">Last Wk**</div></th>
+					<th><div class="space">Action</div></th>
+					<th><div class="space">Project Note</div></th>
+					<th><img class="drag" id="drag10" onmousedown="dragStart(event, 'drag10', 'inputProjectNote')" onmouseover="changeCursor('in', 'drag10')" onmouseout="changeCursor('out', 'drag10')" src="images/drag_development.gif" alt="" /><div class="noHSpace">Modified</div></th>
+					<th><div class="space">Modified By</div></th>
+				</tr>
+			
+				
+						<tr class="edit">
+							<td><a href="javascript:validateForm()"><img src="images/save.gif" class="action" alt="Save changes (id: 34267)" /></a></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">-</div></td>
+							<td><div class="noVSpace"><input type="text" name="in_Description" value="Portfolio: Delete" id="inputDescription" /></div></td>
+							<td>
+								<div class="noVSpace">
+									<select name="in_ActionCategory" id="selectCategory">
+									
+										<option value="Account Info" >Account Info</option>
+										
+										<option value="Account Maintenance" >Account Maintenance</option>
+										
+										<option value="Ad Response" >Ad Response</option>
+										
+										<option value="Admin" >Admin</option>
+										
+										<option value="Advertisements" >Advertisements</option>
+										
+										<option value="Agreements" >Agreements</option>
+										
+										<option value="Alerts" >Alerts</option>
+										
+										<option value="Analysts" >Analysts</option>
+										
+										<option value="API" >API</option>
+										
+										<option value="Argus Reports" >Argus Reports</option>
+										
+										<option value="AT Minisite" >AT Minisite</option>
+										
+										<option value="Audio/Video" >Audio/Video</option>
+										
+										<option value="Bond Screener" >Bond Screener</option>
+										
+										<option value="Bonds" >Bonds</option>
+										
+										<option value="Calendars" >Calendars</option>
+										
+										<option value="Charting" >Charting</option>
+										
+										<option value="Charting - Advanced Features" >Charting - Advanced Features</option>
+										
+										<option value="Chinese News & Research" >Chinese News & Research</option>
+										
+										<option value="Client" >Client</option>
+										
+										<option value="Commodities" >Commodities</option>
+										
+										<option value="Companies" >Companies</option>
+										
+										<option value="Company Area" >Company Area</option>
+										
+										<option value="Company Overview API" >Company Overview API</option>
+										
+										<option value="Company Profiles" >Company Profiles</option>
+										
+										<option value="Content Area" >Content Area</option>
+										
+										<option value="DJ Advice" >DJ Advice</option>
+										
+										<option value="DJ Analysis" >DJ Analysis</option>
+										
+										<option value="Domestic" >Domestic</option>
+										
+										<option value="Earnings API" >Earnings API</option>
+										
+										<option value="Economic Indicators" >Economic Indicators</option>
+										
+										<option value="Economic News" >Economic News</option>
+										
+										<option value="Economy" >Economy</option>
+										
+										<option value="Email Click-thru" >Email Click-thru</option>
+										
+										<option value="Entry Points" >Entry Points</option>
+										
+										<option value="Error Messages" >Error Messages</option>
+										
+										<option value="Europe" >Europe</option>
+										
+										<option value="Feedback" >Feedback</option>
+										
+										<option value="First Call Reports" >First Call Reports</option>
+										
+										<option value="Gateway" >Gateway</option>
+										
+										<option value="General & Economic News" >General & Economic News</option>
+										
+										<option value="GIS Screener" >GIS Screener</option>
+										
+										<option value="Global Investing Services" >Global Investing Services</option>
+										
+										<option value="Glossary" >Glossary</option>
+										
+										<option value="Goldman Sachs" >Goldman Sachs</option>
+										
+										<option value="Greater China News Home" >Greater China News Home</option>
+										
+										<option value="Help" >Help</option>
+										
+										<option value="Help Docs" >Help Docs</option>
+										
+										<option value="History" >History</option>
+										
+										<option value="Holdings Comparison Pg." >Holdings Comparison Pg.</option>
+										
+										<option value="Home" >Home</option>
+										
+										<option value="Home Page" >Home Page</option>
+										
+										<option value="Hong Kong" >Hong Kong</option>
+										
+										<option value="Hong Kong SSP" >Hong Kong SSP</option>
+										
+										<option value="Hourly Market Summary Home" >Hourly Market Summary Home</option>
+										
+										<option value="Hypothetical Analysis" >Hypothetical Analysis</option>
+										
+										<option value="Industry Area" >Industry Area</option>
+										
+										<option value="Industry News" >Industry News</option>
+										
+										<option value="Industry Statistics" >Industry Statistics</option>
+										
+										<option value="Investment Ideas" >Investment Ideas</option>
+										
+										<option value="Investment Programs" >Investment Programs</option>
+										
+										<option value="Investment Proposal" >Investment Proposal</option>
+										
+										<option value="Investment Team" >Investment Team</option>
+										
+										<option value="Investor Education" >Investor Education</option>
+										
+										<option value="Janus International" >Janus International</option>
+										
+										<option value="Janus International: PDF" >Janus International: PDF</option>
+										
+										<option value="Lehman Reports" >Lehman Reports</option>
+										
+										<option value="Lipper Peer(3)Scanner" >Lipper Peer(3)Scanner</option>
+										
+										<option value="Logon" >Logon</option>
+										
+										<option value="Market Indices" >Market Indices</option>
+										
+										<option value="Market Info" >Market Info</option>
+										
+										<option value="Market Insight" >Market Insight</option>
+										
+										<option value="Market Monitor" >Market Monitor</option>
+										
+										<option value="MarketGuide Reports" >MarketGuide Reports</option>
+										
+										<option value="Markets" >Markets</option>
+										
+										<option value="Marquees" >Marquees</option>
+										
+										<option value="MF Report" >MF Report</option>
+										
+										<option value="MFMS Federated Investors" >MFMS Federated Investors</option>
+										
+										<option value="MFMS Janus Funds" >MFMS Janus Funds</option>
+										
+										<option value="MFMS ProFunds" >MFMS ProFunds</option>
+										
+										<option value="MFMS Schwab" >MFMS Schwab</option>
+										
+										<option value="MFMS Selected Funds" >MFMS Selected Funds</option>
+										
+										<option value="MFMS Thornberg Investment" >MFMS Thornberg Investment</option>
+										
+										<option value="MFMS William Blair & Company" >MFMS William Blair & Company</option>
+										
+										<option value="Miscellaneous" >Miscellaneous</option>
+										
+										<option value="Multex API" >Multex API</option>
+										
+										<option value="Mutual Fund Screener" >Mutual Fund Screener</option>
+										
+										<option value="Mutual Funds" >Mutual Funds</option>
+										
+										<option value="News" >News</option>
+										
+										<option value="Non-Qualified" >Non-Qualified</option>
+										
+										<option value="Notes Viewed" >Notes Viewed</option>
+										
+										<option value="Order Info" >Order Info</option>
+										
+										<option value="Overview Pg." >Overview Pg.</option>
+										
+										<option value="Palm/Visor" >Palm/Visor</option>
+										
+										<option value="Payment" >Payment</option>
+										
+										<option value="Performance Monitor" >Performance Monitor</option>
+										
+										<option value="Platinum Benefits Center" >Platinum Benefits Center</option>
+										
+										<option value="Pocket PC" >Pocket PC</option>
+										
+										<option value="Portfolio" >Portfolio</option>
+										
+										<option value="Preferences" >Preferences</option>
+										
+										<option value="Premier" >Premier</option>
+										
+										<option value="Private" >Private</option>
+										
+										<option value="Profiles & Performance" >Profiles & Performance</option>
+										
+										<option value="Promo Box" >Promo Box</option>
+										
+										<option value="Public" >Public</option>
+										
+										<option value="Qualified" >Qualified</option>
+										
+										<option value="Quotes" selected>Quotes</option>
+										
+										<option value="RD Report View" >RD Report View</option>
+										
+										<option value="Realtime Industry News Home" >Realtime Industry News Home</option>
+										
+										<option value="Referral" >Referral</option>
+										
+										<option value="Rep Tool" >Rep Tool</option>
+										
+										<option value="Report Center" >Report Center</option>
+										
+										<option value="Reports" >Reports</option>
+										
+										<option value="Research" >Research</option>
+										
+										<option value="Reuters Finance" >Reuters Finance</option>
+										
+										<option value="Reuters Reports" >Reuters Reports</option>
+										
+										<option value="Reuters UK" >Reuters UK</option>
+										
+										<option value="S&P Reports" >S&P Reports</option>
+										
+										<option value="S2 Tier Redesign 1.0" >S2 Tier Redesign 1.0</option>
+										
+										<option value="Schwab Charts" >Schwab Charts</option>
+										
+										<option value="Schwab Investment Ideas" >Schwab Investment Ideas</option>
+										
+										<option value="Schwab Public Charts" >Schwab Public Charts</option>
+										
+										<option value="Screener" >Screener</option>
+										
+										<option value="SE Glossary" >SE Glossary</option>
+										
+										<option value="SE Hub Page" >SE Hub Page</option>
+										
+										<option value="SE Promo" >SE Promo</option>
+										
+										<option value="SE Strategy" >SE Strategy</option>
+										
+										<option value="Searches" >Searches</option>
+										
+										<option value="Sectors/Products" >Sectors/Products</option>
+										
+										<option value="Software" >Software</option>
+										
+										<option value="Specific Report" >Specific Report</option>
+										
+										<option value="Stock Overview Page" >Stock Overview Page</option>
+										
+										<option value="Stock Ranking Activity" >Stock Ranking Activity</option>
+										
+										<option value="Stock Research" >Stock Research</option>
+										
+										<option value="Stock Screener" >Stock Screener</option>
+										
+										<option value="Stock Screener - Client " >Stock Screener - Client </option>
+										
+										<option value="Stocks" >Stocks</option>
+										
+										<option value="Stocks In Play" >Stocks In Play</option>
+										
+										<option value="Streaming Quotes" >Streaming Quotes</option>
+										
+										<option value="Subscriptions" >Subscriptions</option>
+										
+										<option value="Tabs" >Tabs</option>
+										
+										<option value="Todays Market" >Todays Market</option>
+										
+										<option value="Tools" >Tools</option>
+										
+										<option value="Trade Central" >Trade Central</option>
+										
+										<option value="Trading" >Trading</option>
+										
+										<option value="Trading Pages" >Trading Pages</option>
+										
+										<option value="Uncategorized" >Uncategorized</option>
+										
+										<option value="Undefined Category" >Undefined Category</option>
+										
+										<option value="Upgrade/Downgrade" >Upgrade/Downgrade</option>
+										
+										<option value="Velocity" >Velocity</option>
+										
+										<option value="Web FN" >Web FN</option>
+										
+										<option value="Webcast" >Webcast</option>
+										
+										<option value="Webroker Research" >Webroker Research</option>
+										
+									</select>
+								</div>
+							</td>
+							<td>
+								<div class="noVSpace">
+									<select name="in_ExcludeReporting" id="exclReport">
+										<option value=""></option>
+										<option value="0" selected>Reported</option>
+										<option value="1" >Hide</option>
+										<option value="2" >New</option>
+									</select>
+								</div>
+							</td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">121</div></td>
+							<td><div class="noVSpace"><input type="text" name="in_ProjectNote" value="Wall Street On Demand" id="inputProjectNote" /></div></td>
+							<td><div class="space">2002-01-29 16:05</div></td>
+							<td><div class="space">BOULDER\CS247</div></td>
+						</tr>
+						
+						<tr class="std" id="row1" onmouseover="changeRowStyle('row1', 'over')" onmouseout="changeRowStyle('row1', 'std')" onclick="toggleHilite('row1')">
+							<td><a href="javascript:sorry()"><img src="images/update.gif" class="action" alt="Update this row (id: 34268)" /></a></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">Portfolio: Rename</div></td>
+							<td><div class="space">Quotes</div></td>
+							<td><div class="space">Reported</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">129</div></td>
+							<td><div class="space">Wall Street On Demand</div></td>
+							<td><div class="space">2002-01-29 16:06</div></td>
+							<td><div class="space">BOULDER&#x5C;CS247</div></td>
+						</tr>
+						
+						<tr class="std" id="row2" onmouseover="changeRowStyle('row2', 'over')" onmouseout="changeRowStyle('row2', 'std')" onclick="toggleHilite('row2')">
+							<td><a href="javascript:sorry()"><img src="images/update.gif" class="action" alt="Update this row (id: 34269)" /></a></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">Get Interactive Chart</div></td>
+							<td><div class="space">Stocks</div></td>
+							<td><div class="space">Reported</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">142</div></td>
+							<td><div class="space">Reuters</div></td>
+							<td><div class="space">2002-01-29 16:20</div></td>
+							<td><div class="space">BOULDER&#x5C;CS247</div></td>
+						</tr>
+						
+						<tr class="std" id="row3" onmouseover="changeRowStyle('row3', 'over')" onmouseout="changeRowStyle('row3', 'std')" onclick="toggleHilite('row3')">
+							<td><a href="javascript:sorry()"><img src="images/update.gif" class="action" alt="Update this row (id: 34270)" /></a></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">Execute New Criteria (Stock Screener)</div></td>
+							<td><div class="space">Stock Screener</div></td>
+							<td><div class="space">Reported</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">185</div></td>
+							<td><div class="space">Wall Street On Demand</div></td>
+							<td><div class="space">2002-01-29 16:13</div></td>
+							<td><div class="space">BOULDER&#x5C;CS247</div></td>
+						</tr>
+						
+						<tr class="std" id="row4" onmouseover="changeRowStyle('row4', 'over')" onmouseout="changeRowStyle('row4', 'std')" onclick="toggleHilite('row4')">
+							<td><a href="javascript:editRow(4)"><img src="images/update.gif" class="action" alt="Update this row (id: 34271)" /></a></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">Previous 10 / Next 10 Click</div></td>
+							<td><div class="space">Stock Screener</div></td>
+							<td><div class="space">Reported</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">185</div></td>
+							<td><div class="space">Wall Street On Demand</div></td>
+							<td><div class="space">2002-01-29 16:17</div></td>
+							<td><div class="space">BOULDER&#x5C;CS247</div></td>
+						</tr>
+						
+						<tr class="std" id="row5" onmouseover="changeRowStyle('row5', 'over')" onmouseout="changeRowStyle('row5', 'std')" onclick="toggleHilite('row5')">
+							<td><a href="javascript:sorry()"><img src="images/update.gif" class="action" alt="Update this row (id: 34272)" /></a></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">Change To Different Saved Screen Portfolio</div></td>
+							<td><div class="space">Stock Screener</div></td>
+							<td><div class="space">Reported</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">185</div></td>
+							<td><div class="space">Wall Street On Demand</div></td>
+							<td><div class="space">2002-01-29 16:12</div></td>
+							<td><div class="space">BOULDER&#x5C;CS247</div></td>
+						</tr>
+						
+						<tr class="std" id="row6" onmouseover="changeRowStyle('row6', 'over')" onmouseout="changeRowStyle('row6', 'std')" onclick="toggleHilite('row6')">
+							<td><a href="javascript:sorry()"><img src="images/update.gif" class="action" alt="Update this row (id: 34273)" /></a></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">Save Screen To Database</div></td>
+							<td><div class="space">Stock Screener</div></td>
+							<td><div class="space">Reported</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">185</div></td>
+							<td><div class="space">Wall Street On Demand</div></td>
+							<td><div class="space">2002-01-29 16:18</div></td>
+							<td><div class="space">BOULDER&#x5C;CS247</div></td>
+						</tr>
+						
+						<tr class="std" id="row7" onmouseover="changeRowStyle('row7', 'over')" onmouseout="changeRowStyle('row7', 'std')" onclick="toggleHilite('row7')">
+							<td><a href="javascript:sorry()"><img src="images/update.gif" class="action" alt="Update this row (id: 34274)" /></a></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">Go To Saved Screens Page</div></td>
+							<td><div class="space">Stock Screener</div></td>
+							<td><div class="space">Reported</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">185</div></td>
+							<td><div class="space">Wall Street On Demand</div></td>
+							<td><div class="space">2002-01-29 16:16</div></td>
+							<td><div class="space">BOULDER&#x5C;CS247</div></td>
+						</tr>
+						
+						<tr class="std" id="row8" onmouseover="changeRowStyle('row8', 'over')" onmouseout="changeRowStyle('row8', 'std')" onclick="toggleHilite('row8')">
+							<td><a href="javascript:sorry()"><img src="images/update.gif" class="action" alt="Update this row (id: 34275)" /></a></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">Screen - What Went Wrong</div></td>
+							<td><div class="space">Stock Screener</div></td>
+							<td><div class="space">Reported</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">0</div></td>
+							<td><div class="space">195</div></td>
+							<td><div class="space">Wall Street On Demand</div></td>
+							<td><div class="space">2002-01-29 16:19</div></td>
+							<td><div class="space">BOULDER&#x5C;CS247</div></td>
+						</tr>
+						
+						<tr class="std" id="row9" onmouseover="changeRowStyle('row9', 'over')" onmouseout="changeRowStyle('row9', 'std')" onclick="toggleHilite('row9')">
+							<td><a href="javascript:sorry()"><img src="images/update.gif" class="action" alt="Update this row (id: 34276)" /></a></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">Auto Login / Registration</div></td>
+							<td><div class="space">Undefined Category</div></td>
+							<td><div class="space">Hide</div></td>
+							<td><div class="space">164</div></td>
+							<td><div class="space">375</div></td>
+							<td><div class="space">222</div></td>
+							<td><div class="space">-</div></td>
+							<td><div class="space">2001-11-06 12:11</div></td>
+							<td><div class="space">BOULDER&#x5C;CS249</div></td>
+						</tr>
+						
+			</table>
+			<!-- Current page indicator and paging controls below record listing. -->
+			<div class="paging">Page 1 of 299.<br />
+				
+				<a href="javascript:void(0)" onclick="sorry(); return false">Next &gt;&gt;</a>
+				
+				Page <input type="text" name="goToBox2" class="goTo" id="goToBox2" value="" onkeypress="return numHandle(event,false,false)" />&nbsp;<a href="javascript:void(0)" onclick="goToPageFromBox(2, 299);return false">Go</a> &nbsp;&nbsp;<span id="goToError2" class="warning"></span>
+				
+			</div>
+			
+			
+				<div class="buttonRow">
+					<input type="button" name="cancelButton" value="Cancel" onclick="window.location.href='display.htm'" class="button" />
+					<input type="button" name="saveButton" value="Save" onclick="validateForm()" class="button" />
+					<input type="hidden" name="in_WebActionID" value="34267" />
+				</div>
+			
+	
+	</div><!-- End results block. -->
+		
+	<input type="hidden" name="pageAction"  id="pageAction"  value="" />
+	<input type="hidden" name="rowToEdit"   id="rowToEdit"   value="" /> <!-- Set by Javascript at time of form submission if editing. -->
+	<input type="hidden" name="firstLine"   id="firstLine"   value="1" /> <!-- Will be overwritten by Javascript if user follows Previous/Next links. -->
+	<input type="hidden" name="colWidthStr" id="colWidthStr" value="" /> <!-- Set by Javascript at time of form submission. -->
+</form>
+
+<div id="instructions">
+	Instructions/notes:
+	<ol>
+		<li>Columns showing horizontal arrows can be adjusted. Click on <img src="images/drag_development.gif" alt="" /> and drag to the desired width.</li>
+		<li>* Month beginning: 1 Jul 04<br />** Week beginning: 20 Jun 04</li>
+		<li>To change an entry, click on the "U" (update) button at the left of the row.</li>
+		<li>To save changes, you can click on the "S" (save) button at the left of the row, or the Save button at the bottom of the page.</li>
+		<li>Use the &quot;Where&quot; line of the update section to specify restrictions on the records returned e.g. "Action equals 400"</li>
+		<li>You can specify up to three restrictions or &quot;filter sets&quot; on the &quot;Where&quot; line of the update section.</li>
+		<li>If entering a date to filter on, enter in the conventional format: <b>m/d/yy</b> or <b>m/d/yyyy</b> </li>
+		<li>Text entries for &quot;Where&quot; line of the update section are NOT case-sensitive.</li>
+		<li>Text entries for &quot;Where&quot; line of the update section can be &quot;NULL&quot;. Note that NULL is not the same as an empty string (leaving the text entry box blank).</li>
+		<li>Click on a row to highlight the row so you can read across easily; click on it again to remove the highlight. If the page is updated, the highlight will be lost.</li>
+		<li>To see the ID for the row, hold you mouse over the update/save button at the left of the row.</li>
+	</ol>
+</div>
+
+</body>
+</html>

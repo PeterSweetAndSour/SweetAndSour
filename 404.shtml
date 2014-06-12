@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta content="text/html; charset=iso-8859-1" http-equiv="Content-type"/>
+	<title>
+		Page Not Found -  
+		[Sweet and Sour]
+	</title>
+	<link href="http://www.sweetandsour.org/favicon.ico" type="images/x-icon" rel="shortcut icon"/>
+	<link href="/css/styles_20090920.min.css" type="text/css" rel="stylesheet"/>
+	<style type="text/css">
+		div#imageMenu {height:228px}
+	</style>
+</head>
+<body class="">
+		<a name="top"/>
+	<div class="page">
+		<div id="header">
+			<img alt="Sweet and Sour" src="/images/SweetAndSourMobile_20081220.gif" id="logoMobile"/>
+			<div id="logo"><a title="Go to home page" href="/home/index.php?fuseAction=home"><span> </span>Sweet and Sour home</a></div>
+			<p id="tagline">One is sweet and the other is … a web developer</p>
+			
+			<div id="menuWrapper">
+				<div id="imageMenu">
+					<img alt="Sweet and Sour" src="/images/nothingthere_20090113.jpg" />
+				</div>
+			</div>
+		</div>
+
+		<div class="clearfix" id="content">
+			<h1>Page Not Found</h1>
+			<h3>(or HTTP error 404)</h3>
+			<div class="story">
+				<p>Whatever you were looking for is not here. Sorry it didn't work out for you.</p>
+				<p>Go to the <a href="/home/index.php" title="Home page">home page</a> and start again from there.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

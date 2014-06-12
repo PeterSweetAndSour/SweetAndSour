@@ -1,0 +1,158 @@
+/* ChowFun is a free font by Harold Lohner from http://www.haroldsfonts.com/chowfun.html */
+@font-face {
+	font-family: 'Conv_Chowfun';
+	src: url('fonts/Chowfun.eot');
+	src: 
+		local('?'), 
+		url('../css/fonts/Chowfun.woff') format('woff'), 
+		url('../css/fonts/Chowfun.ttf') format('truetype'), 
+		url('../css/fonts/Chowfun.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* *************************************************************
+Eric Meyer's revised reset  
+http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/
+************************************************************* */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* *************************************************************
+Everything else
+************************************************************* */
+body {
+	background:#82bffa url(http://sweetandsour.org.s3.amazonaws.com/images/bgPage_20080607.gif) repeat-x scroll 0 0;
+	margin:0;
+	padding:0;
+	font-family:Verdana, Helvetica, sans-serif;
+	font-size:0.75em; /* 12px default */
+}
+
+.wrapper {
+	background-color: #ccc;
+	width: 780px;
+	margin:10px auto;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+section {
+	background-color: white;
+	margin:0 0 10px 0;
+	padding: 10px;
+	border-radius: 5px;
+	
+}
+
+section.photos {
+	margin: 10px 0 0 0;
+}
+section.folders,
+section:last-child {
+	margin: 0;
+}
+
+.photo img {
+	float: right;
+	box-shadow: 5px 5px 5px #999;
+	border: 1px solid #000;
+	margin: 0 10px 10px 10px;
+}
+
+.negativeHilite {
+	background-color: #fffcfc;
+}
+
+h1 {
+	font-family: 'Conv_Chowfun',Sans-Serif;
+	color: #900;
+	font-size: 2em;
+	margin-bottom: 0.75em;
+}
+
+/* Utility classes */
+.txtR {
+	text-align: right;
+}
+.flR {
+	float: right;
+}
+
+.hMarginT { margin-top: 10px; }
+.hMarginB { margin-bottom: 10px; }
+
+.clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix {display:inline-block;}
+.clearfix {display:block;}
+* html .clearfix {height:1px;}
+
+.pos {
+	color: #4a0;
+	font-weight: bold;
+}
+.neg {
+	color: #c00;
+	font-weight: bold;
+}
+
+/* Pagination */
+.pagination {
+	padding: 3px;
+	margin: 5px 0;
+	background-color: white;
+	border-radius: 3px;
+	float: right;
+	color: #999;
+}
+.pagination a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #33d;
+}
+.pagination a:hover {
+	text-decoration: underline;
+	color: #d33;
+}
+
+button {
+	border: 1px solid darkgreen;
+	background-color: green;
+	border-radius: 4px;
+	box-shadow: inset 1px 6px 12px lightgreen, inset -1px -10px 5px darkgreen, 1px 2px 1px black;
+	-o-box-shadow: inset 1px 6px 12px lightgreen, inset -1px -10px 5px darkgreen, 1px 2px 1px black;
+	-webkit-box-shadow: inset 1px 6px 12px lightgreen, inset -1px -10px 5px darkgreen, 1px 2px 1px black;
+	-moz-box-shadow: inset 1px 6px 12px lightgreen, inset -1px -10px 5px darkgreen, 1px 2px 1px black;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	padding: 5px 30px;
+	font-weight: bold;
+}
+
+
