@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<HEAD>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>A complete waste of time: Minesweeper</title>
+	<style>
+		h1 {
+			font-size: 18pt;
+			font-family: Verdana, Helvetica, sans-serif;
+			font-weight: bold;
+			margin-top: 4pt;
+			margin-bottom: 0pt;
+		}
+
+		p {
+			font-size: 10pt;
+			font-family: Verdana, Helvetica, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 8pt;
+		}
+
+		a:link, a:visited {
+			color: #0000CC;
+			font-family: Verdana, Helvetica, sans-serif;
+		}
+
+		a:hover, a:visited:hover {
+			color: red;
+			font-family: Verdana, Helvetica, sans-serif;
+		}
+
+		ul { /*Unordered list.*/
+			font-size: 10pt;
+			font-family: Verdana, Helvetica, sans-serif;
+			margin-top: 0pt;
+			margin-bottom: 10pt;
+			text-align: left;
+		}
+		
+	</style>
+</head>
+<body>
+<div align="center">
+<table border=0 width="600" >
+	<tr>
+		<td align="center" colspan="2">
+			<h1>Minesweeper game</h1>
+			<p>written in Java by Peter</p>
+		</td>
+	</tr>
+
+	<tr>
+		<td valign="top">
+			<applet code="Mines.class" width="280" height="230"></applet>
+		</td>
+
+		<td valign="top">
+			<p>Standard rules:</p>
+			<ul>
+				<li>ten mines are laid in the grid on the first click
+				<li>a number on a square indicates the number of mines in the surrounding eight squares
+				<li>right-click on a square to "flag" a mine; right-click again to put a question mark on the square if you are not sure
+				<li>identify all squares without clicking on a mine
+				<li>do it as fast as you can - the clock is ticking
+			</ul>
+
+		<p>Here is the source code:</p>
+		<ul>
+			<li><a href="dsp_mines.htm">Mines.java</a>
+			<li><a href="dsp_gameButton.htm">GameButton.java</a>
+			<li><a href="dsp_successDialog.htm">SuccessDialog.java</a>
+		</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,968 @@
+
+
+<HTML>
+	<HEAD>
+		<link rel="stylesheet" href="/css/global.css" type="text/css" /> 
+		
+<script language="javascript" src="/scripts/common.js"></script>
+		
+<link href="/VAM/Appearance/VAMStyleSheet.css" type="text/css" rel="stylesheet">
+		<title>CoCoRaHS - Community Collaborative Rain, Hail &amp; Snow Network</title>
+		
+		
+	</HEAD>
+	<body id="Body" bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" OnLoad="if(PreloadImages){PreloadImages('/images/header_logo.gif','/images/header_titlebar.gif','/images/header_endcap.gif','/images/header_titlebar_left.gif','/images/header_titlebar_tile.gif','/images/header_menubar_tile.gif','/images/leftmenu_top.gif','/images/leftmenu_tile.gif','/images/leftmenu_titlebar.gif','/images/leftmenu_bottom.gif')};">
+		<form name="Form1" method="post" action="ListDailyPrecipReports.aspx" language="javascript" onsubmit="return VAM_ValOnSubmit();" id="Form1" onreset="if (window.setTimeout) window.setTimeout('VAM_OnReset(true);', 100);">
+<input type="hidden" name="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" value="" />
+<input type="hidden" name="VAM_Group" value="" />
+<input type="hidden" name="__VIEWSTATE" value="dDwtMjE0MDYzODIyMTt0PHA8bDxSZXR1cm5VcmxLZXk7PjtsPC9TdGF0ZS5hc3B4P3N0YXRlPURDOz4+O2w8aTwwPjs+O2w8dDw7bDxpPDEwPjs+O2w8dDxwPGw8T25Mb2FkOz47bDxpZihQcmVsb2FkSW1hZ2VzKXtQcmVsb2FkSW1hZ2VzKCcvaW1hZ2VzL2hlYWRlcl9sb2dvLmdpZicsJy9pbWFnZXMvaGVhZGVyX3RpdGxlYmFyLmdpZicsJy9pbWFnZXMvaGVhZGVyX2VuZGNhcC5naWYnLCcvaW1hZ2VzL2hlYWRlcl90aXRsZWJhcl9sZWZ0LmdpZicsJy9pbWFnZXMvaGVhZGVyX3RpdGxlYmFyX3RpbGUuZ2lmJywnL2ltYWdlcy9oZWFkZXJfbWVudWJhcl90aWxlLmdpZicsJy9pbWFnZXMvbGVmdG1lbnVfdG9wLmdpZicsJy9pbWFnZXMvbGVmdG1lbnVfdGlsZS5naWYnLCcvaW1hZ2VzL2xlZnRtZW51X3RpdGxlYmFyLmdpZicsJy9pbWFnZXMvbGVmdG1lbnVfYm90dG9tLmdpZicpfVw7Oz4+O2w8aTwxPjs+O2w8dDxwPGw8b25yZXNldDs+O2w8aWYgKHdpbmRvdy5zZXRUaW1lb3V0KSB3aW5kb3cuc2V0VGltZW91dCgnVkFNX09uUmVzZXQodHJ1ZSlcOycsIDEwMClcOzs+PjtsPGk8Mj47aTw0Pjs+O2w8dDw7bDxpPDE+Oz47bDx0PDtsPGk8MD47aTwxPjtpPDI+Oz47bDx0PHA8bDxUZXN0Oz47bDxvPGY+Oz4+Ozs+O3Q8cDxsPFRlc3Q7PjtsPG88Zj47Pj47Oz47dDxwPGw8VGVzdDs+O2w8bzxmPjs+Pjs7Pjs+Pjs+Pjt0PDtsPGk8NT47aTw3Pjs+O2w8dDxwPDtwPGw8c3R5bGU7PjtsPHZpc2liaWxpdHk6aGlkZGVuXDtkaXNwbGF5Om5vbmVcOzs+Pj47Oz47dDw7bDxpPDM+O2k8NT47PjtsPHQ8O2w8aTwzPjtpPDU+O2k8OT47PjtsPHQ8O2w8aTwwPjtpPDI+Oz47bDx0PHQ8cDxwPGw8RGF0YVRleHRGaWVsZDtEYXRhVmFsdWVGaWVsZDs+O2w8U3RhdGVOYW1lO1N0YXRlQ29kZTs+Pjs+O3Q8aTw1Mj47QDxTZWxlY3QgU3RhdGU7QWxhYmFtYTtBbGFza2E7QXJpem9uYTtBcmthbnNhcztDYWxpZm9ybmlhO0NvbG9yYWRvO0Nvbm5lY3RpY3V0O0RlbGF3YXJlO0Rpc3RyaWN0IG9mIENvbHVtYmlhO0Zsb3JpZGE7R2VvcmdpYTtIYXdhaWk7SWRhaG87SWxsaW5vaXM7SW5kaWFuYTtJb3dhO0thbnNhcztLZW50dWNreTtMb3Vpc2lhbmE7TWFpbmU7TWFyeWxhbmQ7TWFzc2FjaHVzZXR0cztNaWNoaWdhbjtNaW5uZXNvdGE7TWlzc2lzc2lwcGk7TWlzc291cmk7TW9udGFuYTtOZWJyYXNrYTtOZXZhZGE7TmV3IEhhbXBzaGlyZTtOZXcgSmVyc2V5O05ldyBNZXhpY287TmV3IFlvcms7Tm9ydGggQ2Fyb2xpbmE7Tm9ydGggRGFrb3RhO09oaW87T2tsYWhvbWE7T3JlZ29uO1Blbm5zeWx2YW5pYTtSaG9kZSBJc2xhbmQ7U291dGggQ2Fyb2xpbmE7U291dGggRGFrb3RhO1Rlbm5lc3NlZTtUZXhhcztVdGFoO1Zlcm1vbnQ7VmlyZ2luaWE7V2FzaGluZ3RvbjtXZXN0IFZpcmdpbmlhO1dpc2NvbnNpbjtXeW9taW5nOz47QDxcZTsxOzI7NDs1OzY7ODs5OzEwOzExOzEyOzEzOzE1OzE2OzE3OzE4OzE5OzIwOzIxOzIyOzIzOzI0OzI1OzI2OzI3OzI4OzI5OzMwOzMxOzMyOzMzOzM0OzM1OzM2OzM3OzM4OzM5OzQwOzQxOzQyOzQ0OzQ1OzQ2OzQ3OzQ4OzQ5OzUwOzUxOzUzOzU0OzU1OzU2Oz4+O2w8aTw5Pjs+Pjs7Pjt0PHQ8cDxwPGw8RW5hYmxlZDs+O2w8bzx0Pjs+Pjs+O3Q8aTwyPjtAPEFMTCBDT1VOVElFUztEQyAtIERpc3RyaWN0IE9mIENvbHVtYmlhOz47QDxcZTsxOz4+Oz47Oz47Pj47dDw7bDxpPDE+O2k8Nz47PjtsPHQ8cDxwPGw8RTs+O2w8MjAxMS02LTEtMC0wLTAtMDs+Pjs+Ozs+O3Q8cDxwPGw8RTs+O2w8MjAxMS04LTEtMC0wLTAtMDs+Pjs+Ozs+Oz4+O3Q8O2w8aTwxPjs+O2w8dDw7bDxpPDE+Oz47bDx0PHA8O3A8bDxvbmtleXByZXNzO29ua2V5ZG93bjs+O2w8cmV0dXJuKFZBTV9LZXlQcmVzcyh0aGlzLCBldmVudCkpO3JldHVybihWQU1fT25LZXlEb3duKHRoaXMsIGV2ZW50KSk7Pj4+Ozs+Oz4+Oz4+Oz4+O3Q8cDxwPGw8U29ydEZpZWxkS2V5O1NvcnREaXJlY3Rpb25LZXk7PjtsPFJlcG9ydERhdGU7QXNjOz4+Oz47bDxpPDM+O2k8NT47aTw3PjtpPDk+O2k8MTE+Oz47bDx0PHA8cDxsPFRleHQ7VmlzaWJsZTtDeWNsaWM7RGlyZWN0aW9uO1N0ZXBTaXplO0NhdXNlU3luYztSZWNpZXZlU3luYztEZXZpZGVyO1BhZ2VzQ291bnQ7RW5hYmxlZDtDdXJyZW50UGFnZTs+O2w8Jmx0XDtCYWNrO288dD47bzx0PjtDb2NvcmFocy5XZWJDb250cm9scy5QYWdlcnMuUGFnaW5nRGlyZWN0aW9uRW51bSwgQ29jb3JhaHMuV2ViQ29udHJvbHMsIFZlcnNpb249MS4wLjQzMzEuMTUsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbDxCYWNrPjtpPDE+O288dD47bzx0PjtcZTtpPDI+O288Zj47aTwxPjs+Pjs+Ozs+O3Q8cDxsPFZpc2libGU7PjtsPG88dD47Pj47Oz47dDxwPHA8bDxQYWdlc0NvdW50O0N1cnJlbnRQYWdlO0NhdXNlU3luYztSZWNpZXZlU3luYztWaXNpYmxlOz47bDxpPDI+O2k8MT47bzx0PjtvPHQ+O288dD47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7VmlzaWJsZTtDeWNsaWM7RGlyZWN0aW9uO1N0ZXBTaXplO0NhdXNlU3luYztSZWNpZXZlU3luYztEZXZpZGVyO1BhZ2VzQ291bnQ7Q3VycmVudFBhZ2U7PjtsPE5leHQmZ3RcOztvPHQ+O288dD47NTA8TmV4dD47aTwxPjtvPHQ+O288dD47XGU7aTwyPjtpPDE+Oz4+Oz47Oz47dDxAMDxwPHA8bDxQYWdlQ291bnQ7XyFJdGVtQ291bnQ7XyFEYXRhU291cmNlSXRlbUNvdW50O0RhdGFLZXlzOz47bDxpPDE+O2k8NTA+O2k8NTA+O2w8Pjs+Pjs+Ozs7Ozs7Ozs7Oz47bDxpPDA+Oz47bDx0PDtsPGk8MD47PjtsPHQ8O2w8aTw5Pjs+O2w8dDw7bDxpPDA+Oz47bDx0PEA8Vmlldzs+Ozs+Oz4+Oz4+Oz4+Oz4+Oz4+Oz4+Oz4+Oz4+Oz4+Oz4+Oz4+O2w8ZnJtUHJlY2lwUmVwb3J0U2VhcmNoOnVjU3RhdGlvblRleHRGaWVsZHNGaWx0ZXI6Y2JsVGV4dEZpZWxkc1RvU2VhcmNoOjA7ZnJtUHJlY2lwUmVwb3J0U2VhcmNoOnVjU3RhdGlvblRleHRGaWVsZHNGaWx0ZXI6Y2JsVGV4dEZpZWxkc1RvU2VhcmNoOjE7ZnJtUHJlY2lwUmVwb3J0U2VhcmNoOnVjU3RhdGlvblRleHRGaWVsZHNGaWx0ZXI6Y2JsVGV4dEZpZWxkc1RvU2VhcmNoOjE7ZnJtUHJlY2lwUmVwb3J0U2VhcmNoOnVjRGF0ZVJhbmdlRmlsdGVyOmRjU3RhcnREYXRlO2ZybVByZWNpcFJlcG9ydFNlYXJjaDp1Y0RhdGVSYW5nZUZpbHRlcjpkY0VuZERhdGU7Pj4EcqjQNBybAo8zXEEKs67L00C3tQ==" />
+
+<script language="javascript" type="text/javascript">
+<!--
+	function __doPostBack(eventTarget, eventArgument) {
+		var theform;
+		if (window.navigator.appName.toLowerCase().indexOf("microsoft") > -1) {
+			theform = document.Form1;
+		}
+		else {
+			theform = document.forms["Form1"];
+		}
+		theform.__EVENTTARGET.value = eventTarget.split("$").join(":");
+		theform.__EVENTARGUMENT.value = eventArgument;
+		theform.submit();
+	}
+// -->
+</script>
+<script type="text/javascript" src="/ig_common/20043/scripts/ig_edit.js" ></script>
+
+	<script type="text/javascript" src="/ig_common/20043/scripts/ig_csom.js" ></script>
+
+	<script type='text/javascript' src='/VAM/3_0_3/VAM.js'></script>
+<script type='text/javascript' src='/VAM/3_0_3/VAM_DTTB.js'></script>
+<script type='text/javascript'>
+<!--
+var gVAM_ValFlds = new Array;
+var gVAM_PostOnChange=false;
+var gVAM_PostOnSubmit=true;
+var gVAM_FocusOnSubmit=false;
+var gVAM_AlertOnSubmit=false;
+var gVAM_TxtHFCss='';
+var gVAM_NonTxtHFCss='';
+var gVAM_AlertTemplate='';
+var gVAM_AlertLeadText='';
+var gVAM_AlertListStyle=true;
+var gVAMBlinkTime=1000;
+var gVAMBlinkOnChange=0;
+var gVAMBlinkOnSubmit=0;
+var gVAMSubOrder=new Array(1,2,0);
+// -->
+</script>
+<script type='text/javascript' src='/VAM/VAM_Extension.js'></script>
+
+
+
+			<table align="left" cellSpacing="0" cellPadding="0" width="800" height="100%" border="0">
+				<TBODY>
+					<tr>
+						<td vAlign="top" align="left" colSpan="3" height="95" width="100%" >
+			
+<TABLE WIDTH="100%" height="135" BORDER="0" CELLPADDING="0" CELLSPACING="0"><!-- WIDTH="875"  -->
+	<TR>
+		<TD width="135" height="135" ROWSPAN="4" vAlign="top" align="left">
+			<a href="/"><IMG SRC="/images/header_logo.gif" WIDTH="135" HEIGHT="140" border="0" ALT=""></a></TD>
+		<TD class="header_titlebar" height="51" COLSPAN="2" vAlign="top" align="left" >
+			<IMG border="0" SRC="/images/header_titlebar.gif" WIDTH="580" HEIGHT="51" ALT=""></TD>
+		<TD class="header_titlebar" height="51" valign="bottom"><a href="http://cocorahs.blogspot.com/" title="Go to CoCoRaHS Blog" target="blog" ><img src="/images/icons/socialmedia/blogger_16.png" width="16" height="16" border="0"></a>&nbsp;<a href="http://www.facebook.com/CoCoRaHS" title="Go to CoCoRaHS Facebook page" target="facebook" ><img src="/images/icons/socialmedia/facebook_16.png" width="16" height="16" border="0"></a>&nbsp;<a href="http://twitter.com/cocorahs/" title="Go to CoCoRaHS Twitter page" target="twitter" ><img src="/images/icons/socialmedia/twitter_16.png"  width="16" height="16" border="0"></a>&nbsp;<a href="http://www.youtube.com/cocorahs/" title="Go to CoCoRaHS YouTube Channel" target="youtube" ><img src="/images/icons/socialmedia/youtube_16.png"  width="16" height="16" border="0"></a></td>
+		<TD HEIGHT="83" width="82" ROWSPAN="2" vAlign="top" align="left">
+			<IMG SRC="/images/header_endcap.gif" WIDTH="82" HEIGHT="83" ALT=""></TD>
+	</TR>
+	<TR>
+		<TD width="52" HEIGHT="43" ROWSPAN="2" vAlign="top" align="left" ><IMG border="0" SRC="/images/header_titlebar_left.gif" WIDTH="52" HEIGHT="43" ALT=""></TD>
+		<TD width="530" height="32" class="header_menubar"  vAlign=top align=left>
+			
+<div class="topmenu" nowrap >
+	<a href="/">Home</a> | 
+	<a href="/States.aspx">States</a> | 
+	<a href="/ViewData/">View Data</a> | 
+	<a href="/Maps/">Maps</a>
+	<img src="/images/spacer.gif" width="85" height="5" >
+		<a href="/Admin/MyDataEntry/">My Data Entry</a> | <a href="/Login.aspx">Login</a>
+</div>
+
+
+			</TD>
+		<TD class="header_menubar" vAlign=top align=center>
+			<IMG border="0" height=2 alt="" src="/images/spacer.gif" width=1>
+		</TD>
+	</TR>
+	<TR><!-- Page Title Area  -->
+		<TD class="PageTitle" colSpan="3" rowSpan="2" valign="top" >
+			
+		View Data : List Daily Precipitation Reports	
+	<IMG height=22 alt="" border="0" src="/images/spacer.gif" width=1></TD>
+	</TR>
+	<TR>
+		<TD valign="top" align="left" height=46"><IMG border="0" style="WIDTH: 52px" height=46 src="/images/spacer.gif" width=52></TD>
+	</TR>
+</TABLE>			
+						
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3" vAlign="top">
+							<table border="0" width="100%" cellspacing="0" cellpadding="0" id="tblMainBody">
+								<tr>
+									<TD vAlign="top" width="200" height="500" align="left" style="WIDTH: 200px; ">
+									
+		
+<div class="MenuPanel">
+	<div class="MenuPanelHeader">View Data</div>
+	<div class="MenuPanelBody">
+		<ul class="MenuPanelList">
+			<li><a href="/ViewData/ListDailyPrecipReports.aspx" >Daily Precip Reports </a></li>
+			<li><a href="/ViewData/ListDailyComments.aspx" >Daily Comments Reports</a></li>
+			<li><a href="/ViewData/ListIntensePrecipReports.aspx" >Significant Weather Reports</a></li>
+			<li><a href="/ViewData/ListMultiDayPrecipReports.aspx" >Multiple Day Reports</a></li>
+			<li><a href="/ViewData/ListDroughtImpactReports.aspx" >Drought Impact Reports</a></li>
+		
+			<br><br>
+			<li><a href="/ViewData/ListDaysWithHail.aspx" >Days with Hail</a></li>
+			<li><a href="/ViewData/ListHailReports.aspx" >Search Hail Reports</a></li>			
+			<li><a href="/ViewData/ListStationHailReports.aspx" >Station Hail Reports</a></li>			
+			<br><br>
+			<li><a href="/ViewData/StationPrecipSummary.aspx" >Station Precip Summary</a></li>
+			<li><a href="/ViewData/StationSnowSummary.aspx" >Station Snow Summary</a></li>
+			
+			<li><a href="/ViewData/RainyDaysReport.aspx" >Rainy Days Report</a></li>
+			<li><a href="/ViewData/TotalPrecipSummary.aspx" >Total Precip Summary</a></li>
+					
+			<li><a href="/Stations/ListStations.aspx" >List Stations</a></li>
+		</ul>	
+	</div>
+	<div class="MenuPanelTitle">PA FROST Data</div>
+	<div class="MenuPanelBody">
+		<ul class="MenuPanelList">
+			<li><a href="/ViewData/ListFrostReports.aspx">Frost</a></li>		
+			<li><a href="/ViewData/ListOpticsReports.aspx">Optics</a></li>
+			<li><a href="/ViewData/ListSnowflakeReports.aspx">Snowflake</a></li>
+			<li><a href="/ViewData/ListThunderReports.aspx">Thunder</a></li>
+		</ul>	
+	</div>
+	<div class="MenuPanelFooter"></div>	
+</div>
+
+	
+										
+										
+										
+<div class="MenuPanel">
+	<div class="MenuPanelHeader">Main Menu</div>
+	<div class="MenuPanelBody">
+		<ul class="MenuPanelList">
+			<li><a href="/" >Home</a></li>
+			<li><a href="/Content.aspx?page=aboutus" >About Us</a></li>
+			<li><a href="/Application.aspx">Join CoCoRaHS</a></li>			
+			<li><a href="/Content.aspx?page=contactus">Contact Us</a></li>
+			<li><a href="/Content.aspx?page=2010yearend">Donate</a></li>
+		</ul>	
+	</div>
+	<div class="MenuPanelTitle">Resources</div>
+	<div class="MenuPanelBody">
+		<ul class="MenuPanelList">
+
+			<li><a href="/Content.aspx?page=Help">FAQ / Help</a></li>
+		<!--	<li><a href="/Content.aspx?page=training">Training</a></li> -->		
+			<li><a href="/Content.aspx?page=education">Education</a></li>	
+			<li><a href="/Content.aspx?page=training_slideshows">Training Slide-Shows</a></li>
+            <li><a href="/Content.aspx?page=TrainingVideo">Videos</a></li>
+			<li><a href="/Content.aspx?page=droughtimpactreports">Drought Impacts</a></li>	
+			<br><br>
+			<li><a href="/Content.aspx?page=coord">Volunteer Coordinators</a></li>
+			<li><a href="/Content.aspx?page=HailPadDropOff">Hail Pad <br>Distribution/Drop-off</a></li>
+			<li><a href="/Content.aspx?page=HelpNeeded">Help Needed</a></li>
+			<li><a href="/Content.aspx?page=PrintableForms">Printable Forms</a></li>			
+				<br><br>
+				
+		
+			<li><a href="/Content.aspx?page=catch" ><i>The Catch</i></a></li>
+			
+		<li><a href="/Content.aspx?page=mod&mod=1">Message of the Day</a></li>
+		<li><a href="/Content.aspx?page=dataanalysis">Data Analysis</a></li>
+		<li><a href="http://cocorahs.blogspot.com/" target="_blank">CoCoRaHS Blog</a></li>		
+		<li><a href="/Content.aspx?page=groups" >Web Groups</a></li>
+		<li><a href="/Content.aspx?page=StateNewsletters">State Newsletters</a></li>
+		<li><a href="/Content.aspx?page=MasterGardener">Master Gardener Guide</a></li>		
+		<li><a href="/Content.aspx?page=50StatesClimates">State Climate Series</a></li>
+			
+<br><br>
+			<li><a href="/Content.aspx?page=sponsors">Sponsors</a></li>			
+		
+			<li><a href="/Content.aspx?page=links">Links</a></li>
+			<li><a href="/Content.aspx?page=store" target="_blank" >CoCoRaHS Store</a></li>
+
+		</ul>	
+	</div>
+	<div class="MenuPanelFooter">&nbsp;</div>
+</div>
+
+										
+																	
+										&nbsp;       
+										
+									</TD>
+									<td id="tdMainBody" class="MainBody" valign="top" width="100%" height="100%" align="left">
+										
+										
+										<div id="ValidationSummary1" class="ErrorBox" style="color:#C00000;background-color:Beige;border-color:#C00000;border-width:1px;border-style:Solid;width:500px;visibility:hidden;display:none;">
+
+</div>
+										
+	
+	
+	
+<table class="ControlWrapper" cellspacing="0" border="0">
+	<tr>
+		<td class="ControlHeader" colspan="2">Search Daily Precipitation Reports</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="ControlBody" nowrap >
+		<strong>Station Fields: <input name="frmPrecipReportSearch:ucStationTextFieldsFilter:tbTextFieldValue" type="text" id="frmPrecipReportSearch_ucStationTextFieldsFilter_tbTextFieldValue" />
+<span id="frmPrecipReportSearch_ucStationTextFieldsFilter_cblTextFieldsToSearch"><input id="frmPrecipReportSearch_ucStationTextFieldsFilter_cblTextFieldsToSearch_0" type="checkbox" name="frmPrecipReportSearch:ucStationTextFieldsFilter:cblTextFieldsToSearch:0" /><label for="frmPrecipReportSearch_ucStationTextFieldsFilter_cblTextFieldsToSearch_0">Station Number</label><input id="frmPrecipReportSearch_ucStationTextFieldsFilter_cblTextFieldsToSearch_1" type="checkbox" name="frmPrecipReportSearch:ucStationTextFieldsFilter:cblTextFieldsToSearch:1" /><label for="frmPrecipReportSearch_ucStationTextFieldsFilter_cblTextFieldsToSearch_1">Station Name</label></span>
+ </strong>
+		</td>
+	</tr>
+  <TR>
+    <TD colSpan="2" class="ControlBody"><strong>Location: </strong><select name="frmPrecipReportSearch:ucStateCountyFilter:ddlState" onchange="__doPostBack('frmPrecipReportSearch$ucStateCountyFilter$ddlState','')" language="javascript" id="frmPrecipReportSearch_ucStateCountyFilter_ddlState">
+	<option value="">Select State</option>
+	<option value="1">Alabama</option>
+	<option value="2">Alaska</option>
+	<option value="4">Arizona</option>
+	<option value="5">Arkansas</option>
+	<option value="6">California</option>
+	<option value="8">Colorado</option>
+	<option value="9">Connecticut</option>
+	<option value="10">Delaware</option>
+	<option selected="selected" value="11">District of Columbia</option>
+	<option value="12">Florida</option>
+	<option value="13">Georgia</option>
+	<option value="15">Hawaii</option>
+	<option value="16">Idaho</option>
+	<option value="17">Illinois</option>
+	<option value="18">Indiana</option>
+	<option value="19">Iowa</option>
+	<option value="20">Kansas</option>
+	<option value="21">Kentucky</option>
+	<option value="22">Louisiana</option>
+	<option value="23">Maine</option>
+	<option value="24">Maryland</option>
+	<option value="25">Massachusetts</option>
+	<option value="26">Michigan</option>
+	<option value="27">Minnesota</option>
+	<option value="28">Mississippi</option>
+	<option value="29">Missouri</option>
+	<option value="30">Montana</option>
+	<option value="31">Nebraska</option>
+	<option value="32">Nevada</option>
+	<option value="33">New Hampshire</option>
+	<option value="34">New Jersey</option>
+	<option value="35">New Mexico</option>
+	<option value="36">New York</option>
+	<option value="37">North Carolina</option>
+	<option value="38">North Dakota</option>
+	<option value="39">Ohio</option>
+	<option value="40">Oklahoma</option>
+	<option value="41">Oregon</option>
+	<option value="42">Pennsylvania</option>
+	<option value="44">Rhode Island</option>
+	<option value="45">South Carolina</option>
+	<option value="46">South Dakota</option>
+	<option value="47">Tennessee</option>
+	<option value="48">Texas</option>
+	<option value="49">Utah</option>
+	<option value="50">Vermont</option>
+	<option value="51">Virginia</option>
+	<option value="53">Washington</option>
+	<option value="54">West Virginia</option>
+	<option value="55">Wisconsin</option>
+	<option value="56">Wyoming</option>
+
+</select>
+<select name="frmPrecipReportSearch:ucStateCountyFilter:ddlCounty" id="frmPrecipReportSearch_ucStateCountyFilter_ddlCounty">
+	<option value="">ALL COUNTIES</option>
+	<option selected="selected" value="1">DC - District Of Columbia</option>
+
+</select>
+</TD></TR>
+  <TR>
+    <TD colSpan="2" class="ControlBody"><strong>Date Range: </strong>
+<table border="0" cellpadding="2" cellspacing="0">
+	<tr>
+		<td><strong>Start Date:</strong></td>
+		<td><style type=text/css>
+	.frmPrecipReportSearch_ucDateRangeFilter_dcStartDate0{background-color:#C5D5FC;border-width:1px;border-style:Solid;border-color:#ABC1F4;font-size:1pt;}
+	.frmPrecipReportSearch_ucDateRangeFilter_dcStartDate1{background-color:#DCEDFD;border-width:1px;border-style:Solid;border-color:#ABC1F4;font-size:1pt;}
+	.frmPrecipReportSearch_ucDateRangeFilter_dcStartDate2{background-color:#83A6F4;border-width:1px;border-style:Solid;border-color:#ABC1F4;font-size:1pt;}
+	.frmPrecipReportSearch_ucDateRangeFilter_dcStartDate3{background-color:#F1F1ED;border-width:1px;border-style:Solid;border-color:#E4E4E4;font-size:1pt;}
+</style>
+
+<input type="hidden" name="frmPrecipReportSearch:ucDateRangeFilter:dcStartDate" id="frmPrecipReportSearch_ucDateRangeFilter_dcStartDate" value="6/1/2011"/>
+
+<input type="hidden" name="frmPrecipReportSearch_ucDateRangeFilter_dcStartDate_p" id="frmPrecipReportSearch_ucDateRangeFilter_dcStartDate_p"/>
+<table cellspacing="1" cellpadding="0" id="igtxtfrmPrecipReportSearch_ucDateRangeFilter_dcStartDate" style="background-color:White;border-width:1px;border-style:Solid;border-color:#7F9DB9;"><tr>
+	<td><input type="text" style="width:100px;border-width:0px;" value="6/1/2011" id="frmPrecipReportSearch_ucDateRangeFilter_dcStartDate_t"></td>
+	<td height="100%" width="15px"><table height="100%" cellspacing="0" cellpadding="0" border="0" width="15px"><tr>
+		<td align="center" valign="middle" class="frmPrecipReportSearch_ucDateRangeFilter_dcStartDate0" id="frmPrecipReportSearch_ucDateRangeFilter_dcStartDate_b1"><IMG src="/ig_common/images/ig_edit_1b.gif" border="0" align="middle">
+		</td>
+	</tr><tr>
+		<td align="center" valign="middle" class="frmPrecipReportSearch_ucDateRangeFilter_dcStartDate0" id="frmPrecipReportSearch_ucDateRangeFilter_dcStartDate_b2"><IMG src="/ig_common/images/ig_edit_2b.gif" border="0" align="middle">
+		</td>
+	</tr></table></td>
+</tr></table>
+<script language="javascript">try{igedit_init("frmPrecipReportSearch_ucDateRangeFilter_dcStartDate",2,"frmPrecipReportSearch:ucDateRangeFilter:dcStartDate,,1,,,,0,1,1,,,0,,,7,/ig_common/images/ig_edit_0b.gif,,,/ig_common/images/ig_edit_01b.gif,/ig_common/images/ig_edit_1b.gif,,,/ig_common/images/ig_edit_11b.gif,/ig_common/images/ig_edit_2b.gif,,,/ig_common/images/ig_edit_21b.gif,6,,200,,,,,",["2011-5-1-0-0-0-0,1998-5-17-0-0-0-0,2011-10-10-23-59-24-0","04/08/03","_  03","04/08/03","",29]);}catch(e){window.status="Can't init editor";}</script>
+
+			<span style='visibility:hidden;display:none' class='VAMErrorText'  title="test error message" id='frmPrecipReportSearch_ucDateRangeFilter_RequiredFieldValidator1'><img id="frmPrecipReportSearch_ucDateRangeFilter_RequiredFieldValidator1_Img" src="/VAM/Appearance/ValErrorIcon.gif" alt="" border="0" /></span>
+			<span style='visibility:hidden;display:none' class='VAMErrorText'  id='frmPrecipReportSearch_ucDateRangeFilter_valRange'><img id="frmPrecipReportSearch_ucDateRangeFilter_valRange_Img" title="Start Date must be before End Date." src="/VAM/Appearance/ValErrorIcon.gif" alt="" border="0" /></span>&nbsp;
+		</td>
+		<td><strong>End Date:</strong></td>
+		<td><style type=text/css>
+	.frmPrecipReportSearch_ucDateRangeFilter_dcEndDate0{background-color:#C5D5FC;border-width:1px;border-style:Solid;border-color:#ABC1F4;font-size:1pt;}
+	.frmPrecipReportSearch_ucDateRangeFilter_dcEndDate1{background-color:#DCEDFD;border-width:1px;border-style:Solid;border-color:#ABC1F4;font-size:1pt;}
+	.frmPrecipReportSearch_ucDateRangeFilter_dcEndDate2{background-color:#83A6F4;border-width:1px;border-style:Solid;border-color:#ABC1F4;font-size:1pt;}
+	.frmPrecipReportSearch_ucDateRangeFilter_dcEndDate3{background-color:#F1F1ED;border-width:1px;border-style:Solid;border-color:#E4E4E4;font-size:1pt;}
+</style>
+
+<input type="hidden" name="frmPrecipReportSearch:ucDateRangeFilter:dcEndDate" id="frmPrecipReportSearch_ucDateRangeFilter_dcEndDate" value="8/1/2011"/>
+
+<input type="hidden" name="frmPrecipReportSearch_ucDateRangeFilter_dcEndDate_p" id="frmPrecipReportSearch_ucDateRangeFilter_dcEndDate_p"/>
+<table cellspacing="1" cellpadding="0" id="igtxtfrmPrecipReportSearch_ucDateRangeFilter_dcEndDate" style="background-color:White;border-width:1px;border-style:Solid;border-color:#7F9DB9;"><tr>
+	<td><input type="text" style="width:100px;border-width:0px;" value="8/1/2011" id="frmPrecipReportSearch_ucDateRangeFilter_dcEndDate_t"></td>
+	<td height="100%" width="15px"><table height="100%" cellspacing="0" cellpadding="0" border="0" width="15px"><tr>
+		<td align="center" valign="middle" class="frmPrecipReportSearch_ucDateRangeFilter_dcEndDate0" id="frmPrecipReportSearch_ucDateRangeFilter_dcEndDate_b1"><IMG src="/ig_common/images/ig_edit_1b.gif" border="0" align="middle">
+		</td>
+	</tr><tr>
+		<td align="center" valign="middle" class="frmPrecipReportSearch_ucDateRangeFilter_dcEndDate0" id="frmPrecipReportSearch_ucDateRangeFilter_dcEndDate_b2"><IMG src="/ig_common/images/ig_edit_2b.gif" border="0" align="middle">
+		</td>
+	</tr></table></td>
+</tr></table>
+<script language="javascript">try{igedit_init("frmPrecipReportSearch_ucDateRangeFilter_dcEndDate",2,"frmPrecipReportSearch:ucDateRangeFilter:dcEndDate,,1,,,,0,1,1,,,0,,,7,/ig_common/images/ig_edit_0b.gif,,,/ig_common/images/ig_edit_01b.gif,/ig_common/images/ig_edit_1b.gif,,,/ig_common/images/ig_edit_11b.gif,/ig_common/images/ig_edit_2b.gif,,,/ig_common/images/ig_edit_21b.gif,6,,200,,,,,",["2011-7-1-0-0-0-0,1998-5-17-0-0-0-0,2011-10-10-23-59-24-0","04/08/03","_  03","04/08/03","",29]);}catch(e){window.status="Can't init editor";}</script>
+
+			<span style='visibility:hidden;display:none' class='VAMErrorText'  title="test error message" id='frmPrecipReportSearch_ucDateRangeFilter_valEndDate'><img id="frmPrecipReportSearch_ucDateRangeFilter_valEndDate_Img" src="/VAM/Appearance/ValErrorIcon.gif" alt="" border="0" /></span>
+		</td>
+	</tr>
+</table>
+</TD></TR>
+	<tr>
+		<td colSpan="2" class="ControlBody">
+			<strong>Precip Value: </strong>
+			<select name="frmPrecipReportSearch:ddlPrecipField" id="frmPrecipReportSearch_ddlPrecipField">
+	<option selected="selected" value="">All Precip Values</option>
+	<option value="TotalPrecipAmt">Total Precip</option>
+	<option value="SnowCorePrecipAmt">New Snow SWE</option>
+	<option value="TotalSnowSWE">Total Snow SWE</option>
+	<option value="TotalSnowDepth">Total Snow Depth</option>
+
+</select>
+			<select name="frmPrecipReportSearch:ucPrecipValueFilter:ddlOperator" id="frmPrecipReportSearch_ucPrecipValueFilter_ddlOperator">
+	<option value="">Operator</option>
+	<option selected="selected" value="Equal">=</option>
+	<option value="GreaterEqual">&gt;=</option>
+	<option value="GreaterThan">&gt;</option>
+	<option value="LessEqual">&lt;=</option>
+	<option value="LesserThan">&lt;</option>
+	<option value="NotEqual">!=</option>
+
+</select><span style='visibility:hidden;display:none' class='VAMErrorText'  title="Precipitation Field is invalid. It must contain NA, T, or a decimal value in hundredths (0.14)." id='frmPrecipReportSearch_ucPrecipValueFilter_tbPrecipValue_valPrecipFormat'><img id="frmPrecipReportSearch_ucPrecipValueFilter_tbPrecipValue_valPrecipFormat_Img" src="/VAM/Appearance/ValErrorIcon.gif" alt="" border="0" /></span><input name="frmPrecipReportSearch:ucPrecipValueFilter:tbPrecipValue:tbPrecip" type="text" maxlength="5" size="5" id="frmPrecipReportSearch_ucPrecipValueFilter_tbPrecipValue_tbPrecip" onkeypress="return(VAM_KeyPress(this, event))" onkeydown="return(VAM_OnKeyDown(this, event))" />
+
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="ControlHeaderButtons" align="left"><input type="submit" name="frmPrecipReportSearch:btnSearch" value="Search" id="frmPrecipReportSearch_btnSearch" /></td>
+	</tr>
+  <tr id="frmPrecipReportSearch_SearchDisplayRow">
+	<TD colspan="2" class="ControlBody"><strong>Searched: </strong>Stations in District Of Columbia, District of Columbia. Report date between 6/1/2011 and 8/1/2011. </TD>
+</tr>
+
+</table>
+
+	
+<script language="JavaScript">
+function ConfirmDelete(url){
+	bConfirm = confirm("Click OK to Delete.");
+	if(bConfirm)
+		location.replace(url);
+}
+</script>
+<TABLE id="Table1" cellSpacing="0" cellPadding="0" width="600" border="0">
+	<TR>
+		<TD style="PADDING-LEFT: 5px" noWrap>
+			<b>Showing 1 - 50 of 58 Records.</b></TD>
+		<TD style="PADDING-RIGHT: 5px" noWrap align="right">
+			<a id="ucReportList_wcBackPager" href="javascript:__doPostBack('ucReportList$wcBackPager','2')">&lt;Back</a>&nbsp;
+			Page
+			<select id="ucReportList_wcDropDownListPager" name="ucReportList:wcDropDownListPager" onchange="__doPostBack('ucReportList$wcDropDownListPager','')" size="1">
+	<option selected="" value="1">
+		1
+	</option><option value="2">
+		2
+	</option>
+</select>&nbsp;
+			<a id="ucReportList_wcNextPager" href="javascript:__doPostBack('ucReportList$wcNextPager','2')">Next&gt;</a></TD>
+	</TR>
+</TABLE>
+<table class="Grid" cellspacing="0" rules="all" border="1" id="ucReportList_ReportGrid" width="600">
+	<tr class="GridHeader">
+		<td><font color="WhiteSmoke"><a href="javascript:__doPostBack('ucReportList$ReportGrid$_ctl1$_ctl1','')"><font color="WhiteSmoke">Date</font></a><span><font face="webdings" size="2">5</font></span></font></td><td><font color="WhiteSmoke"><a href="javascript:__doPostBack('ucReportList$ReportGrid$_ctl1$_ctl2','')"><font color="WhiteSmoke">Time</font></a></font></td><td><font color="WhiteSmoke"><a href="javascript:__doPostBack('ucReportList$ReportGrid$_ctl1$_ctl3','')"><font color="WhiteSmoke">Station Number</font></a></font></td><td><font color="WhiteSmoke"><a href="javascript:__doPostBack('ucReportList$ReportGrid$_ctl1$_ctl4','')"><font color="WhiteSmoke">Station Name</font></a></font></td><td><font color="WhiteSmoke"><a href="javascript:__doPostBack('ucReportList$ReportGrid$_ctl1$_ctl5','')"><font color="WhiteSmoke">Total Precip .in</font></a></font></td><td><font color="WhiteSmoke"><a href="javascript:__doPostBack('ucReportList$ReportGrid$_ctl1$_ctl6','')"><font color="WhiteSmoke">New Snow .in</font></a></font></td><td><font color="WhiteSmoke"><a href="javascript:__doPostBack('ucReportList$ReportGrid$_ctl1$_ctl7','')"><font color="WhiteSmoke">Total Snow .in</font></a></font></td><td><font color="WhiteSmoke"><a href="javascript:__doPostBack('ucReportList$ReportGrid$_ctl1$_ctl8','')"><font color="WhiteSmoke">State</font></a></font></td><td><font color="WhiteSmoke"><a href="javascript:__doPostBack('ucReportList$ReportGrid$_ctl1$_ctl9','')"><font color="WhiteSmoke">County</font></a></font></td><td><font color="WhiteSmoke">View</font></td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">8/1/2011 </td><td nowrap="nowrap"> 7:20 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=35b22bf4-01a9-4011-8d7e-8c5cb37376b2' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/31/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=600bd8e6-bb3d-4c82-b8b9-0949b271d479' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/30/2011 </td><td nowrap="nowrap"> 7:50 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=d2a57275-abb4-433a-977b-a62f5d62eb1e' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/29/2011 </td><td nowrap="nowrap"> 7:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=991ead6d-dbcc-4cb7-acaf-b35fd94c03fe' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/28/2011 </td><td nowrap="nowrap"> 7:20 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=6e610485-e3ee-4689-bd22-45c55ed8e7c6' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/27/2011 </td><td nowrap="nowrap"> 7:20 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=bdc7bc68-1163-4426-a517-b446148fccaa' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/26/2011 </td><td nowrap="nowrap"> 6:50 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.18
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=e2bd5cbe-da34-4373-abf7-54790a3f34b7' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/25/2011 </td><td nowrap="nowrap"> 7:50 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=cc7916f9-04d8-4d55-be4b-36f215c1eced' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/24/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=3c5d7448-b7a1-4914-9232-25cca2fb7a6d' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/23/2011 </td><td nowrap="nowrap"> 8:20 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.02
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=1f5d43fc-d71a-4a14-ad2d-319ce7a172a2' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/22/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=854f8d3f-e0ef-4ee7-a33c-dfea72febcc5' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/21/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=e40a7e57-3a7b-42e3-a677-e609808ccafa' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/20/2011 </td><td nowrap="nowrap"> 7:20 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=c7158f41-085a-4cae-8600-5debb69e87c3' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/15/2011 </td><td nowrap="nowrap"> 7:20 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=0fd3f555-14ac-48b4-afa0-56d69f6f1821' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/14/2011 </td><td nowrap="nowrap"> 7:50 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.23
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=f85d3415-d5d6-4451-a0ac-4a428454cbb2' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/13/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=5ad01035-24e7-45ad-9a75-3c603fbe83f0' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/12/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.21
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=c5323e17-bcf1-4bdc-8c65-357b9bbb0a44' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/11/2011 </td><td nowrap="nowrap"> 10:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=d4f6f9d2-9e99-416b-bd12-51b930ca0f57' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/10/2011 </td><td nowrap="nowrap"> 9:10 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=40c93fd0-3543-4cb0-94ab-82e1bcd61778' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/9/2011 </td><td nowrap="nowrap"> 7:50 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.13
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=c7885159-7458-4028-94a0-ac844de66043' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/8/2011 </td><td nowrap="nowrap"> 7:50 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=9a567b43-2df1-4d90-bd8b-17652d71c730' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/7/2011 </td><td nowrap="nowrap"> 4:00 PM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.04
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=65a387d0-1999-4b51-9870-cc3fd3d79f7d' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/6/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=99e0d9db-ca86-476a-837b-609ba73077b8' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/5/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=22957067-4d26-4d01-903d-8d762e19c2ba' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/4/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.50
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=cf8afd65-33d4-47c9-8387-11a3b037e716' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/3/2011 </td><td nowrap="nowrap"> 7:30 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				1.23
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=a64e1907-2521-468d-89c5-fa79a6ff98ba' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">7/2/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=dbf7109a-f530-472b-849f-4d392c7032eb' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">7/1/2011 </td><td nowrap="nowrap"> 8:15 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=d2aa4c00-3c28-4fb4-8346-704f18d17ab3' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">6/30/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.02
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=12d9edc8-a6b3-4855-acf3-4b4d62d2b142' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">6/29/2011 </td><td nowrap="nowrap"> 7:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=21672991-8c64-496b-a1a8-db46af479efb' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">6/28/2011 </td><td nowrap="nowrap"> 8:10 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				T
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=83b38d4e-0a40-4aee-89bd-045e735d2263' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">6/27/2011 </td><td nowrap="nowrap"> 7:55 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.03
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=3c3bb0d7-a3b1-4a11-8d20-22bf02aea1c8' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">6/26/2011 </td><td nowrap="nowrap"> 7:50 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=fcf82c47-8c1e-47b7-8be3-9b199e4befe4' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">6/25/2011 </td><td nowrap="nowrap"> 7:50 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=10f0fc92-a2be-4b7c-a225-70603e552dfc' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">6/24/2011 </td><td nowrap="nowrap"> 7:30 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=af93b65f-197e-4a8c-ae40-b9a3dc2aae88' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">6/23/2011 </td><td nowrap="nowrap"> 7:40 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=8af22122-3782-4605-ad59-2c08faea1cd8' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">6/22/2011 </td><td nowrap="nowrap"> 7:55 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.01
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=5854d427-84d6-4cfd-b87f-582ae6f68d88' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">6/22/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-9 </td><td nowrap="nowrap"> Washington 2.0 SSW </td><td>
+				0.02
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=7cd1a5e7-b503-4472-b43d-dc5c7bfd799c' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">6/21/2011 </td><td nowrap="nowrap"> 7:55 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.09
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=d609fe3c-6771-4236-838f-3a154443a378' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">6/21/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-9 </td><td nowrap="nowrap"> Washington 2.0 SSW </td><td>
+				0.05
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=ba1649ce-12f7-4a34-bdc2-a352ec4046b1' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">6/20/2011 </td><td nowrap="nowrap"> 8:15 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.40
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=e0913d6f-e6e9-4e4a-b648-3125966b3435' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">6/19/2011 </td><td nowrap="nowrap"> 8:00 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=4dffa1b2-7f7a-493f-b7fc-d0be8f95736b' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">6/18/2011 </td><td nowrap="nowrap"> 7:55 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.03
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=0ecbd714-6abb-47a9-a1f6-781aaeb58ce7' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">6/17/2011 </td><td nowrap="nowrap"> 7:50 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				1.25
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=d6327ae8-b9a5-4b7b-9f26-6d6f4bc22988' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">6/17/2011 </td><td nowrap="nowrap"> 8:30 AM </td><td nowrap="nowrap"> DC-DC-9 </td><td nowrap="nowrap"> Washington 2.0 SSW </td><td>
+				0.80
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=5fd19b54-a5e1-4696-89fc-40e0fb296ea6' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">6/16/2011 </td><td nowrap="nowrap"> 7:50 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.01
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=5610fa65-c306-498e-ac36-00dbb90c2afb' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">6/16/2011 </td><td nowrap="nowrap"> 8:30 AM </td><td nowrap="nowrap"> DC-DC-9 </td><td nowrap="nowrap"> Washington 2.0 SSW </td><td>
+				0.03
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=9fe2021c-9f69-488c-b902-0f43ddf2f5ad' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">6/15/2011 </td><td nowrap="nowrap"> 7:20 AM </td><td nowrap="nowrap"> DC-DC-14 </td><td nowrap="nowrap"> Washington 5.1 NW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=818bd43d-5352-4777-b258-ecfe9fbf45e3' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridItem">
+		<td nowrap="nowrap">6/10/2011 </td><td nowrap="nowrap"> 8:30 AM </td><td nowrap="nowrap"> DC-DC-9 </td><td nowrap="nowrap"> Washington 2.0 SSW </td><td>
+				0.79
+			</td><td>
+				NA
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=10925dfa-9ecc-4350-a871-158b06926758' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr><tr class="GridAltItem">
+		<td nowrap="nowrap">6/9/2011 </td><td nowrap="nowrap"> 7:00 AM </td><td nowrap="nowrap"> DC-DC-9 </td><td nowrap="nowrap"> Washington 2.0 SSW </td><td>
+				0.00
+			</td><td>
+				0.0
+			</td><td>
+				NA
+			</td><td>DC</td><td>District Of Columbia</td><td nowrap="nowrap" align="Center">	
+				&nbsp;<a title='View' href='ViewDailyPrecipReport.aspx?DailyPrecipReportID=2a46edcf-3cf8-484f-9f06-c987d9c3f476' ><img src='/images/icons/icon_view.gif' width='16' height='16' border='0' alt='View' /></a>
+			</td>
+	</tr>
+</table>
+ 
+
+									</td>
+
+									<TD vAlign="top" width="5">
+										&nbsp;
+									</TD>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colSpan="3" height="20" align="center"><div id="Footer" style="FONT-SIZE: smaller; TEXT-ALIGN: center">
+									<HR width="100%" SIZE="1">
+									<FONT face="Verdana, Arial, Helvetica, sans-serif" size="1">For questions or 
+										comments concerning this web page please contact <A href="mailto:info@cocorahs.org">info@cocorahs.org</A>.										
+										<br />
+							         Unless otherwise noted, all content on the CoCoRaHS website is released under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 License</a>.
+				<br />						<a href="http://www.cocorahs.org/Content.aspx?page=privacypolicy">Privacy Policy</a>&nbsp;&nbsp;<a href="http://www.cocorahs.org/Content.aspx?page=datausagepolicy">Data Usage Policy</a>
+<I>Copyright © 1998-2011, Colorado Climate Center, All rights reserved.</I></FONT></div>
+							</td>
+					</tr>
+				</TBODY>
+			</table><br clear="all" />
+		
+<script language="javascript" type="text/javascript">
+<!--
+	var gVAM_ValSummary =  new Array({ValSumID:'ValidationSummary1',FmtListFnc:VAM_ValSumFmtBullet,GetInner:VAM_ValSumInnerHTML,Grp:'',AutoUpd:true,InvSpc:false,Links:false,RCIS:true,PreListFnc:VAM_ValSumPreBullet,PostListFnc:VAM_ValSumPostBullet,Hdr:'<span class=\'VAMValSummaryHeader\'><img src=\'/images/icons/exclamation.gif\' align=\'absbottom\' width=\'16\' height=\'16\'> <b>Errors:</b></span>',Ftr:'',ErrMsgCss:'VAMValSummaryErrors',LinkTT:'',Showing:false,HdrSep:'<br />',BulletTL:'<ul style=\'list-style-type:disc\'',DispMode:'2'});
+	var gVAMActions =  new Array({ActnFnc:VAM_DoValidate,InitFnc:VAM_InitValAction,Enabled:true,Cond: {EvalFnc:VAM_EvalReqTextCond,InitFnc:VAM_InitOneFldCond,Enabled:true,HUEvts:true,IDToEval:'frmPrecipReportSearch_ucDateRangeFilter_dcStartDate',CaseIns:true},CanRun:VAM_CanRunVal,VT:'VAL',ErrMsg:'Start Date is required.',SumMsg:'Start Date is required.',FmttrFnc:VAM_TTFmttr,ErrFldID:'frmPrecipReportSearch_ucDateRangeFilter_RequiredFieldValidator1',Dspl:2,Blnk:true,BlnkCss:'VAMBlinkText'}, {ActnFnc:VAM_DoValidate,InitFnc:VAM_InitValAction,Enabled:true,Cond: {EvalFnc:VAM_EvalReqTextCond,InitFnc:VAM_InitOneFldCond,Enabled:true,HUEvts:true,IDToEval:'frmPrecipReportSearch_ucDateRangeFilter_dcEndDate',CaseIns:true},CanRun:VAM_CanRunVal,VT:'VAL',ErrMsg:'End Date is required.',SumMsg:'End Date is required.',FmttrFnc:VAM_TTFmttr,ErrFldID:'frmPrecipReportSearch_ucDateRangeFilter_valEndDate',Dspl:2,Blnk:true,BlnkCss:'VAMBlinkText'}, {ActnFnc:VAM_DoValidate,InitFnc:VAM_InitValAction,Enabled:true,Cond: {EvalFnc:VAM_EvalRegexCond,InitFnc:VAM_InitOneFldCond,Enabled:true,HUEvts:true,IDToEval:'frmPrecipReportSearch_ucPrecipValueFilter_tbPrecipValue_tbPrecip',Expr:'(^\\d{1,2}$)|(^\\d{1,2}\\.$)|(^\\.\\d{1,2}$)|(^\\d{1,2}\\.\\d{1,2}$)|(^[Tt]$)|(^[Nn][Aa]$)|(^[Mm]$)',Flags:'i',IBT:-1},CanRun:VAM_CanRunVal,VT:'VAL',ErrMsg:'Precipitation Field is invalid. It must contain NA, T, or a decimal value in hundredths (0.14).',SumMsg:'Precipitation Field is invalid. It must contain NA, T, or a decimal value in hundredths (0.14).',FmttrFnc:VAM_TTFmttr,ErrFldID:'frmPrecipReportSearch_ucPrecipValueFilter_tbPrecipValue_valPrecipFormat',Dspl:2,Blnk:true,BlnkCss:'VAMBlinkText'}, {ActnFnc:VAM_ReformatAction,InitFnc:VAM_ReformatInit,Enabled:true,Cond: {EvalFnc:VAM_EvalDTCheckCond,InitFnc:VAM_InitOneFldCond,Enabled:true,HUEvts:true,IDToEval:'frmPrecipReportSearch_ucPrecipValueFilter_tbPrecipValue_tbPrecip',ConvStr:VAM_PrecipConv,grpsep:','},CanRun:VAM_CanRunActn,VT:'DTTB',ToStrFnc:VAM_PrecipFmt,DAC:false});
+		// -->
+</script>
+
+			<script type='text/javascript'>
+<!--
+VAM_InitActions();
+VAM_UpdateOnClick('frmPrecipReportSearch_btnSearch','','');
+VAM_InitKey('frmPrecipReportSearch_ucPrecipValueFilter_tbPrecipValue_tbPrecip',{Fltr:'1234567890tTnaNA.',Ent:1,Exc:false});
+// -->
+</script>
+
+
+		</form>
+<script src='http://www.google-analytics.com/ga.js' type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9079456-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>		
+	</body>
+</HTML>
+

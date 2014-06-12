@@ -1,0 +1,65 @@
+<? /*
+index.php  for "Technology". */
+
+include '../../sweetandsour_conf.php';
+include '../includes/act_getDBConnection.php';
+include 'app_locals.php';
+
+//Reset the variable holding all the SQL
+$allSQL = "";
+
+//Set fuseaction
+if(isSet($_GET["fuseAction"])) {
+	$fuseAction = $_GET["fuseAction"];
+}
+else {
+	$fuseAction = "thisWebSite";
+}
+
+switch ($fuseAction) {
+
+	//This web site
+	case "thisWebSite":
+		$heading1Text = "This web site";
+		$contentPage = 'dsp_thisWebSite.php';
+		include '../dsp_outline.php';
+		break;
+		
+	case "database":
+		include 'dsp_database.php';
+		break;
+
+	//Cars
+	case "cars1":
+		$heading1Text = "Cars &ndash; <span>General principles</span>";
+		$contentPage = 'dsp_cars1.php';
+		include '../dsp_outline.php';
+		break;
+	case "cars2":
+		$heading1Text = "Cars &ndash; <span>Innovative Designs</span>";
+		$contentPage = 'dsp_cars2.php';
+		include '../dsp_outline.php';
+		break;
+
+	//Programming sandbox
+	case "sandbox":
+		$heading1Text = "Programming Sandbox";
+		$contentPage = 'dsp_sandbox.php';
+		$jsFiles[] =  "sandbox";
+		include '../dsp_outline.php';
+		break;
+
+	//Computers
+	case "computers":
+		$sectionPhotoLink = "";
+		$heading1Text = "Computers";
+		$contentPage = 'dsp_computers.php';
+		include '../dsp_outline.php';
+		break;
+
+/**** Default case. ****/
+	default:
+		echo "<p>No recognized fuse action in 'Technology' section!</p>";
+		break;
+}
+?>

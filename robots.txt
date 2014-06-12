@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /demo/
+Disallow: /email/
+Disallow: /imageMgt/
+Disallow: /includes/
+Disallow: /obsolete/
+Disallow: /MadisonSt/
+Disallow: /wimpy/
+Disallow: /newmenu/
+Disallow: /technology/index.php?fuseAction=database

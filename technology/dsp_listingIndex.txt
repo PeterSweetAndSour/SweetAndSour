@@ -1,0 +1,43 @@
+&lt;? /*
+index.php for &quot;Home&quot;. */
+
+include '../app_globals.php';
+include 'app_locals.php';
+
+//Reset the variable holding all the SQL
+$allSQL = &quot;&quot;;
+
+if(! isSet($fuseAction))
+	$fuseAction = &quot;welcome&quot;;
+
+
+switch ($fuseAction) {
+	//Welcome page
+	case &quot;welcome&quot;:
+		$heading3Text = &quot;Welcome&quot;;
+		$contentPage = 'dsp_welcome.php';
+		include '../dsp_outline.php';
+		break;
+
+	//What's new
+	case &quot;whatsNew&quot;:
+		$heading3Text = &quot;What's new&quot;;
+		$contentPage = 'dsp_whatsNew.php';
+		include '../dsp_outline.php';
+		break;
+
+	//Site map
+	case &quot;siteMap&quot;:
+		$heading3Text = &quot;Site map&quot;;
+		$contentPage = 'dsp_siteMap.php';
+		include '../dsp_outline.php';
+		break;
+
+
+	/**** Default case. ****/
+	default:
+		echo &quot;&lt;p&gt;No recognized fuse action in 'Home' section!&lt;/p&gt;&quot;;
+		break;
+}
+
+?&gt;

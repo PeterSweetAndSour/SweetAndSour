@@ -1,0 +1,150 @@
+<? //dsp_thisWebSite.php
+
+//Paragraph width had to be forced so that they maintain width when user shows a file
+//listing that stretches the table to the right.
+
+function escapeHTML($input) {
+	$output = $input;
+	$output = str_replace("&", "&amp;", $output);
+	$output = str_replace("<", "&lt;", $output);
+	$output = str_replace(">", "&gt;", $output);
+	$output = str_replace("\"", "&quot;", $output);
+	$output = str_replace("'", "&rsquo;", $output);
+	
+	return $output;
+}
+
+// Appears at the bottom of the page.
+$phJavascript = <<<jsStr
+
+<script type="text/javascript">
+	SweetAndSour.prepareCodeDisplay();
+</script>
+
+jsStr;
+?>
+
+<h3>Amazon S3 as a CDN</h3>
+<div class="story">
+	<p>[July 2009] Moving images and PDF files from my own server to a content delivery network (CDN) has the potential to speed up page loading since their huge number of distributed servers should deliver content more quickly than mine and if there is a huge surge in traffic, my server can concentrate on processing the PHP pages. Since I also intend to later set the &quot;expires&quot;&quot; to none, I've also renamed every file to carry the date it was modified so that if a new version is uploaded, it will have a new URL</p>
+	<p>This is most of what you need to know about S3:</p>
+	<ul>
+		<li><a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1073&categoryID=55" title="Media hosting with S3" target="_blank" class="external">Scalable Media Hosting with Amazon S3</a></li>
+		<li><a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1109&categoryID=55#08" title="S3 file system" target="_blank" class="external">How do I mimic a typical file system on Amazon S3?</a></li>
+	</ul>
+	<p>In particular, the <a href="https://addons.mozilla.org/en-US/firefox/addon/3247" title="S3Fox" target="_blank" class="external">S3Fox add-on</a> makes it relatively painless as it creates &ldquo;keys&rdquo; that <em>look like</em> a file path and name even though S3 essentially gives you one big &ldquo;bucket&rdquo; and everything gets tossed in there. </p>
+	<p>One trap I fell into is that if you click the S3Fox in the browser status bar, you do not get the same view as selecting it from the Tools menu. Once you get that sorted out, moving files functions much like an FTP client.</p>
+	<p>I read another article, <a href="http://www.labnol.org/internet/setup-content-delivery-network-with-amazon-s3-cloudfront/5446/" title="S3 as CDN" target="_blank" class="external">How to Setup Amazon S3 with CloudFront as a Content Delivery Network</a>, that used CloudFront as well but I’m not clear on why I would want that, especially as it appears you get charged separately for the traffic through there. I didn't need it though.</p>
+	<p>Note that if you are running YSlow in Firebug, it does not know that sweetandsour.org.s3.amazonaws.com is a CDN so it unfairly assigns an &ldquo;F&rdquo; grade.</p>
+	<p>I struggled with S3Fox to set headers and eventually gave up. I never could figure out the syntax it wanted and couldn't find any on the internet. Instead, I found <a href="http://www.cloudberrylab.com/" target="_blank" class="external">Cloudberry Explorer</a> and have now set an Expires header for the end of the year.</p>
+	<p>One limitation of S3 is that it isn't a web server able to negotiate with the user agent on whether to send compressed files. I moved the CSS and JS back to my server where I can run mod_deflate.</p>
+	<!--
+	<h4>Results</h4>
+	<p>Loading the page with pictures of my <a href="http://www.sweetandsour.org/photos/index.php?fuseAction=aust2007">2007 trip back home</a> with a cleared cache three times took 9.5, 7.9 and 8.2 seconds with the old system. 
+	-->
+</div>
+
+<h3>Site redesign</h3>
+<div class="story">
+	<p>[Octoberber 2008] I've thought for years that the site looked really crude and I've finally done something about it. Here are the main features and changes:</p>
+	<ul>
+		<li>New navigation based on the <a href="http://phatfusion.net/imagemenu/" target="_blank" class="external">Phatfusion &quot;Image Menu&quot;</a> but extended so it will handle 2nd and 3rd level menu items. In fact, I had to make some changes to even get the top-level menu to work as Mootools 1.2 has been released since the menu was written and there were some Javascript errors.</li>
+		<li>In fact, I suggest that my version of the &quot;image menu&quot; is better than the original since I've used the <a href="http://www.mezzoblue.com/tests/revised-image-replacement/#gilderlevin" target="_blank" class="external">Gilder/Levin image replacement method</a> which means it is still usable even if images are turned off. Try that on Phatfusion.net.</li>
+		<li>Since I didn't take all the photos used in the &quot;image menu&quot;, I needed to contact the copyright holders and ask for their permission where necessary. I used <a href="http://powazek.com/posts/867" class="external" target="_blank">A Savvy Approach to Copyright Messaging</a> so that if anyone tries to download the graphic from the menu above, they will see this:
+				<img src="http://sweetandsour.org/images/technology.jpg" alt="Example of displaying copyright unobtrusively" /></li>
+		<li>New popup image holder. The &quot;image menu&quot; requires <a href="http://mootools.net/" target="_blank" class="external">Mootools</a> and that created a conflict with the old DHTML window that photos were loaded into when the thumbnail was clicked. I was delighted that I replaced the old dhtmlWindow.js file of 987 lines with perhaps one-third of that, now in common.js. </li>
+		<li>Rather than attempt to explain it, you will want to do a View &gt; Source on this page to see one particular feature.</li>
+		<li>One of the few (only?) slightly worthwhile things I've done in my life is to learn about the Israeli-Palestinian conflict and write to some public figures begging that the Palestinian grievances be addressed so that there can be a lasting peace in the Middle East. I pulled this out into a new section &quot;Time for Justice&quot;. I encourage you to get informed and get involved.</li>
+		<li>Since they are everywhere else on the internet, I felt compelled to throw in some rounded corners. Since Firefox and Safari support them, there are some lines in the stylesheet but for IE, some &lt;span&gt; tags are inserted by Javascript and they have background images. Yes, that means that no JS and no rounded corners. As the philosopher <a href="http://en.wikipedia.org/wiki/Mick_Jagger" class="external" target="_blank">Jagger</a> has noted, &quot;You can't always get what you want&quot;.</li>
+		<li>Since it is offered for free, I thought I'd try <a href="http://code.google.com/apis/ajaxsearch/" target="_blank" class="external">Google AJAX Search</a>. However, I set it up to show the results on the original page, similar to how Mootools have done it in their documentation section.</a>
+		<li>The &quot;countdown&quot; site introduction animation and highlight of my Java programming has been retired. It seemed such a good idea in 1999. However, if you are desperate to see it, this should satisfy: <a href="countdown.html" target="_blank">Countdown</a>. The other thing I did in Java was <a href="dsp_minesweeper.htm" target="_blank">minesweeper</a>.</li>
+	</ul>
+</div>
+
+<h3>I wrote the following in about 2003. Some of it may still be true.</h3>
+<div class="story followOn">
+   <p>This latest revision to the site uses XHTML/Transitional and CSS to achieve a clearly-structured document and layout without tables so that content is separated from presentation. I'll shortly be finalizing the code so it will pass the W3's validator and move towards Section 508 compliance which ensures accessibility to those with disabilities (such as blind people using screen readers). The benefits of making the site &quot;standards-compliant&quot; are faster-loading pages, easier maintenance and availability to users with a variety of browsers. The last one is the hardest since the most popular browser, Internet Explorer for Windows&trade; implements the W3 standards poorly requiring numerous hacks to work around the browser&rsquo;s many <a href="http://www.positioniseverything.net/explorer.html">bugs</a>.</p>
+</div>
+<? setThumbnail("PeterAtWork1.jpg"); ?>
+
+<div class="story wide codeBlock">
+   <h4>stylesNew.css</h4>
+   <div class="listing">
+   	<pre>
+      <? 
+      $strFile = file_get_contents ("../css/stylesNew.css");
+		echo escapeHTML($strFile);
+		?>
+   	</pre>
+   </div>
+</div>
+   
+<div class="story followOn">
+   <p>As you can see from the first entries in the &quot;What&rsquo;s new&quot; section, this web site was started in 1999 on Homestead.com using their WYSIWYG editor. Although it was simple to use, it produced static HTML files that were bulky and nearly incomprehensible to a human reader.  The site became very difficult to maintain since any change to the menu had to be replicated on every page.  Homestead.com realized they couldn't make money if they didn't charge for the service so when they introduced substantial fees, the site was moved to GeoCities.com.  This forced me to rewrite and simplify the pages but they were still static and maintenance was problematic.</p>
+   <p>I had always wanted to rebuild the site with dynamic pages so the next stage implemented in 2003 was to rebuild the site using  &quot;LAMP&quot; which stands for <b>Linux</b> (operating system)/<b>PHP</b> (scripting language)/<b>Apache</b> (web server)/<b>mySQL</b> (database).  All are effectively free.  In fact, my computer is set up with both Windows and Linux partitions with a shared data partition in VFAT format so I can test with <b>Internet Explorer</b> and <b>Opera</b> and <b>Firefox</b> browsers under Windows as well as <b>Konqueror</b> and <b>Firefox</b> under Linux.</p>
+   <p>The site also uses the "fusebox" methodology, a system originally invented in the ColdFusion world.  All page requests end up at an "index" file which is a series of case statements and the &quot;fuse action&quot; determines which files are then included to form the completed page.  While the mechanics are not important, what is important is that it forces a modular approach where pages are broken down and hopefully the pieces are reusable elsewhere.</p>
+</div>
+<? setThumbnail("MoirePattern1.jpg"); ?>
+
+
+<div class="story followOn">
+   <p>To enforce a consistant look, there are two types of display pages.  All the pages which show the menu use &quot;dsp_outline.php&quot; which sets up a the overall page framework and includes the photo at the top-left, the headings, the menu and the &quot;content page&quot;.  The &quot;content page&quot; is specified in the index page for that directory, while the colors are specified in an &quot;app_locals&quot; file which is also directory-specific.  Each &quot;app_locals&quot; file includes &quot;app_globals&quot; that sets a few variables that affect the entire site such as database log in details.</p>
+</div>
+<div class="story wide codeBlock">
+   <h4>dsp_outline.php</h4>
+   <div class="listing">
+   	<pre>
+      <? 
+      $strFile = file_get_contents ("../dsp_outline.php");
+		echo escapeHTML($strFile);
+   	?>
+   	</pre>
+   </div>
+</div>
+   
+<div class="story followOn">
+   <p>To get a clearer picture of the fusebox methodology, here is the index file for the "Home" directory.</p>
+</div>
+<div class="story wide codeBlock">
+   <h4>index.php</h4>
+   <div class="listing">
+    	<pre>
+		<? 
+      $strFile = file_get_contents ("../home/index.php");
+		echo escapeHTML($strFile);
+   	?>
+   	</pre>
+   </div>
+</div>
+   
+<div class="story followOn">
+   <p>Photographs are placed using the database which holds the name, caption, folder and any linked image for every photograph.  The file act_setThumbnailFunction.php defines a function called once for each thumbnail that writes out the HTML for the floating DIV, the image, link URL and caption.  If necessary, the link URL can be overridden.  The large image is shown using dsp_photoAndCaption.php which makes a call to the database to find the caption and places the caption to the side or below the image depending on its size.</p>
+</div>
+<div class="story wide codeBlock">
+	<h4>act_setThumbnailFunction.php</h4>
+	<div class="listing">
+		<pre>
+		<? 
+		$strFile = file_get_contents ("../imageMgt/act_setThumbnailFunction.php");
+		echo escapeHTML($strFile);
+		?>
+		</pre>
+	</div>
+</div>
+<div class="story wide codeBlock">
+	<h4>dsp_photoAndCaption.php</h4>
+	<div class="listing">
+		<pre>
+		<? 
+		$strFile = file_get_contents ("../imageMgt/dsp_photoAndCaption.php");
+		echo escapeHTML($strFile);
+		?>
+		</pre>
+	</div>
+</div>
+   
+<div class="story">
+	<p class="endText">See the current contents of the <a href="index.php?fuseAction=database">database</a>.</p>
+</div>
+
+
