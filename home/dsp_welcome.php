@@ -1,7 +1,13 @@
 <? //dsp_welcome.php ?>
 <div class="story">
-   <p>You've reached Lan &amp; Peter's web site. We're not home right now but feel free to look around.</p>
+   <p>This is Peter's web site, a very slow-motion blog.</p>
 </div>
+
+<h3>5 October 2014</h3>
+<div class="story">
+	<p>I made a weekend trip from  <a href="https://picasaweb.google.com/104917370736054834098/RideToNewYorkCity?noredirect=1">DC to NYC by bike</a>! </p>
+</div>
+<? setThumbnail("RedBikeSm.jpg", "https://picasaweb.google.com/104917370736054834098/RideToNewYorkCity?noredirect=1"); ?>
 
 <h3>7 November 2013</h3>
 <div class="story">
@@ -39,11 +45,6 @@
 <h3>19 December 2008</h3>
 <div class="story">
 	<p><a href="../letters/index.php?fuseAction=letter19a">Letter 19</a>, almost in time for Christmas!</p>
-</div>
-
-<h3>8 December 2008</h3>
-<div class="story">
-	<p>Read about <a href="http://www.sumbytes.com/pantsing-jeremy-phillips/" class="external" target="_blank">Pantsing Jeremy Phillips</a> (of interest to employees of The Motley Fool only).</p>
 </div>
 
 <h3>26 October 2008</h3>

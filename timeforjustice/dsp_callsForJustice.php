@@ -25,6 +25,9 @@
    that Americans were evil. Don't get me wrong, there is blame on both sides but you need to understand
    that there are two sides, only one of which is widely reported in the US.</p> 
    <ul>
+		<li>5Aug14 <a href="<?= $urlPrefix ?>timeforjustice/files/20140805_NBC.pdf">Message to NBC News</a> (145kb)</li>
+		<li>15Jul14 <a href="<?= $urlPrefix ?>timeforjustice/files/20140715_IsraeliAmbassador.pdf">Letter to Israeli Ambassador</a> in response to the senseless destruction of the house of Dr Nasser Tatar, director general of Gaza's largest medical facility as noted in <a href="http://www.theguardian.com/world/2014/jul/14/gaza-home-destroyed-israel-shati" class="external" target="_blank">this article</a>. At this point 200 Palestinians had been killed but there were another 1600 after this. (49kb)</li>
+		
 		<li>12Dec11 <a href="<?= $urlPrefix ?>timeforjustice/files/20111212_Gingrich.pdf">Message to Newt Gingrich</a> in response to <a href="http://www.guardian.co.uk/world/2011/dec/11/newt-gingrich-palestinian-comments-criticised?intcmp=239" class="external" target="_blank">outrageous comments</a> he made over the weekend. </li>
 		<li>6Jul10 <a href="<?= $urlPrefix ?>timeforjustice/files/20100706_CBSNews.pdf">Message to CBS News</a> (38kb)</li>
 		<li>7Jun10 <a href="<?= $urlPrefix ?>timeforjustice/files/20100607_MoranWebbWarnerObama.pdf" target="_blank">Letter to Congressman Moran, Senator Webb, Senator Warner and President Obama</a> in response to Israel's deadly raid on aid convoy. When I've sent letters to politians in the past I've often received replies but nothing arrived this time. (77kb)</li>

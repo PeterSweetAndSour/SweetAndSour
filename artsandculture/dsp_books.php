@@ -8,6 +8,30 @@
    prefer non-fiction.</p>
 </div>
 
+<h3>2011 &ndash; 2014</h3>
+<div class="story">
+<ol>
+	<li><em><a href="http://www.amazon.com/40-Chances-Finding-Hungry-World/dp/1451687869/" target="_blank" class="external">40 Chances: Finding Hope in a Hungry World</a></em> by Howard G Buffett. I once wanted to work in international development so it was distressing to read of the many, many failures that make up much of the book. Howard (son of Warren&mdash;yes, that Warren Buffet) is a farmer and is doing great work trying to improve crop yields for small farmers in the third world and achieving some good results but not without many setbacks.</li>
+	<li><em><a href="http://www.amazon.com/64-Tomato-Fortune-Endured-Existential/dp/1565125576/" target="_blank" class="external">The $64 Tomato: How One Man Nearly Lost His Sanity, Spent a Fortune, and Endured an Existential Crisis in the Quest for the Perfect Garden</a></em> by William Alexander</li>
+	<li><em><a href="http://www.amazon.com/Three-Ways-Capsize-Boat-Optimist/dp/0307592375/" target="_blank" class="external">Three Ways to Capsize a Boat: An Optimist Afloat</a></em> by Chris Stewart</li>
+	<li><em><a href="http://www.amazon.com/Atlantic-Battles-Discoveries-Titanic-Million/dp/0061702625/" target="_blank" class="external">Atlantic: Great Sea Battles, Heroic Discoveries, Titanic Storms, and a Vast Ocean of a Million Stories</a></em> by Simon Winchester</li>
+	<li><em><a href="http://www.amazon.com/Where-Fate-Beckons-Jean-FranCois-University/dp/160223003X/" target="_blank" class="external">Where Fate Beckons: The Life of Jean-FranCois de la Perouse</a></em> by John Dunmore. This book took forever to get the voyage that made him famous ... and killed him. On a roundabout way to Australia, they surveyed the long, thin <a href="http://en.wikipedia.org/wiki/Sakhalin" class="external" target="_blank">Sakhalin</a> to Japan's north sailing through the Nevelskoy Strait to prove it was an island and continued to Russia's <a href="http://en.wikipedia.org/wiki/Kamchatka_Peninsula" class="external" target="_blank">Kamchatka Peninsula</a>. There they dropped off Barthélemy de Lesseps who made his way overland back to Paris. I was so amazed that I created a <a href="http://en.wikipedia.org/wiki/Barth%C3%A9lemy_de_Lesseps" class="external" target="_blank">Wikipedia article</a> about him which made it to the &quot;Did you know...&quot; section of their home page for featured new articles (for just six hours).</li>
+	<li><em><a href="http://www.amazon.com/Gold-Rush-Forever-Changed-Australia/dp/1864711302/" target="_blank" class="external">The Gold Rush: The Fever That Forever Changed Australia</a></em> by David Hill</li>
+	<li><em><a href="http://www.amazon.com/Chocolate-Wars-150-Year-Rivalry-Greatest/dp/1610390512/" target="_blank" class="external">Chocolate Wars: The 150-Year Rivalry Between the World's Greatest Chocolate Makers</a></em> by Deborah Cadbury</li>
+	<li><em><a href="http://www.amazon.com/Long-Way-Bernard-Moitessier/dp/0924486848/" target="_blank" class="external">The Long Way</a></em> by Bernard Moitessier. If you only read one book about sailing, it should be this one.</li>
+	<li><em><a href="http://blogs.abc.net.au/queensland/2013/06/willis-island-solitude-solecisms.html?site=brisbane&program=612_weekends_with_warren" target="_blank" class="external">Solitude & Solecisms</a></em> by Frank Exon. I should mention that the author is a distant relation of mine. His son Neville had the diary published with the illustrations and though I started reading out of a sense of duty, I continued because it was delightful. A tough life though, especially the battle with cockroaches.</li>
+	<li><em><a href="http://www.amazon.com/Unlikely-Voyage-Jack-Crow-Odyssey/dp/1574091522/" target="_blank" class="external">The Unlikely Voyage of Jack De Crow: A Mirror Odyssey from North Wales to the Black Sea</a></em> by A. J. Mackinnon.</li>
+	<li><em><a href="http://www.amazon.com/1788-Watkin-Tench/dp/1921520043/" target="_blank" class="external">1788</a></em> by Watkin Tench.</li>
+	<li><em><a href="http://www.amazon.com/Girl-Interrupted-Susanna-Kaysen/dp/0679746048/" target="_blank" class="external">Girl, Interrupted</a></em> by Susanna Kaysen.</li>
+	<li><em><a href="http://www.amazon.com/Water-Between-Journey-Sea/dp/0385498845/" target="_blank" class="external">The Water in Between: A Journey at Sea</a></em> by Kevin Patterson.</li>
+	<li><em><a href="http://www.amazon.com/Man-Who-Cycled-World/dp/0307716651/" target="_blank" class="external">The Man Who Cycled the World</a></em> by Mark Beaumont.</li>
+	<li><em><a href="http://www.amazon.com/Am-Nujood-Age-10-Divorced/dp/0307589676/" target="_blank" class="external">I Am Nujood, Age 10 and Divorced</a></em> by Nujood Ali.</li>
+	<li><em><a href="http://www.amazon.com/Ice-Bird-Classic-Single-Handed-Antarctica/dp/1574091514/" target="_blank" class="external">Ice Bird</a></em> by David Lewis.</li>
+	<li><em><a href="http://www.amazon.com/Spanish-Treasure-Fleets-Timothy-Walton/dp/1561642614/" target="_blank" class="external">The Spanish Treasure Fleets</a></em> by Timothy R Walton</li>
+	<li>Also some book about an early Australian settler. Can't recall the details now.</li>
+</ol>
+<div>
+
 <h3>2010</h3>
 <div class="story">
 	<ol>
