@@ -63,21 +63,9 @@ jsStr;
 
 <h3>I wrote the following in about 2003. Some of it may still be true.</h3>
 <div class="story followOn">
-   <p>This latest revision to the site uses XHTML/Transitional and CSS to achieve a clearly-structured document and layout without tables so that content is separated from presentation. I'll shortly be finalizing the code so it will pass the W3's validator and move towards Section 508 compliance which ensures accessibility to those with disabilities (such as blind people using screen readers). The benefits of making the site &quot;standards-compliant&quot; are faster-loading pages, easier maintenance and availability to users with a variety of browsers. The last one is the hardest since the most popular browser, Internet Explorer for Windows&trade; implements the W3 standards poorly requiring numerous hacks to work around the browser&rsquo;s many <a href="http://www.positioniseverything.net/explorer.html">bugs</a>.</p>
+   <p>This latest revision to the site uses XHTML/Transitional and CSS to achieve a clearly-structured document and layout without tables so that content is separated from presentation. I'll shortly be finalizing the code so it will pass the W3's validator and move towards Section 508 compliance which ensures accessibility to those with disabilities (such as blind people using screen readers). The benefits of making the site &quot;standards-compliant&quot; are faster-loading pages, easier maintenance and availability to users with a variety of browsers.</p>
 </div>
 <? setThumbnail("PeterAtWork1.jpg"); ?>
-
-<div class="story wide codeBlock">
-   <h4>stylesNew.css</h4>
-   <div class="listing">
-   	<pre>
-      <? 
-      $strFile = file_get_contents ("../css/stylesNew.css");
-		echo escapeHTML($strFile);
-		?>
-   	</pre>
-   </div>
-</div>
    
 <div class="story followOn">
    <p>As you can see from the first entries in the &quot;What&rsquo;s new&quot; section, this web site was started in 1999 on Homestead.com using their WYSIWYG editor. Although it was simple to use, it produced static HTML files that were bulky and nearly incomprehensible to a human reader.  The site became very difficult to maintain since any change to the menu had to be replicated on every page.  Homestead.com realized they couldn't make money if they didn't charge for the service so when they introduced substantial fees, the site was moved to GeoCities.com.  This forced me to rewrite and simplify the pages but they were still static and maintenance was problematic.</p>
@@ -86,65 +74,13 @@ jsStr;
 </div>
 <? setThumbnail("MoirePattern1.jpg"); ?>
 
-
 <div class="story followOn">
    <p>To enforce a consistant look, there are two types of display pages.  All the pages which show the menu use &quot;dsp_outline.php&quot; which sets up a the overall page framework and includes the photo at the top-left, the headings, the menu and the &quot;content page&quot;.  The &quot;content page&quot; is specified in the index page for that directory, while the colors are specified in an &quot;app_locals&quot; file which is also directory-specific.  Each &quot;app_locals&quot; file includes &quot;app_globals&quot; that sets a few variables that affect the entire site such as database log in details.</p>
 </div>
-<div class="story wide codeBlock">
-   <h4>dsp_outline.php</h4>
-   <div class="listing">
-   	<pre>
-      <? 
-      $strFile = file_get_contents ("../dsp_outline.php");
-		echo escapeHTML($strFile);
-   	?>
-   	</pre>
-   </div>
-</div>
-   
-<div class="story followOn">
-   <p>To get a clearer picture of the fusebox methodology, here is the index file for the "Home" directory.</p>
-</div>
-<div class="story wide codeBlock">
-   <h4>index.php</h4>
-   <div class="listing">
-    	<pre>
-		<? 
-      $strFile = file_get_contents ("../home/index.php");
-		echo escapeHTML($strFile);
-   	?>
-   	</pre>
-   </div>
-</div>
-   
+
 <div class="story followOn">
    <p>Photographs are placed using the database which holds the name, caption, folder and any linked image for every photograph.  The file act_setThumbnailFunction.php defines a function called once for each thumbnail that writes out the HTML for the floating DIV, the image, link URL and caption.  If necessary, the link URL can be overridden.  The large image is shown using dsp_photoAndCaption.php which makes a call to the database to find the caption and places the caption to the side or below the image depending on its size.</p>
 </div>
-<div class="story wide codeBlock">
-	<h4>act_setThumbnailFunction.php</h4>
-	<div class="listing">
-		<pre>
-		<? 
-		$strFile = file_get_contents ("../imageMgt/act_setThumbnailFunction.php");
-		echo escapeHTML($strFile);
-		?>
-		</pre>
-	</div>
-</div>
-<div class="story wide codeBlock">
-	<h4>dsp_photoAndCaption.php</h4>
-	<div class="listing">
-		<pre>
-		<? 
-		$strFile = file_get_contents ("../imageMgt/dsp_photoAndCaption.php");
-		echo escapeHTML($strFile);
-		?>
-		</pre>
-	</div>
-</div>
-   
-<div class="story">
-	<p class="endText">See the current contents of the <a href="index.php?fuseAction=database">database</a>.</p>
-</div>
+
 
 

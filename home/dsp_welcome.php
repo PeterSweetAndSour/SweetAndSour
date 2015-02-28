@@ -1,6 +1,6 @@
 <? //dsp_welcome.php ?>
 <div class="story">
-   <p>This is Peter's web site, a very slow-motion blog.</p>
+   <p>This is Peter's web site, a very slow-motion blog. Don't try loading this on your phone as it is not yet responsive.</p>
 </div>
 
 <h3>5 October 2014</h3>
