@@ -36,4 +36,6 @@ switch ($fuseAction) {
 		echo "<p>No recognized fuse action in 'Time for Justice' section!</p>";
 		break;
 }
+
+$mysqli->close();
 ?>

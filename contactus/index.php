@@ -37,4 +37,6 @@ switch ($fuseAction) {
 		echo "<p>No recognized fuse action in 'Contact us' section!</p>";
 		break;
 }
+
+$mysqli->close();
 ?>

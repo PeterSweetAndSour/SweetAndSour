@@ -139,4 +139,6 @@ switch ($fuseAction) {
 		echo "<p>No recognized fuse action in 'Arts and Culture' section!</p>";
 		break;
 }
+
+$mysqli->close();
 ?>

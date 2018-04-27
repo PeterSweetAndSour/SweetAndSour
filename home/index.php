@@ -28,7 +28,15 @@ switch ($fuseAction) {
 	case "siteMap":
 		$heading1Text = "Site Map";
 		$contentPage = "dsp_siteMap.php";
-		$jsFiles[] = "xtree.js";
+		//$jsFiles[] = "xtree.js";
+		include '../dsp_outline.php';
+		break;
+		
+	// Facebook comments test	
+	case "fb-comments":
+		$testFacebookComments = true; //override config file
+		$heading1Text = "Testing Facebook comments";
+		$contentPage = "dsp_fbCommentsTest.php";
 		include '../dsp_outline.php';
 		break;
 		
@@ -38,4 +46,5 @@ switch ($fuseAction) {
 		break;
 }
 
+$mysqli->close();
 ?>

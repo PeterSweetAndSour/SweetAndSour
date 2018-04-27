@@ -24,23 +24,24 @@ $sql_menuId = <<<EOT
 
 EOT;
 
-$rs_menuId = @mysql_query($sql_menuId);
+$rs_menuId = $mysqli->query($sql_menuId);
 if($rs_menuId) {
-	$allSQL .= "rs_menuId (" . mysql_num_rows($rs_menuId) . " records returned)<br />" . $sql_menuId . "<br /><br />";
+	$numRows = $rs_menuId->num_rows;
+	$allSQL .= "rs_menuId (" .$numRows  . " records returned)<br />" . $sql_menuId . "<br /><br />";
 	
-	if(mysql_num_rows($rs_menuId) == 1) { //If one row returned, set selected, parent & grandparent;
-		$row = mysql_fetch_array( $rs_menuId );
+	if($numRows == 1) { //If one row returned, set selected, parent & grandparent;
+		$row = $rs_menuId->fetch_array(MYSQLI_ASSOC);
 		$selectedID    = $row["menuID"];
 		$parentID      = $row["parentID"];
 		$grandparentID = $row["grandparentID"];
 	}
-	else if(mysql_num_rows($rs_menuId) == 2){ // If 2 rows returned, have to figure out which is child
-		$row = mysql_fetch_array( $rs_menuId );
+	else if($numRows == 2){ // If 2 rows returned, have to figure out which is child
+		$row = $rs_menuId->fetch_array(MYSQLI_ASSOC);
 		$selectedID_1    = $row["menuID"];
 		$parentID_1      = $row["parentID"];
 		$grandparentID_1 = $row["grandparentID"];
 		
-		$row = mysql_fetch_array( $rs_menuId );
+		$row = $rs_menuId->fetch_array(MYSQLI_ASSOC);
 		$selectedID_2    = $row["menuID"];
 		$parentID_2      = $row["parentID"];
 		$grandparentID_2 = $row["grandparentID"];
@@ -58,7 +59,7 @@ if($rs_menuId) {
 	}
 	else { // 3 rows returned
 		for($i=0; $i<3; $i++) {
-			$row = mysql_fetch_array( $rs_menuId ); // If 3 rows returned, child row has grandparent != 0 and != -1
+			$row = $rs_menuId->fetch_array(MYSQLI_ASSOC); // If 3 rows returned, child row has grandparent != 0 and != -1
 			if($row["grandparentID"] > 0) {
 				$selectedID    = $row["menuID"];
 				$parentID      = $row["parentID"];

@@ -1,7 +1,3 @@
-/* 
-global window: false, self: false, Element: false, Browser: false, google: false, Request: false
-*/
-
 /*
 common.js
 
@@ -129,7 +125,7 @@ var SweetAndSour = (function() {
 
 	// ------------------------------------------------------------------------------------------------------------------------------------------------
 
-	// When user scrolls the real window, move the fake window accordingly
+	// When user scrolls the real window, move the fake window accordingly - 2018-04-24: could now use position:fixed
 	function _onScroll() {
 		//Cancel any previous setTimeout
 		window.clearTimeout(_lastSetTimeoutID);
@@ -257,7 +253,7 @@ var SweetAndSour = (function() {
 		loading.id = "loading";
 		
 		var img = document.createElement("img");
-		img.src = "http://sweetandsour.org.s3.amazonaws.com/images/loading_20080830.gif";
+		img.src = "../images/loading_20080830.gif";
 		img.setAttribute("alt", "Just a moment ...");
 		
 		var para = document.createElement("p");
@@ -272,7 +268,7 @@ var SweetAndSour = (function() {
 		var aMenuLinks = $("imageMenu").getElements("a");
 		aMenuLinks.each(
 			function(item, index) {
-				item.addEvent("click", 
+				item.addEventListener("click", 
 					function(){
 						$("overlay").style.display = "block";
 						$("loading").style.display = "block";
@@ -346,32 +342,6 @@ var SweetAndSour = (function() {
 
 		script.src = url;
 		document.body.appendChild(script);
-	}
-	
-	function _setCornersForIE() {
-		// If IE , set <span>s in div#page to give rounded corners (FF, Opera & Safari can use CSS).
-		// Note that you can't put "class" inside the property object for IE6, despite what the docs suggest.
-		if(Browser.Engine.trident) {
-			var nw = new Element("span", {id:"bgTopLeft"}).addClass("roundedCorner");
-			var ne = new Element("span", {id:"bgTopRight"}).addClass("roundedCorner");
-			var sw = new Element("span", {id:"bgBottomLeft"}).addClass("roundedCorner");
-			var se = new Element("span", {id:"bgBottomRight"}).addClass("roundedCorner");
-			
-			var page = $$('div.page')[0];
-			
-			page.appendChild(nw);
-			page.appendChild(ne);
-			page.appendChild(sw);
-			page.appendChild(se);
-		}
-	}
-	
-	// For IE6 which does not support position:fixed, scroll DHTML with real window
-	// (or it won't be visible if user opens photo some way down the page);
-	function _setPhotoWindowScrollForIE6() {
-		if(Browser.ie6) {
-			window.addEvent("scroll", _onScroll);
-		}
 	}
 	
 	// Make window draggable and associate function to save the window position when done
@@ -476,7 +446,7 @@ var SweetAndSour = (function() {
 	function _initializePhotoWindowCloseButtion() {
 			// Make close button on popup "window" clickable. 
 			var btnClose = _dhtmlWin.getElement("div.titleBar a");
-			btnClose.addEvent("mousedown", function() {
+			btnClose.addEventListener("mousedown", function() {
 					btnClose.className = "btnDown"; 
 					_dhtmlWin.style.display = "none"; 
 					
@@ -486,10 +456,10 @@ var SweetAndSour = (function() {
 					window.setTimeout(function(){ btnClose.className = ""; }, 1000); 
 					
 					// Make search box visible again
-					$("search").style.visibility = "visible";
+					//$("search").style.visibility = "visible";
 				}
 			);
-			btnClose.addEvent(
+			btnClose.addEventListener(
 				"mouseup", 
 				function() { btnClose.className = ""; }
 			);
@@ -502,9 +472,6 @@ var SweetAndSour = (function() {
 		
 		// Initialize page
 		initialize : function() {
-			_setCornersForIE();
-			_setPhotoWindowScrollForIE6();
-			
 			_dhtmlWin = $("photoFrame");
 			_clientArea = _dhtmlWin.getElement("div.clientArea");
 			
@@ -532,9 +499,10 @@ var SweetAndSour = (function() {
 				_alignPhotos(photoAlbums);
 			}
 			
-			// Stop regi;ar submission so Google's search can take over.
+			/*
+			// Stop regular submission so Google's search can take over.
 			var formSearch = $$("div#searchControl form")[0];
-			formSearch.addEvent(
+			formSearch.addEventListener(
 				"submit", 
 				function(event) {
 					if(!SweetAndSour.searchScriptLoaded) {
@@ -543,9 +511,10 @@ var SweetAndSour = (function() {
 					}
 				}
 			);
+			*/
 		},
 		
-		
+		/*
 		// ----------------------------------------------------------------------
 		// Google search stuff. Loads only when someone submits a search request.
 		// ----------------------------------------------------------------------
@@ -593,7 +562,7 @@ var SweetAndSour = (function() {
 				}
 			}
 		},
-		
+		*/
 		
 		// ---------------------------------------------------------------------
 		// Display photos
@@ -708,13 +677,14 @@ var SweetAndSour = (function() {
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 // Initialize the page
 // ------------------------------------------------------------------------------------------------------------------------------------------------
-window.addEvent("domready", SweetAndSour.initialize);
-
+document.addEventListener("DOMContentLoaded", function(){
+  SweetAndSour.initialize();
+});
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 // Google search
 // ------------------------------------------------------------------------------------------------------------------------------------------------
-
+/*
 // Load the AJAX Search API by using the google.load method as shown below. 
 // The google.load  method takes an argument for the specific API and version number to load:
 function OnLoad() {
@@ -822,6 +792,7 @@ var SearchAdditions = {
 		$("searchResults").style.display = "none";
 	}
 };
+*/
 
 
 

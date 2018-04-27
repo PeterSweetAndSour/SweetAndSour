@@ -22,11 +22,11 @@ if($folderId != -1) {
 	$sql.= "WHERE tbl_1.folderId = " . $folderId;
 	
 	
-	$rs_thisFolder = @mysql_query($sql);
+	$rs_thisFolder = $mysqli->query($sql);
 	if($rs_thisFolder) {
-		$allSQL .= "rs_thisFolder (" . mysql_num_rows($rs_thisFolder) . " records returned)<br>" . $sql . "<br><br>";
+		$allSQL .= "rs_thisFolder (" . $rs_thisFolder-num_rows . " records returned)<br>" . $sql . "<br><br>";
 
-		$row = mysql_fetch_array( $rs_thisFolder );
+		$row = $rs_thisFolder$rowd->fetch_array(MYSQLI_ASSOC);
 		$folderName = $row["folderName"];
 		$parentFolderName = $row["parentFolderName"];
 		$grandparentFolderName = $row["grandparentFolderName"];

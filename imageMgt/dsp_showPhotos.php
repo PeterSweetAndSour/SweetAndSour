@@ -47,14 +47,13 @@
 	}
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<title>Show photos</title>
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
 	<link rel="shortcut icon" href="../imageMgt/favicon.ico" />
-	<link rel="stylesheet" type="text/css" media="screen"  href="../css/styles_20101126.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen"  href="../css/styles_20111124.min.css" />
 	<script type="text/javascript">
 		// <![CDATA[
 		//User has selected a folder. Redraw page so list of photos in the DATABASE can be obtained.

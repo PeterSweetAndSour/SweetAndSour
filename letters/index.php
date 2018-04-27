@@ -427,4 +427,6 @@ switch ($fuseAction) {
 		echo "<p>" . $fuseAction . " is not a recognized fuse action in 'Coming to America' section!</p>";
 		break;
 }
+
+$mysqli->close();
 ?>

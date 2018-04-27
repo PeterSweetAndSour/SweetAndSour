@@ -56,6 +56,7 @@ for($i=0; $i < $int_len; $i++) {
 	}
 	
 	// For level 1 list items
+	$open_panel_index = 0; 
 	if($arr_menuData[$i]["menu_level"] == 1) {
 		// Use the fuseAction as class for image menu control 
 		$li_class[] = str_replace(" ", "", strtolower($arr_menuData[$i]["display_text"]));
@@ -131,7 +132,7 @@ $str_menuJS = <<<jsStr
 
 <script type="text/javascript">
 	
-	window.addEvent('domready', function(){
+	window.addEventListener('domready', function(){
 		// Get the top level (photo) navigation list items - NOT ANCHORS
 		var topLevelListItems = $("imageMenu").getFirst("ul").getChildren(); 
 		

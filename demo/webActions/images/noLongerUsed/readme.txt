@@ -1,1 +1,0 @@
-These images used when ExcludeResults was displayed as two checkmarks or, if editing, two checkboxes. CheckboxCover.gif used to simulate a background color on the checkbox as if disabled yet still allow the user to click on it and have some action taken. See history of webReport.asp for details.

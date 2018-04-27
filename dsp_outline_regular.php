@@ -27,10 +27,12 @@ else {
 	$menuHTML = "";
 }
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
 	<title>
 		<?= str_replace("<span>", "", (str_replace("</span>", "", $heading1Text))) ?> 
@@ -45,13 +47,7 @@ else {
 	<link rel="shortcut icon" type="images/x-icon" href="<?= $urlPrefix ?>favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../css/styles_20100831.css" /><!-- See styles_20090920.css for uncompressed version -->
 	<link rel="stylesheet" type="text/css" href="<?= $homeUrl ?>css/handheld_20090322.min.css" media="handheld" /><!-- See handheld_20090322.css for uncompressed version -->
-	<!--[if lte IE 6]>
-		<style type="text/css">
- 			div#search {width:325px;}
-			input.gsc-search-button {padding:1px 0 0 0;}
-		</style>
-	<![endif]-->
-	
+
 </head>
 <?php flush(); ?>
 <body class="<?= $bodyClass ?><?= $mediaSource ?>">

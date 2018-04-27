@@ -3,16 +3,17 @@ C:\Internet\WWWRoot\YUICompressor\build>
 	java -jar yuicompressor-2.4.2.jar C:\Internet\WWWRoot\sweetAndSour.org\css\styles_2010mmdd.css -o C:\Internet\WWWRoot\sweetAndSour.org\css\styles_2010mmdd.min.css 
 */
 
-
+/* ChowFun is a free font by Harold Lohner from http://www.haroldsfonts.com/chowfun.html */
 @font-face {
-	font-family: "ChowFunRegular";
-	src: url(../includes/Chowfun.eot);
+	font-family: 'Conv_Chowfun';
+	src: url('fonts/Chowfun.eot');
 	src: 
-		local(Chow Fun Regular), 
-		local(ChowFun), 
-		url(../includes/Chowfun.ttf) format("truetype"), 
-		url(../includes/Chowfun.woff) format("woff"), 
-		url(../includes/Chowfun.svg#ChowFun) format("svg");
+		local('?'), 
+		url('fonts/Chowfun.woff') format('woff'), 
+		url('fonts/Chowfun.ttf') format('truetype'), 
+		url('fonts/Chowfun.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 
@@ -105,7 +106,7 @@ h1, h2, h3, h4 {
 	clear:both;
 }
 h1 {
-	font-family:"ChowFunRegular"; 
+	font-family:'Conv_Chowfun',Sans-Serif;
 	color:#900;
 	font-size:2.4em;
 	margin-right:175px;
@@ -737,18 +738,15 @@ div.photoAlbum {float:left; display:inline; clear:both; width:100%; margin-botto
 div.photoBox {float:left; display:inline; width:167px; margin:0 16px 10px 0; padding:0} /* For thumbnails */
 div.photoHolder {float:left; display:inline; margin:0 10px 10px 0}                      /* For full size photos */
 div.imgInColumn {clear:both; float:left; display:inline; margin:0 10px 10px 40px}       /* For large images in main body. */
-div.imgShadow {/* From alistapart.com */
-	float:left; 
-	display:inline; 
-	margin: 8px 0 3px 7px; 
-	background: url(http://sweetandsour.org.s3.amazonaws.com/images/shadowAlpha2.png) no-repeat bottom right !important; 
-	background: url(http://sweetandsour.org.s3.amazonaws.com/images/shadow2.gif) no-repeat bottom right;
+div.imgShadow {
+	background-color: #fff; 
 } 
-body.mediaFromLocal div.imgShadow {
-	background-image: url(../image/shadowAlpha2.png) !important; 
-	background-image: url(../images/shadow2.gif)
-}
-div.imgShadow img, div.imgShadow div {display: block; position: relative; background-color: #fff; border: 1px solid #a9a9a9; margin: -6px 6px 6px -6px; padding: 4px;}	
+div.imgShadow img, div.imgShadow div {display: block; 
+	border: 1px solid #a9a9a9;
+	padding: 4px;
+	margin: 0 0 10px 0;
+	box-shadow: 3px 3px 3px #aaa;
+}	
 div.story div.imgShadow {margin-top: 15px;}
 
 div.ajaxBox, body.photoPage {padding:10px;}

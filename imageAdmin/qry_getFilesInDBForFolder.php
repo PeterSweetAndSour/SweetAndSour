@@ -13,9 +13,9 @@ if($folderId != -1) {
 	$sql = "SELECT photoName, caption, linkedImg, width, height ";
 	$sql.= "FROM photos ";
 	$sql.= "WHERE folderId = '" . $folderId . "' ORDER BY photoName";
-	$rs_photos = @mysql_query($sql);
-	$allSQL .= "rs_photos (" . mysql_num_rows($rs_photos) . " records returned)<br>" . $sql . "<br><br>";
-	while( $row = mysql_fetch_array( $rs_photos ) ) {
+	$rs_photos = $mysqli->query($sql);
+	$allSQL .= "rs_photos (" . $rs_photos->num_rows . " records returned)<br>" . $sql . "<br><br>";
+	while( $row = $rs_photos->fetch_array(MYSQLI_ASSOC) ) {
 		$file = $row["photoName"];
 		$width = $row["width"];
 		$height = $row["height"];

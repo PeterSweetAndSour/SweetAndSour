@@ -28,6 +28,7 @@ function setThumbnail($photoNames, $overrideURL = "", $panorama = "false") {
 	global $useVersionedFiles; //from config file
 	global $useAmazonS3;       //from config file
 	global $urlPrefix;         //from config file
+	global $mysqli;
 	
 	// If a string, change to an array
 	if(is_string($photoNames)) {

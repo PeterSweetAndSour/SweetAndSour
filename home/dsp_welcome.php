@@ -3,15 +3,28 @@
    <p>This is Peter's web site, a very slow-motion blog. Don't try loading this on your phone as it is not yet responsive.</p>
 </div>
 
+<h3>4 June 2017</h3>
+<div class="story">
+	<p>Trip to Japan! Two sets of photos depending on your interest: <a href="https://goo.gl/photos/qagK54GcwmfMpafEA">~500 photos</a> and <a href="https://goo.gl/photos/mNFazJxxcihsxuMQ7">~100 photos</a>.</p>
+</div>
+<? setThumbnail("JapaneseChildrenSm.jpg", "https://goo.gl/photos/qagK54GcwmfMpafEA"); ?>
+
+<h3>13 June 2015</h3>
+<div class="story">
+	<p>Trip to Brazil! Two sets of photos depending on your interest: <a href="https://photos.app.goo.gl/M1Xi8SIyd54ROwnl1">~500 photos</a> and <a href="https://photos.app.goo.gl/oYNUHoxkNJUmERtg1">~100 photos</a>.</p>
+</div>
+<? setThumbnail("BraziliaCathedralSm.jpg", "https://photos.app.goo.gl/M1Xi8SIyd54ROwnl1"); ?>
+
 <h3>5 October 2014</h3>
 <div class="story">
-	<p>I made a weekend trip from  <a href="https://picasaweb.google.com/104917370736054834098/RideToNewYorkCity?noredirect=1">DC to NYC by bike</a>! </p>
+	<p>I made a weekend trip from DC to NYC by bike! </p>
 </div>
-<? setThumbnail("RedBikeSm.jpg", "https://picasaweb.google.com/104917370736054834098/RideToNewYorkCity?noredirect=1"); ?>
+<? setThumbnail("RedBikeSm.jpg", "https://goo.gl/photos/ryAv4xveZaL7erpF8"); ?>
+
 
 <h3>7 November 2013</h3>
 <div class="story">
-	<p>Two years since I last posted anything! Goodness. Since then we finished the main work on the house and been on trips together to The Netherlands, Sweden and Denmark then to the UK by plane and back across the Atlantic by ship. Lan has taken separate trips to Iceland and London, Paris &amp; Lyon. I failed in my effort to ride a bike to New York in a weekend but did make it to <a href="https://picasaweb.google.com/104917370736054834098/NotTheAdventureIAnticipated?noredirect=1">Delaware</a>. I ran the 2013 Marine Corps Marathon in 3:14:40 (last year I ran injured and so was thrilled to manage 3:33:33) and will go to Australia shortly.</p>
+	<p>Two years since I last posted anything! Goodness. Since then we finished the main work on the house and been on trips together to The Netherlands, Sweden and Denmark then to the UK by plane and back across the Atlantic by ship. Lan has taken separate trips to Iceland and London, Paris &amp; Lyon. I failed in my effort to ride a bike to New York in a weekend but did make it to <a href="https://goo.gl/photos/ryAv4xveZaL7erpF8">Delaware</a>. I ran the 2013 Marine Corps Marathon in 3:14:40 (last year I ran injured and so was thrilled to manage 3:33:33) and will go to Australia shortly.</p>
 </div>
 
 

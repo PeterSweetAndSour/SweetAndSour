@@ -1,7 +1,7 @@
 <? /*
 qry_menu.php
 This page creates a 2-D array of all menu items in display order.
-Algorith from http://www.sitepoint.com/article/hierarchical-data-database/2
+Algorithm from http://www.sitepoint.com/article/hierarchical-data-database/2
 
 Inner arrays have format.
 	[0] displayText
@@ -25,8 +25,8 @@ $sql_root_node = <<<SQL1
 
 SQL1;
 
-$rs_root_node = mysql_query($sql_root_node);
-$arr_root_node = mysql_fetch_array($rs_root_node);
+$rs_root_node = $mysqli->query($sql_root_node);
+$arr_root_node = $rs_root_node->fetch_array(MYSQLI_ASSOC);
 
 // now, retrieve all descendants of the $root node 
 $sql_menu = <<<SQL2
@@ -43,12 +43,12 @@ $sql_menu = <<<SQL2
 SQL2;
 
 //$time_start = microtime(true);
-$rs_descendants = mysql_query($sql_menu);
+$rs_descendants =$mysqli->query($sql_menu);
 //$time_end = microtime(true);
 //$time_diff_sec = round($time_end - $time_start, 4);
 
 if($rs_descendants) {
-	$allSQL .= "rs_descendants: " . mysql_num_rows($rs_descendants) . " records ";
+	$allSQL .= "rs_descendants: " . $rs_descendants->num_rows . " records ";
 	//$allSQL .= "returned in " . $time_diff_sec . " sec. ";
 	$allSQL .= "<br />" . $sql_menu . "<br /><br />";
 }
@@ -57,7 +57,7 @@ if($rs_descendants) {
 $arr_menuData = array();
 
 //$time_start = microtime(true);
-while ($row = mysql_fetch_array($rs_descendants)) {
+while ($row = $rs_descendants->fetch_array(MYSQLI_ASSOC)) {
 	$arr_menuData[] = array("display_text" => $row['displayText'], "menu_id" => $row["menuID"], "folder_name" => $row['folderName'], "fuse_action" => $row['fuseAction'], "menu_level" => $row["menuLevel"]);
 }
 //$time_end = microtime(true);

@@ -27,10 +27,12 @@ else {
 	$str_menuHTML = "";
 }
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
 	<title>
 		<?= str_replace("<span>", "", (str_replace("</span>", "", $heading1Text))) ?> 
@@ -43,20 +45,11 @@ else {
 	}
 	?>
 	<link rel="shortcut icon" type="images/x-icon" href="<?= $urlPrefix ?>favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../css/styles_20111124.min.css" />
-	<link rel="stylesheet" type="text/css" href="<?= $homeUrl ?>css/handheld_20090322.min.css" media="handheld" /><!-- See handheld_20090322.css for uncompressed version -->
-	<!--[if lte IE 6]>
-		<style type="text/css">
- 			div#search {width:325px;}
-			input.gsc-search-button {padding:1px 0 0 0;}
-			body div.wiindow {position: absolute;;}
-		</style>
-	<![endif]-->
-	
+	<link rel="stylesheet" type="text/css" href="../css/styles_20111124.css" />
 </head>
 <?php flush(); ?>
 <body class="<?= $bodyClass ?><?= $mediaSource ?>">
-	<?
+	<? 
 	//Include function to set a thumbnail photo & caption. Called on content pages.
 	include '../imageMgt/act_setThumbnailFunction.php';
 	?>
@@ -67,36 +60,7 @@ else {
 			<div id="logo"><a href="<?= $homeUrl ?>home/index.php" title="Go to home page"><span>&nbsp;</span>Sweet and Sour home</a></div>
 			<p id="tagline">One is sweet and the other is &hellip; a web developer</p>
 			<p id="jumpToContent"><a href="#content" title="Jump to content">Jump to content</a></p><!-- Hidden except for mobile devices -->
-	
-			<!-- Search box. Gets replaced by Javascript when user clicks submit button. -->
-			<div id="search">
-				<div id="searchControl">
-					<form class="gsc-search-box" accept-charset="utf-8" method="post" action="../home/search.php">
-						<table cellspacing="0" cellpadding="0" class="gsc-search-box">
-							<tbody>
-								<tr>
-									<td class="gsc-input"><input type="text" autocomplete="off" size="10" class=" gsc-input" name="search" title="search"/></td>
-									<td class="gsc-search-button"><input type="submit" value="Search" class="gsc-search-button" title="search"/></td>
-									<td class="gsc-clear-button"></td>
-								</tr>
-							</tbody>
-						</table>
-						<table cellspacing="0" cellpadding="0" class="gsc-branding">
-							<tbody>
-								<tr>
-									<td class="gsc-branding-user-defined"></td>
-									<td class="gsc-branding-text"><div class="gsc-branding-text">powered by</div></td>
-									<td class="gsc-branding-img"><img src="http://www.google.com/uds/css/small-logo.png" class="gsc-branding-img"/></td>
-								</tr>
-							</tbody>
-						</table>
-					</form>
-				</div>			
-				<div id="searchResults"></div>
-				<!--
-				<div id="searchControl">Loading &hellip;</div>
-				-->
-			</div>
+			<!-- Search was here. See includes/dsp_search.php -->
 			<? 
 			if($displayMenu) {
 				?>
@@ -132,12 +96,6 @@ else {
 	   		<? } ?>
 				<!-- Copyright notice. -->
 				<p class="end" id="copyright"><?= $copyright ?></p>
-				<p class="end" id="standards">This site best viewed with a standards-compliant browser. <a class="external" href="http://www.webstandards.org/learn/faq/" title="Learn more than you probably wanted to know">Learn more</a>.</p>
-	   		<div class="end">
-	   			<a href="http://getfirefox.com/" title="Get Firefox - The Browser, Reloaded."><img src="<?= $urlPrefix ?>images/getFirefox_80x15.png" width="80" height="15" border="0" alt="Get Firefox" /></a> 
-					<a href="http://www.opera.com/download/" title="Get Opera" ><img src="<?= $urlPrefix ?>images/getOpera94x15b.gif" width="94" height="15" alt="Get Opera" /></a> 
-				</div>
-			</div>
 		</div>
 
 	   <?
@@ -165,17 +123,24 @@ else {
 		<div class="dragBarLeft"></div>
 	</div>
 	
+	<script type="text/javascript" src="../js/mootools-1.2-core.js"></script>
+	<script type="text/javascript" src="../js/mootools-1.2-more.js"></script>
+	<!--
+	<script type="text/javascript" src="../js/mootools-core-1.6.0.js"></script>
+	<script type="text/javascript" src="../js/mootools-more-1.6.0.js"></script>
+	-->
+	
+	<script type="text/javascript" src="../js/imageMenu_20101126.js"></script>
+	<script type="text/javascript" src="../js/common_20180424.js"></script>
+
 	<?
-	// Extra js files for specific pages may have been added on index.php files
-	$jsFiles[] = "mootools-1.2-core.js";
-	$jsFiles[] = "mootools-1.2-more.js";
-	$jsFiles[] = "imageMenu_20101126.min.js";
-	$jsFiles[] = "common_20101126.js";
+	/* Extra js files for specific pages may have been added on index.php files
 	foreach ($jsFiles as $file) {
 		?>
 		<script type="text/javascript" src="../js/<?= $file ?>"></script>
 		<?
 	}
+	*/
 	?>
 	<?= $str_menuJS ?>
 </body>

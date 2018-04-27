@@ -149,4 +149,6 @@ switch ($fuseAction) {
 		echo "<p>No recognized fuse action in 'Photos' section!</p>";
 		break;
 }
+
+$mysqli->close();
 ?>

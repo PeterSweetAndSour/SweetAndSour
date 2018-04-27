@@ -9,18 +9,11 @@ Variables:
 =>| $dbname     database to use
 */
 
-$connectionOK = false;
-$dbconnection = @mysql_connect( $dbserver, $dbuser, $dbpassword );
+$mysqli = new mysqli($dbserver, $dbuser, $dbpassword, $dbname);
 
-if($dbconnection) {
-	//Confirm connection to particular database is possible
-	if(! @mysql_select_db($dbname) ) {
-		echo "<p>Unable to connect to the " . $dbname . " database!";
-		exit();
-	}
+/* check connection */
+if (mysqli_connect_errno()) {
+    echo "<p>Unable to connect to the " . $dbname . " database!";
+    exit();
 }
-else {
-	echo "<p>Unable to connect to the " . $dbserver . " server!";
-	exit();
-} 
 ?>

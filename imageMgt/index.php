@@ -70,4 +70,5 @@ switch ($fuseAction) {
 if($showDebugInfo == true) {
 	include '../includes/act_showDebugInfo.php';
 }
+$mysqli->close();
 ?>

@@ -41,4 +41,5 @@ switch ($fuseAction) {
 		break;
 }
 
+$mysqli->close();
 ?>

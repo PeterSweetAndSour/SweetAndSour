@@ -57,7 +57,7 @@ var ImageMenu = new Class({
 		}
 		else {
 			this.widths.closed = this.elements[0].getStyle('width').toInt();
-			this.widths.openOthers = Math.round(((this.widths.closed*this.elements.length) - (this.widths.openSelected+this.options.border)) / (this.elements.length-1))
+			this.widths.openOthers = Math.round(((this.widths.closed*this.elements.length) - (this.widths.openSelected+this.options.border)) / (this.elements.length-1));
 		}
 		//console.log("this.widths.closed: " + this.widths.closed + ", openOthers: " + this.widths.openOthers + ", this.widths.openSelected: " + this.widths.openSelected);
 	
@@ -103,13 +103,13 @@ var ImageMenu = new Class({
 						obj.options.open = i;
 						obj.options.onOpen(this.parentNode.href, i);
 					}
-				})
+				});
 			}
 			
 		}.bind(this));
 		
 		// Expand one menu item on page load
-		if (this.options.open != null){ // had to ad "!= null" or it would not open at 0 as it interpretted that as false
+		if (this.options.open !== null){ // had to ad "!= null" or it would not open at 0 as it interpretted that as false
 			if ($type(this.options.open) == 'number'){
 				this.reset(this.options.open);
 			}
@@ -127,21 +127,22 @@ var ImageMenu = new Class({
 	}, // end initialize
 	
 	reset: function(num){
+		var width;
 		if ($type(num) == 'number'){
-			var width = this.widths.openOthers;
+			width = this.widths.openOthers;
 			if(num+1 == this.elements.length){
 				width += this.options.border;
 			}
 		}
 		else {
-			var width = this.widths.closed;
+			width = this.widths.closed;
 		}
 		
 		var obj = {};
 		this.elements.each(function(el,i){
 			var w = width;
 			if (i == this.elements.length-1){
-				w = width+5
+				w = width+5;
 			}
 			obj[i] = {'width': w};
 		}.bind(this));
@@ -281,7 +282,7 @@ var IMSubNav = (function() {
 				}
 			}
 		}
-	}
+	};
 })(); // "()" means it is self-executing - and runs only once
 
 

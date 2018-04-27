@@ -44,13 +44,13 @@ if($photos) {
 	  $caption = "<p>To control the panorama:</p><ul><li>drag mouse to move up/down, left/right</li><li>shift & mouse drag to zoom in</li><li>ctrl & mouse drag to zoom out</li><li>+ to zoom in by fixed increment</li><li>- to zoom out by fixed increment</li></ul>" . $caption;
 	}
 	?>
-	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
+	<!DOCTYPE html>
+	<html lang="en">
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
 		<title>Lan and Peter's web site</title>
 		<link rel="shortcut icon" type="images/x-icon" href="http://www.sweetandsour.org/favicon.ico" />
-		<link rel="stylesheet" type="text/css" media="screen,print"  href="../css/styles_20101126.min.css" />
+		<link rel="stylesheet" type="text/css" media="screen,print"  href="../css/styles_20111124.min.css" />
 		<style type="text/css">
 			html body {
 				background-color:#fff;

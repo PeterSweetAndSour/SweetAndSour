@@ -25,30 +25,41 @@ Variables:
 */
 
 function getPhotoInfo($photoNames) {
-
 	global $allSQL;
 	global $photos;
 	global $row;
+	global $mysqli;
 
 	// Create an array into which the results will be dumped
 	$photos = array();
 			
 	//Get details of these photos from the database
-	$sql = "SELECT tbl_1.folderId, tbl_1.parentFolderId, tbl_1.grandparentFolderId, tbl_1.folderName, tbl_2.folderName AS 'parentFolderName', tbl_3.folderName AS 'grandparentFolderName', photos.photoName, photos.linkedImg, photos.caption, photos.linkToFullSize, photos.version, photos.width, photos.height ";
+	$sql = "SELECT ";
+	$sql.= "	tbl_1.folderID, ";
+	$sql.= "	tbl_1.grandparentFolderID, ";
+	$sql.= "	tbl_1.folderName, ";
+	$sql.= "	tbl_2.folderName AS 'grandparentFolderName',  ";
+	$sql.= "	photos.photoName,  ";
+	$sql.= "	photos.linkedImg,  ";
+	$sql.= "	photos.caption,  ";
+	$sql.= "	photos.linkToFullSize,  ";
+	$sql.= "	photos.version,  ";
+	$sql.= "	photos.width,  ";
+	$sql.= "	photos.height  ";
 	$sql.= "FROM photos ";
-	$sql.= "INNER JOIN folders AS tbl_1 ON photos.folderId = tbl_1.folderID ";
-	$sql.= "LEFT JOIN folders AS tbl_2 ON tbl_1.parentFolderId = tbl_2.folderID ";
-	$sql.= "LEFT JOIN folders AS tbl_3 ON tbl_1.grandparentFolderId = tbl_3.folderID ";
-	$sql.= "WHERE photoName IN ('" . implode($photoNames, "','") . "')";
+	$sql.= "INNER JOIN folders AS tbl_1 ON photos.folderID = tbl_1.folderID ";
+	$sql.= "LEFT JOIN folders AS tbl_2 ON tbl_1.grandparentFolderID = tbl_2.folderID ";
+	$sql.= "WHERE photos.photoName IN ('" . implode($photoNames, "','") . "')";
 		
-	$rs_photoInfo = @mysql_query($sql);
+	$rs_photoInfo = $mysqli->query($sql);
 	if($rs_photoInfo) { //Check that there is a result set
-		$allSQL .= "rs_photoInfo (" . @mysql_num_rows($rs_photoInfo) . " records returned)<br />" . $sql . "<br /><br />";
+		$numRows = $rs_photoInfo->num_rows;
+		$allSQL .= "rs_photoInfo (" . $numRows . " records returned)<br />" . $sql . "<br /><br />";
 
-		if(mysql_num_rows($rs_photoInfo) > 0) { //Check that the result set contains more than zero rows.
+		if($numRows > 0) { //Check that the result set contains more than zero rows.
 			$photoInfoFound = true;
 			
-			while ($row = mysql_fetch_array($rs_photoInfo, MYSQL_ASSOC)) {
+			while ($row = $rs_photoInfo->fetch_array(MYSQLI_ASSOC)) {
 				$photoName = $row["photoName"];
 				$photos[$photoName] = $row;
 				/*
@@ -76,8 +87,8 @@ function getPhotoInfo($photoNames) {
 		}
 	}
 	else {
-		return false;
 		echo "No rs_photoInfo result set.<br />" . $sql . "<br />";
+		return false;
 	}
 }
 ?>

@@ -80,4 +80,6 @@ switch ($fuseAction) {
 		echo "<p>No recognized fuse action in 'Where we live' section!</p>";
 		break;
 }
+
+$mysqli->close();
 ?>
