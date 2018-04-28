@@ -23,6 +23,7 @@ $int_topLevelCounter = 0;
 
 $arr_menuHTML = array();
 $str_menuJS = "";
+$open_panel_index = 0; 
 
 $int_len = count($arr_menuData);
 
@@ -49,14 +50,13 @@ for($i=0; $i < $int_len; $i++) {
 			$str_menu3Txt = $arr_menuData[$i]["display_text"];
 		}
 		
-		// If secondary menu, need to prevent display of pipe in preceeding list item
+		// If secondary menu, need to prevent display of pipe in preceding list item
 		if($arr_menuData[$i]["menu_level"] == 2 && $int_indexLastLevel2 != 0) {
 			array_splice($arr_menuHTML, $int_indexLastLevel2, 0, " class=\"beforeSelected\"");
 		}
 	}
 	
 	// For level 1 list items
-	$open_panel_index = 0; 
 	if($arr_menuData[$i]["menu_level"] == 1) {
 		// Use the fuseAction as class for image menu control 
 		$li_class[] = str_replace(" ", "", strtolower($arr_menuData[$i]["display_text"]));
@@ -67,7 +67,6 @@ for($i=0; $i < $int_len; $i++) {
 		}
 		$int_topLevelCounter++;
 	}
-	
 	
 	if($arr_menuData[$i]["menu_level"] > $int_lastMenuLevel) { // starting a nested list
 		if($arr_menuData[$i]["menu_level"] == 2) {
@@ -127,12 +126,11 @@ $time_end = microtime(true);
 $time_diff_sec = ($time_end - $time_start);
 //echo "Time to print menu was " . round($time_end - $time_start, 4) . "<br />";
 
-
 $str_menuJS = <<<jsStr
 
 <script type="text/javascript">
 	
-	window.addEventListener('domready', function(){
+	window.addEvent('domready', function(){
 		// Get the top level (photo) navigation list items - NOT ANCHORS
 		var topLevelListItems = $("imageMenu").getFirst("ul").getChildren(); 
 		

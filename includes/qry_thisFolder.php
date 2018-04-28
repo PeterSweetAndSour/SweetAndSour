@@ -24,9 +24,9 @@ if($folderId != -1) {
 	
 	$rs_thisFolder = $mysqli->query($sql);
 	if($rs_thisFolder) {
-		$allSQL .= "rs_thisFolder (" . $rs_thisFolder-num_rows . " records returned)<br>" . $sql . "<br><br>";
+		$allSQL .= "rs_thisFolder (" . $rs_thisFolder->num_rows . " records returned)<br>" . $sql . "<br><br>";
 
-		$row = $rs_thisFolder$rowd->fetch_array(MYSQLI_ASSOC);
+		$row = $rs_thisFolder->fetch_array(MYSQLI_ASSOC);
 		$folderName = $row["folderName"];
 		$parentFolderName = $row["parentFolderName"];
 		$grandparentFolderName = $row["grandparentFolderName"];

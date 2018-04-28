@@ -109,7 +109,7 @@ var ImageMenu = new Class({
 		}.bind(this));
 		
 		// Expand one menu item on page load
-		if (this.options.open !== null){ // had to ad "!= null" or it would not open at 0 as it interpretted that as false
+		if (this.options.open !== null){ // had to add "!= null" or it would not open at 0 as it interpreted that as false
 			if ($type(this.options.open) == 'number'){
 				this.reset(this.options.open);
 			}

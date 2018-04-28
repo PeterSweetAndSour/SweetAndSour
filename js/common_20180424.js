@@ -446,7 +446,7 @@ var SweetAndSour = (function() {
 	function _initializePhotoWindowCloseButtion() {
 			// Make close button on popup "window" clickable. 
 			var btnClose = _dhtmlWin.getElement("div.titleBar a");
-			btnClose.addEventListener("mousedown", function() {
+			btnClose.addEvent("mousedown", function() {
 					btnClose.className = "btnDown"; 
 					_dhtmlWin.style.display = "none"; 
 					
@@ -459,7 +459,7 @@ var SweetAndSour = (function() {
 					//$("search").style.visibility = "visible";
 				}
 			);
-			btnClose.addEventListener(
+			btnClose.addEvent(
 				"mouseup", 
 				function() { btnClose.className = ""; }
 			);
@@ -598,7 +598,7 @@ var SweetAndSour = (function() {
 			_resetDragBars();
 			
 			// Temporarily hide the search box or the form elements will be visible through the dhtml window
-			$("search").style.visibility = "hidden";
+			//$("search").style.visibility = "hidden";
 		},
 		
 		// Function to open up a window to view photos from thumbnails.
