@@ -45,7 +45,7 @@ else {
 	}
 	?>
 	<link rel="shortcut icon" type="images/x-icon" href="<?= $urlPrefix ?>favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../css/styles_20111124.css" />
+	<link rel="stylesheet" type="text/css" href="../css/styles_20180428.css" />
 </head>
 <?php flush(); ?>
 <body class="<?= $bodyClass ?><?= $mediaSource ?>">
@@ -142,6 +142,5 @@ else {
 	}
 	*/
 	?>
-	<?= $str_menuJS ?>
 </body>
 </html>

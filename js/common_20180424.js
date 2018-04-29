@@ -22,8 +22,6 @@ var SweetAndSour = (function() {
 	var _apparentTop = 0;
 	var _apparentLeft = 0;
 	var _lastSetTimeoutID = 0;
-	//var _windowVisible = false;
-	//var _setIntervalIdForSearchForm = null;
 		
 
 	
@@ -264,7 +262,12 @@ var SweetAndSour = (function() {
 		$("menuWrapper").appendChild(loading);
 	}
 	
-	function _setMenuLinks() {
+	function _setMenu() {
+		_displayLoadingMsg();
+		_handleHoverOverMenu();
+	}
+	
+	function _displayLoadingMsg() {
 		var aMenuLinks = $("imageMenu").getElements("a");
 		aMenuLinks.each(
 			function(item, index) {
@@ -272,20 +275,99 @@ var SweetAndSour = (function() {
 					function(){
 						$("overlay").style.display = "block";
 						$("loading").style.display = "block";
-						
-						// Also cancel the mouseout event handler on the image menu so it is fixed as it unloads.
-						// Rather than attempting to set <element>.removeEvent on everything which will be hard
-						// since I don't have access to the bound functions here, will just reset the functions
-						//myMenu.reset = null;
-						IMSubNav.activate1 = null;
-						IMSubNav.reset1 = null;
-						IMSubNav.activate2 = null;
-						IMSubNav.reset2 = null;
 					}
 				);
 			}
 		);
+
 	}
+	
+	// Split this up
+	function _handleHoverOverMenu() {
+		// Get currently selected level 1 list item
+		level1Selected = $("imageMenu").getFirst("ul").getElement("li.selected"); 
+		
+		// Get the primary (photo) navigation list items. Note that we had to tell ImageMenu not to cancel event or this won't fire
+		var level1ListItems = $("imageMenu").getFirst("ul").getChildren(); 
+		level1ListItems.each(
+			function (listItem1, index) {
+				listItem1.addEvent("mouseover", activate1.bind(this, listItem1));
+				listItem1.addEvent("mouseout", restore1.bind(this, listItem1));
+				listItem1.addEvent("click", activate1.bind(this, listItem1));
+			},
+			this
+		);
+		
+		// Do the same for all second level list items
+		// Get currently selected level 2 list item - if there is a level 2 menu
+		level2Selected = level1Selected.getElement("li.selected");
+
+		var level2Lists = $$("ul.menu2");
+		var level2ListItems = [];
+		level2Lists.each(
+			function(list) {
+				level2ListItems.append(list.getChildren("li"));
+			}
+		);
+		
+		level2ListItems.each(
+			function (listItem2, index) {
+				listItem2.addEvent("mouseover", activate2.bind(this, listItem2));
+				listItem2.addEvent("mouseout", restore2.bind(this, listItem2));
+				listItem2.addEvent("click", activate2.bind(this, listItem2));
+			},
+			this
+		);
+	}
+			
+	// --------------------------------------------------------------------------
+	// Level 1 
+	var activate1 = function (listItem) {
+		if(listItem != level1Selected) {
+			level1Selected.addClass("off");
+			listItem.addClass("on");
+			lastLevel1Over = listItem;
+		}
+	};
+	
+	var restore1 = function () {
+		level1Selected.removeClass("off");
+		if(lastLevel1Over) {
+			lastLevel1Over.removeClass("on");
+		}
+	};
+	
+	// --------------------------------------------------------------------------
+	// Level 2
+	var activate2 = function(listItem) {
+		if(listItem != level2Selected) {
+			if(level2Selected) {
+				level2Selected.addClass("off");
+			}		
+			
+			listItem.addClass("on");
+			lastLevel2Over = listItem;
+			level2Previous = listItem.getPrevious("li");
+			if(level2Previous) {
+				level2Previous.addClass("beforeSelected");
+			}
+		}
+	};
+	
+	var restore2 = function() {
+		if(level2Selected) {
+			level2Selected.removeClass("off");
+		}
+		if(lastLevel2Over) {
+			lastLevel2Over.removeClass("on");
+			if(level2Previous) {
+				level2Previous.removeClass("beforeSelected");
+				level2Previous = null;
+			}
+		}
+	};
+	
+	
 	
 	// Insert a break after every fifth photo in a photo album
 	function _alignPhotos(photoAlbums) {
@@ -490,7 +572,7 @@ var SweetAndSour = (function() {
 			// Create a "Loading ..." overlay across menu to be activated when menu item is clicked
 			if($("imageMenu")) {
 				_createLoadingOverlay();
-				_setMenuLinks();
+				_setMenu();
 			}
 			
 			// If this page has a lot of photos set in div class="photoAlbum", run script to align photos
@@ -499,70 +581,8 @@ var SweetAndSour = (function() {
 				_alignPhotos(photoAlbums);
 			}
 			
-			/*
-			// Stop regular submission so Google's search can take over.
-			var formSearch = $$("div#searchControl form")[0];
-			formSearch.addEventListener(
-				"submit", 
-				function(event) {
-					if(!SweetAndSour.searchScriptLoaded) {
-						event.stop();
-						SweetAndSour.loadSearchScript();
-					}
-				}
-			);
-			*/
 		},
 		
-		/*
-		// ----------------------------------------------------------------------
-		// Google search stuff. Loads only when someone submits a search request.
-		// ----------------------------------------------------------------------
-		// Function to load Google in-page search
-		searchTerm: "",
-		searchScriptLoaded: false,
-		loadSearchScript : function() {
-			//console.warn("This is loadSearchScript. It should be called only once per page.");
-		
-			// Get the current contents of the search text box. We'll need it shortly.
-			var searchInput = $$("div#searchControl input.gsc-input")[0];
-			SweetAndSour.searchTerm = searchInput.value;
-			//console.info("searchTerm: " + SweetAndSour.searchTerm);
-			
-			if(SweetAndSour.searchTerm === "") {
-				//console.info("No search term!");
-				return;
-			}
-				
-			var searchScriptUrl = "http://www.google.com/jsapi?key=ABQIAAAAKZa0m7K346FCikKHHE-NgRR8wM3bJBMlRhAtPYyu9yNs3cni-BRTweLyvA1cMNrN0zjIV7JZ2-aRzg";
-			_loadScript(
-				searchScriptUrl,  // url of external script to load
-				function(){       // function to run after script loads
-					// Clear the container holding the old search box
-					$("searchControl").innerHTML = "Loading &hellip;";
-
-					// Load the dynamic search box
-					google.load('search', '1.0', {"language":"en", "callback" : OnLoad});  // google.load(moduleName, moduleVersion, optionalSettings)
-				}
-			);	
-			SweetAndSour.searchScriptLoaded = true;
-		},
-		
-		doSearch: function() {
-			// Copy the search term to the search box and "click" the button
-			var searchInput = $$("div#searchControl input.gsc-input")[0];
-			if(searchInput) {
-				searchInput.value = SweetAndSour.searchTerm;
-				var btnSubmit = $$("div#searchControl input.gsc-search-button")[0];
-				
-				// "Click" the button
-				if(btnSubmit) {
-					btnSubmit.click();
-					//console.info("simulated click just attempted");
-				}
-			}
-		},
-		*/
 		
 		// ---------------------------------------------------------------------
 		// Display photos
@@ -679,119 +699,6 @@ var SweetAndSour = (function() {
 document.addEventListener("DOMContentLoaded", function(){
   SweetAndSour.initialize();
 });
-
-// ------------------------------------------------------------------------------------------------------------------------------------------------
-// Google search
-// ------------------------------------------------------------------------------------------------------------------------------------------------
-/*
-// Load the AJAX Search API by using the google.load method as shown below. 
-// The google.load  method takes an argument for the specific API and version number to load:
-function OnLoad() {
-	// Create a search control
-	var searchControl = new google.search.SearchControl();
-
-	// Create search objects
-	var webSearch = new google.search.WebSearch();
-	//var imgSearch = new google.search.ImageSearch();
-	
-	// Restrict search to just one site
-	webSearch.setSiteRestriction("sweetandsour.org");
-	webSearch.setUserDefinedLabel("Sweet & Sour articles");
-
-	//imgSearch.setSiteRestriction("sweetandsour.org");
-	//imgSearch.setUserDefinedLabel("Sweet &amp; Sour images");
-
-	// Add web and image searcher with different options
-	var searchOptions = new google.search.SearcherOptions();
-	searchOptions.setExpandMode(google.search.SearchControl.EXPAND_MODE_OPEN);
-	searchControl.addSearcher(webSearch, searchOptions);
-	
-	//var searchOptions = new google.search.SearcherOptions();
-	//searchOptions.setExpandMode(google.search.SearchControl.EXPAND_MODE_CLOSED);
-	//searchControl.addSearcher(imgSearch, searchOptions);
-	
-	// Set callback functions
-	searchControl.setSearchStartingCallback(
-		this, 
-		function(sc, searcher, query) {
-			SearchAdditions.searchStart();
-		}
-	);
-	searchControl.setSearchCompleteCallback(
-		this, 
-		function(sc, searcher) {
-			SearchAdditions.searchComplete(sc, searcher);
-		}
-	);
-
-	// Tell the searcher to draw itself and where to attach
-	var drawOptions = new google.search.DrawOptions();
-	drawOptions.setSearchFormRoot(document.getElementById("searchControl"));
-	drawOptions.setDrawMode(google.search.SearchControl.DRAW_MODE_LINEAR);
-	
-	// Tell it where to show the results
-	searchControl.draw(document.getElementById("searchResults"), drawOptions);
-
-	// make sure the results box is not visible
-	// SearchAdditions.closeResults();
-	
-	// Move the close button "X" inside the results box where people expect it
-	var btn = $("searchControl").getElement("div.gsc-clear-button");
-	$("searchControl").getElement("td.gsc-clear-button").removeChild(btn);
-	$("searchResults").getElement("table.gsc-resultsHeader td.gsc-configLabelCell").appendChild(btn);
-	
-	// Since clicking the "X" button only hides the granchild DIV of searchResults, add another event handler to close searchResults
-	btn.addEvent(
-		"click", 
-		function(event) { SearchAdditions.closeResults(event); }
-	);
-	
-	SweetAndSour.doSearch();
-}
-
-
-
-// Additional functionality not provided by Google
-var SearchAdditions = {
-	webSearchDone: false,
-	imgSearchDone: false,
-	
-	searchStart: function() {
-		//console.log("starting search");
-		webSearchDone = false;
-		imgSearchDone = false;
-	},
-	
-	// Display the results when all searches have completed (Aug 08: there is only one right now)
-	searchComplete: function(sc, searcher) {
-		if (searcher.results && searcher.results.length > 0) {
-			if(searcher.results[0].GsearchResultClass == "GwebSearch") {
-				//console.log("Web search is complete");
-				webSearchDone = true;
-			}
-			
-			//if(searcher.results[0].GsearchResultClass == "GimageSearch") {
-				//console.log("Image search is complete");
-			//	imgSearchDone = true
-			//}
-			
-			//if(webSearchDone && imgSearchDone) {
-			if(webSearchDone) {
-				//console.log("All done");
-				//alert("Do something now");
-				$("searchResults").style.display = "block";
-			}
-		}
-	},
-	
-	showResults: function(event) {
-		$("searchResults").style.display = "block";
-	},
-	closeResults: function(event) {
-		$("searchResults").style.display = "none";
-	}
-};
-*/
 
 
 

@@ -125,34 +125,4 @@ $str_menuHTML = join("", $arr_menuHTML);
 $time_end = microtime(true);
 $time_diff_sec = ($time_end - $time_start);
 //echo "Time to print menu was " . round($time_end - $time_start, 4) . "<br />";
-
-$str_menuJS = <<<jsStr
-
-<script type="text/javascript">
-	
-	window.addEvent('domready', function(){
-		// Get the top level (photo) navigation list items - NOT ANCHORS
-		var topLevelListItems = $("imageMenu").getFirst("ul").getChildren(); 
-		
-		// Create the menu and set the selected top-level menu item
-		var myMenu = new ImageMenu(
-			topLevelListItems,
-			{                    // options object
-				onOpen:function(linkUrl, panelIndex){myMenu.reset(panelIndex)},
-				openWidth:500,    // must match stylesheet
-				closedWidth:55,   // must match stylesheet
-				border:2,
-				open: $open_panel_index, // I thought this may not be necessary since stylesheet now specifies widths for selected and closed but need to set widths array
-				stopEvent:false  // don't stop event in ImageMenu as a submenu will need it on the containing list item
-			}
-		);
-		
-		// Set the submenu
-		IMSubNav.prepare()
-		
-	});
-	
-</script>
-jsStr;
-
 ?>
