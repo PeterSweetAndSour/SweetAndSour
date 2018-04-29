@@ -577,7 +577,6 @@ var SweetAndSour = (function() {
 				{
 					url: ajaxUrl,
 					onSuccess: function(responseText) {
-						
 						// Inject the new DOM elements into the results div.
 						$('photoContent').adopt(responseText);
 					},

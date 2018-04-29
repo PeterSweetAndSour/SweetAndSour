@@ -36,7 +36,7 @@ var ImageMenu = new Class({
 		onClose: Class.empty,
 		openWidth: 200, // Default not used - see act_constructMenu.php
 		closedWidth:20, // Default not used - see act_constructMenu.php
-		transition: Fx.Transitions.Quad.easeOut, // changed for Moo v1.2
+		transition: Fx.Transitions.Quad.easeOut,
 		duration: 400,
 		open: null,
 		border: 0,
@@ -71,7 +71,7 @@ var ImageMenu = new Class({
 		);
 		
 		this.elements.each(function(element,i){  // remember that 'element' is a LI, not an A
-			element.addEvent('mouseenter', function(e){  // 'mouseenter' should only be for IE but apparently it works in FF, Opera and Safari
+			element.addEvent('mouseover', function(e){
 				if(this.options.stopEvent) {
 					new Event(e).stop();
 				}
@@ -79,7 +79,7 @@ var ImageMenu = new Class({
 				
 			}.bind(this));
 			
-			element.addEvent('mouseleave', function(e){  // same here too
+			element.addEvent('mouseout', function(e){  // same here too
 				if(this.options.stopEvent) {
 					new Event(e).stop();
 				}
@@ -110,7 +110,7 @@ var ImageMenu = new Class({
 		
 		// Expand one menu item on page load
 		if (this.options.open !== null){ // had to add "!= null" or it would not open at 0 as it interpreted that as false
-			if ($type(this.options.open) == 'number'){
+			if (typeOf(this.options.open) == 'number'){
 				this.reset(this.options.open);
 			}
 			else {
@@ -128,7 +128,7 @@ var ImageMenu = new Class({
 	
 	reset: function(num){
 		var width;
-		if ($type(num) == 'number'){
+		if (typeOf(num) == 'number'){
 			width = this.widths.openOthers;
 			if(num+1 == this.elements.length){
 				width += this.options.border;
@@ -139,6 +139,7 @@ var ImageMenu = new Class({
 		}
 		
 		var obj = {};
+		
 		this.elements.each(function(el,i){
 			var w = width;
 			if (i == this.elements.length-1){
@@ -147,10 +148,9 @@ var ImageMenu = new Class({
 			obj[i] = {'width': w};
 		}.bind(this));
 		
-		if ($type(num) == 'number'){
+		if (typeOf(num) == 'number'){
 			obj[num] = {'width': this.widths.openSelected};
 		}
-				
 		this.fx.start(obj);
 	}
 	
@@ -220,7 +220,7 @@ var IMSubNav = (function() {
 			var level2ListItems = [];
 			level2Lists.each(
 				function(list) {
-					level2ListItems.extend(list.getChildren("li"));
+					level2ListItems.append(list.getChildren("li"));
 				}
 			);
 			

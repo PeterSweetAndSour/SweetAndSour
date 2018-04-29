@@ -123,12 +123,12 @@ else {
 		<div class="dragBarLeft"></div>
 	</div>
 	
+	<!--
 	<script type="text/javascript" src="../js/mootools-1.2-core.js"></script>
 	<script type="text/javascript" src="../js/mootools-1.2-more.js"></script>
-	<!--
+	-->
 	<script type="text/javascript" src="../js/mootools-core-1.6.0.js"></script>
 	<script type="text/javascript" src="../js/mootools-more-1.6.0.js"></script>
-	-->
 	
 	<script type="text/javascript" src="../js/imageMenu_20101126.js"></script>
 	<script type="text/javascript" src="../js/common_20180424.js"></script>
