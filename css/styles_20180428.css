@@ -84,15 +84,13 @@ thead th {
 Standard elements
 ************************************************************* */
 body {
-  background: #82bffa url(http://sweetandsour.org.s3.amazonaws.com/images/bgPage_20080607.gif) repeat-x scroll 0 0;
+  background: #82bffa url(../images/bgPage_20080607.gif) repeat-x scroll 0 0;
   margin: 0;
   padding: 0;
   font-family: Verdana, Helvetica, sans-serif;
   font-size: 0.75em;
   /* 12px default */ }
 
-body.mediaFromLocal {
-  background-image: url(../images/bgPage_20080607.gif); }
 
 h1, h2, h3, h4 {
   clear: both; }
@@ -391,12 +389,11 @@ body.timeForJustice #imageMenu {
   float: left;
   height: 228px;
   width: 55px;
-  transition: width 0.4s;
-  transition-delay: 0.2s;
+  transition: width 0.5s;
+  transition-delay: 0.3s;
   transition-timing-function: easeOutQuad;
   /* closed width - must match what is in the call to ImageMenu on act_constructMenu.php */
   display: block;
-  /*margin-right: 2px; */
   border-right: 2px solid white;
   }
  #imageMenu ul li.contactus {
@@ -406,15 +403,15 @@ body.timeForJustice #imageMenu {
 #imageMenu ul li.selected {
   background-color: green;
   width: 500px;
-  transition: width 0.4s;
-  transition-delay: 0.2s;
+  transition: width 0.5s;
+  transition-delay: 0.3s;
   transition-timing-function: easeOutQuad;
   }
   
 #imageMenu ul li.selected.off {
   width: 55px;
-  transition: width 0.4s;
-  transition-delay: 0.2s;
+  transition: width 0.5s;
+  transition-delay: 0.3s;
   transition-timing-function: easeOutQuad;
 }
 
@@ -422,8 +419,8 @@ body.timeForJustice #imageMenu {
   background-color: red;
   border-bottom: 4px solid #fff;
   width: 500px;
-  transition: width 0.4s;
-  transition-delay: 0.2s;
+  transition: width 0.5s;
+  transition-delay: 0.3s;
   transition-timing-function: easeOutQuad;
   /* Need the LI to extend down at least to the top of the submenu so that a mouseout event is not registered when moving to the child UL submenu */ }
 
@@ -1121,19 +1118,45 @@ td.gsc-clear-button {
  * Forms                                                      *
  **************************************************************/
 .inputRow {
-  margin-bottom: 10px; }
+	margin-bottom: 20px;
+}
+.inputRow label {
+  margin-bottom: 5px;
+}
 
-.inputRow input {
-  margin-right: 10px; }
+.inputRow label,
+.inputRow input,
+.inputRow textarea {
+  display:block;
+  width: 100%;
+}
 
 .actionRow {
-  border-top: 1px solid #999;
-  background-color: #ddd;
+  border-top: 1px solid #666;
+  background-color: #E6F2FE ;
   padding: 10px;
-  margin: 20px 0; }
+  margin: 20px 0; 
+}
+.actionRow input[type='submit'] {
+	padding: 6px 16px;
+	border-radius: 5px;
+}
+.actionRow input[type='submit']:hover,
+.actionRow input[type='submit']:active,
+.actionRow input[type='submit']:focus {
+}
+.actionRow input[type='submit']:focus {
+	outline: 1px dotted #666;
+}
+
+.success {
+	background-color: #cce5cc;
+	padding: 20px 0;
+}
 
 .results {
-  margin-bottom: 20px; }
+  margin-bottom: 20px; 
+}
 
 /**************************************************************
  * Not used?                                                  *

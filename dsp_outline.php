@@ -46,6 +46,17 @@ else {
 	?>
 	<link rel="shortcut icon" type="images/x-icon" href="<?= $urlPrefix ?>favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="../css/styles_20180428.css" />
+	
+	<?
+	/* Extra js files for specific pages may have been added on index.php files */
+	foreach ($jsFiles as $file) {
+		if (strncmp(trim($file), "<script", 7) === 0) {
+			?><?= $file ?><? 
+		} else { 
+			?><script type="text/javascript" src="../js/<?= $file ?>"></script><?
+		}
+	}
+	?>
 </head>
 <?php flush(); ?>
 <body class="<?= $bodyClass ?><?= $mediaSource ?>">
@@ -133,14 +144,5 @@ else {
 	<script type="text/javascript" src="../js/imageMenu_20101126.js"></script>
 	<script type="text/javascript" src="../js/common_20180424.js"></script>
 
-	<?
-	/* Extra js files for specific pages may have been added on index.php files
-	foreach ($jsFiles as $file) {
-		?>
-		<script type="text/javascript" src="../js/<?= $file ?>"></script>
-		<?
-	}
-	*/
-	?>
 </body>
 </html>

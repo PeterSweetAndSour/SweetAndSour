@@ -44,7 +44,10 @@ if($photos) {
 			$panoHeight = 200;
 		
 		//Also add expanatory text to caption
-	  $caption = "<p>To control the panorama:</p><ul><li>drag mouse to move up/down, left/right</li><li>shift & mouse drag to zoom in</li><li>ctrl & mouse drag to zoom out</li><li>+ to zoom in by fixed increment</li><li>- to zoom out by fixed increment</li></ul>" . $caption;
+		$caption = "<p>To control the panorama:</p><ul><li>drag mouse to move up/down, left/right</li><li>shift & mouse drag to zoom in</li><li>ctrl & mouse drag to zoom out</li><li>+ to zoom in by fixed increment</li><li>- to zoom out by fixed increment</li></ul>" . $photos[$photoName]["caption"];
+	  }
+	  else {
+		$caption = $photos[$photoName]["caption"];
 	  }
 		
 		$newWindowUrl = "/imageMgt/index.php?fuseAction=showPhotoAndCaption&amp;photoName=" . $photoName;
@@ -65,7 +68,7 @@ if($photos) {
 		</div>		
 	</div>
 	<div class="caption">
-		<?= $photos[$photoName]["caption"] ?>
+		<?= $caption ?>
 	</div>
 	<div class="footer">
 		<p id="photoLink" class="end">URL to this photo: http://www.sweetandsour.org/imageMgt/index.php?fuseAction=showPhotoAndCaption&amp;photoName=<?= $photoName ?></p>

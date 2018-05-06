@@ -8,30 +8,31 @@ Send mail message.
 =>| Form.msgText
 
 */
-require_once("recaptchalib.php");
-$privatekey = "6LcWaL4SAAAAAPzruU1s5TkFF99apP0wpvWKk3qp";
 
 $_SESSION["senderName"] = htmlspecialchars($_POST["senderName"]);
 $_SESSION["senderEmail"] = htmlspecialchars($_POST["senderEmail"]);
 $_SESSION["msgSubject"] = htmlspecialchars($_POST["msgSubject"]);
 $_SESSION["msgText"] = htmlspecialchars($_POST["msgText"]);
 
-$resp = recaptcha_check_answer ($privatekey,
-                                $_SERVER["REMOTE_ADDR"],
-                                $_POST["recaptcha_challenge_field"],
-                                $_POST["recaptcha_response_field"]);
+$reCAPTCHA_url = "https://www.google.com/recaptcha/api/siteverify";
+$reCAPTCHA_data["secret"] = $reCAPTCHA_secretKey;
+$reCAPTCHA_data["response"] = $_POST["g-recaptcha-response"];
+$reCAPTCHA_data["remoteip"] = $_SERVER["REMOTE_ADDR"];				
 
-  if (!$resp->is_valid) {
-    // What happens when the CAPTCHA was entered incorrectly
- 		header("Location: index.php?fuseAction=contactUs&captchaError=true");
-  } 
-	else {
-		//Send the message
-		mail($myEmailAddr, $_SESSION["msgSubject"], $_SESSION["senderName"] . " wrote from SweetAndSour.org: \r\r" . $_SESSION["msgText"], "From: " . $_SESSION["senderEmail"]);
+$json_response = CallAPI("POST", $reCAPTCHA_url, $reCAPTCHA_data);
+$response = json_decode($json_response);
 
-		//Send user to "thank you" page
-		header("Location: index.php?fuseAction=contactUs&msgSent=true");
-  }
+if ($response->success) {
+	//Send the message
+	mail($myEmailAddr, $_SESSION["msgSubject"], $_SESSION["senderName"] . " wrote from SweetAndSour.org: \r\r" . $_SESSION["msgText"], "From: " . $_SESSION["senderEmail"]);
+
+	//Send user to "thank you" page
+	header("Location: index.php?fuseAction=contactUs&msgSent=true");
+}
+else {
+	// What happens when the CAPTCHA was entered incorrectly
+	header("Location: index.php?fuseAction=contactUs&formError=true&errors=" . join(" | ", $response->error-codes));
+}
 
 ?>
 

@@ -16,19 +16,31 @@ else {
 	$fuseAction = "contactUs";
 }
 
-
 switch ($fuseAction) {
 
 	//Email form
 	case "contactUs":
 		$heading1Text = "Contact Us";
 		$showToTopLink = false;  //Page too short to include "To top" link.
+		$jsFiles[] = "<script src='https://www.google.com/recaptcha/api.js'></script>";
+		$jsFiles[] = <<<reCAPTCHA
+
+<script type="text/javascript">
+	var onloadCallback = function() {
+		grecaptcha.render('reCAPTCHA-wrapper', {
+			'sitekey' : '$reCAPTCHA_siteKey'
+		});
+	};
+</script>
+
+reCAPTCHA;
 		$contentPage = 'dsp_contactUs.php';
 		include '../dsp_outline.php';
 		break;
 
 	//Send email
 	case "sendEmail":
+		include '../includes/act_callAPI.php';
 		include 'act_sendEmail.php';
 		break;
 

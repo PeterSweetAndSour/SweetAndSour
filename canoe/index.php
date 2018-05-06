@@ -18,7 +18,6 @@ else {
 
 switch ($fuseAction) {
 
-	//Email form
 	case "canoe":
 		$heading1Text = "Canoe!";
 		$displayMenu = false;
