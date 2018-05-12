@@ -45,7 +45,7 @@ else {
 	}
 	?>
 	<link rel="shortcut icon" type="images/x-icon" href="<?= $urlPrefix ?>favicon.ico" />
-	<link rel="stylesheet" type="text/css" href="../css/styles_20180428.css" />
+	<link rel="stylesheet" type="text/css" href="../css/styles_20180512.css" />
 	
 	<?
 	/* Extra js files for specific pages may have been added on index.php files */

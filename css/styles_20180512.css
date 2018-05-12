@@ -453,7 +453,7 @@ body.timeForJustice #imageMenu {
   background-attachment: scroll; }
 
 body.mediaFromLocal #imageMenu >  ul >  li a.photoLink span {
-  background-image: url(../images/headerSprite_20090312.jpg); }
+  background-image: url(../images/headerSprite_20180512.jpg); }
 
 #imageMenu >  ul > li.home a span {
   background-position: 0 0; }
@@ -482,7 +482,8 @@ body.mediaFromLocal #imageMenu >  ul >  li a.photoLink span {
 #imageMenu >  ul > li.contactus a span {
   background-position: -4000px 0; }
   
- a.photoLink > .verticalText {
+ a.photoLink > .verticalText,
+li.selected.off > a > .verticalText {
 	transform: rotate(-90deg) ;
 	transform-origin:  0.4em 0.5em;
 	transition-property: transform;
@@ -498,6 +499,7 @@ body.mediaFromLocal #imageMenu >  ul >  li a.photoLink span {
 	font-weight: 300;
 	text-shadow: 0px 0px 15px #000;
 	margin:0;
+	white-space: nowrap;
 }
 li.on > a > .verticalText,
 li.selected > a > .verticalText {

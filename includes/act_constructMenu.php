@@ -108,9 +108,12 @@ for($i=0; $i < $int_len; $i++) {
 	// If top-level menu, insert an empty span for image replacement
 	if($arr_menuData[$i]["menu_level"] == 1) {
 		$arr_menuHTML[] = "<span></span>";
+		$arr_menuHTML[] = "<p class=\"verticalText\">" . $arr_menuData[$i]["display_text"] . "</p>";
+	}
+	else {
+			$arr_menuHTML[] = $arr_menuData[$i]["display_text"];
 	}
 	
-	$arr_menuHTML[] = $arr_menuData[$i]["display_text"];
 	$arr_menuHTML[] = "</a>";
 
 	
