@@ -121,19 +121,6 @@ switch ($fuseAction) {
 		include '../dsp_outline.php';
 		break;
 		
-
-	//Coming attractions
-	/*
-	case "coming";
-		$sectionPhoto = "LanChild1.jpg";
-		$sectionPhotoLink = "../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=LanChild2.jpg";
-		$heading1Text = "Coming attractions";
-		$showToTopLink = false;  //Page too short to include "To top" link.
-		$contentPage = 'dsp_coming.php';
-		include '../dsp_outline.php';
-		break;
-	*/
-
 	/**** Default case. ****/
 	default:
 		echo "<p>No recognized fuse action in 'Arts and Culture' section!</p>";
