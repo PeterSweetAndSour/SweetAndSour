@@ -4,3 +4,4 @@
 *.pdf
 *.doc
 .directory
+node_modules

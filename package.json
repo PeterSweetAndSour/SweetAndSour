@@ -1,0 +1,42 @@
+{
+  "name": "sweet-and-sour",
+  "title": "Sweet and Sour",
+  "description": "My personal website.",
+  "version": "3.0",
+  "homepage": "https://sweetandsour.org",
+  "demo": "",
+  "docs": "",
+  "author": {
+    "name": "Peter Varley",
+    "email": "",
+    "url": "https://sweetandsour.org/contactus/index.php?fuseAction=contactUs"
+  },
+  "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-jekyll": "^1.0.1",
+    "grunt-sass": "^3.1.0",
+    "node-sass": "^4.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PeterSweetAndSour/SweetAndSour"
+  },
+  "bugs": "https://github.com/PeterSweetAndSour/SweetAndSour/issues",
+  "keywords": [
+    "personal"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ]
+}

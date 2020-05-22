@@ -45,55 +45,13 @@ else {
 	}
 	?>
 	<link rel="shortcut icon" type="images/x-icon" href="<?= $urlPrefix ?>favicon.ico" />
+
 	<link rel="stylesheet" type="text/css" href="../css/styles_20180516.css" />
+	<link rel="stylesheet" type="text/css" href="../css/styles_2020.css" />
 
 	<link rel="stylesheet" type="text/css" href="../css/photoswipe.css" />
 	<link rel="stylesheet" type="text/css" href="../css/default-skin/default-skin.css" />
-	<style>
-		.container {
-		  display: flex;
-		  flex-direction: row;
-		  flex-wrap: wrap;
-		  justify-content: start;
-		  align-items: flex-start;
-		  align-content: start
-		}
-		.container:after {
-		  display: block;
-		  content: " ";
-		  margin: 10px;
-		  flex: 999 999 auto;
-		}
-		.item {
-		  flex: 0 0 auto;
-		  margin: 10px;
-		  width: 170px;
-		}
-		figure {
-		  margin: 0;
-		  padding: 0;
-		}
-		figcaption.thumbnail {
-		  font-family: Verdana, Helvetica, sans-serif;
-		   font-size: 12px;
-		}
-		figcaption.fullsize {
-		  display: none; /* Contains the caption for the photo shown with PhotoSwipe. */
-		}
-		img.thumbnail {
-		  box-shadow: 6px 6px 5px 0px #AAAAAA;
-		  margin-bottom: 5px;
-		}
-		.pswp__caption__center {
-			font-size: 15px;
-		}
-		.pswp__caption__center > p,
-		.pswp__caption__center > pre,
-		.pswp__caption__center > img,
-		.pswp__caption__center > iframe {
-			margin: 0 0 0.5em 10px;
-		}
-	 </style>	
+
 	
 	<?
 	/* Extra js files for specific pages may have been added on index.php files */
@@ -169,12 +127,9 @@ else {
 	include '../includes/dsp_photoswipe.php';
 	?>
 	
-	<script type="text/javascript" src="../js/mootools-core-1.6.0.js"></script>
-	<script type="text/javascript" src="../js/mootools-more-1.6.0.js"></script>
-	<script type="text/javascript" src="../js/common_20180424.js"></script>
+	<script type="text/javascript" src="../js/common_2020.js"></script>
 	<script type="text/javascript" src="../js/photoswipe.js"></script>
 	<script type="text/javascript" src="../js/photoswipe-ui-default.js"></script>
 	<script type="text/javascript" src="../js/photoswipe_setup.js"></script>
-
 </body>
 </html>

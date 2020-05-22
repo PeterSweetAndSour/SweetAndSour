@@ -69,12 +69,7 @@ for($i=0; $i < $int_len; $i++) {
 	}
 	
 	if($arr_menuData[$i]["menu_level"] > $int_lastMenuLevel) { // starting a nested list
-		if($arr_menuData[$i]["menu_level"] == 2) {
-			$arr_menuHTML[] = "<ul class=\"menu2\">";
-		}
-		else {
-			$arr_menuHTML[] = "<ul>";
-		}
+			$arr_menuHTML[] = "<ul class=\"menu" . $arr_menuData[$i]["menu_level"] . "\">";
 	}
 	elseif($int_lastMenuLevel - $arr_menuData[$i]["menu_level"] == 1 ) { // ending a nested list
 		$arr_menuHTML[] = "</li></ul></li>";
