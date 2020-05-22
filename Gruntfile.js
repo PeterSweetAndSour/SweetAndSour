@@ -1,25 +1,12 @@
 module.exports = function(grunt) {
-	const sass = require('node-sass');
  	 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		
-		sass: {
-			options: {
-				implementation: sass,
-				sourceMap: true
-			},
-			dist: {
-				files: {
-					'css/styles_2020.css': 'css/sass/styles_2020.scss'
-				}
-			}
-		},
-
 		// https://github.com/nDmitry/grunt-autoprefixer
 		autoprefixer: { 
 			options: {
-				browsers: ['last 3 versions', 'android 3', 'ie 9', 'bb 10']
+				browsers: ['last 3 versions', 'ie 11']
 			},
 			no_dest: {
 				src: ['css/styles_2020.css']
@@ -38,6 +25,25 @@ module.exports = function(grunt) {
 		},
 		*/
 
+		sass: {                              // Task
+			dist: {                          // Target
+				options: {                   // Target options
+					style: 'expanded'
+				},
+				files: {                     // Dictionary of files
+					'css/styles_2020.css': 'css/sass/styles_2020.scss'       // 'destination': 'source'
+				}
+			}
+		},
+
+		cssmin: { // minifying css task
+			dist: {
+				files: {
+					'css/styles_2020.min.css': 'css/styles_2020.css'
+				}
+			}
+		},
+		  
 		jshint: {
 			all: [
 				'js/common_2020.js'
@@ -48,16 +54,17 @@ module.exports = function(grunt) {
 		},
 	  
 		watch: { // for development run 'grunt watch'
-			tasks: ['sass', 'autoprefixer', 'jshint']
+			tasks: ['sass', 'jshint'] //, 'autoprefixer'
 		}
 	});
 	 
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-sass');
+	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 
 	// Default task
-	grunt.registerTask('default', ['sass', 'autoprefixer', 'jshint']);  // 'concat', 
+	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'jshint']);  // 'concat' 
 }

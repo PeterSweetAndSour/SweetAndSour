@@ -14,8 +14,6 @@
   "expr": true,
   "onevar": true,
   "trailing": true,
-  "undef": true,
-  "unused": true,
   "maxlen": 140,
   "esversion": 6,
 
