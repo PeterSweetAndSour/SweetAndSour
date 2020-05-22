@@ -45,10 +45,15 @@ function getPhotoInfo($photoNames) {
 	$sql.= "	photos.linkToFullSize,  ";
 	$sql.= "	photos.version,  ";
 	$sql.= "	photos.width,  ";
-	$sql.= "	photos.height  ";
+	$sql.= "	photos.height,  ";
+	$sql.= "	linkedImage.caption AS linkedImageCaption, ";
+	$sql.= "	linkedImage.width AS linkedImageWidth, ";
+	$sql.= "	linkedImage.height AS linkedImageHeight, ";
+	$sql.= "	linkedImage.version AS linkedImageVersion  ";
 	$sql.= "FROM photos ";
 	$sql.= "INNER JOIN folders AS tbl_1 ON photos.folderID = tbl_1.folderID ";
 	$sql.= "LEFT JOIN folders AS tbl_2 ON tbl_1.grandparentFolderID = tbl_2.folderID ";
+	$sql.= "LEFT JOIN photos AS linkedImage ON photos.linkedImg = linkedImage.photoName ";
 	$sql.= "WHERE photos.photoName IN ('" . implode($photoNames, "','") . "')";
 		
 	$rs_photoInfo = $mysqli->query($sql);
