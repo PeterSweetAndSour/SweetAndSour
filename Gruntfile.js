@@ -54,7 +54,14 @@ module.exports = function(grunt) {
 		},
 	  
 		watch: { // for development run 'grunt watch'
-			tasks: ['sass', 'jshint'] //, 'autoprefixer'
+			css: {
+				files: 'css/sass/*.scss',
+				tasks: ['sass', 'autoprefixer', 'cssmin'],
+			},
+			js: {
+				files: 'js/*.js',
+				tasks: ['jshint'],
+			}
 		}
 	});
 	 
@@ -64,7 +71,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task
 	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'jshint']);  // 'concat' 
+	grunt.registerTask('default', ['watch']);
 }
