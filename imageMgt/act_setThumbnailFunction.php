@@ -45,10 +45,11 @@ function setThumbnail($photoNames, $overrideURL = "", $panorama = "false") {
 					<?
 				}
 				else {
-					$linkURL = getPhotoUrl($photos[$photoName]["linkedImg"], $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $urlPrefix, $useVersionedFiles, $photos[$photoName]["linkedImageVersion"]);
+					$fullSizeImgSrc = getPhotoUrl($photos[$photoName]["linkedImg"], $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $urlPrefix, $useVersionedFiles, $photos[$photoName]["linkedImageVersion"]);
+					$urlPageWithLinkedImage = $urlPrefix . "imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=" . $photos[$photoName]["linkedImg"];
 					?>
 					<figure>
-						<a class="in-gallery" href="<?= $linkURL ?>" data-size="<?= $photos[$photoName]["linkedImageWidth"] ?>x<?= $photos[$photoName]["linkedImageHeight"] ?>">
+						<a class="in-gallery" href="<?= $urlPageWithLinkedImage ?>" data-linked-image-src="<?= $fullSizeImgSrc ?>" data-size="<?= $photos[$photoName]["linkedImageWidth"] ?>x<?= $photos[$photoName]["linkedImageHeight"] ?>">
 							<img class="thumbnail" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
 						</a>
 						<figcaption class="thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>

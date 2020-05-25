@@ -22,7 +22,7 @@ function getPhotoUrl($photoName, $folderName, $grandparentFolderName, $urlPrefix
 		$photoFileName = $photoName;
 	}
 
-	//Determine the url to the photo; $urlPrefix is set on dsp_outline.php
+	//Determine the url to the photo
 	if(is_null($grandparentFolderName)) {
 		$url = $urlPrefix . $folderName . "/images/" . $photoFileName;
 	}

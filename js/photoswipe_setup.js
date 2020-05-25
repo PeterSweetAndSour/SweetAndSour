@@ -13,7 +13,9 @@
                         size,
                         item,
 						figure,
-						figCaption,
+						figCaptionThumbnail,
+						figCaptionFullSize,
+						linkToPageWithPhoto,
 						anchor,
 						thumbnailImage;
     
@@ -31,21 +33,26 @@
                         }
 
 						thumbnailImage = anchor.querySelector("img");
-						figCaption = figure.querySelector("figcaption.fullsize");
    
-                        size = anchor.getAttribute('data-size').split('x');
+                        size = anchor.dataset.size.split('x');
     
                         /* create slide object */
                         item = {
-                            src: anchor.getAttribute('href'),
+                            src: anchor.dataset.linkedImageSrc, /* anchor.getAttribute('href'),*/
                             w: parseInt(size[0], 10),
                             h: parseInt(size[1], 10),
-                            author: anchor.getAttribute('data-author')
+                            author: anchor.dataset.dataAuthor
                         };
     
                         item.el = anchor; /* save link to element for getThumbBoundsFn */
 						item.msrc = thumbnailImage.getAttribute('src'); /* thumbnail url */
-						item.title = figCaption.innerHTML
+
+						// Get the content for the caption which will be the contents of the two figcaptions 
+						// PLUS a link to a standalone page with the photo.
+						figCaptionThumbnail = figure.querySelector("figcaption.thumbnail");
+						figCaptionFullSize = figure.querySelector("figcaption.fullsize");
+						linkToPageWithPhoto = '<p class="linkToFullSizePhoto"><a href="' + anchor.getAttribute('href') + '" target="_blank">Printable page with this photo and caption</a></p>';
+						item.title = "<p>"+ figCaptionThumbnail.innerHTML + "</p>" + figCaptionFullSize.innerHTML + linkToPageWithPhoto;
     
                         var mediumSrc = anchor.getAttribute('data-med');
                           if(mediumSrc) {
