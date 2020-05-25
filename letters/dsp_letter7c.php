@@ -14,10 +14,11 @@
    <p>One minor but popular law passed just before the election forces health insurance companies to pay for mothers and babies to stay in hospital for 48 hours after birth for normal deliveries and 96 for cesareans.  It seems ridiculous to most that such a law should be necessary.</p>
    <p class="endText">Interesting statistic:  just 3% those borrowing money to buy a car fail to keep up with loan payments and have the car repossessed. In contrast, 39% of divorced fathers directed to pay child support, fail to do so.</p>
 </div>
-<?
-setThumbnail("VietnamWall1b.jpg");
-setThumbnail("VietnamWall1a.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail(["VietnamWall1b.jpg", "VietnamWall1a.jpg"]);
+	?>
+</div>
 
 <h3>And finally</h3>
 <div class="story">

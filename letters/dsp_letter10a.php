@@ -17,10 +17,11 @@
    <p>I started working two weeks ago at TNA Australia.  They make the machines that package foods like potato chips, nuts and confectionery at rates up to 125 bags per minute or more than 2 per second.  The owner of the business holds a world-wide patent on his technology and the company has doubled sales in both the last 2 years and exports 95% of what it sells.  The office and prototype assembly area is in Chester Hill, just a few kilometers from where we used to live in Auburn but the main factory is in Melbourne.</p>
    <p class="endText">I'm not sure how long we will stay in Australia but it probably be less than 3 years.  Lan was disappointed by what she saw in Tuesday&rsquo;s Australian which carries most of the computer jobs.  It seems there are many, many more opportunities for her sort of skills in either the US or the UK.  The UK may be more practical as I have a British passport as well as Australian, so we wont have the hassle with visas we had in the US and therefore have to work at salaries below market rates.  It could be our next adventure.</p>
 </div>
-<?
-setThumbnail("Dad1.jpg");
-setThumbnail("FriendsAtIsoTech1.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail(["Dad1.jpg", "FriendsAtIsoTech1.jpg"]);
+	?>
+</div>
 
 <div class="story">
 	<p class="endText">*<i>I had hoped to get this out a month ago but the lack of a printer, Lan&rsquo;s visit and rapidly changing events slowed things down.</i></p>

@@ -12,16 +12,10 @@
       <p><i>I tried to talk Peter into taking skiing lessons, but I don't have much hope. What a shame.</i></p>
       <p class="endText"><i>- Lan</i></p>
    </div>
-   <?
-   setThumbnail("Madrid1.jpg");
-   setThumbnail("MadridBack1.jpg");
-	?>
 </div>
-<div class="photoAlbum">
-	<?
-   setThumbnail("LadiesInWaiting1.jpg");
-   setThumbnail("SegoviaAquaduct1.jpg");
-   setThumbnail("SegoviaCastle1.jpg");
+<div class="photo-gallery">
+   <?
+   setThumbnail(["Madrid1.jpg","MadridBack1.jpg", "LadiesInWaiting1.jpg", "SegoviaAquaduct1.jpg", "SegoviaCastle1.jpg"]);
    ?>
 </div>
 

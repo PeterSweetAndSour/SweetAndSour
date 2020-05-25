@@ -306,14 +306,14 @@ p.toTop {
 p.toTop a:visited {
   color: #009; }
 
-div.footer {
+footer {
   clear: both;
   padding-top: 10px;
   margin: 0 25px 0 0px;
   font-size: 0.8em; }
 
-div.footer p#copyright,
-div.footer p#photoLink {
+footer p#copyright,
+footer p#photoLink {
   border-top: 1px solid #999999;
   padding-top: 8px;
   margin-bottom: 0px; }

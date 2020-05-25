@@ -15,27 +15,9 @@
    <p class="endText">Finding the time to see the countryside has been made so much easier by not having to worry about a garden that needs taming, or a house that is trying to self-destruct.</p>
 </div>
 
-<?
-setThumbnail("ColoradoNM1.jpg");
-setThumbnail("BookCliffs1.jpg");
-setThumbnail("ElkStatue1.jpg");
-setThumbnail("FishCreekFalls1.jpg");
-setThumbnail("Zoro1.jpg");
-?>
-<div class="photoAlbum">
+<div class="photo-gallery">
 	<?
-	setThumbnail("BerthoudPass1.jpg");
-	setThumbnail("WallOfSnow1.jpg");
-	setThumbnail("BeaverDam1.jpg");
-	setThumbnail("BighornSheep1.jpg");
-
-	setThumbnail("MtEvans1.jpg");
-	setThumbnail("Staircase1.jpg");
-	setThumbnail("Santafe1.jpg");
-
-	setThumbnail("TaosPueblo1.jpg");
-	setThumbnail("BridgeTaos1.jpg");
-	setThumbnail("GreatSandDunes1.jpg");
+	setThumbnail(["ColoradoNM1.jpg", "BookCliffs1.jpg", "ElkStatue1.jpg", "FishCreekFalls1.jpg", "Zoro1.jpg", "BerthoudPass1.jpg", "WallOfSnow1.jpg", "BeaverDam1.jpg", "BighornSheep1.jpg", "MtEvans1.jpg", "Staircase1.jpg", "Santafe1.jpg", "TaosPueblo1.jpg", "BridgeTaos1.jpg", "GreatSandDunes1.jpg"]);
 	?>
 </div>
 

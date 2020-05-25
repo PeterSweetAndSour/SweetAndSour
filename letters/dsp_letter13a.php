@@ -19,7 +19,7 @@
    <p class="endText">We ended the year with a big splash.  Putting aside any Y2K concerns, we saw Neil Diamond at a New Year&rsquo;s Eve concert.  I have never seen anyone so famous, the nearest being Midnight Oil at the Horden Pavilion, so it was quite an experience!  Unfortunately, it was held in a sports arena rather than a concert hallthe basketball and ice hockey players were gone but the lousy acoustics remained.  There was absolutely no stereo effect, so it was like listening to the TV turned up loud.</p>
 </div>
 <?
-setThumbnail("AcrobatIcon_Ltr13.gif", $urlPrefix . "files/Letter13.pdf");
+setThumbnail("AcrobatIcon_Ltr13.gif", $urlPrefix . "letters/files/Letter13.pdf");
 ?>
 
 <div class="story">

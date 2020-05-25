@@ -12,20 +12,18 @@
    <p>While we were staying with Tuyet, I read the first third of <i>In Retrospect</i>, a book by Robert McNamara on what went wrong in American government during the Vietnam War.  He was the Secretary of Defense during the Kennedy and Johnson administrations and so was helping to make many of the crucial decisionsit was depressing reading.  He says they never really questioned their assumptions such as the famous "domino" theory, failed to recognize the conflict as primarily nationalistic and then failed to withdraw when it became clear that the war was unwinable.</p>
    <p class="endText">We flew home the next day exhausted but knowing we had used our time well and were further delighted when our car started without hesitation after being left for almost 3 weeks.</p>
 </div>
-<?
-setThumbnail("BanyanTree1.jpg");
-setThumbnail("Epcot1.jpg");
-setThumbnail("SaturnV1.jpg");
-setThumbnail("SpaceKennedy1.jpg");
-setThumbnail("Poinsettia1.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail(["BanyanTree1.jpg", "Epcot1.jpg", "SaturnV1.jpg", "SpaceKennedy1.jpg", "Poinsettia1.jpg"]);
+	?>
+</div>
 
 <div class="story">
-   <p>Go back to:</p>
-   <ul>
-   	<li><a href="index.php?fuseAction=letter13a">Activities</a> (page 1)</li>
-   	<li><a href="index.php?fuseAction=letter13b">Travels, part 1</a> (page 2)</li>
-   	<li><a href="index.php?fuseAction=letter13c">Travels, part 2</a> (page 3)</li>
-   </ul>
-   <p class="endText">Continue to <a href="index.php?fuseAction=letter13e">America</a> (page 5) <a href="index.php?fuseAction=letter13e"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p>Go back to:</p>
+	<ul>
+		<li><a href="index.php?fuseAction=letter13a">Activities</a> (page 1)</li>
+		<li><a href="index.php?fuseAction=letter13b">Travels, part 1</a> (page 2)</li>
+		<li><a href="index.php?fuseAction=letter13c">Travels, part 2</a> (page 3)</li>
+	</ul>
+	<p class="endText">Continue to <a href="index.php?fuseAction=letter13e">America</a> (page 5) <a href="index.php?fuseAction=letter13e"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
 </div>

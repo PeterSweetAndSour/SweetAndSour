@@ -17,12 +17,11 @@
    <p>I've sent out about 40 job applications and finally one has been successful.  I started work on the 1st of August as a technical writer for a company that makes equipment for the pharmaceuticals industry.  They have a workforce of about 40.  Their products aim to keep tdrugs and the human operators separated, so they use filters and carefully controlled airflow.  My experience with air conditioning was seen as very helpful.   I'm pleased with this job because most technical writing jobs here are for software which I don't find very interesting.  It is a very casual atmosphere; on my first day, I was the only one to wear a tie.  I had to buy some new sandshoes to wear with my jeans so I could dress in the company "uniform".  I noticed today that the owner/CEO went to someone else's office but the visitor's chair was already full so he sat on the floor!  Everyone seems friendly. Reading materials (Fortune and Business Week) are provided in the toilet.</p>
    <p class="endText">We borrowed a book from the library which included Henry Lawson's short story <i>The Loaded Dog</i>.  If you haven't read it since you were a child, or haven't read it all, make a priority to read it soon.  It&rsquo;s hilarious.</p>
 </div>
-<?
-setThumbnail("UnionBlvd1.jpg");
-setThumbnail("ShovellingSnow1.jpg");
-setThumbnail("SnowOnCar1.jpg");
-setThumbnail("Icicle1.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail(["UnionBlvd1.jpg", "ShovellingSnow1.jpg", "SnowOnCar1.jpg", "Icicle1.jpg"]);
+	?>
+</div>
 
 <h3>Church</h3>
 <div class="story">

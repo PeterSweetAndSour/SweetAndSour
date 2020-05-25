@@ -21,19 +21,11 @@
    <p>That was basically the end of the sightseeing trip.  Then we drove home.  No less than 6 people expressed concern that we would make it in a Hyundai.</p>
    <p class="endText">Highway US50 is the most direct route to Denver and it is really lonely through Nevada and Utah.  It seemed that we could go 20-30 minutes before seeing another car which we found unsettling.  On New Years Day we had to drive 700 miles which we managed though the last 200 were difficult because it was snowing.  My biggest fear though was that heavy snow would close the mountain pass at 11 000 ft on I-70 and we would have to take the long southern route home.  Fortunately it was still open though trucks had to put chains on.  (I have never heard of any requirement for cars to have chains, even in ski country.)</p>
 </div>
-<?
-setThumbnail("UtahDesert1.jpg");
-setThumbnail("QueenMary1.jpg");
-setThumbnail("UniversalStudios1.jpg");
-setThumbnail("HollywoodStar1.jpg");
-setThumbnail("MissionStBarbara1.jpg");
-setThumbnail("GuardAtSolvang1.jpg");
-setThumbnail("CableCar1.jpg");
-setThumbnail("JapaneseGardens1.jpg");
-setThumbnail("GoldenGateSun1.jpg");
-setThumbnail("GoldenGateFog1.jpg");
-setThumbnail("US50Highway1.jpg");
-?>
+<div class="photo-gallery"></div>
+	<?
+	setThumbnail(["UtahDesert1.jpg", "QueenMary1.jpg", "UniversalStudios1.jpg", "HollywoodStar1.jpg", "MissionStBarbara1.jpg", "GuardAtSolvang1.jpg", "CableCar1.jpg", "JapaneseGardens1.jpg", "GoldenGateSun1.jpg", "GoldenGateFog1.jpg", "US50Highway1.jpg"]);
+	?>
+</div>
 
 <div class="story">
    <p>Go back to:</p>

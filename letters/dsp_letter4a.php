@@ -30,15 +30,11 @@
    <p>Music:  We both enjoyed The Beatles Anthology which I assume was shown on Australian TV at the same time as it was here (starting Nov 19).  I have been wanting to buy Abbey Road for well over a year and since CDs are a little cheaper here, we bought it and The Beatles 1962 66.  (There are few things cuter than Lan singing along to Michelle and Yellow Submarine when she has the headphones on.)  I fear it is too late for me to learn guitar so I can be a rock star too but I've been encouraging Lan&rsquo;s 9-year old cousin to take it up.  He doesn't seem interested though.</p>
    <p class="endText">You may recall in our first letter from Denver, I included a picture of the Red Rocks outdoor theatre that is close to us.  Apparently the Beatles played there and U2&rsquo;s Live under a blood red sky was recorded there.  I've heard INXS played many times on the radio, Crowded House several times and the Divinyls and Icehouse once or twice.  Unfortunately, there is no government station like JJJ which means that to listen to music, you have to listen to advertising or constantly change stations.  I tend to stay with current affairs on public radio.</p>
 </div>
-<?
-setThumbnail("LanBlackCanyon1.jpg");
-setThumbnail("BlackCanyon1.jpg");
-setThumbnail("MtRushmore1.jpg");
-setThumbnail("DevilsTower1.jpg");
-setThumbnail("OldFaithful1.jpg");
-setThumbnail("Buffalo1.jpg");
-setThumbnail("RedRocks1.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail(["LanBlackCanyon1.jpg", "BlackCanyon1.jpg", "MtRushmore1.jpg", "DevilsTower1.jpg", "OldFaithful1.jpg", "Buffalo1.jpg", "RedRocks1.jpg"]);
+	?>
+</div>
 
 <div class="story">
    <p>Continue to <a href="index.php?fuseAction=letter4b">News in America</a> (page 2) <a href="index.php?fuseAction=letter4b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>

@@ -12,14 +12,11 @@
    <p>At 6 am I walked perhaps 1km to the (enclosed) bus stop and was amazed to see 6 people already there.  At about 6.30 am, we were on our way and short of being on a snow plough, a bus is probably the best way to get around as it was able to get through where 4WDs were stuck.  Everyone on the bus was smiling & chatting, pleased to be out of the cold and on their way with some confidence that they would arrive.  Once off the bus, I only had a short distance to walk up Poplar St through 0.5m of snow which was less than other parts of town but 3-4 times as much as we has seen in Denver.</p>
    <p class="endText">I made it home at 7.30am, 10 hours after my plane arrived and 26 hours after I left home the previous morning.  If I didn't get out on the bus, I probably would have been one of those trapped in the airport for two nights.  I found out later that it was -25&deg;F/-31&deg;C with wind chill (the effective temperature when the wind is taken into account) so being outside was life-threatening.  Indeed, 6 people (and 30,000 cattle!) died in Colorado.  My boss called the hotel and complained and we got a free dinner at the restaurant so all is forgiven.</p>
 </div>
-<?
-setThumbnail("MNStateCapitol1.jpg");
-setThumbnail("Cathedral1.jpg");
-setThumbnail("TwoHarbors1.jpg");
-setThumbnail("SplitRockLight1.jpg");
-setThumbnail("MallOfAmerica1.jpg");
-setThumbnail("InsideMall1.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail(["MNStateCapitol1.jpg", "Cathedral1.jpg", "TwoHarbors1.jpg", "SplitRockLight1.jpg", "MallOfAmerica1.jpg", "InsideMall1.jpg"]);
+	?>
+</div>
 
 <div class="story">
    <p>Go back to <a href="index.php?fuseAction=letter9a">News</a> (page 1)</p>

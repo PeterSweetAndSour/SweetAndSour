@@ -2,13 +2,14 @@
 
 <div class="story">
 	<p>2<sup>nd</sup> April 2005</p>
-   <p class="endText">Dear everyone,</p>
+	<p class="endText">Dear everyone,</p>
 </div>
 
 <h3>10-year anniversary special!</h3>
 <div class="story">
-   <p class="endText">It is hard to believe but yesterday marked 10 years since we arrived in Denver. When we came to America, we expected to stay for only 9 to 12 months. Somehow we got stuck here. It is also a surprise that we are still in Denver but more about that later.</p>
+	<p class="endText">It is hard to believe but yesterday marked 10 years since we arrived in Denver. When we came to America, we expected to stay for only 9 to 12 months. Somehow we got stuck here. It is also a surprise that we are still in Denver but more about that later.</p>
 </div>
+<div class="photo-gallery">
 <?
 setThumbnail("AcrobatIcon_Ltr17.gif", $urlPrefix . "files/Letter17_Ltr.pdf");
 ?>
@@ -20,17 +21,18 @@ setThumbnail("AcrobatIcon_Ltr17.gif", $urlPrefix . "files/Letter17_Ltr.pdf");
    <p>I can&rsquo;t imagine any reason for the city&rsquo;s existence except that it might have been founded by missionaries to teach unbelievers what the fires of Hell will be like. I visited Lan in May (spring) and it was already unreasonably hot. </p>
    <p class="endText">Lan was there through to the end of June 2004. Her life was made more miserable by being without a car and real cooking facilities in her hotel room, so she was limited to restaurants that she could walk to from her hotel in the late afternoon heat. However, she made friends among the drivers of the hotel shuttle bus, almost all Mexican, who took her to and from work. I think they appreciated Lan&rsquo;s kind words and shared immigrant experience.</p>
 </div>
-<?
-setThumbnail("saguaroCactus1.jpg");
-setThumbnail("PhoenixBotanical1.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail(["saguaroCactus1.jpg", "PhoenixBotanical1.jpg"]);
+	?>
+</div>
 
 <div class="story">
-   <p>Continue to <a href="index.php?fuseAction=letter17b">Washington D.C.</a> (page 2) <a href="index.php?fuseAction=letter17b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom" /></a></p>
-   <p>Jump to:</p>
-   <ul class="endText">
-   	<li><a href="index.php?fuseAction=letter17c">Election and American politics</a> (page 3)</li>
-   	<li><a href="index.php?fuseAction=letter17d">Miscellaneous</a> (page 4)</li>
-   	<li><a href="index.php?fuseAction=letter17e">Bumper Stickers</a> (page 5)</li>
-   </ul>
+	<p>Continue to <a href="index.php?fuseAction=letter17b">Washington D.C.</a> (page 2) <a href="index.php?fuseAction=letter17b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom" /></a></p>
+	<p>Jump to:</p>
+	<ul class="endText">
+		<li><a href="index.php?fuseAction=letter17c">Election and American politics</a> (page 3)</li>
+		<li><a href="index.php?fuseAction=letter17d">Miscellaneous</a> (page 4)</li>
+		<li><a href="index.php?fuseAction=letter17e">Bumper Stickers</a> (page 5)</li>
+	</ul>
 </div>

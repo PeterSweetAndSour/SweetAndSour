@@ -17,11 +17,10 @@
       <p>There are 36 TV channels at the hotel.  Just 2 are worth watching - the &quot;Discovery Channel&quot; which runs documentaries and the &quot;College Cable Channel&quot; which runs educational programs.  I have yet to find any news program that acknowledges that important things happen outside the US, even some that don't involve Americans.  The only two off-shore stories I can recall were one about Al Gore and what he did for Bosnia and the other about US servicemen returning to Iowa Jima.  I saw the Iowa Jima story on 3 channels.  All said that about 6,000 Americans died but only one mentioned that the Japanese lost 21,000.  Last night we saw 3 programs about Australia on the Discovery channel - <i>Lizards of Oz</i>, <i>Wombats</i> and <i>The Big Wet</i>.  There was a Qantas ad too.</p>
       <p>We have been amazed at the cost of calling from public phones.  Calls to Australia are US$10.95 for the first 3 minutes and a call to the next area code (like calling Gosford from Sydney) is 80 cents for the first minute.  At least the told us first so we could choose not to.  Calls from home appear to be cheap though - one phone company was advertising 10 cents per minute to anywhere in the US.  All the phones take coins only - there appears to be no equivalent of a Telecom card, so long distance calls require handfuls of coins.  I have read that there are credit card phones but I have yet to see one.  At those prices, I don't want one.  Back to the subject of advertising, even the church weekly bulletin carries ads for local businesses.</p>
       <p class="endText">That&rsquo;s about all for the moment.  When we have an address, I&rsquo;ll let you know.</p>
-   </div>
-   <?
-   setThumbnail("GeneralMotors1.jpg");
-   setThumbnail("FarmingtonHills1.jpg");
-   setThumbnail("LakeStClair1.jpg");
-   setThumbnail("IceFishing1.jpg");
-   ?>
+	</div>
+	<div class="photo-gallery">
+		<?
+		setThumbnail(["GeneralMotors1.jpg", "FarmingtonHills1.jpg", "LakeStClair1.jpg", "IceFishing1.jpg"]);
+		?>
+	</div>
 </div>

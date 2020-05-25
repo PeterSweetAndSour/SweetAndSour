@@ -15,9 +15,11 @@
    <p>Thanksgiving is the last Thursday in November and it is national holiday.  Traditionally it was a time to give thanks for the harvest which had just been brought in but the holiday has little religious meaning now. We had thought about going somewhere for 4 days but cold weather was predicted so we decided to stay at home.  On Wednesday night, someone at Lan&rsquo;s work invited us over to their friends' house for Thanksgiving lunch.  We were reluctant about accepting but Lan&rsquo;s friend did confirm it was OK.  It turned out that the man is American and the wife is Japanese and they have lots of friends over every year, even if they don't know them yet.  The twist was that they were all Japanese so most of the conversation was beyond us.  It was fun though and we had traditional American food rather than sushi and seaweed.</p>
    <p class="endText">I have new competition for Lan&rsquo;s attention now.  You may recall that Lan started learning piano before we left but her sore shoulder prevented her from playing towards the end.  She has now been pianoless for two full years and is so happy to have another to practice on.  She has quickly returned to the point where she was and is now learning new material.</p>
 </div>
-<?
-setThumbnail("LanAtPiano1.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail("LanAtPiano1.jpg");
+	?>
+</div>
 
 <div class="story">
    <p>Continue to <a href="index.php?fuseAction=letter7b">Alaska holiday</a> (page 2) <a href="index.php?fuseAction=letter7b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>

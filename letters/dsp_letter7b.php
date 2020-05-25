@@ -17,22 +17,11 @@
    <p>There was also a 45 minute video on the internal TV channel explaining procedures to disembark.  Although the subject is inherently boring, after the first 2 minutes you wanted to watch it.  When explaining to Americans (who made up most of the passengers) how the Canadian customs work with Green and Red gates (like Australia), he said with a completely straight face <i>&quot;if you have nothing to declare, go to the green side;  if you've bought too much Scotch, or are carrying weapons, explosives or narcotics, you will have to go to the Red gate and declare it.&quot;</i></p>
    <p class="endText">When we arrived in Vancouver, we picked up a rental car and headed for Victoria which has a reputation for being more English than England.  We didn't see any cricket matches but we did see some fine buildings and some gardens that impressed even me.  When we made it back to Vancouver, Lan changed her mind on wanting to move to Seattle as she thinks Vancouver is better still.  It has a huge Chinatown.  Many Hong Kong Chinese have arrived in the city over the last decade because of the uncertainty over the Chinese handover next year.</p>
 </div>
-<?
-setThumbnail("SpaceNeedle1.jpg");
-setThumbnail("Cabbages1.jpg");
-setThumbnail("RegalPrincess1.jpg");
-setThumbnail("UnEnteringShip1.jpg");
-setThumbnail("UsAtDinner1.jpg");
-setThumbnail("LanGlacier1.jpg");
-setThumbnail("PeterGlacier1.jpg");
-setThumbnail("ChilkootPass1.jpg");
-setThumbnail("SnowTrain1.jpg");
-setThumbnail("VictoriaBC1.jpg");
-setThumbnail("ButchardGardens1.jpg");
-setThumbnail("LanAtBGardens1.jpg");
-setThumbnail("TotemPole1.jpg");
-setThumbnail("SuspensionBridge1.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail(["SpaceNeedle1.jpg", "Cabbages1.jpg", "RegalPrincess1.jpg", "UnEnteringShip1.jpg", "UsAtDinner1.jpg", "LanGlacier1.jpg", "PeterGlacier1.jpg", "ChilkootPass1.jpg", "SnowTrain1.jpg", "VictoriaBC1.jpg", "ButchardGardens1.jpg", "LanAtBGardens1.jpg", "TotemPole1.jpg", "SuspensionBridge1.jpg"]);
+	?>
+</div>
 
 <div class="story">
    <p>Go back to <a href="index.php?fuseAction=letter7a">News</a> (page 1)</p>

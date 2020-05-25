@@ -20,12 +20,8 @@
    <p>I also bought a 2nd-hand TV and we can get only 3 channels free to air  (at almosr US$1.00/day we elected not to bother with cable TV). Fortunately, one is the Public Broadscasting Service which is like the ABC but run like 2MBS with public subscriptions and some volunteers. I was enormoustly relieved to find that PBS runs England's ITN (Channel 4) news at 10 pm each night as it  has a far more balanced view of the world. There are other free-to-air stations, notably CBS & ABC but we can't really get them.</p>
    <p class="endText">Continue to <a href="index.php?fuseAction=letter2b">First impressions</a> (page 2) <a href="index.php?fuseAction=letter2b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
 </div>
-<?
-setThumbnail("DenverLocation.jpg");
-setThumbnail("StateCapitol1.jpg");
-setThumbnail("RedRocks1.jpg");
-setThumbnail("ViewPointNE1.jpg");
-setThumbnail("ViewPointNW1.jpg");
-setThumbnail("Hyundai1.jpg");
-setThumbnail("SeatBelt.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail(["DenverLocation.jpg", "StateCapitol1.jpg", "RedRocks1.jpg", "ViewPointNE1.jpg", "ViewPointNW1.jpg", "Hyundai1.jpg", "SeatBelt.jpg"]);
+	?>
+</div>

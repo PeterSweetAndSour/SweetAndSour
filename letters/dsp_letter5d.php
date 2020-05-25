@@ -11,9 +11,11 @@
    <p>I don't normally even look at the sports section in Sunday&rsquo;s newspaper but one thing did catch my eye which gave an insight into the American media.  I saw the word "Australian" in a headline about the Australian Open Tennis Championship.  A young Greek- Australian with a name like Philipopolopolis had surprised veryone by beating Peter Sampras who I think is American and No 1 or 2 in the world.  Incredibly, the photo was not of unknown Aussie who won but the well-known American who lost!</p>
    <p class="endText">I've been impressed by school buses (apparently called <i>cheese buses</i> by the kids because of their color) and that when they stop to pick up children, cars on both sides of the road must stop.  Pedestrian crossings near a school normally have a person with a stop/go sign and yellow lights flash to warn drivers that the speed limit is reduced to 20 mph (32 km/h).  I think school buses were introduced across America (in the 1960s?) to transport children to schools outside their area so that schools would became racially integrated.  However, since schools are run by local government and "busing" is within the county, white folks moved out of areas where there was a large black population.  Partly as a result, many inner cities across America are largely black and the schools are too.</p>
 </div>
-<?
-setThumbnail("ChristmasLights1.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail("ChristmasLights1.jpg");
+	?>
+</div
 
 <div class="story">
    <p>Go back to:</p>
@@ -23,4 +25,4 @@ setThumbnail("ChristmasLights1.jpg");
    	<li><a href="index.php?fuseAction=letter5c">Trip to California</a> (page 3)</li>
    </ul>
    <p class="endText">Continue to <a href="index.php?fuseAction=letter5e">Interesting things</a> (page 5) <a href="index.php?fuseAction=letter5e"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
-</div>
+</>

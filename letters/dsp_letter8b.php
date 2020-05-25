@@ -7,13 +7,11 @@
    <p>The next day we visited <i>Arches National Park</i> which I enjoyed more than any other I have visited.  Others must agree as they get 1 million visitors each year.  There are many arches but I was most impressed by <i>Landscape Arch</i> which looks so fragile that it could fall down at any time.  Indeed the National Parks Service has fenced off the area underneath for fear that it will collapse.  </p>
    <p class="endText">The <i>Delicate Arch</i> can normally be seen from a lookout near the road but it was foggy on the day we visited so we took a l-o-n-g trail up the hill to see it.  The sign at the start of the trail said 1.5 miles (2.4 km) which we thought was the distance there <i>and back</i>.  We were wrong; it was the distance in one direction only.  We were tired but it was cool.  It would be unbearable in summer.</p>
 </div>
-<?
-setThumbnail("LanMesaVerde1.jpg");
-setThumbnail("PeterMesaVerde1.jpg");
-setThumbnail("LandscapeArch1.jpg");
-setThumbnail("DelicateArch1.jpg");
-setThumbnail("NorthSouthArch1.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail(["LanMesaVerde1.jpg", "PeterMesaVerde1.jpg", "LandscapeArch1.jpg", "DelicateArch1.jpg", "NorthSouthArch1.jpg"]);
+	?>
+</div>
 
 <div class="story">
    <p>Go back to <a href="index.php?fuseAction=letter8a">News</a> (page 1)</p>
