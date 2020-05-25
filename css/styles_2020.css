@@ -118,3 +118,7 @@ img.thumbnail {
 .pswp__caption__center > iframe {
   margin: 0 0 0.5em 10px;
 }
+
+#imageMenu * {
+  box-sizing: content-box;
+}
