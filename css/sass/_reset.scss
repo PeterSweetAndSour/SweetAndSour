@@ -1,4 +1,5 @@
 /* From https://dev.to/hankchizljaw/a-modern-css-reset-6p3 */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -76,45 +77,4 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-.story {
-  width: calc(100% - 200px);
-  float: left;
-  margin-right: 20px;
-}
-
-figure {
-  display: inline-block;
-  width: 150px;
-  vertical-align: top;
-  margin: 0 20px 20px 0;
-}
-
-figcaption.thumbnail {
-  font-family: Verdana, Helvetica, sans-serif;
-  font-size: 12px;
-}
-
-figcaption.fullsize {
-  display: none;
-  /* Contains the caption for the photo shown with PhotoSwipe. */
-}
-
-img.thumbnail {
-  box-sizing: content-box;
-  box-shadow: 5px 5px 4px 0px #aaa;
-  margin-bottom: 8px;
-  padding: 4px;
-  border: 1px solid #aaa;
-}
-
-.pswp__caption__center {
-  font-size: 15px;
-}
-
-.pswp__caption__center > p,
-.pswp__caption__center > pre,
-.pswp__caption__center > img,
-.pswp__caption__center > iframe {
-  margin: 0 0 0.5em 10px;
 }
