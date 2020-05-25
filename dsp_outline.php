@@ -30,10 +30,10 @@ else {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 	<title>
 		<?= str_replace("<span>", "", (str_replace("</span>", "", $heading1Text))) ?> 
 		[Sweet and Sour]
@@ -106,13 +106,14 @@ else {
 			include $contentPage; ?>
 
 			<!-- Footer -->
-			<div class="footer">
-	   		<? if($showToTopLink == true) { ?>
-	   			<!-- Link to top of page. -->
-	   			<p class="toTop"><a href='#top'><img src='<?= $topIconSrc ?>' alt='To top' height='13' border='0' style='vertical-align:bottom' /></a> <a href='#top'>Top</a></p>
-	   		<? } ?>
+			<footer>
+				<? if($showToTopLink == true) { ?>
+					<!-- Link to top of page. -->
+					<p class="toTop"><a href='#top'><img src='<?= $topIconSrc ?>' alt='To top' height='13' border='0' style='vertical-align:bottom' /></a> <a href='#top'>Top</a></p>
+				<? } ?>
 				<!-- Copyright notice. -->
 				<p class="end" id="copyright"><?= $copyright ?></p>
+			</footer>
 		</div>
 
 	   <?
@@ -127,9 +128,9 @@ else {
 	include '../includes/dsp_photoswipe.php';
 	?>
 	
-	<script type="text/javascript" src="../js/common_2020.js"></script>
-	<script type="text/javascript" src="../js/photoswipe.js"></script>
-	<script type="text/javascript" src="../js/photoswipe-ui-default.js"></script>
-	<script type="text/javascript" src="../js/photoswipe_setup.js"></script>
+	<script src="../js/common_2020.js"></script>
+	<script src="../js/photoswipe.js"></script>
+	<script src="../js/photoswipe-ui-default.js"></script>
+	<script src="../js/photoswipe_setup.js"></script>
 </body>
 </html>
