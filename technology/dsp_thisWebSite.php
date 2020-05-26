@@ -1,30 +1,20 @@
-<? //dsp_thisWebSite.php
-
-//Paragraph width had to be forced so that they maintain width when user shows a file
-//listing that stretches the table to the right.
-
-function escapeHTML($input) {
-	$output = $input;
-	$output = str_replace("&", "&amp;", $output);
-	$output = str_replace("<", "&lt;", $output);
-	$output = str_replace(">", "&gt;", $output);
-	$output = str_replace("\"", "&quot;", $output);
-	$output = str_replace("'", "&rsquo;", $output);
-	
-	return $output;
-}
-
-// Appears at the bottom of the page.
-$phJavascript = <<<jsStr
-
-<script type="text/javascript">
-	SweetAndSour.prepareCodeDisplay();
-</script>
-
-jsStr;
+<? 
+//dsp_thisWebSite.php
 ?>
+<h3>2020 Site redesign</h3>
+<div class="story">
+	<p>Since the last major redesign in 2008 two major things have happened:</p>
+	<ol>
+		<li>People using the mobile phones to view the internet has become a thing</li>
+		<li>We started looking for a house in 2008 and bought a wreck in late 2009. Even after the builder finally &ldquot;finished&rdquo; in July 2011, it seemed that all my free time was now taken by home and garden improvement and this site was not updated to deal with #1.</li>
+	</ol>
+	<p>Clicking on a thumbnail image on the old version of this site popped up a fake window to show the full size version. It was workable on a desktop. Most of the time. To make the site responsive I wanted a modern image gallery/slider but I could not find one that supported long captions. My thumbnails often have a few words of 'click bait" and then the main caption is displayed with the large photo which seems a great approach to me but apparently no one else. I liked <a href="https://www.photoswipe.com" target="_blank" class="external">Photoswipe</a> because it lazy-loads the photos and you can set it up to work with your page structure so I ended up modifying it which took quite some time. <a href="https://sweetandsour.org/photoswipe_demo.html">Demo page</a>.</p>
+	<p>I'll also be revisiting all the styles now that I'm using SASS and Grunt and browsers are now more capable.</p>
+	<p>Everything below is for historical purposes only&hellip;</p>
+</div>
 
-<h3>Amazon S3 as a CDN</h3>
+
+<h3>2009 Amazon S3 as a CDN</h3>
 <div class="story">
 	<p>[July 2009] Moving images and PDF files from my own server to a content delivery network (CDN) has the potential to speed up page loading since their huge number of distributed servers should deliver content more quickly than mine and if there is a huge surge in traffic, my server can concentrate on processing the PHP pages. Since I also intend to later set the &quot;expires&quot;&quot; to none, I've also renamed every file to carry the date it was modified so that if a new version is uploaded, it will have a new URL</p>
 	<p>This is most of what you need to know about S3:</p>
@@ -44,9 +34,9 @@ jsStr;
 	-->
 </div>
 
-<h3>Site redesign</h3>
+<h3>2008 Site redesign</h3>
 <div class="story">
-	<p>[Octoberber 2008] I've thought for years that the site looked really crude and I've finally done something about it. Here are the main features and changes:</p>
+	<p>[October 2008] I've thought for years that the site looked really crude and I've finally done something about it. Here are the main features and changes:</p>
 	<ul>
 		<li>New navigation based on the <a href="http://phatfusion.net/imagemenu/" target="_blank" class="external">Phatfusion &quot;Image Menu&quot;</a> but extended so it will handle 2nd and 3rd level menu items. In fact, I had to make some changes to even get the top-level menu to work as Mootools 1.2 has been released since the menu was written and there were some Javascript errors.</li>
 		<li>In fact, I suggest that my version of the &quot;image menu&quot; is better than the original since I've used the <a href="http://www.mezzoblue.com/tests/revised-image-replacement/#gilderlevin" target="_blank" class="external">Gilder/Levin image replacement method</a> which means it is still usable even if images are turned off. Try that on Phatfusion.net.</li>
@@ -61,26 +51,20 @@ jsStr;
 	</ul>
 </div>
 
-<h3>I wrote the following in about 2003. Some of it may still be true.</h3>
+<h3>I wrote the following in about 2003. </h3>
 <div class="story followOn">
    <p>This latest revision to the site uses XHTML/Transitional and CSS to achieve a clearly-structured document and layout without tables so that content is separated from presentation. I'll shortly be finalizing the code so it will pass the W3's validator and move towards Section 508 compliance which ensures accessibility to those with disabilities (such as blind people using screen readers). The benefits of making the site &quot;standards-compliant&quot; are faster-loading pages, easier maintenance and availability to users with a variety of browsers.</p>
-</div>
-<? setThumbnail("PeterAtWork1.jpg"); ?>
-   
-<div class="story followOn">
+
    <p>As you can see from the first entries in the &quot;What&rsquo;s new&quot; section, this web site was started in 1999 on Homestead.com using their WYSIWYG editor. Although it was simple to use, it produced static HTML files that were bulky and nearly incomprehensible to a human reader.  The site became very difficult to maintain since any change to the menu had to be replicated on every page.  Homestead.com realized they couldn't make money if they didn't charge for the service so when they introduced substantial fees, the site was moved to GeoCities.com.  This forced me to rewrite and simplify the pages but they were still static and maintenance was problematic.</p>
    <p>I had always wanted to rebuild the site with dynamic pages so the next stage implemented in 2003 was to rebuild the site using  &quot;LAMP&quot; which stands for <b>Linux</b> (operating system)/<b>PHP</b> (scripting language)/<b>Apache</b> (web server)/<b>mySQL</b> (database).  All are effectively free.  In fact, my computer is set up with both Windows and Linux partitions with a shared data partition in VFAT format so I can test with <b>Internet Explorer</b> and <b>Opera</b> and <b>Firefox</b> browsers under Windows as well as <b>Konqueror</b> and <b>Firefox</b> under Linux.</p>
    <p>The site also uses the "fusebox" methodology, a system originally invented in the ColdFusion world.  All page requests end up at an "index" file which is a series of case statements and the &quot;fuse action&quot; determines which files are then included to form the completed page.  While the mechanics are not important, what is important is that it forces a modular approach where pages are broken down and hopefully the pieces are reusable elsewhere.</p>
-</div>
-<? setThumbnail("MoirePattern1.jpg"); ?>
-
-<div class="story followOn">
    <p>To enforce a consistant look, there are two types of display pages.  All the pages which show the menu use &quot;dsp_outline.php&quot; which sets up a the overall page framework and includes the photo at the top-left, the headings, the menu and the &quot;content page&quot;.  The &quot;content page&quot; is specified in the index page for that directory, while the colors are specified in an &quot;app_locals&quot; file which is also directory-specific.  Each &quot;app_locals&quot; file includes &quot;app_globals&quot; that sets a few variables that affect the entire site such as database log in details.</p>
-</div>
-
-<div class="story followOn">
    <p>Photographs are placed using the database which holds the name, caption, folder and any linked image for every photograph.  The file act_setThumbnailFunction.php defines a function called once for each thumbnail that writes out the HTML for the floating DIV, the image, link URL and caption.  If necessary, the link URL can be overridden.  The large image is shown using dsp_photoAndCaption.php which makes a call to the database to find the caption and places the caption to the side or below the image depending on its size.</p>
 </div>
+<div class="photo-gallery">
+	<? setThumbnail(["PeterAtWork1.jpg", "MoirePattern1.jpg"]); ?>
+</div>
+
 
 
 

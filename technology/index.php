@@ -25,10 +25,6 @@ switch ($fuseAction) {
 		include '../dsp_outline.php';
 		break;
 		
-	case "database":
-		include 'dsp_database.php';
-		break;
-
 	//Cars
 	case "cars1":
 		$heading1Text = "Cars &ndash; <span>General principles</span>";
@@ -38,22 +34,6 @@ switch ($fuseAction) {
 	case "cars2":
 		$heading1Text = "Cars &ndash; <span>Innovative Designs</span>";
 		$contentPage = 'dsp_cars2.php';
-		include '../dsp_outline.php';
-		break;
-
-	//Programming sandbox
-	case "sandbox":
-		$heading1Text = "Programming Sandbox";
-		$contentPage = 'dsp_sandbox.php';
-		$jsFiles[] =  "sandbox";
-		include '../dsp_outline.php';
-		break;
-
-	//Computers
-	case "computers":
-		$sectionPhotoLink = "";
-		$heading1Text = "Computers";
-		$contentPage = 'dsp_computers.php';
 		include '../dsp_outline.php';
 		break;
 
