@@ -8,28 +8,27 @@
    <p>We met each other when we lived in Auburn, a suburb with a working-class tradition. Indeed, the State Premier during the Depression as Jack Lang was the local member for Auburn. I believe he was famous/infamous for refusing to pay government debts to the banks saying the workers had a greater need for what little the government had.</p>
    <p class="endText">A few years after we married, we moved to Turramurra, the name meaning &quot;big hill&quot; in the local aboriginal language (as with most of the country, when white settlers moved in, the aboriginies were forced out). The result is that rain-bearing clouds gain altitude as they cross Turramurra and dump their moisture giving us the highest rainfall in Sydney. We have no view but are surrounded by big trees. There are lots of birds.</p>
 </div>
-<?
-	setThumbnail("OperaBridge1.jpg");
-	setThumbnail("City1.jpg");
-	setThumbnail("NorthSydney1.jpg");
-	setThumbnail("HarbourBridge1.jpg");
-?>
-<div class="photoAlbum">
-  <?
-	setThumbnail("AustOnUs1.jpg");
-	setThumbnail("HarbourNight1.jpg");
-	setThumbnail("Greenwich1.jpg");
-	setThumbnail("BondiBeach1.jpg");
-	setThumbnail("Cliffs1.jpg");
-	setThumbnail("OlympicLogo.gif");
-	setThumbnail("CustomsHouse1.jpg");
-	setThumbnail("Taronga1.jpg");
-	setThumbnail("GladesvilleBridge1.jpg");
-	setThumbnail("GlebeIsland1.gif");
-	setThumbnail("3sisters1.jpg");
-	setThumbnail("House1.jpg");
-	setThumbnail("Cockatoo1.jpg");
+<div class="photo-gallery">
+	<?
+	setThumbnail([
+		"OperaBridge1.jpg",
+		"City1.jpg",
+		"NorthSydney1.jpg",
+		"HarbourBridge1.jpg",
+		"AustOnUS1.jpg",
+		"HarbourNight1.jpg",
+		"Greenwich1.jpg",
+		"BondiBeach1.jpg",
+		"Cliffs1.jpg",
+		"OlympicLogo.gif",
+		"CustomsHouse1.jpg",
+		"Taronga1.jpg",
+		"GladesvilleBridge1.jpg",
+		"GlebeIsland1.gif",
+		"3sisters1.jpg",
+		"House1.jpg",
+		"Cockatoo1.jpg"]);
 	setThumbnail("KitchenViewA1.jpg", "index.php?fuseAction=kitchen|_self");
-  ?>
+	?>
 </div>
 

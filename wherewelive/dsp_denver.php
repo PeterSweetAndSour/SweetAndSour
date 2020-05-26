@@ -7,27 +7,23 @@
 	<p>Metropolitan Denver has about 2 million inhabitants making it about half the size of Sydney.</p>
 	<p class="endText">Come and take the tour. Click on any photo, including the one at the top left for a bigger picture and an explanation.</p>
 </div>
-<?
-	setThumbnail("DenverMorning1.jpg");
-?>
-<div class="photoAlbum">
-  <?
-	setThumbnail("Columbines1.jpg");
-	setThumbnail("DFTower1.jpg");
-	setThumbnail("Complex1.jpg");
 
-	setThumbnail("UpstairsUnit1.jpg");
-	setThumbnail("Aerial1.jpg");
-	setThumbnail("StateCapitol1.jpg");
-	
-	setThumbnail("CityAndCouncilBldg1.jpg");
-	setThumbnail("I70Tunnel1.jpg");
-	setThumbnail("Snow1.jpg");
-	
-	setThumbnail("GeorgetownLoop1.jpg");
-	setThumbnail("DenverAirport1.jpg");
-	setThumbnail("RedRocks1.jpg");
-	
-	setThumbnail("RedRocksStars1.jpg");
-  ?>
+<div class="photo-gallery">
+	<?
+	setThumbnail([
+		"DenverMorning1.jpg",
+		"CityAndCouncilBldg1.jpg",
+		"Columbines1.jpg",
+		"DFTower1.jpg",
+		"Complex1.jpg",
+		"UpstairsUnit1.jpg",
+		"Aerial1.jpg",
+		"StateCapitol1.jpg",
+		"I70Tunnel1.jpg",
+		"Snow1.jpg",
+		"GeorgetownLoop1.jpg",
+		"DenverAirport1.jpg",
+		"RedRocks1.jpg",
+		"RedRocksStars1.jpg"]);
+	?>
 </div>

@@ -59,33 +59,27 @@
 	<h3>What we started with</h3>
 	<div class="photoAlbum">
 		<?
-		setThumbnail(
-			array(
-				"OriginalFrontSm.jpg",
-				"OriginalBackSm.jpg",
-				"DownstairsWithWallsSm.jpg",
-				"OriginalBathroomSm.jpg",
-				"OriginalKitchenSm.jpg",
-			)
-		);
+		setThumbnail([
+			"OriginalFrontSm.jpg",
+			"OriginalBackSm.jpg",
+			"DownstairsWithWallsSm.jpg",
+			"OriginalBathroomSm.jpg",
+			"OriginalKitchenSm.jpg"]);
 		?>
 	</div>
 	
 	<h3>Excavation</h3>
 	<div class="photoAlbum">
 		<?
-		setThumbnail(
-			array(
-				"InitialBasementExcavationSm.jpg",
-				"InitialFoundationWorkSm.jpg",
-				"ExcavationOpening1Sm.jpg",
-				"ExcavationOpening2Sm.jpg",
-				"StopWorkOrderSm.jpg",
-				"ExcavationEntranceSm.jpg",
-				"ExcavationNorthViewSm.jpg",
-				"ExcavationSouthViewSm.jpg",
-			)
-		);
+		setThumbnail([
+			"InitialBasementExcavationSm.jpg",
+			"InitialFoundationWorkSm.jpg",
+			"ExcavationOpening1Sm.jpg",
+			"ExcavationOpening2Sm.jpg",
+			"StopWorkOrderSm.jpg",
+			"ExcavationEntranceSm.jpg",
+			"ExcavationNorthViewSm.jpg",
+			"ExcavationSouthViewSm.jpg"]);
 		?>
 	</div>
 	<div class="story">
@@ -95,128 +89,113 @@
 	<h3>Subsidence</h3>
 	<div class="photoAlbum">
 		<?
-		setThumbnail(
-			array(
-				"Subsidence1Sm.jpg",
-				"Subsidence2Sm.jpg",
-				"SubsidenceEastWallSm.jpg",
-				"CrackedBreezewaySm.jpg",
-				"CrackedBreezeway2Sm.jpg",
-				"CrackBackWallFromInsideSm.jpg",
-				"CrackWestWallAndNeighborSm.jpg",
-				"Subsidence3Sm.jpg",
-				"NeighborDiningRoomDamage2Sm.jpg",
-				"NeighborDiningRoomDamageSm.jpg",
-				"SubsidenceGapFloorToWall1Sm.jpg",
-				"SubsidenceGapFloorToWall2Sm.jpg",
-				"SubsidenceGapFloorToWall3Sm.jpg",
-				"SubsidenceInternalStairsSm.jpg",
-				"SubsidenceNWCornerSm.jpg",
-				"BackWallTiltSm.jpg",
-				"BackWindowTopSm.jpg",
-				"BackWindowSillSm.jpg",
-				"OpenBackLateSm.jpg",
-			)
-		);
+		setThumbnail([
+			"Subsidence1Sm.jpg",
+			"Subsidence2Sm.jpg",
+			"SubsidenceEastWallSm.jpg",
+			"CrackedBreezewaySm.jpg",
+			"CrackedBreezeway2Sm.jpg",
+			"CrackBackWallFromInsideSm.jpg",
+			"CrackWestWallAndNeighborSm.jpg",
+			"Subsidence3Sm.jpg",
+			"NeighborDiningRoomDamage2Sm.jpg",
+			"NeighborDiningRoomDamageSm.jpg",
+			"SubsidenceGapFloorToWall1Sm.jpg",
+			"SubsidenceGapFloorToWall2Sm.jpg",
+			"SubsidenceGapFloorToWall3Sm.jpg",
+			"SubsidenceInternalStairsSm.jpg",
+			"SubsidenceNWCornerSm.jpg",
+			"BackWallTiltSm.jpg",
+			"BackWindowTopSm.jpg",
+			"BackWindowSillSm.jpg",
+			"OpenBackLateSm.jpg"]);
 		?>
 	</div>
 	
 	<h3>Basement</h3>
 	<div class="photoAlbum">
 		<?
-		setThumbnail(
-			array(
-				"FloodedBasementSm.jpg",
-				"WetBackWallSm.jpg",
-				"BackWallHollow1Sm.jpg",
-				"BackWallHollow2Sm.jpg",
-				"BackWallHollow3Sm.jpg",
-				"WetBackWall2Sm.jpg",
-				"BasementBackWallSm.jpg",
-				"BasementNorthWallSm.jpg",
-				"BasementBeforeConcretePourSm.jpg",
-				"BlackOozeSm.jpg",
-				"MiddleBasementWindow1Sm.jpg",
-				"BasementWetPatch1Sm.jpg",
-				"BasementWetPatch2Sm.jpg",
-				"WetBackWall3Sm.jpg",
-				"BasementWetPatch3Sm.jpg",
-				"OutsideSumpPit2Sm.jpg",
-				"BasementSupportPost0Sm.jpg",
-				"BasementSupportPost1Sm.jpg",
-				"BasementSupportPost2Sm.jpg",
-			)
-		);
+		setThumbnail([
+			"FloodedBasementSm.jpg",
+			"WetBackWallSm.jpg",
+			"BackWallHollow1Sm.jpg",
+			"BackWallHollow2Sm.jpg",
+			"BackWallHollow3Sm.jpg",
+			"WetBackWall2Sm.jpg",
+			"BasementBackWallSm.jpg",
+			"BasementNorthWallSm.jpg",
+			"BasementBeforeConcretePourSm.jpg",
+			"BlackOozeSm.jpg",
+			"MiddleBasementWindow1Sm.jpg",
+			"BasementWetPatch1Sm.jpg",
+			"BasementWetPatch2Sm.jpg",
+			"WetBackWall3Sm.jpg",
+			"BasementWetPatch3Sm.jpg",
+			"OutsideSumpPit2Sm.jpg",
+			"BasementSupportPost0Sm.jpg",
+			"BasementSupportPost1Sm.jpg",
+			"BasementSupportPost2Sm.jpg"]);
 		?>
 	</div>
 	
 	<h3>Floor</h3>
 	<div class="photoAlbum">
 		<?
-		setThumbnail(
-			array(
-				"FloorboardRemovalSm.jpg",
-				"Floorboards1Sm.jpg",
-				"Floorboards2Sm.jpg",
-				"Floorboards3Sm.jpg",
-				"Floorboards4Sm.jpg",
-				"Floorboards5Sm.jpg",
-				"Floorboards6Sm.jpg",
-				"Floorboards7Sm.jpg",
-				"FloorFromBelowSm.jpg",
-			)
-		);
+		setThumbnail([
+			"FloorboardRemovalSm.jpg",
+			"Floorboards1Sm.jpg",
+			"Floorboards2Sm.jpg",
+			"Floorboards3Sm.jpg",
+			"Floorboards4Sm.jpg",
+			"Floorboards5Sm.jpg",
+			"Floorboards6Sm.jpg",
+			"Floorboards7Sm.jpg",
+			"FloorFromBelowSm.jpg"]);
 		?>
 	</div>
 	
 	<h3>Painting and paint preparation</h3>
 	<div class="photoAlbum">
 		<?
-		setThumbnail(
-			array(
-				"WindowBathroomSm.jpg",
-				"WindowFrameScraped1Sm.jpg",
-				"WindowFrameScraped2Sm.jpg",
-				"WindowFramePrimedSm.jpg",
-				"WindowFrameSandedSm.jpg",
-				"WindowFrameTopCoatSm.jpg",
-				"WindowFrontSloppyPrepSm.jpg",
-				"WindowInUnpreparedFrame1Sm.jpg",
-				"WindowInUnpreparedFrame2Sm.jpg",
-				"FrontWindowBadWork1Sm.jpg",
-				"FrontWindowBadWork2Sm.jpg",
-				"WindowWestLivingRoomSm.jpg",
-				"PolyurethaneOnBalustersSm.jpg",
-				"WindowSloppyPainting1Sm.jpg",
-				"WindowSloppyPainting2Sm.jpg",
-				"WindowSloppyPainting3Sm.jpg",
-				"WindowSloppyPainting4Sm.jpg",
-				"WindowSloppyPainting5Sm.jpg",
-			)
-		);
+		setThumbnail([
+			"WindowBathroomSm.jpg",
+			"WindowFrameScraped1Sm.jpg",
+			"WindowFrameScraped2Sm.jpg",
+			"WindowFramePrimedSm.jpg",
+			"WindowFrameSandedSm.jpg",
+			"WindowFrameTopCoatSm.jpg",
+			"WindowFrontSloppyPrepSm.jpg",
+			"WindowInUnpreparedFrame1Sm.jpg",
+			"WindowInUnpreparedFrame2Sm.jpg",
+			"FrontWindowBadWork1Sm.jpg",
+			"FrontWindowBadWork2Sm.jpg",
+			"WindowWestLivingRoomSm.jpg",
+			"PolyurethaneOnBalustersSm.jpg",
+			"WindowSloppyPainting1Sm.jpg",
+			"WindowSloppyPainting2Sm.jpg",
+			"WindowSloppyPainting3Sm.jpg",
+			"WindowSloppyPainting4Sm.jpg",
+			"WindowSloppyPainting5Sm.jpg"]);
 		?>
 	</div>
 	
 	<h3>More issues</h3>
 	<div class="photoAlbum">
 		<?
-		setThumbnail(
-			array(
-				"ChimneyTubesSm.jpg",
-				"GarageNotFixedSm.jpg",
-				"KitchenNECorner_v3Sm.jpg",
-				"BackDoorSm.jpg",
-				"DrywallNotStraight1Sm.jpg",
-				"CutOnFloorBoardMasterBedSm.jpg",
-				"OldBathroomWallTilesSm.jpg",
-				"OldWindowJeffTookSm.jpg",
-				"SideOfHouseWithBricksSm.jpg",
-				"StaircaseNoWashersSm.jpg",
-				"UsedSlidingDoorSm.jpg",
-				"SampleOfWkMnshipSm.jpg",
-				"UsedSlidingDoor2Sm.jpg",
-			)
-		);
+		setThumbnail([
+			"ChimneyTubesSm.jpg",
+			"GarageNotFixedSm.jpg",
+			"KitchenNECorner_v3Sm.jpg",
+			"BackDoorSm.jpg",
+			"DrywallNotStraight1Sm.jpg",
+			"CutOnFloorBoardMasterBedSm.jpg",
+			"OldBathroomWallTilesSm.jpg",
+			"OldWindowJeffTookSm.jpg",
+			"SideOfHouseWithBricksSm.jpg",
+			"StaircaseNoWashersSm.jpg",
+			"UsedSlidingDoorSm.jpg",
+			"SampleOfWkMnshipSm.jpg",
+			"UsedSlidingDoor2Sm.jpg"]);
 		?>
 	</div>
 	

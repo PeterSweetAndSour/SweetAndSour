@@ -13,11 +13,17 @@ if(isSet($_GET["fuseAction"])) {
 	$fuseAction = $_GET["fuseAction"];
 }
 else {
-	$fuseAction = "washington";
+	$fuseAction = "lisbon";
 }
 
 
 switch ($fuseAction) {
+	case "lisbon":
+		$heading1Text = "Lisbon (2019 &ndash; ?)";
+		$contentPage = "dsp_lisbon.php";
+		include "../dsp_outline.php";
+		break;
+		
 	//Sydney
 	case "sydney":
 		$heading1Text = "Sydney (to 1995)";
@@ -50,7 +56,7 @@ switch ($fuseAction) {
 	case "washington":
 		//$sectionPhoto = "washington/cherry_28Detail.jpg";
 		//$sectionPhotoLink = "../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=cherry_028Lg.jpg";
-		$heading1Text = "Washington (2006 ...)";
+		$heading1Text = "Washington (2006 &ndash; 2019)";
 		$contentPage = 'dsp_washington.php';
 		include '../dsp_outline.php';
 		break;
@@ -67,13 +73,6 @@ switch ($fuseAction) {
 		include '../dsp_outline.php';
 		break;
 		
-	case "productreviews":
-		$heading1Text = "Product Reviews";
-		$contentPage = "dsp_productreviews.php";
-		include "../dsp_outline.php";
-		break;
-		
-
 
 	/**** Default case. ****/
 	default:
