@@ -16,12 +16,7 @@
       <img src="images/DataSheet.gif" width="376" alt="" />
 	</div>
 </div>
-<div class="story">
-   <a name="Argument"></a>
-   <div class="imgShadow spaceBelow">
-      <img src="images/Argument.gif" width="376" alt="" />
-	</div> 
-</div>
+
 <div class="story">
   	<a name="Buy"></a>
    <div class="imgShadow spaceBelow">

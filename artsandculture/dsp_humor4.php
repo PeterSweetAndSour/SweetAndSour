@@ -1,7 +1,8 @@
 <? //dsp_humor4.php ?>
 <h3>Pillsbury Doughboy</h3>
-<? setThumbnail("Doughboy1.jpg"); ?>
-
+<div class="photo-gallery">
+	<? setThumbnail("Doughboy1.jpg"); ?>
+</div>
 
 <h3>McDonalds Job Application</h3>
 <div class="story">
@@ -125,8 +126,8 @@
 
 <h4>CAR TALK</h4>
 <div class="story">
-   <p>A funny weekly talk-back radio show on <a href="http://www.npr.org" target="_blank">National Public Radio</a> where listeners call in with their car (and relationship) problems and Tom & Ray attempt to diagnose them on air and give advice.  You can listen to last week's show and selected highlights from earlier shows in Real Audio.  I listened to it over the internet while I was in Australia.</p>
-   <p class="endText"><a class="external" href="http://cartalk.cars.com/" target="_blank">Official site</a></p>
+   <p>A funny weekly talk-back radio show on National Public Radio where listeners call in with their car (and relationship) problems and Tom & Ray attempt to diagnose them on air and give advice.  You can listen to last week's show and selected highlights from earlier shows in Real Audio.  I listened to it over the internet while I was in Australia.</p>
+   <p class="endText"><a class="external" href="https://www.npr.org/podcasts/510208/car-talk" target="_blank">Official site</a></p>
 </div>
 
 <h4>MARTIN MOLLOY</h4>
@@ -150,24 +151,9 @@
    <p class="endText"><a class="external" href="http://www.kissthisguy.com" target="_blank">KissThisGuy.com</a></p>
 </div>
 
-<h4>ECONOMIST JOKES</h4>
-<div class="story">
-   <p>I'll admit this one is a little esoteric but it is fun. </p>
-   <p class="endText"><a class="external" href="http://netec.ier.hit-u.ac.jp/JokEc.html" target="_blank">JokEc</a></p>
-</div>
-
 <h4>SATIRE WIRE</h4>
 <div class="story">
    <p>One of my co-workers tipped me off to this site.  New twists on actual news stories.  Athough it is no longer being updated, there is plenty worth reading, including my favorite <a href="http://www.satirewire.com/news/aug02/red_tape.shtml" target="_blank">U.S. attack delayed by more Iraqi red tape</a></p>
    <p class="endText"><a class="external" href="http://www.satirewire.com" target=_blank">SatireWire web site</a></p>
 </div>
 
-<h4>DIGITAL CLOCK &ndash; A BREAKTHROUGH</h4>
-<div class="story">
-	<p class="endText">After years of work, computer science graduate students at The University of Poland have finally finished their <a href="http://www.yugop.com/ver3/stuff/03/fla.html" target="_blank"> Internet-based digital clock</a>.</p>
-</div>
-
-<h4>INTERESTING ERROR MESSAGE</h4>
-<div class="story">
-	<p class="endText">Read it carefully before thinking it is a standard 404 "Page not found" <a href="http://www.coxar.pwp.blueyonder.co.uk/" target=_blank">error message</a>.</p>
-</div>
