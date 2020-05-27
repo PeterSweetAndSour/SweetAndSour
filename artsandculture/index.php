@@ -16,7 +16,6 @@ else {
 	$fuseAction = "oddsAndEnds";
 }
 
-echo "fuseAction: " . $fuseAction . "<br />";
 switch ($fuseAction) {
 	//Odds & ends
 	case "oddsAndEnds";
