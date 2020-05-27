@@ -275,6 +275,6 @@
                 }
             };
     
-            initPhotoSwipeFromDOM('.content'); // was '.photo-gallery'
+            initPhotoSwipeFromDOM('.photo-gallery'); 
     
         })();
