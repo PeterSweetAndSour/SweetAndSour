@@ -26,26 +26,15 @@ switch ($fuseAction) {
 
 	//Aussie rock and roll
 	case "rockAndRoll_1":
-		$heading1Text = "Aussie rock and roll &ndash; Introduction";
+		$heading1Text = "Aussie rock and roll";
 		$contentPage = 'dsp_rockAndRoll_1.php';
 		include '../dsp_outline.php';
 		break;
 	case "rockAndRoll_2":
-		$heading1Text = "Aussie rock and roll &ndash; A bit of history";
+		$heading1Text = "Bands";
 		$contentPage = 'dsp_rockAndRoll_2.php';
 		include '../dsp_outline.php';
 		break;
-	case "rockAndRoll_3":
-		$heading1Text = "Aussie rock and roll &ndash; Bands A to I";
-		$contentPage = 'dsp_rockAndRoll_3.php';
-		include '../dsp_outline.php';
-		break;
-	case "rockAndRoll_4":
-		$heading1Text = "Aussie rock and roll &ndash; Bands K to T";
-		$contentPage = 'dsp_rockAndRoll_4.php';
-		include '../dsp_outline.php';
-		break;
-
 	
 	//Humor
 	case "humor1":
@@ -76,22 +65,22 @@ switch ($fuseAction) {
 
 	//Speeches
 	case "farnsworth";
-		$useInPageHeader = true;
+		$heading1Text = "Philo T. Farnsworth:<br /><span>The (forgotten) inventor of television</span>";
 		$contentPage = 'dsp_farnsworth.php';
 		include '../dsp_outline.php';
 		break;
 	case "bumperStickers";
-		$heading1Text = "&quot;Wisdom in ten words or less&quot; &ndash; Bumper stickers";
+		$heading1Text = "&ldquo;Wisdom in ten words or less&rdquo; &ndash; Bumper stickers";
 		$contentPage = 'dsp_bumperStickers.php';
 		include '../dsp_outline.php';
 		break;
 	case "palestine";
-		$heading1Text = "&quot;The victims are now the oppressors&quot; &ndash; Palestinine";
+		$heading1Text = "&ldquo;The victims are now the oppressors&rdquo; &ndash; Palestinine";
 		$contentPage = 'dsp_palestine.php';
 		include '../dsp_outline.php';
 		break;
 	case "genocide";
-		$heading1Text = "&quot;Sadly, the Jews are not alone&quot; &ndash; Remembering two other genocides";
+		$heading1Text = "&ldquo;Sadly, the Jews are not alone&rdquo; &ndash; Remembering two other genocides";
 		$contentPage = 'dsp_genocide.php';
 		include '../dsp_outline.php';
 		break;

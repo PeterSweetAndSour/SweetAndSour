@@ -793,14 +793,12 @@ span#bgBottomRight {
  **************************************************************/
 div.photoAlbum {
   float: left;
-  display: inline;
   clear: both;
   width: 100%;
   margin-bottom: 20px; }
 
 div.photoBox {
   float: left;
-  display: inline;
   width: 167px;
   margin: 0 16px 10px 0;
   padding: 0; }
@@ -808,14 +806,12 @@ div.photoBox {
 /* For thumbnails */
 div.photoHolder {
   float: left;
-  display: inline;
   margin: 0 10px 10px 0; }
 
 /* For full size photos */
 div.imgInColumn {
   clear: both;
   float: left;
-  display: inline;
   margin: 0 10px 10px 40px; }
 
 /* For large images in main body. */
@@ -852,6 +848,10 @@ div.offset {
 /* Images in text */
 .story img {
   margin-top: 10px; }
+
+.story figure img {
+	margin-top: 0;
+}
 
 /**************************************************************
  * Popup photo frame            *

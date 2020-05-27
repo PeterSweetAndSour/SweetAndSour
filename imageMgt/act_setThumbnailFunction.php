@@ -14,7 +14,7 @@ Must be called from a subdirectory or the paths for the included files are wrong
 include '../imageMgt/fn_getPhotoURL.php';      //Function that returns url
 include '../imageMgt/fn_getPhotoInfo.php';     //Function that returns $photos (associative array) or false
 
-function setThumbnail($photoNames, $overrideURL = "", $panorama = "false") {
+function setThumbnail($photoNames, $overrideURL = "") {
 	global $useVersionedFiles; //from config file
 	global $useAmazonS3;       //from config file
 	global $urlPrefix;         //from config file

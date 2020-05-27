@@ -1,12 +1,10 @@
 <? //dsp_farnsworth.php?>
 
-<h3>Preamble</h3>
+<h3>Preamble (not part of the original presentation)</h3>
 <div class="story">
    <p>I did a public speaking class (SPE-115) as part of my associate degree at Red Rocks Community College and was fortunate to have a wonderful teacher and a wonderful class.  You really get to know each other when each person is speaking about something that is important to them.  Some were very moving and showed a lot of courage on the part of those that gave them.</p>
    <p class="endText">We did four talks, one informative, one celebration or humor, one pursuasive and one of our choice.  All required immense preparation and I think all of us felt we needed more time to do them properly but all were rewarding.  Each is presented in the format that we were to submit to our teacher: a word-by-word introduction and conclusion, with section headings and bulleted points in the middle.  By not writing out the whole speech word-for-word, you can't read the speech which would be boring.  Here are mine.</p>
 </div>
-
-<h1>Philo T. Farnsworth:<br /><span>The (forgotten) inventor of television</span></h1>
 
 <h3>Introduction</h3>
 
@@ -15,7 +13,10 @@
    <p>Edison once observed that "invention is 1% inspiration and 99% perspiration".  Yet what Edison failed to mention was that this is not enough to make you famous, even when your invention changes the world. </p>
    <p class="endText">Today I want to share with you the incredible story of Philo T. Farnsworth, the man who invented all-electronic television; a  man who Time magazine named him in their 1999 list of the 100 most important people of the 20th century, yet he died in obscurity.  We will see how a teenager came up with the fundamental principles of television then went on to develop working models and later staged the first public demonstration.  We will see how he was cheated out of fame and fortune by a giant of corporate America and unfortunate timing of world events.</p>
 </div>
-<? setThumbnail("Farnsworth1.gif") ?>
+<div class="photo-gallery">
+	<? setThumbnail("Farnsworth1.gif") ?>
+</div>
+
 
 <h3>Body</h3>
 <h4>THE BOY WITH AN IDEA</h4>
