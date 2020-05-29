@@ -1,6 +1,6 @@
 <? //dsp_portland2009.php ?>
 
-<h3>Portland, 20 &ndash; 22 Aug 2009</h3>
+<h2>Portland, 20 &ndash; 22 Aug 2009</h2>
 <div class="story noSpaceBelow">
    <p>I liked Portland so much, I'd be happy to live here. I say that knowing I was there in the summer and
 	that the winter is long. It was sad to leave and I hope we go back one day.</p>

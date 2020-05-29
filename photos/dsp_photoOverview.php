@@ -1,6 +1,6 @@
 <? //dsp_letter5c.php ?>
 
-<h3>Various photos I've taken</h3>
+<h2>Various photos I've taken</h2>
 <div class="story">
 	<p>This section is for various pictures I've taken. Some will end up the letters in Coming to America section.</p>
 	<p>Also, not actually on this site but I now have a <a href="http://www.flickr.com/photos/21944019@N00/sets/72157602775234156/" target="_blank" class="external">photoset on Flickr</a> of a really good walk I took last Sunday. Note the &quot;Map&quot; link so you can see where my path took me.</p>

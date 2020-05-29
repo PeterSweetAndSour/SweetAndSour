@@ -1,7 +1,7 @@
 <? 
 //dsp_thisWebSite.php
 ?>
-<h3>2020 Site redesign</h3>
+<h2>2020 Site redesign</h2>
 <div class="story">
 	<p>Since the last major redesign in 2008 two major things have happened:</p>
 	<ol>
@@ -14,7 +14,7 @@
 </div>
 
 
-<h3>2009 Amazon S3 as a CDN</h3>
+<h2>2009 Amazon S3 as a CDN</h2>
 <div class="story">
 	<p>[July 2009] Moving images and PDF files from my own server to a content delivery network (CDN) has the potential to speed up page loading since their huge number of distributed servers should deliver content more quickly than mine and if there is a huge surge in traffic, my server can concentrate on processing the PHP pages. Since I also intend to later set the &quot;expires&quot;&quot; to none, I've also renamed every file to carry the date it was modified so that if a new version is uploaded, it will have a new URL</p>
 	<p>This is most of what you need to know about S3:</p>
@@ -34,7 +34,7 @@
 	-->
 </div>
 
-<h3>2008 Site redesign</h3>
+<h2>2008 Site redesign</h2>
 <div class="story">
 	<p>[October 2008] I've thought for years that the site looked really crude and I've finally done something about it. Here are the main features and changes:</p>
 	<ul>
@@ -51,7 +51,7 @@
 	</ul>
 </div>
 
-<h3>I wrote the following in about 2003. </h3>
+<h2>I wrote the following in about 2003. </h2>
 <div class="story followOn">
    <p>This latest revision to the site uses XHTML/Transitional and CSS to achieve a clearly-structured document and layout without tables so that content is separated from presentation. I'll shortly be finalizing the code so it will pass the W3's validator and move towards Section 508 compliance which ensures accessibility to those with disabilities (such as blind people using screen readers). The benefits of making the site &quot;standards-compliant&quot; are faster-loading pages, easier maintenance and availability to users with a variety of browsers.</p>
 

@@ -1,6 +1,6 @@
 <? //dsp_letter5b.php ?>
 
-<h3>More news</h3>
+<h2>More news</h2>
 <div class="story">
    <p>I'm still having difficulty making myself understood.  I introduced myself to someone at work a few weeks ago and they thought my name was <i>Pleaser</i>!  How could they hear an <b>L</b> and mistake my <b>T</b> for an <b>S</b>?  It is beyond me.  Someone at the supermarket asked me where in England I came from.  When I said Australia, he commented that Australian and English accents were very similar.  I pretended to be amused.  My office is becoming a Shrine to Australia.  I have a big map of Australia on the wall, pictures of the Opera House, a koala and Sydney Harbour, a postcard of a kangaroo riding a surfboard (I do!) and another postcard which has the outline of Australia overlaid on a map of America (they are about the same size which comes as a surprise to most Americans).</p>
    <p>I get paid weekly by check which is a real nuisance.  You may remember when ATMs were introduced in Australia, the Commonwealth Bank forced customers to write their account number and the amounts on deposit envelopes.  It didn't last long because so many people complained and the other banks' machines printed it for you.  Not so our bank and I assume the other banks too.  To make a deposit I have to bring the account number and a pen with me and give them my address and phone numbers, the check numbers and amounts.</p>

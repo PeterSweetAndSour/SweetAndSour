@@ -6,7 +6,7 @@
 	<p class="endText">Rather than apologize about the length of time since I last wrote, I'll just say that this is our Christmas letter and you can pick which year.</p>
 </div>
 
-<h3>The news</h3>
+<h2>The news</h2>
 <div class="story">
 	<p>Our applications for permanent resident status, commonly known as the green card, were approved early last year, after 2� years of filling in forms, standing in lines at the Immigration and Naturalization Service and then waiting. This means we can now apply for jobs wherever we like without worrying about work visas, stay as long as we like and we can go through the fast lane (actually, the not-so-slow/ I-still-might-get-my-connecting-flight lane) when re-entering the US. What we can't do, in order of increasing disappointment is vote, work for a defense contractor, join the Marines, represent the US at the Olympics, or run for President.</p>
 	<p>Lan made a rushed trip to Australia in July last year when her father was very ill. She was hoping to make it to the hospital in Adelaide to see her father while he was still alive but unfortunately was just an hour and a half too late.</p>

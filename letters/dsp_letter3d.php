@@ -1,6 +1,6 @@
 <? //dsp_letter3d.php ?>
 
-<h3>I do like ...</h3>
+<h2>I do like ...</h2>
 <div class="story">
    <p>There are a number of things I do like here:</p>
    <ul>
@@ -15,7 +15,7 @@
    <p class="endText">The best thing though, until the novelty wore off, is radio station KIMN which plays only "70s feel-good oldies".  How refreshing it is to hear <i>Tie a yellow ribbon 'round the old oak tree</i>, the Mixtures singing <i>The pushbike song</i>, our own Olivia with <i>Take the chains away</i>, Boston with <i>More than a feeling</i> and ELO with <i>Don't bring me down.</i></p>
 </div>
 
-<h3>They can't help it - they're American ...</h3>
+<h2>They can't help it - they're American ...</h2>
 <div class="story">
    <p>There are so many bizarre things that I feel I must comment on:</p>
    <p>(Something is missing here - corrupted in the computer meltdown.)</p>

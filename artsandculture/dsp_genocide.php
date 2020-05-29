@@ -1,17 +1,17 @@
 <? //dsp_genocide.php ?>
 
 <div class="photo-gallery">
-	<h3>Purpose statement</h3>
+	<h2>Purpose statement</h2>
 	<div class="story">
 		<p class="endText">To demonstrate that the Jewish Holocaust was unfortunately not an aberration of history and raise the question of why we remember it almost exclusively.</p>
 	</div>
 
-	<h3>Thesis</h3>
+	<h2>Thesis</h2>
 	<div class="story">
 		<p class="endText">While there have been other episodes of mass killings in the last century, the Jewish Holocaust has been remembered above all others.</p>
 	</div>
 
-	<h3>Introduction</h3>
+	<h2>Introduction</h2>
 	<div class="story">
 		<p>Since you surprised me last week with your favorable response, I'd like to tackle a related but difficult issue.  One of the questions raised by the dispossession of the Palestinians is how the Israelis have been able to &quot;get away with it&quot;.  What is it that makes Israel's invasion and occupation of Arab land any different from Germany's invasion of Poland or Iraq's invasion of Kuwait?</p>
 		<p>I suggest it is because the Jews are seen as having suffered uniquely and so they therefore deserve our sympathy, even support but today I want to point out that sadly, <b>the suffering of the Jews is not unique</b>.  I want to share with you some of what I've learned about other national groups that have been traumatized and yet their national nightmares have been largely forgotten.   In particular, we'll look briefly at just two:</p>
@@ -23,7 +23,7 @@
 		<p class="endText">Before I start though, let me make it absolutely clear, lest there be any misunderstanding, that <b>in no way do I seek to minimize the suffering of the Jews in the Holocaust</b>.  It was a tragedy of mind-numbing proportions and I accept the figure offered on the web site of the <a class="external" href="http://www.ushmm.org" target="_blank">US Holocaust Memorial Museum</a> that 6 million Jews perished under the Nazis.  However, I do believe we do need to spare some thoughts for other victims of tyranny too and recognize that Israel may have an interest in keeping the memory of their Holocaust alive.</p>
 	</div>
 
-	<h3>Body</h3>
+	<h2>Body</h2>
 
 	<h4>OTHER NATIONAL TRAUMAS</h4>
 	<div class="story">
@@ -78,7 +78,7 @@
 		</ul>
 	</div>
 
-	<h3>Conclusion</h3>
+	<h2>Conclusion</h2>
 	<div class="story">
 		<p>We must remember the Holocaust and the Jews who died in it.  To be human demands that we be able to recognize the suffering of others.  However, we must realize that the Jews are not alone in their misfortune and that concentrating on their suffering diverts our attention from their oppression of the Palestinians.</p>
 		<p>Perhaps the saddest aspect of all the episodes of mass killings is how &quot;ordinary people&quot; like us, have taken part in the massacres, either directly in the shootings or denials of another&rsquo;s rights, or indirectly by turning away instead of confronting evil.  Martin Luther King wrote in his &quot;Birmingham Jail letter&quot; that, <i>&quot;We will have to repent in this generation not merely for the vitriolic words and actions of the bad people, but for the appalling silence of the good people.&quot;</i>.</p>
@@ -86,7 +86,7 @@
 	</div>
 </div>
 
-<h3>Bibliography</h3>
+<h2>Bibliography</h2>
 <div class="story">
 	<p>Government Document<br>
 	<i>&quot;Investigation of the Ukrainian Famine, 1932-33: Report to Congress [The] Commission on the Ukrainian Famine&quot;</i><br>

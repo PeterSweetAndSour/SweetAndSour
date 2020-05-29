@@ -15,8 +15,8 @@
 	<div class="page">
 		<div id="header">
 			<img alt="Sweet and Sour" src="/images/SweetAndSourMobile_20081220.gif" id="logoMobile"/>
-			<div id="logo"><a title="Go to home page" href="/home/index.php?fuseAction=home"><span> </span>Sweet and Sour home</a></div>
-			<p id="tagline">One is sweet and the other is … a web developer</p>
+			<div id="logo"><a title="Go to home page" href="/home/index.php?fuseAction=home"><span>&nbsp;</span>Sweet and Sour home</a></div>
+			<p id="tagline">One is sweet and the other is&hellip; a web developer</p>
 			
 			<div id="menuWrapper">
 				<div id="imageMenu">
@@ -27,7 +27,7 @@
 
 		<div class="clearfix" id="content">
 			<h1>Page Not Found</h1>
-			<h3>(or HTTP error 404)</h3>
+			<h2>(or HTTP error 404)</h2>
 			<div class="story">
 				<p>Whatever you were looking for is not here. Sorry it didn't work out for you.</p>
 				<p>Go to the <a href="/home/index.php" title="Home page">home page</a> and start again from there.</p>

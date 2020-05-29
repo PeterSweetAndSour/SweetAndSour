@@ -6,7 +6,7 @@
 	<p>Come along for the ride.  Summaries are below; make selection from menu at left.</p>
 </div>
 
-<h3>Letter 19 (20 Dec 08)</h3>
+<h2>Letter 19 (20 Dec 08)</h2>
 <div class="story">
 	<ul>
 		<li>We are still (thankfully) employed</li>
@@ -17,7 +17,7 @@
 	<p class="endText"><a href="index.php?fuseAction=letter19a">Read now ...</a></p>
 </div>
 
-<h3>Letter 18 (10 Dec 06)</h3>
+<h2>Letter 18 (10 Dec 06)</h2>
 <div class="story">
 	<ul>
 		<li>Move to Alexandria, Virginia</li>
@@ -28,7 +28,7 @@
 	<p class="endText"><a href="index.php?fuseAction=letter18a">Read now ...</a></p>
 </div>
 
-<h3>Letter 17 (2 Apr 05)</h3>
+<h2>Letter 17 (2 Apr 05)</h2>
 <div class="story">
 	<ul>
 		<li>10-year anniversary special! Has it really been that long?</li>
@@ -42,7 +42,7 @@
 	<p class="endText"><a href="index.php?fuseAction=letter17a">Read now ...</a></p>
 </div>
 
-<h3>Letter 16 (6 Jul 03)</h3>
+<h2>Letter 16 (6 Jul 03)</h2>
 <div class="story">
 	<ul>
 		 <li>Employment, or lack thereof</li>
@@ -55,7 +55,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter16a">Read now ...</a></p>
 </div>
 
-<h3>Letter 15 (25 Jul 02)</h3>
+<h2>Letter 15 (25 Jul 02)</h2>
 <div class="story">
 	<ul>
 		 <li>News: Visitors. Jobs. Goal!</li>
@@ -67,7 +67,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter15a">Read now ...</a></p>
 </div>
 
-<h3>Letter 14 (7 Mar 01)</h3>
+<h2>Letter 14 (7 Mar 01)</h2>
 <div class="story">
 	<ul>
 		<li>2&frac12; years for this!? On the final approval of our application for permanent resident status.</li>
@@ -78,7 +78,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter14a">Read now ...</a></p>
 </div>
 
-<h3>Letter 13 (22 Jan 00)</h3>
+<h2>Letter 13 (22 Jan 00)</h2>
 <div class="story">
 	<ul>
 		<li>Activities: Catch up on a full year of news which includes Peter being able to work ... and get paid for it.</li>
@@ -88,7 +88,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter13a">Read now ...</a></p>
 </div>
 
-<h3>Letter 12 (12 Jan 99)</h3>
+<h2>Letter 12 (12 Jan 99)</h2>
 <div class="story">
 	<ul>
 		<li>News: Peter back in America and not sure about the future. House renovation woes. Adventure to California: Trip to Las Vegas, San Diego, Los Angeles and Grand Canyon.</li>
@@ -97,7 +97,7 @@
 	</ul>
 </div>
 
-<h3>Letter 11 (8 Nov 98)</h3>
+<h2>Letter 11 (8 Nov 98)</h2>
 <div class="story">
 	<ul>
 		<li>World Cup edition. Peter about to leave Australia; Lan's &quot;green card&quot; application; renovating house; bumper stickers.</li>
@@ -105,7 +105,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter11">Read now ...</a></p>
 </div>
 
-<h3>Letter 10 (19 Mar 98)</h3>
+<h2>Letter 10 (19 Mar 98)</h2>
 <div class="story">
 	<ul>
 		<li>Home again: Peter back in Australia; father just died; new job.</li>
@@ -115,7 +115,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter10a">Read now ...</a></p>
 </div>
 
-<h3>Letter 9 (23 Nov 97)</h3>
+<h2>Letter 9 (23 Nov 97)</h2>
 <div class="story">
 	<ul>
 		<li>News: Buying a unit; moving twice.</li>
@@ -125,7 +125,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter9a">Read now ...</a></p>
 </div>
 
-<h3>Blizzard report (24 Oct 97)</h3>
+<h2>Blizzard report (24 Oct 97)</h2>
 <div class="story">
 	<ul>
 		<li>On the blizzard that shut down Denver and my adventure getting back from the airport.</li>
@@ -133,7 +133,7 @@
    <p class="endText"><a href="index.php?fuseAction=blizzard97">Read now ...</a></p>
 </div>
 
-<h3>Letter 8 (10 May 97)</h3>
+<h2>Letter 8 (10 May 97)</h2>
 <div class="story">
 	<ul>
 		<li>News: Going to buy the unit, getting a &quot;green card&quot; through Peter's work at La Calhene, changes at the company, Lan looking for work.</li>
@@ -143,7 +143,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter8a">Read now ...</a></p>
 </div>
 
-<h3>Letter 7 (12 Dec 96)</h3>
+<h2>Letter 7 (12 Dec 96)</h2>
 <div class="story">
 	<ul>
 		<li>News: We moved; upheaval at my work; Thanksgiving; electric piano.</li>
@@ -153,7 +153,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter7a">Read now ...</a></p>
 </div>
 
-<h3>Letter 6 (11 Aug 96)</h3>
+<h2>Letter 6 (11 Aug 96)</h2>
 <div class="story">
 	<ul>
 		<li>News about us: We haven't moved, I'm taking the bus. Trip to South Dakota! Now on the internet, difficulty being understood.</li>
@@ -162,7 +162,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter6a">Read now ...</a></p>
 </div>
 
-<h3>Letter 5 (2 Mar 96)</h3>
+<h2>Letter 5 (2 Mar 96)</h2>
 <div class="story">
 	<ul>
 		<li>(There was so much to include in this letter that it was formatted as an aerogram so that the envelope formed part of the package and kept the weight under half an ounce for air mail.)</li>
@@ -174,7 +174,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter5a">Read now ...</a></p>
 </div>
 
-<h3>Letter 4 (26 Nov 95)</h3>
+<h2>Letter 4 (26 Nov 95)</h2>
 <div class="story">
 	<ul>
 		<li>Our life-serious stuff: work and visas.</li>
@@ -186,7 +186,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter4a">Read now ...</a></p>
 </div>
 
-<h3>Letter 3 (4 Aug 95)</h3>
+<h2>Letter 3 (4 Aug 95)</h2>
 <div class="story">
 	<ul>
 		<li>(Also done in aerogram style.)</li>
@@ -197,7 +197,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter3a">Read now ...</a></p>
 </div>
 
-<h3>Letter 2 (22 Apr 95)</h3>
+<h2>Letter 2 (22 Apr 95)</h2>
 <div class="story">
 	<ul>
 		<li>Just settling in Colorado; finding a place to live, a car and furniture, sales tax, possibility of work.</li>
@@ -205,7 +205,7 @@
    <p class="endText"><a href="index.php?fuseAction=letter2a">Read now ...</a></p>
 </div>
 
-<h3>Letter 1 (20 Mar 95)</h3>
+<h2>Letter 1 (20 Mar 95)</h2>
 <div class="story">
 	<ul>
 		<li>First impressions as it was written just a week after we arrived.</li>

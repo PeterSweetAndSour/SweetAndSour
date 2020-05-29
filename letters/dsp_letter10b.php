@@ -1,6 +1,6 @@
 <? //dsp_letter10b.php ?>
 
-<h3>Australia</h3>
+<h2>Australia</h2>
 <div class="story">
    <p>On returning to Sydney, there were several things I noticed:</p>
    <ul>

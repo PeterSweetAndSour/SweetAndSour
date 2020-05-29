@@ -6,7 +6,7 @@
    <p class="endText">This letter is our first intended for online delivery.  It is quicker and cheaper for us, it will get to you sooner than one in the mail, plus you get hyperlinks and more photos, in color, than I can provide in the printed version.</p>
 </div>
 
-<h3>Activity report</h3>
+<h2>Activity report</h2>
 <div class="story">
    <p>The US Immigration Service has effectively determined what we haveand have notdone this year.  Since Lan is still waiting to get a "green card" (permanent resident status) through her employer, she is committed to stay there until everything is finalized.  We thought it would be over by now but it seems we must wait until the end of 2000.  She works for US WEST Dex, a section of the local phone company and while there has not been much news there, she has recently transferred to a different group and moved to a cubicle 2 rows away from the old one.  More importantly, she is now a DBA (database administrator) instead of just a database designer.</p>
    <p>As I indicated last year, the Immigration Service would not let me work during 1999, so I decided to study computers instead.  By taking a heavy course load and getting a few credits for my engineering degree, I very nearly finished a 2-year course on Internet development in 1 year.  I am annoyed that my engineering career never went very far and I feel a bit of a loser having to take an entry-level job at 35 but the industry is booming and the prospects for rapid advancement are good.</p>

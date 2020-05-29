@@ -1,6 +1,6 @@
 <? //dsp_letter7c.php ?>
 
-<h3>Life in America</h3>
+<h2>Life in America</h2>
 <div class="story">
    <p>Lan and I were inspired by a documentary we saw about Maya Lin, the architect who designed the Vietnam Veterans' Memorial in Washington D.C.  She entered a national competition in which the judges did not know who the designer was until after the winner had been chosen.  To everyone&rsquo;s surprise, she was a 21 year-old student.  There was tremendous opposition to her design from some of the veterans groups because the design was so unconventional and though they would not say it explicitly, it seemed that part of the problem was that she was a she, young and an Asian-American (her parents migrated from China in the late 1940s).  The dispute even reached Ronald Reagan but Maya and the selection committee fought on and the original design was retained with only minor changes and it is now well accepted.<p>
    <p>The election is over of course and I heard that it cost a total of $2 billion, most of which went to TV advertising.  There were some funny moments including this issue&rsquo;s selection of bumper stickers:</p>
@@ -20,7 +20,7 @@
 	?>
 </div>
 
-<h3>And finally</h3>
+<h2>And finally</h2>
 <div class="story">
    <p>I had hoped to have Lan&rsquo;s biography ready by now for stocking stuffing but it occurred to me that I have not done any more work on it since I wrote last year&rsquo;s Christmas letter.  To make up for the delay, Lan says her piano playing will be so good next year that she plans to release a CD!  It occurred to me that the album and biography would make a nice boxed set for Christmas next year.</p>
    <p class="endText">Lan and I wont be able to see you at Christmas but we wish you a happy and peaceful holiday.</p>

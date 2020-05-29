@@ -1,6 +1,6 @@
 <? //dsp_letter3c.php ?>
 
-<h3>Travels</h3>
+<h2>Travels</h2>
 <div class="story">
    <p>We have seen quite a lot of Colorado since I last wrote.  There is a public holiday at the end of May called Memorial Day which is like our Anzac Day since it honours soldiers and their sacrifice for the country.  We therefore had a long weekend and we drove west to a town called Grand Junction near the border with Utah.  This was a spectacular trip as we passed through several gorges and past snow-covered mountains.  On the way we took a 2 km hike up a hill to see a lake with a very attractive waterfall spilling into it.  The town itself is famous for dinosaurs but we didn't see any.   We did see impressive geological formations at nearby, however.</p>
    <p>On the way home we stopped at Meeker, a town famous because of a massacre of US troops by indians.  The local tribe (the Utes) had been pushed from their land and the final insult was a government agent who ploughed up the area where they raced horses.  Sensing that he had gone too far as the indians were looking threatening, the government agent called in the army for help but they were ambushed before they arrived.</p>

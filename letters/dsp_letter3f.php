@@ -1,6 +1,6 @@
 <? //dsp_letter3f.php ?>
 
-<h3>The world</h3></p>
+<h2>The world</h2></p>
 <div class="story">
    <p>There was a lot of fury from some groups when Mr Clinton normalised relations with Vietnam which shows mainly what bad losers they are. There are 1,618 military personnel listed as missing-in-action (MIAs) in Vietnam and the Vietnamese have been expected to account for all of them.  The Vietnamese have been accused of continuing to hold American prisoners and of withholding information on others.  From what I've read, these claims are virtually groundless and are largely (understandable) wishful thinking on the part of relatives. Compare those 1,618 with the 8,170 American MIAs from the Korean war and 78,750 from World War II.</p>  
    <p>America had fully restored relations with the Japanese and Germans in 1951, a mere 6 years after the war, and played a major role in rebuilding both countries.  The Vietnamese have 300,000 MIAs of their own.</p>
@@ -9,7 +9,7 @@
    <p class="endText">At least there is something good that has happened with Aung San Suu Kyi being released in Burma.  What a remarkable woman.</p>
 </div>
 
-<h3>And in confusion ...</h3>
+<h2>And in confusion ...</h2>
 <div class="story">
    <p>There&rsquo;s so much I wanted to say about our new life as it so interesting to see what is different in our new home.  However, it is like Protestants and Catholics noting all that separates them and ignoring all that they have in common.  America is like Australia except more commercialised and less tolerant of failure and differences.   It&rsquo;s fun for the moment but we look forward to getting back to Australia sooner rather than later.  Australia is a great place.</p>
    <p class="endText">That&rsquo;s all for now.</p>

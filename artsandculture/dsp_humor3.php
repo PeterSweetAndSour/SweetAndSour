@@ -4,7 +4,7 @@
 	<p class="endText">Before we get started, let me say that I do not hold copyright on anything that follows. If you are the copyright holder and would prefer that I remove something, just send me a note from the Contact us page.</p>
 </div>
 
-<h3>On men and women</h3>
+<h2>On men and women</h2>
 <div class="story">
    <div class="imgShadow spaceBelow">
 		<img src="images/BothShirts.jpg" width="376" alt="" />
@@ -26,7 +26,7 @@
 	
       
 
-<h3>Upgrading from GirlFriend 1.0 to Wife 1.0</h3><a name="Upgrades"></a>
+<h2>Upgrading from GirlFriend 1.0 to Wife 1.0</h2><a name="Upgrades"></a>
 <div class="story">
    <p>Last year, a friend of mine upgraded <i>GirlFriend 1.0</i> to <i>Wife 1.0</i> and found that it's a memory hog leaving very little system resources for other applications.  He is only now noticing that <i>Wife 1.0</i> also is spawning Child-Processes which are further consuming valuable resources.  No mention of this particular phenomena was included in the product brochure or the documentation, though other users have informed him that this is to be expected due to the nature of the application.  Not only that, <i>Wife 1.0</i> installs itself such that it is always launched at system initialization where it can monitor all  other system activity.  He's finding that some applications such as  <i>PokerNight 10.3</i>, <i>BeerBash 2.5</i> and <i>PubNight 7.0</i> are no longer able to  run in the system at all, crashing the system when selected (even though they always worked fine before). At installation, <i>Wife 1.0</i> provides no option as to the installation of undesired Plug-Ins such as <i>MotherInLaw 55.8</i> and <i>BrotherInLaw Beta release</i>.  Also, system  performance seems to diminish with each passing day.</p>
    <p>Some features he'd like to see in the upcoming <i>Wife 2.0</i>:</p>
@@ -45,7 +45,7 @@
    <p class="endText">Another solution would be to run <i>Mistress 1.1</i> via a UseNet provider under an anonymous name.  Here again, beware of the viruses which can  be accidentally downloaded from the UseNet.</p>
 </div>
 
-<h3>Upgrading from Boyfriend 5.0 to Husband 1.0</h3>
+<h2>Upgrading from Boyfriend 5.0 to Husband 1.0</h2>
 <div class="story">
    <p>Dear Tech Support:</p>
    <p>Last year I upgraded from Boyfriend 5.0 to Husband 1.0 and noticed a slowdown in the overall performance, particularly in the flower and jewelry applications that had operated flawlessly under Boyfriend.</p>

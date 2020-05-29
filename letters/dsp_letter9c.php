@@ -1,6 +1,6 @@
 <? //dsp_letter9c.php ?>
 
-<h3>Interesting things</h3>
+<h2>Interesting things</h2>
 <div class="story">
    <p>There is a new supermarket near us which has a do-it-yourself checkout system in addition to the regular checkout lanes..  After swiping a credit or debit card, you scan your own groceries and put them into plastic bags.  To make sure that customers scan every item rather than putting it directly in the bag, a store employee watches video monitors for 4 lanes.</p>
    <p>Seen on bumper stickers:</p>
@@ -23,7 +23,7 @@
    </ul>
 </div>
 
-<h3>And finally</h3>
+<h2>And finally</h2>
 <div class="story">
    <p>In the last letter we said we would be coming home for Christmas.  Unfortunately, we've had to postpone it and it now looks like we'll be coming in March instead.  We'll send another letter before we arrive so we can organise a picnic or something.  I am still pursuing a "green card" or permanent resident status, which will allow us to come and go as we please with some limitations.  The application has been slowed down by the fight with the same lawyer who made a mess of Lan&rsquo;s visa and the complaint & court claim we filed for damages, so I'm guessing it will be the end of 1998 before we get it.  Since we will be here for Christmas, we've decided to go see the Grand Canyon where I hope it will be warmer.</p>
    <p class="endText">We do hope you have a good Christmas.</p>

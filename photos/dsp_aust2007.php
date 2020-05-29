@@ -1,6 +1,6 @@
 <? //dsp_aust2007.php ?>
 
-<h3>Australia 1 Dec 07 &ndash; 17 Dec 07</h3>
+<h2>Australia 1 Dec 07 &ndash; 17 Dec 07</h2>
 <div class="story noSpaceBelow">
    <p>Going home for a visit.</p>
 </div>

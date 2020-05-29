@@ -1,19 +1,19 @@
 <? //dsp_letter5c.php ?>
 
-<h3>Disconnect from reality</h3>
+<h2>Disconnect from reality</h2>
 <div class="story">
    <p><a name="Note12Ref"></a>After we got married I read an excellent book about the conflict in Vietnam<sup><a href="#Note12">Note&nbsp;12</a></sup> and I was struck by the disparity between the optimistic assessments at the time from those in power and what was being reported. I was amazed to see history repeating itself in Iraq�until just a few months ago. Now nobody, except perhaps the President, sees anything but a catastrophe. Responsibility and the blame to come are now being pushed on to the Iraqis, much as the Vietnamization policy attempted earlier.</p>
 	 <p>As in Vietnam, the US failed to understand the history and culture and therefore its enemy and then corruption and brutality alienated the population. The French made the same mistakes in Algeria. Rent or borrow the movie <i>The Battle of Algiers</i> to see how not to run a counter-insurgency and to lose a war.</p>
 	 <p>I read this interesting quote: &quot;Of course people don&apos;t want war. But after all, it&apos;s the leaders of the country who determine the policy, and it&apos;s always a simple matter to drag the people along whether it&apos;s a democracy, a fascist dictatorship, or a parliament, or a communist dictatorship. ... All you have to do is tell them they are being attacked, and denounce the pacifists for lack of patriotism, and exposing the country to greater danger.&quot; A left-wing, Bush-hating, pacifist? No, it was the Nazi Herman Goering at the Nuremberg trials.</p>
 </div>
 
-<h3>Boats</h3>
+<h2>Boats</h2>
 <div class="story">
    <p><a name="Note13Ref"></a>We bought a canoe! More a work of art than a boat you would risk scratching<sup><a href="#Note13">Note&nbsp;13</a></sup>, Lan found it on eBay conveniently situation for collection a mere 942km/586 miles from home! However, we live in a 12th floor apartment so we can&apos;t keep it here, or anywhere else I can find nearby, so for the moment it is with Lan�s family 640km/400 miles away in Charlotte, NC.</p>
 	 <p>I read Sir Francis Chichester&apos;s account of his single-handed sail around the world. He turned 65 while at sea and thinking about his age says, &quot;<i>Our only purpose in life, if we able to say such a thing, is to put up the best performance we can &ndash; in anything, and only in doing so lies satisfaction in living.</i>&quot; He certainly did.</p>
 </div>
 
-<h3>Bumper stickers</h3>
+<h2>Bumper stickers</h2>
 <div class="story">
 	<ul>
    	<li><span class="sticker">Last time people followed the words from a Bush, folks wandered for 40 years in the desert.</span></li>
@@ -30,7 +30,7 @@
 	</ul>
 </div>
 
-<h3>Merry Christmas</h3>
+<h2>Merry Christmas</h2>
 <div class="story">
    <p>I started this letter in July but now it is just in time for Christmas. Lan and I hope you enjoy the holidays and that 2007 is peaceful and prosperous for you.</p>
 </div>

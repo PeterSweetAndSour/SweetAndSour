@@ -1,6 +1,6 @@
 <? //dsp_letter6c.php ?>
 
-<h3>Life in America</h3>
+<h2>Life in America</h2>
 <div class="story">
    <p>I have now had internet access for a few months and am thrilled with what is out there. Given our pathetic choices on TV, I spend much of my evenings navigating cyberspace. (I agree it is strange that I sit in front of a computer all day at work and then do more of it when I get home.)  Apart from e-mail, the best thing is that the <a href="http://www.smh.com.au" target="_blank">Sydney Morning Herald</a> has an on-line edition with the main stories (and Column 8).  It helps us to Stay in Touch.  We log on most days and have a look at what is happening back home. Telstra has a useful web site with the <a href="http://www.whitepages.com.au" target="_blank">white</a> and <a href="http://www.yellowpages.com.au" target="_blank">yellow pages</a> for the whole of Australia.  If you look up a business address, it even has a map to show exactly where it is.  <a href="http://www.washingtonpost.com.au" target="_blank">The Washington Post</a> is also worth a look.</p>
    <p>We have the misfortune of having a hill between us and the NBC TV transmission tower making reception impossible. NBC had exclusive rights to the Olympics coverage so not even the highlights were on the channels.  We don't get the newpaper (too many wasted trees for the amount of news) so it was the internet sites that kept us vaguely in touch with the games.</p>

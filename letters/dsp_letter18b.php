@@ -1,6 +1,6 @@
 <? //dsp_letter17b.php ?>
 
-<h3>The Great American South-West</h3>
+<h2>The Great American South-West</h2>
 <div class="story">
    <p><a name="Note3Ref"></a>There is a law<sup><a href="#Note3">Note&nbsp;3</a></sup> stating that before moving out of the South-West, it is mandatory to visit the national parks that define its character. Principally, this requires looking at a lot of rock. Accordingly, we drove to the bottom-left corner of Utah to see Zion National Park where the road at the bottom of the gorges is 600m/2000ft below the plateau at the top and uncomfortably hot even in May.  The view, however, is spectacular.</p>
    <p><a name="Note4Ref"></a><a name="Note5Ref"></a>On to Bryce Canyon where you look from the top down instead of the bottom up. A hundred million years ago, this area and much of central and western North America was under water<sup><a href="#Note4">Note&nbsp;4</a></sup>. Uplifts 70 million years ago creating the Rocky Mountains and then again 10-15 million years ago, when the Colorado Plateaus were lifted a further 1000m/3000ft, buckled the land and exposed it to erosion creating colored pylons or &quot;hoodoos&quot;<sup><a href="#Note5">Note&nbsp;5</a></sup>. </p>
@@ -14,7 +14,7 @@
 	?>
 </div>
 
-<h3>Local sightseeing</h3>
+<h2>Local sightseeing</h2>
 <div class="story">
    <p>Alexandria is just across the Potomac River from Washington so there is a vast array of things to see and do. Our neighbors from Denver came to visit and after touring the Whitehouse, they had this fortuitous encounter on the street �</p>
    <p><a name="Note6Ref"></a><a name="Note7Ref"></a>The four of us visited the site of the July 1863 Battle of Gettysburg, generally considered the turning point of the American Civil War and also its bloodiest<sup><a href="#Note6">Note&nbsp;6</a></sup>. Its significance was recognized at the time and that November, President Lincoln delivered &quot;a few appropriate remarks&quot; at the dedication of a cemetery to the fallen. Those 272 words became known as the &quot;Gettysburg Address&quot; and the greatest speech in American history<sup><a href="#Note7">Note&nbsp;7</a></sup>. Referring the Declaration of Independence and its statement that &quot;all men are created equal&quot;, Lincoln characterized the war as one to maintain a nation of free people. Those still living must now continue to strive so that &quot;<i>this nation under God shall have a new birth of freedom, and that government of the people, by the people, for the people shall not perish from the earth</i>&quot;. </p>
@@ -26,7 +26,7 @@
 	?>
 </div>
 
-<a name="Note9Ref"></a><h3>O Canada<sup><a href="#Note9">Note&nbsp;9</a></sup></h3>
+<a name="Note9Ref"></a><h2>O Canada<sup><a href="#Note9">Note&nbsp;9</a></sup></h2>
 <div class="story">
    <p><a name="Note10Ref"></a>We spent a fabulous week visiting French-speaking Montreal and Quebec City and English-speaking Ottawa, the nation&apos;s capital<sup><a href="#Note10">Note&nbsp;10</a></sup>.  In practice though, just about everyone seemed to be comfortably bilingual.</p>
    <p class="endText"><a name="Note11Ref"></a><a name="Note1Ref"></a>The most interesting thing I learned was that the American Revolution had a major impact on the development of Canada. The Americans expected the French speakers to be eager to join with them against the British, a point they made forcefully by attempting to invade in 1775. It turned out that the French weren�t interested and the Americans were sent home licking their wounds<sup><a href="#Note11">Note&nbsp;11</a></sup>. However, those loyal to the British within America found life uncomfortable and many fled to Canada seeking refuge.</p>

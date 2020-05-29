@@ -1,10 +1,10 @@
 <? //dsp_humor4.php ?>
-<h3>Pillsbury Doughboy</h3>
+<h2>Pillsbury Doughboy</h2>
 <div class="photo-gallery">
 	<? setThumbnail("Doughboy1.jpg"); ?>
 </div>
 
-<h3>McDonalds Job Application</h3>
+<h2>McDonalds Job Application</h2>
 <div class="story">
    <p><i>This is (I'm told but who knows) an actual job application a 17-year-old boy submitted at a McDonald's fast-food establishment in Florida ......And they hired him because he was so honest and funny!</i></p>
    <p>NAME:<br />
@@ -50,7 +50,7 @@
 </div>
 
 
-<h3>Well known proverbs ... as mangled by 1st graders</h3>
+<h2>Well known proverbs ... as mangled by 1st graders</h2>
 <div class="story">
    <p>This is probably an urban myth but the story is that: A first grade teacher gave children in her class the first half of some well known proverbs and asked them to fill in the end.  Here is what they came up with.</p>
    <ul class="endText">
@@ -80,7 +80,7 @@
    </ul>
 </div>
 
-<h3>Letter from MIT to John Mongon (see reply under)</h3>
+<h2>Letter from MIT to John Mongon (see reply under)</h2>
 <div class="story">
    <p class="endText"><i>From CarTalk. MIT certainly has a reputation to be proud of, but its admissions department went a little over-board, I think. The first letter is an honest-to-goodness mailing from MIT, the second is one prospective student's reply.</i></p>
    <p>April 18, 1994</p>
@@ -122,7 +122,7 @@
    <p class="endText">P.S. If you'd like a copy of a fun-filled, fact-filled brochure, <i>&quot;John Mongan: What a Guy!&quot;</i> just ask.</p>
 </div>
 
-<h3>Radio comedy</h3>
+<h2>Radio comedy</h2>
 
 <h4>CAR TALK</h4>
 <div class="story">
@@ -137,7 +137,7 @@
    <p class="endText">Their web site was www.martinmolloy.com.au but it seems to have gone.</p>
 </div>
 
-<h3>Amusing web sites</h3>
+<h2>Amusing web sites</h2>
 
 <h4>Sayings of Samuel Langhorne Clemens a.k.a. Mark Twain</h4>
 <div class="story">

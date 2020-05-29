@@ -5,7 +5,7 @@
    <p class="endText">Dear ........................,</p>
 </div>
 
-<h3>News about us</h3>
+<h2>News about us</h2>
 <div class="story">
    <p>Another 5 months has come and gone since we last wrote.  Thank you to everyone who sent us a letter or card at Christmas.  As some of you discovered, our ex-landlord wrote <i>"return to sender"</i> on those that slipped past the post office which would have redirected them.  Our landlord knew our address, or could have found it easily if he had lost it-he just isn't a nice person.</p>
    <p>Our big news is that we are probably going to buy the unit that we are currently renting.  We were looking anyway and then our landlord called and offered this place at a good price.  By selling direct, he can afford to be generous as the real estate agent&rsquo;s fee would be 6% of the sale price, or almost double what is charged in Australia.  This unit has the three most important attributes in real estate (<i>location</i>, <i>location</i> and also <i>location</i>) but like most places we have seen, construction quality is lousy.  Virtually everything here is built of wood which needs repainting every 5-10 years and most dwellings have asphalt shingle roofs which must be replaced every 15 years.  Ours has a flat roof which is tarred and it will need refinishing within the next year or so.</p>

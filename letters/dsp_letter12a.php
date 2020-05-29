@@ -6,7 +6,7 @@
 	<p class="endText">A great deal has happened in the last year and I apologise that I ran out of time before I came back to America so that my last letter (8 Nov 98) was sent to only a few of you.  I've included it for those of you who missed out the first time.
 </div>
 
-<h3>News</h3>
+<h2>News</h2>
 <div class="story">
 	<p>Lan is still working at US West Dex, the division of the local phone company that produces the phone directories, both in paper and on the net.  Her application for a "green card" or permanent resident status is progressing through the system slowly.  Labor certification, which demonstrates that there is no one in the US willing and able to do her job, has been successfully completed and the whole thing should be over by about September this year.  This will allow both of us to work for just about anyone without needing a new visa and we can come and go from the US more or less as we please, so long as she comes back to the US once a year.</p>
 	<p>My current visa does not allow me to work, so there were three possibilities: (a) try and find an employer who is willing to apply for a working visa on my behalf, (b) go to the UK and find a job but fly to Denver for a week every 3 months to visit Lan, or (c) study.  Lan wants to work in the UK after her green card is approved, so option (b) seemed the most likely, especially as British Airways now fly direct.  However, having been separated by the Pacific Ocean for most of 1998, neither of us thought being on opposite sides of the Atlantic for most of 1999 would be such a great idea.  I don't want to go to job interviews in Denver knowing I will probably be here less than a year so that ruled out option (a).  That left option (c).</p>

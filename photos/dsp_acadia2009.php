@@ -1,6 +1,6 @@
 <? //dsp_acadia2009.php ?>
 
-<h3>Acadia National Park &amp; points north, 16&ndash;18 Aug 2009</h3>
+<h2>Acadia National Park &amp; points north, 16&ndash;18 Aug 2009</h2>
 <div class="story noSpaceBelow">
    <p>After spending the Sunday morning in Portsmouth, we drove north to Maine, stopping on the way to assist a 
 	woman who flagged us down because she'd run out of fuel. After stopping for a late lunch in Belfast, we

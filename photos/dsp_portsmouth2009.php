@@ -1,6 +1,6 @@
 <? //dsp_portsmouth2009.php ?>
 
-<h3>Portsmouth, New Hampshire, 16 Aug 2009</h3>
+<h2>Portsmouth, New Hampshire, 16 Aug 2009</h2>
 <div class="story noSpaceBelow">
    <p>This trip was mainly about Maine but our first stop was in Portsmouth which was pleasant though it would
 	have been nicer if it wasn't so hot, a problem that was to continue most of the week and was quite unexpected.</p>

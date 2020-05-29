@@ -1,6 +1,6 @@
 <? //dsp_letter8c.php ?>
 
-<h3>Life in America</h3>
+<h2>Life in America</h2>
 <div class="story">
    <p>The winter just ended was reasonably mild for most of the time.  I continued to take the bus to work and on one day the radio informed me it was -9&deg;F (-22&deg;C).  The bus stop is 12 minutes walk away and by then my hands are frozen.  It is true though that <i>"there is no such thing as bad weather, just inappropriate equipment"</i>!  My hands were cold but with my heavy coat and scarf, the rest of me was warm.</p>
    <p>When it snows during the day, the afternoon traffic is slow and buses can't keep to the normal timetable.  On the way home, my bus stop is right outside my office building and on one such day, a man stood at the bus stop to watch for the approaching bus while his two female colleagues waited inside the building.  When the bus came into view he signalled to them that they should come out and he shouted to them <i>"the bus is about half a block away - it will be here in 40 minutes"</i>! </p>
@@ -35,7 +35,7 @@
    </ul>
 </div>
 
-<h3>...and finally</h3>
+<h2>...and finally</h2>
 <div class="story">
 	<p class="endText">We look forward to seeing you at Christmas.  By then we will have been away for 2 years, 9 months i.e. a long time.  There will be a lot of catching up to do and Lan is particularly looking
 </div>

@@ -1,6 +1,6 @@
 <? //dsp_letter5c.php ?>
 
-<h3>Trip to California</h3>
+<h2>Trip to California</h2>
 <div class="story">
    <p>We took a trip to California over Christmas-New Year as there is lots to see and Lan has "friends and relations" (do you remember <i>Rabbit</i> from <i>Winnie the Pooh</i>?) there.  It is 1600 km from here to Los Angeles and I was surprised how easily we made it in two days.  Interstate-70 through Utah is quite lonely (although some of the scenery is spectacular) and there is one section where it is 106 miles between petrol stations!</p>
    <p>The speed limit on the main highways is 65 mph (105km/h), up from 55 mph (90 km/h) some years ago when Americans worried about fuel usage and Arab oil boycotts. The Federal government has recently allowed the states to set their own limits and some, including Colorado, are likely to raise it to 75 mph (120 km/h).  In fact, wild-west-Montana, now has no daytime speed limit at all.  As a spokesman for the Montana State Dept of Transportation put it, <i>"The basic rule is drive at a 'reasonable and prudent' speed; our roads aren't designed for much past 100 mph anyway"</i>(!)</p>

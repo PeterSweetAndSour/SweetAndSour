@@ -9,7 +9,7 @@
 setThumbnail("AcrobatIcon_Ltr18.gif", $urlPrefix . "files/Letter18_Ltr.pdf");
 ?>
 
-<h3>Washington DC, 2nd attempt</h3>
+<h2>Washington DC, 2nd attempt</h2>
 <div class="story">
    <p>Though some of our friends in Denver asked if our stated intention to move to the East Coast was a threat or a promise, we merely wanted to extend our working holiday. What a holiday it�s been! We only came for a year but somehow that stretched into 11 and all of them were in Denver. While it was a great base from which to see the natural beauty of the West, it was time for a  change of scenery and the opportunity to see architecture, history, museums and galleries. And the ocean. I was also concerned that like someone about to fall asleep on the sofa, if we didn�t move soon, we would be stuck forever.</p>
    <p>Lan had been applying for jobs in various cities, but was offered a job in Washington starting at the end of February. Once again, our small station wagon proved a mighty cargo carrier as we transported a home starter-kit cross-country. Once again, we marveled at the flatness of southern Indiana. </p>

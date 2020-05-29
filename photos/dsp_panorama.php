@@ -5,37 +5,37 @@
 	<p>One day I hope to do something good enough for <a href="http://www.panoramas.dk" target="_blank" class="external">panoramas.dk</a>.
 </div>
 
-<h3>Grand Canyon</h3>
+<h2>Grand Canyon</h2>
 <div class="story">
 	<p>It is difficult to capture the scale of the Grand Canyon in a regular photograph; a panorama is better though still inadequete. Jan 2006.</p>
 </div>
 <? setThumbnail("panoramaGrandCanyon.jpg", "", "true"); ?>
 
-<h3>Sydney</h3>
+<h2>Sydney</h2>
 <div class="story">
 	<p>Sydney looking stunning early in the morning. It had to be early or the moving boats and larger waves would make stitching the raw photos together harder. Dec 2005.</p>
 </div>
 <? setThumbnail("panoramaSydney.jpg", "", "true"); ?>
 
-<h3>Boulder lookout</h3>
+<h2>Boulder lookout</h2>
 <div class="story">
 	<p>I pass this on the way to work every weekday and this day it was looking particularly beautiful with a fresh layer of snow on the mountains. April 2005.</p>
 </div>
 <? setThumbnail("panoramaBoulder.jpg", "", "true"); ?>
 
-<h3>My office</h3>
+<h2>My office</h2>
 <div class="story">
 	<p>The office I used to work in. Note the complete lack of partitions. When I came for my first interview I thought it was shocking. It reminded me too much of school. However, once you have an attitude adjustment, it works really well with easier communication and you know who&rsquo;s in and who&rsquo;s out. March 2005.</p>
 </div>
 <? setThumbnail("panoramaOffice1a.jpg", "", "true"); ?>
 
-<h3>Southmoor Park, Colorado</h3>
+<h2>Southmoor Park, Colorado</h2>
 <div class="story">
 	<p>This is the park opposite our building. In fact, ours is the strange fake Tudor construction that looks like townhouses but there are separate units upstairs and downstairs. If it were a cloudless day, you would see Mt. Evans looking west. March 2005.</p>
 </div>
 <? setThumbnail("panoramaSouthmoorPark1.jpg", "", "true"); ?>
 
-<h3>Grand Lake, Colorado</h3>
+<h2>Grand Lake, Colorado</h2>
 <div class="story">
 	<p>One the ice at Grand Lake just outside the western entrance to Rocky Mountain National Park at the end of December 2004. Lan&rsquo;s nephew Samuel from Australia was nearby but didn't want to be in the picture. December 2004.</p>
 </div>

@@ -14,7 +14,7 @@ Must be called from a subdirectory or the paths for the included files are wrong
 include '../imageMgt/fn_getPhotoURL.php';      //Function that returns url
 include '../imageMgt/fn_getPhotoInfo.php';     //Function that returns $photos (associative array) or false
 
-function setThumbnail($photoNames, $overrideURL = "") {
+function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 	global $useVersionedFiles; //from config file
 	global $useAmazonS3;       //from config file
 	global $urlPrefix;         //from config file
@@ -25,6 +25,8 @@ function setThumbnail($photoNames, $overrideURL = "") {
 		$photoNames = array($photoNames);
 	}
 
+	$classString = $cssClass ? ' class="' . $cssClass . '"' : '';
+
 	//Find the information related to this photo, or these photos.
 	$photos = getPhotoInfo($photoNames);
 	
@@ -34,11 +36,11 @@ function setThumbnail($photoNames, $overrideURL = "") {
 		foreach($photoNames as $photoName) {
 
 			$imgSrc = getPhotoUrl($photoName, $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $urlPrefix, $useVersionedFiles, $photos[$photoName]["version"]);
-			
+
 			if($overrideURL == "") {
 				if($photos[$photoName]["linkedImg"] == "") { // Unlikely - there should be a linked image for every thumbnail
 					?>
-					<figure>
+					<figure<?= $classString ?>>
 						<img class="thumbnail" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
 						<figcaption class="thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
 					</figure>
@@ -48,7 +50,7 @@ function setThumbnail($photoNames, $overrideURL = "") {
 					$fullSizeImgSrc = getPhotoUrl($photos[$photoName]["linkedImg"], $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $urlPrefix, $useVersionedFiles, $photos[$photoName]["linkedImageVersion"]);
 					$urlPageWithLinkedImage = $urlPrefix . "imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=" . $photos[$photoName]["linkedImg"];
 					?>
-					<figure>
+					<figure<?= $classString ?>>
 						<a class="in-gallery" href="<?= $urlPageWithLinkedImage ?>" data-linked-image-src="<?= $fullSizeImgSrc ?>" data-size="<?= $photos[$photoName]["linkedImageWidth"] ?>x<?= $photos[$photoName]["linkedImageHeight"] ?>">
 							<img class="thumbnail" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
 						</a>
@@ -70,7 +72,7 @@ function setThumbnail($photoNames, $overrideURL = "") {
 					$target  = $linkParts[1];
 				}
 				?>
-					<figure>
+					<figure<?= $classString ?>>
 						<a href="<?= $linkURL ?>" target="<?= $target ?>">
 							<img class="thumbnail" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
 						</a>

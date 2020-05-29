@@ -1,8 +1,8 @@
 <? //dsp_troisRivieres2006.php ?>
 
-<h3>Longwood Gardens, 27 May 06</h3>
+<h2>Longwood Gardens, 27 May 06</h2>
 <div class="story noSpaceBelow">
-   <p>The <a href="http://www.longwoodgardens.com/" target="_blank" class="external">The Gardens</a> are over 2 hours drive north of where we live but well worth a visit if you enjoy gardening and flowers. It shows what can be done with a huge sum of money and a century of time. To quote from the Garden&rsqo;s website: &quot;Pierre du Pont was the great-grandson of Eleuthère Irénée du Pont (1771-1834), who arrived from France in 1800 and founded the DuPont chemical company. Pierre turned the family business into a corporate empire in the early 20th century and used his resulting fortune to develop the Longwood property.&quot;</p>
+   <p>The <a href="http://www.longwoodgardens.com/" target="_blank" class="external">The Gardens</a> are over 2 hours drive north of where we live but well worth a visit if you enjoy gardening and flowers. It shows what can be done with a huge sum of money and a century of time. To quote from the Garden&rsqo;s website: &quot;Pierre du Pont was the great-grandson of Eleuthï¿½re Irï¿½nï¿½e du Pont (1771-1834), who arrived from France in 1800 and founded the DuPont chemical company. Pierre turned the family business into a corporate empire in the early 20th century and used his resulting fortune to develop the Longwood property.&quot;</p>
 	 <p>We enjoyed the company of our friends Ying and Jack but the gardens are so vast that we had tired legs and sore feet by the end of the day. It was most impressive though as you can see.</p>
 </div>
 <div class="photoAlbum">

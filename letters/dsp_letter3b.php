@@ -1,6 +1,6 @@
 <? //dsp_letter3b.php ?>
 
-<h3>Life in America</h3>
+<h2>Life in America</h2>
 <div class="story">
    <p>Seen on a T-shirt.  In large letters: <i>I don't have a drinking problem.</i> In small letters underneath: <i>I drink.  I fall down. No problem.</i> Neither of us drink at all but we had to laugh.  Also, <i>If you are climbing the ladder of success, make sure it is leaning against the right wall.</i></p>
    <p>I've been referring to blacks and indians but those terms appear to have fallen from favour.  They are now referred to as African- Americans and native-Americans.  Though it is a mouthful, both of these terms are more accurate.  Just look at Michael Jackson.  As you may be aware, Christopher Columbus thought he had landed in India, so he thought the locals were indians and the name stuck.</p>
@@ -9,7 +9,7 @@
    <p class="endText">I had thought that the big problem for those advocating gun control in the US was a part of the Constitution which guaranteed the right of citizens to bear arms.  This turns out to be a lie successfully promoted by the National Rifle Association ((NRA).  The "right to bear arms" applies to state military organisations, now the National Guard, not individuals.  The problem is that there are at least as many guns in the country as people and gun owners make a huge voting block. No politician is ever likely to confront the myth as it makes for political suicide.   The NRA now has frightening political power.  The current (supposedly impartial) Congressional hearings on what happened at Waco where 80 people died, have been organised and I believe paid for, by the NRA.  They selected the witnesses to support their view that innocent civilians died because of an out-of-control government and therefore everyone has the right to guns so we can defend ourselves.  The NRA hates (Democrat) Bill Clinton's administration because they banned semi-automatic rifles and the Republicans are only to happy to help the NRA if they get votes. </p>
 </div>
 
-<h3>On other subjects</h3>
+<h2>On other subjects</h2>
 <div class="story">
    <p>Due to the high altitude, cakes take longer to cook and the recipe has to be altered.</p>
    <p>At the supermarket checkout, you are asked <i>"paper or plastic?"</i>. Fortunately, we had been warned about this.  They are not asking whether you want to pay with cash or credit card but asking what type of bag you want your groceries packed in.</p>

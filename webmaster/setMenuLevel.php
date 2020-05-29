@@ -2,13 +2,9 @@
 // Ran this on each of the top level menu items to set the new menuLevel field in the db. 
 // (It timed out attempting to do everything.)
 
-$dbserver   = "localhost";  //Isn't it interesting that this works on the real server?
-$dbname     = "sweetand_sour";
-$dbuser     = "sweetand_php";
-$dbpassword = "U287RHmt";
-
 $connectionOK = false;
-$dbconnection = @mysql_connect( $dbserver, $dbuser, $dbpassword );
+include '../../sweetandsour_conf.php';
+include '../includes/act_getDBConnection.php';
 
 function microtime_float()
 {

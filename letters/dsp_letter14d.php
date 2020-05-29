@@ -1,6 +1,6 @@
 <? //dsp_letter14d.php ?>
 
-<h3>In other news</h3>
+<h2>In other news</h2>
 <div class="story">
 	<p>While the US presidential election received coverage in exhausting detail, an interesting thing that was barely noticed was that voters in Alabama (population 4 million) were asked whether a clause in the state constitution banning inter-racial marraiges should be removed.  Half a million said NO!  Bare in mind that of the population, perhaps 80% are of voting age but only about half actually vote.</p>
 	<p>The tree outside my office building was spectacular this last autumn.  In fact, it was a good year for "fall colors" all over Denver.</p>
@@ -19,7 +19,7 @@
 	?>
 </div>
 
-<h3>And finally</h3>
+<h2>And finally</h2>
 <div class="story">
 	<p class="endText">We will endeavor to write to each of you individually over the next week or so.  Those without email will have to wait a little longer while we get make copies of this letter using carbon-based toner on flattened dead trees.  Bye for now.</p>
 </div>

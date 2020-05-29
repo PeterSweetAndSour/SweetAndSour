@@ -5,7 +5,7 @@
    <p class="endText">Dear...................</p>
 </div>
 
-<h3>Move to Denver</h3>
+<h2>Move to Denver</h2>
 <div class="story">
    <p>Much to our surprise, we are now in <a href="../wherewelive/index.php?fuseAction=denver">Denver</a>, Colorado which is built on the plain at the edge of the Rocky Mountains. It is often called the <i>Mile High City</i> because it is 1 mile (1600m) above sea level. Denver has about 2 million people making it about 1/2 the size of Sydney.</p>
    <p>We spent a total of 3 weeks in Detroit which was frustrating for Lan as there was nothing to do at work except read manuals. There is lots to see though. Probably the highlight was the Henry Ford museum which has a huge collection of cars (not surprisingly) but also glassware, china, domestic appliances (the pump-it-yourself vacuum cleaner has to be seen to believed), farm & factory machinery, aeroplanes, bicycles, electrical generators and steam engines. We also visited a church in a predominantly black area of the town and it was only <i>slightly</i> different from the one in the <i>Blues Brothers</i> movie.</p>

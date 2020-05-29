@@ -1,6 +1,6 @@
 <? //dsp_letter13e.php ?>
 
-<h3>America</h3>
+<h2>America</h2>
 <div class="story">
 	<p>Enough about us.  What about the rest of the country and the world?</p>
 	<p>The big news in our area this past year was, of course, the shootings at Columbine High School.  To me it seems inevitable that these sort of things will happen given the violence that is accepted in TV, movies and video games, the scant attention paid by some parents to their children and the easy access to guns.  What I didn't know was how groups of children get victimized and the school authorities don't seem to know or care.  Apparently the two boys never ate at the school cafeteria because they were beaten up if they tried.  It&rsquo;s easy to see how powerlessness like this leads to resentment and ultimately tragedy.  I read that 1.2 million kids go home after school to a house with guns and no parents.</p>
@@ -56,7 +56,7 @@
 	</ul>
 </div>
 
-<h3>The future</h3>
+<h2>The future</h2>
 <div class="story">
    <p>I don't know when we might be back in Australia to live but it won't be any time soon.  I've given up trying to plan for the future, as it seems our circumstances keep changing but we won't be leaving Denver in the foreseeable future since I've just started my job.  I plan to complete a proper degree here rather than just a "half-degree" and Lan is even talking about going to law school.  I can also report that Lan has expressed an interest in living in New York sometime in her life and I'm sure we'll go and live in the UK one day.</p>
    <p class="endText">Well, that&rsquo;s about all for now.  Please write to us one way or another, as we do enjoy getting mail.</p>

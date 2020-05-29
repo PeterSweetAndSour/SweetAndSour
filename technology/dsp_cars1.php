@@ -1,13 +1,13 @@
 <? //dsp_cars1.php ?>
 
 <div class="photo-gallery">
-	<h3>My favorite car</h3>
+	<h2>My favorite car</h2>
 	<div class="story">
 		<p>You'll be surprised! You'll be amazed! It&rsquo;s not a Ferrari. It&rsquo;s not a BMW. It&rsquo;s not even the 1984 Nissan Pulsar (right), though I did quite like that car. It&rsquo;s not big or fast but it is beautiful in a minimalist way and I haven't seen one for years. I wish I had bought one as soon as I had a driver&rsquo;s licence when there were still some left. I present, <a href="../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=Z600View1.jpg&forceCapBelow=true">my favorite car</a>.</p>
 	</div>
 	<? setThumbnail("NissanPulsar1.jpg"); ?>
 
-	<h3>General comments</h3>
+	<h2>General comments</h2>
 	<div class="story">
 		<p>I am interested in going from one place to another with minimal impact on the planet. We have nowhere else to go if we ruin this one.</p>
 		<p>An average person weighs say 75 kg (165 lbs) and even a small car like our <a href="../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=Hyundai2.jpg">Hyundai</a> weighs about 900 kg (2000 lbs). Since most cars normally have just a single occupant, that gives a metal to flesh ratio of 12:1. Even with four people in the car, the ratio is still 3:1. In other words, a lot of metal is required to move around a small payload.</p> 

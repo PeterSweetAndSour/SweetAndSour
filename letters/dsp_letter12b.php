@@ -1,6 +1,6 @@
 <? //dsp_letter12b.php ?>
 
-<h3>Adventure to California</h3>
+<h2>Adventure to California</h2>
 <div class="story">
 	<p>My mother came and visited us for Christmas which was good as it was our first Christmas without dad and it gave us the excuse we needed to go on an expedition.  Actually, the expedition was in two parts as I met mum in San Francisco and we travelled around there for a week before flying to Denver then all three of us drove to Los Angeles and stopped at various places along the way.  I didn't see much point in spending much time in Denver as mum has already been here and being mid-winter, it was likely to be cold.  Indeed it was -6&deg;F/-21&deg;C by the time we got mum back home but I'm jumping ahead.</p>
 	<p>We were lucky with the weather in SF as it was unusually clear and for the first two days it was quite warm.  We walked around the waterfront and saw sea lions unaware they were in a major city and unconcerned about all the people looking at them.  We looked at the outside of beautiful Victorian houses, rode on the cable car, visited Chinatown and saw the fort built to protect the bay against invading ships (never used).  We saw an awful lot of homeless people too.  I've commented before there are far more homeless people visible in Denver than there are in Sydney but it seemed there are many more in SF than Denver.</p>

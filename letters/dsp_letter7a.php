@@ -5,7 +5,7 @@
    <p class="endText">Dear .................................,</p>
 </div>
 
-<h3>News</h3>
+<h2>News</h2>
 <div class="story">
    <p>You may have noticed that we have moved.  I have been threatening this for most of the year and it finally happened when the landlord came back to Denver and he selfishly wanted his townhouse back.  At that time, Lan had received a job offer but we did not know exactly where her new office would be and so we picked an area that was on the bus route for me and between the city and the other office area where it was likely she would go.  Our mail is being forwarded from the old place.</p>
    <p>The apartment owners are an elderly couple who spend the warm half of the year in Colorado and winter in Arizona which means we have to be out by the end of May.  They have never been landlords before and were not really sure how to go about it.  The man is 80 and was happy to do business with just a handshake and no written lease agreement!  (His wife wasn't so sure about this arrangement.)  We convinced them that they must have something in writing and showed them what to do.  The lease they drew up using a standard legal form failed to mention that the apartment is furnished so we had to make sure all the furniture was documented.  At least they will know for next time.</p>

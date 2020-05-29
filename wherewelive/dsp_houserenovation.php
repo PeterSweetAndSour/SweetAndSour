@@ -1,4 +1,4 @@
-	<h3>Our rowhouse in Washington D.C.</h3>
+	<h2>Our rowhouse in Washington D.C.</h2>
 	<div class="story">
 		<p>We bought a wreck of a house in November 2009 and guessed that a renovation would take 4 to 6 months. How wrong we were. First it took 2 months to find a builder and then it was 15 months before we were able to move in and even then it wasn't ready. </p>
 		
@@ -46,7 +46,7 @@
 		</ol>
 	</div>
 		
-	<h3>Videos</h3>
+	<h2>Videos</h2>
 	<div class="story noSpaceBelow">
 		<p>There are <a href="http://www.youtube.com/user/petersweetandsour" class="external" target="_blank">progress videos</a> on YouTube but it's worth seeing:</p>
 		<ul>
@@ -56,7 +56,7 @@
 		</ul>
 	</div>
 		
-	<h3>What we started with</h3>
+	<h2>What we started with</h2>
 	<div class="photoAlbum">
 		<?
 		setThumbnail([
@@ -68,7 +68,7 @@
 		?>
 	</div>
 	
-	<h3>Excavation</h3>
+	<h2>Excavation</h2>
 	<div class="photoAlbum">
 		<?
 		setThumbnail([
@@ -86,7 +86,7 @@
 		<p>Incidentally, given that we are on high ground, it seemed that the water in the ground must be coming from a broken pipe somewhere so I did an <a href="http://sweetandsour.org.s3.amazonaws.com/wherewelive/files/Elevation.pdf" target="_blank">analysis</a> of the surrounding land and found some higher than us.</p>
 	</div>
 	
-	<h3>Subsidence</h3>
+	<h2>Subsidence</h2>
 	<div class="photoAlbum">
 		<?
 		setThumbnail([
@@ -112,7 +112,7 @@
 		?>
 	</div>
 	
-	<h3>Basement</h3>
+	<h2>Basement</h2>
 	<div class="photoAlbum">
 		<?
 		setThumbnail([
@@ -138,7 +138,7 @@
 		?>
 	</div>
 	
-	<h3>Floor</h3>
+	<h2>Floor</h2>
 	<div class="photoAlbum">
 		<?
 		setThumbnail([
@@ -154,7 +154,7 @@
 		?>
 	</div>
 	
-	<h3>Painting and paint preparation</h3>
+	<h2>Painting and paint preparation</h2>
 	<div class="photoAlbum">
 		<?
 		setThumbnail([
@@ -179,7 +179,7 @@
 		?>
 	</div>
 	
-	<h3>More issues</h3>
+	<h2>More issues</h2>
 	<div class="photoAlbum">
 		<?
 		setThumbnail([

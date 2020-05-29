@@ -6,7 +6,7 @@
 	<p class="endText">This was going to be a Christmas letter but I delayed it until we knew if we were staying in America or not.  The delay turned out to be longer than I expected.</p>
 </div>
 
-<h3>2&frac12; years for this?!</h3>
+<h2>2&frac12; years for this?!</h2>
 <div class="story">
 	<p>To cut a long story short, Lan&rsquo;s application for permanent resident status has been approved and look what she got:</p>
 	<p>Here is the unabridged version:  You will recall that I came home to Australia in 1998 when my father got sick and that the original idea was that Lan would follow a few months later.  However, Lan&rsquo;s employer, US West, offered to apply on her behalf to get her permanent resident status, commonly known here as getting a green card-even though the actual card hasn't been green for decades!  This made us change our plans so after dad died, I quit my job, finished the work on our house and rejoined Lan in the US.  Permanent resident status is one step down from citizenship, so the American government will continue to call us <i>aliens</i>.</p>

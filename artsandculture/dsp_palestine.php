@@ -10,7 +10,7 @@ if($fuseAction == "injustice") {
 }
 ?>
 
-<h3>Preamble (not part of the original presentation)</h3>
+<h2>Preamble (not part of the original presentation)</h2>
 <div class="story">
 	<p>Near the top of the list of things that upset me is the Israeli-Palestinian conflict. The more research I did, the more depressing it became, in part because the Palestinian viewpoint is rarely recognized in the American media and almost never in American policy with the result that with America's economic, military and diplomatic support, Israel has been able to take most Palestinian land and mistreat the Palestinian population. </p>
 	<p>In this talk which I gave in August 2000, I attempted to show that Palestinian grievances are real and that there will never be a lasting peace in the Middle East until they are addressed.</p>
@@ -35,30 +35,30 @@ if($fuseAction == "injustice") {
 	<? setThumbnail("NeverTooYoungSm.jpg"); ?>
 </div>
 
-<h3>Jan 2009 update</h3>
+<h2>Jan 2009 update</h2>
 <div class="story">
 	<p>CBS actually told the truth! I urge every American to watch this segment from <i>60 Minutes</i> so you can understand the conflict and since we offer such blind support, why so much of the world hates us:</p>
 	<p><iframe width="560" height="315" src="https://www.youtube.com/embed/A7XtT91yO6g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 	<p>(Thank you CBS for uploading the video to Youtube.)</p>
 </div>
 
-<h3>2020 Update</h3>
+<h2>2020 Update</h2>
 <div class="story">
 	<p>The situation now is even worse than when I wrote this just over twenty years ago. The number of &ldquo;settlers&rdquo; - such a benign word implying there was no one on the land when they arrived - has roughly doubled to 600,000 of which 400,000 are in the West Bank and another 200,000 in East Jerusalem which is beyond Israel's internationally recongized boarders. You can read about this on <a href="https://www.bloomberg.com/quicktake/israeli-settlements" target="_blank" class="external">Bloomberg</a>. The Trump administration overturned decades of policy and moved the US embassy to Jerusalem and incredibly, declared that the <a href="https://www.theguardian.com/world/2019/nov/18/us-israeli-settlements-no-longer-considered-illegal-palestinian-land-mike-pompeo" target="_blank" class="external">US now longer considers Israeli settlements in the Occupied Territories to be illegal</a>. Netenyahu has been Prime Minister during much of the last 20 years by forming coalitions with ultra-nationalist religious parties who suggest that the Palestinians should be &ldquo;evacuated&rdquo; &ndash; another clever use of language to disguise the fact that they want ethnic cleansing i.e. to get rid of the Palestinians. Netenyahu and his coalition allies have zero interest in a two-state solution as their policies indicate. </p>
 	<hr />
 </div>
 
-<h3>Purpose statement</h3>
+<h2>Purpose statement</h2>
 <div class="story">
 	<p class="endText">To persuade the class that the Palestinians have good cause to be upset with the way they are treated and so we should not be surprised by the violence in the Middle East.</p>
 </div>
 
-<h3>Thesis</h3>
+<h2>Thesis</h2>
 <div class="story">
 	<p class="endText">While the Middle East is often in the news, the causes of the conflict are now so old that it is no longer &quot;news&quot; so this speech seeks to give an overview of the Palestinian situation and try to explain the violence we see.</p>
 </div>
 
-<h3>Introduction</h3>
+<h2>Introduction</h2>
 <div class="story">
 	<p>I am married to a refugee.  My wife left Vietnam on tiny, crowded boat in 1981 and spent 3 months in a refugee camp in Singapore before the Australian government offered to resettle her and allowed her to become an Australian citizen.  As a refugee, she has endured uncertainty and hardships but they were relatively short-lived.</p>
 	<p>Today, there is again bloodshed in the Middle East.  Dr Weizmann, one of the founding fathers of Zionism and Israel's first President wanted Jews to settle in Palestine without violating the legitimate interests of the Arabs, writing <i>'not a hair of their heads shall be touched"</i>.</p>
@@ -72,7 +72,7 @@ if($fuseAction == "injustice") {
 	</ol>
 </div>
 
-<h3>Body</h3>
+<h2>Body</h2>
 
 <h4>BEFORE 1948</h4>
 <div class="story">
@@ -180,7 +180,7 @@ if($fuseAction == "injustice") {
 	</ul>
 </div>
 
-<h3>Conclusion</h3>
+<h2>Conclusion</h2>
 <div class="story">
 	<p>What then of the future?</p>
 	<p>While Jewish groups have had some success in retrieving art works stolen by the Nazis and bank deposits taken by the Swiss, the Isrealis seem incapable of seeing that the Palestinians might want their homes and land back.</p>
@@ -193,7 +193,7 @@ if($fuseAction == "injustice") {
 	<p class="endText">I hope then that if you see the news tonight, you will understand why there is so much anger in the Middle East.  While I can't condone violence, please understand that the Palestinians have been left with absolutely no alternative.</p>
 </div>
 
-<h3>Quick update for 2008</h3>
+<h2>Quick update for 2008</h2>
 <div class="story">
 	<ul>
 		<li>The theft of Palestinian land continues. One form it takes is the &quot;security barrier&quot; designed to keep out potential bombers and I would have no problem with this in principle <b>if it were built along Israel's border</b>. Instead it snakes deep into Palestinian territory as you can see on a <a href="http://www.btselem.org/English/Maps/Index.asp" target="_blank" class="external">map from B'TSalem</a>, an Israeli peace group.</li>
@@ -203,7 +203,7 @@ if($fuseAction == "injustice") {
 </div>
 
 
-<h3>Bibliography</h3>
+<h2>Bibliography</h2>
 <div class="story">
 
    <p>Internet Web Site<br>

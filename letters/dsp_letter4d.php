@@ -1,6 +1,6 @@
 <? //dsp_letter4d.php ?>
 
-<h3>Lan&rsquo;s letter</h3>
+<h2>Lan&rsquo;s letter</h2>
 <div class="story">
    <p><i>Hi,</i></p>
    <p><i>This is Lan (as you can probably tell by the different handwriting).</i></p>

@@ -1,6 +1,6 @@
 <? //dsp_letter16d.php (France, part 1) ?>
 
-<h3>France</h3>
+<h2>France</h2>
 <div class="story">
 	<p>The main focus of this trip was France. As you probably know, Lan speaks quite good French so we had no language barrier.  When planning, I failed to grasp how small France is-at 547,030 km2, it is close to the combined area of Colorado and Wyoming, or about two-thirds the size of New South Wales-so we were able to see much more than I dared hope. Since it was winter, I was concerned about the limited daylight hours and cold weather so I wanted to be as far south as possible. Denver is about as far north as Madrid; the US-Canadian border is roughly level with Paris. I thought we might get to see some chateaux around Tours.</p>
 	<p>We stayed a few days in a village near <i>Lyon</i> with the family of Fabienne, a girl we met in Australia when she was an au pair with one of Lan&rsquo;s friends. They were very kind to us as we used their house to explore the surrounding area.</p>

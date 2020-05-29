@@ -11,10 +11,15 @@ figure {
 	width: 150px;
 	vertical-align: top;
 	margin: 0 20px 20px 0;
-  }
+}
+figure.youtubeThumbnail {
+	width: 246px;
+	margin-top: 10px;
+}
+
   figcaption.thumbnail {
 	font-family: Verdana, Helvetica, sans-serif;
-	 font-size: 12px;
+	font-size: 12px;
   }
   figcaption.fullsize {
 	display: none; /* Contains the caption for the photo shown with PhotoSwipe. */
@@ -26,6 +31,7 @@ figure {
 	padding: 4px;
 	border: 1px solid #aaa;
   }
+
   .pswp__caption__center {
 	  font-size: 15px;
   }

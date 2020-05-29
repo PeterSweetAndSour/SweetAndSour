@@ -1,6 +1,6 @@
 <? //dsp_letter6d.php ?>
 
-<h3>What&rsquo;s news in America</h3>
+<h2>What&rsquo;s news in America</h2>
 <div class="clearfix">
 	<div class="story followOn">
 		<p>Americans think a lot more about bombs than they used to.    The bombing of the TWA flight is still in the news and the bomb at the Olympics briefly held the headlines.  These follow the Oklahoma City bomb last year and one a few months ago in Saudi Arabia.  One thing that has come across on TV is just how easy it is.  As a test, I searched for "fertilizer bomb" (the type used in Oklahoma) on the internet and found several sites that gave detailed instructions.  It is hard to justify a total lack of censorship when it comes to making bombs and child pornography and the US Congress passed a law making transmission of such information illegal.  However, the law has since been struck down as being unconstitional (violating the right to free speech) and it is impossible to police on the internet anyway.  Frightening stuff.</p>
@@ -33,7 +33,7 @@
 	?>
 </div>
 
-<h3>&hellip; and finally</h3>
+<h2>&hellip; and finally</h2>
 <div class="story">
 	<p class="endText">When are we coming home?  I'm not sure but my best guess is the end of 1997.  It depends on whether Lan gets another job and if so, how it turns out.  I need to stay into next year to get paid back for all the work I did before my visa was approved.  In the mean time, please write to us.  We do miss you.</p>
 </div>

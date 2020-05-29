@@ -5,7 +5,7 @@
 	<? setThumbnail("LanGoodWeekend1.jpg"); ?>
 </div>
 
-<h3>PART ONE</h3>
+<h2>PART ONE</h2>
 <div class="story">
    <ol class="endText">
    	<li>Anonymous, ca. 2000 B.C.E. (Scribe Sin-Leqi-Unninni, ca. 700 B.C.E.), <i>The Epic of Gilgamesh</i></li>
@@ -32,7 +32,7 @@
    </ol>
 </div>
 
-<h3>PART TWO</h3>
+<h2>PART TWO</h2>
 <div class="story">
    <ol start="22" class="endText">
    	<li>Saint Augustine, 354-430, <i>The Confessions</i></li>
@@ -55,7 +55,7 @@
    </ol>
 </div>
 
-<h3>PART THREE</h3>
+<h2>PART THREE</h2>
 <div class="story">
    <ol start="39" class="endText">
    	<li>William Shakespeare, 1564-1616, <i>Complete Works</i></li>
@@ -84,7 +84,7 @@
    </ol>
 </div>
 
-<h3>PART FOUR</h3>
+<h2>PART FOUR</h2>
 <div class="story">
    <ol start="62" class="endText">
    	<li>Johann Wolfgang von Goethe, 1749-1832, <i>Faust</i></li>
@@ -130,7 +130,7 @@
    </ol>
 </div>
 
-<h3>PART FIVE</h3>
+<h2>PART FIVE</h2>
 <div class="story">
    <ol start="98" class="endText">
    	<li>Sigmund Freud, 1856-1939, <i>Selected Works</i>; including <i>The Interpretation of Dreams</i>, <i>Three Essays on the Theory of Sexuality</i>, and <i>Civilization and Its Discontents</i></li>
@@ -172,7 +172,7 @@
    </ol>
 </div>
 
-<h3>GOING FURTHER</h3>
+<h2>GOING FURTHER</h2>
 <div class="story">
 	<p>100 additional 20th-century authors, briefly annotated [including some I've heard of]:
    <ul class="endText">

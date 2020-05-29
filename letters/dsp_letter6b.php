@@ -1,6 +1,6 @@
 <? //dsp_letter6b.php ?>
 
-<h3>Trip to South Dakota</h3>
+<h2>Trip to South Dakota</h2>
 <div class="story">
    <p>July the 4th is Independence Day and it fell on Thursday, so most people took a 4-day weekend.   We had thought about going to see the Grand Canyon but since it is summer, we decided to go north to see the Black Hills of South Dakota in the hope it would be cooler.  We had a wonderful time although Thursday and Friday were both uncomfortably hot as it was 35&deg;C and our car has only "260" air conditioning (two windows, 60 miles/hour).</p>
    <p>We started our trip with an excavation site of mammoths before spending the evening at Mt Rushmore.  Since it was Independence Day, there was a special program of which the highlight was a man who was able to quote the <i>Declaration of Independence</i> from memory, explain what each section meant and comment on its historical significance.  I was not aware that the Revolutionary War (for independence from England) had already been underway for more than a year when the <i>Declaration</i> was written.</p>

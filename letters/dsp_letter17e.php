@@ -1,6 +1,6 @@
 <? //dsp_letter5e.php ?>
 
-<h3>Bumper stickers</h3>
+<h2>Bumper stickers</h2>
 <div class="story">
 	<p>A divisive election is good for bumper stickers:</p>
 	<ul>
@@ -24,7 +24,7 @@
 	</ul>
 </div>
 
-<h3>The future</h3>
+<h2>The future</h2>
 <div class="story">
 	<p>Any plans we make keep coming undone so I&rsquo;ve given up making predictions. We&rsquo;d still like to move to the east coast sometime since being a tourist was one of the reasons we came here and after 10 years, we have done most of what we want to on this side of the US. I&rsquo;d like to try living in the UK one day and eventually be back to Australia. We&rsquo;ll see.</p>
 	<p>In the mean time, we&rsquo;ve been looking at real estate in Denver, possibly to live in but something that can be rented if we move out of town. The real estate market surged in recent years and we could have a huge capital gain if we bought a house when we arrived but I resisted to avoid getting too entrenched. We made an offer on one last Thursday but I was relieved we didn�t get it since it required a lot of work.</p>

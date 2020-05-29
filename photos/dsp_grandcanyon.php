@@ -5,7 +5,7 @@
 	<p>We were a little late getting there as Lan had a job interview in Moab, Utah. Well, the job wasn&rsquo;t in Moab. The job was in New York but we correctly figured that we would have mobile telephone reception there but lose it soon after as we drove south. We arrived in Moab 10 minutes before noon when the call was to start and she spent 70 mintues on the phone.</p>
 </div>
 
-<h3>Monument Valley</h3>
+<h2>Monument Valley</h2>
 <div class="story noSpaceBelow">
    <p>On the way there on US163. A lovely surprise. <a href="http://en.wikipedia.org/wiki/Monument_Valley" target="_blank" class="external">Learn more</a>.</p>
 </div>
@@ -26,7 +26,7 @@
    ?>
 </div>
 
-<h3>Grand Canyon</h3>
+<h2>Grand Canyon</h2>
 <div class="story noSpaceBelow">
    <p>You expect it to be spectacular and it is. <a href="http://en.wikipedia.org/wiki/Grand_Canyon" target="_blank" class="external">Learn more</a>.</p>
 </div>

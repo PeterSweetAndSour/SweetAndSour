@@ -1,6 +1,6 @@
 <? //dsp_letter12c.php ?>
 
-<h3>Life in America</h3>
+<h2>Life in America</h2>
 <div class="story">
    <p>The economy continues its dream run with unemployment now down to 4.3%.  Chemical engineers are in really hot demand and average starting salaries for graduates are now US$46,000 (A$73,600 at an exchange rate of 0.625)!  At the other end of the market, McDonalds is now so desperate it is printing a job application form on the bags it puts take-away orders in.</p>
    <p>I read an interesting article questioning the conventional wisdom that a college degree is a guarantee of future economic well-being.  21% of college graduates earn less than the average of those who have only high school education.</p>

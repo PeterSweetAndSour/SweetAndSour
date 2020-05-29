@@ -13,14 +13,14 @@ if(isSet($_GET["fuseAction"])) {
 	$fuseAction = $_GET["fuseAction"];
 }
 else {
-	$fuseAction = "oddsAndEnds";
+	$fuseAction = "kpop";
 }
 
 switch ($fuseAction) {
 	//Odds & ends
-	case "oddsAndEnds";
-		$heading1Text = "Odds and ends";
-		$contentPage = 'dsp_oddsAndEnds.php';
+	case "kpop";
+		$heading1Text = "K-pop!";
+		$contentPage = 'dsp_k-pop.php';
 		include '../dsp_outline.php';
 		break;
 

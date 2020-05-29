@@ -1,6 +1,6 @@
 <? //dsp_letter15b.php ?>
 
-<h3>New Orleans</h3>
+<h2>New Orleans</h2>
 <div class="story">
 	<p>On two occasions last year, we were victims of customer service as defined by United Airlines but we were duly compensated with travel vouchers that enabled us to fly almost for free to <a href="http://en.wikipedia.org/wiki/New_Orleans" class="external" target="_blank">New Orleans</a>. We spent four days in this culturally diverse and strategic city over the Memorial Day long weekend at the end of May and can say that we were pleased to visit once but never want to go back again.</p>
 	<p>The French arrived in 1718 to found <i>Nouvelle-Orl&eacute;ans</i> so they had a port near the mouth of the Mississippi and since they already owned a good chunk of Canada, they claimed everything in between. Thrilled with their new possession, the French government set about boosting its population by giving prisoners one-way tickets to the new colony. Sydney residents might notice some parallels at this point. Free settlers eventually came too and the city prospered shipping sugar and cotton from plantations where the labor was imported&mdash;from Africa in slave ships.</p>

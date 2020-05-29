@@ -1,6 +1,6 @@
 <? //dsp_letter5c.php ?>
 
-<h3>Election and American politics</h3>
+<h2>Election and American politics</h2>
 <div class="clearfix">
 	<div class="story followOn">
 		<p>Although not able to vote, I&apos;ve never been as emotionally involved in an election as I was for last year&apos;s US election. Same for Lan. Along with almost half of America, it seemed utterly obvious that the President was incompetent and his Administration wrong on almost every issue. However, the other half of America held the opposite view just as passionately. </p>

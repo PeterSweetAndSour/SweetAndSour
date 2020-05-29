@@ -1,5 +1,5 @@
 <? //dsp_montreal2006.php ?>
-<h3>Montr&eacute;al, 30 Sep 06 &ndash; 3 Oct 06</h3>
+<h2>Montr&eacute;al, 30 Sep 06 &ndash; 3 Oct 06</h2>
 <div class="story noSpaceBelow">
    <p>Montr&eacute;al is the largest city in French-speaking province of Quebec and was the first destination on our trip. Happily for me, virtually everyone is bilingual.</p>
 	<p>Samual de Champlain arrived in 1611 to set a trading post on the island that Montreal now completely fills so he could barter European manufactured goods for furs of animals captured by the native peoples. However, the founding of the city is usually set at 1642 when a few dozen colonists arrived with the aim of converting the indians and started Ville-Marie or the City of Mary. </p>

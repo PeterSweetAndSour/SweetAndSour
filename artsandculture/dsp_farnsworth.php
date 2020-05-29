@@ -1,12 +1,12 @@
 <? //dsp_farnsworth.php?>
 
-<h3>Preamble (not part of the original presentation)</h3>
+<h2>Preamble (not part of the original presentation)</h2>
 <div class="story">
    <p>I did a public speaking class (SPE-115) as part of my associate degree at Red Rocks Community College and was fortunate to have a wonderful teacher and a wonderful class.  You really get to know each other when each person is speaking about something that is important to them.  Some were very moving and showed a lot of courage on the part of those that gave them.</p>
    <p class="endText">We did four talks, one informative, one celebration or humor, one pursuasive and one of our choice.  All required immense preparation and I think all of us felt we needed more time to do them properly but all were rewarding.  Each is presented in the format that we were to submit to our teacher: a word-by-word introduction and conclusion, with section headings and bulleted points in the middle.  By not writing out the whole speech word-for-word, you can't read the speech which would be boring.  Here are mine.</p>
 </div>
 
-<h3>Introduction</h3>
+<h2>Introduction</h2>
 
 <div class="story">
    <p>Thomas Edison is a household name because he invented the light bulb, the movie projector and the phonograph.  Likewise, we are all aware of Alexander Graham Bell inventing the telephone and the Wright brothers making the first flight.</p>
@@ -18,7 +18,7 @@
 </div>
 
 
-<h3>Body</h3>
+<h2>Body</h2>
 <h4>THE BOY WITH AN IDEA</h4>
 <div class="story">
    <ul class="endText">
@@ -80,14 +80,14 @@
    </ul>
 </div>
 
-<h3>Conclusion</h3>
+<h2>Conclusion</h2>
 <div class="story">
    <p>So what are we to make of all this?  We should remember that Philo T. Farnsworth invented television but the credit was taken away from him.  His legacy though is undenyable.  For better or worse, television has changed the way we view and interact with the rest of the world.</p>
    <p>Philo himself was initially disappointed with the effect his invention had.  His son says that when he was growing up, his father would say "There's nothing on it worthwhile, and we are not going to watch it in this household"!  Yet in 1969, two years before he died, the world witnessed mans' first steps on the moon, a feat made possible by television.  During that event, he turned to his wife and said <i>"This has made it all worthwhile"</i>.</p>
    <p class="endText">Thank you.</p>
 </div>
 
-<h3>Bibliography</h3>
+<h2>Bibliography</h2>
 <div class="story">
    <p>Television documentary<br>
    <i>&quot;The American Experience: Big Dream, Small Screen&quot;</i>, aired on PBS, 1999, presened by David McCullough, Producer Joseph Tovares Series Editor,The American Experience.  Transcript available at<br /><a class="external" href="http://www.pbs.org/wgbh/amex/technology/bigdream/bigdreats.html">http://www.pbs.org/wgbh/amex/technology/bigdream/bigdreats.html</a></p>

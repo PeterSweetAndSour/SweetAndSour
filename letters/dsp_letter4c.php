@@ -1,6 +1,6 @@
 <? //dsp_letter4c.php ?>
 
-<h3>Strange and curious things</h3>
+<h2>Strange and curious things</h2>
 <div class="story">
    <p>Denver recently hosted the 46th <i>Annual Convention of the Christian Booksellers Association</i> which covered an area of 6 football fields. Apparently, with the exception of furniture and major appliances, it is possible to outfit an entire house in "Christian" products - bird feeders to body lotions, luggage to lamps.   My personal favourite is a car sun visor that says <i>Jesus is Lord</i> on one side and <i>Need help! Please call Police</i> when you turn it over!  You also have to question the motives of some of the promoters though.  Consider for example, the mission statement of religious publishing conglomerate Thomas Nelson Inc: "to  produce and market products that honor God and serve humanity, and to enhance shareholder value"!</p>
    <p>A lot of shops have big signs outside proclaiming <i>Now Hiring</i>.  Lan wonders if they will pull them down in the next recession and replace them with banners saying <i>Now Firing</i>.</p>

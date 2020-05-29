@@ -1,6 +1,6 @@
 <? //dsp_letter17d.php ?>
 
-<h3>Miscellaneous</h3>
+<h2>Miscellaneous</h2>
 <div class="story">
    <p>OK, enough serious discussion. We had an enjoyable visit to Australia in April last year though there was not enough time to see everyone and everything. This was our first visit home since my sister returned from living in the UK so I finally got to meet her daughters. </p>
    <p>Actually, I had met Eleanor before but she was only 1 at the time. She has grown since then. Lan was a big hit with the girls. My mother and I went to visit one day while Lan went to see her sister but Eleanor was very upset that Lan didn�t arrive crying <i>&quot;I want Aunty Lan!&quot;</i>. She had to make do with Uncle Peter which I admit is a poor 2nd prize.</p>

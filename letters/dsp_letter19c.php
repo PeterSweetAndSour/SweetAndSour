@@ -1,6 +1,6 @@
 <? //dsp_letter19c.php ?>
 
-<h3>In sickness and in health</h3>
+<h2>In sickness and in health</h2>
 <div class="story">
 	<p>Lan has suffered this year from <em>adhesive capsulitis</em>, more commonly known as a &ldquo;frozen shoulder&rdquo;&mdash;as she did before we came to America. We hoped that physio-therapy and time would heal but after a year of discomfort, she went under anesthetic last week to be manipulated. She has regained significant movement but she is still in pain and little strength.</p>
 	<p>I found out this year that my stomach valve doesn&apos;t close properly causing acid to eat away at my esophagus. I share this mainly because, with the benefit of hindsight, this hereditary condition is probably what led to my father being stricken with esophageal cancer and dying so young. I will have to take pills for the rest of my life to calm it down or surgery is possible.</p>
@@ -15,7 +15,7 @@
 	?>
 </div>
 
-<h3>Bumper stickers</h3>
+<h2>Bumper stickers</h2>
 <div class="story">
 	<p>It wouldn't be a newsletter from me without noting the interesting and amusing bumper stickers we've seen:</p>
 	<ul>
@@ -35,7 +35,7 @@
 	</ul>
 </div>
 
-<h3>Seasons Greetings</h3>
+<h2>Seasons Greetings</h2>
 <div class="story">
 	<p>Happy holidays! Please stay in touch.</p>
 	<p><img src="images/PeterV.jpg" alt="Peter's signature" /></p>

@@ -4,7 +4,7 @@
    <p>Lan and I took a trip to Utah over the Memorial Day weekend (end of May) 2005. We saw rocks, a lot of rocks. However, many of them were very pretty.</p>
 </div>
 
-<h3>On the way</h3>
+<h2>On the way</h2>
 <div class="story noSpaceBelow">
    <p>We camped overnight at Kanarraville not far from the north entrance which was exciting if only because it was the first time we used our tent, bought soon after our <a href="../letters/index.php?fuseAction=letter6b">trip to South Dakota</a> in 1996! We weren't really prepared for how cold it was at night.</p>
 </div>
@@ -15,7 +15,7 @@
 	?>
 </div>
 
-<h3>Zion National Park</h3>
+<h2>Zion National Park</h2>
 <div class="story noSpaceBelow">
    <p>The crush of people has forced the Park Service to ban private vehicles and introduce buses instead which works wonderfully. At Zion, you are in the valley looking up, way up. I think it is 2000ft (600m) down from the land outside the park and much warmer. Too warm in fact; July and August must be unbearable. </p>
 </div>
@@ -40,7 +40,7 @@
 	?>
 </div>
 
-<h4 class="spaceAbove">Bryce Canyon National Park</h3>
+<h4 class="spaceAbove">Bryce Canyon National Park</h2>
 <div class="story noSpaceBelow">
    <p>Bryce Canyon is now my equal favorite National Park (with <a href="../letters/index.php?fuseAction=letter8b">Arches</a>. It is beautiful and unusual.</p>
 </div>
@@ -65,7 +65,7 @@
    ?>
 </div>
 
-<h3>Capitol Reef National Park</h3>
+<h2>Capitol Reef National Park</h2>
 <div class="story noSpaceBelow">
    <p>We visited this Park because it has a star rating in the AAA guide for Colorado&mdash;and because we had to drive past the front gate to get home from Bryce Canyon. While not as spectacular as the other two, it was a worthwhile diversion.</p>
 </div>

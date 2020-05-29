@@ -5,7 +5,7 @@
    <p class="endText">Dear ............................,</p>
 </div>
 
-<h3>News about us</h3>
+<h2>News about us</h2>
 <div class="story">
    <p>As you can see, we have not moved as I had expected.  Our lease ran out in April so we were free to go but Lan was still overseas and there was a possibility that she was going to change jobs.  As a result, we decided to stay until the landlord comes back in October.  I did not want to commit ourselves to at least 6 months in a new place and then have Lan get a job on the other side of town.  I was also concerned that I would choose something but Lan would not like it.</p>
    <p>My work has been quite busy and we have been asked to work up to 55 hours/week for a few months. I get paid for it but I think I would rather have the time.  I notice that my attitude toward money is somewhat complicated.  I will go halfway across town to save $20 if something is on sale but if the opportunity comes to earn an extra $20, I am not really interested.</p>

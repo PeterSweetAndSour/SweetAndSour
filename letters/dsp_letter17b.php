@@ -1,6 +1,6 @@
 <? //dsp_letter17b.php ?>
 
-<h3>Washington D.C.</h3>
+<h2>Washington D.C.</h2>
 <div class="clearfix">
 	<div class="story followOn">
 		<p>It became clear that Lan had no future at AmEx so she quit without having another job to go to. Six weeks later, she was offered a job in Virginia, just outside Washington D.C. so she started at the end of August. She would need a car once she was there so this gave us the opportunity for a cross-country road trip!</p>

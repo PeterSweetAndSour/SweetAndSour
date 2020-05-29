@@ -1,6 +1,6 @@
 <? //dsp_letter5d.php ?>
 
-<h3>Life in America as we see it</h3>
+<h2>Life in America as we see it</h2>
 <div class="story">
    <p>Christmas is taken seriously by many home-owners and businesses in Denver.  Lots of houses have lights all over them, plastic snowmen on the lawns and Santa with reindeer on the roof.  In some streets there seems to be a competition for the most decorated house.  Tacky perhaps but quite pretty when it is done well.  It would not work in Australia since our Christmas is in the summer and it gets dark too late.</p>
    <p>I used to think that Valentine&rsquo;s Day was just for lovers to express their affection for each other.  Apparently I was wrong.  You can get Valentine&rsquo;s Day cards for children, grandparents, nieces ... you name it and there is a card for them.</p>

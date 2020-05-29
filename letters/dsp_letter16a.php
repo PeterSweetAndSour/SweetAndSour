@@ -7,7 +7,7 @@
 	<p class="endText">I expected that I would now be writing to you from a city other than Denver but we are still here. Those of you with long memories will recall that part of the reason we came here was to the see the country but we have been in Denver for 8 years now!</p>
 </div>
 
-<h3>Employment, or lack thereof</h3>
+<h2>Employment, or lack thereof</h2>
 <div class="story">
 	<p>Lan has  her job at American Express for 2&frac12; years.  While some of the people appreciate Lan&rsquo;s technical skills and her general fun-to-be-with factor, others have been difficult to work with. There was good news in January when her boss was fired!</p>
 	<p>However, circumstances have forced another change of plans as I lost my job in late-March.  I knew that business was quiet but thought I had another month before I needed to worry. It was quite a shock. Another person was "let go" the day before me.</p>

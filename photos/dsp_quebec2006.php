@@ -1,8 +1,8 @@
 <? //dsp_quebec2006.php ?>
 
-<h3>Québec, 4 &ndash; 6 Oct 06</h3>
+<h2>Quï¿½bec, 4 &ndash; 6 Oct 06</h2>
 <div class="story noSpaceBelow">
-   <p>Québec City is the only place we have ordered take-away pizza with <i>escargot</i> (snails)! It is also the only walled city north of Mexico.</p>
+   <p>Quï¿½bec City is the only place we have ordered take-away pizza with <i>escargot</i> (snails)! It is also the only walled city north of Mexico.</p>
 	<p>Jacques Cartier arrived in 1535 but it wasn&rsquo;t until Samuel de Champlain&rsquo;s arrival in 1608 to establish a fur trading post that European settlement prospered. 
 	The site is obvious since the wide Gulf of St. Lawrence narrows to the St. Lawrence River and the cliffs provided natural defence. </p>
 	<p>Stone fortifications were built in 1720 but they weren&rsquo;t enough to keep out the British whose troops scaled the cliff just west of town and taking the defenders by surprise, captured the town in 20 minutes. The Treaty of Paris formalized the arrangement in 1763.</p>

@@ -1,6 +1,6 @@
 <? //dsp_letter16b.php ?>
 
-<h3>I love New York</h3>
+<h2>I love New York</h2>
 <div class="clearfix">
 	<div class="story followOn">
 		<p>Lan tuned into a fund-raising auction for one of our local public TV stations and picked up a 3-night/4-day package to go to New York, a place we have wanted to visit for a long time and particularly since the terror attacks.</p>

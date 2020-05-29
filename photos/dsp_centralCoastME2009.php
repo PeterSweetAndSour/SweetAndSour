@@ -1,6 +1,6 @@
 <? //dsp_centralCoastME2009.php ?>
 
-<h3>Maine central coast, 19&ndash;20 Aug 2009</h3>
+<h2>Maine central coast, 19&ndash;20 Aug 2009</h2>
 <div class="story noSpaceBelow">
    <p>Maine's central coast between Acadia National Park and Portland is popular with tourists for its pretty towns,
 	plentiful fresh seafood and ocean views.</p>

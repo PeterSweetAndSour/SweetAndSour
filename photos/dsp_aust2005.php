@@ -1,6 +1,6 @@
 <? //dsp_aust2005.php ?>
 
-<h3>Sydney</h3>
+<h2>Sydney</h2>
 <div class="story noSpaceBelow">
   <p><a href="http://en.wikipedia.org/wiki/Sydney" target="_blank" class="external">Sydney</a> is fantastic! Both Lan and I have family there and of course, this is where I grew up.</p>
 </div>
@@ -47,7 +47,7 @@
 	?>
 </div>
 
-<h3>Adelaide</h3>
+<h2>Adelaide</h2>
 <div class="story noSpaceBelow">
 	<p><a href="http://en.wikipedia.org/wiki/Adelaide" target="_blank" class="external">Adelaide</a> is lovely but underrated. Lan has more family there than in Sydney. I'll get a shot of downtown next time.</p>
 </div>

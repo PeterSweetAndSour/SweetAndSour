@@ -1,6 +1,6 @@
 <? //dsp_letter3e.php ?>
 
-<h3>In brief</h3>
+<h2>In brief</h2>
 <div class="story">
    <ul>
    	<li>All paper currency is green.

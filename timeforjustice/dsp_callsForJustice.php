@@ -14,7 +14,7 @@
    having a reply sent to me, even when they have disagreed with me. There have been a few dozen emails too.</p>
 </div>
 
-<h3>In support of Palestinians</h3>
+<h2>In support of Palestinians</h2>
 <div class="story">
    <p>If you immediately associate the word <i>Palestinian</i> with the word <i>terrorist</i>, then
    you probably need to get a more complete picture of the conflict. You might start by reviewing
@@ -66,7 +66,7 @@
 	 </ul>
 </div>
 
-<h3>In support of Lebanon</h3>
+<h2>In support of Lebanon</h2>
 <div class="story">
    <p>I was outraged by the Israelis thought it reasonable to kill over 1000 people, cause billions of dollars of damage and vandalize the environment in response to the kidnapping of two of their soldiers (the Israelis kidnap Palestinians all the time and hold and sometimes torture them) and home-made rocket attacks that I think had killed eight.</p>
    <ul>
@@ -75,7 +75,7 @@
    </ul>
 </div>
 
-<h3>In support of Iran</h3>
+<h2>In support of Iran</h2>
 <div class="story">
    <p>Iraq has been a fiasco and now it appears that the Administration is trying to blame Iran. Also, while there has been much talk of Iran's covert nuclear program, there have been no demands on Israel to expose and dismantle their decades-old covert program. The double-standards are glaring. Obviously the world would be a better place without any nuclear weapons that Iran might one day produce but it would also be a better place without the 200 or so that Israel is thought to possess and the several <i>thousand</i> that the US has. </p>
    <p>I agree that their current president Ahmadinejad appears to be a bit of a nutcase but I suspect he is playing to a domestic audience to draw attention away from economic problems and in any case, the real power in Iran lies with the unelected Mullahs.</p>
@@ -86,7 +86,7 @@
 </div>
 
 
-<h3>In support of East Timor</h3>
+<h2>In support of East Timor</h2>
 <div class="story">
    <p class="endText">I wrote a letter (actually I sent a fax) to both the Prime Minister and Foreign Minister
    during the violence following the 1999 referendum for independence pleading for Australian intervention.

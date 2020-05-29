@@ -1,6 +1,6 @@
 <? //dsp_letter19b.php ?>
 
-<h3>Out and about elsewhere</h3>
+<h2>Out and about elsewhere</h2>
 <div class="story">
 	<p>Lan and her cousin took a cruise from New York to St Johns, Newfoundland (Canada) and back again stopping at Halifax, Boston and Martha&apos;s Vineyard along the way. Very pleasant but no pictures to show you.</p>
 	<p><a id="Note3Ref"></a>Late last year I visited Australia but this time, on my own.<sup><a href="#Note3">Note&nbsp;3</a></sup> Since I had no need to visit Adelaide where Lan has family, I took a trip to Melbourne, Geelong, Ballarat, Echuca and Canberra to see my extended family and to be a tourist in myown country. It was wonderful! In particular, visiting my uncle John was long overdue as I had not seen him and his family since my father&apos;s death almost 10 years before. There was a drought at the time of my visit and when I visited Nicole in Ballarat (where my mother grew up), I was alarmed to see that Lake Wendouree had virtually no water in it.</p>
@@ -16,7 +16,7 @@
 	?>
 </div>
 
-<h3>Out and about around here</h3>
+<h2>Out and about around here</h2>
 <div class="story">
   <p><a id="Note5Ref"></a>Although America is the center of global consumerism, the National Mall is actually not a shopping center but a park forming the heart of Washington and is sometimes called &ldquo;America's Front Lawn&rdquo;. Washington&apos;s most-recognized attractions are clustered around it including the Smithsonian museums, monuments for Washington, Jefferson, Lincoln, FDR, three wars, the US Capitol and the White House.<sup><a href="#Note5">Note&nbsp;5</a></sup>. </p>
   <p><a id="Note6Ref"></a><a id="Note7Ref"></a><a id="Note8Ref"></a>The great advantage of living here is that we can see things in manageable doses and since they keep changing it, we&apos;ve made several visits to the National Galley of Art where the most amazing exhibition was one on Afghan treasures.<sup><a href="#Note6">Note&nbsp;6</a></sup>. Another visit was sparked by reading article in the Washington Post about Raphael&apos;s <em>Alba Madonna</em>.<sup><a href="#Note7">Note&nbsp;7</a></sup> To my own surprise, I&apos;ve taken a much greater interest in art but only after seeing two brilliant BBC series on art history.<sup><a href="#Note8">Note&nbsp;8</a></sup></p>

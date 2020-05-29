@@ -1,6 +1,6 @@
 <? //dsp_letter4b.php ?>
 
-<h3>News in America (or the lack of it)</h3>
+<h2>News in America (or the lack of it)</h2>
 <div class="story">
    <p>As you can imagine, there was a lot about OJ Simpson in the media. In Newsweek after the verdict was given, there was a quote from the producer of one of the TV talk shows: <i>&quot;If we had God booked and OJ was available, we'd move God&quot;</i>.  It has surprised me and apparently most white Americans how the black and white communities saw the trial so differently.  I heard something on the radio that one third of young black men are in prison, on parole or on good behaviour bonds.</p>
    <p>TV has taken a turn for the worse. First, the <i>Cosby Show</i> ended then <i>The John Laraquette Show</i> (is this on in Australia?) moved to a channel that we can't get and now the Public Broadcasting Service has dropped the English ITN news.</p>

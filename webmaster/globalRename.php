@@ -11,15 +11,11 @@
 // and rename the files to append the file name with the modified date.
 // Allows photos to be stored with "version" identifiers which are the file modified dates.
 
-$dbserver   = "localhost";  //Isn't it interesting that this works on the real server?
-$dbname     = "sweetand_sour";
-$dbuser     = "sweetand_php";
-$dbpassword = "U287RHmt";
-
 $path = "C:\Internet\WWWRoot\sweetAndSour.org\wherewelive\images\house";
 
 $connectionOK = false;
-$dbconnection = @mysql_connect( $dbserver, $dbuser, $dbpassword );
+include '../../sweetandsour_conf.php';
+include '../includes/act_getDBConnection.php';
 
 if($dbconnection) {
 	//Confirm connection to particular database is possible

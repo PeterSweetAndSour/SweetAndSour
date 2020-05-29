@@ -1,6 +1,6 @@
 <? //dsp_letter5e.php ?>
 
-<h3>Interesting things</h3>
+<h2>Interesting things</h2>
 <div class="story">
    <p>California now spends more on prisons than it does on tertiary education.  Keeping someone in prison for a year costs taxpayers $30 000 and despite a huge increase in prison population during the 1980s, crime rates have hardly changed.  Two out of 3 black men are arrested at some time between the ages of 18 and 30.</p>
    <p>Australia and Canada tie for 2nd place for computer penetration.  In the US there are 0.319 computers per person.  For Australia, it is 0.221.</p>
@@ -21,7 +21,7 @@
    <p class="endText">Populist candidates used to come mainly from the left of the political spectrum and thay attacked big business which exploited the workers.  For reasons I don't understand, Americans now believe that the government is the great enemy and so the populists are now from the right.</p>
 </div>
 
-<h3>And finally</h3>
+<h2>And finally</h2>
 <div class="story">
    <p>Seen on bumper stickers:</p>
    <ul>

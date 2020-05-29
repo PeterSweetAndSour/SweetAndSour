@@ -1,6 +1,6 @@
 <? //dsp_letter9b.php ?>
 
-<h3>Travels and adventures</h3>
+<h2>Travels and adventures</h2>
 <div class="story">
    <p>My company is based in Minnesota and I've had to make a few trips up there.  While Lan was unemployed, I arranged to be in the factory Mon-Wed but Lan and I flew up early Saturday so we could be tourists over the weekend.  We spent a day looking around the "twin cities" of Minneapolis & St Paul which were originally separate, but like Sydney and Parramatta, have grown and filled the space in between.   We started with the impressive State Capitol building and a gothic-style cathedral.</p>
    <p>The 3750 km Mississippi River runs through the twin cities and even though it is only about 20% of the way to the ocean, it is already 300 m wide at Minneapolis.  [Of course on its way to the Gulf of Mexico it gets very big.  Annual discharge is 600 km&sup3; of water, 0.3km&sup3; of silt.]  Over the past century, the construction of dams, locks and the dredging of channels has allowed progressively larger vessels to travel on the river and it is now possible for barges 2.7 m deep to travel all the way from the Gulf of Mexico to Minneapolis.  We watched boats being raised and lowered 15m as they moved through the locks which bypass the St. Anthony falls..</p>

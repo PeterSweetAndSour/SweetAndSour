@@ -1,6 +1,6 @@
 <? //dsp_letter2b.php ?>
 
-<h3>First impressions</h3>
+<h2>First impressions</h2>
 <div class="story">
    <p>When we were in Detroit, I asked how much it would cost to send a fax to Australia & the reply was <i>"Is that domestic or international?"</i></p>
    <p>I'm having a lot of trouble making myself understood but it has not been a problem for Lan.  Too many people have told me I have a strong Australian accent. On three occasions I have spelled out <i>"A for APPLE"</i> and they have still writen down <i>"I"</i>! To me, they don't have strong American accents and I have no problem understanding them. I think it is more of a problem here than in Detroit which is more racially mixed.</p>

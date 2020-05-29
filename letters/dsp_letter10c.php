@@ -1,6 +1,6 @@
 <? //dsp_letter10c.php ?>
 
-<h3>America</h3>
+<h2>America</h2>
 <div class="story">
    <p>I had to go to our factory in Minnesota in January (mid-winter) to test some equipment and I had a scare on the way from the airport to the hotel.   I was driving at 50mph/80kph at night while it was snowing and the heater was blowing on my feet and not on the windscreen.  When I sprayed the window to clean it, the washer fluid instantly turned to ice and blocked my view.  It is supposed not to freeze but it was obviously too cold for that.  Fortunately there was no-one else nearby and I still had a clear area about the size of a business card so I was able to get to the side of the road and scrape it off.  On another day on the same trip it was -21&deg;F (-29.5&deg;C) when I drove to work one morning!  Incidentally, -40 is the same in &deg;F and &deg;C but I hope never to be in a place where I can confirm that first hand!</p>
    <p>Anyone outside America is probably unaware that the Denver Broncos football team are now "world champions" having won the "Superbowl", or what we would call the Grand Final.  I guess it was nice to be in the city with the winning team but the excitement got a bit out of hand.  The Broncos were expected to lose the game which made the win even better but the initial response was a rally that evening that resulted in drunken fighting and a few cars being overturned.  Two people were shot but it was later determined they were just "ordinary" shootings, unrelated to the rally.  Still, it seems odd to damage your own city when you won.  Apparently when the Detroit team won some years ago, a good part of the city burned.  The "official" rally at lunch time a few days later drew 650,000 people which is a huge crowd anywhere but even more amazing since there are only 2 million people in metropolitan Denver and 3&frac14; million in all of Colorado.  Lots of people took the day off work so they could go.</p>
@@ -28,7 +28,7 @@
    </ul>
 </div>
    
-<h3>Conclusion</h3>
+<h2>Conclusion</h2>
 <div class="story">
    <p>When we left for America, I promised to go for 9 months but it turned into 3 years and Lan would be happy to stay forever.  (Any less than 9 months and we would have to repay the airfares and hotel expenses to get us settled.)  We did make a few good friends over there but for me, Australia will always be home and in any case, I never offered to emigrate.  Lan even noted that mothers expect to be pregnant for 9 months and if it turned into 3 years, there would be some dissatisfaction!</p>
    <p class="endText">Since our American adventure seems to be coming to an end, this may be the last newsletter, at least in its current format.  Our day-to-day life in Australia wont be nearly as interesting as our travels in America, or even the peculiarities of life there.  I hope you have enjoyed reading them as much as I have enjoyed writing them.  For those in Sydney, I look forward to seeing you in person real soon.</p>

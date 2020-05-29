@@ -1,6 +1,6 @@
 <? //dsp_letter13b.php ?>
 
-<h3>Travels</h3>
+<h2>Travels</h2>
 <div class="story">
 	<p>In May, we had the pleasure of a visit by two of my cousins, Neville & Diana and since Neville is a geologist, we did a quick geological tour of Colorado.  Perhaps the highlight was seeing some tree stumps!  These are no ordinary tree stumps though.  About 15 million years ago, a volcanic eruption showered 15m of ash on a forest of massive redwood trees.  The trees were killed but the bases of the trees were protected and eventually fossilized.  The intricate structure of the wood is clearly visible and though less spectacular (but of more interest to the scientists) thousands of insects were preserved in fine detail.</p>
 	<p>Since we had time available and Frontier Airlines started flying to Orlando at discount prices, we decided to take a trip to Florida as soon as my exams were over until the end of the year.</p>

@@ -1,6 +1,6 @@
 <? //dsp_letter15c.php ?>
 
-<h3>September 11 and all that</h3>
+<h2>September 11 and all that</h2>
 <div class="story">
 	<p>The day of the attacks started normally enough. I dropped Lan off at her office, turned on the radio and then drove on to my office a few miles away. It was only half an hour after the first plane hit the World Trade Center and the normal program had been interrupted but it was clear that nobody had a clue what had happened. At work a little while later, someone told me that a plane had crashed into the WTC and I asked if it was foggy in New York. It wasn't. You may be aware that a bomber got lost in heavy fog in 1945 and flew into the Empire State Building.</p>
 	<p>Obviously, it soon became clear that the crashes were not accidents. It was a horrific event and it is beyond imagination what it must have been like for those trapped on the upper floors to feel the building give way beneath them. Still, it is amazing that the carnage was not worse. The last official toll I saw was 2830 killed, a very small fraction of the buildings' full occupancy. It is a great credit to the architects that both buildings withstood the initial impact and stayed up for two hours allowing most to escape.</p>

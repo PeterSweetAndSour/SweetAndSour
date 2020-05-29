@@ -1,16 +1,16 @@
 <? //dsp_bumperStickers.php ?>
 
-<h3>Purpose statement</h3>
+<h2>Purpose statement</h2>
 <div class="story">
 	<p class="endText">To entertain the class with a largely frivolous examination of bumper stickers.</p>
 </div>
 
-<h3>Thesis</h3>
+<h2>Thesis</h2>
 <div class="story">
 	<p class="endText">Bumper stickers are very American and they indicate a lot about the driver.</p>
 </div>
 
-<h3>Introduction</h3>
+<h2>Introduction</h2>
 <div class="story">
    <p>Let me start by posing a question:<br>
    <span class="sticker">Did you ever stop to think &ndash; and then forget to start again?</span>
@@ -24,7 +24,7 @@
    </ul>
 </div>
 
-<h3>What bumper stickers say about America?</h3>
+<h2>What bumper stickers say about America?</h2>
 <div class="story">
    <ul class="endText">
    	<li>America is <span style="color:red">motorized</span>. I am guessing that all of you came to college today in a private motor vehicle.  Most of you probably own your own car. Obviously without cars, there are no bumper stickers - where do you put a bumper sticker if you chief mode of transport is a bicycle, or a bus?</li>
@@ -33,7 +33,7 @@
    </ul>
 </div>
 
-<h3>What bumper stickers say about the driver</h3>
+<h2>What bumper stickers say about the driver</h2>
 <div class="story">
    <p>(I had only 4 minutes for this section, so I had to cut from "children" onwards.)</p>
    <p class="endText">Turning now to what bumper stickers say about the drivers.</p>
@@ -135,7 +135,7 @@
    </ul>
 </div>
 
-<h3>Conclusion</h3>
+<h2>Conclusion</h2>
 <div class="story">
    <p>We have seen then that bumper stickers tell us something about this great country and a great deal about the drivers that live in it</p>
    <p>Perhaps you are wondering what bumper sticker I have on my car. Actually, I haven't found the bumper sticker that really sums me up in ten words or less. Maybe I'll have to have it made. Here is what it would say: <span class="sticker">My plan is to live forever. So far I'm on schedule!</span></p>

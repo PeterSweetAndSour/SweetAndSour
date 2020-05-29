@@ -1,6 +1,6 @@
 <? //dsp_letter14b.php ?>
 
-<h3>Out and about</h3>
+<h2>Out and about</h2>
 <div class="story">
 	<p>We only did two short trips together last year though both were fascinating.</p>
 

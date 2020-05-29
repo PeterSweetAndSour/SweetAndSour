@@ -1,6 +1,6 @@
 <? //dsp_aust2005people.php ?>
 
-<h3>Friends and relations in Sydney!</h3>
+<h2>Friends and relations in Sydney!</h2>
 <div class="photoAlbum">
    <?
    setThumbnail("bowling2005_1sm.jpg");
@@ -20,7 +20,7 @@
    ?>
 </div>
 
-<h3>... and in Adelaide</h3>
+<h2>... and in Adelaide</h2>
 <div class="photoAlbum">
 	<?
    setThumbnail("rundlemall1sm.jpg");

@@ -1,6 +1,6 @@
 <? //dsp_letter7b.php ?>
 
-<h3>Alaska holiday</h3>
+<h2>Alaska holiday</h2>
 
 <div class="story">
    <p>We took a holiday for the first two weeks of September starting in Seattle, flying to Anchorage Alaska, joining a ship to come south to Vancouver and then spending a few days there.</p>

@@ -1,6 +1,6 @@
 <? //dsp_rockAndRoll_1.php ?>
 
-<h3>Introduction</h3>
+<h2>Introduction</h2>
 <div class="story">
 	<p>[2020 update: I believe this was the first section I created for my site in 1999! It is obviously out of date but this is really about the music I enjoyed when I was young so it hardly matters.]</p>
 	<p>Before we go any further, I should point out that if I had my time over again, I would not waste my time studying books I never understood, or calculus I never used, but studied electric guitar instead.  I can't play any instrument but I wish I had started when I was young when my brain was still developing.  It's too late now.</p>
@@ -10,7 +10,7 @@
 	<p class="endText">If your Australian and in your mid-30s, it's time to reminisce.  If not, enjoy the ride.</p>
 </div>
 
-<h3>A bit of history</h3>
+<h2>A bit of history</h2>
 <div class="story">
    <p>Let's see how we got here.  When I was young in Sydney, there was radio station 2SM and <i>CountDown</i>.  Who could forget? </p>
    <p>2SM was the radio station that played all the Top 40 hits and since there were so few stations in the 70s, it was youth radio.  It was decimated when FM arrived around 1980 offering far better sound but the licensing arrangements didn't allow them to transfer to the new band at the time.</p>

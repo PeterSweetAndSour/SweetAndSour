@@ -1,6 +1,6 @@
 <? //dsp_letter16c.php ?>
 
-<h3>The Netherlands</h3>
+<h2>The Netherlands</h2>
 <div class="story">
 	<p>In a move designed to capture the attention of those who consider "on sale" to be the most exciting phrase in the English language, United slashed fares to Europe to $505 late last year. It worked for Lan and we booked tickets to Paris for a 2&frac12; week trip leaving late-November. In fact, in a move signaling utter desperation, we could have flown to Europe for $258 had we waited.</p>
 	<p>The flight on a 777 from Washington to Paris was extremely uncomfortable-the Boeing employee who came up with the 2-5-2 seating arrangement across the plane instead of 3-3-3 should be fired and 79cm/31&quot; seat spacing is way too tight for a long haul flight. However, we did have the lovely <i>Dominique</i> as our chief flight attendant. I never did get to see her but she had a gorgeous, sexy French accent that made me hang on every word of the safety presentation.  I was hoping that the in-flight movies would be canceled and she would read us a story.</p>
