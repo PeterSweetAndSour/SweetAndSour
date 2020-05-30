@@ -25,7 +25,7 @@ figure.youtubeThumbnail {
 	display: none; /* Contains the caption for the photo shown with PhotoSwipe. */
   }
   img.thumbnail {
-	box-sizing: content-box;
+
 	box-shadow: 5px 5px 4px 0px #aaa;
 	margin-bottom: 8px;
 	padding: 4px;
@@ -42,4 +42,3 @@ figure.youtubeThumbnail {
 	  margin: 0 0 0.5em 10px;
   }
 
-  #imageMenu * {box-sizing: content-box;}

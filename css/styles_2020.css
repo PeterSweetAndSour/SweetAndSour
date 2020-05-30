@@ -1,11 +1,4 @@
 /* From https://dev.to/hankchizljaw/a-modern-css-reset-6p3 */
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* Remove default padding */
 ul[class],
 ol[class] {
@@ -52,7 +45,6 @@ a:not([class]) {
 /* Make images easier to work with */
 img {
   max-width: 100%;
-  display: block;
 }
 
 /* Natural flow and rhythm in articles by default */
@@ -106,7 +98,6 @@ figcaption.fullsize {
 }
 
 img.thumbnail {
-  box-sizing: content-box;
   box-shadow: 5px 5px 4px 0px #aaa;
   margin-bottom: 8px;
   padding: 4px;
@@ -122,8 +113,4 @@ img.thumbnail {
 .pswp__caption__center > img,
 .pswp__caption__center > iframe {
   margin: 0 0 0.5em 10px;
-}
-
-#imageMenu * {
-  box-sizing: content-box;
 }
