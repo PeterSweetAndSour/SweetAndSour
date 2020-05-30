@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Apr 29, 2018 at 09:37 PM
--- Server version: 5.7.21-log
--- PHP Version: 7.2.2
+-- Host: 127.0.0.1:3306
+-- Generation Time: May 30, 2020 at 12:03 PM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -28,10 +28,12 @@ SET time_zone = "+00:00";
 -- Table structure for table `folders`
 --
 
-CREATE TABLE `folders` (
-  `folderID` int(11) NOT NULL DEFAULT '0',
+DROP TABLE IF EXISTS `folders`;
+CREATE TABLE IF NOT EXISTS `folders` (
+  `folderID` int(11) NOT NULL DEFAULT 0,
   `grandparentFolderID` int(11) DEFAULT NULL,
-  `folderName` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT ''
+  `folderName` varchar(20) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`folderID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -86,7 +88,7 @@ INSERT INTO `folders` (`folderID`, `grandparentFolderID`, `folderName`) VALUES
 (62, NULL, 'canoe'),
 (59, 10, 'Maine2009'),
 (63, 3, 'house'),
-(64, 3, 'productreviews');
+(64, 3, 'lisbon');
 
 -- --------------------------------------------------------
 
@@ -94,18 +96,20 @@ INSERT INTO `folders` (`folderID`, `grandparentFolderID`, `folderName`) VALUES
 -- Table structure for table `menus2`
 --
 
-CREATE TABLE `menus2` (
-  `menuID` int(11) NOT NULL DEFAULT '0',
+DROP TABLE IF EXISTS `menus2`;
+CREATE TABLE IF NOT EXISTS `menus2` (
+  `menuID` int(11) NOT NULL DEFAULT 0,
   `displayText` varchar(36) COLLATE utf8_unicode_ci NOT NULL,
-  `parentID` int(11) NOT NULL DEFAULT '0',
-  `folderID` int(11) NOT NULL DEFAULT '4',
+  `parentID` int(11) NOT NULL DEFAULT 0,
+  `folderID` int(11) NOT NULL DEFAULT 4,
   `fuseAction` varchar(24) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `orderInGroup` int(11) NOT NULL DEFAULT '0',
-  `enabled` tinyint(4) NOT NULL DEFAULT '1',
-  `menuLevel` tinyint(4) DEFAULT '1',
-  `displayOnPgOnly` tinyint(4) NOT NULL DEFAULT '0',
+  `orderInGroup` int(11) NOT NULL DEFAULT 0,
+  `enabled` tinyint(4) NOT NULL DEFAULT 1,
+  `menuLevel` tinyint(4) DEFAULT 1,
+  `displayOnPgOnly` tinyint(4) NOT NULL DEFAULT 0,
   `lft` int(11) NOT NULL,
-  `rgt` int(11) NOT NULL
+  `rgt` int(11) NOT NULL,
+  PRIMARY KEY (`menuID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -115,20 +119,20 @@ CREATE TABLE `menus2` (
 INSERT INTO `menus2` (`menuID`, `displayText`, `parentID`, `folderID`, `fuseAction`, `orderInGroup`, `enabled`, `menuLevel`, `displayOnPgOnly`, `lft`, `rgt`) VALUES
 (1, 'Home', 0, 1, 'welcome', 1, 1, 1, 0, 2, 9),
 (2, 'Who we are', 0, 2, 'whoWeAre', 2, 1, 1, 0, 10, 17),
-(3, 'Where we live', 0, 3, 'washington', 3, 1, 1, 0, 18, 35),
+(3, 'Where we live', 0, 3, 'lisbon', 3, 1, 1, 0, 18, 35),
 (4, 'Newsletters', 0, 4, 'lettersOverview', 4, 1, 1, 0, 36, 213),
 (5, 'Great kids', 0, 5, 'relatives', 5, 0, 1, 0, 214, 219),
 (6, 'Technology', 0, 6, 'thisWebSite', 6, 1, 1, 0, 220, 235),
-(7, 'Arts and Culture', 0, 7, 'books', 7, 1, 1, 0, 236, 275),
-(8, 'Time for Justice', 0, 9, 'injustice', 8, 1, 1, 0, 276, 281),
-(9, 'Photos', 0, 10, 'portsmouth2009', 9, 1, 1, 0, 282, 321),
-(10, 'Contact us', 0, 8, 'contactUs', 10, 1, 1, 0, 322, 323),
+(7, 'Arts and Culture', 0, 7, 'books', 7, 1, 1, 0, 236, 269),
+(8, 'Time for Justice', 0, 9, 'injustice', 8, 1, 1, 0, 270, 275),
+(9, 'Photos', 0, 10, 'portsmouth2009', 9, 1, 1, 0, 276, 315),
+(10, 'Contact us', 0, 8, 'contactUs', 10, 1, 1, 0, 316, 317),
 (20, 'Welcome', 1, 1, 'welcome', 1, 1, 2, 0, 3, 4),
-(21, 'Site Map', 1, 1, 'siteMap', 2, 0, 2, 0, 5, 6),
+(21, 'Site Map', 1, 1, 'siteMap', 2, 1, 2, 0, 5, 6),
 (25, 'About us', 2, 2, 'whoWeAre', 1, 1, 2, 0, 11, 12),
 (26, 'Old photos &ndash; Lan', 2, 2, 'oldPhotosLan', 2, 1, 2, 0, 13, 14),
 (27, 'Old photos &ndash; Peter', 2, 2, 'oldPhotosPeter', 3, 1, 2, 0, 15, 16),
-(30, 'General notes', 3, 3, 'whereWeLive', 1, 0, 1, 0, 19, 20),
+(30, 'Lisbon', 3, 3, 'lisbon', 1, 1, 2, 0, 19, 20),
 (31, 'Denver', 3, 3, 'denver', 3, 1, 2, 0, 31, 32),
 (32, 'Sydney', 3, 3, 'sydney', 4, 1, 2, 0, 33, 34),
 (40, 'Overview', 4, 4, 'lettersOverview', 1, 1, 2, 0, 37, 38),
@@ -151,16 +155,15 @@ INSERT INTO `menus2` (`menuID`, `displayText`, `parentID`, `folderID`, `fuseActi
 (57, '16', 4, 4, 'letter16a', 14, 1, 2, 0, 67, 82),
 (80, 'Relatives', 5, 5, 'relatives', 1, 0, 1, 0, 215, 216),
 (81, 'Friends', 5, 5, 'friends', 2, 0, 1, 0, 217, 218),
-(87, 'Sand box', 6, 6, 'sandbox', 5, 1, 2, 0, 233, 234),
+(87, 'Sand box', 6, 6, 'sandbox', 5, 0, 2, 0, 233, 234),
 (83, 'Computers', 6, 6, 'computers', 2, 0, 2, 0, 223, 224),
 (84, 'Cars', 6, 6, 'cars1', 3, 1, 2, 0, 225, 230),
 (82, 'This web site', 6, 6, 'thisWebSite', 1, 1, 2, 0, 221, 222),
 (86, 'Alternative energy', 6, 6, 'altEnergy', 4, 0, 1, 0, 231, 232),
-(101, 'Aussie rock &amp; roll', 7, 7, 'rockAndRoll_1', 1, 1, 2, 0, 239, 248),
-(102, 'Humor', 7, 7, 'humor1', 4, 1, 2, 0, 251, 260),
-(103, 'Speeches', 7, 7, 'farnsworth', 7, 1, 2, 0, 265, 274),
-(100, 'Odds &amp; ends', 7, 7, 'oddsAndEnds', 5, 1, 2, 0, 261, 262),
-(106, 'Coming ...', 7, 7, 'coming', -1, 0, 1, 0, 237, 238),
+(101, 'Aussie rock &amp; roll', 7, 7, 'rockAndRoll_1', 2, 1, 2, 0, 239, 244),
+(102, 'Humor', 7, 7, 'humor1', 5, 1, 2, 0, 249, 258),
+(103, 'Speeches', 7, 7, 'farnsworth', 6, 1, 2, 0, 259, 268),
+(100, 'K-pop', 7, 7, 'kpop', 1, 1, 2, 0, 237, 238),
 (120, 'Page 1', 42, 4, 'letter2a', 1, 1, 3, 0, 206, 207),
 (121, 'Page 2', 42, 4, 'letter2b', 2, 1, 3, 0, 208, 209),
 (122, 'Page 1', 43, 4, 'letter3a', 1, 1, 3, 0, 192, 193),
@@ -218,63 +221,61 @@ INSERT INTO `menus2` (`menuID`, `displayText`, `parentID`, `folderID`, `fuseActi
 (298, 'General Principles', 84, 6, 'cars1', 1, 1, 3, 0, 226, 227),
 (299, 'Innovative Designs', 84, 6, 'cars2', 2, 1, 3, 0, 228, 229),
 (300, 'Introduction', 101, 7, 'rockAndRoll_1', 1, 1, 3, 0, 240, 241),
-(301, 'A bit of history', 101, 7, 'rockAndRoll_2', 2, 1, 3, 0, 242, 243),
-(302, 'Bands A to I', 101, 7, 'rockAndRoll_3', 3, 1, 3, 0, 244, 245),
-(303, 'Bands K to T', 101, 7, 'rockAndRoll_4', 4, 1, 3, 0, 246, 247),
-(304, 'British TV Comedies', 102, 7, 'humor1', 1, 1, 3, 0, 252, 253),
-(305, 'Other TV', 102, 7, 'humor2', 2, 1, 3, 0, 254, 255),
-(306, 'Men and Women', 102, 7, 'humor3', 3, 1, 3, 0, 256, 257),
-(307, 'Random', 102, 7, 'humor4', 4, 1, 3, 0, 258, 259),
-(316, 'The inventor of TV', 103, 7, 'farnsworth', 1, 1, 3, 0, 266, 267),
-(317, 'Bumper stickers', 103, 7, 'bumperStickers', 2, 1, 3, 0, 268, 269),
-(318, 'Palestine', 103, 7, 'palestine', 3, 1, 3, 0, 270, 271),
-(319, 'Genocide', 103, 7, 'genocide', 4, 1, 3, 0, 272, 273),
+(301, 'Bands', 101, 7, 'rockAndRoll_2', 2, 1, 3, 0, 242, 243),
+(304, 'British TV Comedies', 102, 7, 'humor1', 1, 1, 3, 0, 250, 251),
+(305, 'Other TV', 102, 7, 'humor2', 2, 1, 3, 0, 252, 253),
+(306, 'Men and Women', 102, 7, 'humor3', 3, 1, 3, 0, 254, 255),
+(307, 'Random', 102, 7, 'humor4', 4, 1, 3, 0, 256, 257),
+(316, 'The inventor of TV', 103, 7, 'farnsworth', 1, 1, 3, 0, 260, 261),
+(317, 'Bumper stickers', 103, 7, 'bumperStickers', 2, 1, 3, 0, 262, 263),
+(318, 'Palestine', 103, 7, 'palestine', 3, 1, 3, 0, 264, 265),
+(319, 'Genocide', 103, 7, 'genocide', 4, 1, 3, 0, 266, 267),
 (22, 'Search Results', 1, 1, 'searchResults', 2, 1, 2, 1, 7, 8),
-(105, 'Reading plan', 7, 7, 'readingPlan', 6, 1, 2, 0, 263, 264),
+(105, 'Reading plan', 7, 7, 'readingPlan', 4, 1, 2, 0, 247, 248),
 (174, 'Page 6', 57, 4, 'letter16f', 6, 1, 3, 0, 78, 79),
 (175, 'Page 7', 57, 4, 'letter16g', 7, 1, 3, 0, 80, 81),
-(320, 'Panoramas', 9, 10, 'panorama', 20, 0, 2, 0, 319, 320),
+(320, 'Panoramas', 9, 10, 'panorama', 20, 0, 2, 0, 313, 314),
 (176, '17', 4, 4, 'letter17a', 13, 1, 2, 0, 55, 66),
 (177, 'Page 1', 176, 4, 'letter17a', 1, 1, 3, 0, 56, 57),
 (178, 'Page 2', 176, 4, 'letter17b', 2, 1, 3, 0, 58, 59),
 (179, 'Page 3', 176, 4, 'letter17c', 3, 1, 3, 0, 60, 61),
 (180, 'Page 4', 176, 4, 'letter17d', 4, 1, 3, 0, 62, 63),
 (181, 'Page 5', 176, 4, 'letter17e', 5, 1, 3, 0, 64, 65),
-(330, '4610 Reno Rd', 9, 10, 'renoRd', 16, 0, 1, 0, 317, 318),
-(331, 'Utah', 9, 10, 'utah2005', 15, 1, 2, 0, 315, 316),
-(332, 'Australia', 9, 10, 'aust2007', 9, 1, 2, 0, 293, 298),
-(333, 'Grand Canyon', 9, 10, 'grandCanyon', 13, 1, 2, 0, 313, 314),
-(334, 'Cherry blossoms', 9, 10, 'cherryBlossoms', 12, 1, 2, 0, 311, 312),
-(335, 'Montr&eacute;al', 340, 10, 'montreal2006', 1, 1, 3, 0, 300, 301),
-(336, 'Trois-Rivi&egrave;res', 340, 10, 'troisRivieres2006', 2, 1, 3, 0, 302, 303),
-(337, 'Qu&eacute;bec City', 340, 10, 'quebec2006', 3, 1, 3, 0, 304, 305),
-(338, 'Ottawa', 340, 10, 'ottawa2006', 4, 1, 3, 0, 306, 307),
-(33, 'Washington', 3, 3, 'washington', 2, 1, 2, 0, 21, 30),
-(339, 'Longwood Gardens', 9, 10, 'longwoodGardens', 11, 1, 2, 0, 309, 310),
+(330, '4610 Reno Rd', 9, 10, 'renoRd', 16, 0, 1, 0, 311, 312),
+(331, 'Utah', 9, 10, 'utah2005', 15, 1, 2, 0, 309, 310),
+(332, 'Australia', 9, 10, 'aust2007', 9, 1, 2, 0, 287, 292),
+(333, 'Grand Canyon', 9, 10, 'grandCanyon', 13, 1, 2, 0, 307, 308),
+(334, 'Cherry blossoms', 9, 10, 'cherryBlossoms', 12, 1, 2, 0, 305, 306),
+(335, 'Montr&eacute;al', 340, 10, 'montreal2006', 1, 1, 3, 0, 294, 295),
+(336, 'Trois-Rivi&egrave;res', 340, 10, 'troisRivieres2006', 2, 1, 3, 0, 296, 297),
+(337, 'Qu&eacute;bec City', 340, 10, 'quebec2006', 3, 1, 3, 0, 298, 299),
+(338, 'Ottawa', 340, 10, 'ottawa2006', 4, 1, 3, 0, 300, 301),
+(33, 'Washington', 3, 3, 'washington', 2, 1, 2, 0, 23, 30),
+(339, 'Longwood Gardens', 9, 10, 'longwoodGardens', 11, 1, 2, 0, 303, 304),
 (182, '18', 4, 4, 'letter18a', 12, 1, 2, 0, 47, 54),
 (183, 'Page 1', 182, 4, 'letter18a', 1, 1, 3, 0, 48, 49),
 (184, 'Page 2', 182, 4, 'letter18b', 2, 1, 3, 0, 50, 51),
 (185, 'Page 3', 182, 4, 'letter18c', 3, 1, 3, 0, 52, 53),
-(340, 'Canada', 9, 10, 'montreal2006', 10, 1, 2, 0, 299, 308),
-(310, 'Books I\'ve read', 7, 7, 'books', 2, 1, 2, 0, 249, 250),
-(341, 'Australia 2007', 332, 10, 'aust2007', 1, 1, 3, 0, 294, 295),
-(0, 'Root', -1, 0, 'root', 0, 0, 1, 0, 1, 324),
-(342, 'Australia 2005', 332, 10, 'aust2005', 2, 1, 3, 0, 296, 297),
-(344, 'Palestine', 8, 9, 'injustice', 0, 1, 2, 0, 277, 278),
-(345, 'Calls for Justice', 8, 9, 'callsForJustice', 0, 1, 2, 0, 279, 280),
+(340, 'Canada', 9, 10, 'montreal2006', 10, 1, 2, 0, 293, 302),
+(310, 'Books I\'ve read', 7, 7, 'books', 3, 1, 2, 0, 245, 246),
+(341, 'Australia 2007', 332, 10, 'aust2007', 1, 1, 3, 0, 288, 289),
+(0, 'Root', -1, 0, 'root', 0, 0, 1, 0, 1, 318),
+(342, 'Australia 2005', 332, 10, 'aust2005', 2, 1, 3, 0, 290, 291),
+(344, 'Palestine', 8, 9, 'injustice', 0, 1, 2, 0, 271, 272),
+(345, 'Calls for Justice', 8, 9, 'callsForJustice', 0, 1, 2, 0, 273, 274),
 (186, '19', 4, 4, 'letter19a', 11, 1, 2, 0, 39, 46),
 (187, 'Page 1', 186, 4, 'letter19a', 1, 1, 3, 0, 40, 41),
 (188, 'Page 2', 186, 4, 'letter19b', 2, 1, 3, 0, 42, 43),
 (189, 'Page 3', 186, 4, 'letter19c', 3, 1, 3, 0, 44, 45),
-(346, 'Maine', 9, 10, 'portsmouth2009', 8, 1, 2, 0, 283, 292),
-(347, 'Portsmouth, NH', 346, 10, 'portsmouth2009', 1, 1, 3, 0, 284, 285),
-(348, 'Acadia N.P. &amp; points north', 346, 10, 'acadia2009', 2, 1, 3, 0, 286, 287),
-(349, 'Maine Central Coast', 346, 10, 'centralCoastME', 3, 1, 3, 0, 288, 289),
-(350, 'Portland', 346, 10, 'portland2009', 4, 1, 3, 0, 290, 291),
-(34, 'The city', 33, 3, 'washington', 1, 1, 3, 0, 22, 23),
-(35, 'House renovation', 33, 3, 'keilconstruction', 2, 1, 3, 0, 24, 25),
-(36, 'Instructions to builder', 33, 3, 'instructionstobuilder', 3, 1, 3, 0, 26, 27),
-(37, 'Product Reviews', 33, 3, 'productreviews', 4, 0, 3, 0, 28, 29);
+(346, 'Maine', 9, 10, 'portsmouth2009', 8, 1, 2, 0, 277, 286),
+(347, 'Portsmouth, NH', 346, 10, 'portsmouth2009', 1, 1, 3, 0, 278, 279),
+(348, 'Acadia N.P. &amp; points north', 346, 10, 'acadia2009', 2, 1, 3, 0, 280, 281),
+(349, 'Maine Central Coast', 346, 10, 'centralCoastME', 3, 1, 3, 0, 282, 283),
+(350, 'Portland', 346, 10, 'portland2009', 4, 1, 3, 0, 284, 285),
+(34, 'The city', 33, 3, 'washington', 1, 1, 3, 0, 24, 25),
+(35, 'House renovation', 33, 3, 'houserenovation', 2, 1, 3, 0, 26, 27),
+(36, 'Instructions to builder', 33, 3, 'instructionstobuilder', 3, 1, 3, 0, 28, 29),
+(37, 'Somewhere else', 3, 3, 'somewhere', 1, 0, 3, 0, 21, 22);
 
 -- --------------------------------------------------------
 
@@ -282,15 +283,17 @@ INSERT INTO `menus2` (`menuID`, `displayText`, `parentID`, `folderID`, `fuseActi
 -- Table structure for table `photos`
 --
 
-CREATE TABLE `photos` (
+DROP TABLE IF EXISTS `photos`;
+CREATE TABLE IF NOT EXISTS `photos` (
   `photoName` varchar(32) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `folderID` int(11) NOT NULL DEFAULT '0',
+  `folderID` int(11) NOT NULL DEFAULT 0,
   `caption` text COLLATE utf8_unicode_ci NOT NULL,
   `linkedImg` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `linkToFullSize` enum('Y','N') CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT 'N',
   `version` varchar(8) COLLATE utf8_unicode_ci DEFAULT NULL,
   `width` int(11) DEFAULT NULL,
-  `height` int(11) DEFAULT NULL
+  `height` int(11) DEFAULT NULL,
+  PRIMARY KEY (`photoName`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -306,7 +309,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('2CVFront2.jpg', 6, '<a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=2CVSide2.jpg\" onclick=\"SweetAndSour.getPhoto(\'2CVSide2.jpg\', \'Citroen 2CV\'); return false;\">&lt;&lt; Back</a>', '', 'N', '19990517', 309, 255),
 ('2CVPrototype2.jpg', 6, '<p>2CV prototype (circa 1939). Note the single headlight, engine crank over the front bumper and &quot;corrugated iron&quot; front panels.</p>\r\n<p><a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=2CVSide2.jpg\" onclick=\"SweetAndSour.getPhoto(\'2CVSide2.jpg\', \'Citroen 2CV\'); return false;\">&lt;&lt; Back</a>', '', 'N', '19990517', 375, 230),
 ('2CVSide2.jpg', 6, '<p><b>Citroen 2CV</b></p>\r\n\r\n<p><a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=2CVFront2.jpg\" onclick=\"SweetAndSour.getPhoto(\'2CVFront2.jpg\', \'Front view of the 2CV\'); return false;\">Front view</a> and\r\npre-war <a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=2CVPrototype2.jpg\"onclick=\"SweetAndSour.getPhoto(\'2CVPrototype2.jpg\', \'2CV Prototype\'); return false;\">prototype</a>\r\n</p>\r\n\r\n<p>Conceived in 1936 as an ultra-simple, ultra-lightweight, ultra-comfortable car for farmers and the masses, the 2CV concept also called for low running costs, low repair costs and the ability to carry four passengers. Pierre Boulanger\'s design brief envisioned \"4 wheels under an umbrella\" and the ability to \"... cross a ploughed field without breaking any eggs carried in a basket.\" Production of the car started on 2nd September 1939, only to be halted by a minor political disagreement the following day - World War II.</p>\r\n\r\n<p>Perhaps fortunately for Citroën, development of the car continued during the war, and radical changes were made before the car hit the public at the Paris Show, 1949. The 2CV went on to become one of the most enduring vehicles ever, continuing unabated until 1990, when production finished in Portugul.</p>\r\n\r\n<p>Early models had a 375cc engine developing - count them - nine horsepower (6.7 kW) but over the years, engine capacity and power gradually increased eventually reaching 602cc and 32 hp (24 kW).</p>\r\n<p><a onclick=\"SweetAndSour.getPhoto(\'CCVSideLg.jpg\', \'Chrysler CCV\'); return false;\" href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=CCVSideLg.jpg&altText=Chrysler+CCV\">&lt;&lt; Back</a></p>', '', 'N', '19990519', 300, 147),
-('Aerial2.jpg', 12, '<p>This photo from the US Geological Survey was taken from a <a target=\"_blank\" href=\"http://www.terraserver.microsoft.com\">site</a> that has photographs of most of America and some places in other countries.  The arrow marks where we live.  It appears that this photo was taken from an aeroplane, not a satellite. Denver residents may be interested to see this picture of <a onclick=\"SweetAndSour.getPhoto(\'Downtown.jpg\', \'\'); return false;\" href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=downtown.jpg\">downtown</a> (95k).</p>\r\n<p>[Nov 2008 update: with aerial views available from Mapquest, Yahoo Maps and Google Maps, this isn\'t so special now. In fact, check out the &quot;bird\'s eye&quot; view on <a target=\"_blank\" href=\"http://maps.live.com\">maps.live.com</a>.]\r\n\r\n<p>For something really impressive, have a look at <a href=\"http://www.spaceimaging.com\">Space Imaging\'s web site</a> and look at samples from their IKONOS satellite that has a 1m resolution.</p>', '', 'N', '19991027', 400, 400),
+('Aerial2.jpg', 12, '<p>[2020 update: Note that this photo was from 1999, six years before Google Maps launched and made aerial/satellite views commonplace. At the time this seemed remarkable. At the time I was considering <a class=\"external darkBg\" href=\"https://en.wikipedia.org/wiki/Kite_aerial_photography\">kite aerial photography</a> using a shutter release mechanism based on a melting ice cube! However I never got that far and it was soon apparent that it was aerial photography was available by other means.]</p>\r\n<p>This photo from the US Geological Survey was taken from a <a target=\"_blank\" href=\"http://www.terraserver.microsoft.com\">site</a> that has photographs of most of America and some places in other countries.  The arrow marks where we live.  It appears that this photo was taken from an aeroplane, not a satellite. Denver residents may be interested to see this picture of <a onclick=\"SweetAndSour.getPhoto(\'Downtown.jpg\', \'\'); return false;\" href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=downtown.jpg\">downtown</a> (95k).</p>\r\n<p>[Nov 2008 update: with aerial views available from Mapquest, Yahoo Maps and Google Maps, this isn\'t so special now. In fact, check out the &quot;bird\'s eye&quot; view on <a target=\"_blank\" href=\"http://maps.live.com\">maps.live.com</a>.]\r\n\r\n<p>For something really impressive, have a look at <a href=\"http://www.spaceimaging.com\">Space Imaging\'s web site</a> and look at samples from their IKONOS satellite that has a 1m resolution.</p>', '', 'N', '19991027', 400, 400),
 ('3sisters2.jpg', 11, '<p>The Blue Mountains to the west of Sydney take their name from the blue tinge in the air due to the eucalyptus oil from all the trees. </p>\r\n\r\n<p>Actually they are not really mountains at all but a deeply eroded plateau with sheer cliffs forming huge gorges.  Indeed, the mountains were thought to be impenetrable and were not crossed until 1813, 25 years after the colony was founded.  The \"mountains\" are not very high at about 1000 m (3300 ft). </p>\r\n\r\n<p>Seen here are the \"Three Sisters\" a trio of rocky outcrops just outside Katoomba.</p>', '', 'N', '19991114', 560, 554),
 ('Alligator2.jpg', 26, '<p>A 6 foot (2 m) alligator enjoys a rest on a boat ramp in the Everglades National Park.  I thought Lan was too close.</p>', '', 'N', '20000117', 750, 510),
 ('LanChild1.jpg', 2, 'An early photo showing Lan\'s grandparent\'s family.  Lan\'s grandmother had 18 children!.', 'LanChild2.jpg', 'N', '19990510', 148, 100),
@@ -352,7 +355,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('Z600View3.jpg', 6, '<p>Note the rear window, commonly compared with a television screen.</p>\r\n\r\n<p>See the <a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=Z600View2.jpg\">front view</a></p>\r\n\r\n<p><a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=Z600View1.jpg&forceCapBelow=true\">Back</a> to Honda Zot main page.', '', 'N', '19990518', 375, 241),
 ('NissanPulsar2.jpg', 6, '<p>I came to like this car more and more as I fixed more and more. It was a really nice car by the time it was sold with 225,000 km.</p>\r\n\r\n<p>What it really needed was a modern fuel-injected engine.  I used to find that on cold mornings I needed to start the car and then go back inside to brush my teeth before heading to work as it wouldn\'t make it up the driveway when completely cold.</p>', '', 'N', '19990510', 375, 255),
 ('EV1big.jpg', 6, '', '', 'N', '19990518', 375, 250),
-('Prius2.jpg', 6, '<p>The Toyota Prius has sole reasonably well in the US and but has not been available as a hatchback.  However, the <a href=\"http://www.toyota.com/prius/minisite/index.html\r\n\r\n\">2004 model</a> is which makes it perhaps the most desirable vehicle anywhere.</p>', '', 'N', '20070828', 583, 300),
+('Prius2.jpg', 6, '<p>The original Toyota Prius sold reasonably well in the US and but has not been available as a hatchback.  However, the <a href=\"http://www.toyota.com/prius/minisite/index.html\r\n\r\n\">2004 model</a> is which makes it perhaps the most desirable vehicle anywhere.</p>', '', 'N', '20070828', 583, 300),
 ('Necar4_1.jpg', 6, 'NeCar4', 'Necar4_2.jpg', 'N', '19990518', 150, 101),
 ('BMWZ13side1.jpg', 6, 'BMW Z13', 'BMWZ13side2.jpg', 'N', '19990518', 150, 65),
 ('EV1sm.jpg', 6, 'GM EV1', 'EV1big.jpg', 'N', '19990518', 150, 100),
@@ -360,7 +363,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('MUM500sm.jpg', 6, 'Mitsubishi MUM500', 'MUM500big.jpg', 'N', '19990518', 150, 107),
 ('CCVSideSm.jpg', 6, 'Chrysler CCV', 'CCVSideLg.jpg', 'N', '19990518', 150, 76),
 ('CCVFrontLg.jpg', 6, '<a onclick=\"SweetAndSour.getPhoto(\'CCVSideLg.jpg\', \'Chrysler CCV\'); return false;\" href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=CCVSideLg.jpg&altText=Chrysler+CCV\">&lt;&lt; Back</a>', '', 'N', '19990517', 375, 236),
-('CCVSideLg.jpg', 6, '<p style=\"clear:both\" class=\"text\"><b>Chrysler CCV</b></p>\r\n\r\n<p class=\"text\">Take a look at the <a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=CCVFrontLg.jpg\" onclick=\"SweetAndSour.getPhoto(\'CCVFrontLg.jpg\', \'CCV front view\'); return false;\">front view</a> and compare with the <a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=2CVSide2.jpg\" onclick=\"SweetAndSour.getPhoto(\'2CVSide2.jpg\', \'Citroen 2CV\'); return false;\">Citroen 2CV</a>.</p>\r\n\r\n<p class=\"text\">Cost Reductions:</p>\r\n<ul>\r\n	<li>Requires 6.5 hours to build a car vs.19 hours to build a Neon \r\n	<li>Plant investment is less than $300 million, about one-third typical investment for assembly, stamping and engine plants combined \r\n	<li>Eliminates the need for a satellite stamping plant and engine plant \r\n	<li>Minimum number of parts/components (1,100 compared to 4,000 in conventional car) \r\n	<li>Eliminates $350 million in the cost of the paint shop, including regulatory costs \r\n	<li>Tooling costs reduced by 33 percent \r\n	<li>Cost of the composite is less than $3.30 per kilogram ($1.50 per pound). Other types of composites used in automotive are between $11 and $22 a kilogram ($5 and $10 a pound) \r\n</ul>\r\n\r\n<table cellspacing=\"1\" width=\"550\">\r\n<tr>\r\n<th scope=\"row\">Estimated Fuel Economy:</th>\r\n<td>4.7 L/100 km/50 mpg city</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Engine:</thd>\r\n<td>0.8L 2-cylinder, overhead-valve, air-cooled</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Transmission:</th>\r\n<td>Four-speed manual</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Frame:</th>\r\n<td>Full-steel</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Brakes:</th>\r\n<td>Manual disc/drum</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Suspension:</th>\r\n<td>Independent front and rear</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Ground Clearance:</th>\r\n<td>203-mm/8 inches</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Turning:</th>\r\n<td>10-meters/33-feet</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Payload:</th>\r\n<td>363 kg/800 pounds</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Curb Weight:</th>\r\n<td>544 kg/1,200 pounds</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Parts:</th>\r\n<td>1,100\r\n</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">0 - 30 mph:</th>\r\n<td>6 sec.</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">0 - 60 mph:</th>\r\n<td>25 sec.</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Top Speed:</th>\r\n<td>115 kph/70 mph</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Price:</th>\r\n<td>About 10,800 DM ($6,000 U.S. dollars)</td>\r\n</tr>\r\n</table>\r\n', '', 'N', '19990518', 550, 279),
+('CCVSideLg.jpg', 6, '<p class=\"text\">Take a look at the <a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=CCVFrontLg.jpg\" onclick=\"SweetAndSour.getPhoto(\'CCVFrontLg.jpg\', \'CCV front view\'); return false;\">front view</a> and compare with the <a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=2CVSide2.jpg\" onclick=\"SweetAndSour.getPhoto(\'2CVSide2.jpg\', \'Citroen 2CV\'); return false;\">Citroen 2CV</a>.</p>\r\n\r\n<p class=\"text\">Cost Reductions:</p>\r\n<ul>\r\n	<li>Requires 6.5 hours to build a car vs.19 hours to build a Neon \r\n	<li>Plant investment is less than $300 million, about one-third typical investment for assembly, stamping and engine plants combined \r\n	<li>Eliminates the need for a satellite stamping plant and engine plant \r\n	<li>Minimum number of parts/components (1,100 compared to 4,000 in conventional car) \r\n	<li>Eliminates $350 million in the cost of the paint shop, including regulatory costs \r\n	<li>Tooling costs reduced by 33 percent \r\n	<li>Cost of the composite is less than $3.30 per kilogram ($1.50 per pound). Other types of composites used in automotive are between $11 and $22 a kilogram ($5 and $10 a pound) \r\n</ul>\r\n\r\n<table cellspacing=\"1\" width=\"550\">\r\n<tr>\r\n<th scope=\"row\">Estimated Fuel Economy:</th>\r\n<td>4.7 L/100 km/50 mpg city</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Engine:</thd>\r\n<td>0.8L 2-cylinder, overhead-valve, air-cooled</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Transmission:</th>\r\n<td>Four-speed manual</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Frame:</th>\r\n<td>Full-steel</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Brakes:</th>\r\n<td>Manual disc/drum</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Suspension:</th>\r\n<td>Independent front and rear</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Ground Clearance:</th>\r\n<td>203-mm/8 inches</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Turning:</th>\r\n<td>10-meters/33-feet</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Payload:</th>\r\n<td>363 kg/800 pounds</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Curb Weight:</th>\r\n<td>544 kg/1,200 pounds</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Parts:</th>\r\n<td>1,100\r\n</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">0 - 30 mph:</th>\r\n<td>6 sec.</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">0 - 60 mph:</th>\r\n<td>25 sec.</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Top Speed:</th>\r\n<td>115 kph/70 mph</td>\r\n</tr>\r\n<tr>\r\n<th scope=\"row\">Price:</th>\r\n<td>About 10,800 DM ($6,000 U.S. dollars)</td>\r\n</tr>\r\n</table>\r\n', '', 'N', '19990518', 550, 279),
 ('CCVPartsSm.gif', 6, 'Four plastic mouldings make up the body.', 'CCVPartsLg.gif', 'N', '19990518', 150, 122),
 ('CCVPartsLg.gif', 6, '', '', 'N', '19990518', 375, 305),
 ('MUM500big.jpg', 6, '<p><b>Mitsubishi MUM500</b></p>\r\n<p>This car is of similar size to the Mercedes Smart car but I think this one is much prettier.</p>\r\n\r\n<table cellspacing=\"0\" width=\"522\">\r\n<tr>\r\n<th>Year:</th>\r\n<td>1993</td>\r\n</tr>\r\n<tr>\r\n<th>Seating capacity:</th>\r\n<td>2</td>\r\n</tr>\r\n<tr>\r\n<th>Engine capacity:</th>\r\n<td>500 cc</td>\r\n</tr>\r\n<tr>\r\n<th>Power:</th>\r\n<td>30 hp (22 kW)</td>\r\n</tr>\r\n<tr>\r\n<th>Transmission:</th>\r\n<td>Automatic</td>\r\n</tr>\r\n<tr>\r\n<th>Length:</th>\r\n<td>2570 mm</td>\r\n</tr>\r\n<tr>\r\n<th>Width:</th>\r\n<td>1395 mm</td>\r\n</tr>\r\n<tr>\r\n<th>Height:</th>\r\n<td>1500 mm</td>\r\n</tr>\r\n<tr>\r\n<th>Weight:</th>\r\n<td>450 kg</td>\r\n</tr>\r\n</table><br>', '', 'N', '19990518', 522, 374),
@@ -438,10 +441,10 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('GladesvilleBridge1.jpg', 11, 'Sydney has two other spectacular bridges as well as the Harbour Bridge.  One is the Gladesville Bridge ...', 'GladesvilleBridge2.jpg', 'N', '19991114', 150, 98),
 ('GladesvilleBridge2.jpg', 11, '<p>At the time it was built in the middle 1960s, the Gladesville Bridge was the longest concrete in the world.  It was built to allow oil tankers to pass underneath to reach a dock just upstream but the facility has since been closed.</p>\r\n\r\n<p>The Gladesville Bridge is the second major harbour crossing, the first, of course, being the Harbour Bridge which is about 10 km further east.</p>', '', 'N', '19991114', 438, 287),
 ('GlebeIslandConst.jpg', 11, '<p>This dramatic shot shows the Glebe Island Bridge during construction but fairly close to completion, at least on this, the western side.  The main span of this \"cable stay\" bridge is 345 m (1130 ft).</p>', '', 'N', '19991114', 500, 254),
-('GlebeIsland1.gif', 11, '... and this one, the fairly new Glebe Island Bridge.', 'GlebeIslandConst.jpg', 'N', '19991114', 150, 95),
-('3sisters1.jpg', 11, 'The \"Three Sisters\", a trio of rocky outcrops in the Blue Mountains to the west of Sydney.', '3sisters2.jpg', 'N', '19991113', 150, 102),
-('House1.jpg', 11, 'This is our house in Sydney as seen from the garden. The road is up a long, steep driveway behind the house.  ', 'House2.jpg', 'N', '19990520', 150, 102);
+('GlebeIsland1.gif', 11, '... and this one, the fairly new Glebe Island Bridge.', 'GlebeIslandConst.jpg', 'N', '19991114', 150, 95);
 INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFullSize`, `version`, `width`, `height`) VALUES
+('3sisters1.jpg', 11, 'The \"Three Sisters\", a trio of rocky outcrops in the Blue Mountains to the west of Sydney.', '3sisters2.jpg', 'N', '19991113', 150, 102),
+('House1.jpg', 11, 'This is our house in Sydney as seen from the garden. The road is up a long, steep driveway behind the house.  ', 'House2.jpg', 'N', '19990520', 150, 102),
 ('House2.jpg', 11, '<p>This is our house in Sydney.  Keeping the garden under control is a constant battle, one that I don\'t enjoy fighting.  When we bought the house, it had been neglected for several years and the \"garden\" featured chest-high weeds and piles of cut-up trees from a big storm that swept though in 1990 (?).  We removed 6 tonnes of rubbish!</p>', '', 'N', '19990510', 375, 255),
 ('Cockatoo1.jpg', 11, 'We live in a part of Sydney with lots of big trees and there are lots of native birds such as this cockatoo.  They are very noisy and chew timber window frames!', 'Cockatoo2.jpg', 'N', '19990520', 150, 102),
 ('Taronga2.jpg', 11, '<p>Taronga Park Zoo has a wonderful location on the northern side of the harbour overlooking the city.  Feries are the best way to get to the zoo and many other places around the harbour.  This \"hefalump\" (or elephant if you haven\'t read \r\n<i>Winnie the Pooh</i>) looks a little bored though.</p>', '', 'N', '19991114', 320, 905),
@@ -487,10 +490,10 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('ScottAtOne2.jpg', 5, '<p>Too tired to lie down.</p>', '', 'N', NULL, NULL, NULL),
 ('AntheaAtOne1.jpg', 5, 'Anthea', 'AntheaAtOne2.jpg', 'N', NULL, NULL, NULL),
 ('JakeAtFour2.jpg', 5, '', '', 'N', NULL, NULL, NULL),
-('IsraelMap2.jpg', 7, '', '', 'N', '20010217', 350, 753),
+('IsraelMap.jpg', 7, 'Click for the current map from the CIA.', '', 'N', '20010217', 150, 323),
 ('Partition2.jpg', 7, '', '', 'N', '20010217', 780, 1530),
 ('KidsWeLove2.jpg', 5, '<p>This picture was taken in Adelaide at Lan\'s parent\'s house in August 1998. From left: HoangAnh, Khang, Lan\'s sister Linh, Lan holding Thinh, Samual being held by his mother, Lan\'s sister Nhung.  Chau is at the front leaning on the table, Ngoc is in yellow.</p>', '', 'N', NULL, NULL, NULL),
-('Settlements2.gif', 7, '', '', 'N', '20010217', 780, 1040),
+('Settlements.gif', 7, 'Settlements everywhere! Click to see the original <strong>1996</strong> document on the UN site.', '', 'N', '20010217', 150, 200),
 ('FrozenMist2.jpg', 4, '<p>Arches National Park was cold and misty the day we visited.  This plant has been covered by tiny droplets of mist which have then frozen.  It looked like a plant made of ice crystals.   Pretty.</p>', '', 'N', '19990510', 550, 373),
 ('GeneralMotors2.jpg', 14, '<p>Detroit is of course the center of the American car industry.</p>', '', 'N', '19990529', 375, 255),
 ('GoldenGateFog2.jpg', 18, '<p>The Golden Gate bridge as we saw it - or didn\'t see it.  You can see the roadway leading to the bridge on the left of the photo but the bridge itself is shrouded by fog.</p>', '', 'N', '19990530', 357, 255),
@@ -544,16 +547,17 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('GuardAtSolvang2.jpg', 18, '', '', 'N', '19990530', 254, 375),
 ('FloridaRoute2.jpg', 26, '<p>We drove 2979 miles (4795 km) in 19 days in a Dodge Neon.  It was a super bargain at $94.99 per week with Dollar rent-a-car.  Actually we only asked for an \"economy\" car which should have been a Hyundai Accent, the replacement for our car.  When we arrived at the airport, we were offered an upgrade to this car, or something even bigger for $5 per day but we said no.  However, when we got out to the lot, the gave us the Neon anyway and there were no Hyundais in the car park.</p>', '', 'N', '20000118', 264, 441),
 ('HollywoodStar2.jpg', 18, '', '', 'N', '19990530', 255, 375),
-('HomeImprovement2.jpg', 7, '<p>Home Improvement:</p>\r\n<p>Wilson is behind the fence, Jill, Tim and Al are in front of the fence and (from left) Mark, Randy and Brad in front.</p>\r\n<p>We love Al.</p>', '', 'N', '19990519', 375, 413),
+('HomeImprovementLg.jpg', 7, '<p>Wilson is behind the fence, Jill, Tim and Al are in front of the fence and (from left) Mark, Randy and Brad in front.</p>\r\n<p>We love Al.</p>', '', 'N', '19990519', 360, 450),
 ('HooverDam2.jpg', 25, '<p>In front of Hoover Dam. Notice how short Lan\'s hair was at that time.</p>', '', 'N', '19990510', 375, 256),
 ('Houseboats2.jpg', 25, '', '', 'N', '19990510', 550, 374),
-('Heidi.jpg', 7, 'I had to include a separate photo of Heidi.  You will notice she was left out of the photo above.  This is the only reason, it has nothing at all to do with her being attractive.', '', 'N', '19990519', 150, 150),
+('HeidiSm.jpg', 7, 'Heidi.', 'HeidiLg.jpg', 'N', '19990519', 98, 150),
+('HeidiLg.jpg', 7, '<p>I had to include a separate photo of Heidi, whose real name is Debbie Dunning, as you will notice she was left out of the photo above.  This is the only reason, it has nothing at all to do with her being attractive.</p>\r\n<p>[2020 update: This page was one of the first I created for the site and dates from May 1999, a time of 28 and 56k modems. At the time the only photo I could find of her was thumbnail size - and b so I found a new one.]</p>', '', 'N', '19990519', 736, 1124),
 ('FinancialSuccess.png', 7, '', '', 'N', NULL, NULL, NULL),
 ('Goodies1.jpg', 7, '&quot;Goodie, goodie, yum, yum&quot;', 'Goodies2.jpg', 'N', '19990519', 150, 92),
 ('AreYouA1.jpg', 7, 'Management.', 'AreYouA2.jpg', 'N', '19990519', 150, 100),
 ('AreYouC1.jpg', 7, 'The floor staff to ask \"Are you being served?\"', 'AreYouC2.jpg', 'N', '19990519', 150, 112),
 ('DadsArmy1.jpg', 7, 'A few brave men.', 'DadsArmy2.jpg', 'N', '19990519', 150, 54),
-('HomeImprovement1.jpg', 7, 'The Home Improvement team&emsp;with the exception of the ToolTime girl.', 'HomeImprovement2.jpg', 'N', '19990519', 150, 165),
+('HomeImprovementSm.jpg', 7, 'The Home Improvement team&mdash;with the exception of the ToolTime girl.', 'HomeImprovementLg.jpg', 'N', '19990519', 121, 150),
 ('Hyundai2.jpg', 15, '<p>Our little car, a 1991 Hyundai Excel, sitting at the back of townhouse we used to live in.  It is our only car.  Americans see this sort of car as being appropriate only for 16-year- olds and poor people but it\'s been a great car.  We bought it with 26,000 miles on it and we passed 100,000 in October 99.</p>\r\n\r\n<p>We get 40 mpg (5.9 L/100 km) around the city, though about half of that is on urban freeways which helps.  If only it had an air conditioner. </p>\r\n\r\n<p>May 2003 update: To my great surprise, it passed its emissions test. I was hoping it would fail so we could get rid of it.  That meant we needed to fix the horrible squeaking noise in the front-right suspension.  Unfortunately, I thought it was the strut so had them replaced but to my horror, the noise was still there.  I took it back and had them diagnose the problem and they said it would cost $213 so I gave them approval to do it. Then when I went to get the car they said something else had to be replaced so the bill was $333 making a total of $520.  Had I known it would cost this much, we would have given it away and bought something else.  Now we are stuck with it a little longer.  It really needs a new engine as it now blows smoke when you start it but even if that was fixed, it still has no air conditioner, a huge crack in the windscreen and needs new gas struts to hold up the rear hatch.  It is almost up to 150,000 miles of which we have done 123,000 which isn\'t bad for a car that only cost a little more than $3000.</p>', '', 'N', '19990529', 375, 255),
 ('I40NewMexico2.jpg', 25, '', '', 'N', '19990510', 550, 374),
 ('IceFishing2.jpg', 14, '<p>The man in the background is ice fishing.  People go out on to the frozen lakes with a drill perhaps 6\" (15 cm) in diameter, make a hole in the ice and then lower their line.  This is a small lake connected to Lake St Claire.</p>', '', 'N', '19990529', 375, 255),
@@ -605,7 +609,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('Stilts1.jpg', 2, 'Not tall enough.', 'Stilts2.jpg', 'N', '20000819', 102, 150),
 ('RenoRd2.jpg', 2, '<p>I lived at 4610 Reno Rd. Washington DC in 1969 and 1970 when I was 5 and 6.  Here I am shovelling snow on Christmas Day 1969.  It appears that my younger sister wants to join in but I am not willing to share the shovel. </p>', '', 'N', '20000819', 749, 509),
 ('Stilts2.jpg', 2, '<p>The house had rear-lane access and here I am on stilts outside the garage. The shadow on the garage door doesn\'t appear to be me. Whenever it is that I get back to the city, I intend knocking on the door to see if I can have a look around again. One day.</p>', '', 'N', '20000819', 373, 550),
-('VietnameseDress2.jpg', 2, '<p>This photo shows the Vietnamese wedding dress Lan wore at the wedding reception. The girl standing between us is Alanna who acted as an unofficial bridesmaid on the day.</p>\r\n\r\n<p>Here\'s another picture from the <a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&amp;photoName=WeddingRestaurant2.jpg\">reception.</a></p>', '', 'N', '19990510', 254, 375),
+('VietnameseDress2.jpg', 2, '<p>This photo shows the Vietnamese wedding dress Lan wore at the wedding reception. The girl standing between us is Alanna who acted as an unofficial bridesmaid on the day.</p>\r\n\r\n<p>Here\'s another picture from the <a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=WeddingRestaurant2.jpg\">reception.</p>', '', 'N', '19990510', 254, 375),
 ('WeddingRestaurant2.jpg', 2, '<p>For the reception at the Yum Sing Chinese Restaurant in Sydney\'s Chinatown, Lan changed into a traditional Vietnamese wedding dress. </p>\r\n\r\n<p>The other people in the photo are Tim J. plus Jane and Andrew L.</p>\r\n\r\n<p>Back to <a href=\"../whoweare/index.php\">who we are</a>,/p>', '', 'N', '19990510', 375, 255),
 ('WeddingCake2.jpg', 2, '<p>The cake is a French-style \"croquembouche\" made up of profiteroles and \"glued\" together with toffee.  The whole thing was about 80 cm tall and looked most impressive.  Actually, it was hollow so it wasn\'t quite as impressive as it appears but there is no way that even 130 people could have eaten it if it were solid.</p>', '', 'N', '19990510', 255, 375),
 ('WeddingChurch2.jpg', 2, '', '', 'N', '20080511', 398, 585),
@@ -715,7 +719,8 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('QueenMary1.jpg', 18, '', 'QueenMary2.jpg', 'N', '19990531', 150, 102),
 ('UniversalStudios1.jpg', 18, '', 'UniversalStudios2.jpg', 'N', '19990531', 150, 107),
 ('HollywoodStar1.jpg', 18, '', 'HollywoodStar2.jpg', 'N', '19990531', 102, 150),
-('MissionStBarbara1.jpg', 18, 'Mission Santa Barbara', 'MissionStBarbara2.jpg', 'N', '19990531', 150, 102),
+('MissionStBarbara1.jpg', 18, 'Mission Santa Barbara', 'MissionStBarbara2.jpg', 'N', '19990531', 150, 102);
+INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFullSize`, `version`, `width`, `height`) VALUES
 ('GuardAtSolvang1.jpg', 18, 'Guard at Solvang.', 'GuardAtSolvang2.jpg', 'N', '19990531', 102, 150),
 ('CableCar1.jpg', 18, '', 'CableCar2.jpg', 'N', '19990531', 150, 102),
 ('GoldenGateSun1.jpg', 18, '', 'GoldenGateSun2.jpg', 'N', '19990531', 150, 102),
@@ -724,8 +729,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('JapaneseGardens1.jpg', 18, '', 'JapaneseGardens2.jpg', 'N', '19990531', 150, 107),
 ('ChristmasLights1.jpg', 18, 'The best Christmas lights in town are on Xenobia St at about Ellsworth (00 block).', 'ChristmasLights2.jpg', 'N', '19990531', 150, 102),
 ('LanMtRushmore1.jpg', 19, 'Mount Rushmore', 'LanMtRushmore2.jpg', 'N', '19990529', 150, 94),
-('CrazyHorse1.jpg', 19, 'Crazy Horse memorial.', 'CrazyHorse2.jpg', 'N', '19990529', 150, 102);
-INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFullSize`, `version`, `width`, `height`) VALUES
+('CrazyHorse1.jpg', 19, 'Crazy Horse memorial.', 'CrazyHorse2.jpg', 'N', '19990529', 150, 102),
 ('MenAtWork1.jpg', 19, 'Men working on Crazy Horse.', 'MenAtWork2.jpg', 'N', '19990529', 102, 150),
 ('BadlandsSDakota1.jpg', 19, 'The Badlands', 'BadlandsSDakota2.jpg', 'N', '19990510', 150, 102),
 ('PetrifiedLog1.jpg', 19, '', 'PetrifiedLog2.jpg', 'N', '19990529', 101, 150),
@@ -797,7 +801,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('SaturnV1.jpg', 26, 'Saturn V rocket at Kennedy Space Center.', 'SaturnV2.jpg', 'N', '20000126', 150, 102),
 ('SpaceKennedy1.jpg', 26, 'Big smiles for the camera - Khanh, Tuyet and Lan at KSC.', 'SpaceKennedy2.jpg', 'N', '20000203', 150, 102),
 ('Poinsettia1.jpg', 26, 'A rare picture with both of us, taken aat Cypress Gardens.', 'Poinsettia2.jpg', 'N', '20000118', 150, 102),
-('AcrobatIcon_Ltr13.gif', 26, 'Printer-friendly version in Acrobat format (472kb). If you don\'t have the Acrobat reader, you can get it free from <a href=\"http://www.adobe.com/products/acrobat/readstep2.html\" target=\"_blank\">Adobe</a>.', '', 'N', '20010304', 36, 35),
+('AcrobatIcon_Ltr13.gif', 26, 'Printer-friendly version (PDF, 472kb). ', '', 'N', '20010304', 36, 35),
 ('Passport1.jpg', 27, 'A new stamp in Lan\'s passport.', 'Passport2.jpg', 'N', '20010304', 150, 155),
 ('LanAndXuan1.jpg', 27, 'Lan and Xuan in the gardens.', 'LanAndXuan2.jpg', 'N', '20010306', 150, 102),
 ('SearsTower1.jpg', 27, 'Sears Tower', '', 'N', '20010306', 150, 222),
@@ -809,9 +813,9 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('RockyMtnNP1.jpg', 28, 'Rocky Mountain National Park', 'RockyMtnNP2.jpg', 'N', '20020817', 150, 103),
 ('IceFountain1.jpg', 28, 'It was very cold for a week in February turning fountains into ice sculptures. The tallest mound is about 5m high.', 'IceFountain2.jpg', 'N', '20020817', 150, 104),
 ('IceFountain2.jpg', 28, '<p>COOL!</p>', '', 'N', '20020817', 750, 523),
-('AcrobatIcon_Ltr14.gif', 27, 'Printer-friendly version in Acrobat format (167kb). If you don\'t have the Acrobat reader, you can get it free from <a href=\"http://www.adobe.com/products/acrobat/readstep2.html\" target=\"_blank\">Adobe</a>.', '', 'N', '20010304', 36, 35),
-('AcrobatIcon_Ltr15.gif', 28, 'Printer-friendly version in Acrobat format (251kb). If you don\'t have the Acrobat reader, you can get it free from <a href=\"http://www.adobe.com/products/acrobat/readstep2.html\" target=\"_blank\">Adobe</a>.', '', 'N', '20010304', 36, 35),
-('AcrobatIcon_Ltr16_A4.gif', 29, 'Printer-friendly version in Acrobat format (600kb) formatted for A4 size paper (the world except America).', '', 'N', '20010304', 36, 35),
+('AcrobatIcon_Ltr14.gif', 27, 'Printer-friendly version (PDF, 167kb).', '', 'N', '20010304', 36, 35),
+('AcrobatIcon_Ltr15.gif', 28, 'Printer-friendly version (PDF, 251kb).', '', 'N', '20010304', 36, 35),
+('AcrobatIcon_Ltr16_A4.gif', 29, 'Printer-friendly version (PDF, 600kb).', '', 'N', '20010304', 36, 35),
 ('USMap1.gif', 28, 'Long way home.', 'USMap2.gif', 'N', '20020724', 150, 99),
 ('USMap2.gif', 28, '', '', 'N', '20020724', 500, 329),
 ('CathedralNO2.jpg', 28, '<p>St Louis cathedral was completed 1794 but the Spanish style was changed in the 1850s with the addition of steeples. The man on the horse is Andrew Jackson, leader of the American forces in the Battle of New Orleans and later, Americas seventh president.</p>', '', 'N', '20020817', 687, 872),
@@ -865,7 +869,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('AvignonBridge2.jpg', 29, '<p>Just 4 of the original 22 arches remain (the first is over the road). The structure between the second and third arches is a chapel.</p>\r\n<p>The day we visited, the road lane closest to the water was fenced off because minor flooding had dumped silt all over it.  It was cold and very windy on the bridge making it extremely uncomfortable to stand outside while listening to the commentary on the electronic guide.</p>\r\n<p>If I remember correctly, the guide said that in the Middle Ages, barges weighing as much as 600 tons were dragged up the river by huge teams of horses taking 26 days to reach Lyon from the Mediterranean but only 4 days to get back down again.  I don\'t understand how the boats going downstream were controlled since allowing them to float with the current would send them scraping along the bank and they would get stuck on shallow sections.  Passing other boats going the opposite way must have been tricky.</p>', '', 'N', '20030703', 780, 463),
 ('BayeuxTapestry1.jpg', 29, 'Bayeux Tapestry', 'BayeuxTapestry2.jpg', 'N', '20030708', 150, 102),
 ('BayeuxTapestry2.jpg', 29, '<p>Here, hapless Harold swears on the relics of saints that he will hand over the crown to William who bailed him out of trouble. </p>\r\n<p>The context was that the current king, Edward the Confessor, was old and ailing but left no children. Three men believed they had claim to it of which the two strongest were Harold, Edward\'s brother-in-law and advisor, and William the Duke of Normandy.  Edward specified that Harold was to succeed him and told Harold to go tell William the news.</p>\r\n<p>Unfortunately, the boat Harold crossed the English Channel in was blown off-course by a storm and into unfriendly territory. Harold was taken prisoner.  William heard the news and came to pay a ransom to win Harold\'s freedom but that meant that Harold was now in William\'s debt. Having limited options, Harold agrees to give up the crown allow William to become king.</p>\r\n<p>Edward dies but Harold, now back in England, ignores his earlier promises and becomes king. William hears the news and raises an army to sail to England to win it back. Harold\'s forces, just returning from repelling a Viking invasion led by the third claimant to the Crown are defeated at the Battle of Hastings in 1066 and William becomes William the Conqueror.</p>\r\n<p><a href=\"http://www.ibiscom.com/bayeux.htm\" target=\"_blank\" class=\"external\">Full details</a>. There is also a complete copy in Reading, England and the website for this piece gives a <a href=\"http://www.bayeuxtapestry.org.uk/BayeuxContents.htm\" target=\"_blank\" class=\"external\">scene-by-scene narrative</a>.</p>', '', 'N', '20030703', 780, 529),
-('CanalDuMidi1.jpg', 29, 'Canal do Midi', 'CanalDuMidi2.jpg', 'N', '20030708', 150, 124),
+('CanalDuMidi1.jpg', 29, 'Canal du Midi', 'CanalDuMidi2.jpg', 'N', '20030708', 150, 124),
 ('CanalDuMidi2.jpg', 29, '<p>The Canal du Midi as it passes over the River Orb. This photo is from a postcard as the canal is drained of water during winter. A series of 8 locks is nearby as is a modern innovation: an inclined trough with a moving \"dam\" at the downhill end that pushes a triangle of water uphill taking floating boats with it.</p>\r\n<p>I read somewhere on the internet that this aquaduct was not part of the original construction but the canal and river water were allowed to mix, in which case, there must have been one or two extra locks to raise and lower the boats to the level of the surrounding plain.</p>', '', 'N', '20030703', 780, 644),
 ('Carcassone1.jpg', 29, 'Carcassonne', 'Carcassone2.jpg', 'N', '20030708', 150, 103),
 ('Carcassone2.jpg', 29, '<p>The walled city of Carcassonne.</p>\r\n<p>Though the earlier defenses succeeded at holding back Charlamagne i the 9th Century, they did not stop the Albigensian Crusaders from capturing the town in the 13th.  The greatest vulnerability of the city was that the water supply was outside the wall and the Crusaders were able to deny residents access.  They did the same at nearby Minerve, another town thought to be impregnable, though its defences were natural rather than constructed.</p>', '', 'N', '20030703', 780, 534),
@@ -898,7 +902,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('OmahaBeach1.jpg', 29, 'Omaha Beach', 'OmahaBeach2.jpg', 'N', '20030708', 150, 86),
 ('OmahaBeach2.jpg', 29, '<p>The memorial at Omaha Beach.</p>\r\n<p>I was surprised by the relatively gentle slope of the land behind the beach. I can\'t see that ladders or ropes would have been required here. It was even flatter to the east where the British and Canadians landed.  If you saw <i>Saving Private Ryan</i>, that was set on Utah Beach which is the next beach to the west and the ground behind the beach is apparently much steeper. Of course, the slope would not have been much of a concern were it not for the machine guns, mines and barbed wire.</p>', '', 'N', '20030703', 780, 445),
 ('PontDuGard1.jpg', 29, 'Pont du Gard', 'PontDuGard2.jpg', 'N', '20030708', 150, 103),
-('PontDuGard2.jpg', 29, '<p>Compare this aquaduct in France with the one at <a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=SegoviaAquaduct2.jpg\">Segovia</a> in Spain that Lan saw in 1996.', '', 'N', '20030703', 780, 533),
+('PontDuGard2.jpg', 29, '<p>Compare this aquaduct in France with the one at <a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&amp;photoName=SegoviaAquaduct2.jpg\">Segovia</a> in Spain that Lan saw in 1996.</p>', '', 'N', '20030703', 780, 533),
 ('QuintaTheDog1.jpg', 29, 'Quinta the dog.', 'QuintaTheDog2.jpg', 'N', '20030708', 109, 150),
 ('QuintaTheDog2.jpg', 29, '<p>With Quinta, our favorite four-legged friend at Jaap and Dorien\'s house. Note the security blanket. I normally don\'t like domestic animals in general and dobs in particular but Quinta as indeed special.</p>\r\n<p>We went for a walk in the woods with Jaap and Quinta on the day we arrived and were amused to hear that when Jaap has company like us, Quinta will run well out of site and reappear after a minute or so but when Jaap is by himself, Quinta will stay close by. Quinta presumably figures that Jaap needs protection, or perhaps will get lost without someone or something to guide him home.</p>', '', 'N', '20030708', 423, 580),
 ('SommeTrenches1.jpg', 29, 'Trenches at the site of the Battle of the Somme.', 'SommeTrenches2.jpg', 'N', '20030708', 150, 81),
@@ -921,7 +925,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('Villandry2.jpg', 29, '<p>The nine square gardens in front of the house are planted with colored vegetables, particularly cabbages. Even at the start of winter, the garden was colorful.</p>\r\n<p><a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=VillandryHedges2.jpg\">Hedge garden</a>.<br>\r\n The prettiest <a href=\"../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=VillandryShed2.jpg\">toolshed</a> in Europe.</p>', '', 'N', '20030713', 780, 479),
 ('VillandryHedges2.jpg', 29, '<p>I read that there are 52km/32 miles of hedges on the grounds.</p>', '', 'N', '20030710', 780, 500),
 ('VillandryShed2.jpg', 29, '<p>In fact, this eleborate garden toolshed was in a terrible state of disrepair. You\'ll notice that only one shutter hangs over the false window to the right. Everything else on the property was beautifully cared for so this seemed a strange anomaly.</p>', '', 'N', '20030710', 780, 562),
-('AcrobatIcon_Ltr16_Ltr.gif', 29, 'Printer-friendly version in Acrobat format (600kb) formatted for letter size paper (America only).<br><br>If you don\'t have the Acrobat reader, you can get it free from <a href=\"http://www.adobe.com/products/acrobat/readstep2.html\" target=\"_blank\">Adobe</a>.', '', 'N', '20010304', 36, 35),
+('AcrobatIcon_Ltr16_Ltr.gif', 29, 'Printer-friendly version (PDF, 600kb).', '', 'N', '20010304', 36, 35),
 ('FranceMap1.gif', 29, 'Trip route.', '', 'N', '20030708', 131, 150),
 ('LanWithWAndM1.jpg', 2, 'Lan in 1981 with two special people.', 'LanWithWAndM2.jpg', 'N', '20030711', 102, 150),
 ('LanWithWAndM2.jpg', 2, '<p>Lan in 1981 with Willemjin and Maarten. Their mother Dorien came to the refugee camp in Singapore to teach English and French and took Lan home from time to time.</p>\r\n\r\n<p>Lan\'s clothes were provided by the United Nations High Commissioner for Refugees and you can see the trousers don\'t fit. She looks older here than she did when we were married ten years later.</p>', '', 'N', '20030711', 395, 580),
@@ -960,15 +964,15 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('99Escort1.jpg', 30, '99 Ford Escort. Loaded. There was still room for several toothpicks if carefully placed.', '99Escort2.jpg', 'N', '20050329', 150, 80),
 ('99Escort2.jpg', 30, '', '', 'N', '20050329', 980, 522),
 ('debateBulge1.jpg', 30, '&quot;Hey Karl, what&rsquo;s the frequency?&quot;', 'debateBulge2.jpg', 'N', '20050329', 100, 150),
-('debateBulge2.jpg', 30, '<p>There is reasonably compelling evidence that Mr Bush was coached during the first two debates with Mr Kerry. If so, what the American public saw was a fraud. There is <i>something</i> under his jacket and the best explanation the White House could manage was a poorly tailored suit. Here are the <a href=\"http://www.theregister.co.uk/2004/10/12/bush_wireless_coaching/\" target=\"_blank\" class=\"external\">details</a>. ', '', 'N', '20050327', 184, 275),
+('debateBulge2.jpg', 30, '<p>There is reasonably compelling evidence that Mr Bush was coached during the first two debates with Mr Kerry. If so, what the American public saw was a fraud. There is <i>something</i> under his jacket and the best explanation the White House could manage was a poorly tailored suit. Here are the <a href=\"http://www.theregister.co.uk/2004/10/12/bush_wireless_coaching/\" target=\"_blank\" class=\"external\">details</a>.</p>', '', 'N', '20050327', 184, 275),
 ('electionMap1.jpg', 30, 'Although created as a joke, this map reflects the painful reality that states that voted Democrat are perhaps culturally closer to Canada than to the states that went Republican.  The map of <a target=\"_blank\" href=\"http://www.nytimes.com/packages/html/politics/2004_ELECTIONRESULTS_GRAPHIC/\">election results</a>  has an interesting correlation with the map of <a target=\"_blank\" href=\"http://www.learner.org/biographyofamerica/prog10/maps/\">&quot;free states&quot; and &quot;slave states&quot;</a> before the Civil War. Make your own judgement of what this means, if anything.', 'electionMap2.jpg', 'N', '20050329', 150, 130),
 ('electionMap2.jpg', 30, '', '', 'N', '20050327', 427, 369),
-('CharlotteEleanor1.jpg', 30, 'Charlotte and Eleanor. I can&rsquo;t recall if Charlotte was pretending to be a monster or if she was just desperate to get away from us.', 'CharlotteEleanor2.jpg', 'N', '20050329', 150, 80),
-('CharlotteEleanor2.jpg', 30, '', '', 'N', '20050329', 978, 522);
+('CharlotteEleanor1.jpg', 30, 'Charlotte and Eleanor. I can&rsquo;t recall if Charlotte was pretending to be a monster or if she was just desperate to get away from us.', 'CharlotteEleanor2.jpg', 'N', '20050329', 150, 80);
 INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFullSize`, `version`, `width`, `height`) VALUES
+('CharlotteEleanor2.jpg', 30, '', '', 'N', '20050329', 978, 522),
 ('PeterBowling1.jpg', 30, 'Still trying to find the correct way to position my tongue when releasing the ball. Nice shoes! Photo credit to Nam.', 'PeterBowling2.jpg', 'N', '20050402', 150, 113),
 ('PeterBowling2.JPG', 30, '', '', 'N', '20050402', 980, 738),
-('AcrobatIcon_Ltr17.gif', 30, 'Printer-friendly version in Acrobat format (686kb). If you don\'t have the Acrobat reader, you can get it free from <a href=\"http://www.adobe.com/products/acrobat/readstep2.html\" target=\"_blank\">Adobe</a>.', '', 'N', '20010304', 36, 35),
+('AcrobatIcon_Ltr17.gif', 30, 'Printer-friendly version (PDF, 686kb).', '', 'N', '20010304', 36, 35),
 ('basement.jpg', 60, 'The basement. The ancient furnace will be replaced in mid-November. The washer and drier connections are in the corner behind the furnace. The furnace installation requires wall penetrations to supply combustion air so while they are at it, they will install a proper drier exhaust vent.', '', 'N', '20051029', 760, 570),
 ('bathroom1.jpg', 60, 'The bathroom. The rack over the toilet was left by the previous tenant in 2721 and is not in the others.', '', 'N', '20051029', 570, 760),
 ('bathroom2.jpg', 60, 'Washbasin and mirror.', '', 'N', '20051029', 570, 760),
@@ -1155,7 +1159,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('ZionNP09sm.jpg', 51, 'Come back in a million years and you might see an arch.', 'ZionNP09lg.jpg', 'N', '20060108', 150, 112),
 ('ZionNP09lg.jpg', 51, '', '', 'N', '20061110', 750, 562),
 ('badHotelsm.jpg', 51, 'Did we really pay $70 for a night at this hotel in Panguitch?', 'badHotellg.jpg', 'N', '20060107', 150, 112),
-('badHotellg.jpg', 51, '', '', 'N', '20050609', 1127, 845),
+('badHotellg.jpg', 51, '', '', 'N', '20060107', 1127, 845),
 ('BryceCanyonNP1sm.jpg', 51, 'In the Queen', 'BryceCanyonNP1lg.jpg', 'N', '20060107', 150, 112),
 ('ZionNP10sm.jpg', 51, 'Rock apparently oozing near the east entrance.', 'ZionNP10lg.jpg', 'N', '20060108', 150, 112),
 ('ZionNP10lg.jpg', 51, '', '', 'N', '20061110', 750, 562),
@@ -1228,7 +1232,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('grandcanyon_18lg.jpg', 53, '<p>The different layers of rock show a range of color from red like this to green-grey to black</p>', '', 'N', '20060119', 750, 563),
 ('grandcanyon_19sm.jpg', 53, 'Pima Point. I think.', 'grandcanyon_19lg.jpg', 'N', '20060119', 150, 113),
 ('grandcanyon_19lg.jpg', 53, '<p>In he shadows, the canyon looked particularly alien, even threatening, to me.</p>', '', 'N', '20060119', 750, 563),
-('grandcanyon_20sm.jpg', 53, 'The view to the bottom from Hermits Rest.', 'grandcanyon_20sm.jpg', 'N', '20060126', 150, 112),
+('grandcanyon_20sm.jpg', 53, 'The view to the bottom from Hermits Rest.', 'grandcanyon_20lg.jpg', 'N', '20060126', 150, 112),
 ('grandcanyon_20lg.jpg', 53, '<p>Now it really was cold. The North Rim forming the horizon is apparently 300m/1000ft higher than where we were on the South Rim.</p>', '', 'N', '20060126', 750, 562),
 ('grandcanyon_21sm.jpg', 53, 'Lan and Sarah by a Juniper pine.', 'grandcanyon_21lg.jpg', 'N', '20060126', 150, 112),
 ('grandcanyon_21lg.jpg', 53, '<p>The trees are beautiful in a twisted way, hanging on to life in tenuous positions.</p>', '', 'N', '20060126', 750, 562),
@@ -1252,7 +1256,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('monumentvalley_02lg.jpg', 53, '<p>The formations are more like ships at sea; a few tall structures surrounded by a featureless plain. It is amazing to think that the top of the monuments used to be the level of the plain but the rest has washed away until reaching a harder layer.</p>', '', 'N', '20060119', 750, 563),
 ('monumentvalley_03sm.jpg', 53, 'Dark and forboding. Just outside Kayente, Arizona.', 'monumentvalley_03lg.jpg', 'N', '20060119', 150, 113),
 ('monumentvalley_03lg.jpg', 53, '<p>This and following pictures were taken on the way home.</p>', '', 'N', '20060119', 750, 563),
-('monumentvalley_04sm.jpg', 53, '', 'monumentvalley_04sm.jpg', 'N', '20060119', 150, 113),
+('monumentvalley_04sm.jpg', 53, '', 'monumentvalley_04lg.jpg', 'N', '20060119', 150, 113),
 ('monumentvalley_04lg.jpg', 53, '<p>That would be a police car ahead. We were traveling within the speed limit anyway, even less perhaps so we could admire the view, so he wasn\'t going to catch us. Of course, the police may have been there on their meal break to admire the view too.</p>', '', 'N', '20060119', 750, 563),
 ('monumentvalley_05sm.jpg', 53, '', 'monumentvalley_05lg.jpg', 'N', '20060119', 150, 113),
 ('monumentvalley_05lg.jpg', 53, '', '', 'N', '20060119', 750, 563),
@@ -1300,9 +1304,9 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('cherry_15sm.jpg', 54, 'So much for that.', 'cherry_15lg.jpg', 'N', '20060409', 150, 113),
 ('cherry_15lg.jpg', 54, '<p>Actually, the band wasn\'t that loud but the Jefferson Memorial wasn\'t exactly a whispering gallery that day.</p>', '', 'N', '20060407', 750, 563),
 ('cherry_16sm.jpg', 54, 'Mr. Jefferson.', 'cherry_16lg.jpg', 'N', '20060409', 150, 113),
-('cherry_16lg.jpg', 54, '<p>Standing very still. He must get cold in winter.</p>', '', 'N', '20060409', 750, 563),
+('cherry_16lg.jpg', 54, '<p>Standing very still. He must get cold in winter.</p>', '', 'N', '20060407', 750, 563),
 ('cherry_17sm.jpg', 54, '&quot;We hold these truths ...&quot;', 'cherry_17lg.jpg', 'N', '20060409', 113, 150),
-('cherry_17lg.jpg', 54, '<p>The preamble to the Declaration of Independence opens with \"We hold these Truths to be self-evident, that all Men are created equal, ...\".\r\n<a href=\"http://en.wikipedia.org/wiki/United_States_Declaration_of_Independence\" target=\"_blank\" class=\"external\">Read all about it</a>. It is one of history\'s great ironies that the man who wrote these words, Thomas Jefferson, was a slave owner.</p>', '', 'N', '20060409', 563, 750),
+('cherry_17lg.jpg', 54, '<p>The preamble to the Declaration of Independence opens with \"We hold these Truths to be self-evident, that all Men are created equal, ...\".\r\n<a href=\"http://en.wikipedia.org/wiki/United_States_Declaration_of_Independence\" target=\"_blank\" class=\"external\">Read all about it</a>. It is one of history\'s great ironies that the man who wrote these words, Thomas Jefferson, was a slave owner.</p>', '', 'N', '20060407', 563, 750),
 ('cherry_18sm.jpg', 54, 'Yes, I was there.', 'cherry_18lg.jpg', 'N', '20060409', 150, 113),
 ('cherry_18lg.jpg', 54, '<p>I tend to spoil photos rather than enhance them as Lan does so I try to stay behind the camera rather than in front of it.</p>', '', 'N', '20060407', 750, 563),
 ('cherry_19sm.jpg', 54, 'Petals on the water!', 'cherry_19lg.jpg', 'N', '20060409', 150, 113),
@@ -1333,17 +1337,17 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('montreal002WaterfrontLg.jpg', 55, '<p>Lan wasn\'t feeling as strong as when <a href=\"index.php?fuseAction=showPhotoAndCaption&photoName=LanAnchor2.jpg\">this photo</a> was taken so she sat on the anchor rather than lifting it.</p>', '', 'N', '20061016', 750, 563),
 ('montreal002WaterfrontSm.jpg', 55, 'Near the waterfront.', 'montreal002WaterfrontLg.jpg', 'N', '20061016', 150, 113),
 ('montreal003PlJacqueCartierSm.jpg', 55, 'Place Jacques Cartier.', 'montreal003PlJacqueCartierLg.jpg', 'N', '20061016', 150, 113),
-('montreal003PlJacqueCartierLg.jpg', 55, '<p>Named for the French navigator who pushed up the Gulf of St Lawrence in 1535 hoping to find a strait to the Pacific but instead found the navigable water ended at what is now Montr&eacute;al. Seeing a large hill on the island, he climbed it and named it Mount Royal, thus giving the future city its name</p>\r\n<p>Now the pedestrian mall is the center of thronging with tourists&mdash;including me</p>', '', 'N', '20061016', 750, 563),
+('montreal003PlJacqueCartierLg.jpg', 55, '<p>Named for the French navigator who pushed up the Gulf of St Lawrence in 1535 hoping to find a strait to the Pacific but instead found the navigable water ended at what is now Montreal. Seeing a large hill on the island, he climbed it and named it Mount Royal, thus giving the future city its name</p>\r\n<p>Now the pedestrian mall is the center of thronging with tourists&mdash;including me</p>', '', 'N', '20061016', 750, 563),
 ('montreal004NearTownHallSm.jpg', 55, 'Pretty garden and park in old town with new town in the distance.', 'montreal004NearTownHallLg.jpg', 'N', '20061016', 150, 113),
 ('montreal004NearTownHallLg.jpg', 55, '<p>This is at the corner of a small square at the top of Place Jacques Cartier where there is a statue of the man looking down towards the river. He also looks <i>up</i> at a statue of the English admiral Nelson on a much taller column that was erected after the British gained control in 1763.</p>', '', 'N', '20061016', 750, 563),
-('montreal005TownHall1Sm.jpg', 55, 'The most beautiful building in Montr&eacute;al.', 'montreal005TownHall1Lg.jpg', 'N', '20061016', 150, 113),
+('montreal005TownHall1Sm.jpg', 55, 'The most beautiful building in Montreal.', 'montreal005TownHall1Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal005TownHall1Lg.jpg', 55, '<p>The town hall, as seen from Place Jacques Cartier.</p>', '', 'N', '20061016', 750, 563),
 ('montreal006TownHallFloorSm.jpg', 55, 'Amazing marble floor.', 'montreal006TownHallFloorLg.jpg', 'N', '20061016', 150, 113),
 ('montreal006TownHallFloorLg.jpg', 55, '<p>I\'ve never seen anything like it. The builders have obtained green marble with brown stripes and white inclusions and then cut slices, opening them up like pages of a book so the patten is mirrored.</p>', '', 'N', '20061016', 750, 563),
 ('montreal009TownHall4Sm.jpg', 55, 'Wedding.', 'montreal009TownHall4Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal009TownHall4Lg.jpg', 55, '<p>As we left the Town Hall, we had to sneak past the bride and groom who were posing for photos. We had to take one too &mdash;from a discreet distance.</p>', '', 'N', '20061016', 750, 563),
 ('montreal010GovernorsHouseSm.jpg', 55, 'Chateaux Ramezay &ndash; the governor\'s house.', 'montreal010GovernorsHouseLg.jpg', 'N', '20061016', 150, 113),
-('montreal010GovernorsHouseLg.jpg', 55, '<p>In fact, this is a picture of the back of the building since I didn\'t think to take a photo of the front. It was built for Claude de Ramezay, the French governor of Montr&eacute;al 1703-24 and is now a museum.</p>', '', 'N', '20061016', 750, 563),
+('montreal010GovernorsHouseLg.jpg', 55, '<p>In fact, this is a picture of the back of the building since I didn\'t think to take a photo of the front. It was built for Claude de Ramezay, the French governor of Montreal 1703-24 and is now a museum.</p>', '', 'N', '20061016', 750, 563),
 ('montreal011OldTown1Sm.jpg', 55, 'Walking on Rue Saint-Paul.', 'montreal011OldTown1Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal011OldTown1Lg.jpg', 55, '<p>A quarter of the town burned down in 1765 and subsequent building regulations mandated building in stone.</p>', '', 'N', '20061016', 750, 563),
 ('montreal012OldTown2Sm.jpg', 55, 'Still on Saint-Paul.', 'montreal012OldTown2Lg.jpg', 'N', '20061016', 150, 113),
@@ -1351,13 +1355,13 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('montreal013CourtyardSm.jpg', 55, 'The courtyard at Ecuries d\'Youville (Youville Stables)', 'montreal013CourtyardLg.jpg', 'N', '20061016', 150, 113),
 ('montreal013CourtyardLg.jpg', 55, '<p>In fact, the Frommer&rsquo;s guidebook comments that the real stables were next door and that this building was used mainly as a warehouse.</p>', '', 'N', '20061016', 750, 563),
 ('montreal014NunsHospitalSm.jpg', 55, 'Hôpital des Soeurs Grises (Gray Nuns Hospital)', 'montreal014NunsHospitalLg.jpg', 'N', '20061016', 150, 113),
-('montreal014NunsHospitalLg.jpg', 55, '<p>This wall and its immediate neighbors are all that remains of the chapel that was part of a hospital here 1693&ndash;1851. Marguerite d\'Youville founded the hospital and later the Sisters of Charity of Montr&eacute;al. I wonder if the <i>Gray Nuns</i> description refers to their uniform or their hair.</p>', '', 'N', '20061016', 750, 563),
-('montreal015HistoryMuseumSm.jpg', 55, 'Montr&eacute;al History Center', 'montreal015HistoryMuseumLg.jpg', 'N', '20061016', 150, 113),
+('montreal014NunsHospitalLg.jpg', 55, '<p>This wall and its immediate neighbors are all that remains of the chapel that was part of a hospital here 1693&ndash;1851. Marguerite d\'Youville founded the hospital and later the Sisters of Charity of Montreal. I wonder if the <i>Gray Nuns</i> description refers to their uniform or their hair.</p>', '', 'N', '20061016', 750, 563),
+('montreal015HistoryMuseumSm.jpg', 55, 'Montreal History Center', 'montreal015HistoryMuseumLg.jpg', 'N', '20061016', 150, 113),
 ('montreal015HistoryMuseumLg.jpg', 55, '<p>Formerly the central fire station. We didn\'t go in.</p>', '', 'N', '20061016', 750, 563),
 ('montreal016NguyetSm.jpg', 55, 'Lan&rsquo;s friend Nguyet.', 'montreal016NguyetLg.jpg', 'N', '20061016', 150, 113),
-('montreal016NguyetLg.jpg', 55, '<p>When Lan originally thought of going to Canada, she suggested going to Halifax which is on the Atlantic. Then she regained contact with a friend that she had not seen since leaving Vietnam in 1981 and since Nguyet lives with her family in Montr&eacute;al, we decided to go there instead.<p>', '', 'N', '20061016', 750, 563),
+('montreal016NguyetLg.jpg', 55, '<p>When Lan originally thought of going to Canada, she suggested going to Halifax which is on the Atlantic. Then she regained contact with a friend that she had not seen since leaving Vietnam in 1981 and since Nguyet lives with her family in Montreal, we decided to go there instead.<p>', '', 'N', '20061016', 750, 563),
 ('montreal017McCordMuseumSm.jpg', 55, 'Interesting &quot;postcard&quot; at the McCord Museum.', 'montreal017McCordMuseumLg.jpg', 'N', '20061016', 150, 113),
-('montreal017McCordMuseumLg.jpg', 55, '<p>The McCord museum of Canadian History opens with an exhibit called &quot;Growing up in Montr&eacute;al&quot; which among other things mentioned that one in four families have a single parent and that Montr&eacute;al has the most poverty of Canadian cities. I think 70% of residents are renters and most live in 3 or 4-storey buildings. Visitors, young and old, are invited to share their recollections and there is a wall of the most interesting. If you are a parent, you&rsquo;ll find this one hair-raising!</p>', '', 'N', '20061016', 750, 563),
+('montreal017McCordMuseumLg.jpg', 55, '<p>The McCord museum of Canadian History opens with an exhibit called &quot;Growing up in Montreal&quot; which among other things mentioned that one in four families have a single parent and that Montreal has the most poverty of Canadian cities. I think 70% of residents are renters and most live in 3 or 4-storey buildings. Visitors, young and old, are invited to share their recollections and there is a wall of the most interesting. If you are a parent, you&rsquo;ll find this one hair-raising!</p>', '', 'N', '20061016', 750, 563),
 ('montreal018CelloOctetSm.jpg', 55, 'Cello octet at the Museum of Fine Arts.', 'montreal018CelloOctetLg.jpg', 'N', '20061016', 150, 113),
 ('montreal018CelloOctetLg.jpg', 55, '<p>It was still raining when we left the McCord museum so we ventured on to the Museum of Fine Arts. We heard this group tuning up and since we had tired feet, it was an easy decision to grab a seat to be ready when they started. I don\'t like classical music but I enjoyed it anyway. There was a boy of perhaps 5 two rows ahead of us who bounced up and down on his chair in the livlier bits.</p>', '', 'N', '20061016', 750, 563),
 ('montreal019FineArtsMusuemSm.jpg', 55, 'Beautiful vase.', 'montreal019FineArtsMusuemLg.jpg', 'N', '20061016', 150, 113),
@@ -1365,7 +1369,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('montreal020Fountain1Sm.jpg', 55, 'Somewhere in there is a fountain.', 'montreal020Fountain1Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal020Fountain1Lg.jpg', 55, '<p>By the time the signal turned to green, we realized that the cloud was not mist from the fountain but steam from the manhole cover at the bottom of the picture.</p>', '', 'N', '20061016', 750, 563),
 ('montreal021Fountain2Sm.jpg', 55, 'Fountain, now out of the mist.', 'montreal021Fountain2Lg.jpg', 'N', '20061016', 150, 113),
-('montreal021Fountain2Lg.jpg', 55, '<p>We passed this fountain on Rue de Bleury several times as it was between our hotel on Boul Rene Levesque and old town. <a href=\"http://en.wikipedia.org/wiki/Rene_Levesque\" target=\"_blank\" class=\"external\">Ren&eacute; L&eacute;vesque</a> was the driving force behind a movement to break the province of Quebec away from Canada and though he was unsuccessful, there is a major road named after him in both Montr&eacute;al and Quebec City.</p>', '', 'N', '20061016', 750, 563),
+('montreal021Fountain2Lg.jpg', 55, '<p>We passed this fountain on Rue de Bleury several times as it was between our hotel on Boul Rene Levesque and old town. <a href=\"http://en.wikipedia.org/wiki/Rene_Levesque\" target=\"_blank\" class=\"external\">Ren&eacute; L&eacute;vesque</a> was the driving force behind a movement to break the province of Quebec away from Canada and though he was unsuccessful, there is a major road named after him in both Montreal and Quebec City.</p>', '', 'N', '20061016', 750, 563),
 ('montreal022PickPocketSm.jpg', 55, 'Pickpocket!', 'montreal022PickPocketLg.jpg', 'N', '20061016', 150, 113),
 ('montreal022PickPocketLg.jpg', 55, '<p>Caught red handed.</p>', '', 'N', '20061016', 750, 563),
 ('montreal023NiceBldgSm.jpg', 55, 'Nice building.', 'montreal023NiceBldgLg.jpg', 'N', '20061016', 150, 113),
@@ -1383,10 +1387,10 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('montreal029NotreDame5Sm.jpg', 55, 'Spiral staircase in the chapel.', 'montreal029NotreDame5Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal029NotreDame5Lg.jpg', 55, '<p>There was another on the other side of the aisle, presumably for symmetry since I don\'t recall there being large galleries on the upper level.</p>', '', 'N', '20061016', 750, 563),
 ('montreal030RiverSm.jpg', 55, 'The St Lawrence River surges past Old Town.', 'montreal030RiverLg.jpg', 'N', '20061016', 150, 113),
-('montreal030RiverLg.jpg', 55, '<p>Montr&eacute;al sits on an island so not all the water on the river flows through the section of the river you see here. Indeed, the land on the other side is an island too. There are a few things to note here:</p>\r\n<ul>\r\n<li>The green navigation buoy is not sitting vertically but is being dragged downstream on its chain by the strong current.</li>\r\n<li>The building visible on the rise is part of The Old Fort and Stewart Museum which would visit later but since no photographs were allowed, I have nothing to show you; it covered the history, particularly the military history, of the area.</li>\r\n<li>The hemispherical thing on the right is the Biosphere. More later.</li>\r\n</ul>', '', 'N', '20061016', 750, 563),
+('montreal030RiverLg.jpg', 55, '<p>Montreal sits on an island so not all the water on the river flows through the section of the river you see here. Indeed, the land on the other side is an island too. There are a few things to note here:</p>\r\n<ul>\r\n<li>The green navigation buoy is not sitting vertically but is being dragged downstream on its chain by the strong current.</li>\r\n<li>The building visible on the rise is part of The Old Fort and Stewart Museum which would visit later but since no photographs were allowed, I have nothing to show you; it covered the history, particularly the military history, of the area.</li>\r\n<li>The hemispherical thing on the right is the Biosphere. More later.</li>\r\n</ul>', '', 'N', '20061016', 750, 563),
 ('montreal031ClockTower1Sm.jpg', 55, 'Clocktower at the end of the quay.', 'montreal031ClockTower1Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal031ClockTower1Lg.jpg', 55, '<p>We considered walking over the bridge in the background to get to the island but decided it was too far. We walked a good distance instead to and from the railway stations though we had a pleasant, if brief, encounter with a student from Tunisia on the train. He was concerned that we looked lost but it turned out that he had been in the city only a month or two.</p>', '', 'N', '20061016', 750, 563),
-('montreal032ClockTower2Sm.jpg', 55, 'Protecting Montr&eacute;al.', 'montreal032ClockTower2Lg.jpg', 'N', '20061016', 150, 113),
+('montreal032ClockTower2Sm.jpg', 55, 'Protecting Montreal.', 'montreal032ClockTower2Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal032ClockTower2Lg.jpg', 55, '<p>Enemy boats coming up river would have to face <del>Lan</del> a half-dozen guns here and others elsewhere.</p>', '', 'N', '20061016', 750, 563),
 ('montreal032ClockTower3Sm.jpg', 55, 'War memorial at clocktower base.', 'montreal032ClockTower3Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal032ClockTower3Lg.jpg', 55, '<p>After WW1, many believed that it was the \"war to end all wars\". Sadly it wasn\'t so it appears that after WW2, extra text was added in the limited space left at the bottom.</p>', '', 'N', '20061016', 750, 563),
@@ -1395,13 +1399,13 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('montreal034Biosphere2Sm.jpg', 55, 'Flower outside the biosphere.', 'montreal034Biosphere2Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal034Biosphere2Lg.jpg', 55, '', '', 'N', '20061016', 750, 563),
 ('montreal035OlympicStadium1Sm.jpg', 55, 'The Olympic Stadium', 'montreal035OlympicStadium1Lg.jpg', 'N', '20061016', 150, 113),
-('montreal035OlympicStadium1Lg.jpg', 55, '<p>Montr&eacute;al hosted the summer Olympics in 1976, remembered locally mainly for going way over-budget and everywhere else for Nadia Comaneci\'s perfect 10s in gymnastics. The <a href=\"http://en.wikipedia.org/wiki/1976_Summer_Olympics\" target=\"_blank\" class=\"external\">Wikipedia entry</a> for the Games amusingly reports that &quot;After a rainstorm that doused the Olympic flame a few days after the games had opened, an official relit the flame using his cigarette lighter&quot;!</p>', '', 'N', '20061016', 750, 563),
+('montreal035OlympicStadium1Lg.jpg', 55, '<p>Montreal hosted the summer Olympics in 1976, remembered locally mainly for going way over-budget and everywhere else for Nadia Comaneci\'s perfect 10s in gymnastics. The <a href=\"http://en.wikipedia.org/wiki/1976_Summer_Olympics\" target=\"_blank\" class=\"external\">Wikipedia entry</a> for the Games amusingly reports that &quot;After a rainstorm that doused the Olympic flame a few days after the games had opened, an official relit the flame using his cigarette lighter&quot;!</p>', '', 'N', '20061016', 750, 563),
 ('montreal036OlympicStadium2Sm.jpg', 55, 'The tower and stadium.', 'montreal036OlympicStadium2Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal036OlympicStadium2Lg.jpg', 55, '<p>Apparently the tower was completed only after the Olympics and the retractable roof never worked properly.</p>', '', 'N', '20061016', 750, 563),
-('montreal037Gardens1Sm.jpg', 55, 'At the Botanical Gardens of Montr&eacute;al.', 'montreal037Gardens1Lg.jpg', 'N', '20061016', 150, 113),
+('montreal037Gardens1Sm.jpg', 55, 'At the Botanical Gardens of Montreal.', 'montreal037Gardens1Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal037Gardens1Lg.jpg', 55, '<p>We were very lucky with the weather when we went to the Gardens as the weather was looking somewhat threatening but we took a chance and it got better making for a pleasant afternoon. Here Lan pretends to be a lion.</p>', '', 'N', '20061016', 750, 563),
 ('montreal038Gardens2Sm.jpg', 55, 'Bonsai forest.', 'montreal038Gardens2Lg.jpg', 'N', '20061016', 150, 113),
-('montreal038Gardens2Lg.jpg', 55, '<p>I was unaware of the different styles of <a href=\"http://en.wikipedia.org/wiki/Bonsai</a> target=\"_blank\" class=\"external\">bonsai</a> but the Montr&eacute;al Gardens had a nice selection, including this one in the &quot;forest&quot; style.</p>', '', 'N', '20061016', 750, 563),
+('montreal038Gardens2Lg.jpg', 55, '<p>I was unaware of the different styles of <a href=\"http://en.wikipedia.org/wiki/Bonsai</a> target=\"_blank\" class=\"external\">bonsai</a> but the Montreal Gardens had a nice selection, including this one in the &quot;forest&quot; style.</p>', '', 'N', '20061016', 750, 563),
 ('montreal039Gardens3Sm.jpg', 55, '265 years old!', 'montreal039Gardens3Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal039Gardens3Lg.jpg', 55, '<p>However, to me it seems a bit cruel to deliberately stunt the growth of a living thing, even a plant.</p>', '', 'N', '20061016', 750, 563),
 ('montreal040Gardens4Sm.jpg', 55, 'In the Japanese garden.', 'montreal040Gardens4Lg.jpg', 'N', '20061016', 150, 113),
@@ -1411,7 +1415,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('montreal042Gardens6Sm.jpg', 55, '<i>Here fishy, fishy</i>', 'montreal042Gardens6Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal042Gardens6Lg.jpg', 55, '<p>Very peaceful.</p>', '', 'N', '20061016', 750, 563),
 ('montreal043Gardens7Sm.jpg', 55, 'The Olympic tower looms in the background.', 'montreal043Gardens7Lg.jpg', 'N', '20061016', 150, 113),
-('montreal043Gardens7Lg.jpg', 55, '<p>The sloping Montr&eacute;al Tower is quite striking. We saw a large inclinator (inclined elevator) go up the outside and from the top you can supposedly see 80km/50 miles.</p> ', '', 'N', '20061016', 750, 563),
+('montreal043Gardens7Lg.jpg', 55, '<p>The sloping Montreal Tower is quite striking. We saw a large inclinator (inclined elevator) go up the outside and from the top you can supposedly see 80km/50 miles.</p> ', '', 'N', '20061016', 750, 563),
 ('montreal044Gardens8Sm.jpg', 55, 'Guess who!', 'montreal044Gardens8Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal044Gardens8Lg.jpg', 55, '<p>Cute yellow flowers outside the Insectarium..</p>', '', 'N', '20061016', 750, 563),
 ('montreal045Bugs1Sm.jpg', 55, 'Pretty (and large) butterflies in the Insectarium.', 'montreal045Bugs1Lg.jpg', 'N', '20061016', 150, 113),
@@ -1447,7 +1451,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('montreal060china10Sm.jpg', 55, 'An even bigger rooster.', 'montreal060china10Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal060china10Lg.jpg', 55, '<p>This was the best time of day to see the various illuminated sculptures but by then it was getting uncomfortably cold. The gardens stayed open till 9pm but we had had enough.</p>', '', 'N', '20061016', 750, 563),
 ('montreal061MontRoyal1Sm.jpg', 55, 'On Mont Royal.', 'montreal061MontRoyal1Lg.jpg', 'N', '20061016', 150, 113),
-('montreal061MontRoyal1Lg.jpg', 55, '<p>We rented a car for our last day in Montr&eacute;al and drove up the mountain that gave the city its name. Given the weather, the view was disappointing though there were flashes of fall colors in the trees.</p>', '', 'N', '20061016', 750, 563),
+('montreal061MontRoyal1Lg.jpg', 55, '<p>We rented a car for our last day in Montreal and drove up the mountain that gave the city its name. Given the weather, the view was disappointing though there were flashes of fall colors in the trees.</p>', '', 'N', '20061016', 750, 563),
 ('montreal062MontRoyal2Sm.jpg', 55, 'The St. Lawrence River is in the distance.', 'montreal062MontRoyal2Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal062MontRoyal2Lg.jpg', 55, '', '', 'N', '20061016', 750, 563),
 ('montreal063MontRoyal3Sm.jpg', 55, 'An attractive park on Mont Royal.', 'montreal063MontRoyal3Lg.jpg', 'N', '20061016', 150, 113),
@@ -1457,11 +1461,11 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('montreal065MontRoyal5Sm.jpg', 55, 'The park was alive with children.', 'montreal065MontRoyal5Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal065MontRoyal5Lg.jpg', 55, '<p>It seemed that they had some unsupervised time to run around, chase the sea gulls and throw rocks in the lake. The ground was still wet from all the rain though and we saw one girl who had clearly fallen often as her clothes were filthy.</p>', '', 'N', '20061016', 750, 563),
 ('montreal066StJoseph1Sm.jpg', 55, 'St. Joseph\'s Oratory.', 'montreal066StJoseph1Lg.jpg', 'N', '20061016', 150, 113),
-('montreal066StJoseph1Lg.jpg', 55, '<p>In fact, the <a href=\"http://en.wikipedia.org/wiki/Saint_Joseph%27s_Oratory\" target=\"_blank\" class=\"external\">Oratory</a>, or basilica, was only finished in 1967 so it isn\'t old. There was a museum of nativity scenes in the basement with a lady very willing to pounce on visitors demanding donations. I would have gladly skipped that bit.</p>\r\n<p>Although it seats 10,000 and gets 2 million visitors a yaer,I\'m curious to know how many turn up at an average Sunday Mass.  The building seemed overbearing and forbidding to me.</p>\r\n<p>I\'d be surprised if they heat the whole thing in Montr&eacute;al\'s brutal winter&mdash;the average temperature in January is -10&deg;C (13&deg;F)!  There is a chapel under the main church which would be better insulated and with a low ceiling so perhaps they use that. I wondered the same thing at Notre Dame.</p>', '', 'N', '20061016', 750, 563),
+('montreal066StJoseph1Lg.jpg', 55, '<p>In fact, the <a href=\"http://en.wikipedia.org/wiki/Saint_Joseph%27s_Oratory\" target=\"_blank\" class=\"external\">Oratory</a>, or basilica, was only finished in 1967 so it isn\'t old. There was a museum of nativity scenes in the basement with a lady very willing to pounce on visitors demanding donations. I would have gladly skipped that bit.</p>\r\n<p>Although it seats 10,000 and gets 2 million visitors a yaer,I\'m curious to know how many turn up at an average Sunday Mass.  The building seemed overbearing and forbidding to me.</p>\r\n<p>I\'d be surprised if they heat the whole thing in Montreal\'s brutal winter&mdash;the average temperature in January is -10&deg;C (13&deg;F)!  There is a chapel under the main church which would be better insulated and with a low ceiling so perhaps they use that. I wondered the same thing at Notre Dame.</p>', '', 'N', '20061016', 750, 563),
 ('montreal067StJoseph2Sm.jpg', 55, 'Stairway to heaven.', 'montreal067StJoseph2Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal067StJoseph2Lg.jpg', 55, '<p>Beautiful steps though it seemed that actual worshippers entered the building which is on the top of a hill through a series of tunnels and escalators to save effort and keep out of the weather.</p>', '', 'N', '20061016', 750, 563),
 ('montreal068LachineCanal1Sm.jpg', 55, 'The Lachine canal.', 'montreal068LachineCanal1Lg.jpg', 'N', '20061016', 150, 113),
-('montreal068LachineCanal1Lg.jpg', 55, '<p>The Fur Trade at Lachine National Historic Site of Canada is in the background. It is quite a small museum but nicely summed up the importance of fur trading to the establishment of what we now call Canada. There is a magnificient canoe inside for 10 people but it was too dark to photograph.</p>\r\n<p>The North West company based in Montr&eacute;al competed with the Hudson\'s Bay company based at York Factory and as fur-bearing animals, particularly beaver, were hunted to near extinction in one area, traders moved further into the interior to work with Indian trappers. Although Europeans brought with them diseases and alcohol, the Indians did benefit from other tradegoods such as steel tools, so not all the influences were bad. The Europeans needed the Indians to prosper.</p>\r\n<p>The canal was completed in 1825 and allowed navigation around the Lachine Rapids. Previously, goods coming downsteam had to be off-loaded at Lachine and taken overland to Montr&eacute;al.</p>', '', 'N', '20061016', 750, 563),
+('montreal068LachineCanal1Lg.jpg', 55, '<p>The Fur Trade at Lachine National Historic Site of Canada is in the background. It is quite a small museum but nicely summed up the importance of fur trading to the establishment of what we now call Canada. There is a magnificient canoe inside for 10 people but it was too dark to photograph.</p>\r\n<p>The North West company based in Montreal competed with the Hudson\'s Bay company based at York Factory and as fur-bearing animals, particularly beaver, were hunted to near extinction in one area, traders moved further into the interior to work with Indian trappers. Although Europeans brought with them diseases and alcohol, the Indians did benefit from other tradegoods such as steel tools, so not all the influences were bad. The Europeans needed the Indians to prosper.</p>\r\n<p>The canal was completed in 1825 and allowed navigation around the Lachine Rapids. Previously, goods coming downsteam had to be off-loaded at Lachine and taken overland to Montreal.</p>', '', 'N', '20061016', 750, 563),
 ('montreal069LachineCanal2Sm.jpg', 55, 'A magnificent building in Lachine.', 'montreal069LachineCanal2Lg.jpg', 'N', '20061016', 150, 113),
 ('montreal069LachineCanal2Lg.jpg', 55, '<p>I think this building is now residential though I\'m guessing it was built as a commercial structure. I love it though it needs a good cleaning and it\'s a shame that the the wing on the far left is not matched on the right.</p>', '', 'N', '20061016', 750, 563),
 ('montreal070LachineCanal3Lg.jpg', 55, '<p>Unable to immediately think of how to fill in the rest of the afternoon, we sat down by the waterfront but soon decided it was too cold and the view too boring</p>', '', 'N', '20061016', 750, 563),
@@ -1478,7 +1482,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('montreal074LachineRapids4Lg.jpg', 55, '<p>We met a park volunteer shortly after this photo was taken who told us about the area. He said that last winter was mild with the quiet pools off the river freezing to a depth of <i>only</i> 22\"/55cm. I was surprised that he gave a measurement in inches as I assumed French Canada would have adopted metric with France after the Revolution but I learned later that Canada only went metric in the 1970s&dash;about the same time as Australia. Metrification has been held back somewhat by having non-Metric America over the border so standard Canadian office paper is American &quot;letter&quot; instead of A4.</p>.', '', 'N', '20061016', 750, 563),
 ('montreal075LachineRapids5Sm.jpg', 55, 'Heron.', 'montreal075LachineRapids5Lg.jpg', 'N', '20061017', 150, 113),
 ('montreal075LachineRapids5Lg.jpg', 55, '<p>Just near the rapids, a small amount of water leaks off the main river through a pond and over these rocks.</p>', '', 'N', '20061016', 750, 563),
-('montreal076OldAndNewSm.jpg', 55, 'Old and new buildings in Montr&eacute;al.', 'montreal076OldAndNewLg.jpg', 'N', '20061017', 150, 113),
+('montreal076OldAndNewSm.jpg', 55, 'Old and new buildings in Montreal.', 'montreal076OldAndNewLg.jpg', 'N', '20061017', 150, 113),
 ('montreal076OldAndNewLg.jpg', 55, '', '', 'N', '20061016', 750, 563),
 ('quebec02Parliament2Sm.jpg', 55, 'The other end of the legislative chamber.', 'quebec02Parliament2Lg.jpg', 'N', '20061017', 150, 113),
 ('quebec02Parliament2Lg.jpg', 55, '<p>The other end of the same room. Nice clock.</p>\r\n', '', 'N', '20061016', 750, 563),
@@ -1534,7 +1538,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('ottawa24Museum3Sm.jpg', 55, 'The main hall&mdash;totem poles.', 'ottawa24Museum3Lg.jpg', 'N', '20061017', 150, 113),
 ('ottawa24Museum3Lg.jpg', 55, '<p>We saw totem poles on our trip to the Pacific northwest 10 years ago but these were still impressive.</p>', '', 'N', '20061016', 750, 563),
 ('ottawa25Museum4Sm.jpg', 55, '<p>Large totem pole</a>', 'ottawa25Museum4Lg.jpg', 'N', '20061016', 112, 150),
-('ottawa25Museum4Lg.jpg', 55, '<p>A museum guide approached us while we were looking at the front of a house that formed the back wall of the exhibit and explained the history of it. The chief had spent time in Europe (?) and so had adorned his house with a mixture of native American and western decorations. It was lovely of her to do this and I\'m sure she did it in part because Lan was in the wheelchair resting her sore foot. Unfortunately, we were just about to leave the museum so we could drive back to Montr&eacute;al to get our plane so we couldn\'t stay longer to speak with her or see the other things she suggested.</p>', '', 'N', '20061016', 563, 751),
+('ottawa25Museum4Lg.jpg', 55, '<p>A museum guide approached us while we were looking at the front of a house that formed the back wall of the exhibit and explained the history of it. The chief had spent time in Europe (?) and so had adorned his house with a mixture of native American and western decorations. It was lovely of her to do this and I\'m sure she did it in part because Lan was in the wheelchair resting her sore foot. Unfortunately, we were just about to leave the museum so we could drive back to Montreal to get our plane so we couldn\'t stay longer to speak with her or see the other things she suggested.</p>', '', 'N', '20061016', 563, 751),
 ('ottawa26Museum5Sm.jpg', 55, 'Another big one.', '', 'N', '20061016', 112, 150),
 ('ottawa26Museum5Lg.jpg', 55, '', '', 'N', '20061016', 563, 751),
 ('quebec03Parliament3Sm.jpg', 55, 'Intricate tiled floor.', 'quebec03Parliament3Lg.jpg', 'N', '20061017', 150, 113),
@@ -1568,7 +1572,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('quebec16OldTown02Sm.jpg', 55, 'Another beautiful building', 'quebec16OldTown02Lg.jpg', 'N', '20061017', 150, 113),
 ('quebec16OldTown02Lg.jpg', 55, '<p>Parks Canada has an office on the ground floor of the building with 2 staff members but no tourists except us to assist. It was delightful to speak to one of them and get some brochures, including a tour of lighthouses along the Gulf of St. Lawrence which looked like something we might do.</p>', '', 'N', '20061016', 750, 563),
 ('quebec17OldTown03Sm.jpg', 55, '<a href=\"http://en.wikipedia.org/wiki/Jacques_Cartier\" target=\"_blank\" class=\"external\">Jacques Cartier</a>', 'quebec17OldTown03Lg.jpg', 'N', '20061017', 150, 113),
-('quebec17OldTown03Lg.jpg', 55, '<p>After the forgotten <a href=\"http://en.wikipedia.org/wiki/Leif_Ericson\" target=\"_blank\" class=\"external\">Viking landings</a> and brief settlement in Newfoundland in 1000 AD, the next European to reach North America was <a href=\"http://en.wikipedia.org/wiki/John_Cabot\" target=\"_blank\" class=\"external\">John Cabot</a> who landed in 1497, also in Newfoundland, just 5 years after Columbus reached the Caribbean. In 1525, <a href=\"http://en.wikipedia.org/wiki/Giovanni_da_Verrazzano\" target=\"_blank\" class=\"external\">Giovanni da Verrazzano</a> was the first to sail up what is now the United States east coast but he headed for home and only sailed past the bottom of what is now Nova Scotia. It was not until 1534, that Frenchman Jacques Cartier explored the Gulf of St. Lawrence on his first voyage hoping, like Columbus, to find a quick route to Asia. He didn\'t find one but he did meet the Iroquois indians and captured two of them to take back to France!</p>\r\n<p>Cartier returned the following year, returning the indians to their tribe. Leaving his 2 larger ships anchored at what is now Quebec where the water narrows, he took a smaller boat as far as what is now Montr&eacute;al. By the time he returned, it was too late to return to France so they made preparations on shore as best they could for the winter. Ice 1.8m/6ft thick formed around the ships, there was 1.2m/4ft of snow on shore and scurvy, a vitamin C deficiency broke out among the crew killing many.</p>\r\n<p>On a third voyage in 1541, the aim was to create a permanent settlement but the Iroquois killed many of the settlers, there were no easy riches of gold or silver to be found so they returned the following year. It was not to be until 1608 with Champlain\'s arrival that a permanent colony would be established.</p>\r\n<p>Unfortunately, no paintings or sketches of Champlain survived if any were made, so all statues, including this one, are pure guess work.</p>\r\n', '', 'N', '20061016', 750, 563),
+('quebec17OldTown03Lg.jpg', 55, '<p>After the forgotten <a href=\"http://en.wikipedia.org/wiki/Leif_Ericson\" target=\"_blank\" class=\"external\">Viking landings</a> and brief settlement in Newfoundland in 1000 AD, the next European to reach North America was <a href=\"http://en.wikipedia.org/wiki/John_Cabot\" target=\"_blank\" class=\"external\">John Cabot</a> who landed in 1497, also in Newfoundland, just 5 years after Columbus reached the Caribbean. In 1525, <a href=\"http://en.wikipedia.org/wiki/Giovanni_da_Verrazzano\" target=\"_blank\" class=\"external\">Giovanni da Verrazzano</a> was the first to sail up what is now the United States east coast but he headed for home and only sailed past the bottom of what is now Nova Scotia. It was not until 1534, that Frenchman Jacques Cartier explored the Gulf of St. Lawrence on his first voyage hoping, like Columbus, to find a quick route to Asia. He didn\'t find one but he did meet the Iroquois indians and captured two of them to take back to France!</p>\r\n<p>Cartier returned the following year, returning the indians to their tribe. Leaving his 2 larger ships anchored at what is now Quebec where the water narrows, he took a smaller boat as far as what is now Montreal. By the time he returned, it was too late to return to France so they made preparations on shore as best they could for the winter. Ice 1.8m/6ft thick formed around the ships, there was 1.2m/4ft of snow on shore and scurvy, a vitamin C deficiency broke out among the crew killing many.</p>\r\n<p>On a third voyage in 1541, the aim was to create a permanent settlement but the Iroquois killed many of the settlers, there were no easy riches of gold or silver to be found so they returned the following year. It was not to be until 1608 with Champlain\'s arrival that a permanent colony would be established.</p>\r\n<p>Unfortunately, no paintings or sketches of Champlain survived if any were made, so all statues, including this one, are pure guess work.</p>\r\n', '', 'N', '20061016', 750, 563),
 ('quebec18OldTown04Sm.jpg', 55, 'View from city wall, 4 of 4.', 'quebec18OldTown04Lg.jpg', 'N', '20061017', 150, 113),
 ('quebec18OldTown04Lg.jpg', 55, '', '', 'N', '20061016', 750, 563),
 ('quebec19OldTown05Sm.jpg', 55, 'View from city wall, 3 of 4.', 'quebec19OldTown05Lg.jpg', 'N', '20061017', 150, 113),
@@ -1577,9 +1581,9 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('quebec20OldTown06Lg.jpg', 55, '', '', 'N', '20061016', 750, 563),
 ('quebec21OldTown07Sm.jpg', 55, 'View from city wall, 1 of 4.', 'quebec21OldTown07Lg.jpg', 'N', '20061017', 150, 113),
 ('quebec21OldTown07Lg.jpg', 55, '', '', 'N', '20061016', 750, 563),
-('quebec22OldTown08Sm.jpg', 55, 'A row of guns protects Quebec.', 'quebec22OldTown08Lg.jpg', 'N', '20061017', 150, 113);
+('quebec22OldTown08Sm.jpg', 55, 'A row of guns protects Quebec.', 'quebec22OldTown08Lg.jpg', 'N', '20061017', 150, 113),
+('quebec22OldTown08Lg.jpg', 55, '', '', 'N', '20061016', 750, 563);
 INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFullSize`, `version`, `width`, `height`) VALUES
-('quebec22OldTown08Lg.jpg', 55, '', '', 'N', '20061016', 750, 563),
 ('quebec23OldTown09Sm.jpg', 55, 'Pretty trees, pretty bridge as we go to the Lower Town.', 'quebec23OldTown09Lg.jpg', 'N', '20061017', 150, 113),
 ('quebec23OldTown09Lg.jpg', 55, '', '', 'N', '20061016', 750, 563),
 ('quebec24OldTown10Sm.jpg', 55, 'Canadian attitude towards the President?', 'quebec24OldTown10Lg.jpg', 'N', '20061017', 150, 113),
@@ -1799,12 +1803,12 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('WithBillLg.jpg', 31, '<p>The hands belong to Gloria&rsquo;s husband Jim. &quot;Bill&quot; is a cardboard cutout.</p>', '', 'N', '20061210', 750, 563),
 ('motleyFoolSm.jpg', 31, 'You only have to wear the hat at the Motley Fool if your computer program crashes the server.', 'motleyFoolLg.jpg', 'N', '20061210', 150, 113),
 ('motleyFoolLg.jpg', 31, '', '', 'N', '20061210', 750, 563),
-('AcrobatIcon_Ltr18.gif', 31, 'Printer-friendly version in Acrobat format (187kb). If you don\'t have the Acrobat reader, you can get it free from <a href=\"http://www.adobe.com/products/acrobat/readstep2.html\" target=\"_blank\">Adobe</a>.', '', 'N', '20010304', 36, 35),
+('AcrobatIcon_Ltr18.gif', 31, 'Printer-friendly version (PDF, 187kb).', '', 'N', '20010304', 36, 35),
 ('Carver1Sm.jpg', 6, 'The Carver One, fully tilted for turning.', '', 'N', '20070829', 150, 97),
 ('EwanMotorcycleSm.jpg', 6, 'The too-good-to-be-true enclosed motorcycle. It reminds me of an elegant woman\'s shoe.', '', 'N', '20070828', 150, 72),
 ('MITCityCarSm.jpg', 6, 'MIT CityCar. The back wheels swing under to shorten the vehicle when parked.', '', 'N', '20070829', 150, 119),
 ('Venture1.jpg', 6, 'The Venture One tilts like the Carver. Or would if one were built.', '', 'N', '20070829', 150, 99),
-('NeverTooYoungLg.jpg', 7, '<p>I\'ll let the photo speak for itself except to say that the soldier is Israeli. This photo was originally part of an article &quot;<a href=\"http://richardneville.com/archive/2002/journal100402.html\" target=\"_blank\" class=\"external\">Beyond Good and Evil</a>&quot; published in the Sydney Morning Herald but the author\'s site has been restructured and the archive article no longer shows the pictures.</p>', '', 'N', '20070921', 340, 243),
+('NeverTooYoungLg.jpg', 7, '<p>I\'ll let the photo speak for itself except to say that the soldier is Israeli. This photo was originally part of an article &quot;<a href=\"https://www.smh.com.au/national/beyond-good-and-evil-20020415-gdf786.html\" target=\"_blank\" class=\"external darkBg\">Beyond Good and Evil</a>&quot; published in the Sydney Morning Herald but the archive article no longer shows the pictures.</p>', '', 'N', '20070921', 340, 243),
 ('001_harbourbridgefromtrainLg.jpg', 58, '<p>My first real view of Sydney after leaving the airport. From the train at Circular Quay. \r\nHowever, I was in Sydney just 3 days before embarking on my trip to Victoria.</p>', '', 'N', '20080427', 750, 563),
 ('002_mapLg.gif', 58, '<p>I\'m glad you asked. The path of my expedition:</p>\r\n<ol class=\"mapRoute\">\r\n<li>Sydney</li>\r\n<li>Tarcutta</li>\r\n<li>Holbrook</li>\r\n<li>Bonnie Doon/Lake Eildon</li>\r\n<li>Seville</li>\r\n<li>Melbourne</li>\r\n<li>Geelong</li>\r\n<li>Ballarat</li>\r\n<li>Creswick</li>\r\n<li>Bendigo</li>\r\n<li>Echuca</li>\r\n<li>Gundagai</li>\r\n<li>Canberra</li>\r\n<li>Fitzroy Falls (friend\'s farm)</li>\r\n</ol>\r\n', '', 'N', '20080427', 768, 650),
 ('003_humehighway1Lg.jpg', 58, '<p>The Hume Highway is the road connecting Australia\'s two largest cities. I was very surprised that perhaps 10% of its 800 km/500 miles is still not a divided road. Note the oncoming semi. I will admit though that there is little traffic out here and there is major road construction nearby.</p>', '', 'N', '20080427', 750, 563),
@@ -1928,10 +1932,10 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('061_geelong13Sm.jpg', 58, 'A blanket fluffer.', '061_geelong13Lg.jpg', 'N', '20080427', 150, 113),
 ('061_geelong13Lg.jpg', 58, '<p>This machine uses parts of a thistle-like plant to fluff up the surface of blankets. </p>', '', 'N', '20080427', 750, 563),
 ('062_ballarat01Sm.jpg', 58, 'Random nice building in Ballarat.', '062_ballarat01Lg.jpg', 'N', '20080427', 150, 113),
-('062_ballarat01Lg.jpg', 58, '<p>Ballarat has many lovely old buildings, a sign of the huge wealth once generated here.</p>', '', 'N', '20080427', 750, 563);
-INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFullSize`, `version`, `width`, `height`) VALUES
+('062_ballarat01Lg.jpg', 58, '<p>Ballarat has many lovely old buildings, a sign of the huge wealth once generated here.</p>', '', 'N', '20080427', 750, 563),
 ('063_ballarat02Sm.jpg', 58, '4 Forrest St.', '063_ballarat02Lg.jpg', 'N', '20080427', 150, 113),
-('063_ballarat02Lg.jpg', 58, '<p>I took a photo of this unassuming house because this is where my mother grew up. </p>', '', 'N', '20080427', 750, 563),
+('063_ballarat02Lg.jpg', 58, '<p>I took a photo of this unassuming house because this is where my mother grew up. </p>', '', 'N', '20080427', 750, 563);
+INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFullSize`, `version`, `width`, `height`) VALUES
 ('064_ballarat03Sm.jpg', 58, 'The church next door.', '064_ballarat03Lg.jpg', 'N', '20080427', 150, 113),
 ('064_ballarat03Lg.jpg', 58, '<p>Lake Wendoree is immediately behind us.</p>', '', 'N', '20080427', 750, 563),
 ('065_ballarat04Sm.jpg', 58, 'The boathouse.', '065_ballarat04Lg.jpg', 'N', '20080427', 150, 113),
@@ -2098,7 +2102,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('Canada2008OnFlickr.jpg', 10, 'Canada <a href=\"http://flickr.com/photos/30215275@N03/sets/72157607555550650\" class=\"external\" target=\"_blank\">photoset on Flickr</a>.', '', 'N', '20081219', 150, 113),
 ('AlbaMadonnaByRaphael1.jpg', 32, 'Raphael\'s <i>Alba Madonna</i>.', 'AlbaMadonnaByRaphael2.jpg', 'N', '20081207', 150, 113),
 ('AlbaMadonnaByRaphael2.jpg', 32, '<p>There is an interesting note on the painting&rsquo;s <a href=\"http://en.wikipedia.org/wiki/Alba_Madonna\" target=\"_blank\" class=\"external\">Wikipedia page</a> about the painting being \"transferred\" to a square canvas but no details are provided.</p>', '', 'N', '20081207', 750, 563),
-('AcrobatIcon_Ltr19.gif', 32, 'Printer-friendly version in PDF format (868kb). Get <a href=\"http://get.adobe.com/reader/\" target=\"_blank\">Acrobat reader</a> (free).', '', 'N', '20010304', 36, 35),
+('AcrobatIcon_Ltr19.gif', 32, 'Printer-friendly version (PDF, 868kb).', '', 'N', '20010304', 36, 35),
 ('AmericanFalls1.jpg', 32, 'The American Falls', 'AmericanFalls2.jpg', 'N', '20081207', 150, 113),
 ('AmericanFalls2.jpg', 32, '<p>The American Falls viewed from the Canadian side. The &quot;Maid of the Mist&quot; tourist boat is this side of the falls; the Rainbow bridge between the US and Canada is in the background.</p>', '', 'N', '20081207', 750, 563),
 ('CanadianFalls1.jpg', 32, 'The Canadian Falls', 'CanadianFalls2.jpg', 'N', '20081207', 150, 113),
@@ -2130,11 +2134,11 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('TorontoSkyline2.jpg', 32, '<p>That&rsquo;s the <a href=\"http://en.wikipedia.org/wiki/CN_Tower\" target=\"_blank\" class=\"external\">CN Tower</a> on the left which at 1,815 ft. 5 inches (553.34 m) was the world&rsquo;s tallest freestanding structure from 1975 to 2007.</p>', '', 'N', '20081207', 750, 563),
 ('UniOfVirginia1.jpg', 32, 'The Rotunda at the Uni. of Virginia.', 'UniOfVirginia2.jpg', 'N', '20081207', 150, 113),
 ('UniOfVirginia2.jpg', 32, '<p>To be truthful, this is not the one that Jefferson had built. It burned down and was replaced by one that was later considered to be too different from the original so it was deliberately torn down and rebuilt.</p>', '', 'N', '20081207', 750, 563),
-('TheOldOak1.jpg', 32, '“The Old Oak” by <a href=\"http://en.wikipedia.org/wiki/Jules_Dupr%C3%A9\" class=\"external\" target=\"_blank\">Jules Dupré</a>, 1870 at the National Gallery of Art.', 'TheOldOak2.jpg', 'N', '20081207', 140, 113),
+('TheOldOak1.jpg', 32, '&ldquo;The Old Oak&rdquo; by <a href=\"http://en.wikipedia.org/wiki/Jules_Dupr%C3%A9\" class=\"external\" target=\"_blank\">Jules Dupr&eacute</a>, 1870 at the National Gallery of Art.', 'TheOldOak2.jpg', 'N', '20081207', 140, 113),
 ('TheOldOak2.jpg', 32, '<p>There were several paintings of exquisite detail like this at the gallery\'s <a href=\"http://www.nga.gov/exhibitions/sfpinfo.shtm\" target=\"_blank\" class=\"external\">Small French Paintings</a> exhibition.</p>', '', 'N', '20081207', 699, 563),
 ('mapTurkey2.gif', 9, '<p>In 1915, Turkey did not exist in the form we know it now but the <a href=\"http://en.wikipedia.org/wiki/Ottoman_Empire\" class=\"external\" target=\"_blank\">Ottoman Empire</a> controlled the eastern Mediterranean and much of the Middle East. There is a much better map over at <a href=\"http://www.armenian-genocide.org\" class=\"external\" target=\"_blank\">Armenian National Institute\'s site</a> (see &ldquo;Genocide Map&rdquo; on left navigation bar).</p>', '', 'N', '20081226', 634, 324),
 ('mapUkraine1.gif', 9, 'Modern Ukraine.', 'mapUkraine2.gif', 'N', '20081226', 150, 77),
-('mapUkraine2.gif', 9, '<p>At the time of the famine, Ukraine was just one of the many republics that made up the Soviet Union.</p>', '', 'N', '20081226', 635, 324),
+('mapUkraine2.gif', 9, '<p>At the time of the famine, Ukraine was just one of the many republics that made up the Soviet Union.</p>\r\n<p>[2020 update: Russia grabbed back the Crimean peninsular and made trouble in the east effectively removing them from Ukrainian government control so this map shows the internationally recognized borders but not the facts on the ground.]</p>', '', 'N', '20081226', 635, 324),
 ('GreenwichPrimary1.jpg', 2, 'Greenwich Primary &ldquo;yearbook&rdquo; from 1975.', 'GreenwichPrimary2.jpg', 'N', '20090111', 113, 150),
 ('GreenwichPrimary2.jpg', 2, '<p>In fact it is just a single sheet of heavy paper folded over with our names on the inside and those of the teachers on the back. After 30+ years it is nearly impossible to read though I don\'t know if that is because it has faded or the &ldquo;Gestetner&rdquo; machines in the days before photocopiers.</p>\r\n<p>Looking at it now by the standards of modern technology, it is a laughable effort. The names aren\'t in any discernible order and the red border around the photo (pasted to the paper) is drawn with a marker pen.</p>\r\n<p>I scanned it and on the second page, I\'ve added what I believe to be the names listed to the right. In some cases, I can it make it out. There is one left which by a process of elimination must be Leigh Spencer but the aggregation of dots doesn\'t appear to be that. Also, I remember a girl called Erica Anderson yet she is not on the list.</p>\r\n<p>See the <a href=\"files/GreenwichPrimary1975.pdf\" target=\"_blank\">Greenwich Primary 1975 farewell keepsake</a> <img src=\"../images/iconPDF.gif\" alt=\"PDF document\" /> (5.3MB)</p>', '', 'N', '20090111', 425, 563),
 ('ObamaInaugurationOnFlickr.jpg', 10, 'Inauguration Day <a href=\"http://flickr.com/photos/21944019@N00/sets/72157612753767109/\" target=\"_blank\" class=\"external\">photoset on Flickr</a>!', '', 'N', '20090123', 150, 113),
@@ -2206,7 +2210,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('20090817_barharbor01Sm.jpg', 59, 'Yes, we camped! In a tent!', '20090817_barharbor01Lg.jpg', 'N', '20090906', 150, 120),
 ('20090817_barharbor01Lg.jpg', 59, '<p>We have owned this tent for 10 years or more but only used it for one night so far. It is tall enough for me to stand up in which is nice. On the first night we tried our inflatable mattress but we\'ve become used to a firm mattress so for the second and third nights we slept on a foam mattress pad I\'d brought for extra insulation just in case it was cold. That was much more comfortable! </p>\r\n<p>Naturally the tent was well ventilated but lacked air conditioning making it difficult to get to sleep on a hot night but we were surprised how cold it was by 3am. Lan had laughed at me for bringing 3 blankets but she wasn\'t laughing when I retrieved them from the car.</p>', '', 'N', '20090906', 700, 560),
 ('20090817_barharbor02Sm.jpg', 59, 'The 151 ft (46 m) <em>Margaret Todd</em>, a 4-masted schooner.', '20090817_barharbor02Lg.jpg', 'N', '20090906', 150, 120),
-('20090817_barharbor02Lg.jpg', 59, '<p>We didn\'t actually go out on this boat but briefly considered it after discovering that the whale-watching tour was sold-out. It is certainly a pretty sight when under sail which it does 3 times a day.</p>.\r\n', '', 'N', '20090907', 700, 560),
+('20090817_barharbor02Lg.jpg', 59, '<p>We didn\'t actually go out on this boat but briefly considered it after discovering that the whale-watching tour was sold-out. It is certainly a pretty sight when under sail which it does 3 times a day.</p>.\r\n', '', 'N', '20090906', 700, 560),
 ('20090817_barharbor03Sm.jpg', 59, 'Glass pumpkins', '20090817_barharbor03Lg.jpg', 'N', '20090906', 150, 120),
 ('20090817_barharbor03Lg.jpg', 59, '<p>This Bar Harbor shop sold lots of arty things and the glass pumpkins were interesting to look at though I had no desire to own them. Somewhat like children in that respect. :-) I felt sorry for the young woman tending the shop as I\'m sure 99% of those who came in were like us and never bought anything.</p>', '', 'N', '20090906', 700, 560),
 ('20090817_bassharbor01Sm.jpg', 59, 'The Bass Harbor Head Light', '20090817_bassharbor01Lg.jpg', 'N', '20090906', 150, 120),
@@ -2216,7 +2220,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('20090817_boattrip01Sm.jpg', 59, 'The boat trip from Northeast Harbor.', '20090817_boattrip01Lg.jpg', 'N', '20090906', 150, 113),
 ('20090817_boattrip01Lg.jpg', 59, '<p>I neglected to take a picture of the boat, or the ranger who provided commentary. Sorry. Anyway, this is the view leaving the harbor at which many expensive yachts were tied up. We were already seeing a lot of buoys marking lobster traps.</p>', '', 'N', '20090906', 750, 563),
 ('20090817_boattrip02Sm.jpg', 59, 'The lighthouse on Bear Island.', '20090817_boattrip02Lg.jpg', 'N', '20090906', 150, 113),
-('20090817_boattrip02Lg.jpg', 59, '<p>More on the <a href=\"http://en.wikipedia.org/wiki/Bear_Island_Light\" class=\"external\" target=\"_blank\">Bear Island Light</a>.</p>', '', 'N', '20090907', 700, 560),
+('20090817_boattrip02Lg.jpg', 59, '<p>More on the <a href=\"http://en.wikipedia.org/wiki/Bear_Island_Light\" class=\"external\" target=\"_blank\">Bear Island Light</a>.</p>', '', 'N', '20090906', 700, 560),
 ('20090817_boattrip03Sm.jpg', 59, 'An osprey\'s nest.', '20090817_boattrip03Lg.jpg', 'N', '20090906', 150, 113);
 INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFullSize`, `version`, `width`, `height`) VALUES
 ('20090817_boattrip03Lg.jpg', 59, '<p>Unfortunately, the former occupants of this nest didn\'t come back this season. The <a href=\'http://en.wikipedia.org/wiki/Osprey\" class=\"external\" target=\"_blank\">osprey</a> is a protected species and elsewhere we saw artificial nests to encourage their recovery.</p>', '', 'N', '20090906', 750, 563),
@@ -2283,7 +2287,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('20090818_lubec05Lg.jpg', 59, '<p>A rare photo of the two of us.</p>\r\n<p>I should note that with the breeze coming off the water, it was rather cool here, a pleasant change to what we\'d experienced at the west-facing Roosevelt house just a few miles away.</p>', '', 'N', '20090906', 700, 560),
 ('20090818_lubec06Sm.jpg', 59, 'The West Head Quoddy Light.', '20090818_lubec06Lg.jpg', 'N', '20090907', 150, 120),
 ('20090818_routeone01Sm.jpg', 59, 'Cranberry Motors &hellip;', '20090818_routeone01Lg.jpg', 'N', '20090906', 150, 120),
-('20090818_routeone01Lg.jpg', 59, '<p>and Blueberry Ford. A nod to the local growers and potential customers. We thought it was cute.</p>', '', 'N', '20090907', 700, 560),
+('20090818_routeone01Lg.jpg', 59, '<p>and Blueberry Ford. A nod to the local growers and potential customers. We thought it was cute.</p>', '', 'N', '20090906', 700, 560),
 ('20090818_routeone02Sm.jpg', 59, 'A field of blueberries.', '20090818_routeone02Lg.jpg', 'N', '20090906', 150, 120),
 ('20090818_routeone02Lg.jpg', 59, '<p>It doesn\'t look like much, does it. The <a href=\"http://en.wikipedia.org/wiki/Blueberry\" class=\"external\" target=\"_blank\">blueberry</a> grows on low bushes and Maine has a lot of them.</p>', '', 'N', '20090906', 700, 560),
 ('20090818_lubec06Lg.jpg', 59, '<p>The <a href=\"http://en.wikipedia.org/wiki/West_Quoddy_Head_Light\" class=\"external\" target=\"_blank\">West Quoddy Head Light</a> is the most easterly point in the US.</p>', '20090818_lubec06Lg.jpg', 'N', '20090907', 700, 560),
@@ -2315,7 +2319,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('20090819_belfast06Sm.jpg', 59, 'A nice waterfront park.', '20090819_belfast06Lg.jpg', 'N', '20090906', 150, 120),
 ('20090819_belfast06Lg.jpg', 59, '<p>My paper map mentions the &quot;Regal Passenger Steamer\" for this location, once the site of a shipyard but the <a href=\"http://www.belfastmaine.org/whattodo/museumStreets.cfm\" class=\"external\" target=\"_blank\">Belfast Area Chamber of Commerce website</a> reminds me that &quot;The <em>SS Belfast</em>, the \'Great White Flyer\' of the Eastern Steam Ship Co. of Boston, plied the waters on Penobscot Bay, carrying passengers, freight and mail for thirty-six years.&quot;.</p>\r\n<p>The <em>Jennie Flood Kreger</em> was built in the adjacent shipyard and &quot;was the largest and only five-masted ship to be built in Belfast. Launch day, March 5, 1919, drew a large and excited crowd&quot;. If it was the &quot;only&quot five-masted ship built here, it was presumably also the smallest of that type.</p>', '', 'N', '20090906', 700, 560),
 ('20090819_belfast07Sm.jpg', 59, 'The Opera House.', '20090819_belfast07Lg.jpg', 'N', '20090906', 150, 120),
-('20090819_belfast07Lg.jpg', 59, '<p>On close inspection of the map, I\'m not sure if this is the Opera House which might be immediately to the right of this photo. Nevertheless, it is a pretty building.</p>', '', 'N', '20090907', 700, 560),
+('20090819_belfast07Lg.jpg', 59, '<p>On close inspection of the map, I\'m not sure if this is the Opera House which might be immediately to the right of this photo. Nevertheless, it is a pretty building.</p>', '', 'N', '20090906', 700, 560),
 ('20090819_belfast08Sm.jpg', 59, 'The Post Office.', '20090819_belfast08Lg.jpg', 'N', '20090906', 150, 120),
 ('20090819_belfast08Lg.jpg', 59, '<p>A fire in 1865 and another in 1873 destroyed most of the town\'s commercial hub but it was rebuilt in brick so it lasted.</p>', '', 'N', '20090906', 700, 560),
 ('20090819_belfast09Sm.jpg', 59, 'City Hall.', '20090819_belfast09Lg.jpg', 'N', '20090906', 150, 120),
@@ -2326,7 +2330,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('20090819_bucksport05Lg.jpg', 59, '<p>Possibly it was faulty for some reason so they kept it for educational purposes and I\'m glad they did. The bridge seems narrow when you drive over but it\'s big when you walk up to this piece.</p>', '', 'N', '20090906', 700, 560),
 ('20090819_bucksport06Sm.jpg', 59, 'Old on the left, new on the right.', '20090819_bucksport06Lg.jpg', 'N', '20090906', 150, 120),
 ('20090819_bucksport06Lg.jpg', 59, '<p>Work to overhaul the <a href=\"http://en.wikipedia.org/wiki/Waldo-Hancock_Bridge\" class=\"external\" target=\"_blank\">Waldo-Hancock Bridge</a> to bring it up to modern standards was partially complete in 2000 when further inspection revealed the structure had deteriorated so much on the other side that the focus shifted to temporary strengthening while a new bridge was built.</p>\r\n<p>The guide told us that trucks were immediately forbidden from using it forcing them to detour through Bangor, 25 miles (40km) upstream. Now not even pedestrians are allowed on the old bridge and it will be demolished when funds are available.</p>', '', 'N', '20090906', 700, 560),
-('20090819_bucksport07Sm.jpg', 59, 'Thistles near the lone bridge section.', '20090819_bucksport07Lg.jpg', 'N', '20090906', 150, 120),
+('20090819_bucksport07Sm.jpg', 59, 'Thistles near the lone bridge section.', '20090819_bucksport07Lg.jpg', 'N', '20090907', 150, 120),
 ('20090819_bucksport07Lg.jpg', 59, '<p>It\'s quite an attractive flower so long as you don\'t touch it.</p>', '', 'N', '20090907', 700, 560),
 ('20090819_bucksport08Sm.jpg', 59, '', '20090819_bucksport08Lg.jpg', 'N', '20090906', 150, 120),
 ('20090819_bucksport08Lg.jpg', 59, '', '', 'N', '20090906', 700, 560),
@@ -2393,7 +2397,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('20090820_bath03Sm.jpg', 59, 'Look what you get for $1.4 billion.', '20090820_bath03Lg.jpg', 'N', '20090906', 150, 120),
 ('20090820_bath02Sm.jpg', 59, 'A floating dry dock.', '20090820_bath02Lg.jpg', 'N', '20090906', 150, 120),
 ('20090820_bath02Lg.jpg', 59, '<p>From a peak of 200 shipyards operating in Bath, there is now just one, the <a href=\"http://en.wikipedia.org/wiki/Bath_Iron_Works\" class=\"external\" target=\"_blank\">Bath Iron Works</a> which alone was able to make the transition from wood to steel and sail to steam, though now it is owned by General Dynamics, a defense contractor.</p>\r\n<p>I was surprised to learn that modern shipyards no longer launch ships by letting them slide down a slipway in to the water. Instead, the ship is moved on rails onto a <a href=\"http://en.wikipedia.org/wiki/Floating_dry_dock#Floating\" class=\"external\" target=\"_blank\">floating dry dock</a> and gently lowered into the water, a much more controlled action. Underscoring how the Bath Iron Works now only builds ships for the military, this dry dock was built in China.</p>\r\n', '', 'N', '20090906', 700, 560),
-('20090820_bath03Lg.jpg', 59, '<p>If you are a US taxpayer, you have contributed to the <em>DDG-109 Jason Dunham</em>, an <a href=\"http://en.wikipedia.org/wiki/Arleigh_Burke_class_destroyer\" class=\"external\" target=\"_blank\">Arleigh Burke class destroyer</a> which was launched on 1-Aug-09 just a few weeks before our arrival.</p>', '', 'N', '20090915', 700, 560),
+('20090820_bath03Lg.jpg', 59, '<p>If you are a US taxpayer, you have contributed to the <em>DDG-109 Jason Dunham</em>, an <a href=\"http://en.wikipedia.org/wiki/Arleigh_Burke_class_destroyer\" class=\"external\" target=\"_blank\">Arleigh Burke class destroyer</a> which was launched on 1-Aug-09 just a few weeks before our arrival.</p>', '', 'N', '20090906', 700, 560),
 ('20090820_bath04Sm.jpg', 59, 'The bridge on Route 127 to Arrowsic Island.', '20090820_bath04Lg.jpg', 'N', '20090906', 150, 120),
 ('20090820_bath04Lg.jpg', 59, '<p>The young man giving the guided tour on the boat noted that an osprey\'s nest had been discovered during bridge maintenance work, that work had to stop and an artificial nest was constructed nearby, all at a cost of $80,000 which he thought could have been better used to buy him a <a href=\"http://en.wikipedia.org/wiki/Dodge_Viper\" class=\"external\" target=\"_blank\">Dodge Viper</a>.</p>', '', 'N', '20090906', 700, 560),
 ('20090820_bath05Sm.jpg', 59, 'A mini-lighthouse.', '20090820_bath05Lg.jpg', 'N', '20090906', 150, 120),
@@ -2401,7 +2405,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('20090820_bath06Sm.jpg', 59, 'A tower with a fog bell.', '20090820_bath06Lg.jpg', 'N', '20090906', 150, 120),
 ('20090820_bath06Lg.jpg', 59, '<p>The lighthouse keeper had to raise the weights that drove the clockwork mechanism every 4 hours when it was foggy. I think the guide said they weighed 1200 lbs (550kg). What a drag.</p>', '', 'N', '20090906', 700, 560),
 ('20090820_bath07Sm.jpg', 59, 'Two lighthouses mark a safe passage.', '20090820_bath07Lg.jpg', 'N', '20090906', 150, 120),
-('20090820_bath07Lg.jpg', 59, '<p>When the two lights are in line, the ship\'s navigator knew he was in the channel. Upon seeing the other lighthouse, the ship would be turned to port (left).</p>', '', 'N', '20090915', 700, 560),
+('20090820_bath07Lg.jpg', 59, '<p>When the two lights are in line, the ship\'s navigator knew he was in the channel. Upon seeing the other lighthouse, the ship would be turned to port (left).</p>', '', 'N', '20090906', 700, 560),
 ('20090820_bath08Sm.jpg', 59, 'The outlines of a ship.', '20090820_bath08Lg.jpg', 'N', '20090906', 150, 120),
 ('20090820_bath08Lg.jpg', 59, '<p>The museum incorporates the grounds of the former Percy &amp; Small Shipyard which built the 6-masted schooner <a href=\"http://en.wikipedia.org/wiki/Wyoming_%28schooner%29\" class=\"external\" target=\"_blank\">Wyoming</a> (<a href=\"http://www.mainememory.net/bin/Detail?ln=8863\" class=\"external\" target=\"_blank\">photo</a>), the longest wooden ship ever built. A sculpture shows the outlines of bow (front) and stern (back) of the ship and it is hoped to one day fill in the bit in the middle.</p>.', '', 'N', '20090906', 700, 560),
 ('20090820_bath09Sm.jpg', 59, 'The <em>Sherman Zwicker</em>.', '20090820_bath09Lg.jpg', 'N', '20090906', 150, 120),
@@ -2415,7 +2419,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('20090820_bath13Sm.jpg', 59, 'Newcastle? Australia?', '20090820_bath13Lg.jpg', 'N', '20090906', 150, 120),
 ('20090820_bath13Lg.jpg', 59, '<p>One thing I had not expected to see in Maine was a photo of Newcaslte but there it is with at least a dozen sailing ships tied up at the wharf in 1890, presumably loading coal.</p>', '', 'N', '20090906', 700, 560),
 ('20090820_portland01Sm.jpg', 59, 'The Portland Observatory!', '20090820_portland01Lg.jpg', 'N', '20090906', 150, 120),
-('20090820_portland01Lg.jpg', 59, '<p>This was a high point of our trip, both literally and figuratively. After checking into our hotel in <a href=\"http://en.wikipedia.org/wiki/Portland,_Maine\" class=\"external\" target=\"_blank\">Portland</a>, went to look at the nearby <a href=\"http://en.wikipedia.org/wiki/Portland_Observatory\" class=\"external\" target=\"_blank\">Portland Observatory</a> and it was our great fortune to find it open on Thursday evenings! The observatory was built to watch for ships, not stars— as soon as approaching ship could be identified by a watchman with a telescope, he would hoist a flag visible at the docks so the wharves could be ready for its arrival.</p>\r\n<p>We are lucky it is still here. Built in 1807, the <a href=\"http://en.wikipedia.org/wiki/1866_Great_Fire_of_Portland,_Maine\" class=\"external\" target=\"_blank\">Great Fire of 1866</a> came so close that boys were sent up with buckets of water throw down on the walls to keep them wet. Saved from that catastrophe, it lay abandoned from 1923 when radio made it obsolete until the 1990s when restoration work begun by which time it had fallen into disrepair. There is a fire station next door now so there will be a swift response if anything happens.</p>', '', 'N', '20090916', 700, 560),
+('20090820_portland01Lg.jpg', 59, '<p>This was a high point of our trip, both literally and figuratively. After checking into our hotel in <a href=\"http://en.wikipedia.org/wiki/Portland,_Maine\" class=\"external\" target=\"_blank\">Portland</a>, went to look at the nearby <a href=\"http://en.wikipedia.org/wiki/Portland_Observatory\" class=\"external\" target=\"_blank\">Portland Observatory</a> and it was our great fortune to find it open on Thursday evenings! The observatory was built to watch for ships, not stars— as soon as approaching ship could be identified by a watchman with a telescope, he would hoist a flag visible at the docks so the wharves could be ready for its arrival.</p>\r\n<p>We are lucky it is still here. Built in 1807, the <a href=\"http://en.wikipedia.org/wiki/1866_Great_Fire_of_Portland,_Maine\" class=\"external\" target=\"_blank\">Great Fire of 1866</a> came so close that boys were sent up with buckets of water throw down on the walls to keep them wet. Saved from that catastrophe, it lay abandoned from 1923 when radio made it obsolete until the 1990s when restoration work begun by which time it had fallen into disrepair. There is a fire station next door now so there will be a swift response if anything happens.</p>', '', 'N', '20090906', 700, 560),
 ('20090820_portland02Sm.jpg', 59, 'View from the tower looking west.', '20090820_portland02Lg.jpg', 'N', '20090906', 150, 120),
 ('20090820_portland02Lg.jpg', 59, '<p>To the extent that Portland has a central business district, it is about a mile away in this direction.</p>', '', 'N', '20090906', 700, 560),
 ('20090820_portland03Sm.jpg', 59, 'Looking east toward the ocean.', '20090820_portland03Lg.jpg', 'N', '20090906', 150, 120),
@@ -2468,7 +2472,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('20090821_portland16Sm.jpg', 59, 'Entry to the building in the last photo.', '20090821_portland16Lg.jpg', 'N', '20090906', 150, 120),
 ('20090821_portland16Lg.jpg', 59, '', '', 'N', '20090906', 700, 560),
 ('20090821_portland17Sm.jpg', 59, 'City Hall.', '20090821_portland17Lg.jpg', 'N', '20090906', 150, 120),
-('20090821_portland17Lg.jpg', 59, '', '', 'N', '20090918', 700, 560),
+('20090821_portland17Lg.jpg', 59, '', '', 'N', '20090906', 700, 560),
 ('20090821_portland18Sm.jpg', 59, 'This building caused an uproar.', '20090821_portland18Lg.jpg', 'N', '20090906', 150, 120),
 ('20090821_portland18Lg.jpg', 59, '<p>Local residents apparently objected to this modern design which was so different to historic buildings nearby. Although it is called <em>Post Office Square</em>, I think it housed the local newspaper.</p>', '', 'N', '20090906', 700, 560),
 ('20090821_portland19Sm.jpg', 59, 'Geothermal heating and cooling? ', '20090821_portland19Lg.jpg', 'N', '20090906', 150, 120),
@@ -2493,7 +2497,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('20090821_portland28Lg.jpg', 59, '<p>If the bait is not eaten after two days, it has to be changed so the old bait is quickly seized upon.</p>\r\n<p>One final note about Maine lobster fisheries: David told me that licenses are issued to individuals and they can only take lobsters from their own boat which has the interesting side-effect that it is not possible for a corporation to buy up all the licenses and boats. As such, the industry is unusual in having a large number of owner-operators.</p>\r\n<p>We came back to the dock with two lobsters of legal size which Lan bought and cooked for dinner&mdash;though she only ate one that night. Thanks David. Thanks Julie.</p>', '', 'N', '20090906', 700, 560),
 ('20090822_kennebunkport01Sm.jpg', 59, 'Kennebunk, across the river from Kennebunkport.', '20090822_kennebunkport01Lg.jpg', 'N', '20090906', 150, 120),
 ('20090822_kennebunkport01Lg.jpg', 59, '<p>If <a href=\"http://en.wikipedia.org/wiki/Kennebunkport\" class=\"external\" target=\"_blank\">Kennebunkport</a> is known to Americans, it is because the Bush family has a \"<a href=\"http://en.wikipedia.org/wiki/Bush_compound\" class=\"external\" target=\"_blank\">compund</a>\" here. This is a town for the wealthy and those that want to be seen to be wealthy. Just to the left is a food stall selling \"fried dough\" which sounds down-market but the price of $3.95 suggested otherwise!</p>', '', 'N', '20090906', 700, 560),
-('20090822_kennebunkport02Sm.jpg', 59, 'Picturesque church in Kennebunkport.', '20090822_kennebunkport02Lg.jpg', 'N', '20090906', 150, 120),
+('20090822_kennebunkport02Sm.jpg', 59, 'Picturesque church in Kennebunkport.', '20090822_kennebunkport02Lg.jpg', 'N', '20090918', 150, 120),
 ('20090822_kennebunkport02Lg.jpg', 59, '', '', 'N', '20090918', 700, 560),
 ('20090822_kennebunkport03Sm.jpg', 59, 'Someone has a lot of money.', '20090822_kennebunkport03Lg.jpg', 'N', '20090906', 150, 120),
 ('20090822_kennebunkport03Lg.jpg', 59, '<p>Though it has to be noted that this mansion is on the Kennebunk, not the Kennebunkport side of the river.</p>', '', 'N', '20090906', 700, 560),
@@ -2545,7 +2549,7 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('20090822_portland24Sm.jpg', 59, 'Some building on Commercial Street.', '20090822_portland24Lg.jpg', 'N', '20090906', 150, 120),
 ('20090822_portland24Lg.jpg', 59, '', '', 'N', '20090906', 700, 560),
 ('20090822_portland25Sm.jpg', 59, 'The tour guide had mentioned the building code &hellip;', '20090822_portland25Lg.jpg', 'N', '20090906', 150, 120),
-('20090822_portland25Lg.jpg', 59, '<p>New construction in the historic district was supposed to reflect old buildings but at the same time, not look like them. This building seemed to do the latter better than the former.</p>\r\n,p>Incidentally, there was a bakery nearby, set back from the street, that Lan quite liked and we bought some fruit pies. I thought their selection was rather too limited; I saw nothing featuring chocolate for instance.</p>\r\n\r\n', '', 'N', '20090906', 700, 560),
+('20090822_portland25Lg.jpg', 59, '<p>New construction in the historic district was supposed to reflect old buildings but at the same time, not look like them. This building seemed to do the latter better than the former.</p>\r\n<p>Incidentally, there was a bakery nearby, set back from the street, that Lan quite liked and we bought some fruit pies. I thought their selection was rather too limited; I saw nothing featuring chocolate for instance.</p>\r\n\r\n', '', 'N', '20090906', 700, 560),
 ('20090822_portland26Sm.jpg', 59, 'This looks promising &hellip;', '20090822_portland26Lg.jpg', 'N', '20090906', 150, 120),
 ('20090822_portland26Lg.jpg', 59, '<p>The <a href=\"http://en.wikipedia.org/wiki/East_Coast_Greenway\" class=\"external\" target=\"_blank\">East Coast Greenway</a>, a bike path under construction from Calais, Maine to Key West, Florida! What a fabulous ride this will be! 3000 miles (5000 km). Can I take a few months off? <a href=\"http://www.greenway.org/\" class=\"external\" target=\"_blank\">Official site</a></p>', '', 'N', '20090906', 700, 560),
 ('20090822_portland28Sm.jpg', 59, 'The fog rolls in!', '20090822_portland28Lg.jpg', 'N', '20090906', 150, 120),
@@ -2749,29 +2753,22 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('DownstairsWithWallsSm.jpg', 63, 'Interior walls are so last century.', 'DownstairsWithWallsLg.jpg', 'N', '20100123', 150, 113),
 ('RedBikeSm.jpg', 1, 'My beautiful (folding) bike.', '', 'N', '20141005', 150, 113),
 ('BraziliaCathedralSm.jpg', 1, 'The cathedral as reimagined by Oscar Niemeyer.', '', 'N', '20150422', 150, 113),
-('JapaneseChildrenSm.jpg', 1, 'Perfectly behaved Japanese school children wait for the train. So cute!', '', 'N', '20170511', 150, 113);
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `folders`
---
-ALTER TABLE `folders`
-  ADD PRIMARY KEY (`folderID`);
-
---
--- Indexes for table `menus2`
---
-ALTER TABLE `menus2`
-  ADD PRIMARY KEY (`menuID`);
-
---
--- Indexes for table `photos`
---
-ALTER TABLE `photos`
-  ADD PRIMARY KEY (`photoName`);
+('', 0, '', '', 'N', NULL, NULL, NULL),
+('JapaneseChildrenSm.jpg', 1, 'Perfectly behaved Japanese school children wait for the train. So cute!', '', 'N', '20170511', 150, 113),
+('EyesNoseLips.jpg', 7, 'Taeyang: Eyes, Nose, Lips', '', 'N', '20200528', 246, 138),
+('BoyWithLuv.jpg', 7, 'BTS: Boy With Luv', '', 'N', '20200528', 246, 138),
+('CheerUp.jpg', 7, 'Twice: Cheer Up!', '', 'N', '20200528', 246, 138),
+('TwiceFlightAttendantsSm.jpg', 7, 'Twice as flight attendants.', 'TwiceFlightAttendantsLg.jpg', 'Y', '20200528', 150, 64),
+('TwiceFlightAttendantsLg.jpg', 7, '', '', 'N', '20200528', 1072, 459),
+('SNSDFlightAttendantsSm.jpg', 7, 'Girls Generation as flight attendants.', 'SNSDFlightAttendantsLg.jpg', 'Y', '20200528', 150, 84),
+('SNSDFlightAttendantsLg.jpg', 7, '', '', 'N', '20200528', 1440, 809),
+('ThisIsMe.jpg', 7, 'Elris: This Is Me', '', 'N', '20200528', 246, 138),
+('monumentvalley_07lg.jpg', 53, '', '', 'N', '20060119', 750, 563),
+('album_01.jpg', 64, 'Album 1: Arrival! Oct-19 to Dec-19 (100 photos)', '', 'N', '20200529', 246, 185),
+('album_02.jpg', 64, 'Album 2: Dec 2019 to Feb 2020 (200 photos)', '', 'N', '20200529', 246, 185),
+('portuguesePaving.jpg', 64, 'Just Portuguese paving, not necessarily in Libson. (90 photos)', '', 'N', '20200529', 246, 185),
+('instagram.jpg', 64, '@petersweetandsour', '', 'N', '20200529', 246, 246),
+('CanaryIslandsCruiseSm.jpg', 1, 'The Auditorio de Tenerife.', '', 'N', '20181129', 150, 113);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
