@@ -9,61 +9,53 @@
 <div class="story noSpaceBelow">
    <p>On the way there on US163. A lovely surprise. <a href="http://en.wikipedia.org/wiki/Monument_Valley" target="_blank" class="external">Learn more</a>.</p>
 </div>
-<div class="photoAlbum">
- <?
-   setThumbnail(
-		array(
-			"monumentvalley_01sm.jpg",
-			"monumentvalley_02sm.jpg",
-			"monumentvalley_03sm.jpg",
-			"monumentvalley_04sm.jpg",
-			"monumentvalley_05sm.jpg",
-			"monumentvalley_06sm.jpg",
-			"monumentvalley_07sm.jpg",
-			"mexicanhat_sm.jpg"
-		)
-	);
-   ?>
+<div class="photo-gallery clear">
+ 	<?
+	setThumbnail([
+		"monumentvalley_01sm.jpg",
+		"monumentvalley_02sm.jpg",
+		"monumentvalley_03sm.jpg",
+		"monumentvalley_04sm.jpg",
+		"monumentvalley_05sm.jpg",
+		"monumentvalley_06sm.jpg",
+		"monumentvalley_07sm.jpg",
+		"mexicanhat_sm.jpg"]);
+	?>
 </div>
 
 <h2>Grand Canyon</h2>
 <div class="story noSpaceBelow">
    <p>You expect it to be spectacular and it is. <a href="http://en.wikipedia.org/wiki/Grand_Canyon" target="_blank" class="external">Learn more</a>.</p>
 </div>
-<div class="photoAlbum">
-   <?
-   setThumbnail(
-		array(
-			"highway64_sm.jpg",
-			"grandcanyon_01sm.jpg",
-			"grandcanyon_02sm.jpg",
-			"grandcanyon_03sm.jpg",
-			"grandcanyon_04sm.jpg",
-			"grandcanyon_05sm.jpg",
-			"grandcanyon_06sm.jpg",
-			"grandcanyon_07sm.jpg",
-			"grandcanyon_08sm.jpg",
-			"grandcanyon_09sm.jpg",
-			"grandcanyon_10sm.jpg",
-			"grandcanyon_11sm.jpg",
-			"grandcanyon_12sm.jpg",
-			"grandcanyon_13sm.jpg",
-			"grandcanyon_14sm.jpg",
-			"grandcanyon_15sm.jpg",
-			"grandcanyon_16sm.jpg",
-			"grandcanyon_17sm.jpg",
-			"grandcanyon_18sm.jpg",
-			"grandcanyon_19sm.jpg",
-			"grandcanyon_20sm.jpg",
-			"grandcanyon_21sm.jpg",
-			"grandcanyon_22sm.jpg",
-			"grandcanyon_23sm.jpg",
-			"grandcanyon_24sm.jpg"
-		)
-	);
-	
-   setThumbnail("panoramaGrandCanyon.jpg", "", "", "true", "");
-   setThumbnail("grandcanyon_25sm.jpg");
-   setThumbnail("grandcanyon_26sm.jpg");
-   ?>
+<div class="photo-gallery clear">
+	<?
+	setThumbnail([
+		"highway64_sm.jpg",
+		"grandcanyon_01sm.jpg",
+		"grandcanyon_02sm.jpg",
+		"grandcanyon_03sm.jpg",
+		"grandcanyon_04sm.jpg",
+		"grandcanyon_05sm.jpg",
+		"grandcanyon_06sm.jpg",
+		"grandcanyon_07sm.jpg",
+		"grandcanyon_08sm.jpg",
+		"grandcanyon_09sm.jpg",
+		"grandcanyon_10sm.jpg",
+		"grandcanyon_11sm.jpg",
+		"grandcanyon_12sm.jpg",
+		"grandcanyon_13sm.jpg",
+		"grandcanyon_14sm.jpg",
+		"grandcanyon_15sm.jpg",
+		"grandcanyon_16sm.jpg",
+		"grandcanyon_17sm.jpg",
+		"grandcanyon_18sm.jpg",
+		"grandcanyon_19sm.jpg",
+		"grandcanyon_20sm.jpg",
+		"grandcanyon_21sm.jpg",
+		"grandcanyon_22sm.jpg",
+		"grandcanyon_23sm.jpg",
+		"grandcanyon_24sm.jpg",
+		"grandcanyon_25sm.jpg",
+		"grandcanyon_26sm.jpg"]);
+	?>
 </div>

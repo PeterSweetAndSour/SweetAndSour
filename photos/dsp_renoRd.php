@@ -4,10 +4,14 @@
 <div class="story">
    <p>In the NW sector of Washington D.C.</p>
 </div>
-<?
-setThumbnail("UtahDesert1.jpg");
-setThumbnail("QueenMary1.jpg");
-setThumbnail("UniversalStudios1.jpg");
-setThumbnail("HollywoodStar1.jpg");
-?>
+<div class="photo-gallery clear">
+	<?
+	setThumbnail(
+		"UtahDesert1.jpg",
+		"QueenMary1.jpg",
+		"UniversalStudios1.jpg",
+		"HollywoodStar1.jpg");
+	?>	
+</div>
+
 

@@ -6,13 +6,9 @@
 </div>
 <div class="photoAlbum">
 	<?
-   setThumbnail(
-		array(
-			"troisRivieres1Sm.jpg",
-			"troisRivieres2Sm.jpg",
-			"troisRivieres3Sm.jpg",
-			"troisRivieres4Sm.jpg"
-		)
-	);
+	setThumbnail(["troisRivieres1Sm.jpg",
+		"troisRivieres2Sm.jpg",
+		"troisRivieres3Sm.jpg",
+		"troisRivieres4Sm.jpg"]);
 	?>
 </div>

@@ -10,22 +10,19 @@
 </div>
 <div class="photoAlbum">
 	<?
-   setThumbnail(
-		array(
-			"MapMaineTripSm.jpg",
-			"20090816_portsmouth01Sm.jpg",
-			"20090816_portsmouth02Sm.jpg",
-			"20090816_portsmouth03Sm.jpg",
-			"20090816_portsmouth04Sm.jpg",
-			"20090816_portsmouth05Sm.jpg",
-			"20090816_portsmouth06Sm.jpg",
-			"20090816_portsmouth07Sm.jpg",
-			"20090816_portsmouth08Sm.jpg",
-			"20090816_portsmouth09Sm.jpg",
-			"20090816_portsmouth10Sm.jpg",
-			"20090816_portsmouth11Sm.jpg"
-		)
-	);
+	setThumbnail([
+		"MapMaineTripSm.jpg",
+		"20090816_portsmouth01Sm.jpg",
+		"20090816_portsmouth02Sm.jpg",
+		"20090816_portsmouth03Sm.jpg",
+		"20090816_portsmouth04Sm.jpg",
+		"20090816_portsmouth05Sm.jpg",
+		"20090816_portsmouth06Sm.jpg",
+		"20090816_portsmouth07Sm.jpg",
+		"20090816_portsmouth08Sm.jpg",
+		"20090816_portsmouth09Sm.jpg",
+		"20090816_portsmouth10Sm.jpg",
+		"20090816_portsmouth11Sm.jpg"]); 
 	?>
 </div>
 <div class="story">
