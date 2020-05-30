@@ -1,7 +1,22 @@
 <? //dsp_welcome.php ?>
 <div class="story">
-   <p>This is Peter's web site, a very slow-motion blog. Don't try loading this on your phone as it is not yet responsive.</p>
+   <p>This is Peter's web site, a very slow-motion blog.</p>
 </div>
+
+<h2>1 June 2020</h2>
+<div class="story">
+	<p>The site has been updated to work with phones, something I should have fixed a decade ago and I have added two new pages of content:</p>
+	<ul>
+		<li><a href="<?= $urlPrefix ?>wherewelive/index.php?fuseAction=lisbon">Lisbon</a></li>
+		<li><a href="<?= $urlPrefix ?>artsandculture/index.php?fuseAction=kpop">K-pop!</a></li>
+	</ul>
+</div>
+
+<h2>29 November 2018</h2>
+<div class="story">
+	<p>We took a cruise on a smaller ship to the Canary Islands (part of Spain) and then the island of Madeira (part of Portugal): <a hrefhttps://photos.app.goo.gl/WpQnRnfVCbdZXgkb8 target="_blank" class="external">106 photos</a>. As always, click the <img src="images/IconInformation.jpg" alt="Information"> icon (or <img src="images/IconMenu.jpg" alt="Menu"> on mobile) once in Google Photos to see the captions.</p>
+</div>
+<? setThumbnail("CanaryIslandsCruiseSm.jpg", "https://photos.app.goo.gl/WpQnRnfVCbdZXgkb8"); ?>
 
 <h2>27 September 2017</h2>
 <div class="story">
@@ -11,9 +26,9 @@
 
 <h2>4 June 2017</h2>
 <div class="story">
-	<p>Trip to Japan! Two sets of photos depending on your interest: <a class="external" href="https://goo.gl/photos/qagK54GcwmfMpafEA" target="_blank">~500 photos</a> and <a class="external" href="https://goo.gl/photos/mNFazJxxcihsxuMQ7" target="_blank">~100 photos</a> but click the <img src="images/IconInformation.jpg" alt="Information"> icon once in Google Photos to see the captions.</p>
+	<p>Trip to Japan! Two sets of photos depending on your level of interest: <a class="external" href="https://goo.gl/photos/qagK54GcwmfMpafEA" target="_blank">~500 photos</a> and <a class="external" href="https://goo.gl/photos/mNFazJxxcihsxuMQ7" target="_blank">~100 photos</a> but click the <img src="images/IconInformation.jpg" alt="Information"> icon once in Google Photos to see the captions.</p>
 </div>
-<? setThumbnail("JapaneseChildrenSm.jpg", "https://photos.google.com/share/AF1QipMliiZ8rT1GUak5LqtMyuC4i90dfntUpEWSFwyPjBZEnO1Nu6AAIozrVc-yb13bmw/photo/AF1QipNzvw-5cBgrb7pPZNfRTpc2Vg_56AkoJXbQWpm3?key=bUNSY21kdWwxeHQwU3RqNDBwT2hBTHdhSTBVOGln"); ?>
+<? setThumbnail("JapaneseChildrenSm.jpg", "https://photos.app.goo.gl/xPFH8CcA6gA93VtRA"); ?>
 
 <h2>14 August 2016</h2>
 <div class="story">
