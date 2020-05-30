@@ -202,17 +202,12 @@ p#returnLink {
 Page layout
 ************************************************************* */
 div.page {
-  width: 966px;
+  width: 960px;
   margin: 20px auto;
   background-color: #fff;
   position: relative;
-  /* for positioning rounded corners */
   border-radius: 20px;
-  /* Opera */
-  -moz-border-radius: 20px;
-  /* Mozilla */
-  -webkit-border-radius: 20px;
-  /* Webkit */ }
+}
 
 div#header {
   padding-top: 12px; }
@@ -365,7 +360,7 @@ div#showDebugInfo {
   width: 962px;
   height: 300px;
   overflow: hidden;
-  margin: 10px 2px; }
+  margin: 10px 0 10px 2px; }
 
 body.contactUs #imageMenu {
   height: 252px; }
@@ -391,28 +386,25 @@ body.timeForJustice #imageMenu {
   width: 55px;
   transition: width 0.5s;
   transition-delay: 0.1s;
-  transition-timing-function: easeOutQuad;
-  /* closed width - must match what is in the call to ImageMenu on act_constructMenu.php */
+  transition-timing-function: linear;
   display: block;
   border-right: 2px solid white;
   }
- #imageMenu >  ul >  li.contactus {
-   width: 60px;
- }
+
 
 #imageMenu >  ul >  li.selected {
   background-color: green;
   width: 500px;
   transition: width 0.5s;
   transition-delay: 0.1s;
-  transition-timing-function: easeOutQuad;
+  transition-timing-function: linear;
   }
   
 #imageMenu >  ul >  li.selected.off {
   width: 55px;
   transition: width 0.5s;
   transition-delay: 0.1s;
-  transition-timing-function: easeOutQuad;
+  transition-timing-function: linear;
 }
 
 #imageMenu >  ul >  li.on {
@@ -420,8 +412,8 @@ body.timeForJustice #imageMenu {
   border-bottom: 4px solid #fff;
   width: 500px;
   transition: width 0.5s;
-  transition-delay: 0.1s;
-  transition-timing-function: easeOutQuad;
+  transition-delay: 0.1;
+  transition-timing-function: linear;
   /* Need the LI to extend down at least to the top of the submenu so that a mouseout event is not registered when moving to the child UL submenu */ }
 
 /* A. */
