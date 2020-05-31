@@ -10,6 +10,7 @@
 		<li><a href="<?= $urlPrefix ?>wherewelive/index.php?fuseAction=lisbon">Lisbon</a></li>
 		<li><a href="<?= $urlPrefix ?>artsandculture/index.php?fuseAction=kpop">K-pop!</a></li>
 	</ul>
+	<p>I also added some notes about the update on <a href="<?= $urlPrefix ?>technology/index.php?fuseAction=thisWebSite">This web site</a>.</p>
 </div>
 
 <h2>29 November 2018</h2>

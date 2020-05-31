@@ -10,7 +10,10 @@
 	</ol>
 	<p>Clicking on a thumbnail image on the old version of this site popped up a fake window to show the full size version. It was workable on a desktop. Most of the time. To make the site responsive I wanted a modern image gallery/slider but I could not find one that supported long captions. My thumbnails often have a few words of 'click bait" and then the main caption is displayed with the large photo which seems a great approach to me but apparently no one else. I liked <a href="https://www.photoswipe.com" target="_blank" class="external">Photoswipe</a> because it lazy-loads the photos and you can set it up to work with your page structure so I ended up modifying it which took quite some time. <a href="https://sweetandsour.org/photoswipe_demo.html">Demo page</a>.</p>
 	<p>I'll also be revisiting all the styles now that I'm using SASS and Grunt and browsers are now more capable.</p>
+	<p>The 21 May 1999 note at the bottom of the home page that says &ldquo;<em>Since 18 Aprl</em> [when the site first went online]<em>, I've also bought a 56k modem and Homestead released an off-line editor. Previously, everything had to be done while logged on with my 14.4k modem which tied up the phone line for hours.</em>&rdquo; How times have changed! Typical download speeds are now more than a thousand times faster than when I started and that is why the photos on the early sections of the site are so small. I was still on dial-up until we moved to Virginia in 2006.</p>
+
 	<p>Everything below is for historical purposes only&hellip;</p>
+	<hr>
 </div>
 
 
