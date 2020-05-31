@@ -1,6 +1,6 @@
 <? //dsp_oldPhotosLan.php
 ?>
-<div class="<div class="photo-gallery">">
+<div class="photo-gallery">
 	<?
 	 setThumbnail([
 		 "LanChild1.jpg",
