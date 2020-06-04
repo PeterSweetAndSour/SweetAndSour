@@ -131,68 +131,7 @@ var SweetAndSour = (function() {
 		_displayLoadingMsg();
 	}
 
-	function _setMobileMenu() {
-		var menuToggle = document.querySelector("#menuToggle");
-		var menuLabel = menuToggle.parentNode.querySelector("label");
-		var nav = menuToggle.parentNode.querySelector("nav");
-		menuToggle.addEventListener("click", function() {
-			if(menuToggle.checked) { // User has opened the menu
-				menuLabel.innerHTML = "Close";
-				menuLabel.classList.remove("openMenu");
-				menuLabel.classList.add("closeMenu");
-				menuLabel.classList.add("touched");
-				nav.setAttribute("aria-hidden", "false");
-			}
-			else {
-				menuLabel.innerHTML = "Open";
-				menuLabel.classList.remove("closeMenu");
-				menuLabel.classList.add("openMenu");
-				nav.setAttribute("aria-hidden", "true");
-			}
-		})
 
-		var lastRadioButtonSelected = null;
-
-		nav.addEventListener("click", function(e) {
-			var src = e.target;
-			if(src.tagName === "LABEL") {
-				// Get associated radio button
-				var radioBtnSelected = document.querySelector("#" + src.getAttribute("for"));
-				var radioBtnsInGroup = radioBtnSelected.closest("ul").querySelector("input");
-
-				if(radioBtnSelected === lastRadioButtonSelected) {
-					if(radioBtnSelected.checked) {
-						radioBtnSelected.checked = false;
-						src.classList.remove("checked");
-					}
-					else {
-						radioBtnSelected.checked = true;
-						src.classList.add("checked");
-					}
-				}
-				else if(radioBtnsInGroup.includes(radioBtnSelected)) {
-					src.classList.add("checked"); // Resets background image on :before since this can't be reached directly by js.
-
-					//Now scroll so that the menu item touched by user is still under their finger - opening a menu may collapse one above
-					var radioBtn;
-					for(var i=0; i < radioBtnsInGroup.length; i++) {
-						radioBtn = radioBtnsInGroup[i];
-						if(radioBtn === radioBtnSelected) {
-							break;
-						}
-						else {
-							var clickedPointAtY = e.pageY;
-							var midPointOfLabelNowAtY = src.getBoundingClientRect().y + src.getBoundingClientRect().height/2 + window.scrollY;
-							window.scrollBy(midPointOfLabelNowAtY - clickedPointAtY)
-						}
-					}
-
-				}
-			}
-
-			lastRadioButtonSelected = radioBtnSelected;
-		});
-	}
 	
 				
 	// PUBLIC STUFF
