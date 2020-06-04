@@ -1,4 +1,6 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 	<meta content="text/html; charset=iso-8859-1" http-equiv="Content-type"/>
 	<title>
 		Access Denied -  
@@ -10,29 +12,27 @@
 		div#imageMenu {height:228px}
 	</style>
 </head>
-<body class="">
-		<a name="top"/>
+<body>
 	<div class="page">
-		<div id="header">
-			<img alt="Sweet and Sour" src="/images/SweetAndSourMobile_20081220.gif" id="logoMobile"/>
-			<div id="logo"><a title="Go to home page" href="/home/index.php?fuseAction=home"><span>&nbsp;</span>Sweet and Sour home</a></div>
+		<header>
+			<p id="logo"><a title="Go to home page" href="/home/index.php?fuseAction=home"><span>&nbsp;</span>Sweet and Sour home</a></p>
 			<p id="tagline">One is sweet and the other is&hellip; a web developer</p>
 			
-			<div id="menuWrapper">
-				<div id="imageMenu">
+			<nav>
+				<a href="<?= $urlPrefix ?>home/index.php" title="Home page">
 					<img alt="Sweet and Sour" src="/images/barbedwire_20090113.jpg" />
-				</div>
-			</div>
-		</div>
+				</a>
+			</nav>
+		</header>
 
-		<div class="clearfix" id="content">
+		<section>
 			<h1>Access Denied</h1>
 			<h2>(or HTTP error 401)</h2>
 			<div class="story">
 				<p>Sorry, you aren't allowed in there, at least with the username/password you entered.</p>
-				<p>Click the Back button to try again or go to the <a href="/home/index.php" title="Home page">home page</a> and start over.</p>
+				<p>Click the Back button to try again, or go to the <a href="<?= $urlPrefix ?>home/index.php" title="Home page">home page</a> and start over.</p>
 			</div>
-		</div>
+		</section>
 	</div>
 </body>
 </html>
