@@ -155,7 +155,7 @@
 			</ul> 
 		</li>
 		<li>
-			2019-09-23: <a href="https://www.youtube.com/watch?v=3ymwOvzhwHs" target="_blank" class="external"> Feel Special</a>
+			2019-09-23: <a href="https://www.youtube.com/watch?v=3ymwOvzhwHs" target="_blank" class="external"> Feel Special</a>. By way of comparison, check out <a href="https://www.youtube.com/watch?v=J3KA6WDAYPM" target="_blank" class="external">Dahyun's emotional solo</a>; I think the style is better suited to the lyrics of the song. 
 			This song comes after <a href="https://www.bbc.com/news/48948583&amp;sa=D&amp;ust=1590612821747000">Mina had to withdraw from performing</a> and her part starting at 1:30 addresses her crisis.
 		</li>
 		<li>
@@ -164,7 +164,7 @@
 		<li>
 			2019-12-23: A Christmas present from Nayeon as she cover's <a href="https://www.youtube.com/watch?v=XO9GiPOLd3I">Santa Tell Me</a>
 		</li>
-		<li>2020-06-01 More and More.</li>
+		<li>2020-06-01 <a href="https://www.youtube.com/watch?v=mH0_XpSHkZo" target="_blank" class="external">More and More</a>. I am not sure I like it but I included it here because it is their latest and it seems to be popular. Just not with me.</li>
 	</ul>
 </div>
 
@@ -332,13 +332,18 @@
 <div class="story">
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=lSIx8K_NMsk">Milkshake</a> music video and <a href="https://www.youtube.com/watch?v=E5y8a3zuUas" target="_blank" class="external"> dance practice</a></li>
-		<li><a href="https://www.youtube.com/watch?v=XhQHqH9QhFA"  target="_blank" class="external">V.A.V.I. GIRL</a></li>
+		<li><a href="https://www.youtube.com/watch?v=XhQHqH9QhFA" target="_blank" class="external">V.A.V.I. GIRL</a></li>
 	</ul>
 </div>
 
 <h3>(G)I-DLE</h3>
 <div class="story">
-	<p>Not bouncy and happy at all but arresting: <a href="https://www.youtube.com/watch?v=om3n2ni8luE" target="_blank" class="external">Oh My God</a></p>
+	<p>Not bouncy and happy at all but arresting, even mildly disturbing: <a href="https://www.youtube.com/watch?v=om3n2ni8luE" target="_blank" class="external">Oh My God</a></p>
+</div>
+
+<h3>GWSN a.k.a. Girls in the Park</h3>
+<div class="story">
+	<p><a href="https://www.youtube.com/watch?v=wMj3sLP_azg" target="_blank" class="external">Bazooka!</a> (Thanks Stephanie!)</p>
 </div>
 
 <h3>Elris</h3>
@@ -349,10 +354,15 @@
 	</ul>
 </div>
 
+<h3>GFriend</h3>
+<div class="story">
+	<p>I don't particularly like any of their songs that I know of but I am including them here because of them attempting their <a href="https://www.youtube.com/watch?v=lu7INrbDb68" target="_blank" class="external">dance routine while blindfolded</a>! </p>
+</div>
+
 <h3>&hellip;and so much more!</h3>
 <div class="story">
 	<p>I feel I've only scratched the surface and there are new songs and new groups coming out all the time.  Other groups I've come across - and this is just the girl groups: 
-	A.O.A, APink, BerryGood, Bvndit, CLC,  cignature, Dreamcatcher, DreamNote, Exid, Fromis_9, f(x), GWSN a.k.a. Girls in the Park, GFriend, Fanatics, 
+	A.O.A, APink, BerryGood, Bvndit, CLC,  cignature, Dreamcatcher, DreamNote, Exid, Fromis_9, f(x), 
 Gugudan, Hwa Sa, I.O.I, Itzy (stablemate of Twice and successful because of it), I.Z. One, Kara, La Boum, Lovelyz, Orange Caramel, Pledis, Pristin, Purplebeck, S.I.S., UNI.T, WJSN (not to be confused with GWSN!).</p>
 </div>
 

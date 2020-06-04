@@ -1,5 +1,5 @@
 <div class="story">
-	<p>We visited Portugal in 2018 and liked it so much that we decided to move here! My parents happened to be in the UK when I was born allowing me to get a British passport and thus move anywhere within the EU, so long as we did it before Brexit. That was scheduled for 31<sup>st</sup> October 2019 so we arrived just a week before that.</sup></p>
+	<p>We visited Portugal in 2018 and liked it so much that we decided to move here! My parents happened to be in the UK when I was born allowing me to get a British passport and thus move anywhere within the EU, so long as we did it before Brexit. That was scheduled for 31<sup>st</sup> October 2019 so we arrived just a week before that.</p>
 	<p>We have a bunch of photos on Google's platform for you to enjoy. Make sure that you turn on the captions or a lot of them won't make sense.</p>
 </div>
 <div class="clear">

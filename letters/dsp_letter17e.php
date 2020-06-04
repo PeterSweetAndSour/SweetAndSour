@@ -15,7 +15,7 @@
 		<li><span class="sticker">It&rsquo;s time to trim the Bushes.</span></li>
 		<li><span class="sticker">Save the environment. Plant a Bush back in Texas.</span></li>
 		<li><span class="sticker">Iraq is Arabic for Vietnam</span></li>
-		<li><span class="sticker">Oh well. I wasn�t using my civil liberties anyway.</span></li>
+		<li><span class="sticker">Oh well. I wasn&apos;t using my civil liberties anyway.</span></li>
 		<li><span class="sticker">Regime change starts at home.</span></li>
 		<li><span class="sticker">Vote or die.</span></li>
 		<li><span class="sticker">Bush lied. People died.</span></li>
