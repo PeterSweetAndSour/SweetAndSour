@@ -105,13 +105,13 @@ var SweetAndSour = (function() {
 
 	// Create the overlay that will appear when a menu link is clicked
 	function _createLoadingOverlay() {
-		var menuWrapper = document.querySelector("#menuWrapper");
+		var nav = document.querySelector("nav");
 		var overlay = document.createElement("div");
 		overlay.id = "overlay";
-		menuWrapper.appendChild(overlay);
+		nav.appendChild(overlay);
 		
 		var loading = document.createElement("div");
-		loading.id = "loading";
+		loading.classList.add = "loading";
 		
 		var img = document.createElement("img");
 		img.src = "../images/loading_20080830.gif";
@@ -122,13 +122,76 @@ var SweetAndSour = (function() {
 		
 		loading.appendChild(img);
 		loading.appendChild(para);
-		menuWrapper.appendChild(loading);
+		nav.appendChild(loading);
 	}
 	
 
 	function _setMenu() {
 		_handleHoverOverMenu();
 		_displayLoadingMsg();
+	}
+
+	function _setMobileMenu() {
+		var menuToggle = document.querySelector("#menuToggle");
+		var menuLabel = menuToggle.parentNode.querySelector("label");
+		var nav = menuToggle.parentNode.querySelector("nav");
+		menuToggle.addEventListener("click", function() {
+			if(menuToggle.checked) { // User has opened the menu
+				menuLabel.innerHTML = "Close";
+				menuLabel.classList.remove("openMenu");
+				menuLabel.classList.add("closeMenu");
+				menuLabel.classList.add("touched");
+				nav.setAttribute("aria-hidden", "false");
+			}
+			else {
+				menuLabel.innerHTML = "Open";
+				menuLabel.classList.remove("closeMenu");
+				menuLabel.classList.add("openMenu");
+				nav.setAttribute("aria-hidden", "true");
+			}
+		})
+
+		var lastRadioButtonSelected = null;
+
+		nav.addEventListener("click", function(e) {
+			var src = e.target;
+			if(src.tagName === "LABEL") {
+				// Get associated radio button
+				var radioBtnSelected = document.querySelector("#" + src.getAttribute("for"));
+				var radioBtnsInGroup = radioBtnSelected.closest("ul").querySelector("input");
+
+				if(radioBtnSelected === lastRadioButtonSelected) {
+					if(radioBtnSelected.checked) {
+						radioBtnSelected.checked = false;
+						src.classList.remove("checked");
+					}
+					else {
+						radioBtnSelected.checked = true;
+						src.classList.add("checked");
+					}
+				}
+				else if(radioBtnsInGroup.includes(radioBtnSelected)) {
+					src.classList.add("checked"); // Resets background image on :before since this can't be reached directly by js.
+
+					//Now scroll so that the menu item touched by user is still under their finger - opening a menu may collapse one above
+					var radioBtn;
+					for(var i=0; i < radioBtnsInGroup.length; i++) {
+						radioBtn = radioBtnsInGroup[i];
+						if(radioBtn === radioBtnSelected) {
+							break;
+						}
+						else {
+							var clickedPointAtY = e.pageY;
+							var midPointOfLabelNowAtY = src.getBoundingClientRect().y + src.getBoundingClientRect().height/2 + window.scrollY;
+							window.scrollBy(midPointOfLabelNowAtY - clickedPointAtY)
+						}
+					}
+
+				}
+			}
+
+			lastRadioButtonSelected = radioBtnSelected;
+		});
 	}
 	
 				
@@ -140,9 +203,10 @@ var SweetAndSour = (function() {
 		initialize : function() {
 					
 			// Create a "Loading ..." overlay across menu to be activated when menu item is clicked
-			if(document.querySelector("#imageMenu")) {
+			if(document.querySelector(".imageMenu")) {
 				_createLoadingOverlay();
-				_setMenu();
+				//_setMenu();
+				_setMobileMenu();
 			}
 		},
 	};  

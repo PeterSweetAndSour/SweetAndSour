@@ -5,8 +5,8 @@ Must be called from a subdirectory or the paths for the included files are wrong
 
 Variables:
 =>| $arr_menuData  	from qry_menu.php
-=>| $selectedID 		from qry_getMenuID.php
-=>| $parentID 			from qry_getMenuID.php
+=>| $selectedID 	from qry_getMenuID.php
+=>| $parentID 		from qry_getMenuID.php
 =>| $grandparentID 	from qry_getMenuID.php
 =>| $fuseAction
 |=> $str_menuHTML
@@ -18,6 +18,7 @@ Variables:
 $time_start = microtime(true);
 
 $int_lastMenuLevel = 0;
+$str_lastMenuText = "";
 $int_indexLastLevel2 = 0;
 $int_topLevelCounter = 0;
 
@@ -67,9 +68,19 @@ for($i=0; $i < $int_len; $i++) {
 		}
 		$int_topLevelCounter++;
 	}
-	
+
+	// Look ahead to see if the menu level is changing as we need to add a class on this list item
+	if(($i < $int_len -1) and ($arr_menuData[$i+1]["menu_level"] > $arr_menuData[$i]["menu_level"])) {
+			$li_class[] = "hasChildren";
+	}
+
 	if($arr_menuData[$i]["menu_level"] > $int_lastMenuLevel) { // starting a nested list
-			$arr_menuHTML[] = "<ul class=\"menu" . $arr_menuData[$i]["menu_level"] . "\">";
+		if($arr_menuData[$i]["menu_level"] != 1) {
+			$arr_menuHTML[] .= '<input type="radio" name="menuLevel' . $int_lastMenuLevel . '" id="radio' . $arr_menuData[$i]["menu_id"]  . '">';
+			$arr_menuHTML[]  = '<label for="radio' . $arr_menuData[$i]["menu_id"] . '">' . $str_lastMenuText . '</label>';
+		}
+		
+		$arr_menuHTML[] .= "<ul class=\"menu" . $arr_menuData[$i]["menu_level"] . "\">";
 	}
 	elseif($int_lastMenuLevel - $arr_menuData[$i]["menu_level"] == 1 ) { // ending a nested list
 		$arr_menuHTML[] = "</li></ul></li>";
@@ -113,6 +124,7 @@ for($i=0; $i < $int_len; $i++) {
 
 	
 	$int_lastMenuLevel = $arr_menuData[$i]["menu_level"];
+	$str_lastMenuText = $arr_menuData[$i]["display_text"];
 }
 
 $arr_menuHTML[] = "</li></ul>\n";
