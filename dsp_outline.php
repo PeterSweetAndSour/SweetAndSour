@@ -45,9 +45,9 @@ else {
 	}
 	?>
 	<link rel="shortcut icon" type="images/x-icon" href="<?= $urlPrefix ?>favicon.ico" />
-	<!--
+	
 	<link rel="stylesheet" type="text/css" href="../css/styles_20180516.css" />
--	-->
+-	
 	<link rel="stylesheet" type="text/css" href="../css/styles_2020.css" />
 
 	<link rel="stylesheet" type="text/css" href="../css/photoswipe.css" />
@@ -88,7 +88,6 @@ else {
 					<nav id="mainMenu" aria-hidden="true" aria-labelledby="menuBtn" role="navigation">
 						<?= $str_menuHTML ?>
 					</nav>
-					<div class="overlay"></div>;
 				</form>
 				<?
 			}
@@ -138,11 +137,14 @@ else {
 	<? 
 	include '../includes/dsp_photoswipe.php';
 	?>
+
+	<div id="overlay" class="overlay"><div class="loading"><p><img src="../images/loading_20080830.gif" alt="Just a moment ..." />Just a moment &hellip;</p></div></div>;
 	
-	<!--
+	<script src="../js/mobile-navigation.js"></script>
+	<script src="../js/desktop-navigation.js"></script>
 	<script src="../js/common_2020.js"></script>
-	-->
-	<script src="../js/MobileNavigation.js"></script>
+
+	
 	<script>
 		// Initialize
 		MobileNavigation.setMobileMenu();
