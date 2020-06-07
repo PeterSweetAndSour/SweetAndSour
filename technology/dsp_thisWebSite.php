@@ -44,8 +44,8 @@
 	<ul>
 		<li>New navigation based on the <a href="http://phatfusion.net/imagemenu/" target="_blank" class="external">Phatfusion &quot;Image Menu&quot;</a> but extended so it will handle 2nd and 3rd level menu items. In fact, I had to make some changes to even get the top-level menu to work as Mootools 1.2 has been released since the menu was written and there were some Javascript errors.</li>
 		<li>In fact, I suggest that my version of the &quot;image menu&quot; is better than the original since I've used the <a href="http://www.mezzoblue.com/tests/revised-image-replacement/#gilderlevin" target="_blank" class="external">Gilder/Levin image replacement method</a> which means it is still usable even if images are turned off. Try that on Phatfusion.net.</li>
-		<li>Since I didn't take all the photos used in the &quot;image menu&quot;, I needed to contact the copyright holders and ask for their permission where necessary. I used <a href="http://powazek.com/posts/867" class="external" target="_blank">A Savvy Approach to Copyright Messaging</a> so that if anyone tries to download the graphic from the menu above, they will see this:
-				<img src="http://sweetandsour.org/images/technology.jpg" alt="Example of displaying copyright unobtrusively" /></li>
+		<li>Since I didn't take all the photos used in the &quot;image menu&quot;, I needed to contact the copyright holders and ask for their permission where necessary. I used <a href="http://powazek.com/posts/867" class="external" target="_blank">A Savvy Approach to Copyright Messaging</a> so that if anyone tries to download the graphic from the menu above, they will see this as part of the larger menu sprite:
+				<img src="http://sweetandsour.org/images/menuComponents/technology.jpg" alt="Example of displaying copyright unobtrusively" /></li>
 		<li>New popup image holder. The &quot;image menu&quot; requires <a href="http://mootools.net/" target="_blank" class="external">Mootools</a> and that created a conflict with the old DHTML window that photos were loaded into when the thumbnail was clicked. I was delighted that I replaced the old dhtmlWindow.js file of 987 lines with perhaps one-third of that, now in common.js. </li>
 		<li>Rather than attempt to explain it, you will want to do a View &gt; Source on this page to see one particular feature.</li>
 		<li>One of the few (only?) slightly worthwhile things I've done in my life is to learn about the Israeli-Palestinian conflict and write to some public figures begging that the Palestinian grievances be addressed so that there can be a lasting peace in the Middle East. I pulled this out into a new section &quot;Time for Justice&quot;. I encourage you to get informed and get involved.</li>
@@ -56,7 +56,7 @@
 </div>
 
 <h2>I wrote the following in about 2003. </h2>
-<div class="story followOn">
+<div class="story">
    <p>This latest revision to the site uses XHTML/Transitional and CSS to achieve a clearly-structured document and layout without tables so that content is separated from presentation. I'll shortly be finalizing the code so it will pass the W3's validator and move towards Section 508 compliance which ensures accessibility to those with disabilities (such as blind people using screen readers). The benefits of making the site &quot;standards-compliant&quot; are faster-loading pages, easier maintenance and availability to users with a variety of browsers.</p>
 
    <p>As you can see from the first entries in the &quot;What&rsquo;s new&quot; section, this web site was started in 1999 on Homestead.com using their WYSIWYG editor. Although it was simple to use, it produced static HTML files that were bulky and nearly incomprehensible to a human reader.  The site became very difficult to maintain since any change to the menu had to be replicated on every page.  Homestead.com realized they couldn't make money if they didn't charge for the service so when they introduced substantial fees, the site was moved to GeoCities.com.  This forced me to rewrite and simplify the pages but they were still static and maintenance was problematic.</p>
@@ -66,7 +66,7 @@
    <p>Photographs are placed using the database which holds the name, caption, folder and any linked image for every photograph.  The file act_setThumbnailFunction.php defines a function called once for each thumbnail that writes out the HTML for the floating DIV, the image, link URL and caption.  If necessary, the link URL can be overridden.  The large image is shown using dsp_photoAndCaption.php which makes a call to the database to find the caption and places the caption to the side or below the image depending on its size.</p>
 </div>
 <div class="photo-gallery">
-	<? setThumbnail(["PeterAtWork1.jpg", "MoirePattern1.jpg"]); ?>
+	<? setThumbnail(["PeterAtWork1.jpg", "MoirePattern1.jpg", "WebSafeColors1.gif"]); ?>
 </div>
 
 
