@@ -103,7 +103,7 @@
                     }
     
                     var clickedGallery = closest(eTarget, function(el) {
-                        return el.classList.contains("content"); // was "photo-gallery"
+                        return el.classList.contains("photo-gallery");
                     });
     
                     var anchors = clickedGallery.querySelectorAll("figure > a.in-gallery"), // was ".container > .item > figure > a"
