@@ -2,16 +2,14 @@
 Image Menu
 **************************************************************/
 @media only screen and (min-width: 960px) {
-	nav {
-		position: relative;
-	 }
-	
 	#imageMenu {
 		position: relative;
 		width: 956px;
-		height: 292px; /* Secondary and tertiary menus */
+		height: 294px; /* Includes secondary and tertiary menus. */
 		overflow: hidden;
-		margin: 10px 0 10px 2px; }
+		margin: 10px 0 10px 2px; 
+	}
+
 	/*
 	body.whoWeAre #imageMenu,
 	body.whereWeLive #imageMenu,
@@ -24,17 +22,17 @@ Image Menu
 	*/
 
 	/* UL */
-	#imageMenu ul {
-		position: relative;
+	ul.menu1 {
 		z-index: 1;
 		list-style-type: none;
 		margin: 0px;
 		display: block;
 		width: 1500px;
-		/*Make this big enough for 2 items to be enlarged at once */ }
+		overflow: hidden;
+	}
 	
 	/* LI */
-	#imageMenu >  ul >  li {
+	ul.menu1 >  li {
 		float: left;
 		height: 228px;
 		width: 55px;
@@ -43,25 +41,25 @@ Image Menu
 		transition-timing-function: linear;
 		display: block;
 		border-right: 2px solid white;
-		}
+	}
 	
 	
-	#imageMenu >  ul >  li.selected {
+	ul.menu1 > li.selected {
 		background-color: green;
 		width: 500px;
 		transition: width 0.5s;
 		transition-delay: 0.1s;
 		transition-timing-function: linear;
-		}
+	}
 		
-	#imageMenu >  ul >  li.selected.off {
+	ul.menu1 > li.selected.off {
 		width: 55px;
 		transition: width 0.5s;
 		transition-delay: 0.1s;
 		transition-timing-function: linear;
 	}
 	
-	#imageMenu >  ul >  li.on {
+	ul.menu1 > li.on {
 		background-color: red;
 		border-bottom: 4px solid #fff;
 		width: 500px;
@@ -70,12 +68,13 @@ Image Menu
 		transition-timing-function: linear;
 		/* Need the LI to extend down at least to the top of the submenu so that a mouseout event is not registered when moving to the child UL submenu */ }
 	
-	/* A. */
+	/* A.
 	#imageMenu >  ul >  li.selected a {
-		cursor: default; }
+		cursor: default; 
+	} */
 	
 	/* Top level will use the Gilder/Levin image replacement method (www.mezzoblue.com/tests/revised-image-replacement/#gilderlevin)  */
-	#imageMenu >  ul >  li a.photoLink {
+	ul.menu1 > li > a.photoLink {
 		width: 100%;
 		/* of the LI */
 		position: relative;
@@ -84,10 +83,11 @@ Image Menu
 		border-bottom: 2px solid #fff;
 		cursor: pointer;
 		overflow: hidden;
-		/* or the text will be visible in the gap between photos */ }
+		/* or the text will be visible in the gap between photos */ 
+	}
 	
 	/* SPAN */
-	#imageMenu >  ul >  li a.photoLink span {
+	ul.menu1 > li a.photoLink > span {
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -96,37 +96,40 @@ Image Menu
 		background-image: url(/images/headerSprite_20180516.jpg);
 		background-color: transparent;
 		background-repeat: no-repeat;
-		background-attachment: scroll; }
+		background-attachment: scroll; 
+	}
 	
-	body.mediaFromLocal #imageMenu >  ul >  li a.photoLink span {
-		background-image: url(../images/headerSprite_20180516.jpg); }
+	body.mediaFromLocal ul.menu1 > li > a.photoLink span {
+		background-image: url(../images/headerSprite_20180516.jpg); 
+	}
 	
-	#imageMenu >  ul > li.home a span {
-		background-position: 0 0; }
-	
-	#imageMenu >  ul > li.whoweare a span {
-		background-position: -500px 0; }
-	
-	#imageMenu >  ul > li.wherewelive a span {
-		background-position: -1000px 0; }
-	
-	#imageMenu >  ul > li.newsletters a span {
-		background-position: -1500px 0; }
-	
-	#imageMenu >  ul > li.technology a span {
-		background-position: -2000px 0; }
-	
-	#imageMenu >  ul > li.artsandculture a span {
-		background-position: -2500px 0; }
-	
-	#imageMenu >  ul > li.timeforjustice a span {
-		background-position: -3000px 0; }
-	
-	#imageMenu >  ul > li.photos a span {
-		background-position: -3500px 0; }
-	
-	#imageMenu >  ul > li.contactus a span {
-		background-position: -4000px 0; }
+	ul.menu1 > li.home > a > span {
+		background-position: 0 0; 
+	}
+	ul.menu1 > li.whoweare > a > span {
+		background-position: -500px 0; 
+	}
+	ul.menu1 > li.wherewelive > a > span {
+		background-position: -1000px 0; 
+	}
+	ul.menu1 > li.newsletters > a > span {
+		background-position: -1500px 0; 
+	}
+	ul.menu1 > li.technology > a > span {
+		background-position: -2000px 0; 
+	}
+	ul.menu1 > li.artsandculture > a > span {
+		background-position: -2500px 0; 
+	}
+	ul.menu1 > li.timeforjustice > a > span {
+		background-position: -3000px 0; 
+	}
+	ul.menu1 > li.photos a span > a > span {
+		background-position: -3500px 0; 
+	}
+	ul.menu1 > li.contactus > a > span {
+		background-position: -4000px 0; 
+	}
 		
 	a.photoLink > .verticalText,
 	li.selected.off > a > .verticalText {
@@ -147,6 +150,7 @@ Image Menu
 		margin:0;
 		white-space: nowrap;
 	}
+
 	li.on > a > .verticalText,
 	li.selected > a > .verticalText {
 		transform: rotate(0deg) ;
@@ -157,13 +161,14 @@ Image Menu
 	}
 	
 	.clear {
-		clear: both; }
+		clear: both; 
+	}
 	
 	/* -----------------------------------------------------------------------------------------
 	Secondary menu
 	------------------------------------------------------------------------------------------ */
 	/* UL */
-	#imageMenu ul ul {
+	ul.menu2 {
 		display: none;
 		position: absolute;
 		top: 232px;
@@ -173,109 +178,122 @@ Image Menu
 		list-style: none;
 		background: #5575db linear-gradient(to bottom, #5575db 0%,#3252bd 100%) repeat-x;
 		font-size: 14px;
-		line-height: 1em;
-
+		line-height: 31px;
 	}
 	
-	#imageMenu >  ul >  li.selected ul,
-	#imageMenu >  ul >  li.on ul {
-		display: block; }
+	ul.menu1 > li.selected > ul,
+	ul.menu1 > li.on > ul {
+		display: block; 
+	}
 	
-	#imageMenu >  ul >  li.off ul {
-		display: none; }
+	ul.menu1 > li.off > ul {
+		display: none; 
+	}
 	
 	/* LI */
-	#imageMenu ul ul li {
+	ul.menu2 > li,
+	ul.menu3 > li {
 		float: none;
 		display: inline;
-		 }
+	}
 	
 	/* A */
-	#imageMenu >  ul >  li ul.menu2 li a {
-		/* Need a class specifier to override picture background image of top-level menu */
+	ul.menu2 > li > a,
+	ul.menu3 > li > a {
 		text-indent: 0px;
-		color: #fff;
-		border-right: 1px solid white;;
-		border-bottom-style: none;
 		cursor: pointer;
-		display: inline-block;
+		display: inline;
 		overflow: auto;
 		padding: 8px 8px 6px 8px;
 		background-color: transparent;
 		background-image: none;
-		text-decoration: none; }
+		text-decoration: none; 
+	}
+
+	ul.menu2 > li > a {
+		color: #fff;
+		border-right: 1px solid white;;
+		border-bottom-style: none;
+	}
 	
-	#imageMenu >  ul >  li ul li.selected a,
-	#imageMenu >  ul >  li ul li.on a {
+	ul.menu2 > li.selected > a,
+	ul.menu2 > li.on > a {
 		color: #1c3eab;
 		position: relative;
 		z-index: 1;
-		background-color: #fff; }
+		background-color: #fff; 
+	}
 	
-	#imageMenu >  ul >  li ul li.selected a {
+	ul.menu2 > li.selected > a {
 		background: linear-gradient(to bottom, #c0defa 0%,#ffffff 100%) repeat-x;
 		font-weight: bold; 
 	}
 	
+	ul.menu2 > li:hover > a, 
+	ul.menu2 > li.off > a {
+		color: #1c3eab; 
+	}
 	
-	#imageMenu >  ul >  li ul li:hover a, #imageMenu >  ul >  li ul li.off a {
-		color: #1c3eab; }
+	ul.menu2 > li > a:hover {
+		text-decoration: underline; 
+	}
 	
-	#imageMenu >  ul >  li ul li a:hover {
-		text-decoration: underline; }
-	
-	#imageMenu >  ul >  li ul li.selected a:hover {
+	ul.menu2 > li.selected > a:hover {
 		/* Want no visible change when moving mouse over currently selected item */
 		text-decoration: none;
-		cursor: default; }
+		cursor: default; 
+	}
 	
 	/* -----------------------------------------------------------------------------------------
 	Tertiary menu
 	------------------------------------------------------------------------------------------ */
 	/* UL */
-	#imageMenu ul ul.menu2 ul {
+	ul.menu3 {
 		position: static;
-		border-bottom: 1px solid blue;
+		float: left;
+		width: 956px;
+		top: 232px;
+		left: 0;
+		border-bottom: 1px solid #3252bd;
 		background-image: none;
 		background-color: #fff;
 		margin-top: -2px; /* I don't know why the list items are not simply wrapping the anchors or why there is a "bottom border". Later. */
-		display: none; }
+		display: none; 
+	}
 	
-	#imageMenu >  ul >  li ul li.selected ul,
-	#imageMenu >  ul >  li ul li.on ul {
-		display: block; }
+	ul.menu2 > li.selected > ul,
+	ul.menu2 > li.on > ul {
+		display: block; 
+	}
 	
-	#imageMenu >  ul >  li ul li.off ul {
-		display: none; }
+	ul.menu2 > li.off > ul {
+		display: none; 
+	}
 	
 	/* LI */
-	#imageMenu >  ul >  li ul.menu2 li ul li {
+	ul.menu3 > li {
 		color: #1c3eab;
-		font-weight: normal; }
+		font-weight: normal; 
+	}
 	
 	/* A */
-	#imageMenu >  ul >  li ul.menu2 li ul li a {
+	ul.menu3 > li > a {
 		text-decoration: none;
 		background-image: none;
-		font-weight: normal; }
+		font-weight: normal; 
+	}
 	
-	#imageMenu >  ul >  li ul.menu2 li ul li a:hover {
-		text-decoration: underline; }
+	ul.menu3 > li > a:hover {
+		text-decoration: underline; 
+	}
 	
-	#imageMenu >  ul >  li ul.menu2 li ul li.selected a {
-		font-weight: bold; }
+	ul.menu3 > li.selected > a {
+		font-weight: bold; 
+	}
 	
-	#imageMenu >  ul >  li ul.menu2 li ul li.selected a:hover {
-		text-decoration: none; }
+	ul.menu3 > li.selected > a:hover {
+		text-decoration: none; 
+	}
 
 
-	form.menu {
-		position: relative
-	}
-	.divBehindImageMenu {
-		position: absolute;
-		z-index: 0;
-		height: 232px;
-		width: 100%;
-	}
 }
