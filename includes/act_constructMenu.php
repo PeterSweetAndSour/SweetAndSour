@@ -28,7 +28,8 @@ $open_panel_index = 0;
 
 $int_len = count($arr_menuData);
 
-$arr_menuHTML[] = "<div id=\"imageMenu\">";
+$arr_menuHTML[] = "<nav id=\"imageMenu\" aria-hidden=\"true\" aria-labelledby=\"menuBtn\" role=\"navigation\">";
+$arr_menuHTML[] = "<div class=\"divBehindImageMenu\"></div>\n";
 
 for($i=0; $i < $int_len; $i++) {
 	//Get any class attributes for the current list item
@@ -128,7 +129,7 @@ for($i=0; $i < $int_len; $i++) {
 }
 
 $arr_menuHTML[] = "</li></ul>\n";
-$arr_menuHTML[] = "</div>\n";
+$arr_menuHTML[] = "</nav>\n";
 
 $str_menuHTML = join("", $arr_menuHTML);
 

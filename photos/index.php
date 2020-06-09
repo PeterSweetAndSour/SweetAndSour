@@ -40,15 +40,7 @@ switch ($fuseAction) {
 		$contentPage = 'dsp_aust2005.php';
 		include '../dsp_outline.php';
 		break;
-
-	case "aust2005people":
-		$heading1Text = "Australia trip 2005";
-		$contentPage = 'dsp_aust2005people.php';
-		$displayMenu = false;
-		$returnLink = '<a href="index.php?fuseAction=aust2005" title="Return to photos">Return to Australia 2005 trip photos</a>';
-		include '../dsp_outline.php';
-		break;
-		
+	
 	//Grand Canyon Jan 2006
 	case "grandCanyon":
 		$heading1Text = "Grand Canyon 2006";

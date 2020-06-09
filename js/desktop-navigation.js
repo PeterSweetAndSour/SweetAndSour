@@ -11,8 +11,8 @@ let DesktopNavigation = (function() {
 		_lastLevel1Over,
 		_lastLevel2Over,
 		_level2PreviousSibling,
-		_containingList,
-		_containingListItem;
+		_divBehindImageMenu,
+		_contactUsListItem;
 		
 	// ----------------------------------------------------------------------------------------------------------------
 	// Private  methods
@@ -119,6 +119,16 @@ let DesktopNavigation = (function() {
 	};
 
 
+	var _mouseOverBlankEventListener = function() {
+		_contactUsListItem.classList.add("on");
+		console.log("on!");
+	}
+
+	var _mouseOutBlankEventListener = function() {
+		_contactUsListItem.classList.remove("on");
+	}
+
+
 	var _setDesktopMenu = function() {
 		if(document.querySelector("#imageMenu")) {
 			var nav = document.querySelector("nav");
@@ -129,6 +139,11 @@ let DesktopNavigation = (function() {
 				listItem.addEventListener("mouseenter", _mouseOverMenuEventListener);
 				listItem.addEventListener("mouseleave", _mouseOutMenuEventListener);
 			});
+			
+			_contactUsListItem = nav.querySelector("ul > li.contactus");
+			_divBehindImageMenu = nav.querySelector(".divBehindImageMenu");
+			_divBehindImageMenu.addEventListener("mouseover", _mouseOverBlankEventListener);
+			_divBehindImageMenu.addEventListener("mouseout", _mouseOutBlankEventListener);
 		}
 	};
 
@@ -136,8 +151,11 @@ let DesktopNavigation = (function() {
 		_level1And2ListItems.forEach((listItem) => {
 			listItem.removeEventListener("click", _clickOnMenuEventListener);
 			listItem.removeEventListener("mouseenter", _mouseOverMenuEventListener);
-			listItem.removeEventListener("mouseleave", _mouseOutMenuEventListener);
+			listItem.removeEventListener("mouseleave", _mouseOutMenuEventListener);		
 		});
+		_divBehindImageMenu.removeEventListener("mouseover", _mouseOverBlankEventListener);
+		_divBehindImageMenu.removeEventListener("mouseout", _mouseOutBlankEventListener);
+
 	};
 
 	

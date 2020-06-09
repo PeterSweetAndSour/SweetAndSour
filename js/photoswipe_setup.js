@@ -3,13 +3,11 @@
             var initPhotoSwipeFromDOM = function(gallerySelector) {
     
                 var parseThumbnailElements = function(el) {
-                    var figureElements = el.querySelectorAll("figure"),
+                    var figureElements = el.querySelectorAll("figure.figure--thumbnail"),
 				
                         numNodes = figureElements.length,
                         items = [],
                         el,
-                        childElements,
-                        thumbnailEl,
                         size,
                         item,
 						figure,
@@ -27,7 +25,7 @@
                           continue;
                         }
     
-                        anchor = figure.querySelector("a.in-gallery");
+                        anchor = figure.querySelector("a.figure__link--gallery");
                         if(!anchor) {
                           continue;
                         }
@@ -49,9 +47,9 @@
 
 						// Get the content for the caption which will be the contents of the two figcaptions 
 						// PLUS a link to a standalone page with the photo.
-						figCaptionThumbnail = figure.querySelector("figcaption.thumbnail");
-						figCaptionFullSize = figure.querySelector("figcaption.fullsize");
-						linkToPageWithPhoto = '<p class="linkToFullSizePhoto"><a href="' + anchor.getAttribute('href') + '" target="_blank">Printable page with this photo and caption</a></p>';
+						figCaptionThumbnail = figure.querySelector(".figure__caption--thumbnail");
+						figCaptionFullSize = figure.querySelector(".figure__caption--fullsize");
+						linkToPageWithPhoto = '<p class="figure__link-to-full-size"><a href="' + anchor.getAttribute('href') + '" target="_blank">Printable page with this photo and caption</a></p>';
 						item.title = "<p>"+ figCaptionThumbnail.innerHTML + "</p>" + figCaptionFullSize.innerHTML + linkToPageWithPhoto;
     
                         var mediumSrc = anchor.getAttribute('data-med');
@@ -86,7 +84,7 @@
                     e = e || window.event;
                     var eTarget = e.target || e.srcElement; // img.thumbnail
 
-                    if(!eTarget.parentNode.classList.contains("in-gallery")) {
+                    if(!eTarget.parentNode.classList.contains("figure__link--gallery")) {
                         return;
                     }
 
@@ -106,7 +104,7 @@
                         return el.classList.contains("photo-gallery");
                     });
     
-                    var anchors = clickedGallery.querySelectorAll("figure > a.in-gallery"), // was ".container > .item > figure > a"
+                    var anchors = clickedGallery.querySelectorAll(".figure--thumbnail > .figure__link--gallery"), // was ".container > .item > figure > a"
                         numChildNodes = anchors.length,
                         nodeIndex = 0,
                         index;

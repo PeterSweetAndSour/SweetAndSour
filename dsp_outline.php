@@ -26,6 +26,9 @@ else {
 	$str_menuJS = "";
 	$str_menuHTML = "";
 }
+
+//Include function to set a thumbnail photo & caption. Called on content pages.
+include '../imageMgt/act_setThumbnailFunction.php';
 ?>
 <!DOCTYPE html>
 <html lang="en"  class="nav-no-js">
@@ -45,9 +48,9 @@ else {
 	}
 	?>
 	<link rel="shortcut icon" type="images/x-icon" href="<?= $urlPrefix ?>favicon.ico" />
-	
+	<!--
 	<link rel="stylesheet" type="text/css" href="../css/styles_20180516.css" />
--	
+-	-->
 	<link rel="stylesheet" type="text/css" href="../css/styles_2020.css" />
 
 	<link rel="stylesheet" type="text/css" href="../css/photoswipe.css" />
@@ -67,52 +70,35 @@ else {
 </head>
 <?php flush(); ?>
 <body class="<?= $bodyClass ?><?= $mediaSource ?>">
-	<? 
-	//Include function to set a thumbnail photo & caption. Called on content pages.
-	include '../imageMgt/act_setThumbnailFunction.php';
-	?>
 	<a id="top"></a>
 	<div class="page">
 		<header>
 			<p class="logo"><a href="<?= $homeUrl ?>home/index.php" title="Go to home page">Sweet and Sour</a></p>
 			<p class="tagline">One is sweet and the other is &hellip; a web developer</p>
 			<p class="sr-only"><a href="#content" title="Jump to content">Jump to content</a></p><!-- Hidden except for screen readers -->
-
 			<? 
 			if($displayMenu) {
 				?>
-				<form>
-					<label id="menuBtn" class="menu openMenu" for="menuToggle" role="button" aria-label="Toggle menu" aria-controls="mainMenu">Open</label>
+				<form class="menu">
+					<label id="menuBtn" class="menu openMenu" for="menuToggle" role="button" aria-label="Toggle menu" aria-controls="imageMenu">Open</label>
 					<input class="menu" type="checkbox" id="menuToggle" />
-					  
-					<nav id="mainMenu" aria-hidden="true" aria-labelledby="menuBtn" role="navigation">
-						<?= $str_menuHTML ?>
-					</nav>
+					<?= $str_menuHTML ?>
 				</form>
 				<?
 			}
-			else {
-				?>
-				<p id="returnLink">&laquo; <?= $returnLink ?></p>
-				<?
-			} ?>
-		</header>
-
-		<script>
-
-		</script>
+			?>
+		</header>	
 	
 		<section>
-			<?
-			if($useInPageHeader == true) {
-				; // Do nothing
-			}
-			else if(isset($heading1Text)) {
-				echo "<h1>" . $heading1Text . "</h1>";
-			}
-			?>
-
 			<article>
+				<?
+				if($useInPageHeader == true) {
+					; // Do nothing
+				}
+				else if(isset($heading1Text)) {
+					echo "<h1>" . $heading1Text . "</h1>";
+				}
+				?>
 				<? include $contentPage; ?>
 			</article>
 		</section>
@@ -144,11 +130,6 @@ else {
 	<script src="../js/desktop-navigation.js"></script>
 	<script src="../js/common_2020.js"></script>
 
-	
-	<script>
-		// Initialize
-		MobileNavigation.setMobileMenu();
-	</script>
 	<script src="../js/photoswipe.js"></script>
 	<script src="../js/photoswipe-ui-default.js"></script>
 	<script src="../js/photoswipe_setup.js"></script>

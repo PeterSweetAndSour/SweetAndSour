@@ -1,3 +1,11 @@
+/* ChowFun is a free font by Harold Lohner from http://www.haroldsfonts.com/chowfun.html */
+@font-face {
+  font-family: "Conv_Chowfun";
+  src: url("fonts/Chowfun.eot");
+  src: local("?"), url("fonts/Chowfun.woff") format("woff"), url("fonts/Chowfun.ttf") format("truetype"), url("fonts/Chowfun.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 /* From https://dev.to/hankchizljaw/a-modern-css-reset-6p3 */
 /* Remove default padding */
 ul[class],
@@ -69,43 +77,94 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.story {
-  width: calc(100% - 200px);
-  float: left;
-  margin-right: 20px;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
 }
 
-figure {
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  -webkit-clip-path: none;
+  clip-path: none;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+/* *************************************************************
+Headers
+************************************************************* */
+h1, h2, h3, h4 {
+  clear: both;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Conv_Chowfun", Sans-Serif;
+  color: #c25a3f;
+  font-size: 32px;
+}
+
+h1 span {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #145a9e;
+  margin-bottom: 0.5em;
+  clear: both;
+}
+
+h3 {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 0.5em;
+}
+
+/* *************************************************************
+Photos and captions
+************************************************************* */
+.figure--thumbnail {
   display: inline-block;
   width: 150px;
   vertical-align: top;
   margin: 0 20px 20px 0;
 }
-
-figure.youtubeThumbnail {
+.figure--thumbnail-youtube {
   width: 246px;
   margin-top: 10px;
 }
 
-figcaption.thumbnail {
-  font-family: Verdana, Helvetica, sans-serif;
-  font-size: 12px;
+.figure__caption--thumbnail {
+  font-size: 14px;
 }
 
-figcaption.fullsize {
+.figure__caption--fullsize {
   display: none;
   /* Contains the caption for the photo shown with PhotoSwipe. */
 }
 
-img.thumbnail {
+.figure__image {
   box-shadow: 5px 5px 4px 0px #aaa;
   margin-bottom: 8px;
   padding: 4px;
   border: 1px solid #aaa;
-}
-
-.pswp__caption__center {
-  font-size: 15px;
 }
 
 .pswp__caption__center > p,
@@ -114,3 +173,585 @@ img.thumbnail {
 .pswp__caption__center > iframe {
   margin: 0 0 0.5em 10px;
 }
+
+/* ***********************************************
+Mobile 
+************************************************ */
+@media only screen and (max-width: 959px) {
+  header {
+    background-color: #155b9f;
+    color: #fff;
+    text-align: right;
+    height: 83px;
+  }
+
+  section {
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  footer {
+    clear: both;
+  }
+
+  .logo {
+    font-family: "Conv_Chowfun", sans-serif;
+    font-size: 31px;
+    padding: 10px 10px 0 0;
+  }
+  .logo > a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .tagline {
+    padding-right: 13px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: -10px;
+  }
+
+  /* Menu - mobile and desktop */
+  nav {
+    box-sizing: border-box;
+    width: calc(100% - 64px);
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0;
+    -ms-transform: translate(calc(100% + 64%));
+        transform: translate(calc(100% + 64%));
+    background-color: #155b9f;
+    text-align: left;
+  }
+  nav li {
+    position: relative;
+  }
+  nav li > a,
+nav li label {
+    box-sizing: border-box;
+    color: #fff;
+    display: block;
+    height: 42px;
+    padding: 8px 0 0 0;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 1px solid #8AACCF;
+  }
+  nav li.hasChildren > a {
+    display: none;
+  }
+  nav li > input {
+    display: none;
+    /* This will remove the down angle when the submenu is expanded without relying on Javascript */
+    /* If Javascript is running then reset the arrow to point up. */
+  }
+  nav li > input + label:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 13px;
+    left: 20px;
+    background-color: transparent;
+    background-size: 22px 22px;
+    /* Font Awesome 'chevron-down' */
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMjA3LjAyOSAzODEuNDc2TDEyLjY4NiAxODcuMTMyYy05LjM3My05LjM3My05LjM3My0yNC41NjkgMC0zMy45NDFsMjIuNjY3LTIyLjY2N2M5LjM1Ny05LjM1NyAyNC41MjItOS4zNzUgMzMuOTAxLS4wNEwyMjQgMjg0LjUwNWwxNTQuNzQ1LTE1NC4wMjFjOS4zNzktOS4zMzUgMjQuNTQ0LTkuMzE3IDMzLjkwMS4wNGwyMi42NjcgMjIuNjY3YzkuMzczIDkuMzczIDkuMzczIDI0LjU2OSAwIDMzLjk0MUwyNDAuOTcxIDM4MS40NzZjLTkuMzczIDkuMzcyLTI0LjU2OSA5LjM3Mi0zMy45NDIgMHoiLz48L3N2Zz4=");
+  }
+  nav li > input:checked + label:before {
+    background-image: none;
+  }
+  nav li > input:checked + label.checked:before {
+    /* Font Awesome 'chevron-up' */
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMjQwLjk3MSAxMzAuNTI0bDE5NC4zNDMgMTk0LjM0M2M5LjM3MyA5LjM3MyA5LjM3MyAyNC41NjkgMCAzMy45NDFsLTIyLjY2NyAyMi42NjdjLTkuMzU3IDkuMzU3LTI0LjUyMiA5LjM3NS0zMy45MDEuMDRMMjI0IDIyNy40OTUgNjkuMjU1IDM4MS41MTZjLTkuMzc5IDkuMzM1LTI0LjU0NCA5LjMxNy0zMy45MDEtLjA0bC0yMi42NjctMjIuNjY3Yy05LjM3My05LjM3My05LjM3My0yNC41NjkgMC0zMy45NDFMMjA3LjAzIDEzMC41MjVjOS4zNzItOS4zNzMgMjQuNTY4LTkuMzczIDMzLjk0MS0uMDAxeiIvPjwvc3ZnPg==");
+  }
+  nav li > input ~ ul {
+    display: none;
+  }
+  nav li > input:checked ~ ul {
+    display: block;
+  }
+  nav .menu2 {
+    margin-left: 60px;
+  }
+  nav .menu2 label:before {
+    left: 0;
+  }
+  nav .menu3 {
+    margin-left: 40px;
+  }
+  nav .menu3 label:before {
+    left: 0;
+  }
+  nav ul.menu1 > li > a {
+    padding-left: 20px;
+  }
+  nav ul.menu1 > li > label {
+    padding-left: 60px;
+  }
+  nav ul.menu2 > li > a,
+nav ul.menu3 > li > a {
+    padding-left: 0px;
+  }
+  nav ul.menu2 > li > label,
+nav ul.menu3 > li > label {
+    padding-left: 40px;
+  }
+
+  label.menu {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 11px;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: 10px 4px;
+  }
+  label.menu.touched {
+    border: 1px dotted white;
+  }
+  label.menu.openMenu {
+    /* Font Awesome 'bars' */
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMTYgMTMyaDQxNmM4LjgzNyAwIDE2LTcuMTYzIDE2LTE2Vjc2YzAtOC44MzctNy4xNjMtMTYtMTYtMTZIMTZDNy4xNjMgNjAgMCA2Ny4xNjMgMCA3NnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2em0wIDE2MGg0MTZjOC44MzcgMCAxNi03LjE2MyAxNi0xNnYtNDBjMC04LjgzNy03LjE2My0xNi0xNi0xNkgxNmMtOC44MzcgMC0xNiA3LjE2My0xNiAxNnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2em0wIDE2MGg0MTZjOC44MzcgMCAxNi03LjE2MyAxNi0xNnYtNDBjMC04LjgzNy03LjE2My0xNi0xNi0xNkgxNmMtOC44MzcgMC0xNiA3LjE2My0xNiAxNnY0MGMwIDguODM3IDcuMTYzIDE2IDE2IDE2eiIvPjwvc3ZnPg==");
+  }
+  label.menu.closeMenu {
+    /* Font Awesome 'times' */
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNTIgNTEyIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMjQyLjcyIDI1NmwxMDAuMDctMTAwLjA3YzEyLjI4LTEyLjI4IDEyLjI4LTMyLjE5IDAtNDQuNDhsLTIyLjI0LTIyLjI0Yy0xMi4yOC0xMi4yOC0zMi4xOS0xMi4yOC00NC40OCAwTDE3NiAxODkuMjggNzUuOTMgODkuMjFjLTEyLjI4LTEyLjI4LTMyLjE5LTEyLjI4LTQ0LjQ4IDBMOS4yMSAxMTEuNDVjLTEyLjI4IDEyLjI4LTEyLjI4IDMyLjE5IDAgNDQuNDhMMTA5LjI4IDI1NiA5LjIxIDM1Ni4wN2MtMTIuMjggMTIuMjgtMTIuMjggMzIuMTkgMCA0NC40OGwyMi4yNCAyMi4yNGMxMi4yOCAxMi4yOCAzMi4yIDEyLjI4IDQ0LjQ4IDBMMTc2IDMyMi43MmwxMDAuMDcgMTAwLjA3YzEyLjI4IDEyLjI4IDMyLjIgMTIuMjggNDQuNDggMGwyMi4yNC0yMi4yNGMxMi4yOC0xMi4yOCAxMi4yOC0zMi4xOSAwLTQ0LjQ4TDI0Mi43MiAyNTZ6Ii8+PC9zdmc+");
+  }
+  label.menu.openMenu:after, label.menu.closeMenu:after {
+    display: block;
+    position: relative;
+    top: 1px;
+    color: white;
+    font-size: 12px;
+  }
+  label.menu.openMenu:after {
+    content: "MENU";
+    left: -4px;
+  }
+  label.menu.closeMenu:after {
+    content: "CLOSE";
+    left: -3px;
+  }
+
+  /*
+  span.menu {
+  	position: absolute;
+  	top: 50px;
+  	left: 12px;
+  }
+  */
+  input.menu {
+    display: none;
+  }
+  input.menu:checked + nav {
+    -ms-transform: translate(64px);
+        transform: translate(64px);
+    transition: 0.2s linear;
+  }
+  input.menu:checked + nav + .overlay {
+    display: block;
+  }
+
+  .overlay {
+    position: absolute;
+    z-index: 1;
+    top: 83px;
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+
+  .loading {
+    display: none;
+  }
+}
+/* ***********************************************
+Desktop
+************************************************ */
+@media only screen and (min-width: 960px) {
+  body {
+    background: #82bffa linear-gradient(to bottom, #145a9e 0%, #82bffa 100%) repeat-x;
+  }
+
+  div.page {
+    width: 960px;
+    margin: 20px auto;
+    background-color: #fff;
+    position: relative;
+    border-radius: 20px;
+  }
+
+  .logo {
+    font-family: "Conv_Chowfun", sans-serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 6px #666;
+    padding: 10px 10px 0 20px;
+  }
+  .logo > a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .tagline {
+    font-style: italic;
+    margin-top: -10px;
+    padding-left: 20px;
+  }
+
+  .story {
+    width: calc(100% - 200px);
+    float: left;
+    margin-right: 20px;
+  }
+
+  nav input,
+nav label {
+    display: none;
+  }
+
+  label.menu,
+input.menu {
+    display: none;
+  }
+
+  section,
+footer {
+    padding: 0 40px;
+  }
+}
+/**************************************************************
+Image Menu
+**************************************************************/
+@media only screen and (min-width: 960px) {
+  nav {
+    position: relative;
+  }
+
+  #imageMenu {
+    position: relative;
+    width: 956px;
+    height: 292px;
+    /* Secondary and tertiary menus */
+    overflow: hidden;
+    margin: 10px 0 10px 2px;
+  }
+
+  /*
+  body.whoWeAre #imageMenu,
+  body.whereWeLive #imageMenu,
+  body.timeForJustice #imageMenu {
+  	height: 260px; }
+
+  body.home #imageMenu,
+  body.contactUs #imageMenu {
+  	height: 232px; }
+  */
+  /* UL */
+  #imageMenu ul {
+    position: relative;
+    z-index: 1;
+    list-style-type: none;
+    margin: 0px;
+    display: block;
+    width: 1500px;
+    /*Make this big enough for 2 items to be enlarged at once */
+  }
+
+  /* LI */
+  #imageMenu > ul > li {
+    float: left;
+    height: 228px;
+    width: 55px;
+    transition: width 0.5s;
+    transition-delay: 0.1s;
+    transition-timing-function: linear;
+    display: block;
+    border-right: 2px solid white;
+  }
+
+  #imageMenu > ul > li.selected {
+    background-color: green;
+    width: 500px;
+    transition: width 0.5s;
+    transition-delay: 0.1s;
+    transition-timing-function: linear;
+  }
+
+  #imageMenu > ul > li.selected.off {
+    width: 55px;
+    transition: width 0.5s;
+    transition-delay: 0.1s;
+    transition-timing-function: linear;
+  }
+
+  #imageMenu > ul > li.on {
+    background-color: red;
+    border-bottom: 4px solid #fff;
+    width: 500px;
+    transition: width 0.5s;
+    transition-delay: 0.1;
+    transition-timing-function: linear;
+    /* Need the LI to extend down at least to the top of the submenu so that a mouseout event is not registered when moving to the child UL submenu */
+  }
+
+  /* A. */
+  #imageMenu > ul > li.selected a {
+    cursor: default;
+  }
+
+  /* Top level will use the Gilder/Levin image replacement method (www.mezzoblue.com/tests/revised-image-replacement/#gilderlevin)  */
+  #imageMenu > ul > li a.photoLink {
+    width: 100%;
+    /* of the LI */
+    position: relative;
+    height: 223px;
+    display: block;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    overflow: hidden;
+    /* or the text will be visible in the gap between photos */
+  }
+
+  /* SPAN */
+  #imageMenu > ul > li a.photoLink span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(/images/headerSprite_20180516.jpg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
+  body.mediaFromLocal #imageMenu > ul > li a.photoLink span {
+    background-image: url(../images/headerSprite_20180516.jpg);
+  }
+
+  #imageMenu > ul > li.home a span {
+    background-position: 0 0;
+  }
+
+  #imageMenu > ul > li.whoweare a span {
+    background-position: -500px 0;
+  }
+
+  #imageMenu > ul > li.wherewelive a span {
+    background-position: -1000px 0;
+  }
+
+  #imageMenu > ul > li.newsletters a span {
+    background-position: -1500px 0;
+  }
+
+  #imageMenu > ul > li.technology a span {
+    background-position: -2000px 0;
+  }
+
+  #imageMenu > ul > li.artsandculture a span {
+    background-position: -2500px 0;
+  }
+
+  #imageMenu > ul > li.timeforjustice a span {
+    background-position: -3000px 0;
+  }
+
+  #imageMenu > ul > li.photos a span {
+    background-position: -3500px 0;
+  }
+
+  #imageMenu > ul > li.contactus a span {
+    background-position: -4000px 0;
+  }
+
+  a.photoLink > .verticalText,
+li.selected.off > a > .verticalText {
+    -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    -ms-transform-origin: 0.4em 0.5em;
+        transform-origin: 0.4em 0.5em;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+    position: absolute;
+    bottom: 7px;
+    left: 7px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 27px;
+    line-height: 27px;
+    font-weight: 300;
+    text-shadow: 0px 0px 15px #000;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  li.on > a > .verticalText,
+li.selected > a > .verticalText {
+    -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    -ms-transform-origin: 0.4em 0.5em;
+        transform-origin: 0.4em 0.5em;
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0.1s;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  /* -----------------------------------------------------------------------------------------
+  Secondary menu
+  ------------------------------------------------------------------------------------------ */
+  /* UL */
+  #imageMenu ul ul {
+    display: none;
+    position: absolute;
+    top: 232px;
+    left: 0;
+    float: left;
+    width: 956px;
+    list-style: none;
+    background: #5575db linear-gradient(to bottom, #5575db 0%, #3252bd 100%) repeat-x;
+    font-size: 14px;
+    line-height: 1em;
+  }
+
+  #imageMenu > ul > li.selected ul,
+#imageMenu > ul > li.on ul {
+    display: block;
+  }
+
+  #imageMenu > ul > li.off ul {
+    display: none;
+  }
+
+  /* LI */
+  #imageMenu ul ul li {
+    float: none;
+    display: inline;
+  }
+
+  /* A */
+  #imageMenu > ul > li ul.menu2 li a {
+    /* Need a class specifier to override picture background image of top-level menu */
+    text-indent: 0px;
+    color: #fff;
+    border-right: 1px solid white;
+    border-bottom-style: none;
+    cursor: pointer;
+    display: inline-block;
+    overflow: auto;
+    padding: 8px 8px 6px 8px;
+    background-color: transparent;
+    background-image: none;
+    text-decoration: none;
+  }
+
+  #imageMenu > ul > li ul li.selected a,
+#imageMenu > ul > li ul li.on a {
+    color: #1c3eab;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+  }
+
+  #imageMenu > ul > li ul li.selected a {
+    background: linear-gradient(to bottom, #c0defa 0%, #ffffff 100%) repeat-x;
+    font-weight: bold;
+  }
+
+  #imageMenu > ul > li ul li:hover a, #imageMenu > ul > li ul li.off a {
+    color: #1c3eab;
+  }
+
+  #imageMenu > ul > li ul li a:hover {
+    text-decoration: underline;
+  }
+
+  #imageMenu > ul > li ul li.selected a:hover {
+    /* Want no visible change when moving mouse over currently selected item */
+    text-decoration: none;
+    cursor: default;
+  }
+
+  /* -----------------------------------------------------------------------------------------
+  Tertiary menu
+  ------------------------------------------------------------------------------------------ */
+  /* UL */
+  #imageMenu ul ul.menu2 ul {
+    position: static;
+    border-bottom: 1px solid blue;
+    background-image: none;
+    background-color: #fff;
+    margin-top: -2px;
+    /* I don't know why the list items are not simply wrapping the anchors or why there is a "bottom border". Later. */
+    display: none;
+  }
+
+  #imageMenu > ul > li ul li.selected ul,
+#imageMenu > ul > li ul li.on ul {
+    display: block;
+  }
+
+  #imageMenu > ul > li ul li.off ul {
+    display: none;
+  }
+
+  /* LI */
+  #imageMenu > ul > li ul.menu2 li ul li {
+    color: #1c3eab;
+    font-weight: normal;
+  }
+
+  /* A */
+  #imageMenu > ul > li ul.menu2 li ul li a {
+    text-decoration: none;
+    background-image: none;
+    font-weight: normal;
+  }
+
+  #imageMenu > ul > li ul.menu2 li ul li a:hover {
+    text-decoration: underline;
+  }
+
+  #imageMenu > ul > li ul.menu2 li ul li.selected a {
+    font-weight: bold;
+  }
+
+  #imageMenu > ul > li ul.menu2 li ul li.selected a:hover {
+    text-decoration: none;
+  }
+
+  form.menu {
+    position: relative;
+  }
+
+  .divBehindImageMenu {
+    position: absolute;
+    z-index: 0;
+    height: 232px;
+    width: 100%;
+  }
+}
+/* Note to future self on using inline SVG for Font Awesome icons:
+Download the .zip file and find the file for the icon under svgs > solid. Copy to a text editor and in the path, add
+	fill="#ffffff" 
+or whatever color is needed. This can't be updated by CSS. Go to https://www.base64encode.org and encode
+it then replace the ... below with the encoded text:
+	background-image: url("data:image/svg+xml;base64,..."); 
+Also specify background-size.
+*/

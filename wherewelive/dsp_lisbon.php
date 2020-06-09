@@ -4,9 +4,9 @@
 </div>
 <div class="clear">
 	<?
-	setThumbnail("album_01.jpg", "https://photos.app.goo.gl/enKr25uNuk5FoKEt8", "youtubeThumbnail");
-	setThumbnail("album_02.jpg", "https://photos.app.goo.gl/F3aLYKPT9P728CJv9", "youtubeThumbnail");
-	setThumbnail("portuguesePaving.jpg", "https://photos.app.goo.gl/5Gxid4aW1eAGn6Fq8", "youtubeThumbnail");
+	setThumbnail("album_01.jpg", "https://photos.app.goo.gl/enKr25uNuk5FoKEt8", "figure--thumbnail-youtube");
+	setThumbnail("album_02.jpg", "https://photos.app.goo.gl/F3aLYKPT9P728CJv9", "figure--thumbnail-youtube");
+	setThumbnail("portuguesePaving.jpg", "https://photos.app.goo.gl/5Gxid4aW1eAGn6Fq8", "figure--thumbnail-youtube");
 	?>
 </div>
 
@@ -15,6 +15,6 @@
 </div>
 <div class="clear">
 	<?
-	setThumbnail("instagram.jpg", "https://www.instagram.com/petersweetandsour/", "youtubeThumbnail");
+	setThumbnail("instagram.jpg", "https://www.instagram.com/petersweetandsour/", "figure--thumbnail-youtube");
 	?>
 </div>

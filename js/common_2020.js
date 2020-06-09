@@ -4,8 +4,13 @@ var SweetAndSour = (function() {
 		var mobileNavigationSet,
 			desktopNavigationSet;
 
+		var nav = document.querySelector("nav");
+		if(!nav) {
+			return;
+		}
+
 		if(isMobile) {
-			MobileNavigation.setMobileMenue();
+			MobileNavigation.setMobileMenu();
 			mobileNavigationSet = true;
 			if(desktopNavigationSet) {
 				DesktopNavigation.unsetDesktopMenu();

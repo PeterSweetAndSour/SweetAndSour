@@ -42,7 +42,7 @@ switch ($fuseAction) {
 		$heading1Text = "Kitchen Renovation";
 		$contentPage = 'dsp_kitchen.php';
 		$displayMenu = false;
-		$returnLink = '<a href="index.php?fuseAction=sydney" title="Return to Sydney">Return to Sydney</a>';
+		//$returnLink = '<a href="index.php?fuseAction=sydney" title="Return to Sydney">Return to Sydney</a>';
 		include '../dsp_outline.php';
 
 	//Denver

@@ -132,13 +132,7 @@ var MobileNavigation = (function() {
 	// ------------------------------------------------------------------------------------------------------------------------------------------------
 	// Public methods
 	return {  
-
 		setMobileMenu: _setMobileMenu,
 		unsetMobileMenu: _unsetMobileMenu,
-		
-		// Initialize page
-		initialize : function() {
-			_setMobileMenu();
-		}
 	};  
 })(); // the paranthesis will execute the function immediately. Do not remove.

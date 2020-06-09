@@ -25,7 +25,7 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 		$photoNames = array($photoNames);
 	}
 
-	$classString = $cssClass ? ' class="' . $cssClass . '"' : '';
+	$classString = ' class="' . ($cssClass ? $cssClass : 'figure--thumbnail"' . '"');
 
 	//Find the information related to this photo, or these photos.
 	$photos = getPhotoInfo($photoNames);
@@ -41,8 +41,8 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 				if($photos[$photoName]["linkedImg"] == "") { // Unlikely - there should be a linked image for every thumbnail
 					?>
 					<figure<?= $classString ?>>
-						<img class="thumbnail" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
-						<figcaption class="thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
+						<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
+						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
 					</figure>
 					<?
 				}
@@ -51,11 +51,11 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 					$urlPageWithLinkedImage = $urlPrefix . "imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=" . $photos[$photoName]["linkedImg"];
 					?>
 					<figure<?= $classString ?>>
-						<a class="in-gallery" href="<?= $urlPageWithLinkedImage ?>" data-linked-image-src="<?= $fullSizeImgSrc ?>" data-size="<?= $photos[$photoName]["linkedImageWidth"] ?>x<?= $photos[$photoName]["linkedImageHeight"] ?>">
-							<img class="thumbnail" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
+						<a class="figure__link--gallery" href="<?= $urlPageWithLinkedImage ?>" data-linked-image-src="<?= $fullSizeImgSrc ?>" data-size="<?= $photos[$photoName]["linkedImageWidth"] ?>x<?= $photos[$photoName]["linkedImageHeight"] ?>">
+							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
 						</a>
-						<figcaption class="thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
-						<figcaption class="fullsize"><?= $photos[$photoName]["linkedImageCaption"] ?></figcaption>	
+						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
+						<figcaption class="figure__caption--fullsize"><?= $photos[$photoName]["linkedImageCaption"] ?></figcaption>	
 					</figure>
 					<?
 				}
@@ -74,9 +74,9 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 				?>
 					<figure<?= $classString ?>>
 						<a href="<?= $linkURL ?>" target="<?= $target ?>">
-							<img class="thumbnail" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
+							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
 						</a>
-						<figcaption class="thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
+						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
 					</figure>
 				<?
 			}

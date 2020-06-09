@@ -47,7 +47,11 @@ switch ($fuseAction) {
 
 	/*** Display a photo and caption on its own page. ***/
 	case "showPhotoAndCaption";
-		include 'dsp_photoAndCaption.php';
+		$bodyClass = "photoAndCaption";
+		$displayMenu = false;
+		$showToTopLink = false;
+		$contentPage = 'dsp_photoAndCaption.php';
+		include '../dsp_outline.php';
 		break;
 		
 	/*** Return a photo and caption for ajax call. ***/

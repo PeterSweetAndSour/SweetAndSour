@@ -21,19 +21,19 @@
 	<ul>
 		<li>
 			A song from the most popular boy band:<br/>
-			<? setThumbnail("BoyWithLuv.jpg", "https://www.youtube.com/watch?v=XsX3ATc3FbA", "youtubeThumbnail"); ?>
+			<? setThumbnail("BoyWithLuv.jpg", "https://www.youtube.com/watch?v=XsX3ATc3FbA", "figure--thumbnail-youtube"); ?>
 		</li>
 		<li>
 			A song from the most popular girl group:<br />
-			<? setThumbnail("CheerUp.jpg", "https://www.youtube.com/watch?v=c7rCyll5AeY", "youtubeThumbnail"); ?>
+			<? setThumbnail("CheerUp.jpg", "https://www.youtube.com/watch?v=c7rCyll5AeY", "figure--thumbnail-youtube"); ?>
 		</li>
 		<li>
 			Not really standard K-pop as it is a solo act with no dancing but it is beautiful (more explanation below):<br />
-			<? setThumbnail("EyesNoseLips.jpg", "https://www.youtube.com/watch?v=9un35OyWcN0", "youtubeThumbnail") ?>
+			<? setThumbnail("EyesNoseLips.jpg", "https://www.youtube.com/watch?v=9un35OyWcN0", "figure--thumbnail-youtube") ?>
 		</li>
 		<li>
 			A fantastic song from a girl group that even K-pop fans probably know of only dimly, if at all. A great example of why you shouldn't limit yourself to just the most popular:</br>
-			<? setThumbnail("ThisIsMe.jpg", "https://www.youtube.com/watch?v=9uhUmjANdQA", "youtubeThumbnail") ?>
+			<? setThumbnail("ThisIsMe.jpg", "https://www.youtube.com/watch?v=9uhUmjANdQA", "figure--thumbnail-youtube") ?>
 		</li>
 	</ul>
 </div>

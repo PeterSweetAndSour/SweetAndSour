@@ -1,0 +1,70 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 15px;
+}
+
+/* *************************************************************
+Headers
+************************************************************* */
+h1, h2, h3, h4 {
+	clear: both; 
+	font-weight: bold;
+}
+  
+h1 {
+	font-family: 'Conv_Chowfun',Sans-Serif;
+	color: #c25a3f;
+	font-size: 32px;
+}
+h1 span {
+	font-size: 24px; }
+
+h2 {
+	font-size:24px;
+	color: #145a9e ;
+	margin-bottom: 0.5em;
+	clear: both; }
+	
+h3 {
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 0.5em; 
+}
+
+/* *************************************************************
+Photos and captions
+************************************************************* */
+
+.figure--thumbnail {
+	display: inline-block;
+	width: 150px;
+	vertical-align: top;
+	margin: 0 20px 20px 0;
+
+	&-youtube {
+		width: 246px;
+		margin-top: 10px;
+	}
+}
+
+.figure__caption--thumbnail {
+	font-size: 14px;
+}
+
+.figure__caption--fullsize {
+	display: none; /* Contains the caption for the photo shown with PhotoSwipe. */
+}
+
+.figure__image{
+	box-shadow: 5px 5px 4px 0px #aaa;
+	margin-bottom: 8px;
+	padding: 4px;
+	border: 1px solid #aaa;
+}
+
+.pswp__caption__center > p,
+.pswp__caption__center > pre,
+.pswp__caption__center > img,
+.pswp__caption__center > iframe {
+	margin: 0 0 0.5em 10px;
+}
