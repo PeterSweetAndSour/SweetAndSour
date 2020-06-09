@@ -26,7 +26,7 @@ var MobileNavigation = (function() {
 			radioBtn = listItem.querySelector("input");
 			radioBtn.checked = false;
 
-			labelSelected = listItem.querySelector("label");
+			var labelSelected = listItem.querySelector("label");
 			labelSelected.classList.remove("checked");
 		})
 	}
@@ -54,7 +54,7 @@ var MobileNavigation = (function() {
 
 	// If previously selected label/radio button precedes the current one in the DOM, the visible position of the current label 
 	// will change when the previous list one collapses so scroll so that user still has finger over the label they touched.			
-	var _bringSelectedMenuItemBackIntoPosition = function(evt, radioBtnSelected){
+	var _bringSelectedMenuItemBackIntoPosition = function(evt, radioBtnSelected, labelSelected){
 		var radioBtnsInNav = _nav.querySelectorAll("li > input");
 
 		for(var i=0; i < radioBtnsInNav.length; i++) {
@@ -104,7 +104,7 @@ var MobileNavigation = (function() {
 				}
 			}
 
-			_bringSelectedMenuItemBackIntoPosition(evt, radioBtnSelected);
+			_bringSelectedMenuItemBackIntoPosition(evt, radioBtnSelected, labelSelected);
 
 			_lastRadioBtnSelected = radioBtnSelected;
 			_lastLabelSelected = labelSelected;
