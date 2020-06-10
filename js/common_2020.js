@@ -25,15 +25,10 @@ var SweetAndSour = (function() {
 		}
 	};
 
-	var _setOverlayHeightAndPosition = function(isMobile) {
-		var overlay = document.querySelector("#overlay");
+	var _setMenuOverlayHeight = function(isMobile) {
+		var overlay = document.querySelector("#menuOverlay");
 		if(isMobile) {
 			overlay.style.height = document.body.scrollHeight + "px";
-			overlay.style.top = "83px";
-		}
-		else {
-			overlay.style.height = "281px";
-			overlay.style.top = "105px";
 		}
 	};
 
@@ -42,7 +37,7 @@ var SweetAndSour = (function() {
 		var isMobile = mediaQuery.matches;
 
 		_loadAppropriateMenu(isMobile);
-		_setOverlayHeightAndPosition(isMobile);
+		_setMenuOverlayHeight(isMobile);
 	};
 
 	// ------------------------------------------------------------------------------------------------------------------------------------------------

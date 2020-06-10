@@ -5,7 +5,7 @@ Image Menu
 	#imageMenu {
 		position: relative;
 		width: 956px;
-		height: 294px; /* Includes secondary and tertiary menus. */
+		height: 300px; /* Primary, secondary and tertiary menus. */
 		overflow: hidden;
 		margin: 10px 0 10px 2px; 
 	}
@@ -14,16 +14,16 @@ Image Menu
 	body.whoWeAre #imageMenu,
 	body.whereWeLive #imageMenu,
 	body.timeForJustice #imageMenu {
-		height: 260px; }
-	
+		height: 260px;  / * Primary and secondary menus. * /
+	} 
+
 	body.home #imageMenu,
 	body.contactUs #imageMenu {
-		height: 232px; }
+		height: 232px; }  / * Primary menu only. * /
 	*/
 
 	/* UL */
 	ul.menu1 {
-		z-index: 1;
 		list-style-type: none;
 		margin: 0px;
 		display: block;
@@ -32,7 +32,7 @@ Image Menu
 	}
 	
 	/* LI */
-	ul.menu1 >  li {
+	ul.menu1 > li {
 		float: left;
 		height: 228px;
 		width: 55px;
@@ -66,12 +66,8 @@ Image Menu
 		transition: width 0.5s;
 		transition-delay: 0.1;
 		transition-timing-function: linear;
-		/* Need the LI to extend down at least to the top of the submenu so that a mouseout event is not registered when moving to the child UL submenu */ }
-	
-	/* A.
-	#imageMenu >  ul >  li.selected a {
-		cursor: default; 
-	} */
+		/* Need the LI to extend down at least to the top of the submenu so that a mouseout event is not registered when moving to the child UL submenu */ 
+	}
 	
 	/* Top level will use the Gilder/Levin image replacement method (www.mezzoblue.com/tests/revised-image-replacement/#gilderlevin)  */
 	ul.menu1 > li > a.photoLink {
@@ -178,7 +174,7 @@ Image Menu
 		list-style: none;
 		background: #5575db linear-gradient(to bottom, #5575db 0%,#3252bd 100%) repeat-x;
 		font-size: 14px;
-		line-height: 31px;
+		line-height: 1em;
 	}
 	
 	ul.menu1 > li.selected > ul,
@@ -200,11 +196,8 @@ Image Menu
 	/* A */
 	ul.menu2 > li > a,
 	ul.menu3 > li > a {
-		text-indent: 0px;
-		cursor: pointer;
-		display: inline;
-		overflow: auto;
-		padding: 8px 8px 6px 8px;
+		display: inline-block;
+		padding: 10px 8px 8px 8px;
 		background-color: transparent;
 		background-image: none;
 		text-decoration: none; 
@@ -219,9 +212,7 @@ Image Menu
 	ul.menu2 > li.selected > a,
 	ul.menu2 > li.on > a {
 		color: #1c3eab;
-		position: relative;
-		z-index: 1;
-		background-color: #fff; 
+		background-color: #fff;
 	}
 	
 	ul.menu2 > li.selected > a {
@@ -252,12 +243,9 @@ Image Menu
 		position: static;
 		float: left;
 		width: 956px;
-		top: 232px;
-		left: 0;
 		border-bottom: 1px solid #3252bd;
 		background-image: none;
 		background-color: #fff;
-		margin-top: -2px; /* I don't know why the list items are not simply wrapping the anchors or why there is a "bottom border". Later. */
 		display: none; 
 	}
 	
@@ -272,12 +260,12 @@ Image Menu
 	
 	/* LI */
 	ul.menu3 > li {
-		color: #1c3eab;
 		font-weight: normal; 
 	}
 	
 	/* A */
 	ul.menu3 > li > a {
+		color: #1c3eab;
 		text-decoration: none;
 		background-image: none;
 		font-weight: normal; 
@@ -295,5 +283,48 @@ Image Menu
 		text-decoration: none; 
 	}
 
+	/* -----------------------------------------------------------------------------------------
+	Controls used on mobile menu
+	------------------------------------------------------------------------------------------ */
+	nav {
+		input,
+		label {
+			display: none;
+		}
+	}
+	label.menu,
+	input.menu {
+		display: none;
+	}
+
+	/* -----------------------------------------------------------------------------------------
+	Menu overlay and loading graphic
+	------------------------------------------------------------------------------------------ */
+	.menuOverlay {
+		height: 296px;
+		top: 105px;
+		z-index: 3;
+	}
+
+	.loading {
+		position: absolute;
+		z-index: 4;
+		top: 90px;
+		left: 398px;
+		background-color: #fff;
+		text-align: center;
+		padding: 5px 10px 10px 10px;
+		width: 160px;
+		border-radius: 10px;
+	}
+
+	.loading p {
+		margin: 0; 
+	}
+
+	.loading img {
+		margin: 10px auto; 
+		display: block;
+	}
 
 }

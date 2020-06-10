@@ -83,6 +83,7 @@ include '../imageMgt/act_setThumbnailFunction.php';
 					<label id="menuBtn" class="menu openMenu" for="menuToggle" role="button" aria-label="Toggle menu" aria-controls="imageMenu">Open</label>
 					<input class="menu" type="checkbox" id="menuToggle" />
 					<?= $str_menuHTML ?>
+					<div id="menuOverlay" class="menuOverlay"><div class="loading"><p><img src="../images/loading_20080830.gif" alt="Just a moment ..." />Just a moment &hellip;</p></div></div>
 				</form>
 				<?
 			}
@@ -123,8 +124,6 @@ include '../imageMgt/act_setThumbnailFunction.php';
 	<? 
 	include '../includes/dsp_photoswipe.php';
 	?>
-
-	<div id="overlay" class="overlay"><div class="loading"><p><img src="../images/loading_20080830.gif" alt="Just a moment ..." />Just a moment &hellip;</p></div></div>;
 	
 	<script src="../js/mobile-navigation.js"></script>
 	<script src="../js/desktop-navigation.js"></script>

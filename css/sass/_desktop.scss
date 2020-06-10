@@ -1,5 +1,5 @@
 /* ***********************************************
-Desktop
+Desktop - see also _image-menu.scss.
 ************************************************ */
 
 @media only screen and (min-width: 960px) {
@@ -46,19 +46,12 @@ Desktop
 
 	}
 
-	nav {
-		input,
-		label {
-			display: none;
-		}
-	}
-	label.menu,
-	input.menu {
-		display: none;
-	}
+
 
 	section,
 	footer {
 		padding: 0 40px;
 	}
+
+	  
 }

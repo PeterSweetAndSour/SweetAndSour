@@ -89,7 +89,7 @@ let DesktopNavigation = (function() {
 	};
 
 	var _showLoadingGraphic = function() {
-		document.querySelector(".overlay").style.display = "block";
+		document.querySelector(".menuOverlay").style.display = "block";
 		document.querySelector(".loading").style.display = "block";
 	};
 
