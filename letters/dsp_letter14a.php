@@ -24,7 +24,8 @@
 </div>
 <div class="photo-gallery">
 	<?
-	setThumbnail(["AcrobatIcon_Ltr14.gif", $urlPrefix . "files/Letter14.pdf", "Passport1.jpg"]);
+	setThumbnail("AcrobatIcon_Ltr14.gif", $urlPrefix . "files/Letter14.pdf");
+	setThumbnail("Passport1.jpg");
 	?>
 </div>
 
