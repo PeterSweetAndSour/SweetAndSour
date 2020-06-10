@@ -3,37 +3,66 @@ body {
 	font-size: 15px;
 }
 
-/* *************************************************************
-Headers
-************************************************************* */
+/* -----------------------------------------------------------------------------------------
+Layout
+------------------------------------------------------------------------------------------ */
+
+footer {
+
+}
+
+/* -----------------------------------------------------------------------------------------
+Headings
+------------------------------------------------------------------------------------------ */
 h1, h2, h3, h4 {
 	clear: both; 
 	font-weight: bold;
+	margin: 1em 0 0.25em 0; 
 }
   
 h1 {
 	font-family: 'Conv_Chowfun',Sans-Serif;
-	color: #c25a3f;
+	color: #b65039;
 	font-size: 32px;
+	line-height: 1em;
+
+	span {
+		font-size: 20px; 
+	}
 }
-h1 span {
-	font-size: 24px; }
 
 h2 {
 	font-size:24px;
 	color: #145a9e ;
-	margin-bottom: 0.5em;
-	clear: both; }
+	clear: both; 
+
+	span {
+		font-size: 16px;
+	}
+}
 	
 h3 {
 	font-size: 18px;
 	color: #000;
-	margin-bottom: 0.5em; 
 }
 
-/* *************************************************************
+/* -----------------------------------------------------------------------------------------
+Elements
+------------------------------------------------------------------------------------------ */
+
+p,
+ul,
+ol {
+	margin-bottom: 1em;
+}
+li {
+	margin-bottom: 0.5em;
+}
+
+/* -----------------------------------------------------------------------------------------
 Photos and captions
-************************************************************* */
+Overlay and loading graphic
+------------------------------------------------------------------------------------------ */
 
 .figure--thumbnail {
 	display: inline-block;
@@ -82,11 +111,38 @@ Overlay and loading graphic
 	display: none;
 }
   
+/* -----------------------------------------------------------------------------------------
+Miscellaneous
+------------------------------------------------------------------------------------------ */
 
-  
+/* Used to indicate text of bumper sticker. */
+.sticker {
+	color: #006666;
+	font-style: italic;
+	font-weight: bold;
+}
 
+.toTop {
+	position: relative;
+	padding-left: 24px;
 
-/* *************************************************************
+	:before {
+		content: " ";
+		position: absolute;
+		top: 5px;
+		left: 0px;
+		border: 0 solid transparent;
+		border-right-width: 7px;
+		border-left-width: 7px;
+		border-bottom: 12px solid #f00;
+	}
+}
 
-************************************************************* */
-
+.copyright {
+	text-align: center;
+	color: #999;
+	font-size: 12px;
+	border-top: 1px solid #999;
+	padding-top: 20px;
+	margin: 20px 0 0 0;
+}

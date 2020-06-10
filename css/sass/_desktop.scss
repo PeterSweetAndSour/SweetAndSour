@@ -7,6 +7,9 @@ Desktop - see also _image-menu.scss.
 		background: #82bffa linear-gradient(to bottom, #145a9e 0%,#82bffa 100%) repeat-x;
 	}
 
+	/* -----------------------------------------------------------------------------------------
+	Layout
+	------------------------------------------------------------------------------------------ */
 	div.page {
 		width: 960px;
 		margin: 20px auto;
@@ -15,6 +18,25 @@ Desktop - see also _image-menu.scss.
 		border-radius: 20px;
 	}
 
+	main {
+		padding: 0 40px;
+	}
+
+	footer {
+		clear: both;
+		padding: 20px 40px;
+	}
+
+	.story {
+		width: calc(100% - 210px);
+		float: left;
+		margin: 0 40px 2em 0;
+	}
+
+
+	/* -----------------------------------------------------------------------------------------
+	Header
+	------------------------------------------------------------------------------------------ */
 	.logo {
 		font-family: 'Conv_Chowfun', sans-serif;
 		font-size: 48px;
@@ -33,25 +55,9 @@ Desktop - see also _image-menu.scss.
 		padding-left: 20px;
 	}
 
-	h1 {
-	}
 	
-	.story {
-		width: calc(100% - 200px);
-		float: left;
-		margin-right: 20px;
-	}
-
-	form.menu {
-
-	}
 
 
-
-	section,
-	footer {
-		padding: 0 40px;
-	}
 
 	  
 }

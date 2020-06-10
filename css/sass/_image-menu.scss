@@ -211,7 +211,7 @@ Image Menu
 	
 	ul.menu2 > li.selected > a,
 	ul.menu2 > li.on > a {
-		color: #1c3eab;
+		color: #145a9e;
 		background-color: #fff;
 	}
 	
@@ -222,7 +222,7 @@ Image Menu
 	
 	ul.menu2 > li:hover > a, 
 	ul.menu2 > li.off > a {
-		color: #1c3eab; 
+		color: #145a9e; /* was #1c3eab; */
 	}
 	
 	ul.menu2 > li > a:hover {
@@ -265,7 +265,7 @@ Image Menu
 	
 	/* A */
 	ul.menu3 > li > a {
-		color: #1c3eab;
+		color: #145a9e;
 		text-decoration: none;
 		background-image: none;
 		font-weight: normal; 

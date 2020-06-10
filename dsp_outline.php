@@ -105,10 +105,10 @@ include '../imageMgt/act_setThumbnailFunction.php';
 		<footer>
 			<? if($showToTopLink == true) { ?>
 				<!-- Link to top of page. -->
-				<p class="toTop"><a href='#top'><img src='<?= $topIconSrc ?>' alt='To top' height='13' border='0' style='vertical-align:bottom' /></a> <a href='#top'>Top</a></p>
+				<p class="toTop"><a href='#top'>To top</a></p>
 			<? } ?>
 			<!-- Copyright notice. -->
-			<p class="end" id="copyright"><?= $copyright ?></p>
+			<p class="copyright"><?= $copyright ?></p>
 		</footer>
 
 	   <?

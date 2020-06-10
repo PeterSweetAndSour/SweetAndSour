@@ -48,10 +48,12 @@ img {
   max-width: 100%;
 }
 
-/* Natural flow and rhythm in articles by default */
+/* Natural flow and rhythm in articles by default 
+(Not finding this helpful so removing it.)
 article > * + * {
   margin-top: 1em;
 }
+*/
 
 /* Inherit fonts for inputs and buttons */
 input,

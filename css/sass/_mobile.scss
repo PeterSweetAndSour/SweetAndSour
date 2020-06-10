@@ -2,20 +2,25 @@
 Mobile 
 ************************************************ */
 @media only screen and (max-width: 959px) {
+
+	/* -----------------------------------------------------------------------------------------
+	Layout
+	------------------------------------------------------------------------------------------ */
 	header {
 		background-color: #155b9f;
 		color: #fff;
 		text-align: right;
 		height: 83px;
 	}
-	section {
+	main,
+	footer {
 		background-color: #fff;
 		padding: 20px;
 	}
-	footer {
-		clear: both;
-	}
 	
+	/* -----------------------------------------------------------------------------------------
+	Header
+	------------------------------------------------------------------------------------------ */
 	.logo {
 		font-family: 'Conv_Chowfun', sans-serif;
 		font-size: 31px;
@@ -34,7 +39,6 @@ Mobile
 		font-style: italic;
 		margin-top: -10px;
 	}
-	
 	
 	/* -----------------------------------------------------------------------------------------
 	Navigation
@@ -165,7 +169,7 @@ Mobile
 			&:after {
 				display:block;
 				position: relative;
-				top: 1px;
+				top: 3px;
 				color: white;
 				font-size: 12px;
 			}
@@ -179,13 +183,6 @@ Mobile
 			left: -3px;
 		}
 	}
-	/*
-	span.menu {
-		position: absolute;
-		top: 50px;
-		left: 12px;
-	}
-	*/
 	
 	input.menu {
 		display:none;

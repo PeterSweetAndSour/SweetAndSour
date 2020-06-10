@@ -55,11 +55,12 @@ img {
   max-width: 100%;
 }
 
-/* Natural flow and rhythm in articles by default */
+/* Natural flow and rhythm in articles by default 
+(Not finding this helpful so removing it.)
 article > * + * {
   margin-top: 1em;
 }
-
+*/
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -106,40 +107,59 @@ body {
   font-size: 15px;
 }
 
-/* *************************************************************
-Headers
-************************************************************* */
+/* -----------------------------------------------------------------------------------------
+Layout
+------------------------------------------------------------------------------------------ */
+/* -----------------------------------------------------------------------------------------
+Headings
+------------------------------------------------------------------------------------------ */
 h1, h2, h3, h4 {
   clear: both;
   font-weight: bold;
+  margin: 1em 0 0.25em 0;
 }
 
 h1 {
   font-family: "Conv_Chowfun", Sans-Serif;
-  color: #c25a3f;
+  color: #b65039;
   font-size: 32px;
+  line-height: 1em;
 }
-
 h1 span {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 h2 {
   font-size: 24px;
   color: #145a9e;
-  margin-bottom: 0.5em;
   clear: both;
+}
+h2 span {
+  font-size: 16px;
 }
 
 h3 {
   font-size: 18px;
   color: #000;
+}
+
+/* -----------------------------------------------------------------------------------------
+Elements
+------------------------------------------------------------------------------------------ */
+p,
+ul,
+ol {
+  margin-bottom: 1em;
+}
+
+li {
   margin-bottom: 0.5em;
 }
 
-/* *************************************************************
+/* -----------------------------------------------------------------------------------------
 Photos and captions
-************************************************************* */
+Overlay and loading graphic
+------------------------------------------------------------------------------------------ */
 .figure--thumbnail {
   display: inline-block;
   width: 150px;
@@ -174,10 +194,61 @@ Photos and captions
   margin: 0 0 0.5em 10px;
 }
 
+/* -----------------------------------------------------------------------------------------
+Overlay and loading graphic
+------------------------------------------------------------------------------------------ */
+.menuOverlay {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loading {
+  display: none;
+}
+
+/* -----------------------------------------------------------------------------------------
+Miscellaneous
+------------------------------------------------------------------------------------------ */
+/* Used to indicate text of bumper sticker. */
+.sticker {
+  color: #006666;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.toTop {
+  position: relative;
+  padding-left: 24px;
+}
+.toTop :before {
+  content: " ";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  border: 0 solid transparent;
+  border-right-width: 7px;
+  border-left-width: 7px;
+  border-bottom: 12px solid #f00;
+}
+
+.copyright {
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  border-top: 1px solid #999;
+  padding-top: 20px;
+  margin: 20px 0 0 0;
+}
+
 /* ***********************************************
 Mobile 
 ************************************************ */
 @media only screen and (max-width: 959px) {
+  /* -----------------------------------------------------------------------------------------
+  Layout
+  ------------------------------------------------------------------------------------------ */
   header {
     background-color: #155b9f;
     color: #fff;
@@ -185,15 +256,15 @@ Mobile
     height: 83px;
   }
 
-  section {
+  main,
+footer {
     background-color: #fff;
     padding: 20px;
   }
 
-  footer {
-    clear: both;
-  }
-
+  /* -----------------------------------------------------------------------------------------
+  Header
+  ------------------------------------------------------------------------------------------ */
   .logo {
     font-family: "Conv_Chowfun", sans-serif;
     font-size: 31px;
@@ -212,7 +283,9 @@ Mobile
     margin-top: -10px;
   }
 
-  /* Menu - mobile and desktop */
+  /* -----------------------------------------------------------------------------------------
+  Navigation
+  ------------------------------------------------------------------------------------------ */
   nav {
     box-sizing: border-box;
     width: calc(100% - 64px);
@@ -330,7 +403,7 @@ nav ul.menu3 > li > label {
   label.menu.openMenu:after, label.menu.closeMenu:after {
     display: block;
     position: relative;
-    top: 1px;
+    top: 3px;
     color: white;
     font-size: 12px;
   }
@@ -343,13 +416,6 @@ nav ul.menu3 > li > label {
     left: -3px;
   }
 
-  /*
-  span.menu {
-  	position: absolute;
-  	top: 50px;
-  	left: 12px;
-  }
-  */
   input.menu {
     display: none;
   }
@@ -358,32 +424,35 @@ nav ul.menu3 > li > label {
         transform: translate(64px);
     transition: 0.2s linear;
   }
-  input.menu:checked + nav + .overlay {
+  input.menu:checked + nav + .menuOverlay {
     display: block;
   }
 
-  .overlay {
-    position: absolute;
+  /* -----------------------------------------------------------------------------------------
+  Overlay
+  ------------------------------------------------------------------------------------------ */
+  .menuOverlay {
     z-index: 1;
     top: 83px;
-    width: 100%;
     height: 1000px;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
+    /* Reset to document height if Javascript is working. */
   }
 
-  .loading {
-    display: none;
-  }
+  /* -----------------------------------------------------------------------------------------
+
+  ------------------------------------------------------------------------------------------ */
 }
 /* ***********************************************
-Desktop
+Desktop - see also _image-menu.scss.
 ************************************************ */
 @media only screen and (min-width: 960px) {
   body {
     background: #82bffa linear-gradient(to bottom, #145a9e 0%, #82bffa 100%) repeat-x;
   }
 
+  /* -----------------------------------------------------------------------------------------
+  Layout
+  ------------------------------------------------------------------------------------------ */
   div.page {
     width: 960px;
     margin: 20px auto;
@@ -392,6 +461,24 @@ Desktop
     border-radius: 20px;
   }
 
+  main {
+    padding: 0 40px;
+  }
+
+  footer {
+    clear: both;
+    padding: 20px 40px;
+  }
+
+  .story {
+    width: calc(100% - 210px);
+    float: left;
+    margin: 0 40px 2em 0;
+  }
+
+  /* -----------------------------------------------------------------------------------------
+  Header
+  ------------------------------------------------------------------------------------------ */
   .logo {
     font-family: "Conv_Chowfun", sans-serif;
     font-size: 48px;
@@ -408,41 +495,16 @@ Desktop
     margin-top: -10px;
     padding-left: 20px;
   }
-
-  .story {
-    width: calc(100% - 200px);
-    float: left;
-    margin-right: 20px;
-  }
-
-  nav input,
-nav label {
-    display: none;
-  }
-
-  label.menu,
-input.menu {
-    display: none;
-  }
-
-  section,
-footer {
-    padding: 0 40px;
-  }
 }
 /**************************************************************
 Image Menu
 **************************************************************/
 @media only screen and (min-width: 960px) {
-  nav {
-    position: relative;
-  }
-
   #imageMenu {
     position: relative;
     width: 956px;
-    height: 292px;
-    /* Secondary and tertiary menus */
+    height: 300px;
+    /* Primary, secondary and tertiary menus. */
     overflow: hidden;
     margin: 10px 0 10px 2px;
   }
@@ -451,25 +513,24 @@ Image Menu
   body.whoWeAre #imageMenu,
   body.whereWeLive #imageMenu,
   body.timeForJustice #imageMenu {
-  	height: 260px; }
+  	height: 260px;  / * Primary and secondary menus. * /
+  } 
 
   body.home #imageMenu,
   body.contactUs #imageMenu {
-  	height: 232px; }
+  	height: 232px; }  / * Primary menu only. * /
   */
   /* UL */
-  #imageMenu ul {
-    position: relative;
-    z-index: 1;
+  ul.menu1 {
     list-style-type: none;
     margin: 0px;
     display: block;
     width: 1500px;
-    /*Make this big enough for 2 items to be enlarged at once */
+    overflow: hidden;
   }
 
   /* LI */
-  #imageMenu > ul > li {
+  ul.menu1 > li {
     float: left;
     height: 228px;
     width: 55px;
@@ -480,7 +541,7 @@ Image Menu
     border-right: 2px solid white;
   }
 
-  #imageMenu > ul > li.selected {
+  ul.menu1 > li.selected {
     background-color: green;
     width: 500px;
     transition: width 0.5s;
@@ -488,14 +549,14 @@ Image Menu
     transition-timing-function: linear;
   }
 
-  #imageMenu > ul > li.selected.off {
+  ul.menu1 > li.selected.off {
     width: 55px;
     transition: width 0.5s;
     transition-delay: 0.1s;
     transition-timing-function: linear;
   }
 
-  #imageMenu > ul > li.on {
+  ul.menu1 > li.on {
     background-color: red;
     border-bottom: 4px solid #fff;
     width: 500px;
@@ -505,13 +566,8 @@ Image Menu
     /* Need the LI to extend down at least to the top of the submenu so that a mouseout event is not registered when moving to the child UL submenu */
   }
 
-  /* A. */
-  #imageMenu > ul > li.selected a {
-    cursor: default;
-  }
-
   /* Top level will use the Gilder/Levin image replacement method (www.mezzoblue.com/tests/revised-image-replacement/#gilderlevin)  */
-  #imageMenu > ul > li a.photoLink {
+  ul.menu1 > li > a.photoLink {
     width: 100%;
     /* of the LI */
     position: relative;
@@ -524,7 +580,7 @@ Image Menu
   }
 
   /* SPAN */
-  #imageMenu > ul > li a.photoLink span {
+  ul.menu1 > li a.photoLink > span {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -536,43 +592,43 @@ Image Menu
     background-attachment: scroll;
   }
 
-  body.mediaFromLocal #imageMenu > ul > li a.photoLink span {
+  body.mediaFromLocal ul.menu1 > li > a.photoLink span {
     background-image: url(../images/headerSprite_20180516.jpg);
   }
 
-  #imageMenu > ul > li.home a span {
+  ul.menu1 > li.home > a > span {
     background-position: 0 0;
   }
 
-  #imageMenu > ul > li.whoweare a span {
+  ul.menu1 > li.whoweare > a > span {
     background-position: -500px 0;
   }
 
-  #imageMenu > ul > li.wherewelive a span {
+  ul.menu1 > li.wherewelive > a > span {
     background-position: -1000px 0;
   }
 
-  #imageMenu > ul > li.newsletters a span {
+  ul.menu1 > li.newsletters > a > span {
     background-position: -1500px 0;
   }
 
-  #imageMenu > ul > li.technology a span {
+  ul.menu1 > li.technology > a > span {
     background-position: -2000px 0;
   }
 
-  #imageMenu > ul > li.artsandculture a span {
+  ul.menu1 > li.artsandculture > a > span {
     background-position: -2500px 0;
   }
 
-  #imageMenu > ul > li.timeforjustice a span {
+  ul.menu1 > li.timeforjustice > a > span {
     background-position: -3000px 0;
   }
 
-  #imageMenu > ul > li.photos a span {
+  ul.menu1 > li.photos a span > a > span {
     background-position: -3500px 0;
   }
 
-  #imageMenu > ul > li.contactus a span {
+  ul.menu1 > li.contactus > a > span {
     background-position: -4000px 0;
   }
 
@@ -617,7 +673,7 @@ li.selected > a > .verticalText {
   Secondary menu
   ------------------------------------------------------------------------------------------ */
   /* UL */
-  #imageMenu ul ul {
+  ul.menu2 {
     display: none;
     position: absolute;
     top: 232px;
@@ -630,59 +686,60 @@ li.selected > a > .verticalText {
     line-height: 1em;
   }
 
-  #imageMenu > ul > li.selected ul,
-#imageMenu > ul > li.on ul {
+  ul.menu1 > li.selected > ul,
+ul.menu1 > li.on > ul {
     display: block;
   }
 
-  #imageMenu > ul > li.off ul {
+  ul.menu1 > li.off > ul {
     display: none;
   }
 
   /* LI */
-  #imageMenu ul ul li {
+  ul.menu2 > li,
+ul.menu3 > li {
     float: none;
     display: inline;
   }
 
   /* A */
-  #imageMenu > ul > li ul.menu2 li a {
-    /* Need a class specifier to override picture background image of top-level menu */
-    text-indent: 0px;
-    color: #fff;
-    border-right: 1px solid white;
-    border-bottom-style: none;
-    cursor: pointer;
+  ul.menu2 > li > a,
+ul.menu3 > li > a {
     display: inline-block;
-    overflow: auto;
-    padding: 8px 8px 6px 8px;
+    padding: 10px 8px 8px 8px;
     background-color: transparent;
     background-image: none;
     text-decoration: none;
   }
 
-  #imageMenu > ul > li ul li.selected a,
-#imageMenu > ul > li ul li.on a {
-    color: #1c3eab;
-    position: relative;
-    z-index: 1;
+  ul.menu2 > li > a {
+    color: #fff;
+    border-right: 1px solid white;
+    border-bottom-style: none;
+  }
+
+  ul.menu2 > li.selected > a,
+ul.menu2 > li.on > a {
+    color: #145a9e;
     background-color: #fff;
   }
 
-  #imageMenu > ul > li ul li.selected a {
+  ul.menu2 > li.selected > a {
     background: linear-gradient(to bottom, #c0defa 0%, #ffffff 100%) repeat-x;
     font-weight: bold;
   }
 
-  #imageMenu > ul > li ul li:hover a, #imageMenu > ul > li ul li.off a {
-    color: #1c3eab;
+  ul.menu2 > li:hover > a,
+ul.menu2 > li.off > a {
+    color: #145a9e;
+    /* was #1c3eab; */
   }
 
-  #imageMenu > ul > li ul li a:hover {
+  ul.menu2 > li > a:hover {
     text-decoration: underline;
   }
 
-  #imageMenu > ul > li ul li.selected a:hover {
+  ul.menu2 > li.selected > a:hover {
     /* Want no visible change when moving mouse over currently selected item */
     text-decoration: none;
     cursor: default;
@@ -692,59 +749,91 @@ li.selected > a > .verticalText {
   Tertiary menu
   ------------------------------------------------------------------------------------------ */
   /* UL */
-  #imageMenu ul ul.menu2 ul {
+  ul.menu3 {
     position: static;
-    border-bottom: 1px solid blue;
+    float: left;
+    width: 956px;
+    border-bottom: 1px solid #3252bd;
     background-image: none;
     background-color: #fff;
-    margin-top: -2px;
-    /* I don't know why the list items are not simply wrapping the anchors or why there is a "bottom border". Later. */
     display: none;
   }
 
-  #imageMenu > ul > li ul li.selected ul,
-#imageMenu > ul > li ul li.on ul {
+  ul.menu2 > li.selected > ul,
+ul.menu2 > li.on > ul {
     display: block;
   }
 
-  #imageMenu > ul > li ul li.off ul {
+  ul.menu2 > li.off > ul {
     display: none;
   }
 
   /* LI */
-  #imageMenu > ul > li ul.menu2 li ul li {
-    color: #1c3eab;
+  ul.menu3 > li {
     font-weight: normal;
   }
 
   /* A */
-  #imageMenu > ul > li ul.menu2 li ul li a {
+  ul.menu3 > li > a {
+    color: #145a9e;
     text-decoration: none;
     background-image: none;
     font-weight: normal;
   }
 
-  #imageMenu > ul > li ul.menu2 li ul li a:hover {
+  ul.menu3 > li > a:hover {
     text-decoration: underline;
   }
 
-  #imageMenu > ul > li ul.menu2 li ul li.selected a {
+  ul.menu3 > li.selected > a {
     font-weight: bold;
   }
 
-  #imageMenu > ul > li ul.menu2 li ul li.selected a:hover {
+  ul.menu3 > li.selected > a:hover {
     text-decoration: none;
   }
 
-  form.menu {
-    position: relative;
+  /* -----------------------------------------------------------------------------------------
+  Controls used on mobile menu
+  ------------------------------------------------------------------------------------------ */
+  nav input,
+nav label {
+    display: none;
   }
 
-  .divBehindImageMenu {
+  label.menu,
+input.menu {
+    display: none;
+  }
+
+  /* -----------------------------------------------------------------------------------------
+  Menu overlay and loading graphic
+  ------------------------------------------------------------------------------------------ */
+  .menuOverlay {
+    height: 296px;
+    top: 105px;
+    z-index: 3;
+  }
+
+  .loading {
     position: absolute;
-    z-index: 0;
-    height: 232px;
-    width: 100%;
+    z-index: 4;
+    top: 90px;
+    left: 398px;
+    background-color: #fff;
+    text-align: center;
+    padding: 5px 10px 10px 10px;
+    width: 160px;
+    border-radius: 10px;
+  }
+
+  .loading p {
+    margin: 0;
+  }
+
+  .loading img {
+    margin: 10px auto;
+    display: block;
   }
 }
 /* Note to future self on using inline SVG for Font Awesome icons:
