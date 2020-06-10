@@ -10,7 +10,7 @@ if($fuseAction == "injustice") {
 }
 ?>
 
-<h2>Preamble (not part of the original presentation)</h2>
+<h2>Preamble <span>(not part of the original presentation)</span></h2>
 <div class="story">
 	<p>Near the top of the list of things that upset me is the Israeli-Palestinian conflict. The more research I did, the more depressing it became, in part because the Palestinian viewpoint is rarely recognized in the American media and almost never in American policy with the result that with America's economic, military and diplomatic support, Israel has been able to take most Palestinian land and mistreat the Palestinian population. </p>
 	<p>In this talk which I gave in August 2000, I attempted to show that Palestinian grievances are real and that there will never be a lasting peace in the Middle East until they are addressed.</p>
@@ -74,7 +74,7 @@ if($fuseAction == "injustice") {
 
 <h2>Body</h2>
 
-<h4>BEFORE 1948</h4>
+<h3>Before 1948</h3>
 <div class="story">
 	<ul class="endText">
 		<li>After suffering centuries of persecution in Europe and particularly Czarist Russia, Austrian Jew Theodore Herzl published &quot;The Jewish State&quot; in 1896 and formally started the Zionist movement to create a Jewish homeland in Palestine.  A few Jews did start emigrating but the numbers were small.  Combined with the native Jewish population,  Brittanica online says that in 1914, only 12% of the population was Jewish.</li>
@@ -87,11 +87,11 @@ if($fuseAction == "injustice") {
 		<li>With the end of WW2 and the Holocaust in Europe, the British position in Palestine became untenable.  Jewish refugees from all over Europe were now desperate to enter Palestine and the British tried to turn most of them away leading to Jewish resentment and violence.  Similarly, the Arab population was alarmed at the prospect of being overwhelmed and demanded the British let them manage their own affairs.</li>
 		<li>In 1947, the British gave up attempting  and handed the problem over the the newly formed United Nations.</li>
 		<li>MAP 1.  The UN proposed partition into Arab and Jewish sectors.  Jews welcomed the proposal, Arabs were outraged.  Note that:
-		<ol>
-			<li>The Arab state was roughly half of Palestine</li>
-			<li>Jerusalem is under INTERNATIONAL CONTROL</li>
-			<li>&quot;4 corners&quot; allow free movement between sections</li>
-		</ol>
+			<ol>
+				<li>The Arab state was roughly half of Palestine</li>
+				<li>Jerusalem is under INTERNATIONAL CONTROL</li>
+				<li>&quot;4 corners&quot; allow free movement between sections</li>
+			</ol>
 		</li>
 	</ul>
 </div>
@@ -102,19 +102,19 @@ if($fuseAction == "injustice") {
 	</div>
 
 	<div class="caption captionInColumn offset">
-		<p>MAP 1: What the UN proposed. <span class="boldRed">You cannot understand the conflict in the Middle East without this map</span> but I had not seen it until I did my talk. Green sections were to be the Jewish state, red sections were to be the Arab state.  For more detail, see a <a href="../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=Partition2.jpg">larger map</a> (780 x 1530 pixels, 257k) or the <a class="external" href="http://domino.un.org/maps/m0082.gif">original document on the UN site</a> (1.4 MB).</p>
+		<p>Map 1: What the UN proposed. <span class="boldRed">You cannot understand the conflict in the Middle East without this map</span> but I had not seen it until I did my talk. Green sections were to be the Jewish state, red sections were to be the Arab state.  For more detail, see a <a href="../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=Partition2.jpg">larger map</a> (780 x 1530 pixels, 257k) or the <a class="external" href="http://domino.un.org/maps/m0082.gif">original document on the UN site</a> (1.4 MB).</p>
 	</div>
 </div>
 
-<h4>THE PERIOD 1948 to 1967</h4>
+<h3>THE PERIOD 1948 to 1967</h3>
 <div class="story">
 	<ul class="endText">
 		<li>As the British were leaving in May 1948, the Jewish section of Palestine declared itself an independent country immediately plunging the new country into war with its Arab neighbours and native Palestinian population.</li>
 		<li>MAP 2: The Israelis captured all the land allocated to them under the 1947 plan plus a significant portion allocated to the Arabs:
-		<ol>
-			<li>HALF OF JERUSALEM which was supposed to be under international control</li>
-			<li>territory so that GAZA IS CUT OFF FROM THE WEST BANK</li>
-		</ol>
+			<ol>
+				<li>HALF OF JERUSALEM which was supposed to be under international control</li>
+				<li>territory so that GAZA IS CUT OFF FROM THE WEST BANK</li>
+			</ol>
 		</li>
 	</ul>
 </div>
@@ -124,7 +124,7 @@ if($fuseAction == "injustice") {
 		<? setThumbnail("IsraelMap.jpg", "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/IS-map.gif"); ?>
 	</div>
 	<div class="caption captionInColumn offset">
-		<p>MAP 2: The modern state of Israel as recognized by the non-Arab world (this map is from the 2000 CIA Factbook).  The map I used from 2000 had stars (*) next to the West Bank and Gaza Stip.  These areas, and the &quot;Golan Heights&quot; taken from Syria, were  were captured in 1967 and occupied since but the current map removes the stars (though the note talks about areas being subject to negotiation) and reflecting another change in US policy, now shows the Golan Heights as part of Israel.</p>
+		<p>Map 2: The modern state of Israel as recognized by the non-Arab world (this map is from the 2000 CIA Factbook).  The map I used from 2000 had stars (*) next to the West Bank and Gaza Stip.  These areas, and the &quot;Golan Heights&quot; taken from Syria, were  were captured in 1967 and occupied since but the current map removes the stars (though the note talks about areas being subject to negotiation) and reflecting another change in US policy, now shows the Golan Heights as part of Israel.</p>
 	</div>
 </div>
 
@@ -140,7 +140,7 @@ if($fuseAction == "injustice") {
 	</ul>
 </div>
 
-<h4>AFTER 1967</h4>
+<h3>AFTER 1967</h3>
 <div class="story">
 	<ul class="endText">
 		<li>In the "6 Day War" of 1967, the Israelis captured:
@@ -155,7 +155,7 @@ if($fuseAction == "injustice") {
 		</ol>
 		<li>A new flood of 300,000 refugees followed, many of them refugees from the 1948 war.</li>
 		<li>Captured land is not recognized by any country, described as &quot;occupied territories&quot;</li>
-		<li>MAP 3 - vigorous campaign of Jewish settlements in the occupied territories, including east Jerusalem to make it more difficult to give back</li>
+		<li>Map 3 - vigorous campaign of Jewish settlements in the occupied territories, including east Jerusalem to make it more difficult to give back</li>
 	</ul>
 </div>
 
@@ -164,7 +164,7 @@ if($fuseAction == "injustice") {
 		<? setThumbnail("Settlements.gif", "https://unispal.un.org/UNISPAL.NSF/cf02d057b04d356385256ddb006dc02f/96fd41bb37e40f8685256b98006ec72a?OpenDocument"); ?>
 	</div>
 	<div class="caption captionInColumn offset">
-		<p>MAP 3: While even the UN uses the term "settlements", it seems clear that the intent is to occupy the land making it difficult, if not impossible, to give back to any future Palestinian state.  With the "settlements" in place, Israel has an excuse to maintain a "security" (i.e. military) presence inside its neighbor and by fragmenting the state, makes it less viable.</p>
+		<p>Map 4: While even the UN uses the term "settlements", it seems clear that the intent is to occupy the land making it difficult, if not impossible, to give back to any future Palestinian state.  With the "settlements" in place, Israel has an excuse to maintain a "security" (i.e. military) presence inside its neighbor and by fragmenting the state, makes it less viable.</p>
 		<p>You can zoom in on the linked original document and read the text but even here, you can see that &ldquo;settlement&rdquo; has been comprehensive.</p>
 	</div>
 </div>

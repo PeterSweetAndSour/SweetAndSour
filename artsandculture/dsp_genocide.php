@@ -25,12 +25,12 @@
 
 	<h2>Body</h2>
 
-	<h4>OTHER NATIONAL TRAUMAS</h4>
+	<h3>Other national traumas</h3>
 	<div class="story">
 		<p class="endText">Since it happened only 6 years ago, I'll assume you know of the Rwandan genocide and lack of time prevents us remembering the Cambodian genocide under the Khmer Rouge 1975-78, the evil that Pakistani troops brought upon what is now Bangladesh in 1971,  the massacres of Communists and their families in Indonesia in 1965, China&rsquo;s &quot;Great Leap Forward&quot; of 1958-61 which left somewhere between 20 and 30 million people dead and the atrocities of the Japanese in China, particularly the &quot;Rape of Nanjing&quot; in 1937.  Of course, there were others in earlier times too.</p>
 	</div>
 
-	<h4>THE MAN-MADE FAMINE IN THE UKRAINE OF 1932-33</h4>
+	<h3>The man-made famine in Ukraine in 1932-33</h3>
 	<div class="story">
 		<ul class="endText">
 			<li>MAP</li>
@@ -50,7 +50,7 @@
 	</div>
 	<? setThumbnail("mapUkraine1.gif"); ?>
 
-	<h4>THE GENOCIDE OF THE ARMENIANS BY THE OTTOMAN TURKS IN 1915</h4>
+	<h3>The genocide of the Armenians by the Ottoman Turks in 1915</h3>
 	<div class="story">
 		<ul class="endText">
 			<li>MAP</li>
@@ -63,7 +63,7 @@
 	</div>
 	<? setThumbnail("mapTurkey1.gif"); ?>
 
-	<h4>WHY THE OTHERS WERE FORGOTTEN</h4>
+	<h3>Why the others were forgotten</h3>
 	<div class="story">
 		<p>What makes the Holocaust unique then?  It sadly wasn't the only genocide, the first, or even perhaps the largest.  I believe the Holocaust is unique and we remember it for these reasons:</p>
 		<ul class="endText">

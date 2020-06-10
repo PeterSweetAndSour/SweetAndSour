@@ -1,6 +1,6 @@
 <? //dsp_farnsworth.php?>
 
-<h2>Preamble (not part of the original presentation)</h2>
+<h2>Preamble <span>(not part of the original presentation)</span></h2>
 <div class="story">
    <p>I did a public speaking class (SPE-115) as part of my associate degree at Red Rocks Community College and was fortunate to have a wonderful teacher and a wonderful class.  You really get to know each other when each person is speaking about something that is important to them.  Some were very moving and showed a lot of courage on the part of those that gave them.</p>
    <p class="endText">We did four talks, one informative, one celebration or humor, one pursuasive and one of our choice.  All required immense preparation and I think all of us felt we needed more time to do them properly but all were rewarding.  Each is presented in the format that we were to submit to our teacher: a word-by-word introduction and conclusion, with section headings and bulleted points in the middle.  By not writing out the whole speech word-for-word, you can't read the speech which would be boring.  Here are mine.</p>
@@ -19,7 +19,7 @@
 
 
 <h2>Body</h2>
-<h4>THE BOY WITH AN IDEA</h4>
+<h3>The boy with an idea</h3>
 <div class="story">
    <ul class="endText">
    	<li><b>Philo T. Farnsworth</b> was an unlikely person to invent television</li>
@@ -28,7 +28,7 @@
    </ul>
 </div>
 
-<h4>FIRST REAL STEPS</h4>
+<h3>First real steps</h3>
 <div class="story">
    <ul class="endText">
    	<li>At age 19, he got a chance to prove himself and his ideas.</li>
@@ -40,7 +40,7 @@
    </ul>
 </div>
 
-<h4>TECHNICAL TRIUMPH, BUSINESS TROUBLES</h4>
+<h3>Technical triumph, business troubles</h3>
 <div class="story">
    <ul class="endText">
    	<li>While the demonstration for the bankers was a great success, it signalled a new phase.</li>
@@ -57,7 +57,7 @@
    </ul>
 </div>
 
-<h4>THE COURT APPEAL - THE BEGINNING OF THE END</h4>
+<h3>The court appeal &ndash; the beginning of the end</h3>
 <div class="story">
    <ul class="endText">
    	<li> RCA was not finished in court though.  RCA did appeal and this was the beginning of the end.</li>
@@ -67,7 +67,7 @@
    </ul>
 </div>
 
-<h4>THE END</h4>
+<h3>The end</h3>
 <div class="story">
    <ul class="endText">
    	<li>The crippling blow came from an unexpected source.</li>
