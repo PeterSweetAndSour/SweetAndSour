@@ -90,19 +90,17 @@ include '../imageMgt/act_setThumbnailFunction.php';
 			?>
 		</header>	
 	
-		<section>
-			<article>
-				<?
-				if($useInPageHeader == true) {
-					; // Do nothing
-				}
-				else if(isset($heading1Text)) {
-					echo "<h1>" . $heading1Text . "</h1>";
-				}
-				?>
-				<? include $contentPage; ?>
-			</article>
-		</section>
+		<main>
+			<?
+			if($useInPageHeader == true) {
+				; // Do nothing
+			}
+			else if(isset($heading1Text)) {
+				echo "<h1>" . $heading1Text . "</h1>";
+			}
+			?>
+			<? include $contentPage; ?>
+		</main>
 
 		<footer>
 			<? if($showToTopLink == true) { ?>
