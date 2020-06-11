@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 30, 2020 at 12:03 PM
+-- Generation Time: Jun 11, 2020 at 01:40 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -127,8 +127,8 @@ INSERT INTO `menus2` (`menuID`, `displayText`, `parentID`, `folderID`, `fuseActi
 (8, 'Time for Justice', 0, 9, 'injustice', 8, 1, 1, 0, 270, 275),
 (9, 'Photos', 0, 10, 'portsmouth2009', 9, 1, 1, 0, 276, 315),
 (10, 'Contact us', 0, 8, 'contactUs', 10, 1, 1, 0, 316, 317),
-(20, 'Welcome', 1, 1, 'welcome', 1, 1, 2, 0, 3, 4),
-(21, 'Site Map', 1, 1, 'siteMap', 2, 1, 2, 0, 5, 6),
+(20, 'Welcome', 1, 1, 'welcome', 1, 0, 2, 0, 3, 4),
+(21, 'Site Map', 1, 1, 'siteMap', 2, 0, 2, 0, 5, 6),
 (25, 'About us', 2, 2, 'whoWeAre', 1, 1, 2, 0, 11, 12),
 (26, 'Old photos &ndash; Lan', 2, 2, 'oldPhotosLan', 2, 1, 2, 0, 13, 14),
 (27, 'Old photos &ndash; Peter', 2, 2, 'oldPhotosPeter', 3, 1, 2, 0, 15, 16),
@@ -160,7 +160,7 @@ INSERT INTO `menus2` (`menuID`, `displayText`, `parentID`, `folderID`, `fuseActi
 (84, 'Cars', 6, 6, 'cars1', 3, 1, 2, 0, 225, 230),
 (82, 'This web site', 6, 6, 'thisWebSite', 1, 1, 2, 0, 221, 222),
 (86, 'Alternative energy', 6, 6, 'altEnergy', 4, 0, 1, 0, 231, 232),
-(101, 'Aussie rock &amp; roll', 7, 7, 'rockAndRoll_1', 2, 1, 2, 0, 239, 244),
+(101, 'Aussie rock &amp; roll', 7, 7, 'rockAndRoll', 2, 1, 2, 0, 239, 244),
 (102, 'Humor', 7, 7, 'humor1', 5, 1, 2, 0, 249, 258),
 (103, 'Speeches', 7, 7, 'farnsworth', 6, 1, 2, 0, 259, 268),
 (100, 'K-pop', 7, 7, 'kpop', 1, 1, 2, 0, 237, 238),
@@ -220,8 +220,6 @@ INSERT INTO `menus2` (`menuID`, `displayText`, `parentID`, `folderID`, `fuseActi
 (173, 'Page 5', 57, 4, 'letter16e', 5, 1, 3, 0, 76, 77),
 (298, 'General Principles', 84, 6, 'cars1', 1, 1, 3, 0, 226, 227),
 (299, 'Innovative Designs', 84, 6, 'cars2', 2, 1, 3, 0, 228, 229),
-(300, 'Introduction', 101, 7, 'rockAndRoll_1', 1, 1, 3, 0, 240, 241),
-(301, 'Bands', 101, 7, 'rockAndRoll_2', 2, 1, 3, 0, 242, 243),
 (304, 'British TV Comedies', 102, 7, 'humor1', 1, 1, 3, 0, 250, 251),
 (305, 'Other TV', 102, 7, 'humor2', 2, 1, 3, 0, 252, 253),
 (306, 'Men and Women', 102, 7, 'humor3', 3, 1, 3, 0, 254, 255),
@@ -332,8 +330,8 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('PeterBlizzard2.jpg', 13, '', '', 'N', '19990510', 256, 375),
 ('SnowAngel2.jpg', 13, '<p>Although it produces a nice pattern in the snow, the downside is that you are likely to get snow inside your jacket and then down your trousers!  The angel quickly loses interest in being outdoors at that point.</p>', '', 'N', '19990510', 375, 255),
 ('BackSteps2.jpg', 13, '', '', 'N', '19990510', 255, 375),
-('WebSafeColors1.gif', 6, 'I\'ve tried to use only web-safe colors for the background and menu colors.', 'WebSafeColors3.gif', 'N', '19990518', 150, 130),
-('WebSafeColors3.gif', 6, '', '', 'N', '19990518', 980, 849),
+('WebSafeColors1.gif', 6, 'I\'ve tried to use only web-safe colors for the background and menu colors.', 'WebSafeColors2.gif', 'N', '19990518', 150, 130),
+('WebSafeColors2.gif', 6, '', '', 'N', '19990518', 980, 849),
 ('MoirePattern1.jpg', 6, 'I had a problem early on with scanned postcards.  Moire patterns occur when scanning printed photographs at insufficiently high resolution.', 'MoirePattern2.jpg', 'N', '19990510', 150, 102),
 ('MoirePattern2.jpg', 6, '<p>Yellow polka dots!</p>\r\n<p>We often buy postcards since the photograph is always taken on a nice day, with good equipment that often includes a helicopter. </p>', '', 'N', '19990510', 375, 255),
 ('PeterAtWork1.jpg', 6, 'Peter at work ~2002', 'PeterAtWork2.jpg', 'N', '20050128', 148, 100),
