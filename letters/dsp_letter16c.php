@@ -24,16 +24,6 @@ setThumbnail("FranceMap1.gif", "index.php?fuseAction=mapFrance|_blank|SweetAndSo
 
 
 <div class="story">
-	<p>Go back to:</p>
-	<ul>
-		<li><a href="index.php?fuseAction=letter16a">Employment, or lack thereof</a> (page 1)</li>
-		<li><a href="index.php?fuseAction=letter16b">I love New York</a> (page 2)</li>
-	</ul>
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter16d">France, part 1</a></p>
-	<p>Jump to:</p>
-	<ul class="endText">
-		<li><a href="index.php?fuseAction=letter16e">France, part 2</a> (page 5)</li>
-		<li><a href="index.php?fuseAction=letter16f">France, part 3</a> (page 6)</li>
-		<li><a href="index.php?fuseAction=letter16g">Guns, germs and steel</a> (page 7)</li>
-	</ul>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter16d">France, part 1</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter16b">I love New York</a></p>
 </div>

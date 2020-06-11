@@ -28,7 +28,6 @@ setThumbnail("AcrobatIcon_Ltr18.gif", $urlPrefix . "files/Letter18_Ltr.pdf");
 
 <div class="story">
    <p>Next: <a class="next" href="index.php\?fuseAction=letter18b">Sightseeing</a></p>
-   <p>Jump to <a href="index.php?fuseAction=letter18c">Disconnect from reality</a> (page 3)</p>
 </div>
 
 <div class="story footnotes">
@@ -36,11 +35,11 @@ setThumbnail("AcrobatIcon_Ltr18.gif", $urlPrefix . "files/Letter18_Ltr.pdf");
    <ol class="endText">
 		<li>
 			<a name="Note1"></a>Lots <a href="../photos/index.php?fuseAction=cherryBlossoms" target="_blank">more photos</a> of cherry blossoms?
-			<a href="#Note1Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i>
+			<a href="#Note1Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a name="Note2"></a>The meaning behind the name: what is a <a href="http://www.fool.com/school/13Steps/13Steps01.htm" target="_blank" class="external">Fool</a>?
-			<a href="#Note2Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i>
+			<a href="#Note2Ref" class="noteGoBack">Go back</a>
 		</li>
    </ol>
 </div>

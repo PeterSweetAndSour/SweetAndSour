@@ -25,20 +25,16 @@
 </div>
 
 <div class="story">
-	<p>Go back to:</p>
-	<ul>
-		<li><a href="index.php?fuseAction=letter15a">The news</a> (page 1)</li>
-		<li><a href="index.php?fuseAction=letter15b">New Orleans</a> (page 2)</li>
-	</ul>
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter15d">And in other news</a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter15d">And in other news</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter15b">New Orleans</a></p>
 </div>
 
 <div class="story footnotes">
 	<p>Notes:</p>
 	<ol class="endText">
-		<li><a name="Note1"></a>ABC&rsquo;s <i>Nightline</i> program is a notable exception. On the general topic of bias in US media, read this fascinating comparison of coverage after both the Soviets and the US shot down civilian airliners: <a class="external" href="http://www.fair.org/extra/best-of-extra/kal007-iranair655.html" target="_blank">KAL 007 and Iran Air 655: Comparing the Coverage</a> <a href="#Note1Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0"></a>&nbsp;<i>Back</i></li>
-		<li><a name="Note2"></a>See details of Saddam Hussein, America&rsquo;s friend in <a class="external" href="http://www.zmag.org/zmag/articles/ShalomIranIraq.html" target="_blank">The US and the Iran-Iraq War</a> <a href="#Note2Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0"></a>&nbsp;<i>Back</i></li>
-		<li><a name="Note3"></a>See report by Marc Herold of the Uni. of New Hampshire <a class="external" href="http://pubpages.unh.edu/~mwherold/AfghanDailyCount.xls" target="_blank">Daily Casualty Count</a> <a href="#Note3Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0"></a>&nbsp;<i>Back</i></li>
-		<li><a name="Note4"></a>Yassir Arafat may well be "compromised by terror" but so is Ariel Sharon, though I would argue, only more so. His own government found him &quot;indirectly responsible&quot; for massacres in Lebanese refugee camps in 1982 that killed at least a thousand Palestinians. Documents leaked since the inquiry indicate more direct control. The Israeli attack on Lebanon left around 20,000 dead. See a summary of his work <a class="external" href="http://www.danpal.dk/vidensbase/baggrund/bg-033.htm" target="_blank">gaining land at the expense of peace</a>. <a href="#Note3Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0"></a>&nbsp;<i>Back</i></li>
+		<li><a name="Note1"></a>ABC&rsquo;s <i>Nightline</i> program is a notable exception. On the general topic of bias in US media, read this fascinating comparison of coverage after both the Soviets and the US shot down civilian airliners: <a class="external" href="http://www.fair.org/extra/best-of-extra/kal007-iranair655.html" target="_blank">KAL 007 and Iran Air 655: Comparing the Coverage</a> <a href="#Note1Ref" class="noteGoBack">Go back</a></li>
+		<li><a name="Note2"></a>See details of Saddam Hussein, America&rsquo;s friend in <a class="external" href="http://www.zmag.org/zmag/articles/ShalomIranIraq.html" target="_blank">The US and the Iran-Iraq War</a> <a href="#Note2Ref" class="noteGoBack">Go back</a></li>
+		<li><a name="Note3"></a>See report by Marc Herold of the Uni. of New Hampshire <a class="external" href="http://pubpages.unh.edu/~mwherold/AfghanDailyCount.xls" target="_blank">Daily Casualty Count</a> <a href="#Note3Ref" class="noteGoBack">Go back</a></li>
+		<li><a name="Note4"></a>Yassir Arafat may well be "compromised by terror" but so is Ariel Sharon, though I would argue, only more so. His own government found him &quot;indirectly responsible&quot; for massacres in Lebanese refugee camps in 1982 that killed at least a thousand Palestinians. Documents leaked since the inquiry indicate more direct control. The Israeli attack on Lebanon left around 20,000 dead. See a summary of his work <a class="external" href="http://www.danpal.dk/vidensbase/baggrund/bg-033.htm" target="_blank">gaining land at the expense of peace</a>. <a href="#Note3Ref" class="noteGoBack">Go back</a></li>
 	</ol>
 </div>

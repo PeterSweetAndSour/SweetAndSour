@@ -35,13 +35,7 @@
 </div>
 
 <div class="story">
-   <p>Go back to:</p>
-   <ul class="endText">
-   	<li><a href="index.php?fuseAction=letter5a">News</a> (page 1)</li>
-   	<li><a href="index.php?fuseAction=letter5b">More news</a> (page 2)</li>
-   	<li><a href="index.php?fuseAction=letter5c">Trip to California</a> (page 3)</li>
-   	<li><a href="index.php?fuseAction=letter5d">Life in America</a> (page 4)</li>
-   </ul>
+   <p>Previous: <a class="previousPage" href="index.php?fuseAction=letter5d">Life in America</a></p>
 </div>
 
 

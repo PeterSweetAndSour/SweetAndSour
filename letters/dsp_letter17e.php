@@ -33,13 +33,7 @@
 </div>
 
 <div class="story">
-   <p>Go back to:</p>
-   <ul class="endText">
-   	<li><a href="index.php?fuseAction=letter17a">10-year anniversary special!</a> (page 1)</li>
-   	<li><a href="index.php?fuseAction=letter17b">Washington D.C.</a> (page 2)</li>
-   	<li><a href="index.php?fuseAction=letter17c">Election and American politics</a> (page 3)</li>
-   	<li><a href="index.php?fuseAction=letter17d">Miscellaneous</a> (page 4)</li>
-   </ul>
+   <p>Previous: <a class="previousPage" href="index.php?fuseAction=letter17d">Miscellaneous</a></p>
 </div>
 
 

@@ -180,7 +180,8 @@ Overlay and loading graphic
 }
 
 .figure__caption--thumbnail {
-  font-size: 14px;
+  font-size: 13px;
+  font-style: italic;
 }
 
 .figure__caption--fullsize {
@@ -226,19 +227,10 @@ Miscellaneous
   font-weight: bold;
 }
 
-.toTop {
-  position: relative;
-  padding-left: 20px;
-}
-.toTop:before {
-  content: " ";
-  position: absolute;
-  top: 5px;
-  left: 0px;
-  border: 0 solid transparent;
-  border-right-width: 7px;
-  border-left-width: 7px;
-  border-bottom: 12px solid #f00;
+.footnotes {
+  margin-top: 1em;
+  border-top: 1px solid #999;
+  padding-top: 0.5em;
 }
 
 .next {
@@ -254,6 +246,51 @@ Miscellaneous
   border-bottom-width: 7px;
   border-top-width: 7px;
   border-left: 12px solid #6c9;
+}
+
+.previousPage {
+  position: relative;
+  padding-left: 22px;
+}
+.previousPage:before {
+  content: " ";
+  position: absolute;
+  top: 4px;
+  left: 2px;
+  border: 0 solid transparent;
+  border-bottom-width: 7px;
+  border-top-width: 7px;
+  border-right: 12px solid #f00;
+}
+
+.noteGoBack {
+  position: relative;
+  padding-left: 20px;
+}
+.noteGoBack:before {
+  content: " ";
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  border: 0 solid transparent;
+  border-bottom-width: 7px;
+  border-top-width: 7px;
+  border-right: 12px solid #90c;
+}
+
+.toTop {
+  position: relative;
+  padding-left: 20px;
+}
+.toTop:before {
+  content: " ";
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  border: 0 solid transparent;
+  border-right-width: 7px;
+  border-left-width: 7px;
+  border-bottom: 12px solid #f80;
 }
 
 .copyright {

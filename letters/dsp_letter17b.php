@@ -45,19 +45,14 @@
 
 
 <div class="story">
-   <p>Go back to <a href="index.php?fuseAction=letter17a">10-year anniversary special!</a> (page 1)</p>
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter17c">Election and American politics</a></p>
-   <p>Jump to:</p>
-   <ul class="endText">
-   	<li><a href="index.php?fuseAction=letter17d">Miscellaneous</a> (page 4)</li>
-   	<li><a href="index.php?fuseAction=letter17e">Bumper Stickers</a> (page 5)</li>
-   </ul>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter17c">10-year anniversary special!</a><br>
+	Previous: <a class="previousPage" href="index.php\?fuseAction=letter17a">Election and American politics</a></p>
 </div>
 
 <div class="story footnotes">
    <p>Note:</p>
    <ol class="endText">
-   	<li><a name="Note1"></a>From the <i>Insurance Institute for Highway Safety</i>.<br /><a class="external" href="http://www.defenders.org/habitat/highways/new/reports/deercollisions.pdf" target="_blank">Full report</a> <a href="#Note1Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i></li>
+   	<li><a name="Note1"></a>From the <i>Insurance Institute for Highway Safety</i>.<br /><a class="external" href="http://www.defenders.org/habitat/highways/new/reports/deercollisions.pdf" target="_blank">Full report</a> <a href="#Note1Ref" class="noteGoBack">Go back</a></li>
    </ol>
 </div>
 

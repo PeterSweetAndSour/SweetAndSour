@@ -32,8 +32,7 @@
 </div>
 
 <div class="story">
-	<p>Go back to <a href="index.php?fuseAction=letter14a">2&frac12; years for this!?</a> (page 1)</p>
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter14c">Bumper stickers</a></p>
-	<p class="endText">Jump to <a href="index.php?fuseAction=letter14d">In other news</a> (page 4)</p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter14c">Bumper stickers</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter14a">2&frac12; years for this!?</a></p>
 </div>
 

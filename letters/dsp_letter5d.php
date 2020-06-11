@@ -18,11 +18,6 @@
 </div
 
 <div class="story">
-   <p>Go back to:</p>
-   <ul>
-   	<li><a href="index.php?fuseAction=letter5a">News</a> (page 1)</li>
-   	<li><a href="index.php?fuseAction=letter5b">More news</a> (page 2)</li>
-   	<li><a href="index.php?fuseAction=letter5c">Trip to California</a> (page 3)</li>
-   </ul>
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter5e">Interesting things</a></p>
-</>
+    <p>Next: <a class="next" href="index.php\?fuseAction=letter5e">Interesting things</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter5c">Trip to California</a></p>
+</div>

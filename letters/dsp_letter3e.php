@@ -22,12 +22,6 @@
 </div>
 
 <div class="story">
-   <p>Go back to:</p>
-   <ul>
-   	<li><a href="index.php?fuseAction=letter3a">What we have been doing</a> (page 1)</li>
-   	<li><a href="index.php?fuseAction=letter3b">Life in America</a> (page 2)</li>
-   	<li><a href="index.php?fuseAction=letter3c">Travels</a> (page 3)</li>
-   	<li><a href="index.php?fuseAction=letter3d">I do like ...</a> (page 4)</li>
-   </ul>
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter3f">The world</a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter3f">The world</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter3d">I do like&hellip;</a></p>
 </div>

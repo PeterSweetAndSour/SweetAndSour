@@ -43,14 +43,7 @@
 
 
 <div class="story">
-	<p>Go back to <a href="index.php?fuseAction=letter16a">Employment, or lack thereof</a> (page 1)</p>
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter16c">The Netherlands</a></p>
-	<p>Jump to:</p>
-	<ul class="endText">
-		<li><a href="index.php?fuseAction=letter16d">France, part 1</a> (page 4)</li>
-		<li><a href="index.php?fuseAction=letter16e">France, part 2</a> (page 5)</li>
-		<li><a href="index.php?fuseAction=letter16f">France, part 3</a> (page 6)</li>
-		<li><a href="index.php?fuseAction=letter16g">Guns, germs and steel</a> (page 7)</li>
-	</ul>
+	<p>Next: <a class="next" href=""></a><br>
+	Previous: <a class="previousPage" href="index.php\?fuseAction=letter16c">The Netherlands</a></p>
 </div>
 

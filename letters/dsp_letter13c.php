@@ -20,11 +20,6 @@
 </div>
 
 <div class="story spaceAbove">
-	<p>Go back to:</p>
-	<ul>
-		<li><a href="index.php?fuseAction=letter13a">Activities</a> (page 1)</li>
-		<li><a href="index.php?fuseAction=letter13b">Travels, part 1</a> (page 2)</li>
-	</ul>
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter13d">Travels, part 3</a></p>
-	<p class="endText">Jump to <a href="index.php?fuseAction=letter13e">America</a> (page 5)</p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter13d">Travels, part 3</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter13b">Travels, part 1</a></p>
 </div>

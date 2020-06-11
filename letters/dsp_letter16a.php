@@ -29,12 +29,4 @@
 
 <div class="story">
 	<p>Next: <a class="next" href="index.php\?fuseAction=letter16b">I love New York</a></p>
-	<p>Jump to:</p>
-	<ul class="endText">
-		<li><a href="index.php?fuseAction=letter16c">The Netherlands</a> (page 3)</li>
-		<li><a href="index.php?fuseAction=letter16d">France, part 1</a> (page 4)</li>
-		<li><a href="index.php?fuseAction=letter16e">France, part 2</a> (page 5)</li>
-		<li><a href="index.php?fuseAction=letter16f">France, part 3</a> (page 6)</li>
-		<li><a href="index.php?fuseAction=letter16g">Guns, germs and steel</a> (page 7)</li>
-	</ul>
 </div>

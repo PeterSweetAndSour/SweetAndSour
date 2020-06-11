@@ -13,6 +13,6 @@
 </div>
 
 <div class="story">
-   <p>Go back to <a href="index.php?fuseAction=letter10a">Home again</a> (page 1)</p>
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter10c">America</a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter10c">America</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter10a">Home again</a></p>
 </div>

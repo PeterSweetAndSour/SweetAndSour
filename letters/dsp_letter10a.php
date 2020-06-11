@@ -29,5 +29,4 @@
 
 <div class="story">
    <p>Next: <a class="next" href="index.php\?fuseAction=letter10b">Australia</a></p>
-   <p class="endText">Jump to <a href="index.php?fuseAction=letter10c">America</a> (page 3)</p>
 </div>

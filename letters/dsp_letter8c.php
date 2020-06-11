@@ -41,9 +41,5 @@
 </div>
 
 <div class="story">
-   <p>Go back to:</p>
-   <ul class="endText">
-   	<li><a href="index.php?fuseAction=letter8a">News</a> (page 1)
-   	<li><a href="index.php?fuseAction=letter8b">Trip to southwest corner</a> (page 2)
-   </ul>
+   <p>Previous: <a class="previousPage" href="index.php?fuseAction=letter8b">Trip to southwest corner</a></p>
 </div>

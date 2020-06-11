@@ -19,7 +19,6 @@
 </div>
 
 <div class="story">
-   <p>Go back to <a href="index.php?fuseAction=letter15a">The news</a> (page 1)</p>
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter15c">September 11 and all that</a></p>
-   <p class="endText">Jump to <a href="index.php?fuseAction=letter15d">And in other news</a> (page 4)</p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter15c">September 11 and all that</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter15a">The news</a></p>
 </div>

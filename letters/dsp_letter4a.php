@@ -38,9 +38,4 @@
 
 <div class="story">
    <p>Next: <a class="next" href="index.php\?fuseAction=letter4b">News in America</a></p>
-   <p>Jump to:</p>
-   <ul>
-   	<li><a href="index.php?fuseAction=letter4c">Strange and curious things</a> (page 3)</li>
-   	<li><a href="index.php?fuseAction=letter4d">Lan&rsquo;s letter</a> (page 4)</li>
-   </ul>
 </div>

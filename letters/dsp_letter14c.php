@@ -21,10 +21,6 @@
 </div>
 
 <div class="story">
-	<p>Go back to:</p>
-	<ul>
-		<li><a href="index.php?fuseAction=letter14a">2&frac12; years for this!?</a> (page 1)</li>
-		<li><a href="index.php?fuseAction=letter14b">Out and about</a> (page 2)</li>
-	</ul>
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter14d">In other news</a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter14d">In other news</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter14b">Out and about</a></p>
 </div>

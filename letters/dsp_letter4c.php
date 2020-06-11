@@ -15,10 +15,6 @@
 </div>
 
 <div class="story">
-   <p>Go back to:</p>
-   <ul>
-   	<li><a href="index.php?fuseAction=letter4a">Our news</a> (page 1)
-   	<li><a href="index.php?fuseAction=letter4b">News in America</a> (page 2)
-   </ul>
-   <p><span class="next">Next: <a href="index.php?fuseAction=letter4d">Lan&rsquo;s letter</a> (page 4) <span></p>
+   <p><span class="next">Next: <a href="index.php?fuseAction=letter4d">Lan&rsquo;s letter</a> (page 4) <span><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter4b">News in America</a></p>
 </div>

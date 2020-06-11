@@ -19,13 +19,6 @@
 </div>
 
 <div class="story">
-	<p>Go back to:</p>
-	<ul>
-		<li><a href="index.php?fuseAction=letter16a">Employment, or lack thereof</a> (page 1)</li>
-		<li><a href="index.php?fuseAction=letter16b">I love New York</a> (page 2)</li>
-		<li><a href="index.php?fuseAction=letter16c">The Netherlands</a> (page 3)</li>
-		<li><a href="index.php?fuseAction=letter16d">France, part 1</a> (page 4)</li>
-		<li><a href="index.php?fuseAction=letter16d">France, part 2</a> (page 5)</li>
-	</ul>
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter16g">Guns, germs and steel</a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter16g">Guns, germs and steel</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter16e">France, part 2</a></p>
 </div>

@@ -18,19 +18,14 @@
 </div>
 
 <div class="story">
-   <p>Go back to:</p>
-   <ul>
-   	<li><a href="index.php?fuseAction=letter17a">10-year anniversary special!</a> (page 1)</li>
-   	<li><a href="index.php?fuseAction=letter17b">Washington D.C.</a> (page 2)</li>
-   	<li><a href="index.php?fuseAction=letter17c">Election and American politics</a> (page 3)</li>
-   </ul>
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter17e">Bumper Stickers</a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter17e">Bumper Stickers</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter17c">Election and American politics</a></p>
 </div>
 
 <div class="story footnotes">
    <p>Notes:</p>
    <ol class="endText" start="9">
-   	<li><a name="Note10"></a>From the newspaper I read online almost daily, <a class="external" href="http://www.smh.com.au/articles/2004/07/16/1089694565535.html" target="_blank">Pod squad wows the watchers</a> <a href="#Note10Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i></li>
-     	<li><a name="Note11"></a>As Larry Ellison once said, &quot;I used to think. Now I just read <i>The Economist</i>&quot;. <a class="external" href="http://economist.com/printedition/PrinterFriendly.cfm?Story_ID=2765918" target="_blank">Ray Charles</a> <a href="#Note11Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i></li>
+   	<li><a name="Note10"></a>From the newspaper I read online almost daily, <a class="external" href="http://www.smh.com.au/articles/2004/07/16/1089694565535.html" target="_blank">Pod squad wows the watchers</a> <a href="#Note10Ref" class="noteGoBack">Go back</a></li>
+     	<li><a name="Note11"></a>As Larry Ellison once said, &quot;I used to think. Now I just read <i>The Economist</i>&quot;. <a class="external" href="http://economist.com/printedition/PrinterFriendly.cfm?Story_ID=2765918" target="_blank">Ray Charles</a> <a href="#Note11Ref" class="noteGoBack">Go back</a></li>
 	</ol>
 </div>

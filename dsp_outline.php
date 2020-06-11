@@ -48,11 +48,8 @@ include '../imageMgt/act_setThumbnailFunction.php';
 	}
 	?>
 	<link rel="shortcut icon" type="images/x-icon" href="<?= $urlPrefix ?>favicon.ico" />
-	<!--
-	<link rel="stylesheet" type="text/css" href="../css/styles_20180516.css" />
--	-->
-	<link rel="stylesheet" type="text/css" href="../css/styles_2020.css" />
 
+	<link rel="stylesheet" type="text/css" href="../css/styles_2020.css" />
 	<link rel="stylesheet" type="text/css" href="../css/photoswipe.css" />
 	<link rel="stylesheet" type="text/css" href="../css/default-skin/default-skin.css" />
 
@@ -105,7 +102,7 @@ include '../imageMgt/act_setThumbnailFunction.php';
 		<footer>
 			<? if($showToTopLink == true) { ?>
 				<!-- Link to top of page. -->
-				<p class="toTop"><a href='#top'>To top</a></p>
+				<p><a class="toTop" href='#top'>To top</a></p>
 			<? } ?>
 			<!-- Copyright notice. -->
 			<p class="copyright"><?= $copyright ?></p>

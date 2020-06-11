@@ -19,6 +19,6 @@
 </div>
 
 <div class="story">
-   <p>Go back to <a href="index.php?fuseAction=letter9a">News</a> (page 1)</p>
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter9c">Interesting things</a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter9c">Interesting things</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter9a">News</a></p>
 </div>

@@ -39,10 +39,5 @@
 </div>
 
 <div class="story">
-	<p>Go back to:</p>
-	<ul class="endText">
-		<li><a href="index.php?fuseAction=letter6a">News about us</a> (page 1)
-		<li><a href="index.php?fuseAction=letter6b">Trip to South Dakota</a> (page 2)
-		<li><a href="index.php?fuseAction=letter6c">Life in America</a> (page 3)
-	</ul>
+	<p>Previous: <a class="previousPage" href="index.php?fuseAction=letter6c">Life in America</a></p>
 </div>

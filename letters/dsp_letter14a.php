@@ -31,9 +31,4 @@
 
 <div class="story">
 	<p>Next: <a class="next" href="index.php\?fuseAction=letter14b">Out and about</a></p>
-	<p>Jump to:</p>
-	<ul class="endText">
-		<li><a href="index.php?fuseAction=letter6c">Bumper stickers</a> (page 3)
-		<li><a href="index.php?fuseAction=letter6d">In other news</a> (page 4)
-	</ul>
 </div>

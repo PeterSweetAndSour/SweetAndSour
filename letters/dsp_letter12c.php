@@ -27,9 +27,5 @@
 </div>
 
 <div class="story">
-   <p>Go back to:</p>
-   <ul class="endText">
-   	<li><a href="index.php?fuseAction=letter12a">News</a> (page 1)</li>
-   	<li><a href="index.php?fuseAction=letter12b">Adventure to California</a> (page 2)</li>
-   </ul>
+   <p>Previous: <a class="previousPage" href="index.php?fuseAction=letter12b">Adventure to California</a></p>
 </div>

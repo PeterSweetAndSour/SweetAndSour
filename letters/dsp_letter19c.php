@@ -42,11 +42,7 @@
 </div>
 
 <div class="story">
-	<p>Go back to:</p>
-	<ul>
-		<li><a href="index.php?fuseAction=letter19a">We still have jobs!</a> (page 1)</li>
-		<li><a href="index.php?fuseAction=letter19b">Out and about</a> (page 2)</li>
-	</ul>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter19b">Out and about</a></p>
 </div>
 
 <div class="story footnotes">
@@ -54,11 +50,11 @@
    <ol class="endText" start="9">
 		<li>
 			<a id="Note9"></a>New York Magazine, <em><a href="http://nymag.com/health/features/46213/" target="_blank" class="external">You Walk Wrong</a></em>.
-			<a href="#Note9Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<em>Back</em>
+			<a href="#Note9Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a id="Note10"></a>Nearly bare feet: <a href="http://www.vibramfivefingers.com/products/products_sprint.cfm" target="_blank" class="external">Vibram FiveFingers</a>
-			<a href="#Note10Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<em>Back</em>
+			<a href="#Note10Ref" class="noteGoBack">Go back</a>
 		</li>
 	</ol>
 </div>

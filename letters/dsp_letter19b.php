@@ -30,8 +30,8 @@
 </div>
 
 <div class="story">
-   <p>Go back to <a href="index.php?fuseAction=letter19a">We still have jobs!</a> (page 1)</p>
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter19c">In sickness and in health</a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter19c">In sickness and in health</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter19a">We still have jobs!</a></p>
 </div>
 
 <div class="story footnotes">
@@ -39,27 +39,27 @@
    <ol class="endText" start="3">
 		<li>
 			<a id="Note3"></a>See all the photos of my <a href="http://www.sweetandsour.org/photos/index.php?fuseAction=aust2007" target="_blank">2007 trip to Australia</a>.
-			<a href="#Note3Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<em>Back</em>
+			<a href="#Note3Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a id="Note4"></a>See my mother&apos;s <a href="http://flickr.com/photos/30215275@N03/sets/72157607555550650/" target="_blank" class="external">Flickr photoset</a>.
-			<a href="#Note4Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<em>Back</em>
+			<a href="#Note4Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a id="Note5"></a>Learn more about the <a href="http://en.wikipedia.org/wiki/National_Mall" target="_blank" class="external">National Mall</a>.
-			<a href="#Note5Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<em>Back</em>
+			<a href="#Note5Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a id="Note6"></a><a href="http://www.nga.gov/exhibitions/afghanistaninfo.shtm" target="_blank" class="external">Treasures of the National Museum of Afghanistan</a>.
-			<a href="#Note6Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<em>Back</em>
+			<a href="#Note6Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a id="Note7"></a>Read the fascinating story of the <a href="http://www.washingtonpost.com/wp-dyn/content/story/2008/10/03/ST2008100302263.html" target="_blank" class="external">Alba Madonna</a>. 
-			<a href="#Note78Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<em>Back</em>
+			<a href="#Note78Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a id="Note8"></a>BBC documentaries on art history: <em><a href="http://www.bbc.co.uk/sn/tvradio/programmes/howart/ " target="_blank" class="external">How Art Changed the World</a></em> and <em><a href="http://www.bbc.co.uk/arts/powerofart/" target="_blank" class="external">Simon Schama&apos;s Power of Art</a></em> (both available through Netflix). 
-			<a href="#Note8Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<em>Back</em>
+			<a href="#Note8Ref" class="noteGoBack">Go back</a>
 		</li>
    </ol>
 </div>

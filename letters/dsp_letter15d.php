@@ -28,12 +28,7 @@
 </div>
 
 <div class="story">
-	<p>Go back to:</p>
-	<ul class="endText">
-		<li><a href="index.php?fuseAction=letter15a">The news</a> (page 1)</li>
-		<li><a href="index.php?fuseAction=letter15b">New Orleans</a> (page 2)</li>
-		<li><a href="index.php?fuseAction=letter15c">September 11 and all that</a> (page 3)</li>
-	</ul>
+	<p>Previous: <a class="previousPage" href="index.php?fuseAction=letter15c">September 11 and all that</a></p>
 </div>
 
 <div class="story footnotes">

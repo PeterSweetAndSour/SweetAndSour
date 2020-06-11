@@ -40,13 +40,8 @@
 </div>
 
 <div class="story">
-   <p>Go back to:</p>
-   <ul>
-   	<li><a href="index.php?fuseAction=letter17a">10-year anniversary special!</a> (page 1)</li>
-   	<li><a href="index.php?fuseAction=letter17b">Washington D.C.</a> (page 2)</li>
-   </ul>
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter17d">Miscellaneous</a></p>
-   <p class="endText">Jump to <a href="index.php?fuseAction=letter17e">Bumper Stickers</a> (page 5)</p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter17d">Miscellaneous</a><br>
+   Previous: <a class="previousPage" href="index.php?fuseAction=letter17b">Washington D.C.</a></p>
 </div>
 
 <div class="story footnotes">
@@ -54,13 +49,13 @@
    <ol class="endText" start="2">
 		<li><a name="Note2"></a>There was a significant discrepancy between exit polls that had Kerry win by 3% rather than the actual results which had Bush up by 2.5%. The group that conducted the polls, Edison Media Research and Mitofsky International, theorize that more Democrats were willing to talk to their data collectors as they left the polls, though they admit that the difference between observed and recorded results is unprecedented: <a class="external" href="http://exit-poll.net/election-night/EvaluationJan192005.pdf" target="_blank">Evaluation of Edison/Mitofsky Election System 2004</a>. However, a group of academics reviewing the same data believes that the statistical chance of this happening is no better than 1 in 240 and concluding &quot;<i>No matter how one calculates
 it, the discrepancy cannot be attributed to chance</i>.&quot;  <a class="external" href="http://uscountvotes.org/ucvAnalysis/US/Exit_Polls_2004_Edison-Mitofsky.pdf" target="_blank">Analysis of the 2004 Presidential Election
-Exit Poll Discrepancies</a>. <a href="#Note2Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i></li>
-		<li><a name="Note3"></a>From The Washington Post, <a class="external" href="http://www.washingtonpost.com/ac2/wp-dyn?pagename=article&amp;contentId=A32862-2003Sep5" target="_blank">Hussein Link to 9/11 Lingers in Many Minds</a>. <a href="#Note3Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i></li>
-   	<li><a name="Note4"></a>See <a class="external" href="http://www.blackboxvoting.org/" target="_blank">Black Box Voting</a>. Also, Diebold is not the only company making voting machines with ties to the Republican party as <a class="external" href="http://www.motherjones.com/commentary/columns/2004/03/03_200.html" target="_blank">Mother Jones</a> explains. <a href="#Note4Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i></li>
-     	<li><a name="Note5"></a>From the Population Resource Center, <a class="external" href="http://www.prcdc.org/summaries/teenpreg/teenpreg.html" target="_blank">Adolescent Pregnancy and Childbearing in the U.S.</a> <a href="#Note5Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i></li>
-	   <li><a name="Note6"></a>From ZMag quoting Business Week, <a class="external" href="http://www.zmag.org/content/showarticle.cfm?SectionID=10&amp;ItemID=4728" target="_blank">The Death of Horatio Alger</a>. (Horatio Alger, to quote <a class="external" href="www.wikipedia.org" target="_blank">Wikipedia</a>, was an author who <i>&quot;wrote over 130 dime novels, describing how down-and-out boys were able to achieve the American dream of wealth and success through hard work, courage, determination, and concern for others&quot;</i>.) <a href="#Note6Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i></li>
-		<li><a name="Note7"></a>From Footnote Fahrenheit, <a class="external" href="http://www.newsaic.com/f911chap7-8.html" target="_blank">Members of Congress with children in Iraq</a>. <a href="#Note7Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i></li>
-		<li><a name="Note8"></a>From <a class="external" href="http://www.iraqbodycount.net/" target="_blank">IraqBodyCount.net</a>. <a href="#Note8Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i></li>
-		<li><a name="Note9"></a>To save you creating an account with The Lancet:, <a href="files/LancetIraqReport.pdf" target="_blank">Mortality before and after the 2003 invasion of Iraq: cluster sample survey</a> (PDF, 262 kb). <a href="#Note9Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<i>Back</i></li>
+Exit Poll Discrepancies</a>. <a href="#Note2Ref" class="noteGoBack">Go back</a></li>
+		<li><a name="Note3"></a>From The Washington Post, <a class="external" href="http://www.washingtonpost.com/ac2/wp-dyn?pagename=article&amp;contentId=A32862-2003Sep5" target="_blank">Hussein Link to 9/11 Lingers in Many Minds</a>. <a href="#Note3Ref" class="noteGoBack">Go back</a></li>
+   	<li><a name="Note4"></a>See <a class="external" href="http://www.blackboxvoting.org/" target="_blank">Black Box Voting</a>. Also, Diebold is not the only company making voting machines with ties to the Republican party as <a class="external" href="http://www.motherjones.com/commentary/columns/2004/03/03_200.html" target="_blank">Mother Jones</a> explains. <a href="#Note4Ref" class="noteGoBack">Go back</a></li>
+     	<li><a name="Note5"></a>From the Population Resource Center, <a class="external" href="http://www.prcdc.org/summaries/teenpreg/teenpreg.html" target="_blank">Adolescent Pregnancy and Childbearing in the U.S.</a> <a href="#Note5Ref" class="noteGoBack">Go back</a></li>
+	   <li><a name="Note6"></a>From ZMag quoting Business Week, <a class="external" href="http://www.zmag.org/content/showarticle.cfm?SectionID=10&amp;ItemID=4728" target="_blank">The Death of Horatio Alger</a>. (Horatio Alger, to quote <a class="external" href="www.wikipedia.org" target="_blank">Wikipedia</a>, was an author who <i>&quot;wrote over 130 dime novels, describing how down-and-out boys were able to achieve the American dream of wealth and success through hard work, courage, determination, and concern for others&quot;</i>.) <a href="#Note6Ref" class="noteGoBack">Go back</a></li>
+		<li><a name="Note7"></a>From Footnote Fahrenheit, <a class="external" href="http://www.newsaic.com/f911chap7-8.html" target="_blank">Members of Congress with children in Iraq</a>. <a href="#Note7Ref" class="noteGoBack">Go back</a></li>
+		<li><a name="Note8"></a>From <a class="external" href="http://www.iraqbodycount.net/" target="_blank">IraqBodyCount.net</a>. <a href="#Note8Ref" class="noteGoBack">Go back</a></li>
+		<li><a name="Note9"></a>To save you creating an account with The Lancet:, <a href="files/LancetIraqReport.pdf" target="_blank">Mortality before and after the 2003 invasion of Iraq: cluster sample survey</a> (PDF, 262 kb). <a href="#Note9Ref" class="noteGoBack">Go back</a></li>
 	</ol>
 </div>

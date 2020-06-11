@@ -23,12 +23,6 @@
 </div>
 
 <div class="story">
-   <p>Go back to <a href="index.php?fuseAction=letter3a">What we have been doing</a> (page 1)</p>
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter3c">Travels</a></p>
-   <p>Jump to:</p>
-   <ul class="endText">
-   	<li><a href="index.php?fuseAction=letter3d">I do like ...</a> (page 4)</li>
-   	<li><a href="index.php?fuseAction=letter3e">In brief</a> (page 5)</li>
-   	<li><a href="index.php?fuseAction=letter3f">The world</a> (page 6)</li>
-   </ul>
+    <p>Next: <a class="next" href="index.php\?fuseAction=letter3c">Travels</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter3a">What we have been doing</a></p>
 </div>

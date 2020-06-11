@@ -21,5 +21,4 @@
 
 <div class="story">
 	<p>Next: <a class="next" href="index.php\?fuseAction=letter12b">Adventure to California</a></p>
-	<p class="endText">Jump to <a href="index.php?fuseAction=letter12c">Life in America</a> (page 3)</p>
 </div>

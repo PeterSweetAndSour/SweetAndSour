@@ -20,15 +20,7 @@
 </div>
 
 <div class="story">
-	<p>Go back to:</p>
-	<ul class="endText">
-		<li><a href="index.php?fuseAction=letter16a">Employment, or lack thereof</a> (page 1)</li>
-		<li><a href="index.php?fuseAction=letter16b">I love New York</a> (page 2)</li>
-		<li><a href="index.php?fuseAction=letter16c">The Netherlands</a> (page 3)</li>
-		<li><a href="index.php?fuseAction=letter16d">France, part 1</a> (page 4)</li>
-		<li><a href="index.php?fuseAction=letter16e">France, part 2</a> (page 5)</li>
-		<li><a href="index.php?fuseAction=letter16f">France, part 3</a> (page 6)</li>
-	</ul>
+	<p>Previous: <a class="previousPage" href="index.php?fuseAction=letter16f">France, part 3</a></p>
 </div>
 
 <div class="story footnotes">

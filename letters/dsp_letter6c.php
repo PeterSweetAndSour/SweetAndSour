@@ -17,10 +17,6 @@
 </div>
 
 <div class="story">
-   <p>Go back to:</p>
-   <ul>
-   	<li><a href="index.php?fuseAction=letter6a">News about us</a> (page 1)
-   	<li><a href="index.php?fuseAction=letter6b">Trip to South Dakota</a> (page 2)
-   </ul>
-   <p><span class="next">Next: <a href="index.php?fuseAction=letter6d">What's news in the U.S.</a> (page 4) <span></p>
+   <p><span class="next">Next: <a href="index.php?fuseAction=letter6d">What's news in the U.S.</a><span><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter6b">Trip to South Dakota</a></p>
 </div>

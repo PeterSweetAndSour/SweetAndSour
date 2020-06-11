@@ -28,9 +28,4 @@ setThumbnail("IceFountain1.jpg");
 
 <div class="story">
    <p>Next: <a class="next" href="index.php\?fuseAction=letter15b">New Orleans</a></p>
-   <p>Jump to:</p>
-   <ul class="endText">
-   	<li><a href="index.php?fuseAction=letter15c">September 11 and all that</a> (page 3)</li>
-   	<li><a href="index.php?fuseAction=letter15d">And in other news</a> (page 4)</li>
-   </ul>
 </div>

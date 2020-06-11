@@ -17,5 +17,4 @@
 
 <div class="story">
    <p>Next: <a class="next" href="index.php\?fuseAction=letter9b">Travels and adventures</a></p>
-   <p class="endText">Jump to <a href="index.php?fuseAction=letter9c">Interesting things</a> (page 3)</p>
-</div>
+ </div>

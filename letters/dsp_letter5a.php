@@ -37,10 +37,4 @@
 
 <div class="story">
    <p>Next: <a class="next" href="index.php\?fuseAction=letter5b">More news</a></p>
-   <p>Jump to:</p>
-   <ul class="endText">
-   	<li><a href="index.php?fuseAction=letter5c">Trip to California</a> (page 3)</li>
-   	<li><a href="index.php?fuseAction=letter5d">Life in America</a> (page 4)</li>
-   	<li><a href="index.php?fuseAction=letter5e">Interesting things</a> (page 5)</li>
-   </ul>
 </div>

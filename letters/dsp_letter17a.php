@@ -29,10 +29,4 @@ setThumbnail("AcrobatIcon_Ltr17.gif", $urlPrefix . "files/Letter17_Ltr.pdf");
 
 <div class="story">
 	<p>Next: <a class="next" href="index.php\?fuseAction=letter17b">Washington D.C.</a></p>
-	<p>Jump to:</p>
-	<ul class="endText">
-		<li><a href="index.php?fuseAction=letter17c">Election and American politics</a> (page 3)</li>
-		<li><a href="index.php?fuseAction=letter17d">Miscellaneous</a> (page 4)</li>
-		<li><a href="index.php?fuseAction=letter17e">Bumper Stickers</a> (page 5)</li>
-	</ul>
 </div>

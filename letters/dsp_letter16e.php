@@ -28,19 +28,12 @@
 	<!-- Notes -->
 	<p>Notes:</p>
 	<ol class="endText">
-		<li><a name="Note1"></a>More on the <a href="http://www.canalmidi.com/anglais/indexgb.html" target="_blank">Canal du Midi</a>  <a href="#Note1Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0"></a>&nbsp;<i>Back</i></li>
-		<li><a name="Note2"></a>More on the <a href="http://xenophongroup.com/montjoie/albigens.htm" target="_blank">Albigensian Crusade</a> <a href="#Note2Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0"></a>&nbsp;<i>Back</i></li>
+		<li><a name="Note1"></a>More on the <a href="http://www.canalmidi.com/anglais/indexgb.html" target="_blank">Canal du Midi</a>  <a href="#Note1Ref" class="noteGoBack">Go back</a></li>
+		<li><a name="Note2"></a>More on the <a href="http://xenophongroup.com/montjoie/albigens.htm" target="_blank">Albigensian Crusade</a> <a href="#Note2Ref" class="noteGoBack">Go back</a></li>
 	</ol>
 </div>
 
 <div class="story">
-	<p>Go back to:</p>
-	<ul>
-		<li><a href="index.php?fuseAction=letter16a">Employment, or lack thereof</a> (page 1)</li>
-		<li><a href="index.php?fuseAction=letter16b">I love New York</a> (page 2)</li>
-		<li><a href="index.php?fuseAction=letter16c">The Netherlands</a> (page 3)</li>
-		<li><a href="index.php?fuseAction=letter16d">France, part 1</a> (page 4)</li>
-	</ul>
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter16f">France, part 3</a></p>
-	<p class="endText">Jump to <a href="index.php?fuseAction=letter16g">Guns, germs and steel</a> (page 7)</p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter16f">France, part 3</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter16d">France, part 1</a></p>
 </div>

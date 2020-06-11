@@ -26,7 +26,6 @@ setThumbnail("AcrobatIcon_Ltr19.gif", $urlPrefix . "files/Letter19_Ltr.pdf");
 
 <div class="story">
    <p>Next: <a class="next" href="index.php\?fuseAction=letter19b">Out and about elsewhere</a></p>
-   <p>Jump to <a href="index.php?fuseAction=letter19c">In sickness and in health</a> (page 3)</p>
 </div>
 
 <div class="story footnotes">
@@ -34,11 +33,11 @@ setThumbnail("AcrobatIcon_Ltr19.gif", $urlPrefix . "files/Letter19_Ltr.pdf");
    <ol class="endText">
 		<li>
 			<a id="Note1"></a><a class="external" href="http://bbcworldservice.com/podcasts" target="_blank">BBC World Service podcasts</a>. Note in particular <em>Documentaries</em> and <em>From Our Own Correspondent</em>.
-			<a href="#Note1Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<em>Back</em>
+			<a href="#Note1Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a id="Note2"></a>The Onion: <a class="external" href="http://theonion.com/content/news_briefs/black_man_given_nations" target="_blank"><em>Black man given nation&apos;s worst job</em></a>.
-			<a href="#Note2Ref"><img src="<?= $backIconSrc ?>" height="10" width="12" alt="Back to where you were" border="0" /></a>&nbsp;<em>Back</em>
+			<a href="#Note2Ref" class="noteGoBack">Go back</a>
 		</li>
    </ol>
 </div>
