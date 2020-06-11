@@ -23,5 +23,5 @@ setThumbnail("AcrobatIcon_Ltr13.gif", $urlPrefix . "letters/files/Letter13.pdf")
 ?>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter13b">Travels, part 1</a></p>
+   <p>Next: <a class="next" href="index.php?fuseAction=letter13b">Travels, part 1</a></p>
  </div>

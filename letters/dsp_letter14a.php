@@ -30,5 +30,5 @@
 </div>
 
 <div class="story">
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter14b">Out and about</a></p>
+	<p>Next: <a class="next" href="index.php?fuseAction=letter14b">Out and about</a></p>
 </div>

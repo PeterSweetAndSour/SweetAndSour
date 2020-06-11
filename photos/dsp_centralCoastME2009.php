@@ -69,5 +69,5 @@
 	?>
 </div>
 <div class="story">
-	<p>Next: <a class="next" href="index.php\?fuseAction=portland2009">Portland</a></p>
+	<p>Next: <a class="next" href="index.php?fuseAction=portland2009">Portland</a></p>
 </div>

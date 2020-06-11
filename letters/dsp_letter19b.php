@@ -30,7 +30,7 @@
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter19c">In sickness and in health</a><br>
+   <p>Next: <a class="next" href="index.php?fuseAction=letter19c">In sickness and in health</a><br>
 	Previous: <a class="previousPage" href="index.php?fuseAction=letter19a">We still have jobs!</a></p>
 </div>
 

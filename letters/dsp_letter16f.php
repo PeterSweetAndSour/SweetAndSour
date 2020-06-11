@@ -19,6 +19,6 @@
 </div>
 
 <div class="story">
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter16g">Guns, germs and steel</a><br>
+	<p>Next: <a class="next" href="index.php?fuseAction=letter16g">Guns, germs and steel</a><br>
 	Previous: <a class="previousPage" href="index.php?fuseAction=letter16e">France, part 2</a></p>
 </div>

@@ -32,7 +32,7 @@
 </div>
 
 <div class="story">
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter14c">Bumper stickers</a><br>
+	<p>Next: <a class="next" href="index.php?fuseAction=letter14c">Bumper stickers</a><br>
 	Previous: <a class="previousPage" href="index.php?fuseAction=letter14a">2&frac12; years for this!?</a></p>
 </div>
 

@@ -23,6 +23,6 @@
 </div>
 
 <div class="story">
-    <p>Next: <a class="next" href="index.php\?fuseAction=letter3c">Travels</a><br>
+    <p>Next: <a class="next" href="index.php?fuseAction=letter3c">Travels</a><br>
 	Previous: <a class="previousPage" href="index.php?fuseAction=letter3a">What we have been doing</a></p>
 </div>

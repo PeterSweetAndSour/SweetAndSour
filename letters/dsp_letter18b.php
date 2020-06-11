@@ -39,7 +39,7 @@
 
 <div class="story">
     <p>Next: <a class="next" href=""></a><br>
-	Previous: <a class="previousPage" href="index.php\?fuseAction=letter18c">Disconnect from reality</a></p>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter18c">Disconnect from reality</a></p>
 </div>
 
 

@@ -44,6 +44,6 @@
 
 <div class="story">
 	<p>Next: <a class="next" href=""></a><br>
-	Previous: <a class="previousPage" href="index.php\?fuseAction=letter16c">The Netherlands</a></p>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter16c">The Netherlands</a></p>
 </div>
 

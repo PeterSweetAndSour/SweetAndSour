@@ -16,5 +16,5 @@
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter9b">Travels and adventures</a></p>
+   <p>Next: <a class="next" href="index.php?fuseAction=letter9b">Travels and adventures</a></p>
  </div>

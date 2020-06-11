@@ -45,8 +45,8 @@
 
 
 <div class="story">
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter17c">10-year anniversary special!</a><br>
-	Previous: <a class="previousPage" href="index.php\?fuseAction=letter17a">Election and American politics</a></p>
+	<p>Next: <a class="next" href="index.php?fuseAction=letter17c">10-year anniversary special!</a><br>
+	Previous: <a class="previousPage" href="index.php?fuseAction=letter17a">Election and American politics</a></p>
 </div>
 
 <div class="story footnotes">

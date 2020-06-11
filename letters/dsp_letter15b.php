@@ -19,6 +19,6 @@
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter15c">September 11 and all that</a><br>
+   <p>Next: <a class="next" href="index.php?fuseAction=letter15c">September 11 and all that</a><br>
 	Previous: <a class="previousPage" href="index.php?fuseAction=letter15a">The news</a></p>
 </div>

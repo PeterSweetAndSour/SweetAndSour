@@ -27,5 +27,5 @@ setThumbnail("IceFountain1.jpg");
 ?>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter15b">New Orleans</a></p>
+   <p>Next: <a class="next" href="index.php?fuseAction=letter15b">New Orleans</a></p>
 </div>

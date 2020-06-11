@@ -24,6 +24,6 @@
 </div>
 
 <div class="story">
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter16e">France, part 2</a><br>
+	<p>Next: <a class="next" href="index.php?fuseAction=letter16e">France, part 2</a><br>
 	Previous: <a class="previousPage" href="index.php?fuseAction=letter16c">The Netherlands</a></p>
 </div>

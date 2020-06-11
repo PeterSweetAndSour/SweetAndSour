@@ -72,6 +72,6 @@
 	?>
 </div>
 <div class="story">
-	<p>Next: <a class="next" href="index.php\?fuseAction=centralCoastME">Maine central coast</a></p>
+	<p>Next: <a class="next" href="index.php?fuseAction=centralCoastME">Maine central coast</a></p>
 </div>
 

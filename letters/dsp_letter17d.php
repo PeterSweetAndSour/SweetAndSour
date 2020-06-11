@@ -18,7 +18,7 @@
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php\?fuseAction=letter17e">Bumper Stickers</a><br>
+   <p>Next: <a class="next" href="index.php?fuseAction=letter17e">Bumper Stickers</a><br>
 	Previous: <a class="previousPage" href="index.php?fuseAction=letter17c">Election and American politics</a></p>
 </div>
 

@@ -24,6 +24,6 @@ setThumbnail("FranceMap1.gif", "index.php?fuseAction=mapFrance|_blank|SweetAndSo
 
 
 <div class="story">
-	<p>Next: <a class="next" href="index.php\?fuseAction=letter16d">France, part 1</a><br>
+	<p>Next: <a class="next" href="index.php?fuseAction=letter16d">France, part 1</a><br>
 	Previous: <a class="previousPage" href="index.php?fuseAction=letter16b">I love New York</a></p>
 </div>
