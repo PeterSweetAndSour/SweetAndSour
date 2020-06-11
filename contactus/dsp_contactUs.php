@@ -38,29 +38,37 @@ else { ?>
 		<p>Send us an email if you are an old friend. If we don't know you, send us an email and you will become a friend. Make sure you get your email address correct so we can reply.</p>
 
 		<form method="post" action="index.php?fuseAction=sendEmail">
-			<div class="inputRow">
-				<label for="senderName">Your name:</label>
-				<input type="text" name="senderName" id="senderName" maxlength="50" value="<?= isset($_SESSION["senderName"]) ? $_SESSION["senderName"] : "" ?>" required>
+			<div class="floating-label">
+				<input type="text" class="narrow" placeholder="Your name" name="senderName" id="senderName" maxlength="50" 
+					value="<?= isset($_SESSION["senderName"]) ? $_SESSION["senderName"] : "" ?>" required>
+				<label for="">Your name</label>
 			</div>
-			<div class="inputRow">
-				<label>Your email address:</label>
-				<input type="email" name="senderEmail" id="senderEmail" maxlength="50" value="<?= isset($_SESSION["senderEmail"]) ? $_SESSION["senderEmail"] : "" ?>" required>
+			<div class="floating-label">
+				<input type="text" class="narrow" placeholder="Email address" name="senderEmail" id="senderEmail" maxlength="50" 
+					value="<?= isset($_SESSION["senderEmail"]) ? $_SESSION["senderEmail"] : "" ?>" required> 
+				<label for="senderEmail">Email address</label>
 			</div>
-			<div class="inputRow">
-				<label>Subject:</label>
-				<input type="text" name="msgSubject" id="msgText" maxlength="50" value="<?= isset($_SESSION["msgSubject"]) ? $_SESSION["msgSubject"] : "" ?>" required>
+			<div class="floating-label">
+				<input type="text" class="wide" placeholder="Subject" name="msgSubject" id="msgSubject" maxlength="50" 
+					value="<?= isset($_SESSION["msgSubject"]) ? $_SESSION["msgSubject"] : "" ?>" autocomplete="off">
+				<label for="msgSubject">Subject</label>
 			</div>
+
 			<div class="inputRow">
-				<label for="msgText">Message:</label>
-				<textarea name="msgText" id="msgText" wrap="virtual" rows="15" required><?= isset($_SESSION["msgText"]) ? $_SESSION["msgText"] : "" ?></textarea>
+				<label for="msgText">Message</label>
+				<textarea name="msgText" id="msgText" wrap="virtual" rows="10" required>
+					<?= isset($_SESSION["msgText"]) ? $_SESSION["msgText"] : "" ?>
+				</textarea>
 			</div>
+
 			<div class="inputRow">
-				<label>Prove  you are human:</label>
+				<label>Prove  you are human</label>
 				<div id="reCAPTCHA-wrapper"></div>
 				<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 			</div>
+
 			<div class="actionRow">
-				<input type="submit" name="Send" value="Send">
+				<input type="submit" class="submit" name="Send" value="Send">
 			</div>
 		</form>
 	</div>
