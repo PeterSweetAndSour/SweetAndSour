@@ -51,8 +51,8 @@
 
 <div class="story footnotes">
    <p>Note:</p>
-   <ol class="endText">
-   	<li><a name="Note1"></a>From the <i>Insurance Institute for Highway Safety</i>.<br /><a class="external" href="http://www.defenders.org/habitat/highways/new/reports/deercollisions.pdf" target="_blank">Full report</a> <a href="#Note1Ref" class="noteGoBack">Go back</a></li>
+   <ol>
+   	<li><a name="Note1"></a>From the <i>Insurance Institute for Highway Safety</i>.<br /><a class="external" href="http://www.defenders.org/habitat/highways/new/reports/deercollisions.pdf" target="_blank">Full report</a> <br><a href="#Note1Ref" class="noteGoBack">Go back</a></li>
    </ol>
 </div>
 

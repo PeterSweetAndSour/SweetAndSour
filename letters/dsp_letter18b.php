@@ -48,43 +48,43 @@
    <ol class="endText" start="3">
 		<li>
 			<a name="Note3"></a>Or if there isn&apos;t, there should be.
-			<a href="#Note3Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note3Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a name="Note4"></a>Beach holidays would have been easier but driving from San Francisco to New York much more difficult.
-			<a href="#Note4Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note4Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a name="Note5"></a>For a really interesting explanation, see this article on 
 			the <a class="external" href="http://en.wikipedia.org/wiki/Geology_of_the_Bryce_Canyon_area" target="_blank">geology of the Bryce Canyon area</a>.
-			<a href="#Note5Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note5Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a name="Note6"></a>Learn more about the <a class="external" href="http://en.wikipedia.org/wiki/Battle_of_Gettysburg" target="_blank">Battle of Gettysburg</a>
-			<a href="#Note6Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note6Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a name="Note7"></a>Learn more about the <a class="external" href="http://en.wikipedia.org/wiki/Gettysburg_Address" target="_blank">Gettysburg Address</a>.
 			Also see how to <a href="http://www.norvig.com/Gettysburg/sld001.htm" class="external" target="_blank">wreck it with PowerPoint</a>. (However, the speaker&apos;s notes at the end are well worth reading!)
-			<a href="#Note7Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note7Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a name="Note8"></a>Learn more about the <a class="external" href="http://en.wikipedia.org/wiki/George_Washington_Masonic_National_Memorial" target="_blank">National Masonic Memorial</a>. 
 			Also the <a href="../wherewelive/index.php?fuseAction=washington">view from the top</a>.
-			<a href="#Note8Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note8Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a name="Note9"></a>O Canada is the nation&apos;s <a class="external" href="http://en.wikipedia.org/wiki/O_Canada" target="_blank">national anthem</a>, though only since 1980.
-			<a href="#Note9Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note9Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a name="Note10"></a>No room here to show many pictures but we have <a href="../photos/index.php?fuseAction=photos">lots more</a> of this beautiful country.
-			<a href="#Note10Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note10Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a name="Note11"></a>For an excellent summary, see the <a class="external" href="http://www.warmuseum.ca/cwm/expo/background_e.html" target="_blank">Canadian War Museum</a>. 
 			The Americans tried again in 1812 with President Jefferson believing that victory &quot;will be a mere matter of marching&quot; in. Some believed they would be greeted as liberators. Sound familiar?
-			<a href="#Note11Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note11Ref" class="noteGoBack">Go back</a>
 		</li>
    </ol>
 </div>

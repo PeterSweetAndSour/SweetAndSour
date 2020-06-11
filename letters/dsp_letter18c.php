@@ -44,11 +44,11 @@
    <ol class="endText" start="12">
 		<li>
 			<a name="Note12"></a><i>Vietnam &ndash; A History</i>, Stanley Karnow
-			<a href="#Note12Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note12Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a name="Note13"></a>See <a href="http://amtraders.com/c-detail.asp?Model=Feather&Material=WE" target="_blank" class="external">manufacturer&apos;s picture</a>. We bought it second hand and paid a little over one-quarter list price though it does have some obvious wear and tear.
-			<a href="#Note13Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note13Ref" class="noteGoBack">Go back</a>
 		</li>
 	</ol>
 </div>

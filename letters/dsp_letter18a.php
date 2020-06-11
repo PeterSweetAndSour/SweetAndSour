@@ -32,14 +32,14 @@ setThumbnail("AcrobatIcon_Ltr18.gif", $urlPrefix . "files/Letter18_Ltr.pdf");
 
 <div class="story footnotes">
    <p>Notes:</p>
-   <ol class="endText">
+   <ol>
 		<li>
 			<a name="Note1"></a>Lots <a href="../photos/index.php?fuseAction=cherryBlossoms" target="_blank">more photos</a> of cherry blossoms?
-			<a href="#Note1Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note1Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a name="Note2"></a>The meaning behind the name: what is a <a href="http://www.fool.com/school/13Steps/13Steps01.htm" target="_blank" class="external">Fool</a>?
-			<a href="#Note2Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note2Ref" class="noteGoBack">Go back</a>
 		</li>
    </ol>
 </div>

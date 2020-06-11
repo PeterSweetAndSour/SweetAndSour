@@ -82,8 +82,8 @@
 <div class="story">
    <p>Notes:</p>
    <ol>
-   	<li><a name="Note1"></a>National Rugby League <a href="#Note1Ref" class="noteGoBack">Go back</a>
-   	<li><a name="Note2"></a>Rugby Union, a somewhat different game to League <a href="#Note1Ref" class="noteGoBack">Go back</a>
-   	<li><a name="Note3"></a>Australian Football League (Aussie rules) <a href="#Note3Ref" class="noteGoBack">Go back</a>
+   	<li><a name="Note1"></a>National Rugby League <br><a href="#Note1Ref" class="noteGoBack">Go back</a>
+   	<li><a name="Note2"></a>Rugby Union, a somewhat different game to League <br><a href="#Note1Ref" class="noteGoBack">Go back</a>
+   	<li><a name="Note3"></a>Australian Football League (Aussie rules) <br><a href="#Note3Ref" class="noteGoBack">Go back</a>
    </ol>
 </div>

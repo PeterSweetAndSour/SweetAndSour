@@ -25,7 +25,7 @@
 <div class="story footnotes">
    <p>Notes:</p>
    <ol class="endText" start="9">
-   	<li><a name="Note10"></a>From the newspaper I read online almost daily, <a class="external" href="http://www.smh.com.au/articles/2004/07/16/1089694565535.html" target="_blank">Pod squad wows the watchers</a> <a href="#Note10Ref" class="noteGoBack">Go back</a></li>
-     	<li><a name="Note11"></a>As Larry Ellison once said, &quot;I used to think. Now I just read <i>The Economist</i>&quot;. <a class="external" href="http://economist.com/printedition/PrinterFriendly.cfm?Story_ID=2765918" target="_blank">Ray Charles</a> <a href="#Note11Ref" class="noteGoBack">Go back</a></li>
+   	<li><a name="Note10"></a>From the newspaper I read online almost daily, <a class="external" href="http://www.smh.com.au/articles/2004/07/16/1089694565535.html" target="_blank">Pod squad wows the watchers</a> <br><a href="#Note10Ref" class="noteGoBack">Go back</a></li>
+     	<li><a name="Note11"></a>As Larry Ellison once said, &quot;I used to think. Now I just read <i>The Economist</i>&quot;. <a class="external" href="http://economist.com/printedition/PrinterFriendly.cfm?Story_ID=2765918" target="_blank">Ray Charles</a> <br><a href="#Note11Ref" class="noteGoBack">Go back</a></li>
 	</ol>
 </div>

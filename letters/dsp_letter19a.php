@@ -30,14 +30,14 @@ setThumbnail("AcrobatIcon_Ltr19.gif", $urlPrefix . "files/Letter19_Ltr.pdf");
 
 <div class="story footnotes">
    <p>Notes:</p>
-   <ol class="endText">
+   <ol>
 		<li>
 			<a id="Note1"></a><a class="external" href="http://bbcworldservice.com/podcasts" target="_blank">BBC World Service podcasts</a>. Note in particular <em>Documentaries</em> and <em>From Our Own Correspondent</em>.
-			<a href="#Note1Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note1Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a id="Note2"></a>The Onion: <a class="external" href="http://theonion.com/content/news_briefs/black_man_given_nations" target="_blank"><em>Black man given nation&apos;s worst job</em></a>.
-			<a href="#Note2Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note2Ref" class="noteGoBack">Go back</a>
 		</li>
    </ol>
 </div>

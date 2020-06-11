@@ -50,11 +50,11 @@
    <ol class="endText" start="9">
 		<li>
 			<a id="Note9"></a>New York Magazine, <em><a href="http://nymag.com/health/features/46213/" target="_blank" class="external">You Walk Wrong</a></em>.
-			<a href="#Note9Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note9Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
 			<a id="Note10"></a>Nearly bare feet: <a href="http://www.vibramfivefingers.com/products/products_sprint.cfm" target="_blank" class="external">Vibram FiveFingers</a>
-			<a href="#Note10Ref" class="noteGoBack">Go back</a>
+			<br><a href="#Note10Ref" class="noteGoBack">Go back</a>
 		</li>
 	</ol>
 </div>

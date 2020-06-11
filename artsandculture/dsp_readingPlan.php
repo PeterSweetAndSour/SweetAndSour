@@ -7,7 +7,7 @@
 
 <h2>PART ONE</h2>
 <div class="story">
-   <ol class="endText">
+   <ol>
    	<li>Anonymous, ca. 2000 B.C.E. (Scribe Sin-Leqi-Unninni, ca. 700 B.C.E.), <i>The Epic of Gilgamesh</i></li>
    	<li>Homer, ca. 800 B.C.E., <i>The Iliad </i></li>
    	<li>Homer, ca. 800 B.C.E., <i>The Odyssey </i></li>

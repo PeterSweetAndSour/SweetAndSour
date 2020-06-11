@@ -27,9 +27,9 @@
 <div class="story">
 	<!-- Notes -->
 	<p>Notes:</p>
-	<ol class="endText">
-		<li><a name="Note1"></a>More on the <a href="http://www.canalmidi.com/anglais/indexgb.html" target="_blank">Canal du Midi</a>  <a href="#Note1Ref" class="noteGoBack">Go back</a></li>
-		<li><a name="Note2"></a>More on the <a href="http://xenophongroup.com/montjoie/albigens.htm" target="_blank">Albigensian Crusade</a> <a href="#Note2Ref" class="noteGoBack">Go back</a></li>
+	<ol>
+		<li><a name="Note1"></a>More on the <a href="http://www.canalmidi.com/anglais/indexgb.html" target="_blank">Canal du Midi</a>  <br><a href="#Note1Ref" class="noteGoBack">Go back</a></li>
+		<li><a name="Note2"></a>More on the <a href="http://xenophongroup.com/montjoie/albigens.htm" target="_blank">Albigensian Crusade</a> <br><a href="#Note2Ref" class="noteGoBack">Go back</a></li>
 	</ol>
 </div>
 

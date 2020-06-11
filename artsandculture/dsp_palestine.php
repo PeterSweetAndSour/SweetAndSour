@@ -65,7 +65,7 @@ if($fuseAction == "injustice") {
 	<p>Now we see armoured vehicles and helicopter gunships taking on mainly unarmed groups of Palestinians.  The Economist reports that over 100 people have been killed on the last 2 weeks of violence and all but 7 of them are Palestinian.  What happened?  Where did Dr Weizmann's vision of mutual co-operation go wrong?</p>
 	<p>By it's nature, &quot;news&quot; is what is "new" and yet, we must look back over the last century to understand what is happening now.  Many Palestinians have been refugees for up to 52 years!  I want to demonstrate that the Palestinians have legitimate grievances and have been allowed no way to address them and this has led to violence.</p>
 	<p>We will look at three periods:</p>
-	<ol class="endText">
+	<ol>
 		<li>before the establishment of Isreal in 1948
 		<li>from 1948 to the &quot;6 Day War&quot; in 1967
 		<li>since 1967
