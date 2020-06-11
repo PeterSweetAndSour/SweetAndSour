@@ -16,6 +16,6 @@
 </div>
 
 <div class="story">
-   <p>Continue to <a href="index.php?fuseAction=letter9b">Travels and adventures</a> (page 2) <a href="index.php?fuseAction=letter9a"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter9b">Travels and adventures</a></p>
    <p class="endText">Jump to <a href="index.php?fuseAction=letter9c">Interesting things</a> (page 3)</p>
 </div>

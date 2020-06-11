@@ -45,7 +45,7 @@
    	<li><a href="index.php?fuseAction=letter17a">10-year anniversary special!</a> (page 1)</li>
    	<li><a href="index.php?fuseAction=letter17b">Washington D.C.</a> (page 2)</li>
    </ul>
-   <p>Continue to <a href="index.php?fuseAction=letter17d">Miscellaneous</a> (page 4) <a href="index.php?fuseAction=letter17d"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom" /></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter17d">Miscellaneous</a></p>
    <p class="endText">Jump to <a href="index.php?fuseAction=letter17e">Bumper Stickers</a> (page 5)</p>
 </div>
 

@@ -24,5 +24,5 @@
    	<li><a href="index.php?fuseAction=letter5b">More news</a> (page 2)</li>
    	<li><a href="index.php?fuseAction=letter5c">Trip to California</a> (page 3)</li>
    </ul>
-   <p class="endText">Continue to <a href="index.php?fuseAction=letter5e">Interesting things</a> (page 5) <a href="index.php?fuseAction=letter5e"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter5e">Interesting things</a></p>
 </>

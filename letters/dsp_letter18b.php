@@ -39,7 +39,7 @@
 
 <div class="story">
    <p>Go back to <a href="index.php?fuseAction=letter18a">Washington DC, 2nd attempt</a> (page 1)</p>
-   <p>Continue to <a href="index.php?fuseAction=letter18c">Disconnect from reality</a> (page 3) <a href="index.php?fuseAction=letter18c"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom" /></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter18c">Disconnect from reality</a></p>
 </div>
 
 

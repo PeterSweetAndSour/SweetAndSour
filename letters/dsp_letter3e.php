@@ -29,5 +29,5 @@
    	<li><a href="index.php?fuseAction=letter3c">Travels</a> (page 3)</li>
    	<li><a href="index.php?fuseAction=letter3d">I do like ...</a> (page 4)</li>
    </ul>
-   <p class="endText">Continue to <a href="index.php?fuseAction=letter3f">The world</a> (page 6) <a href="index.php?fuseAction=letter3f"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter3f">The world</a></p>
 </div>

@@ -31,7 +31,7 @@
 
 <div class="story">
    <p>Go back to <a href="index.php?fuseAction=letter19a">We still have jobs!</a> (page 1)</p>
-   <p>Continue to <a href="index.php?fuseAction=letter19c">In sickness and in health</a> (page 3) <a href="index.php?fuseAction=letter19c"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom" /></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter19c">In sickness and in health</a></p>
 </div>
 
 <div class="story footnotes">

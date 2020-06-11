@@ -10,7 +10,7 @@ Desktop - see also _image-menu.scss.
 	/* -----------------------------------------------------------------------------------------
 	Layout
 	------------------------------------------------------------------------------------------ */
-	div.page {
+	div.page { 
 		width: 960px;
 		margin: 20px auto;
 		background-color: #fff;
@@ -30,21 +30,19 @@ Desktop - see also _image-menu.scss.
 	.story {
 		width: calc(100% - 210px);
 		float: left;
-		margin: 0 40px 2em 0;
+		margin: 0 40px 1em 0;
 	}
 
 
 	/* -----------------------------------------------------------------------------------------
 	Header
 	------------------------------------------------------------------------------------------ */
-	.logo {
-		font-family: 'Conv_Chowfun', sans-serif;
+	p.logo {
 		font-size: 48px;
 		text-shadow: 4px 4px 6px #666;
 		padding: 10px 10px 0 20px;
 	
 		> a {
-			text-decoration: none;
 			color: #000;
 		}
 	}
@@ -53,11 +51,5 @@ Desktop - see also _image-menu.scss.
 		font-style: italic;
 		margin-top: -10px;
 		padding-left: 20px;
-	}
-
-	
-
-
-
-	  
+	}  
 }

@@ -20,6 +20,6 @@
 </div>
 
 <div class="story">
-	<p>Continue to <a href="index.php?fuseAction=letter12b">Adventure to California</a> (page 2) <a href="index.php?fuseAction=letter12b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter12b">Adventure to California</a></p>
 	<p class="endText">Jump to <a href="index.php?fuseAction=letter12c">Life in America</a> (page 3)</p>
 </div>

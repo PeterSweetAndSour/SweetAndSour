@@ -13,7 +13,7 @@ page.
 
 
 $topIconSrc = $urlPrefix . "images/toTopLink.png";
-$continueIconSrc = $urlPrefix . "images/continueLink.png";
+
 $backIconSrc = $urlPrefix . "images/backLink.png";
 
 	// Construct the menu

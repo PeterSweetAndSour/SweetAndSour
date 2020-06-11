@@ -17,7 +17,7 @@ else {
 }
 
 switch ($fuseAction) {
-	//Odds & ends
+	//K-pop!
 	case "kpop";
 		$heading1Text = "K-pop!";
 		$contentPage = 'dsp_k-pop.php';
@@ -25,14 +25,9 @@ switch ($fuseAction) {
 		break;
 
 	//Aussie rock and roll
-	case "rockAndRoll_1":
+	case "rockAndRoll":
 		$heading1Text = "Aussie rock and roll";
-		$contentPage = 'dsp_rockAndRoll_1.php';
-		include '../dsp_outline.php';
-		break;
-	case "rockAndRoll_2":
-		$heading1Text = "Bands";
-		$contentPage = 'dsp_rockAndRoll_2.php';
+		$contentPage = 'dsp_rockAndRollAU.php';
 		include '../dsp_outline.php';
 		break;
 	

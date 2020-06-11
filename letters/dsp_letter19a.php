@@ -25,7 +25,7 @@ setThumbnail("AcrobatIcon_Ltr19.gif", $urlPrefix . "files/Letter19_Ltr.pdf");
 </div>
 
 <div class="story">
-   <p>Continue to <a href="index.php?fuseAction=letter19b">Out and about elsewhere</a> (page 2) <a href="index.php?fuseAction=letter19b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom" /></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter19b">Out and about elsewhere</a></p>
    <p>Jump to <a href="index.php?fuseAction=letter19c">In sickness and in health</a> (page 3)</p>
 </div>
 

@@ -89,14 +89,14 @@ Image Menu
 		height: 100%;
 		top: 0;
 		left: 0;
-		background-image: url(/images/headerSprite_20180516.jpg);
+		background-image: url(/images/headerSprite_20200611.jpg);
 		background-color: transparent;
 		background-repeat: no-repeat;
 		background-attachment: scroll; 
 	}
 	
 	body.mediaFromLocal ul.menu1 > li > a.photoLink span {
-		background-image: url(../images/headerSprite_20180516.jpg); 
+		background-image: url(../images/headerSprite_20200611.jpg); 
 	}
 	
 	ul.menu1 > li.home > a > span {
@@ -210,19 +210,16 @@ Image Menu
 	}
 	
 	ul.menu2 > li.selected > a,
-	ul.menu2 > li.on > a {
-		color: #145a9e;
+	ul.menu2 > li.on > a,
+	ul.menu2 > li:hover > a, 
+	ul.menu2 > li.off > a {
+			color: #145a9e;
 		background-color: #fff;
 	}
 	
 	ul.menu2 > li.selected > a {
 		background: linear-gradient(to bottom, #c0defa 0%,#ffffff 100%) repeat-x;
 		font-weight: bold; 
-	}
-	
-	ul.menu2 > li:hover > a, 
-	ul.menu2 > li.off > a {
-		color: #145a9e; /* was #1c3eab; */
 	}
 	
 	ul.menu2 > li > a:hover {

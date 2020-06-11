@@ -26,5 +26,5 @@
 	?>
 </div>
 <div class="story">
-	<p class="endText">Next: <a href="index.php?fuseAction=acadia2009">Acadia National Park &amp; points north</a> <a href="index.php?fuseAction=acadia2009"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p><span class="next">Next: <a href="index.php?fuseAction=acadia2009">Acadia National Park &amp; points north</a> <span></p>
 </div>

@@ -72,6 +72,6 @@
 	?>
 </div>
 <div class="story">
-	<p class="endText">Next: <a href="index.php?fuseAction=centralCoastME">Maine central coast</a> <a href="index.php?fuseAction=centralCoastME"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=centralCoastME">Maine central coast</a></p>
 </div>
 

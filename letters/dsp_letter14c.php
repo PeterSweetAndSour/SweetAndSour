@@ -26,5 +26,5 @@
 		<li><a href="index.php?fuseAction=letter14a">2&frac12; years for this!?</a> (page 1)</li>
 		<li><a href="index.php?fuseAction=letter14b">Out and about</a> (page 2)</li>
 	</ul>
-	<p class="endText">Continue to <a href="index.php?fuseAction=letter14d">In other news</a> (page 4) <a href="index.php?fuseAction=letter14d"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter14d">In other news</a></p>
 </div>

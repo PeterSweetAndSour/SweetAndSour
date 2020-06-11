@@ -69,5 +69,5 @@
 	?>
 </div>
 <div class="story">
-	<p class="endText">Next: <a href="index.php?fuseAction=portland2009">Portland</a> <a href="index.php?fuseAction=portland2009"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=portland2009">Portland</a></p>
 </div>

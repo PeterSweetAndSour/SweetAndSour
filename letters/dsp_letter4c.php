@@ -20,5 +20,5 @@
    	<li><a href="index.php?fuseAction=letter4a">Our news</a> (page 1)
    	<li><a href="index.php?fuseAction=letter4b">News in America</a> (page 2)
    </ul>
-   <p class="endText">Continue to <a href="index.php?fuseAction=letter4d">Lan&rsquo;s letter</a> (page 4) <a href="index.php?fuseAction=letter4d"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p><span class="next">Next: <a href="index.php?fuseAction=letter4d">Lan&rsquo;s letter</a> (page 4) <span></p>
 </div>

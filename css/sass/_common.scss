@@ -4,12 +4,19 @@ body {
 }
 
 /* -----------------------------------------------------------------------------------------
-Layout
+Header
 ------------------------------------------------------------------------------------------ */
 
-footer {
+p.logo {
+	font-family: 'Conv_Chowfun', sans-serif;
+	margin: 0;
 
+	> a {
+		text-decoration: none;
+	}
 }
+
+
 
 /* -----------------------------------------------------------------------------------------
 Headings
@@ -32,7 +39,7 @@ h1 {
 }
 
 h2 {
-	font-size:24px;
+	font-size:20px;
 	color: #145a9e ;
 	clear: both; 
 
@@ -124,9 +131,9 @@ Miscellaneous
 
 .toTop {
 	position: relative;
-	padding-left: 24px;
+	padding-left: 20px;
 
-	:before {
+	&:before {
 		content: " ";
 		position: absolute;
 		top: 5px;
@@ -135,6 +142,21 @@ Miscellaneous
 		border-right-width: 7px;
 		border-left-width: 7px;
 		border-bottom: 12px solid #f00;
+	}
+}
+.next {
+	position: relative;
+	padding-right: 20px;
+
+	&:before {
+		content: " ";
+		position: absolute;
+		top: 4px;
+		right: 0px;
+		border: 0 solid transparent;
+		border-bottom-width: 7px;
+		border-top-width: 7px;
+		border-left: 12px solid #6c9;
 	}
 }
 

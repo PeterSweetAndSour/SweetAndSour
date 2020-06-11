@@ -25,6 +25,6 @@
 		<li><a href="index.php?fuseAction=letter13a">Activities</a> (page 1)</li>
 		<li><a href="index.php?fuseAction=letter13b">Travels, part 1</a> (page 2)</li>
 	</ul>
-	<p>Continue to <a href="index.php?fuseAction=letter13d">Travels, part 3</a> (page 4) <a href="index.php?fuseAction=letter13d"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter13d">Travels, part 3</a></p>
 	<p class="endText">Jump to <a href="index.php?fuseAction=letter13e">America</a> (page 5)</p>
 </div>

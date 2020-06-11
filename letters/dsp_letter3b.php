@@ -24,7 +24,7 @@
 
 <div class="story">
    <p>Go back to <a href="index.php?fuseAction=letter3a">What we have been doing</a> (page 1)</p>
-   <p>Continue to <a href="index.php?fuseAction=letter3c">Travels</a> (page 3) <a href="index.php?fuseAction=letter3c"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter3c">Travels</a></p>
    <p>Jump to:</p>
    <ul class="endText">
    	<li><a href="index.php?fuseAction=letter3d">I do like ...</a> (page 4)</li>

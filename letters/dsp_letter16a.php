@@ -28,7 +28,7 @@
 </div>
 
 <div class="story">
-	<p>Continue to <a href="index.php?fuseAction=letter16b">I love New York</a> (page 2) <a href="index.php?fuseAction=letter16b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter16b">I love New York</a></p>
 	<p>Jump to:</p>
 	<ul class="endText">
 		<li><a href="index.php?fuseAction=letter16c">The Netherlands</a> (page 3)</li>

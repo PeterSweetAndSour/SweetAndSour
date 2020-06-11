@@ -37,7 +37,7 @@
 </div>
 
 <div class="story">
-   <p>Continue to <a href="index.php?fuseAction=letter4b">News in America</a> (page 2) <a href="index.php?fuseAction=letter4b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter4b">News in America</a></p>
    <p>Jump to:</p>
    <ul>
    	<li><a href="index.php?fuseAction=letter4c">Strange and curious things</a> (page 3)</li>

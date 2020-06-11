@@ -29,7 +29,7 @@ setThumbnail("FranceMap1.gif", "index.php?fuseAction=mapFrance|_blank|SweetAndSo
 		<li><a href="index.php?fuseAction=letter16a">Employment, or lack thereof</a> (page 1)</li>
 		<li><a href="index.php?fuseAction=letter16b">I love New York</a> (page 2)</li>
 	</ul>
-	<p>Continue to <a href="index.php?fuseAction=letter16d">France, part 1</a> (page 4) <a href="index.php?fuseAction=letter16d"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter16d">France, part 1</a></p>
 	<p>Jump to:</p>
 	<ul class="endText">
 		<li><a href="index.php?fuseAction=letter16e">France, part 2</a> (page 5)</li>

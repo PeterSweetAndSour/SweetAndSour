@@ -23,7 +23,7 @@ setThumbnail("AcrobatIcon_Ltr13.gif", $urlPrefix . "letters/files/Letter13.pdf")
 ?>
 
 <div class="story">
-   <p>Continue to <a href="index.php?fuseAction=letter13b">Travels, part 1</a> (page 2) <a href="index.php?fuseAction=letter13b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter13b">Travels, part 1</a></p>
    <p>Jump to:</p>
    <ul class="endText">
    	<li><a href="index.php?fuseAction=letter13c">Travels, part 2</a> (page 3)</li>

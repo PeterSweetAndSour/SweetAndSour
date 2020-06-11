@@ -30,7 +30,7 @@
 		<li><a href="index.php?fuseAction=letter15a">The news</a> (page 1)</li>
 		<li><a href="index.php?fuseAction=letter15b">New Orleans</a> (page 2)</li>
 	</ul>
-	<p class="endText">Continue to <a href="index.php?fuseAction=letter15d">And in other news</a> (page 4) <a href="index.php?fuseAction=letter15d"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter15d">And in other news</a></p>
 </div>
 
 <div class="story footnotes">

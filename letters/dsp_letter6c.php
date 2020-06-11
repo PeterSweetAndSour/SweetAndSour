@@ -22,5 +22,5 @@
    	<li><a href="index.php?fuseAction=letter6a">News about us</a> (page 1)
    	<li><a href="index.php?fuseAction=letter6b">Trip to South Dakota</a> (page 2)
    </ul>
-   <p class="endText">Continue to <a href="index.php?fuseAction=letter6d">What's news in the U.S.</a> (page 4) <a href="index.php?fuseAction=letter6d"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p><span class="next">Next: <a href="index.php?fuseAction=letter6d">What's news in the U.S.</a> (page 4) <span></p>
 </div>

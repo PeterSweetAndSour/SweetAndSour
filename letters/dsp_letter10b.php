@@ -14,5 +14,5 @@
 
 <div class="story">
    <p>Go back to <a href="index.php?fuseAction=letter10a">Home again</a> (page 1)</p>
-   <p class="endText">Continue to <a href="index.php?fuseAction=letter10c">America</a> (page 3) <a href="index.php?fuseAction=letter10c"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter10c">America</a></p>
 </div>

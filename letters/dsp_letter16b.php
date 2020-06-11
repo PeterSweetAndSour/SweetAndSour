@@ -44,7 +44,7 @@
 
 <div class="story">
 	<p>Go back to <a href="index.php?fuseAction=letter16a">Employment, or lack thereof</a> (page 1)</p>
-	<p>Continue to <a href="index.php?fuseAction=letter16c">The Netherlands</a> (page 3) <a href="index.php?fuseAction=letter16c"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter16c">The Netherlands</a></p>
 	<p>Jump to:</p>
 	<ul class="endText">
 		<li><a href="index.php?fuseAction=letter16d">France, part 1</a> (page 4)</li>

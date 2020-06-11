@@ -27,7 +27,7 @@ setThumbnail("IceFountain1.jpg");
 ?>
 
 <div class="story">
-   <p>Continue to <a href="index.php?fuseAction=letter15b">New Orleans</a> (page 2) <a href="index.php?fuseAction=letter15b"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter15b">New Orleans</a></p>
    <p>Jump to:</p>
    <ul class="endText">
    	<li><a href="index.php?fuseAction=letter15c">September 11 and all that</a> (page 3)</li>

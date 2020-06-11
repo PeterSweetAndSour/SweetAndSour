@@ -198,7 +198,7 @@
 					<li>
 						The <a href="https://www.youtube.com/watch?v=CxMvQkcdPl8" target="_blank" class="external"> best duet ever</a>! Seriously, this is amazing. Even more incredible is that they only had an hour or so to practice before filming. Apparently the format of the show is that people send in video of them singing a famous song and when they get that idol on the show, they select from the best videos sent in and let them sing together. The young woman had been on another talent show before but that was her only previous exposure.
 					</li>
-				</ol>
+				</ol> (Thanks Kim!)
 		</li>
 		<li>
 			<a href="https://www.youtube.com/watch?v=dKThBm55Blc" target="_blank" class="external"> Wake Me Up</a>
@@ -362,7 +362,7 @@
 <h3>&hellip;and so much more!</h3>
 <div class="story">
 	<p>I feel I've only scratched the surface and there are new songs and new groups coming out all the time.  Other groups I've come across - and this is just the girl groups: 
-	A.O.A, APink, BerryGood, Bvndit, CLC,  cignature, Dreamcatcher, DreamNote, Exid, Fromis_9, f(x), 
+	A.O.A, APink, BerryGood, Bvndit, CLC,  cignature, Dreamcatcher, DreamNote, Exid, Everglow, Fromis_9, f(x), 
 Gugudan, Hwa Sa, I.O.I, Itzy (stablemate of Twice and successful because of it), I.Z. One, Kara, La Boum, Lovelyz, Orange Caramel, Pledis, Pristin, Purplebeck, S.I.S., UNI.T, WJSN (not to be confused with GWSN!).</p>
 </div>
 

@@ -33,6 +33,6 @@
    	<li><a href="index.php?fuseAction=letter5a">News</a> (page 1)</li>
    	<li><a href="index.php?fuseAction=letter5b">More news</a> (page 2)</li>
    </ul>
-   <p>Continue to <a href="index.php?fuseAction=letter5d">Life in America</a> (page 4) <a href="index.php?fuseAction=letter5d"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter5d">Life in America</a></p>
    <p class="endText">Jump to <a href="index.php?fuseAction=letter5e">Interesting things</a> (page 5)</p>
 </div>

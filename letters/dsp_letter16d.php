@@ -30,7 +30,7 @@
 		<li><a href="index.php?fuseAction=letter16b">I love New York</a> (page 2)</li>
 		<li><a href="index.php?fuseAction=letter16c">The Netherlands</a> (page 3)</li>
 	</ul>
-	<p>Continue to <a href="index.php?fuseAction=letter16e">France, part 2</a> (page 5) <a href="index.php?fuseAction=letter16e"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom"></a></p>
+	<p>Next: <a class="next" href="index.php\?fuseAction=letter16e">France, part 2</a></p>
 	<p>Jump to:</p>
 	<ul class="endText">
 		<li><a href="index.php?fuseAction=letter16f">France, part 3</a> (page 6)</li>

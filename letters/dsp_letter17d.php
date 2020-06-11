@@ -24,7 +24,7 @@
    	<li><a href="index.php?fuseAction=letter17b">Washington D.C.</a> (page 2)</li>
    	<li><a href="index.php?fuseAction=letter17c">Election and American politics</a> (page 3)</li>
    </ul>
-   <p class="endText">Continue to <a href="index.php?fuseAction=letter17e">Bumper Stickers</a> (page 5) <a href="index.php?fuseAction=letter17e"><img src="<?= $continueIconSrc ?>" height="13" border="0" style="vertical-align:bottom" /></a></p>
+   <p>Next: <a class="next" href="index.php\?fuseAction=letter17e">Bumper Stickers</a></p>
 </div>
 
 <div class="story footnotes">
