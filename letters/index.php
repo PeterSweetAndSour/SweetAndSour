@@ -422,6 +422,18 @@ switch ($fuseAction) {
 		include '../dsp_outline.php';
 		break;
 
+	case "letter20":
+		$heading1Text = "Update from Portugal #1";
+		$contentPage = 'dsp_letter20.php';
+		include '../dsp_outline.php';
+		break;
+
+	case "letter21":
+		$heading1Text = "Update from Portugal #2";
+		$contentPage = 'dsp_letter21.php';
+		include '../dsp_outline.php';
+		break;
+	
 		/**** Default case. ****/
 	default:
 		echo "<p>" . $fuseAction . " is not a recognized fuse action in 'Coming to America' section!</p>";

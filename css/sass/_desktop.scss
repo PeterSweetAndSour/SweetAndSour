@@ -5,7 +5,8 @@ Desktop - see also _image-menu.scss.
 
 @media only screen and (min-width: 960px) {
 	body {
-		background: $blueTint3 linear-gradient(to bottom, $blueDark 0%, $blueTint3 100%) repeat-x;
+		background: $blueTint2 linear-gradient(to bottom, $blueDark 0%, $blueTint2 100%) repeat-x;
+		background-size: 100% 1000px;
 	}
 
 	/* -----------------------------------------------------------------------------------------

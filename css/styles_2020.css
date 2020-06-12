@@ -507,7 +507,8 @@ Desktop - see also _image-menu.scss.
 ************************************************ */
 @media only screen and (min-width: 960px) {
   body {
-    background: #A1BCD8 linear-gradient(to bottom, #14599E 0%, #A1BCD8 100%) repeat-x;
+    background: #729BC4 linear-gradient(to bottom, #14599E 0%, #729BC4 100%) repeat-x;
+    background-size: 100% 1000px;
   }
 
   /* -----------------------------------------------------------------------------------------
@@ -739,7 +740,8 @@ li.selected > a > .verticalText {
     float: left;
     width: 956px;
     list-style: none;
-    background: #729BC4 linear-gradient(to bottom, #14599E 0%, #729BC4 100%) repeat-x;
+    background: #3671ac linear-gradient(to bottom, #3671ac 0%, #3973ad 100%) repeat-x;
+    /* Should match page background. */
     background-size: 100% 32px;
     font-size: 14px;
     line-height: 1em;

@@ -1,0 +1,26 @@
+<div class="story">
+	<p>{Originally sent as an email on 24<sup>th</sup> February 2020.]</p>
+	<p>I have created a new set of photos so you can see what we have been up to. In fact there are two:</p>
+	<ul>
+		<li>the <a href="https://photos.app.goo.gl/F3aLYKPT9P728CJv9" class="external" _target="_blank">full set</a> with 200 photos</li>
+		<li>a <a href="https://photos.app.goo.gl/5wEsopKmgfKwFthcA" class="external" _target="_blank">summary version</a> with just 30 photos</li>
+	</ul>
+	<p>There is a caption for nearly every photo so make sure you click on the "i" for Information icon or you will miss the explanations.</p>
+	<p>Most of the pictures are from just 4 day trips we made outside Lisbon. Since it has been chilly, cloudy and often raining, or at least threatening to rain, we've spent a lot of time at home thinking about future adventures and doing necessary things like US taxes and learning Portuguese. A few days ago we visited Cascais, an upmarket beach town (there is a Porsche dealer next to the marina!) which is only 32km/20 miles away but those photos will have to wait for the next set. Except for this one: https://photos.app.goo.gl/xXVtyCitXxyvQhv68 in which I am wearing my Fool hat. I tend to avoid having my photo taken as I generally ruin every photo I'm in but Lan says this one is OK because my face is largely hidden!</p>
+	<p>I finally started learning Portuguese after my 5 week trip to DC in December/January to make more house repairs in Washington DC and to pack up our belongings that were thrown into our basement in a rush prior to our departure. We have registered for classes run by the government for new immigrants but they haven't started yet. In fact, we don't know when they start as I think they need to get a certain number of students at each location before they hire a teacher which is fair enough.</p>
+	<p>I was using Duolingo since that seems to be everyone's first choice but I uninstalled it a few days ago as I've learned the words for "congratulations" and "armadillo" but cannot count to 10, or introduce myself. I had already started using the excellent Mango languages app which is free for anyone with a DC public library card (and many other library systems including Alexandria VA) and the order in which things are presented is far more logical. I also disliked Duolingo for the relative sparsity of speaking exercises and when they did come up, you had to listen to a whole sentence at full speed and attempt to repeat it rather than start with individual words.</p>
+	<p>However I've now discovered that European Portuguese has some significant pronunciation difference with Brazilian Portuguese and so I've been saying "good morning" and "good afternoon" wrong and the word for "you" as in "Do you speak English?" is different. :-( It looks like something called Memrise has content on the web for European Portuguese, though not their phone app, so I will try that.</p>
+	<p>The other "problem" is that so many people here speak English! School children start learning from age 10 and it is mandatory. I feel that I've wasted a few weeks on Duolingo but I'll continue by other means out of respect for their culture rather than necessity.</p>
+	<p>We have barely started making new friends so we need to join more groups. Lan did join a French conversation group (not Portuguese as we aren't at that point yet) and I think at least one of them will become a good friend but she had to return to Brazil for six weeks. The woman that ran the Airbnb has come to dinner with her husband and they are lovely and we saw her yesterday at the AirBnb and it seems we will be going to dinner at her place the weekend after next. Fortunately we still enjoy each other's company.</p>
+	<p>Tenants moved into our house last weekend which is a huge relief as I've been worried about pipes in the attic bursting if it gets really, really cold but looking at the weather history since I left, it seems that -5C/22F is the worst it has been so that is good (although that is still miserably cold).</p>
+	<p>Lan is doing yoga at home rather than with a group as the nearest studio is quite expensive. I've started doing a bit of running to prepare for the local marathon in October but I'm going to have to do a lot more just to make up for not riding a bike 32km/20 miles a day as I was before. I've discovered that although Portuguese paving is beautiful to look at (https://photos.app.goo.gl/5Gxid4aW1eAGn6Fq8) and fine to walk on, it is uncomfortable to run on as it is not completely flat. Fortunately there is a bike path along the waterfront and there seem to be few cyclists early in the morning using it to commute which is odd but good for me. Away from the waterfront, Lisbon is very hilly!</p>
+	<p>As always, I'd love to hear your news too so do write when the opportunity arises.</p>
+	<p>Best wishes,<br>Peter</p>
+</div>
+<?
+setThumbnail("photoSetPortugal2.jpg", "https://photos.app.goo.gl/F3aLYKPT9P728CJv9");
+setThumbnail("photoSetPortugal2_summary.jpg", "https://photos.app.goo.gl/5wEsopKmgfKwFthcA");
+?>
+
+
+
