@@ -2,7 +2,7 @@
 // Use this file to update the "lft" and "rgt" values in the menus table after adding/deleting elements;
 // these are used in includes/qry_menu.php to build the menu result set.
 // Assumes all the menuLevel and parentID values are correctly set.
-// Just load http://localhost:8080/sweetandsour/webmaster/convertMenusTbl.php in a browser.
+// Just load http://localhost:8080/sweetandsour/webmaster/updateMenuTbl.php in a browser.
 
 include '../../sweetandsour_conf.php';
 include '../includes/act_getDBConnection.php';
