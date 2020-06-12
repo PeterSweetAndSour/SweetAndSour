@@ -52,18 +52,6 @@ include '../imageMgt/act_setThumbnailFunction.php';
 	<link rel="stylesheet" type="text/css" href="../css/styles_2020.css" />
 	<link rel="stylesheet" type="text/css" href="../css/photoswipe.css" />
 	<link rel="stylesheet" type="text/css" href="../css/default-skin/default-skin.css" />
-
-	
-	<?
-	/* Extra js files for specific pages may have been added on index.php files */
-	foreach ($jsFiles as $file) {
-		if (strncmp(trim($file), "<script", 7) === 0) {
-			?><?= $file ?><? 
-		} else { 
-			?><script type="text/javascript" src="../js/<?= $file ?>"></script><?
-		}
-	}
-	?>
 </head>
 <?php flush(); ?>
 <body class="<?= $bodyClass ?><?= $mediaSource ?>">
@@ -127,5 +115,15 @@ include '../imageMgt/act_setThumbnailFunction.php';
 	<script src="../js/photoswipe.js"></script>
 	<script src="../js/photoswipe-ui-default.js"></script>
 	<script src="../js/photoswipe_setup.js"></script>
+	<?
+	/* Extra js files for specific pages may have been added on index.php files */
+	foreach ($jsFiles as $file) {
+		if (strncmp(trim($file), "<script", 7) === 0) {
+			?><?= $file ?><? 
+		} else { 
+			?><script type="text/javascript" src="../js/<?= $file ?>"></script><?
+		}
+	}
+	?>
 </body>
 </html>

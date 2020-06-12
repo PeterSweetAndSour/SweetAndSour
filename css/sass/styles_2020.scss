@@ -1,12 +1,12 @@
-@use "_fonts.scss";
-@use "_variables.scss";
-@use "_reset.scss";
-@use "_frombootstrap.scss";
-@use "_common.scss";
-@use "_mobile.scss";
-@use "_desktop.scss";
-@use "_image-menu.scss";
-@use "_form.scss";
+@import "_variables.scss";
+@import "_fonts.scss";
+@import "_reset.scss";
+@import "_frombootstrap.scss";
+@import "_common.scss";
+@import "_mobile.scss";
+@import "_desktop.scss";
+@import "_image-menu.scss";
+@import "_form.scss";
 
 
 /* Note to future self on using inline SVG for Font Awesome icons:

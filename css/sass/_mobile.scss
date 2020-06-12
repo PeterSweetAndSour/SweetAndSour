@@ -1,13 +1,14 @@
 /* ***********************************************
 Mobile 
 ************************************************ */
+
 @media only screen and (max-width: 959px) {
 
 	/* -----------------------------------------------------------------------------------------
 	Layout
 	------------------------------------------------------------------------------------------ */
 	header {
-		background-color: #155b9f;
+		background-color: $blueDark;
 		color: #fff;
 		text-align: right;
 		height: 83px;
@@ -49,7 +50,7 @@ Mobile
 		top: 0px;
 		left: 0;
 		transform: translate(calc(100% + 64%));
-		background-color: #155b9f;
+		background-color: $blueDark;
 		text-align: left;
 		li {
 			position: relative;
@@ -63,7 +64,7 @@ Mobile
 				padding: 8px 0 0 0;
 				font-size: 20px;
 				text-decoration: none;
-				border-bottom: 1px solid #8AACCF;
+				border-bottom: 1px solid $blueTint3;
 			}
 			&.hasChildren > a {
 				display: none

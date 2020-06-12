@@ -1,3 +1,4 @@
+/* Tints and shades: https://www.tutorialrepublic.com/html-reference/html-color-picker.php */
 /* ChowFun is a free font by Harold Lohner from http://www.haroldsfonts.com/chowfun.html */
 @font-face {
   font-family: "Conv_Chowfun";
@@ -140,6 +141,7 @@ h1 span {
 h2 {
   font-size: 20px;
   color: #145a9e;
+  /*  */
   clear: both;
 }
 h2 span {
@@ -310,7 +312,7 @@ Mobile
   Layout
   ------------------------------------------------------------------------------------------ */
   header {
-    background-color: #155b9f;
+    background-color: #14599E;
     color: #fff;
     text-align: right;
     height: 83px;
@@ -353,7 +355,7 @@ footer {
     left: 0;
     -ms-transform: translate(calc(100% + 64%));
         transform: translate(calc(100% + 64%));
-    background-color: #155b9f;
+    background-color: #14599E;
     text-align: left;
   }
   nav li {
@@ -368,7 +370,7 @@ nav li label {
     padding: 8px 0 0 0;
     font-size: 20px;
     text-decoration: none;
-    border-bottom: 1px solid #8AACCF;
+    border-bottom: 1px solid #A1BCD8;
   }
   nav li.hasChildren > a {
     display: none;
@@ -505,7 +507,7 @@ Desktop - see also _image-menu.scss.
 ************************************************ */
 @media only screen and (min-width: 960px) {
   body {
-    background: #82bffa linear-gradient(to bottom, #145a9e 0%, #82bffa 100%) repeat-x;
+    background: #A1BCD8 linear-gradient(to bottom, #14599E 0%, #A1BCD8 100%) repeat-x;
   }
 
   /* -----------------------------------------------------------------------------------------
@@ -737,7 +739,8 @@ li.selected > a > .verticalText {
     float: left;
     width: 956px;
     list-style: none;
-    background: #5575db linear-gradient(to bottom, #5575db 0%, #3252bd 100%) repeat-x;
+    background: #729BC4 linear-gradient(to bottom, #14599E 0%, #729BC4 100%) repeat-x;
+    background-size: 100% 32px;
     font-size: 14px;
     line-height: 1em;
   }
@@ -778,12 +781,12 @@ ul.menu3 > li > a {
 ul.menu2 > li.on > a,
 ul.menu2 > li:hover > a,
 ul.menu2 > li.off > a {
-    color: #145a9e;
+    color: #14599E;
     background-color: #fff;
   }
 
   ul.menu2 > li.selected > a {
-    background: linear-gradient(to bottom, #c0defa 0%, #ffffff 100%) repeat-x;
+    background: linear-gradient(to bottom, #D0DDEB 0%, #ffffff 100%) repeat-x;
     font-weight: bold;
   }
 
@@ -805,7 +808,7 @@ ul.menu2 > li.off > a {
     position: static;
     float: left;
     width: 956px;
-    border-bottom: 1px solid #3252bd;
+    border-bottom: 1px solid #437AB1;
     background-image: none;
     background-color: #fff;
     display: none;
@@ -827,7 +830,7 @@ ul.menu2 > li.on > ul {
 
   /* A */
   ul.menu3 > li > a {
-    color: #145a9e;
+    color: #14599E;
     text-decoration: none;
     background-image: none;
     font-weight: normal;
@@ -888,32 +891,31 @@ input.menu {
     display: block;
   }
 }
-/* From https://codepen.io/elujambio/pen/yjwzGP */
+/* Modified from https://medium.com/@eugeniolujambio/accessible-css-only-floating-labels-74bf9173bc5f. 
+That example showed using :placeholder-shown pseudoclass but I changed to :focus since I wonder if the input 
+really has focus if I click and there is no visible change but :placeholder-shown is still needed to retain
+the position of the label after the user has entered something. */
 .floating-label {
   position: relative;
-  margin-bottom: 24px;
+  margin: 24px 0;
 }
 .floating-label label {
-  font-size: 14px;
-  color: #000;
-  opacity: 0.8;
   position: absolute;
-  top: calc(50% - 7px);
-  left: 0;
+  top: calc(50% - 10px);
+  left: 10px;
+  font-size: 14px;
   opacity: 0;
   transition: all 0.3s ease;
 }
 .floating-label input {
-  font-size: 16px;
-  padding: 20px 10px;
+  font-size: 18px;
+  padding: 10px 10px;
+  margin-bottom: 1px;
   height: 56px;
-  border: solid 1px rgba(0, 0, 0, 0.2);
+  border: solid 1px #D0DDEB;
   background: #fff;
-  min-width: 280px;
   box-sizing: border-box;
   transition: all 0.3s linear;
-  color: #000;
-  font-weight: 400;
   -webkit-appearance: none;
 }
 .floating-label input.narrow {
@@ -923,18 +925,24 @@ input.menu {
   width: 100%;
 }
 .floating-label input:focus {
-  border-bottom: solid 1px #145a9e;
+  border-bottom: solid 2px #14599E;
+  margin-bottom: 0;
   outline: 0;
-  box-shadow: 0 2px 6px -8px rgba(20, 90, 158, 0.45);
+  box-shadow: 0 2px 6px -8px rgba(20, 89, 158, 0.45);
 }
-.floating-label input:not(:placeholder-shown) {
-  padding: 28px 10px 12px 10px;
+.floating-label input:focus:-ms-input-placeholder {
+  color: transparent;
 }
+.floating-label input:focus::placeholder {
+  color: transparent;
+}
+.floating-label input:focus + label,
 .floating-label input:not(:placeholder-shown) + label {
-  -ms-transform: translate(10px, -33px);
-      transform: translate(10px, -33px);
+  -ms-transform: translate(-5px, -31px);
+      transform: translate(-5px, -31px);
   opacity: 1;
   background-color: #fff;
+  padding: 0 5px;
 }
 
 input.submit {
@@ -948,27 +956,48 @@ input.submit {
   box-shadow: inset 0 1px 0 0 #fff, 0 1px 1px 0 transparent;
   border-radius: 20px;
   background-clip: padding-box;
-  color: #333;
-  background-color: #C0DEFC;
-  background-image: linear-gradient(#C0DEFC, #6898C8);
-  border: 1px solid #145a9e;
+  color: #666;
+  background-color: #D0DDEB;
+  background-image: linear-gradient(#E7EEF5, #D0DDEB);
+  border: 1px solid #14599E;
 }
 input.submit:hover, input.submit:active, input.submit:focus {
   box-shadow: inset 0 25px 0 0 rgba(255, 255, 255, 0.5), 0 1px 1px 0 rgba(0, 0, 0, 0.5);
-  font-weight: bold;
+  color: #000;
 }
 
-.inputRow > label {
-  display: block;
-  font-size: 16px;
-  padding: 20px 0px;
+.textAreaRow {
+  margin-top: -28px;
+}
+
+label.textarea {
+  font-size: 18px;
+  position: relative;
+  top: 40px;
+  left: 5px;
+  transition: all 0.3s linear;
+  padding: 0 5px;
+  background-color: #fff;
+}
+label.textarea.focused {
+  top: 8px;
+  font-size: 14px;
 }
 
 textarea {
   box-sizing: border-box;
   width: 100%;
   padding: 10px;
-  border: solid 1px rgba(0, 0, 0, 0.2);
+  border: solid 1px #D0DDEB;
+}
+
+.reCaptchaRow {
+  margin: 20px 0;
+}
+.reCaptchaRow label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 18px;
 }
 
 /* Note to future self on using inline SVG for Font Awesome icons:

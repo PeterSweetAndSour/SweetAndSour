@@ -1,6 +1,7 @@
 /**************************************************************
 Image Menu
 **************************************************************/
+
 @media only screen and (min-width: 960px) {
 	#imageMenu {
 		position: relative;
@@ -172,7 +173,8 @@ Image Menu
 		float: left;
 		width: 956px;
 		list-style: none;
-		background: #5575db linear-gradient(to bottom, #5575db 0%,#3252bd 100%) repeat-x;
+		background: $blueTint2 linear-gradient(to bottom, $blueDark 0%, $blueTint2 100%) repeat-x;
+		background-size: 100% 32px;
 		font-size: 14px;
 		line-height: 1em;
 	}
@@ -213,12 +215,12 @@ Image Menu
 	ul.menu2 > li.on > a,
 	ul.menu2 > li:hover > a, 
 	ul.menu2 > li.off > a {
-			color: #145a9e;
+		color: $blueDark;
 		background-color: #fff;
 	}
 	
 	ul.menu2 > li.selected > a {
-		background: linear-gradient(to bottom, #c0defa 0%,#ffffff 100%) repeat-x;
+		background: linear-gradient(to bottom, $blueTint4 0%,#ffffff 100%) repeat-x;
 		font-weight: bold; 
 	}
 	
@@ -240,7 +242,7 @@ Image Menu
 		position: static;
 		float: left;
 		width: 956px;
-		border-bottom: 1px solid #3252bd;
+		border-bottom: 1px solid $blueTint1;
 		background-image: none;
 		background-color: #fff;
 		display: none; 
@@ -262,7 +264,7 @@ Image Menu
 	
 	/* A */
 	ul.menu3 > li > a {
-		color: #145a9e;
+		color: $blueDark;
 		text-decoration: none;
 		background-image: none;
 		font-weight: normal; 

@@ -41,7 +41,7 @@ else { ?>
 			<div class="floating-label">
 				<input type="text" class="narrow" placeholder="Your name" name="senderName" id="senderName" maxlength="50" 
 					value="<?= isset($_SESSION["senderName"]) ? $_SESSION["senderName"] : "" ?>" required>
-				<label for="">Your name</label>
+				<label for="senderName">Your name</label>
 			</div>
 			<div class="floating-label">
 				<input type="text" class="narrow" placeholder="Email address" name="senderEmail" id="senderEmail" maxlength="50" 
@@ -54,14 +54,12 @@ else { ?>
 				<label for="msgSubject">Subject</label>
 			</div>
 
-			<div class="inputRow">
-				<label for="msgText">Message</label>
-				<textarea name="msgText" id="msgText" wrap="virtual" rows="10" required>
-					<?= isset($_SESSION["msgText"]) ? $_SESSION["msgText"] : "" ?>
-				</textarea>
+			<div class="textAreaRow">
+				<label for="msgText" class="textarea">Message</label>
+				<textarea name="msgText" id="msgText" wrap="virtual" rows="10" required><?= isset($_SESSION["msgText"]) ? $_SESSION["msgText"] : "" ?></textarea>
 			</div>
 
-			<div class="inputRow">
+			<div class="reCaptchaRow">
 				<label>Prove  you are human</label>
 				<div id="reCAPTCHA-wrapper"></div>
 				<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
