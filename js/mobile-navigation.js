@@ -34,16 +34,10 @@ var MobileNavigation = (function() {
 
 	var _toggleMobileMenuDisplay = function() {
 		if(_menuToggle.checked) { // User has opened the menu
-			_menuLabel.innerHTML = "Close";
-			_menuLabel.classList.remove("openMenu");
-			_menuLabel.classList.add("closeMenu");
 			_menuLabel.classList.add("touched");
 			_nav.setAttribute("aria-hidden", "false");
 		}
 		else {
-			_menuLabel.innerHTML = "Open";
-			_menuLabel.classList.remove("closeMenu");
-			_menuLabel.classList.add("openMenu");
 			_nav.setAttribute("aria-hidden", "true");
 			
 			if(_lastRadioBtnSelected){

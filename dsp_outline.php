@@ -65,8 +65,8 @@ include '../imageMgt/act_setThumbnailFunction.php';
 			if($displayMenu) {
 				?>
 				<form class="menu">
-					<label id="menuBtn" class="menu openMenu" for="menuToggle" role="button" aria-label="Toggle menu" aria-controls="imageMenu">Open</label>
 					<input class="menu" type="checkbox" id="menuToggle" />
+					<label id="menuBtn" class="menu" for="menuToggle" role="button" aria-label="Toggle menu" aria-controls="imageMenu">Open</label>
 					<?= $str_menuHTML ?>
 					<div id="menuOverlay" class="menuOverlay"><div class="loading"><p><img src="../images/loading_20080830.gif" alt="Just a moment ..." />Just a moment &hellip;</p></div></div>
 				</form>
