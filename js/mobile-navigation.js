@@ -1,3 +1,5 @@
+/*jshint unused:false*/
+
 var MobileNavigation = (function() {
 	// ------------------------------------------------------------------------------------------------------------------------------------------------
 	// Private  variables 
@@ -12,7 +14,7 @@ var MobileNavigation = (function() {
 	// Private  methods
 
 	var _getListItemsInBranch = function(nodeInNav) {
-		var listItems = []
+		var listItems = [];
 		while(nodeInNav.tagName !== "NAV") {
 			if(nodeInNav.tagName === "LI") {
 				listItems.push(nodeInNav);
@@ -20,7 +22,7 @@ var MobileNavigation = (function() {
 			nodeInNav = nodeInNav.parentNode;
 		}
 		return listItems;
-	}
+	};
 
 	var _resetNavElements = function(listItems) {
 		listItems.forEach((listItem) => {
@@ -29,8 +31,8 @@ var MobileNavigation = (function() {
 
 			var labelSelected = listItem.querySelector("label");
 			labelSelected.classList.remove("checked");
-		})
-	}
+		});
+	};
 
 	var _toggleMobileMenuDisplay = function() {
 		if(_menuToggle.checked) { // User has opened the menu
@@ -90,7 +92,7 @@ var MobileNavigation = (function() {
 
 				// Now remove "checked" class on LIs in previous branch and 
 				// ensure radio buttons in that branch, not in this branch, are unchecked.
-				if(_lastRadioBtnSelected && radioBtnSelected != _lastRadioBtnSelected) {
+				if(_lastRadioBtnSelected && radioBtnSelected !== _lastRadioBtnSelected) {
 					var listItemsForLastSelection = [],
 						listItemsForSelection = [],
 						listItemLastSelected = _lastRadioBtnSelected.closest("li"),
@@ -127,13 +129,13 @@ var MobileNavigation = (function() {
 		// Also allow the menu to be closed by clicking on the overlay.actionRow
 		_overlay = document.querySelector("#menuOverlay");
 		_overlay.addEventListener("click", _closeMobileMenuOnOverlayClick);
-	}
+	};
 
 	var _unsetMobileMenu = function() {
 		_menuToggle.removeEventListener("click", _toggleMobileMenuDisplay);
 		_nav.removeEventListener("click", _menuEventListener);
 		_overlay.removeEventListener("click", _toggleMobileMenuDisplay);
-	}
+	};
 
 	// ------------------------------------------------------------------------------------------------------------------------------------------------
 	// Public methods

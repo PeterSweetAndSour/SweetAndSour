@@ -108,6 +108,8 @@ include '../imageMgt/act_setThumbnailFunction.php';
 	include '../includes/dsp_photoswipe.php';
 	?>
 	
+	<script src="../js/combined.js"></script>
+	<!--
 	<script src="../js/mobile-navigation.js"></script>
 	<script src="../js/desktop-navigation.js"></script>
 	<script src="../js/common_2020.js"></script>
@@ -115,6 +117,7 @@ include '../imageMgt/act_setThumbnailFunction.php';
 	<script src="../js/photoswipe.js"></script>
 	<script src="../js/photoswipe-ui-default.js"></script>
 	<script src="../js/photoswipe_setup.js"></script>
+	-->
 	<?
 	/* Extra js files for specific pages may have been added on index.php files */
 	foreach ($jsFiles as $file) {

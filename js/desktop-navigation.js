@@ -1,10 +1,12 @@
-let DesktopNavigation = (function() { 
+/*jshint unused:false*/
+
+var DesktopNavigation = (function() { 
 
 	// PRIVATE STUFF
 	
 	// ----------------------------------------------------------------------------------------------------------------
 	// Private  variables 
-	let _level1SelectedListItem,
+	var _level1SelectedListItem,
 		_level2SelectedListItem,
 		_level1And2ListItems,
 
@@ -19,7 +21,7 @@ let DesktopNavigation = (function() {
 		_level1SelectedListItem = nav.querySelector("ul.menu1 > li.selected");
 		_level2SelectedListItem = _level1SelectedListItem.querySelector("ul.menu2 > li.selected");
 		_level1And2ListItems = nav.querySelectorAll("ul.menu1 > li, ul.menu1 > li.selected > ul > li");
-	}
+	};
 	
 	// Level 1 
 	var _activate_1 = function (listItem) {
@@ -66,28 +68,6 @@ let DesktopNavigation = (function() {
 		}
 	};
 
-	var _clickOnMenuEventListener = function(evt) {
-		var listItem = evt.target;
-		if(listItem === _level1SelectedListItem || listItem === _level1SelectedListItem) {
-			evt.preventDefault();
-			return;
-		}
-		
-		_showLoadingGraphic(listItem);
-		_expandClickedOnOrMousedOverMenuItem(listItem);
-
-	};
-
-	var _mouseOverMenuEventListener = function(evt) {
-		var src = evt.target;
-		_expandClickedOnOrMousedOverMenuItem(src);
-	};
-		
-	var _mouseOutMenuEventListener = function(evt) {
-		var src = evt.target;
-		_shrinkExpandedMenuItem(src);
-	};
-
 	var _showLoadingGraphic = function() {
 		document.querySelector(".menuOverlay").style.display = "block";
 		document.querySelector(".loading").style.display = "block";
@@ -114,6 +94,27 @@ let DesktopNavigation = (function() {
 		if(containingList.classList.contains("menu2")) {
 			_restore_2(listItem);
 		}
+	};
+
+	var _clickOnMenuEventListener = function(evt) {
+		var listItem = evt.target;
+		if(listItem === _level1SelectedListItem || listItem === _level1SelectedListItem) {
+			evt.preventDefault();
+			return;
+		}
+		
+		_showLoadingGraphic(listItem);
+		_expandClickedOnOrMousedOverMenuItem(listItem);
+	};
+
+	var _mouseOverMenuEventListener = function(evt) {
+		var src = evt.target;
+		_expandClickedOnOrMousedOverMenuItem(src);
+	};
+		
+	var _mouseOutMenuEventListener = function(evt) {
+		var src = evt.target;
+		_shrinkExpandedMenuItem(src);
 	};
 
 	var _setDesktopMenu = function() {

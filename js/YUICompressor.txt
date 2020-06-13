@@ -1,9 +1,0 @@
-Run this from within the \js\raw folder:
-
-D:\Inetpub\wwwroot\sweetAndSour\js>
-java -jar C:\inetpub\wwwroot\YUICompressor\build\yuicompressor-2.4.2.jar -o common_20180424.min.js common_20180424.js
-
-Run this from within the \css folder:
-
-D:\Inetpub\wwwroot\sweetAndSour\css>
-java -jar C:\inetpub\wwwroot\YUICompressor\build\yuicompressor-2.4.2.jar -o styles_20090703.min.css styles_20090703.css

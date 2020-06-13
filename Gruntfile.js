@@ -13,17 +13,15 @@ module.exports = function(grunt) {
 			}
 		},
 
-		/*
 		concat: {
 			options: {
 				separator: ';',
 			},
 			dist: {
-				src: ['js/common_2020.js'],
-				dest: 'js/common.js',
+				src: ['js/mobile-navigation.js', 'js/desktop-navigation.js', 'js/common_2020.js', 'js/photoswipe.js', 'js/photoswipe-ui-default.js', 'js/photoswipe_setup.js'],
+				dest: 'js/combined.js'
 			},
 		},
-		*/
 
 		sass: {                              // Task
 			dist: {                          // Target
@@ -46,6 +44,8 @@ module.exports = function(grunt) {
 		  
 		jshint: {
 			all: [
+				'js/mobile-navigation.js', 
+				'js/desktop-navigation.js', 
 				'js/common_2020.js'
 			],
 			options: {
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
 			},
 			js: {
 				files: 'js/*.js',
-				tasks: ['jshint'],
+				tasks: ['jshint', 'concat']
 			}
 		}
 	});
@@ -74,6 +74,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task
-	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'jshint']);  // 'concat' 
+	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'jshint', 'concat']);
 	grunt.registerTask('default', ['watch']);
 }
