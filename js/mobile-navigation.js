@@ -3,7 +3,8 @@ var MobileNavigation = (function() {
 	// Private  variables 
 	var _menuToggle,
 		_menuLabel,
-		_nav,			
+		_nav,
+		_overlay,			
 		_lastRadioBtnSelected = null,
 		_lastLabelSelected = null;
 
@@ -50,6 +51,12 @@ var MobileNavigation = (function() {
 				_resetNavElements(listItemsForLastSelection);
 			}
 		}
+	};
+
+	var _closeMobileMenuOnOverlayClick = function() {
+		var menuToggleCtrl = document.querySelector("#menuToggle");
+		menuToggleCtrl.checked = false;
+		_toggleMobileMenuDisplay();
 	};
 
 	// If previously selected label/radio button precedes the current one in the DOM, the visible position of the current label 
@@ -109,7 +116,7 @@ var MobileNavigation = (function() {
 			_lastRadioBtnSelected = radioBtnSelected;
 			_lastLabelSelected = labelSelected;
 		}
-	}
+	};
 
 	var _setMobileMenu = function() {
 		// Set event listener on the button to open/close the menu
@@ -122,11 +129,16 @@ var MobileNavigation = (function() {
 		// TIL that clicking on a label creates a click event on the label AND THEN a separate click event on the associated input.
 		// Knowing that, look for the event on the radio button since if changes are made on the 1st event, they may be undone by 2nd.
 		_nav.addEventListener("click", _menuEventListener);
+
+		// Also allow the menu to be closed by clicking on the overlay.actionRow
+		_overlay = document.querySelector("#menuOverlay");
+		_overlay.addEventListener("click", _closeMobileMenuOnOverlayClick);
 	}
 
 	var _unsetMobileMenu = function() {
 		_menuToggle.removeEventListener("click", _toggleMobileMenuDisplay);
 		_nav.removeEventListener("click", _menuEventListener);
+		_overlay.removeEventListener("click", _toggleMobileMenuDisplay);
 	}
 
 	// ------------------------------------------------------------------------------------------------------------------------------------------------

@@ -10,7 +10,7 @@
    <p>On the way to Lan's office is section of road 3 lanes wide in each direction and a sign like the one shown at right. One day in July, all the traffic stopped while Canadian geese crossed the road to move to another pond.  Lan says that everyone was smiling and the geese were very cute as they wiggled their bottoms as the walked.</p>
    <p class="endText">Let me end this section with a joke that has nothing at all to do with us:  "A man is called by his bank and the bank employee says, <i>'Sir, we have found out that your credit card was stolen 6 months ago.  Why didn't you inform us?'</i>. The man replied, <i>'I saw no need to. The thief spends less than my wife.'</i>"</p>
 </div>
-<div class="photo-gallery"></div>
+<div class="photo-gallery">
 	<?
 	setThumbnail("GooseCrossing.jpg");
 	?>

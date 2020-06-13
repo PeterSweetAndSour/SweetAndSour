@@ -13,7 +13,7 @@
    <p>I have discovered a connecting bus where I wait just 4 minutes between rides on the way to work, so I get the 6.27am and get to work at 7.05.  As I mentioned in a previous letter, the buses are clean and comforable and not crowded (good for the individual but sad that so few take public transport).  On the way home the connection does not work at all and it is a half-hour walk to another bus stop to catch a direct bus.  One thing that impresses me is that 92% of Denver buses have a lift platform built into the front step for wheel-chair users.  I saw it in action and although it is slow, it must give wheel- chair users a much greater ability to be independent.  Getting up so early has been easy in the summer but I don't think I could do it in the winter.  Waiting for the bus in temperatures below freezing with no bus shelters is not appealing.  By then we will have moved so I should not need to.</p>
    <p class="endText">Lan will be starting a C++ computer programming course in a few weeks at a local college.  We have benefited from a law passed last week that allows foreigners to pay the same fees as locals if they have been working and paying taxes in Colorado for more than 12 months.  The course will now cost $300 instead of $1300.  Good timing!</p>
 </div>
-<div class="photo-gallery"></div>
+<div class="photo-gallery">
 	<?
 	setThumbnail("LanOnBike1.jpg");
 	?>

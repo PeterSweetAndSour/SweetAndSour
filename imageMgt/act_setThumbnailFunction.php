@@ -74,7 +74,7 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 				?>
 					<figure<?= $classString ?>>
 						<a href="<?= $linkURL ?>" target="<?= $target ?>">
-							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
+							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="Please refer to following caption." />
 						</a>
 						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
 					</figure>

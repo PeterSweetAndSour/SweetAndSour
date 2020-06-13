@@ -3,14 +3,14 @@
    <p>This is Peter's web site, a very slow-motion blog.</p>
 </div>
 
-<h2>1 June 2020</h2>
+<h2>12 June 2020</h2>
 <div class="story">
 	<p>The site has been updated to work with phones, something I should have fixed a decade ago and I have added two new pages of content:</p>
 	<ul>
 		<li><a href="<?= $urlPrefix ?>wherewelive/index.php?fuseAction=lisbon">Lisbon</a></li>
 		<li><a href="<?= $urlPrefix ?>artsandculture/index.php?fuseAction=kpop">K-pop!</a></li>
 	</ul>
-	<p>I also added some notes about the update on <a href="<?= $urlPrefix ?>technology/index.php?fuseAction=thisWebSite">This web site</a>.</p>
+	<p>I also added some notes about the update on <a href="<?= $urlPrefix ?>technology/index.php?fuseAction=thisWebSite">This web site</a> and included the two &ldquo;Update from Portugal&rdquo; emails I sent with links to the respective photosets as letters <a href="<?= $urlPrefix ?>letters/index.php?fuseAction=letter20">20</a>  and <a href="<?= $urlPrefix ?>letters/index.php?fuseAction=letter21">21</a> under Newsletters.</p>
 </div>
 
 <h2>29 November 2018</h2>
@@ -89,7 +89,7 @@
 <h2>26 October 2008</h2>
 <div class="story">
 	<p>I ran the Marine Corp Marathon and was thrilled to finish with a time of 3:51:47! Well, I ran most of they way&mdash;I'm a big believer in walking breaks to rest up a little and I took the photo at right during an early stop with a disposable camera.</p>
-	<p>You might be amused by my footwear: Vibram Five Fingers <a href="http://vibramfivefingers.com/products/products_Sprint_m.cfm" target="_blank" class="external" title="Vibram Five Fingers">Sprint</a>! To me there is convincing evidence that running shoes encourage the non-elite runner to a adopt a bad technique which ultimately results in injuries. Of course Nike and the other shoe companies don't want you to think this way. Their solution to injury avoidance is ever more sophisticated and expensive shoes. Ideally we'd run barefoot but this is the next best thing though you have to build up gradually since, unlike the Kenyans and Ethiopians who ran 5 miles barefoot to school each day, the muscles and ligaments inside our feet are weak and the soles of our feet are soft. <a href="http://nymag.com/health/features/46213/" target="_blank" class="external">More &hellip;</a></p>
+	<p>You might be amused by my footwear: Vibram Five Fingers <a href="http://vibramfivefingers.com/products/products_Sprint_m.cfm" target="_blank" class="external" title="Vibram Five Fingers">Sprint</a>! To me there is convincing evidence that running shoes encourage the non-elite runner to a adopt a bad technique which ultimately results in injuries. Of course Nike and the other shoe companies don't want you to think this way. Their solution to injury avoidance is ever more sophisticated and expensive shoes. Ideally we'd run barefoot but this is the next best thing though you have to build up gradually since, unlike the Kenyans and Ethiopians who ran 5 miles barefoot to school each day, the muscles and ligaments inside our feet are weak and the soles of our feet are soft. Read more about why taking of your shoes is the solution to the problem that  <a href="http://nymag.com/health/features/46213/" target="_blank" class="external">You Walk Wrong</a></p>
 </div>
 <? setThumbnail("RunToGeorgetown1.jpg"); ?>
 

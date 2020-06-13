@@ -14,7 +14,7 @@
    <p>I was impressed by Devil's Tower which Lan visited last year with her family.  On the day we visited there were 10 people at various points up the vertical face of the tower and there are about 1000 succesful ascents each year.  It is 260 m from the base to the top but the last 80 or so are not vertical.</p>
    <p class="endText">Those of you who have been on a "beach mission" with me will be surprised to know that we camped in a tent while we were away.  You would think I would have learned how horrible it can be.  We borrowed a tent and survived a thunderstorm that made the tent flap around so much that I worried about having to return the tent in several pieces.  Tent design has improved enormously since the crude things that we used on scout camps.  Just having a sewn-floor makes a huge difference as you can crawl inside and be in a clean environment.  It was very small though with just enought room for our inflatable matress.</p>
 </div>
-<div class="photo-gallery"></div>
+<div class="photo-gallery">
 	<?
 	setThumbnail(["LanMtRushmore1.jpg", "CrazyHorse1.jpg", "MenAtWork1.jpg", "BadlandsSDakota1.jpg", "PetrifiedLog1.jpg", "DevilsTower1.jpg", "Camping1.jpg"]);
 	?>
