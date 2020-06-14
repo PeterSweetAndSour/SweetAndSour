@@ -19,8 +19,7 @@ else {
 	
 switch ($fuseAction) {
 	case "injustice":
-		$heading1Text = "Palestine &ndash <span>No peace until justice</span>";
-		$useInPageHeader = true;
+		$heading1Text = "Palestine<br><span>The victims are now the oppressors</span>";
 		$contentPage = '../artsandculture/dsp_palestine.php';
 		include '../dsp_outline.php';
 		break;

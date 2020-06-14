@@ -54,4 +54,26 @@ Desktop - see also _image-menu.scss.
 		margin-top: -10px;
 		padding-left: 20px;
 	}  
+
+	/* -----------------------------------------------------------------------------------------
+	Error pages
+	------------------------------------------------------------------------------------------ */
+
+	.errorBanner {
+		margin-left: -38px;
+		margin-right: -38px;
+		height: 223px;
+		overflow: hidden;
+
+		&.error401 {
+			background-image: url("../errorhandling/images/barbedwire.jpg");
+		}
+		&.error404 {
+			background-image: url("../errorhandling/images/nothingthere.jpg");
+		}
+		&.error500 {
+			background-image: url("../errorhandling/images/trainderailment.jpg");
+		}
+	}
+
 }

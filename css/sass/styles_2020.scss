@@ -10,7 +10,8 @@
 
 
 /* Note to future self on using inline SVG for Font Awesome icons:
-Download the .zip file and find the file for the icon under svgs > solid. Copy to a text editor and in the path, add
+Download the .zip file from https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself 
+and find the file for the icon under svgs > solid. Copy to a text editor and in the path, add
 	fill="#ffffff" 
 or whatever color is needed. This can't be updated by CSS. Go to https://www.base64encode.org and encode
 it then replace the ... below with the encoded text:

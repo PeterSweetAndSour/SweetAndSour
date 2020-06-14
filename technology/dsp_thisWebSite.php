@@ -1,7 +1,7 @@
 <? 
 //dsp_thisWebSite.php
 ?>
-<h2>2020 Site redesign</h2>
+<h2>2020 Site overhaul</h2>
 <div class="story">
 	<p>Since the last major redesign in 2008 two major things have happened:</p>
 	<ol>

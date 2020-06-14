@@ -5,7 +5,7 @@ Provides photo at top left, heading, subheading, menu and sets a space for the c
 page.
 
 =>| $useAmazonS3       (from config file)    
-=>| $heading2Text
+=>| $heading1Text
 =>| $contentPage       (from relevant case in index.php)
 =>| $displayMenu       (set on sweetandsour_conf.php, override on index.php if necessary)
 =>| $javascriptFile    (optional Javascript file)

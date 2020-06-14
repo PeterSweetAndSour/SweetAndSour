@@ -329,7 +329,7 @@ footer {
   ------------------------------------------------------------------------------------------ */
   .logo {
     font-size: 31px;
-    padding: 10px 10px 0 0;
+    padding: 12px 10px 0 0;
   }
   .logo > a {
     color: #fff;
@@ -344,12 +344,12 @@ footer {
   }
 
   /* -----------------------------------------------------------------------------------------
-  	Open/close navigation
-  	------------------------------------------------------------------------------------------ */
+  Open/close navigation
+  ------------------------------------------------------------------------------------------ */
   label.menu {
     position: absolute;
     z-index: 2;
-    top: 20px;
+    top: 22px;
     left: 11px;
     width: 44px;
     height: 44px;
@@ -414,6 +414,7 @@ footer {
   }
   nav li {
     position: relative;
+    margin-bottom: 0;
   }
   nav li > a,
 nav li label {
@@ -498,8 +499,57 @@ nav ul.menu3 > li > label {
   }
 
   /* -----------------------------------------------------------------------------------------
-
+  Error pages
   ------------------------------------------------------------------------------------------ */
+  .errorBanner {
+    margin: -19px -20px 0;
+    height: 0;
+    padding-top: 23.32%;
+    overflow: hidden;
+    background-size: 100%;
+  }
+  .errorBanner.error401 {
+    background-image: url("../errorhandling/images/barbedwire.jpg");
+  }
+  .errorBanner.error404 {
+    background-image: url("../errorhandling/images/nothingthere.jpg");
+  }
+  .errorBanner.error500 {
+    background-image: url("../errorhandling/images/trainderailment.jpg");
+  }
+
+  /* -----------------------------------------------------------------------------------------
+  Error page link to home
+  ------------------------------------------------------------------------------------------ */
+  a.mobileLinkToHome {
+    /* Definitely repeating myself here. */
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 22px;
+    left: 11px;
+    width: 44px;
+    height: 44px;
+    overflow: hidden;
+    color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    background-position: 10px 4px;
+    /* Font Awesome 'home' */
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmZmZmYiIHZpZXdCb3g9IjAgMCA1NzYgNTEyIj48cGF0aCBkPSJNMjgwLjM3IDE0OC4yNkw5NiAzMDAuMTFWNDY0YTE2IDE2IDAgMCAwIDE2IDE2bDExMi4wNi0uMjlhMTYgMTYgMCAwIDAgMTUuOTItMTZWMzY4YTE2IDE2IDAgMCAxIDE2LTE2aDY0YTE2IDE2IDAgMCAxIDE2IDE2djk1LjY0YTE2IDE2IDAgMCAwIDE2IDE2LjA1TDQ2NCA0ODBhMTYgMTYgMCAwIDAgMTYtMTZWMzAwTDI5NS42NyAxNDguMjZhMTIuMTkgMTIuMTkgMCAwIDAtMTUuMyAwek01NzEuNiAyNTEuNDdMNDg4IDE4Mi41NlY0NC4wNWExMiAxMiAwIDAgMC0xMi0xMmgtNTZhMTIgMTIgMCAwIDAtMTIgMTJ2NzIuNjFMMzE4LjQ3IDQzYTQ4IDQ4IDAgMCAwLTYxIDBMNC4zNCAyNTEuNDdhMTIgMTIgMCAwIDAtMS42IDE2LjlsMjUuNSAzMUExMiAxMiAwIDAgMCA0NS4xNSAzMDFsMjM1LjIyLTE5My43NGExMi4xOSAxMi4xOSAwIDAgMSAxNS4zIDBMNTMwLjkgMzAxYTEyIDEyIDAgMCAwIDE2LjktMS42bDI1LjUtMzFhMTIgMTIgMCAwIDAtMS43LTE2LjkzeiIvPjwvc3ZnPg==");
+  }
+  a.mobileLinkToHome:after {
+    content: "HOME";
+    display: block;
+    position: relative;
+    top: 25px;
+    left: 2px;
+    color: white;
+    font-size: 12px;
+  }
 }
 /* ***********************************************
 Desktop - see also _image-menu.scss.
@@ -552,6 +602,25 @@ Desktop - see also _image-menu.scss.
     font-style: italic;
     margin-top: -10px;
     padding-left: 20px;
+  }
+
+  /* -----------------------------------------------------------------------------------------
+  Error pages
+  ------------------------------------------------------------------------------------------ */
+  .errorBanner {
+    margin-left: -38px;
+    margin-right: -38px;
+    height: 223px;
+    overflow: hidden;
+  }
+  .errorBanner.error401 {
+    background-image: url("../errorhandling/images/barbedwire.jpg");
+  }
+  .errorBanner.error404 {
+    background-image: url("../errorhandling/images/nothingthere.jpg");
+  }
+  .errorBanner.error500 {
+    background-image: url("../errorhandling/images/trainderailment.jpg");
   }
 }
 /**************************************************************
@@ -1002,7 +1071,8 @@ textarea {
 }
 
 /* Note to future self on using inline SVG for Font Awesome icons:
-Download the .zip file and find the file for the icon under svgs > solid. Copy to a text editor and in the path, add
+Download the .zip file from https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself 
+and find the file for the icon under svgs > solid. Copy to a text editor and in the path, add
 	fill="#ffffff" 
 or whatever color is needed. This can't be updated by CSS. Go to https://www.base64encode.org and encode
 it then replace the ... below with the encoded text:
