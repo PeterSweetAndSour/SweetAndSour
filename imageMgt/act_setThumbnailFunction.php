@@ -25,7 +25,7 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 		$photoNames = array($photoNames);
 	}
 
-	$classString = ' class="' . ($cssClass ? $cssClass : 'figure--thumbnail"' . '"');
+	$classString = ' class="' . ($cssClass ? $cssClass  . '"' : 'figure--thumbnail"');
 
 	//Find the information related to this photo, or these photos.
 	$photos = getPhotoInfo($photoNames);
