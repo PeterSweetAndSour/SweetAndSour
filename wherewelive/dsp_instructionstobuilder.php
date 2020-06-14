@@ -16,7 +16,7 @@
 						<li>2011-02-06: &nbsp;&nbsp;&nbsp;Revise drawings of new bathroom to show medicine cabinet above toilet.</li>
 						<li>2011-02-02: &nbsp;&nbsp;&nbsp;Specify medicine cabinet for new bathroom</li>
 						<li>2011-01-27: &nbsp;&nbsp;&nbsp;New bathroom now shows towel rails, soap and toilet roll holders.</li>
-						<li>2011-01-22: &nbsp;&nbsp;&nbsp;New bathroom shortened to 117�" inside tiles to reflect as-built construction; shower nozzle and control moved to east wall; specify shorter bathroom vanity</li>
+						<li>2011-01-22: &nbsp;&nbsp;&nbsp;New bathroom shortened to 117" inside tiles to reflect as-built construction; shower nozzle and control moved to east wall; specify shorter bathroom vanity</li>
 						<li>2011-01-21: &nbsp;&nbsp;&nbsp;Remove new bathroom vanity and medicine cabinet. Shower is wider than 32" as I was expecting so it now won't fit.</li>
 						<li>2011-01-17: &nbsp;&nbsp;&nbsp;Select medicine cabinet (actually cabinets) for new bathroom</li>
 						<li>2011-01-16: 
@@ -268,7 +268,7 @@
 			<h4>Half bathroom </h4>
 			<div class="story">
 				<p>Will be white tile with blue trim line on wall and on floor: <a target="_blank" href="images/instructions/HalfBathroomTiles_v2.jpg">view through door</a></p>
-				<p>To calculate tile quantities, the bathroom is assumed to be 37�" x 5' with a 24" door with 3" trim <span style="color:red; font-weight:bold">but measure and double-check my calculations</span>! </p>
+				<p>To calculate tile quantities, the bathroom is assumed to be 37" x 5' with a 24" door with 3" trim <span style="color:red; font-weight:bold">but measure and double-check my calculations</span>! </p>
 				<p>All the white tiles are from Morris Tile and style "Ice White"  (same as new bathroom).<br />
 				Blue glass tiles are <a target="_blank" href="http://www.lowes.com/pd_294369-87523-CHIGLABR206_0__?productId=3084795&Ntt=britto+tiles&pl=1&currentURL=%2Fpl__0__s%3FNtt%3Dbritto%2Btiles">Britto Elite Cielo</a> from Lowes though I think Morris carried them too (same as new bathroom). I've shown them <strong>36" (4 tiles + base) above the floor</strong>.</p>
 				<table>

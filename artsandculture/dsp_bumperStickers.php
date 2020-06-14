@@ -41,7 +41,7 @@
 
 <h3>Politics</h3>
 <div class="story">
-   <p>Since the election is just a few weeks away, perhaps we should start with politics.� It is obvious that someone who puts a sticker on their car that says <span class="sticker">George W. Bush for President</span> or <span class="sticker">Gore 2000</span> wants you to vote with them for their preferred candidate. However, I'm more interested in the witty stickers that seek to advance one candidate by trivializing the other.</p>
+   <p>Since the election is just a few weeks away, perhaps we should start with politics. It is obvious that someone who puts a sticker on their car that says <span class="sticker">George W. Bush for President</span> or <span class="sticker">Gore 2000</span> wants you to vote with them for their preferred candidate. However, I'm more interested in the witty stickers that seek to advance one candidate by trivializing the other.</p>
    <p>The only interesting one I've seen so far in this campaign is <span class="sticker">Al Gore is a risky scheme</span> picking up on comments he made in the campaign.</p>
    <p>Or consider this from 1996, <span class="sticker">Dole for Pineapple</span></p>
 </div>
@@ -79,7 +79,7 @@
 <div class="story">
    <p>Of course, women own cars as well, and also have opinions to express:</p>
    <ul>
-   	<li>Picking up on the hit song that became an anthem of liberation, <span class="sticker">I am stong.� I am invincible.� I am TIRED.</span></li>
+   	<li>Picking up on the hit song that became an anthem of liberation, <span class="sticker">I am stong. I am invincible. I am TIRED.</span></li>
    	<li><span class="sticker">Human milk for human babies</span> to promote breast feeding.</li>
    	<li>Or how about this: <span class="sticker">I still miss my ex. &dash; but my aim is improving.</span></li>
    	<li>Perhaps some are better off not to express an opinion: <span class="sticker">Blondes are NOT dumb!</span> (upside down).</li>
