@@ -49,9 +49,21 @@ include '../imageMgt/act_setThumbnailFunction.php';
 	?>
 	<link rel="shortcut icon" type="images/x-icon" href="<?= $urlPrefix ?>favicon.ico" />
 
-	<link rel="stylesheet" type="text/css" href="../css/styles_2020.css" />
-	<link rel="stylesheet" type="text/css" href="../css/photoswipe.css" />
-	<link rel="stylesheet" type="text/css" href="../css/default-skin/default-skin.css" />
+	<? 
+	if($compress) {
+		?>
+		<link rel="stylesheet" type="text/css" href="../css/combined.min.css" />
+		<?
+	}
+	else {
+		?>
+		<link rel="stylesheet" type="text/css" href="../css/styles_2020.css" />
+		<link rel="stylesheet" type="text/css" href="../css/photoswipe.css" />
+		<link rel="stylesheet" type="text/css" href="../css/default-skin/default-skin.css" />
+		<?
+	}
+	?>
+
 </head>
 <?php flush(); ?>
 <body class="<?= $bodyClass ?><?= $mediaSource ?>">
@@ -106,19 +118,24 @@ include '../imageMgt/act_setThumbnailFunction.php';
 	
 	<? 
 	include '../includes/dsp_photoswipe.php';
-	?>
-	
-	<script src="../js/combined.js"></script>
-	<!--
-	<script src="../js/mobile-navigation.js"></script>
-	<script src="../js/desktop-navigation.js"></script>
-	<script src="../js/common_2020.js"></script>
 
-	<script src="../js/photoswipe.js"></script>
-	<script src="../js/photoswipe-ui-default.js"></script>
-	<script src="../js/photoswipe_setup.js"></script>
-	-->
-	<?
+	if($compress) {
+		?>
+		<script src="../js/combined.min.js"></script>
+		<?
+	}
+	else {
+		?>
+		<script src="../js/mobile-navigation.js"></script>
+		<script src="../js/desktop-navigation.js"></script>
+		<script src="../js/common_2020.js"></script>
+
+		<script src="../js/photoswipe.js"></script>
+		<script src="../js/photoswipe-ui-default.js"></script>
+		<script src="../js/photoswipe_setup.js"></script>
+		<?
+	}
+
 	/* Extra js files for specific pages may have been added on index.php files */
 	foreach ($jsFiles as $file) {
 		if (strncmp(trim($file), "<script", 7) === 0) {

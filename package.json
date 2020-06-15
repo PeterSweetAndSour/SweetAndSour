@@ -32,5 +32,8 @@
       "type": "MIT",
       "url": "http://www.opensource.org/licenses/mit-license.php"
     }
-  ]
+  ],
+  "dependencies": {
+    "grunt-contrib-uglify-es": "github:gruntjs/grunt-contrib-uglify#harmony"
+  }
 }

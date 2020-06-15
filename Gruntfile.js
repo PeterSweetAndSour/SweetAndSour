@@ -13,16 +13,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		concat: {
-			options: {
-				separator: ';',
-			},
-			dist: {
-				src: ['js/mobile-navigation.js', 'js/desktop-navigation.js', 'js/common_2020.js', 'js/photoswipe.js', 'js/photoswipe-ui-default.js', 'js/photoswipe_setup.js'],
-				dest: 'js/combined.js'
-			},
-		},
-
 		sass: {                              // Task
 			dist: {                          // Target
 				options: {                   // Target options
@@ -34,12 +24,45 @@ module.exports = function(grunt) {
 			}
 		},
 
+		/*
+		concat: {
+			options: {
+			},
+			dist: {
+			},
+		},
+		*/
+
 		cssmin: { // minifying css task
 			dist: {
 				files: {
-					'css/styles_2020.min.css': 'css/styles_2020.css'
+					'css/combined.min.css': 
+					[
+						'css/styles_2020.css',
+						'css/photoswipe.css',
+						'css/default-skin/default-skin.css'
+					]
 				}
 			}
+		},
+
+	
+		uglify: { 
+			options: { 
+				compress: true,
+				sourceMap: true
+			}, 
+			applib: { 
+				src: [
+					'js/mobile-navigation.js', 
+					'js/desktop-navigation.js', 
+					'js/common_2020.js', 
+					'js/photoswipe.js', 
+					'js/photoswipe-ui-default.js', 
+					'js/photoswipe_setup.js'
+				], 
+				dest: 'js/combined.min.js'  
+			} 
 		},
 		  
 		jshint: {
@@ -60,20 +83,21 @@ module.exports = function(grunt) {
 			},
 			js: {
 				files: 'js/*.js',
-				tasks: ['jshint', 'concat']
+				tasks: ['jshint', 'uglify']
 			}
 		}
 	});
 	 
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-concat');
+	// grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-contrib-uglify-es');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task
-	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'jshint', 'concat']);
+	grunt.registerTask('default', ['sass', 'autoprefixer', 'cssmin', 'jshint', 'uglify']); // , 'concat'
 	grunt.registerTask('default', ['watch']);
 }
