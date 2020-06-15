@@ -6,6 +6,7 @@
   src: local("?"), url("fonts/Chowfun.woff") format("woff"), url("fonts/Chowfun.ttf") format("truetype"), url("fonts/Chowfun.svg") format("svg");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 /* From https://dev.to/hankchizljaw/a-modern-css-reset-6p3 */
 /* Remove default padding */
