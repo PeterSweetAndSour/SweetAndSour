@@ -209,7 +209,7 @@
 </div>
 
 <h3>G-Dragon</h3>
-<p class="subtitle">(Also rom Big Bang)</p>
+<p class="subtitle">(Also from Big Bang)</p>
 <div class="story">
 	<p>He and Taeyang started as trainees when they were 12! I have to include two versions:</p>
 	<ul>
@@ -283,7 +283,7 @@
 			The girl in Astro's music video for <em>Breathless</em> is Yoo-jung and reading the comments I saw that she was a member of <strong>Weki Meki</strong>. At the time, they had released <em>Crush</em> which has this <a href="https://www.youtube.com/watch?v=bT2AMc8hI6A" target="_blank" class="external">music video</a> but again, they are best seen in the <a href="https://www.youtube.com/watch?v=wzoZRUnk1Xc" target="_blank" class="external">dance practice</a>. Great song!
 		</li>
 		<li>
-			One of my all-time favorite K-pop songs! <a href="https://www.youtube.com/watch?v=T9D6n-2afnM&amp;sa=D&amp;ust=1590612821758000">True valentine</a>(dance practice)
+			One of my all-time favorite K-pop songs! <a href="https://www.youtube.com/watch?v=T9D6n-2afnM&amp;sa=D&amp;ust=1590612821758000">True valentine</a> (dance practice)
 		</li>
 		<li><a href="https://www.youtube.com/watch?v=5DKU9GXibOU" target="_blank" class="external">Do whatever you want</a> (dance practice)</li>
 		<li><a href="https://www.youtube.com/watch?v=RTeOt6n90vM" target="_blank" class="external">Dazzle Dazzle</a></li>

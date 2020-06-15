@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en"  class="nav-no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>
+		Forbidden (Error 403) 
+		[Sweet and Sour]
+	</title>
+	
+	<link rel="shortcut icon" type="images/x-icon" href="https://www.sweetandsour.org/favicon.ico" />
+	
+	<link rel="stylesheet" type="text/css" href="https://www.sweetandsour.org/css/styles_2020.css" />
+</head>
+<body class="errorHandling mediaFromLocal">
+	<a id="top"></a>
+		<div class="page">
+			<header>
+				<p class="logo"><a href="http://www.sweetandsour.org/home" title="Go to home page">Sweet and Sour</a></p>
+				<p class="tagline">One is sweet and the other is &hellip; a web developer</p>
+				<p class="sr-only"><a href="#content" title="Jump to content">Jump to content</a></p><!-- Hidden except for screen readers -->
+			</header>	
+		
+			<main>
+				<a class="mobileLinkToHome" href="http://www.sweetandsour.org/home"></a>
+
+				<div class="errorBanner error403"></div>
+
+				<h1>Forbidden <span>(Error 403)</span></h1>
+
+				<div class="story">
+					<p>Sorry, you aren't allowed in there, at least not with the username/password you entered.</p>
+					<p>Click the Back button to try again, or go to the <a href="http://www.sweetandsour.org/home" title="Home page">home page</a> and start over.</p>
+				</div>
+			</main>
+			<footer>
+				<!-- Copyright notice. -->
+				<p class="copyright">&copy; 2020. This page was last updated sometime before you viewed it.</p>
+			</footer>
+	   	</div>
+	</body>
+</html>

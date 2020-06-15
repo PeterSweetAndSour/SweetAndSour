@@ -119,16 +119,26 @@ Overlay and loading graphic
 	display: none;
 }
   
-/* -----------------------------------------------------------------------------------------
-Miscellaneous
------------------------------------------------------------------------------------------- */
+	/* -----------------------------------------------------------------------------------------
+	Error pages
+	------------------------------------------------------------------------------------------ */
 
-/* Used to indicate text of bumper sticker. */
-.sticker {
-	color: #006666;
-	font-style: italic;
-	font-weight: bold;
-}
+	.errorBanner {
+		&.error401,
+		&.error403 {
+			background-image: url("../errorhandling/images/barbedwire.jpg");
+		}
+		&.error404 {
+			background-image: url("../errorhandling/images/nothingthere.jpg");
+		}
+		&.error500 {
+			background-image: url("../errorhandling/images/trainderailment.jpg");
+		}
+	}
+
+/* -----------------------------------------------------------------------------------------
+CSS triangles for end of page navigation
+------------------------------------------------------------------------------------------ */
 
 .footnotes {
 	margin-top: 1em;
@@ -194,6 +204,17 @@ Miscellaneous
 		border-left-width: 7px;
 		border-bottom: 12px solid #f80;
 	}
+}
+
+/* -----------------------------------------------------------------------------------------
+Miscellaneous
+------------------------------------------------------------------------------------------ */
+
+/* Used to indicate text of bumper sticker. */
+.sticker {
+	color: #006666;
+	font-style: italic;
+	font-weight: bold;
 }
 
 .copyright {

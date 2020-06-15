@@ -207,7 +207,7 @@ Mobile
 		height: 1000px; /* Reset to document height if Javascript is working. */
 	}
 
-		/* -----------------------------------------------------------------------------------------
+	/* -----------------------------------------------------------------------------------------
 	Error pages
 	------------------------------------------------------------------------------------------ */
 
@@ -217,21 +217,8 @@ Mobile
 		padding-top: 23.32%;
 		overflow: hidden;
 		background-size: 100%;
-
-		&.error401 {
-			background-image: url("../errorhandling/images/barbedwire.jpg");
-		}
-		&.error404 {
-			background-image: url("../errorhandling/images/nothingthere.jpg");
-		}
-		&.error500 {
-			background-image: url("../errorhandling/images/trainderailment.jpg");
-		}
 	}
 
-	/* -----------------------------------------------------------------------------------------
-	Error page link to home
-	------------------------------------------------------------------------------------------ */
 	a.mobileLinkToHome { /* Definitely repeating myself here. */
 		display: block;
 		position: absolute;

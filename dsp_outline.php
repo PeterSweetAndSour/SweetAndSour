@@ -58,7 +58,7 @@ include '../imageMgt/act_setThumbnailFunction.php';
 	<a id="top"></a>
 	<div class="page">
 		<header>
-			<p class="logo"><a href="<?= $homeUrl ?>home/index.php" title="Go to home page">Sweet and Sour</a></p>
+			<p class="logo"><a href="<?= $homeUrl ?>home" title="Go to home page">Sweet and Sour</a></p>
 			<p class="tagline">One is sweet and the other is &hellip; a web developer</p>
 			<p class="sr-only"><a href="#content" title="Jump to content">Jump to content</a></p><!-- Hidden except for screen readers -->
 			<? 
@@ -75,7 +75,7 @@ include '../imageMgt/act_setThumbnailFunction.php';
 			?>
 		</header>	
 	
-		<main>
+		<main id="content">
 			<?
 			if($useInPageHeader == true) {
 				; // Do nothing

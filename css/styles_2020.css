@@ -220,15 +220,21 @@ Overlay and loading graphic
 }
 
 /* -----------------------------------------------------------------------------------------
-Miscellaneous
+Error pages
 ------------------------------------------------------------------------------------------ */
-/* Used to indicate text of bumper sticker. */
-.sticker {
-  color: #006666;
-  font-style: italic;
-  font-weight: bold;
+.errorBanner.error401, .errorBanner.error403 {
+  background-image: url("../errorhandling/images/barbedwire.jpg");
+}
+.errorBanner.error404 {
+  background-image: url("../errorhandling/images/nothingthere.jpg");
+}
+.errorBanner.error500 {
+  background-image: url("../errorhandling/images/trainderailment.jpg");
 }
 
+/* -----------------------------------------------------------------------------------------
+CSS triangles for end of page navigation
+------------------------------------------------------------------------------------------ */
 .footnotes {
   margin-top: 1em;
   border-top: 1px solid #999;
@@ -293,6 +299,16 @@ Miscellaneous
   border-right-width: 7px;
   border-left-width: 7px;
   border-bottom: 12px solid #f80;
+}
+
+/* -----------------------------------------------------------------------------------------
+Miscellaneous
+------------------------------------------------------------------------------------------ */
+/* Used to indicate text of bumper sticker. */
+.sticker {
+  color: #006666;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .copyright {
@@ -508,19 +524,7 @@ nav ul.menu3 > li > label {
     overflow: hidden;
     background-size: 100%;
   }
-  .errorBanner.error401 {
-    background-image: url("../errorhandling/images/barbedwire.jpg");
-  }
-  .errorBanner.error404 {
-    background-image: url("../errorhandling/images/nothingthere.jpg");
-  }
-  .errorBanner.error500 {
-    background-image: url("../errorhandling/images/trainderailment.jpg");
-  }
 
-  /* -----------------------------------------------------------------------------------------
-  Error page link to home
-  ------------------------------------------------------------------------------------------ */
   a.mobileLinkToHome {
     /* Definitely repeating myself here. */
     display: block;
@@ -612,15 +616,6 @@ Desktop - see also _image-menu.scss.
     margin-right: -38px;
     height: 223px;
     overflow: hidden;
-  }
-  .errorBanner.error401 {
-    background-image: url("../errorhandling/images/barbedwire.jpg");
-  }
-  .errorBanner.error404 {
-    background-image: url("../errorhandling/images/nothingthere.jpg");
-  }
-  .errorBanner.error500 {
-    background-image: url("../errorhandling/images/trainderailment.jpg");
   }
 }
 /**************************************************************
