@@ -124,7 +124,7 @@ Mobile
 				padding: 8px 0 0 0;
 				font-size: 20px;
 				text-decoration: none;
-				border-bottom: 1px solid $blueTint3;
+				border-top: 1px solid $blueTint3;
 			}
 			&.hasChildren > a {
 				display: none
@@ -164,6 +164,13 @@ Mobile
 					display: block;
 				}
 			}
+		}
+
+		.menu1 > li:first-child > a {
+			border-top-style: none;
+		}
+		.menu1 > li:last-child > a {
+			border-bottom: 1px solid $blueTint3;
 		}
 		.menu2 {
 			margin-left: 60px;

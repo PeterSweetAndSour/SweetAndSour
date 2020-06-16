@@ -442,7 +442,7 @@ nav li label {
     padding: 8px 0 0 0;
     font-size: 20px;
     text-decoration: none;
-    border-bottom: 1px solid #A1BCD8;
+    border-top: 1px solid #A1BCD8;
   }
   nav li.hasChildren > a {
     display: none;
@@ -477,6 +477,12 @@ nav li label {
   }
   nav li > input:checked ~ ul {
     display: block;
+  }
+  nav .menu1 > li:first-child > a {
+    border-top-style: none;
+  }
+  nav .menu1 > li:last-child > a {
+    border-bottom: 1px solid #A1BCD8;
   }
   nav .menu2 {
     margin-left: 60px;
