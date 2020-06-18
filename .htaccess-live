@@ -15,8 +15,11 @@ RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
 RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^/?$ "https\:\/\/sweetandsour\.org\/home\/index\.php\?fuseAction\=welcome" [R=301,L]
 
-# RewriteRule ^([a-zA-Z]+)/([a-zA-Z0-9]+)\/?$ $1/index.php?fuseAction=$2 [PT]
+# Human friendly URLs need to be translated internally so the server knows how to handle requests.
+RewriteCond %{HTTP_HOST}" "sweetandsour.org"
+RewriteRule ^([a-z]+)/([a-zA-Z0-9-]+)/?$ /$1/index.php?fuseAction=$2 [PT,NC]
 
-RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^http://(www.)?sweetandsour.org.*$      [NC]
-RewriteRule .*\.(jpg|gif|png|pdf)$ - [F,NC]
+# Prevent hot linking of images and PDFs
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteCond %{HTTP_REFERER} !^http://(www.)?sweetandsour.org.*$      [NC]
+#RewriteRule .*\.(jpg|gif|png|pdf)$ - [F,NC]

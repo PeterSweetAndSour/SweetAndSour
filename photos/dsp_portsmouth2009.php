@@ -8,7 +8,7 @@
 	I hadn't and it died almost immediately so all but a half-dozen pictures were taken with my mobile phone which means
 	the color is a bit weird sometimes and since there is no zoom, some objects of interest are still in the distance. Sorry.</p>
 </div>
-<div class="photoAlbum">
+<div class="photo-gallery">
 	<?
 	setThumbnail([
 		"MapMaineTripSm.jpg",
