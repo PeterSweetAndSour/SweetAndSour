@@ -34,6 +34,7 @@
 	&lt;/If&gt;
 	</pre>
 	<p>but in practice it just gave me server errors. If you can explain why, do let me know.</p>
+	<p>My developer friends might be amused that I made <a href="https://github.com/PeterSweetAndSour/SweetAndSour/commits/2020_overhaul" target="_blank" class="external">100+ commits</a> in updating this site plus another <a href="https://github.com/PeterSweetAndSour/PhotoSwipe/commits/allow_long_captions" target="_blank" class="external">40+ commits</a> modifying the Photoswipe image slider to work with long captions.</p>
 
 	<p>Everything below is probably no longer relevant but is retained for historical purposes&hellip;</p>
 	<hr>
