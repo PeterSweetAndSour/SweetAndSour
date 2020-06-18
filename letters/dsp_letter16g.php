@@ -20,7 +20,7 @@
 </div>
 
 <div class="story">
-	<p>Previous: <a class="previousPage" href="index.php?fuseAction=letter16f">France, part 3</a></p>
+	<p>Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter16f">France, part 3</a></p>
 </div>
 
 <div class="story footnotes">

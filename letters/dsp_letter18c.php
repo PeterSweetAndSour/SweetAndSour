@@ -36,7 +36,7 @@
 </div>
 
 <div class="story">
-   <p>Previous: <a class="previousPage" href="index.php?fuseAction=letter18b">Sightseeing</a></p>
+   <p>Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter18b">Sightseeing</a></p>
 </div>
 
 <div class="story footnotes">

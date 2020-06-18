@@ -13,8 +13,8 @@
 Download the .zip file from https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself 
 and find the file for the icon under svgs > solid. Copy to a text editor and in the path, add
 	fill="#ffffff" 
-or whatever color is needed. This can't be updated by CSS. Go to https://www.base64encode.org and encode
-it then replace the ... below with the encoded text:
+or whatever color is needed to the <path>. This can't be updated by CSS. Go to https://www.base64encode.org and
+encode it then replace the ... below with the encoded text:
 	background-image: url("data:image/svg+xml;base64,..."); 
 Also specify background-size.
 */ 

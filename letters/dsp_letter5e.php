@@ -6,7 +6,7 @@
    <p>Australia and Canada tie for 2nd place for computer penetration.  In the US there are 0.319 computers per person.  For Australia, it is 0.221.</p>
    <p>15 years ago, college graduates earned 50% more than those who had only a high school education; now the difference is 96%</p>
    <p><i>Newsweek</i> mentioned that there are twice as many lawyers in the Washington DC metropolitan are than all of Japan.  Someone at work told me that there are 10 law graduates in America for each engineer; in Singapore, the opposite is true.</p>
-   <p>General Motors is going to start selling the Impact electric car later this year in Southern California and Arizona (it became the <a href="<?=$rootRelativeUrl ?>technology/index.php?fuseAction=cars2">EV1</a>).</p>
+   <p>General Motors is going to start selling the Impact electric car later this year in Southern California and Arizona (it became the <a href="<?= $rootRelativeUrl ?>technology/cars2">EV1</a>).</p>
    <p>Once a letter goes into the letter box, only Post Office employees are allowed to touch it.  Last year a Post Office truck crashed and letters started blowing away.  Police officers tried to stand in the way of letters hoping they would blow up against their legs - even they couldn't be more interventionist and actually pick them up.</p>
    <p>Voter turnout for the 1994 Congressional elections which ushered in the "Republican Revolution" was just 38%.</p>
    <p>US weapons sales for 1986-89 at the end of the cold war were $34.5 billion; the US had a 15% market share, the Soviets had 65%.  Sales for 1991-94 were up 140% to $83.1 billion and the market shares are now reversed.</p>
@@ -35,7 +35,7 @@
 </div>
 
 <div class="story">
-   <p>Previous: <a class="previousPage" href="index.php?fuseAction=letter5d">Life in America</a></p>
+   <p>Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter5d">Life in America</a></p>
 </div>
 
 

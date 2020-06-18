@@ -55,10 +55,6 @@
 	<p>Note that if you are running YSlow in Firebug, it does not know that sweetandsour.org.s3.amazonaws.com is a CDN so it unfairly assigns an &ldquo;F&rdquo; grade.</p>
 	<p>I struggled with S3Fox to set headers and eventually gave up. I never could figure out the syntax it wanted and couldn't find any on the internet. Instead, I found <a href="http://www.cloudberrylab.com/" target="_blank" class="external">Cloudberry Explorer</a> and have now set an Expires header for the end of the year.</p>
 	<p>One limitation of S3 is that it isn't a web server able to negotiate with the user agent on whether to send compressed files. I moved the CSS and JS back to my server where I can run mod_deflate.</p>
-	<!--
-	<h4>Results</h4>
-	<p>Loading the page with pictures of my <a href="http://www.sweetandsour.org/photos/index.php?fuseAction=aust2007">2007 trip back home</a> with a cleared cache three times took 9.5, 7.9 and 8.2 seconds with the old system. 
-	-->
 </div>
 
 <h2>2008 Site redesign</h2>

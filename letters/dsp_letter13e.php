@@ -63,5 +63,5 @@
 </div>
 
 <div class="story">
-   <p>Previous: <a class="previousPage" href="index.php?fuseAction=letter13d">Travels, part 3</a></p>
+   <p>Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter13d">Travels, part 3</a></p>
 </div>

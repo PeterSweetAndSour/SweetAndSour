@@ -21,7 +21,7 @@ switch ($fuseAction) {
 	case "welcome":
 		$heading1Text = "Welcome";
 		$contentPage = 'dsp_welcome.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 		
 	// Default case.

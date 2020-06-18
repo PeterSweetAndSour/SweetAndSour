@@ -20,18 +20,18 @@ switch ($fuseAction) {
 	case "whoWeAre":
 		$heading1Text = "About Us";
 		$contentPage = 'dsp_whoWeAre.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 	case "oldPhotosLan":
 		$heading1Text = "Old Photos &ndash; Lan";
 		$contentPage = 'dsp_oldPhotosLan.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 	case "oldPhotosPeter":
 		$heading1Text = "Old Photos &ndash; Peter";
 		$contentPage = 'dsp_oldPhotosPeter.php';
 		$showToTopLink = false;  //Page too short to include "To top" link.
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 		
 

@@ -25,7 +25,7 @@ setThumbnail("AcrobatIcon_Ltr19.gif", $rootRelativeUrl . "files/Letter19_Ltr.pdf
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php?fuseAction=letter19b">Out and about elsewhere</a></p>
+   <p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter19b">Out and about elsewhere</a></p>
 </div>
 
 <div class="story footnotes">

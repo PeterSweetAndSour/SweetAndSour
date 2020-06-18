@@ -17,15 +17,13 @@
 	<p>I finally finished my Aassociate degree at the community college but I've given up on getting a real qualification, at least for the moment. I completed three subjects at the University of Colorado at Denver but they were only prerequisites to enter their Masters program that is essentially the same as the Bachelors degree in Computer Science but with the maths and science removed. However. I was finding it increasingly difficult to study material I knew I would never use, such as assembly language, when there was so much to learn that can be used immediately.</p>
 	<p class="endText">I normally think that following sports is a complete waste of time but I make an exception every four years for the World Cup. To paraphrase someone speaking about playing for the English national championships, soccer is not a matter of life or death; it&apos;s more important than that. With that in mind, I enjoyed watching the World Cup coverage&mdash;in Spanish! The ABC network had the rights to broadcast the games in America but they showed it live on cable TV only. Few Americans care and indeed in the first Sunday newspaper after the tournament started, coverage began on page 20 of the sports section following the baseball, basketball, golf, ice ho</p>
 </div>
-
-<?
-setThumbnail("AcrobatIcon_Ltr15.gif", $rootRelativeUrl . "files/Letter15.pdf");
-setThumbnail("Thunderbirds1.jpg");
-setThumbnail("USMap1.gif");
-setThumbnail("RockyMtnNP1.jpg");
-setThumbnail("IceFountain1.jpg");
-?>
+<div class="photo-gallery">
+	<?
+	setThumbnail("AcrobatIcon_Ltr15.gif", $rootRelativeUrl . "files/Letter15.pdf");
+	setThumbnail(["Thunderbirds1.jpg", "USMap1.gif", "RockyMtnNP1.jpg", "IceFountain1.jpg"]);
+	?>
+</div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php?fuseAction=letter15b">New Orleans</a></p>
+   <p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter15b">New Orleans</a></p>
 </div>

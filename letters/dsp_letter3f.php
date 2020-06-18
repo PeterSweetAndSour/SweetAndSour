@@ -16,5 +16,5 @@
 </div>
 
 <div class="story">
-   <p>Previous: <a class="previous" href="index.php?fuseAction=letter3e">In brief</a></p>
+   <p>Previous: <a class="previous" href="<?= $rootRelativeUrl ?>letters/letter3e">In brief</a></p>
 </div>

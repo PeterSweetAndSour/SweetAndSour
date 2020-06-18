@@ -21,14 +21,14 @@ switch ($fuseAction) {
 	case "kpop";
 		$heading1Text = "K-pop!";
 		$contentPage = 'dsp_k-pop.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 
 	//Aussie rock and roll
 	case "rockAndRoll":
 		$heading1Text = "Aussie rock and roll";
 		$contentPage = 'dsp_rockAndRollAU.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 	
 	//Humor
@@ -36,22 +36,22 @@ switch ($fuseAction) {
 		$heading1Text = "British TV comedies";
 		include '../includes/act_setVideo.php';
 		$contentPage = 'dsp_humor1.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 	case "humor2":
 		$heading1Text = "Other TV";
 		$contentPage = 'dsp_humor2.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 	case "humor3":
 		$heading1Text = "Men and Women";
 		$contentPage = 'dsp_humor3.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 	case "humor4":
 		$heading1Text = "Random";
 		$contentPage = 'dsp_humor4.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 	case "finance";
 		include 'dsp_finance.html';
@@ -62,22 +62,22 @@ switch ($fuseAction) {
 	case "farnsworth";
 		$heading1Text = "Philo T. Farnsworth:<br /><span>The (forgotten) inventor of television</span>";
 		$contentPage = 'dsp_farnsworth.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 	case "bumperStickers";
 		$heading1Text = "Bumper stickers<br /><span>Wisdom in ten words or less</span>";
 		$contentPage = 'dsp_bumperStickers.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 	case "palestine";
 		$heading1Text = "Palestinine<br /><span>The victims are now the oppressors</span>";
 		$contentPage = 'dsp_palestine.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 	case "genocide";
 		$heading1Text = "Remembering two other genocides<br/><span>Sadly, the Jews are not alone</span>";
 		$contentPage = 'dsp_genocide.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 
 	
@@ -85,7 +85,7 @@ switch ($fuseAction) {
 	case "callsForJustice";
 		$heading1Text = "Calls for Justice";
 		$contentPage = 'dsp_callsForJustice.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 
 
@@ -93,7 +93,7 @@ switch ($fuseAction) {
 	case "readingPlan":
 		$heading1Text = "Lifetime Reading Plan";
 		$contentPage = 'dsp_readingPlan.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 		
 
@@ -101,7 +101,7 @@ switch ($fuseAction) {
 	case "books":
 		$heading1Text = "Books I've read";
 		$contentPage = 'dsp_books.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 		
 	/**** Default case. ****/

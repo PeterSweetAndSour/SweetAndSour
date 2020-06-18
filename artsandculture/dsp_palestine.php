@@ -4,7 +4,7 @@
 if($fuseAction == "injustice") {
 	?>
 	<div class="story">
-		<p>In 2000 I did a public-speaking class in which we had to do four presentations (here is the <a href="http://www.sweetandsour.org/artsandculture/index.php?fuseAction=farnsworth">first talk</a> and the others are linked from there). For the one that was to &quot;pursuasive&quot;, I chose to do one about the plight of the Palestinians.</p>
+		<p>In 2000 I did a public-speaking class in which we had to do four presentations (here is the <a href="<?= $rootRelativeUrl ?>artsandculture/farnsworth">first talk</a> and the others are linked from there). For the one that was to &quot;pursuasive&quot;, I chose to do one about the plight of the Palestinians.</p>
 </div>
 	<?
 }

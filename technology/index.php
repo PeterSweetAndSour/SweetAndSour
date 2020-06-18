@@ -22,19 +22,19 @@ switch ($fuseAction) {
 	case "thisWebSite":
 		$heading1Text = "This web site";
 		$contentPage = 'dsp_thisWebSite.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 		
 	//Cars
 	case "cars1":
 		$heading1Text = "Cars &ndash; <span>General principles</span>";
 		$contentPage = 'dsp_cars1.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 	case "cars2":
 		$heading1Text = "Cars &ndash; <span>Innovative Designs</span>";
 		$contentPage = 'dsp_cars2.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 
 /**** Default case. ****/

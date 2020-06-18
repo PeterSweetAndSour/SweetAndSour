@@ -42,7 +42,7 @@
 </div>
 
 <div class="story">
-	Previous: <a class="previousPage" href="index.php?fuseAction=letter19b">Out and about</a></p>
+	Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter19b">Out and about</a></p>
 </div>
 
 <div class="story footnotes">

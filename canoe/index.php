@@ -24,7 +24,7 @@ switch ($fuseAction) {
 		//$returnLink = '<a href="<?=$rootRelativeUrl ?>home/" title="To main site">To our site</a>';
 		$showToTopLink = false;  //Page too short to include "To top" link.
 		$contentPage = 'dsp_canoe.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 
 	/**** Default case. ****/

@@ -40,8 +40,8 @@
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php?fuseAction=letter17d">Miscellaneous</a><br>
-   Previous: <a class="previousPage" href="index.php?fuseAction=letter17b">Washington D.C.</a></p>
+   <p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter17d">Miscellaneous</a><br>
+   Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter17b">Washington D.C.</a></p>
 </div>
 
 <div class="story footnotes">

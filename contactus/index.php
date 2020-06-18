@@ -36,7 +36,7 @@ switch ($fuseAction) {
 
 reCAPTCHA;
 		$contentPage = 'dsp_contactUs.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 
 	//Send email

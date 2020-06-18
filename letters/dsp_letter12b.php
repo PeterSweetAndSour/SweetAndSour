@@ -39,6 +39,6 @@
 </div>
 
 <div class="story">
-    <p>Next: <a class="next" href="index.php?fuseAction=letter12c">Life in America</a><br>
-	Previous: <a class="previousPage" href="index.php?fuseAction=letter12a">News</a></p>
+    <p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter12c">Life in America</a><br>
+	Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter12a">News</a></p>
 </div>

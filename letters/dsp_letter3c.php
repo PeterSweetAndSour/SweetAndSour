@@ -22,6 +22,6 @@
 </div>
 
 <div class="story">
-	<p>Next: <a class="next" href="index.php?fuseAction=letter3d">I do like ...</a><br>
-	Previous: <a class="previous" href="index.php?fuseAction=letter3b">Life in America</a></p>
+	<p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter3d">I do like ...</a><br>
+	Previous: <a class="previous" href="<?= $rootRelativeUrl ?>letters/letter3b">Life in America</a></p>
 </div>

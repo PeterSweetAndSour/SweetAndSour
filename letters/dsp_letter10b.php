@@ -13,6 +13,6 @@
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php?fuseAction=letter10c">America</a><br>
-	Previous: <a class="previousPage" href="index.php?fuseAction=letter10a">Home again</a></p>
+   <p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter10c">America</a><br>
+	Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter10a">Home again</a></p>
 </div>

@@ -30,15 +30,15 @@
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php?fuseAction=letter19c">In sickness and in health</a><br>
-	Previous: <a class="previousPage" href="index.php?fuseAction=letter19a">We still have jobs!</a></p>
+   <p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter19c">In sickness and in health</a><br>
+	Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter19a">We still have jobs!</a></p>
 </div>
 
 <div class="story footnotes">
    <p>Notes:</p>
    <ol class="endText" start="3">
 		<li>
-			<a id="Note3"></a>See all the photos of my <a href="http://www.sweetandsour.org/photos/index.php?fuseAction=aust2007" target="_blank">2007 trip to Australia</a>.
+			<a id="Note3"></a>See all the photos of my <a href="<?= $rootRelativeUrl ?>photos/index.php?fuseAction=aust2007" target="_blank">2007 trip to Australia</a>.
 			<br><a href="#Note3Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>

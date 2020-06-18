@@ -52,7 +52,7 @@ switch ($fuseAction) {
 		$displayMenu = false;
 		$showToTopLink = false;
 		$contentPage = 'dsp_photoAndCaption.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 		
 	/*** Return a photo and caption for ajax call. ***/

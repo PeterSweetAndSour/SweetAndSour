@@ -27,5 +27,5 @@
 </div>
 
 <div class="story">
-   <p>Previous: <a class="previousPage" href="index.php?fuseAction=letter12b">Adventure to California</a></p>
+   <p>Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter12b">Adventure to California</a></p>
 </div>

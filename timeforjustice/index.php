@@ -21,13 +21,13 @@ switch ($fuseAction) {
 	case "injustice":
 		$heading1Text = "Palestine<br><span>The victims are now the oppressors</span>";
 		$contentPage = '../artsandculture/dsp_palestine.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 
 	case "callsForJustice":
 		$heading1Text = "Calls for Justice";
 		$contentPage = 'dsp_callsForJustice.php';
-		include '../dsp_outline.php';
+		include "../dsp_outline.php";
 		break;
 
 	/**** Default case. ****/

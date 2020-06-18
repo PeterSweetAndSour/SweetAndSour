@@ -19,5 +19,5 @@
 </div>
 
 <div class="story">
-   <p>Previous: <a class="previousPage" href="index.php?fuseAction=letter4c">Strange and curious things</a></p>
+   <p>Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter4c">Strange and curious things</a></p>
 </div>

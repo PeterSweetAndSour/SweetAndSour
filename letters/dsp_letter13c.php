@@ -20,6 +20,6 @@
 </div>
 
 <div class="story spaceAbove">
-	<p>Next: <a class="next" href="index.php?fuseAction=letter13d">Travels, part 3</a><br>
-	Previous: <a class="previousPage" href="index.php?fuseAction=letter13b">Travels, part 1</a></p>
+	<p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter13d">Travels, part 3</a><br>
+	Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter13b">Travels, part 1</a></p>
 </div>

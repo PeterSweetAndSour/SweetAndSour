@@ -20,5 +20,5 @@
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php?fuseAction=letter8b">Trip to southwest corner</a></p>
+   <p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter8b">Trip to southwest corner</a></p>
  </div>

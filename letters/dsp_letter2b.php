@@ -17,5 +17,5 @@
 </div>
 <div class="story">
    <p><i>* Family's members of Lan Nguyen excluded; only one winner per family; coupons redeemable anywhere in Colorado.</i></p>
-   <p class="endText">Go back to <a href="index.php?fuseAction=letter2a">Move to Denver</a> (page 1)</p>
+   <p class="endText">Go back to <a href="<?= $rootRelativeUrl ?>letters/letter2a">Move to Denver</a> (page 1)</p>
 </div>

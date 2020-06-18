@@ -37,5 +37,5 @@
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php?fuseAction=letter4b">News in America</a></p>
+   <p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter4b">News in America</a></p>
 </div>

@@ -321,6 +321,24 @@ Miscellaneous
   margin: 20px 0 0 0;
 }
 
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.external {
+  padding-right: 18px;
+  background-color: transparent;
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 100% 3px;
+  /* Wikipedia's external link icon */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KPHBhdGggZmlsbD0iI0ZGRiIgc3Ryb2tlPSIjMDZEIiBzdHJva2Utd2lkdGg9IjEwIgpkPSJtNDMsMzVINXY2MGg2MFY1N000NSw1djEwbDEwLDEwLTMwLDMwIDIwLDIwIDMwLTMwIDEwLDEwaDEwVjV6Ii8+Cjwvc3ZnPg==");
+}
+
+.pswp__caption__center .external {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KPHBhdGggZmlsbD0idHJhbnNwYXJlbnQiIHN0cm9rZT0iI2ZmMCIgc3Ryb2tlLXdpZHRoPSIxMCIKZD0ibTQzLDM1SDV2NjBoNjBWNTdNNDUsNXYxMGwxMCwxMC0zMCwzMCAyMCwyMCAzMC0zMCAxMCwxMGgxMFY1eiIvPgo8L3N2Zz4=");
+}
+
 /* ***********************************************
 Mobile 
 ************************************************ */
@@ -1076,8 +1094,8 @@ textarea {
 Download the .zip file from https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself 
 and find the file for the icon under svgs > solid. Copy to a text editor and in the path, add
 	fill="#ffffff" 
-or whatever color is needed. This can't be updated by CSS. Go to https://www.base64encode.org and encode
-it then replace the ... below with the encoded text:
+or whatever color is needed to the <path>. This can't be updated by CSS. Go to https://www.base64encode.org and
+encode it then replace the ... below with the encoded text:
 	background-image: url("data:image/svg+xml;base64,..."); 
 Also specify background-size.
 */

@@ -17,6 +17,6 @@
 </div>
 
 <div class="story">
-   <p><span class="next">Next: <a href="index.php?fuseAction=letter6d">What's news in the U.S.</a><span><br>
-	Previous: <a class="previousPage" href="index.php?fuseAction=letter6b">Trip to South Dakota</a></p>
+   <p><span class="next">Next: <a href="<?= $rootRelativeUrl ?>letters/letter6d">What's news in the U.S.</a><span><br>
+	Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter6b">Trip to South Dakota</a></p>
 </div>

@@ -27,14 +27,14 @@ setThumbnail("AcrobatIcon_Ltr18.gif", $rootRelativeUrl . "files/Letter18_Ltr.pdf
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php?fuseAction=letter18b">Sightseeing</a></p>
+   <p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter18b">Sightseeing</a></p>
 </div>
 
 <div class="story footnotes">
    <p>Notes:</p>
    <ol>
 		<li>
-			<a name="Note1"></a>Lots <a href="<?=$rootRelativeUrl ?>photos/index.php?fuseAction=cherryBlossoms" target="_blank">more photos</a> of cherry blossoms?
+			<a name="Note1"></a>Lots <a href="<?= $rootRelativeUrl ?>photos/cherryBlossoms" target="_blank">more photos</a> of cherry blossoms?
 			<br><a href="#Note1Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>

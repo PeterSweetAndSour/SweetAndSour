@@ -18,8 +18,8 @@
 </div>
 
 <div class="story">
-   <p>Next: <a class="next" href="index.php?fuseAction=letter17e">Bumper Stickers</a><br>
-	Previous: <a class="previousPage" href="index.php?fuseAction=letter17c">Election and American politics</a></p>
+   <p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter17e">Bumper Stickers</a><br>
+	Previous: <a class="previousPage" href="<?= $rootRelativeUrl ?>letters/letter17c">Election and American politics</a></p>
 </div>
 
 <div class="story footnotes">
