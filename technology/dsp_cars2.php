@@ -49,7 +49,7 @@
 	<div class="story">
 		<p>Chrysler threw away convention on how to build a car when they thought about the ideal vehicle for developing nations. This is the Chrysler Composite Vehicle but almost everyone saw it as Chrysler&rsquo;s China Vehicle when it was shown in 1997. This car does not meet current crash protection requirements for most industrialized countries but the target market is people currently riding motorcycles who have no protection at all and in most of the third world, the roads are lousy and speeds low.</p>
 		<p>What makes this car revolutionary is that the entire body is made of just 4 plastic mouldings. A conventional small car with a steel body has 80 parts which need to be welded together and painted to minimize corrosion and make it look good. The plastic used on the CCV accepts color pigments so no painting is necessary though it is a matte finish instead of gloss. Eliminating paint alone saves huge expense and worries about solvent emissions.</p>
-		<p class="endText">An air-cooled engine is fitted so the radiator and coolant pump are eliminated, further reducing cost. There is a resemblance to the <a href="../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=2CVSide2.jpg&forceCapBelow=true">Citroen 2CV</a>, which should not be surprising since it had similar design goals: be very cheap and suitable for rough roads. Just in case you hadn't noticed, there are two "C"s in CCV, further linking it with the 2CV.</p>
+		<p class="endText">An air-cooled engine is fitted so the radiator and coolant pump are eliminated, further reducing cost. There is a resemblance to the <a href="<?=$rootRelativeUrl ?>imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=2CVSide2.jpg&forceCapBelow=true">Citro&euml;n 2CV</a>, which should not be surprising since it had similar design goals: be very cheap and suitable for rough roads. Just in case you hadn't noticed, there are two "C"s in CCV, further linking it with the 2CV.</p>
 	</div>
 	<? setThumbnail(["CCVSideSm.jpg", "CCVPartsSm.gif"]); ?>
 
@@ -62,7 +62,7 @@
 	<h2>GM Lean Machine</h2>
 	<div class="story">
 		<p>I was so impressed when I read of this but boy have I been disappointed in the more than two decades since [2020: now 37 years!]. Not only was this beauty never brought to market but the cars on the road now are essentially the same in concept&mdash;and fuel economy&mdash;as those when the article was written in 1983. I will admit that everything else about them is greatly improved such as emissions, safety, reliability and comfort. </p>
-		<p class="endText"><a href="<?= $urlPrefix ?>technology/files/LeanMachine.pdf">Road &amp; Track article</a> (3MB)</p>
+		<p class="endText"><a href="<?= $rootRelativeUrl ?>technology/files/LeanMachine.pdf">Road &amp; Track article</a> (3MB)</p>
 	</div>
 
 	<h2>Carver One</h2>

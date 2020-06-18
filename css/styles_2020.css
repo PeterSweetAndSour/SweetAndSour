@@ -224,13 +224,13 @@ Overlay and loading graphic
 Error pages
 ------------------------------------------------------------------------------------------ */
 .errorBanner.error401, .errorBanner.error403 {
-  background-image: url("../errorhandling/images/barbedwire.jpg");
+  background-image: url("/errorhandling/images/barbedwire.jpg");
 }
 .errorBanner.error404 {
-  background-image: url("../errorhandling/images/nothingthere.jpg");
+  background-image: url("/errorhandling/images/nothingthere.jpg");
 }
 .errorBanner.error500 {
-  background-image: url("../errorhandling/images/trainderailment.jpg");
+  background-image: url("/errorhandling/images/trainderailment.jpg");
 }
 
 /* -----------------------------------------------------------------------------------------

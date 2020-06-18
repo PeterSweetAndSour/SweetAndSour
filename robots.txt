@@ -1,7 +1,7 @@
 User-agent: *
 Disallow: /demo/
 Disallow: /email/
-Disallow: /imageMgt/
+Disallow: /imagemgt/
 Disallow: /includes/
 Disallow: /obsolete/
 Disallow: /MadisonSt/

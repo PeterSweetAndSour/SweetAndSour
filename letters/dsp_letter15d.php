@@ -23,7 +23,7 @@
 		<li><span class="sticker">I think. Therefore I am dangerous.</span></li>
 		<li><span class="sticker">Dogs have masters; cats have staff.</span></li>
 	</ul>
-	<p>Well, that&rsquo;s all for now. Send us an <a href="../contactus/index.php">email</a> or a note when you get a chance. We love to hear your news too.</p>
+	<p>Well, that&rsquo;s all for now. Send us an <a href="<?=$rootRelativeUrl ?>contactus/index.php">email</a> or a note when you get a chance. We love to hear your news too.</p>
 	<p class="endText">- Peter and Lan</p>
 </div>
 

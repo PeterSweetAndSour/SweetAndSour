@@ -13,9 +13,9 @@ Variables:
 */
 		//Determine the url to the photo
 		if(is_null($grandparentFolderName))
-			$url = "../" . $folderName . "/images/" . $photoName;
+			$url = $rootRelativeUrl . $folderName . "/images/" . $photoName;
 		else
-			$url = "../" . $grandparentFolderName . "/images/" . $folderName . "/" . $photoName;
+			$url = $rootRelativeUrl . $grandparentFolderName . "/images/" . $folderName . "/" . $photoName;
 		
 		//Get photo size using the getImageSize funciton
 		$size = @getImageSize($url);

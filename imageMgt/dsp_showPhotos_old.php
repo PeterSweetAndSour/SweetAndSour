@@ -40,8 +40,8 @@
 <head>
 	<title>Show photos</title>
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
-	<link rel="shortcut icon" href="../imageMgt/favicon.ico" />
-	<link rel="stylesheet" type="text/css" media="screen,print"  href="../css/stylesNew.css" />
+	<link rel="shortcut icon" href="<?=$rootRelativeUrl ?>imagemgt/favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="screen,print"  href="<?=$rootRelativeUrl ?>css/stylesNew.css" />
 	<script type="text/javascript">
 		// <![CDATA[
 		//User has selected a folder. Redraw page so list of photos in the DATABASE can be obtained.

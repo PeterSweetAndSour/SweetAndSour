@@ -98,11 +98,11 @@ if($fuseAction == "injustice") {
   
 <div class="story">
 	<div class="imgInColumn">
-		<a href="../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=Partition2.jpg"><img src="../artsandculture/images/Partition1.jpg" border="0"></a>
+		<a href="<?=$rootRelativeUrl ?>imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=Partition2.jpg"><img src="<?=$rootRelativeUrl ?>artsandculture/images/Partition1.jpg" border="0"></a>
 	</div>
 
 	<div class="caption captionInColumn offset">
-		<p>Map 1: What the UN proposed. <span class="boldRed">You cannot understand the conflict in the Middle East without this map</span> but I had not seen it until I did my talk. Green sections were to be the Jewish state, red sections were to be the Arab state.  For more detail, see a <a href="../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=Partition2.jpg">larger map</a> (780 x 1530 pixels, 257k) or the <a class="external" href="http://domino.un.org/maps/m0082.gif">original document on the UN site</a> (1.4 MB).</p>
+		<p>Map 1: What the UN proposed. <span class="boldRed">You cannot understand the conflict in the Middle East without this map</span> but I had not seen it until I did my talk. Green sections were to be the Jewish state, red sections were to be the Arab state.  For more detail, see a <a href="<?=$rootRelativeUrl ?>imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=Partition2.jpg">larger map</a> (780 x 1530 pixels, 257k) or the <a class="external" href="http://domino.un.org/maps/m0082.gif">original document on the UN site</a> (1.4 MB).</p>
 	</div>
 </div>
 

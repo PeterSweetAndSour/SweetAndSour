@@ -1,7 +1,7 @@
 ﻿			<!-- Search box. Gets replaced by Javascript when user clicks submit button. -->
 			<div id="search">
 				<div id="searchControl">
-					<form class="gsc-search-box" accept-charset="utf-8" method="post" action="../home/search.php">
+					<form class="gsc-search-box" accept-charset="utf-8" method="post" action="<?=$rootRelativeUrl ?>home/search.php">
 						<table cellspacing="0" cellpadding="0" class="gsc-search-box">
 							<tbody>
 								<tr>

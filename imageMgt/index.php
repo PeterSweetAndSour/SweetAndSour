@@ -14,6 +14,7 @@ include '../includes/act_getDBConnection.php';
 //Reset the variable holding all the SQL
 $allSQL = "";
 
+
 //Set fuseaction
 if(isSet($_GET["fuseAction"])) {
 	$fuseAction = $_GET["fuseAction"];

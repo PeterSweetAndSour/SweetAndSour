@@ -109,7 +109,8 @@ for($i=0; $i < $int_len; $i++) {
 		$a_class = " class=\"photoLink\"";
 	}
 
-	$arr_menuHTML[] = "<a" . $a_class . " href=\"../" . $arr_menuData[$i]["folder_name"] . "/index.php?fuseAction=" . $arr_menuData[$i]["fuse_action"] . "\" title=\"" . $arr_menuData[$i]["display_text"] . "\">";
+	$arr_menuHTML[] = "<a" . $a_class . " href=\"" . $rootRelativeUrl . $arr_menuData[$i]["folder_name"] . "/index.php?fuseAction=" . $arr_menuData[$i]["fuse_action"] . "\" title=\"" . $arr_menuData[$i]["display_text"] . "\">";
+
 
 	// If top-level menu, insert an empty span for image replacement
 	if($arr_menuData[$i]["menu_level"] == 1) {

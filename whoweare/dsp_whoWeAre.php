@@ -12,8 +12,8 @@
 		<li>The wife is ALWAYS right.</li>
 		<li>If the wife is wrong, refer to rule 1.</li>
 	</ol>
-	<p>We bought a house and lived there during 1994 but then Lan was offered a job in America and we arrived in March 1995.  Everything since then is detailed in our newletters - see <a href="../letters/index.php">Coming to America</a>.</p>
-	<p class="endText">Then <a href="<?= $urlPrefix ?>/wherewelive/index.php?fuseAction=lisbon">we moved to Lisbon</a> in 2019.</p>
+	<p>We bought a house and lived there during 1994 but then Lan was offered a job in America and we arrived in March 1995.  Everything since then is detailed in our newletters - see <a href="<?=$rootRelativeUrl ?>letters/index.php">Coming to America</a>.</p>
+	<p class="endText">Then <a href="<?= $rootRelativeUrl ?>/wherewelive/index.php?fuseAction=lisbon">we moved to Lisbon</a> in 2019.</p>
 </div>
 <div class="photo-gallery">
 	<?

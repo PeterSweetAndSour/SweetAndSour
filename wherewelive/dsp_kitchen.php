@@ -7,8 +7,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<title>Lan and Peter's web site</title>
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
-	<link rel="shortcut icon" href="../favicon.ico" />
-	<link rel="stylesheet" type="text/css" media="screen,print"  href="../css/stylesNew.css" />
+	<link rel="shortcut icon" href="<?=$rootRelativeUrl ?>favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="screen,print"  href="<?=$rootRelativeUrl ?>css/stylesNew.css" />
 </head>
 <body>
 <div id="content" class="noMenu">

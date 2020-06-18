@@ -3,7 +3,7 @@ app_locals.php for "Coming to America" (letters subdirectory). */
 
 //Set photograph for top left
 $sectionPhoto = "UsEnteringShip1.jpg";
-$sectionPhotoLink = "../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=UsEnteringShip2.jpg";
+$sectionPhotoLink = $rootRelativeUrl . "imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=UsEnteringShip2.jpg";
 
 //Body class to control section styles
 $bodyClass = "letters";

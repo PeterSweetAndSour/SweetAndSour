@@ -5,14 +5,14 @@ Assumes images are always in an images subdirectory.
 Variables:
 =>| folderName
 =>| grandparentFolderName
-=>| urlPrefix (from sweetandsour_conf.php)
+=>| homePath (from sweetandsour_conf.php)
 =>| useVersionedFiles
 =>| version
 |=> url
 */
 
 
-function getPhotoUrl($photoName, $folderName, $grandparentFolderName, $urlPrefix, $useVersionedFiles, $version) {
+function getPhotoUrl($photoName, $folderName, $grandparentFolderName, $rootRelativeUrl, $useVersionedFiles, $version) {
 	
 	//Determine whether to use the plain or versioned file name
 	if($useVersionedFiles) {
@@ -24,10 +24,10 @@ function getPhotoUrl($photoName, $folderName, $grandparentFolderName, $urlPrefix
 
 	//Determine the url to the photo
 	if(is_null($grandparentFolderName)) {
-		$url = $urlPrefix . $folderName . "/images/" . $photoFileName;
+		$url = $rootRelativeUrl . $folderName . "/images/" . $photoFileName;
 	}
 	else {
-		$url = $urlPrefix . $grandparentFolderName . "/images/" . $folderName . "/" . $photoFileName;
+		$url = $rootRelativeUrl . $grandparentFolderName . "/images/" . $folderName . "/" . $photoFileName;
 	}
 	
 	return $url;

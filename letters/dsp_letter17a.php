@@ -11,7 +11,7 @@
 </div>
 <div class="photo-gallery">
 <?
-setThumbnail("AcrobatIcon_Ltr17.gif", $urlPrefix . "files/Letter17_Ltr.pdf");
+setThumbnail("AcrobatIcon_Ltr17.gif", $rootRelativeUrl . "files/Letter17_Ltr.pdf");
 ?>
 
 <h2>Work</h2>

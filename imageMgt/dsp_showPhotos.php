@@ -11,8 +11,8 @@
 	|=> $folderId  		 a number indicating the folder
 	|=> $photoName		    name of the photo (primary key)
 	*/
-	include '../imageMgt/fn_getPhotoInfo.php';
-	include '../imageMgt/fn_getPhotoURL.php';
+	include '../imagemgt/fn_getPhotoInfo.php';
+	include '../imagemgt/fn_getPhotoURL.php';
 	
 	
 	if( isset($_GET["folderId"]) ) {
@@ -31,7 +31,7 @@
 		if($photos) {
 			//Get the $url where it can be found.
 			 echo $_SERVER['PHP_SELF'];
-			$localImgSrc = "../" . $photos[$photoName]["grandparentFolderName"] . "/images/" . $photos[$photoName]["folderName"] . "/" . $photoName;
+			$localImgSrc = $rootRelativeUrl . $photos[$photoName]["grandparentFolderName"] . "/images/" . $photos[$photoName]["folderName"] . "/" . $photoName;
 			$dateModified = date("Y-m-d", filemtime($localImgSrc));
 		}
 	}
@@ -52,8 +52,8 @@
 <head>
 	<title>Show photos</title>
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
-	<link rel="shortcut icon" href="../imageMgt/favicon.ico" />
-	<link rel="stylesheet" type="text/css" media="screen"  href="../css/styles_20111124.min.css" />
+	<link rel="shortcut icon" href="<?=$rootRelativeUrl ?>imagemgt/favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="screen"  href="<?=$rootRelativeUrl ?>css/styles_20111124.min.css" />
 	<script type="text/javascript">
 		// <![CDATA[
 		//User has selected a folder. Redraw page so list of photos in the DATABASE can be obtained.

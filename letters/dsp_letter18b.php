@@ -70,7 +70,7 @@
 		</li>
 		<li>
 			<a name="Note8"></a>Learn more about the <a class="external" href="http://en.wikipedia.org/wiki/George_Washington_Masonic_National_Memorial" target="_blank">National Masonic Memorial</a>. 
-			Also the <a href="../wherewelive/index.php?fuseAction=washington">view from the top</a>.
+			Also the <a href="<?=$rootRelativeUrl ?>wherewelive/index.php?fuseAction=washington">view from the top</a>.
 			<br><a href="#Note8Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
@@ -78,7 +78,7 @@
 			<br><a href="#Note9Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>
-			<a name="Note10"></a>No room here to show many pictures but we have <a href="../photos/index.php?fuseAction=photos">lots more</a> of this beautiful country.
+			<a name="Note10"></a>No room here to show many pictures but we have <a href="<?=$rootRelativeUrl ?>photos/index.php?fuseAction=photos">lots more</a> of this beautiful country.
 			<br><a href="#Note10Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>

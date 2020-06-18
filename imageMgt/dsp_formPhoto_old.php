@@ -44,10 +44,10 @@ if((isset($folderID)) && ($folder != "0")) {
 	//Get the name of the folder and if applicable, the name of the grandparent folder, that the photo is in so path can be established
 	include '../includes/qry_thisFolder.php';
 	if(is_null($grandparentFolderID)) {
-		$path = "../" . $folderName . "/images/";
+		$path = "<?=$rootRelativeUrl ?>" . $folderName . "/images/";
 	}
 	else {
-		$path = "../" . $grandparentFolderName . "/images/" . $folderName;
+		$path = "<?=$rootRelativeUrl ?>" . $grandparentFolderName . "/images/" . $folderName;
 	}
 
 	//If a photo has been selected, get its size and url.
@@ -79,8 +79,8 @@ else { //editing an existing photo
 <head>
 	<title>Add/edit photos</title>
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
-	<link rel="shortcut icon" href="../imageMgt/favicon.ico" />
-	<link rel="stylesheet" type="text/css" media="screen,print"  href="../css/stylesNew.css" />
+	<link rel="shortcut icon" href="<?=$rootRelativeUrl ?>imagemgt/favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="screen,print"  href="<?=$rootRelativeUrl ?>css/stylesNew.css" />
 
 	<script type="text/javascript">
 		// <![CDATA[
@@ -155,7 +155,7 @@ else { //editing an existing photo
 <body>
 	<div class="page">
 	<div id="content" class="clearfix">
-	<form name="form_photo" action="http://localhost/sweetAndSour/imageMgt/index.php?fuseAction=savePhoto" method="post" onSubmit="return validateForm()">
+	<form name="form_photo" action="http://localhost/sweetAndSour/imagemgt/index.php?fuseAction=savePhoto" method="post" onSubmit="return validateForm()">
 		<input type="hidden" name="formType" value="<?= $formType ?>" />
 
 		<? if($formType == "new"): ?>

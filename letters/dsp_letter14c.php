@@ -2,7 +2,7 @@
 
 <h2>Bumper stickers</h2>
 <div class="story">
-	<p>Is this where you started reading?  Go on, admit it.  For your entertainment, all the bumper stickers we have seen while in the US are now conveniently located on our web site. [2003: That page is gone; see the <a href="../artsandculture/index.php?fuseAction=bumperStickers">speech</a> instead.]  Incidentally, the main entry to our site has  moved.   If you haven't taken a look since this time last year, it has been expanded considerably since then.  Anyway, here they are:</p>
+	<p>Is this where you started reading?  Go on, admit it.  For your entertainment, all the bumper stickers we have seen while in the US are now conveniently located on our web site. [2003: That page is gone; see the <a href="<?=$rootRelativeUrl ?>artsandculture/index.php?fuseAction=bumperStickers">speech</a> instead.]  Incidentally, the main entry to our site has  moved.   If you haven't taken a look since this time last year, it has been expanded considerably since then.  Anyway, here they are:</p>
 	<ul class="endText">
 		<li><span class="sticker">BUCKLE UP. It makes it harder for the aliens to suck you out of the car.</span></li>
 		<li><span class="sticker">Fat people are harder to kidnap</span></li>

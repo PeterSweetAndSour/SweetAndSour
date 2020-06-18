@@ -15,7 +15,7 @@ function setVideo($windowTitle, $linkUrl, $linkImg, $videoList) {
 	$videoList = str_replace(" ", "", $videoList);
 	$videoArray = split(",", $videoList);
 	
-	$ajaxUrl = "../includes/dsp_videoPage.php";
+	$ajaxUrl = "<?=$rootRelativeUrl ?>includes/dsp_videoPage.php";
 	$ajaxUrl .= "?windowTitle=" . rawurlencode($windowTitle);
 	$ajaxUrl .= "&linkImg=" . $linkImg;
 	$ajaxUrl .= "&videoList=" . rawurlencode(implode(",", $videoArray));

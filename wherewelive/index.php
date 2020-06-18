@@ -21,7 +21,7 @@ switch ($fuseAction) {
 	case "lisbon":
 		$heading1Text = "Lisbon (2019 &ndash; ?)";
 		$contentPage = "dsp_lisbon.php";
-		include "../dsp_outline.php";
+		include "<?=$rootRelativeUrl ?>dsp_outline.php";
 		break;
 		
 	//Sydney
@@ -33,7 +33,7 @@ switch ($fuseAction) {
 
 	//Harbour panoramas
 	case "operaBridge";
-		include '../imageMgt/act_setPhotoFunction.php';
+		include '../imagemgt/act_setPhotoFunction.php';
 		include 'dsp_operaBridge.php';
 		break;
 
@@ -55,7 +55,7 @@ switch ($fuseAction) {
 	//Washington
 	case "washington":
 		//$sectionPhoto = "washington/cherry_28Detail.jpg";
-		//$sectionPhotoLink = "../imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=cherry_028Lg.jpg";
+		//$sectionPhotoLink = "<?=$rootRelativeUrl ?>imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=cherry_028Lg.jpg";
 		$heading1Text = "Washington (2006 &ndash; 2019)";
 		$contentPage = 'dsp_washington.php';
 		include '../dsp_outline.php';
@@ -64,7 +64,7 @@ switch ($fuseAction) {
 	case "houserenovation":
 		$heading1Text = "House renovation";
 		$contentPage = "dsp_houserenovation.php";
-		include "../dsp_outline.php";
+		include "<?=$rootRelativeUrl ?>dsp_outline.php";
 		break;
 		
 	case "instructionstobuilder":

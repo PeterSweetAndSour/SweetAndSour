@@ -14,15 +14,15 @@ if(isset($folderName)) {
 	
 	//Determine the url to the photo
 	if(!is_null($grandparentFolderName)) {
-		$folderPath = $homePath . $grandparentFolderName . "/images/" . $parentFolderName . "/" . $folderName . "/";
+		$folderPath = $rootRelativeUrl . $grandparentFolderName . "/images/" . $parentFolderName . "/" . $folderName . "/";
 		$folderUrl = $homeUrl . $grandparentFolderName . "/images/" . $parentFolderName . "/" . $folderName . "/";
 	}
 	else if(!is_null($parentFolderName)) {
-		$folderPath = $homePath . $parentFolderName . "/images/" . $folderName . "/";
+		$folderPath = $rootRelativeUrl . $parentFolderName . "/images/" . $folderName . "/";
 		$folderUrl = $homeUrl . $parentFolderName . "/images/" . $folderName . "/";
 	}
 	else {
-		$folderPath = $homePath . $folderName . "/images/";
+		$folderPath = $rootRelativeUrl . $folderName . "/images/";
 		$folderUrl = $folderName . "/images/";
 	}
 }

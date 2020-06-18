@@ -5,8 +5,8 @@ Will put caption to the right of the photo if there is 200px space available unl
 
 =>| photoName
 */
-//include '../imageMgt/fn_getPhotoInfo.php';
-//include '../imageMgt/fn_getPhotoURL.php';
+//include '../imagemgt/fn_getPhotoInfo.php';
+//include '../imagemgt/fn_getPhotoURL.php';
 
 $photoName = $_GET["photoName"];
 
@@ -15,7 +15,7 @@ $photos = getPhotoInfo(array($photoName));
 
 if($photos) {
 	//Get the $url where it can be found.
-	$imgSrc = getPhotoUrl($photoName, $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $urlPrefix, $useVersionedFiles, $photos[$photoName]["version"]);	
+	$imgSrc = getPhotoUrl($photoName, $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $rootRelativeUrl, $useVersionedFiles, $photos[$photoName]["version"]);	
 	?>
 	<figure>
 		<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="See caption" />

@@ -12,9 +12,9 @@ page.
 */
 
 
-$topIconSrc = $urlPrefix . "images/toTopLink.png";
+$topIconSrc = $rootRelativeUrl . "images/toTopLink.png";
 
-$backIconSrc = $urlPrefix . "images/backLink.png";
+$backIconSrc = $rootRelativeUrl . "images/backLink.png";
 
 	// Construct the menu
 if($displayMenu) {
@@ -28,38 +28,38 @@ else {
 }
 
 //Include function to set a thumbnail photo & caption. Called on content pages.
-include '../imageMgt/act_setThumbnailFunction.php';
+include '../imagemgt/act_setThumbnailFunction.php';
 ?>
 <!DOCTYPE html>
-<html lang="en"  class="nav-no-js">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 	<title>
-		<?= str_replace("<span>", "", (str_replace("</span>", "", $heading1Text))) ?> 
+		<?= str_replace("<span>", "", (str_replace("</span>", "", isset($heading1Text) ? $heading1Text : ""))) ?> 
 		[Sweet and Sour]
 	</title>
 	
 	<? 
 	if($fuseAction == "welcome" || $fuseAction == "thisWebSite") {
-		include "../includes/asciiPV.txt";
+		include $_SERVER['DOCUMENT_ROOT'] . $rootRelativeUrl. "includes/asciiPV.txt";
 	}
 	?>
-	<link rel="shortcut icon" type="images/x-icon" href="<?= $urlPrefix ?>favicon.ico" />
+	<link rel="shortcut icon" type="images/x-icon" href="<?=$rootRelativeUrl ?>favicon.ico" />
 
 	<? 
 	if($compress) {
 		?>
-		<link rel="stylesheet" type="text/css" href="../css/combined.min.css" />
+		<link rel="stylesheet" type="text/css" href="<?=$rootRelativeUrl ?>css/combined.min.css" />
 		<?
 	}
 	else {
 		?>
-		<link rel="stylesheet" type="text/css" href="../css/styles_2020.css" />
-		<link rel="stylesheet" type="text/css" href="../css/photoswipe.css" />
-		<link rel="stylesheet" type="text/css" href="../css/default-skin/default-skin.css" />
+		<link rel="stylesheet" type="text/css" href="<?=$rootRelativeUrl ?>css/styles_2020.css" />
+		<link rel="stylesheet" type="text/css" href="<?=$rootRelativeUrl ?>css/photoswipe.css" />
+		<link rel="stylesheet" type="text/css" href="<?=$rootRelativeUrl ?>css/default-skin/default-skin.css" />
 		<?
 	}
 	?>
@@ -80,7 +80,7 @@ include '../imageMgt/act_setThumbnailFunction.php';
 					<input class="menu" type="checkbox" id="menuToggle" />
 					<label id="menuBtn" class="menu" for="menuToggle" role="button" aria-label="Toggle menu" aria-controls="imageMenu">Open</label>
 					<?= $str_menuHTML ?>
-					<div id="menuOverlay" class="menuOverlay"><div class="loading"><p><img src="../images/loading_20080830.gif" alt="Just a moment ..." />Just a moment &hellip;</p></div></div>
+					<div id="menuOverlay" class="menuOverlay"><div class="loading"><p><img src="<?=$rootRelativeUrl ?>images/loading_20080830.gif" alt="Just a moment ..." />Just a moment &hellip;</p></div></div>
 				</form>
 				<?
 			}
@@ -121,18 +121,18 @@ include '../imageMgt/act_setThumbnailFunction.php';
 
 	if($compress) {
 		?>
-		<script src="../js/combined.min.js"></script>
+		<script src="<?=$rootRelativeUrl ?>js/combined.min.js"></script>
 		<?
 	}
 	else {
 		?>
-		<script src="../js/mobile-navigation.js"></script>
-		<script src="../js/desktop-navigation.js"></script>
-		<script src="../js/common_2020.js"></script>
+		<script src="<?=$rootRelativeUrl ?>js/mobile-navigation.js"></script>
+		<script src="<?=$rootRelativeUrl ?>js/desktop-navigation.js"></script>
+		<script src="<?=$rootRelativeUrl ?>js/common_2020.js"></script>
 
-		<script src="../js/photoswipe.js"></script>
-		<script src="../js/photoswipe-ui-default.js"></script>
-		<script src="../js/photoswipe_setup.js"></script>
+		<script src="<?=$rootRelativeUrl ?>js/photoswipe.js"></script>
+		<script src="<?=$rootRelativeUrl ?>js/photoswipe-ui-default.js"></script>
+		<script src="<?=$rootRelativeUrl ?>js/photoswipe_setup.js"></script>
 		<?
 	}
 
@@ -141,7 +141,7 @@ include '../imageMgt/act_setThumbnailFunction.php';
 		if (strncmp(trim($file), "<script", 7) === 0) {
 			?><?= $file ?><? 
 		} else { 
-			?><script type="text/javascript" src="../js/<?= $file ?>"></script><?
+			?><script type="text/javascript" src="<?=$rootRelativeUrl ?>js/<?= $file ?>"></script><?
 		}
 	}
 	?>

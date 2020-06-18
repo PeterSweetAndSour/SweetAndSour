@@ -23,7 +23,8 @@
 </div>
 <div class="photo-gallery">
 	<?
-	setThumbnail(["AcrobatIcon_Ltr16_A4.gif", $urlPrefix . "files/Letter16_A4.pdf", "AcrobatIcon_Ltr16_Ltr.gif", $urlPrefix . "files/Letter16_Ltr.pdf"]);
+	setThumbnail("AcrobatIcon_Ltr16_A4.gif", $rootRelativeUrl . "files/Letter16_A4.pdf"); 
+	setThumbnail("AcrobatIcon_Ltr16_Ltr.gif", $rootRelativeUrl . "files/Letter16_Ltr.pdf");
 	?>
 </div>
 

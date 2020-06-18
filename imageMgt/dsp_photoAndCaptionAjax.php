@@ -12,8 +12,8 @@ Will put caption to the right of the photo if there is 200px space available unl
 =>| panoWidth      available if panorama is true
 =>| panoHeight     available if panorama is true
 */
-include '../imageMgt/fn_getPhotoInfo.php';
-include '../imageMgt/fn_getPhotoURL.php';
+include '../imagemgt/fn_getPhotoInfo.php';
+include '../imagemgt/fn_getPhotoURL.php';
 
 $photoName = $_GET["photoName"];
 
@@ -22,7 +22,7 @@ $photos = getPhotoInfo(array($photoName));
 
 if($photos) {
 	//Get the $url where it can be found.
-	$imgSrc = getPhotoUrl($photoName, $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $urlPrefix, $useVersionedFiles, $photos[$photoName]["version"]);
+	$imgSrc = getPhotoUrl($photoName, $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $rootRelativeUrl, $useVersionedFiles, $photos[$photoName]["version"]);
 
 	//If $panorama is true, get applet display size
 	if(isset($_GET["panorama"])) {
@@ -50,16 +50,16 @@ if($photos) {
 		$caption = $photos[$photoName]["caption"];
 	  }
 		
-		$newWindowUrl = "/imageMgt/index.php?fuseAction=showPhotoAndCaption&amp;photoName=" . $photoName;
+		$newWindowUrl = "/imagemgt/index.php?fuseAction=showPhotoAndCaption&amp;photoName=" . $photoName;
 	?>
-	<p class="print"><a target="_blank" href="<?= $newWindowUrl ?>"><img src="../images/printer.png" title="printer" /></a><a target="_blank" href="<?= $newWindowUrl ?>">Print</a> (opens in a new window then select File > Print)</p>
+	<p class="print"><a target="_blank" href="<?= $newWindowUrl ?>"><img src="<?=$rootRelativeUrl ?>images/printer.png" title="printer" /></a><a target="_blank" href="<?= $newWindowUrl ?>">Print</a> (opens in a new window then select File > Print)</p>
 	<div class="photoHolder">
 		<div class="imgShadow">
 			<?if($panorama == "false") {?>
 				<img src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" />
 			<?} else {?>
 				<div class="left">
-					<applet archive="../imageMgt/ptviewer.jar" code="ptviewer.class" width="<?= $panoWidth ?>" height="<?= $panoHeight ?>">
+					<applet archive="<?=$rootRelativeUrl ?>imagemgt/ptviewer.jar" code="ptviewer.class" width="<?= $panoWidth ?>" height="<?= $panoHeight ?>">
 						<param name="file" value="<?= $url ?>">
 						<param name="auto" value="0.125">
 					</applet>
@@ -71,7 +71,7 @@ if($photos) {
 		<?= $caption ?>
 	</div>
 	<div class="footer">
-		<p id="photoLink" class="end">URL to this photo: http://www.sweetandsour.org/imageMgt/index.php?fuseAction=showPhotoAndCaption&amp;photoName=<?= $photoName ?></p>
+		<p id="photoLink" class="end">URL to this photo: http://www.sweetandsour.org/imagemgt/index.php?fuseAction=showPhotoAndCaption&amp;photoName=<?= $photoName ?></p>
 	</div>
 	<?
 }

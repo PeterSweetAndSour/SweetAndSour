@@ -11,13 +11,13 @@ Must be called from a subdirectory or the paths for the included files are wrong
 =>| photoNames    (a string for single photo or an array if multiple)
 =>| overrideURL   optional - can be used to override the URL carried in the DB.
 */
-include '../imageMgt/fn_getPhotoURL.php';      //Function that returns url
-include '../imageMgt/fn_getPhotoInfo.php';     //Function that returns $photos (associative array) or false
+include '../imagemgt/fn_getPhotoURL.php';      //Function that returns url
+include '../imagemgt/fn_getPhotoInfo.php';     //Function that returns $photos (associative array) or false
 
 function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 	global $useVersionedFiles; //from config file
 	global $useAmazonS3;       //from config file
-	global $urlPrefix;         //from config file
+	global $rootRelativeUrl;   //from config file
 	global $mysqli;
 	
 	// If a string, change to an array
@@ -35,7 +35,7 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 		// Since the SQL result set will be in random order, need to extract correct result from the associative array $photos
 		foreach($photoNames as $photoName) {
 
-			$imgSrc = getPhotoUrl($photoName, $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $urlPrefix, $useVersionedFiles, $photos[$photoName]["version"]);
+			$imgSrc = getPhotoUrl($photoName, $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $rootRelativeUrl, $useVersionedFiles, $photos[$photoName]["version"]);
 
 			if($overrideURL == "") {
 				if($photos[$photoName]["linkedImg"] == "") { // Unlikely - there should be a linked image for every thumbnail
@@ -47,8 +47,8 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 					<?
 				}
 				else {
-					$fullSizeImgSrc = getPhotoUrl($photos[$photoName]["linkedImg"], $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $urlPrefix, $useVersionedFiles, $photos[$photoName]["linkedImageVersion"]);
-					$urlPageWithLinkedImage = $urlPrefix . "imageMgt/index.php?fuseAction=showPhotoAndCaption&photoName=" . $photos[$photoName]["linkedImg"];
+					$fullSizeImgSrc = getPhotoUrl($photos[$photoName]["linkedImg"], $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $rootRelativeUrl, $useVersionedFiles, $photos[$photoName]["linkedImageVersion"]);
+					$urlPageWithLinkedImage = $rootRelativeUrl . "imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=" . $photos[$photoName]["linkedImg"];
 					?>
 					<figure<?= $classString ?>>
 						<a class="figure__link--gallery" href="<?= $urlPageWithLinkedImage ?>" data-linked-image-src="<?= $fullSizeImgSrc ?>" data-size="<?= $photos[$photoName]["linkedImageWidth"] ?>x<?= $photos[$photoName]["linkedImageHeight"] ?>">
@@ -96,7 +96,7 @@ function setTextLinkToPicture($photoName, $displayText) {
 	$photos = getPhotoInfo(array($photoName));
 	
 	if(isset($photos)) {
-				$linkURL = "../imageMgt/index.php?fuseAction=showPhotoAndCaption&amp;photoName=" . $photos[$photoName]["linkedImg"] . "&amp;altText=" . urlencode(strip_tags($photos[$photoName]["caption"]));
+				$linkURL = $rootRelativeUrl . "imagemgt/index.php?fuseAction=showPhotoAndCaption&amp;photoName=" . $photos[$photoName]["linkedImg"] . "&amp;altText=" . urlencode(strip_tags($photos[$photoName]["caption"]));
 				
 				$openingAnchorTag = '<a href="' . $linkURL . '" onclick="SweetAndSour.getPhoto(\'' . $photos[$photoName]["linkedImg"] . '\', \'' . str_replace("'", "&rsquo;", strip_tags($photos[$photoName]["caption"])) . '\'' . '); return false;' . '"  target="_blank">';
 

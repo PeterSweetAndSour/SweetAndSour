@@ -40,7 +40,7 @@ for($i=0; $i < $count; $i++) {
 		}
 	}
 	else {
-		$ajaxUrl = "../includes/dsp_videoPage.php";
+		$ajaxUrl = "<?=$rootRelativeUrl ?>includes/dsp_videoPage.php";
 		$ajaxUrl .= "?windowTitle=" . rawurlencode($windowTitle);
 		$ajaxUrl .= "&linkImg=" . $linkImg;
 		$ajaxUrl .= "&videoList=" . rawurlencode($_GET["videoList"]);

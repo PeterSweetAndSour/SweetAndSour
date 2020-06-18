@@ -126,13 +126,13 @@ Overlay and loading graphic
 	.errorBanner {
 		&.error401,
 		&.error403 {
-			background-image: url("../errorhandling/images/barbedwire.jpg");
+			background-image: url("/errorhandling/images/barbedwire.jpg");
 		}
 		&.error404 {
-			background-image: url("../errorhandling/images/nothingthere.jpg");
+			background-image: url("/errorhandling/images/nothingthere.jpg");
 		}
 		&.error500 {
-			background-image: url("../errorhandling/images/trainderailment.jpg");
+			background-image: url("/errorhandling/images/trainderailment.jpg");
 		}
 	}
 

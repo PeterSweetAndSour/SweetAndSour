@@ -22,7 +22,7 @@ switch ($fuseAction) {
 	case "contactUs":
 		$heading1Text = "Contact Us";
 		$showToTopLink = false;  //Page too short to include "To top" link.
-		$jsFiles[] = "<script src=\"" . $urlPrefix . "js/contactUsForm.js\"></script>";
+		$jsFiles[] = "<script src=\"" . <?=$rootRelativeUrl ?> . "js/contactUsForm.js\"></script>";
 		$jsFiles[] = "<script src=\"https://www.google.com/recaptcha/api.js\"></script>";
 		$jsFiles[] = <<<reCAPTCHA
 

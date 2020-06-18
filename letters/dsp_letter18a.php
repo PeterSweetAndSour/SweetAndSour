@@ -6,7 +6,7 @@
 	<p class="endText">Let&apos;s get straight to it: we&apos;ve moved.</p>
 </div>
 <?
-setThumbnail("AcrobatIcon_Ltr18.gif", $urlPrefix . "files/Letter18_Ltr.pdf");
+setThumbnail("AcrobatIcon_Ltr18.gif", $rootRelativeUrl . "files/Letter18_Ltr.pdf");
 ?>
 
 <h2>Washington DC, 2nd attempt</h2>
@@ -34,7 +34,7 @@ setThumbnail("AcrobatIcon_Ltr18.gif", $urlPrefix . "files/Letter18_Ltr.pdf");
    <p>Notes:</p>
    <ol>
 		<li>
-			<a name="Note1"></a>Lots <a href="../photos/index.php?fuseAction=cherryBlossoms" target="_blank">more photos</a> of cherry blossoms?
+			<a name="Note1"></a>Lots <a href="<?=$rootRelativeUrl ?>photos/index.php?fuseAction=cherryBlossoms" target="_blank">more photos</a> of cherry blossoms?
 			<br><a href="#Note1Ref" class="noteGoBack">Go back</a>
 		</li>
 		<li>

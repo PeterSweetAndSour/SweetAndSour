@@ -12,8 +12,30 @@
 	<p>I'll also be revisiting all the styles now that I'm using SASS and Grunt and browsers are now more capable.</p>
 	<p>One thing I am pleased with is that I was able to embed the SVG of the four Font Awesome icons I used directly into the stylesheet. I wanted a background image rather than insert them with italic tags to avoid problems with clicks being on the wrong element and I didn't want to download the whole file of 1500+ icons, or make 4 separate requests for the indivual files, or even one request to a sprite that I'd have to make so embedding the SVG worked well.</p>
 	<p>The 21 May 1999 note at the bottom of the home page that says &ldquo;<em>Since 18 Aprl</em> [when the site first went online]<em>, I've also bought a 56k modem and Homestead released an off-line editor. Previously, everything had to be done while logged on with my 14.4k modem which tied up the phone line for hours.</em>&rdquo; How times have changed! Typical download speeds are now more than a thousand times faster than when I started and that is why the photos on the early sections of the site are so small. I was still on dial-up until we moved to Virginia in 2006. There is also mention of building the site with &ldquo;web safe colors&rdquo; &ndash; all 256 of them. :-(</p>
+	<p>The last major change I wanted to make was to move to friendly URLs so, for example, <code>/technology/thiswebsite</code> instead of <code>/technology/index.php?fuseAction=thisWebSite</code>. However, almost all of the site&apos;s internal URLs were relative so I need to change to &ldquo;root relative&rdquo; which turned out to be a problem when <code>/technology</code>, <code>/technology/</code>, <code>/technology/thiswebsite</code> and <code>/technology/thiswebsite</code> should all go to the same place.</p>
+	<p>Worse, on my development computer running Apache, URLs are <code>localhost:8080/sweetandsour/&hellip;</code>. I eventually made all the code substitutions (global Search &amp; Replace - including in the exported version of the database which I will shortly reimport - initially gave me some surprises but what baffled me for a long time was that setting rewrite rules in .htaccess had no effect. Eventually I realized that the .htaccess file in my sweetandsour directory needed to be moved up a level to where DOCUMENT_ROOT actually is, not the base directory of sweetandsour.</p>
+	<p>My local .htaccess file ended up as this:</p>
+	<pre>
+	RewriteEngine on
 
-	<p>Everything below is for historical purposes only&hellip;</p>
+	# Links in the database are now hard coded to be root relative for live so need adjusting for local.
+	RewriteCond %{HTTP_HOST}" "localhost:8080"
+	RewriteRule ^(imagemgt|artsandculture|technology|whoweare)/(.*)$ /sweetandsour/$1/$2 [PT]
+
+	# Human friendly URLs need to be translated internally so the server knows how to handle requests.
+	RewriteCond %{HTTP_HOST}" "localhost:8080"
+	RewriteRule ^sweetandsour/([a-z]+)/([a-zA-Z0-9-]+)/?$ /sweetandsour/$1/index.php?fuseAction=$2 [R]
+	</pre>
+	<p>I was surprised that you can't have multiple instances of RewriteRule following a single RewriteCond. In theory on Apache 2.4+ this should work:</p>
+	<pre>
+	&lt;If "%{HTTP_HOST} == 'localhost:8080'"&gt;
+	RewriteRule ^(imagemgt|artsandculture|technology|whoweare)/(.*)$ /sweetandsour/$1/$2 [PT]
+	RewriteRule ^sweetandsour/([a-z]+)/([a-zA-Z0-9-]+)/?$ /sweetandsour/$1/index.php?fuseAction=$2 [R]
+	&lt;/If&gt;
+	</pre>
+	<p>but in practice it just gave me server errors. If you can explain why, do let me know.</p>
+
+	<p>Everything below is probably no longer relevant but is retained for historical purposes&hellip;</p>
 	<hr>
 </div>
 

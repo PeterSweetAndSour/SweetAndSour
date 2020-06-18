@@ -18,11 +18,11 @@ else
 //Find the folder and caption for this photo (won't be using linkedImg which will also be returned but should be empty).
 $photoInfoFound = false;
 $photoName = $_GET["photoName"];
-include '../imageMgt/qry_photoInfo.php';
+include '../imagemgt/qry_photoInfo.php';
 
 if($photoInfoFound == true) {
 	//Get the size ($height and $width) of the photo and the $url where it can be found.
-	include '../imageMgt/act_getURL.php';
+	include '../imagemgt/act_getURL.php';
 }
 
 //If $panorama is true, get applet display size
@@ -53,8 +53,8 @@ if($panorama == "true") {
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
 	<title>Lan and Peter's web site</title>
-	<link rel="shortcut icon" href="../imageMgt/favicon.ico" />
-	<link rel="stylesheet" type="text/css" media="screen,print"  href="../stylesStatic.css" />
+	<link rel="shortcut icon" href="<?=$rootRelativeUrl ?>imagemgt/favicon.ico" />
+	<link rel="stylesheet" type="text/css" media="screen,print"  href="<?=$rootRelativeUrl ?>stylesStatic.css" />
    	<script type="text/javascript">
       	//Make JS variable out of URL variable
 			var forceBelow = "<?= $forceCapBelow ?>";

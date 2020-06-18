@@ -6,7 +6,7 @@
 
 <h2>On the way</h2>
 <div class="story noSpaceBelow">
-   <p>We camped overnight at Kanarraville not far from the north entrance which was exciting if only because it was the first time we used our tent, bought soon after our <a href="../letters/index.php?fuseAction=letter6b">trip to South Dakota</a> in 1996! We weren't really prepared for how cold it was at night.</p>
+   <p>We camped overnight at Kanarraville not far from the north entrance which was exciting if only because it was the first time we used our tent, bought soon after our <a href="<?=$rootRelativeUrl ?>letters/index.php?fuseAction=letter6b">trip to South Dakota</a> in 1996! We weren't really prepared for how cold it was at night.</p>
 </div>
 <div class="photo-gallery clear">
 	<?
@@ -40,8 +40,8 @@
 
 <h4 class="spaceAbove">Bryce Canyon National Park</h2>
 <div class="story noSpaceBelow">
-	<p>Bryce Canyon is now my equal favorite National Park (with <a href="../letters/index.php?fuseAction=letter8b">Arches</a>. It is beautiful and unusual.</p>
-	<p>The first photo below was a panorama of &ldquo;Queen&apos;s Garden looking from above.&rdquo; but the Java applet required to view it no longer works and in any case, Google's StreetView has many excellent views of the canyon such as <a href="https://goo.gl/maps/oRy1woyHDDA9vKGd8" target="_blank" class="external">this one</a> and you can see what a remarkable landscape it is. I can't find the exact location where my photos were taken which I later stitched together to make one large (2.1MB!) <a href="<?= $urlPrefix ?>photos/images/UtahTrip/BrycePano.jpg">picture</a> from which a .mov file was made.</p>
+	<p>Bryce Canyon is now my equal favorite National Park (with <a href="<?=$rootRelativeUrl ?>letters/index.php?fuseAction=letter8b">Arches</a>. It is beautiful and unusual.</p>
+	<p>The first photo below was a panorama of &ldquo;Queen&apos;s Garden looking from above.&rdquo; but the Java applet required to view it no longer works and in any case, Google's StreetView has many excellent views of the canyon such as <a href="https://goo.gl/maps/oRy1woyHDDA9vKGd8" target="_blank" class="external">this one</a> and you can see what a remarkable landscape it is. I can't find the exact location where my photos were taken which I later stitched together to make one large (2.1MB!) <a href="<?= $rootRelativeUrl ?>photos/images/UtahTrip/BrycePano.jpg">picture</a> from which a .mov file was made.</p>
 </div>
 <div class="photo-gallery clear">
 	<?
