@@ -15,7 +15,7 @@
 
 <h2>29 November 2018</h2>
 <div class="story">
-	<p>We took a cruise on a smaller ship to the Canary Islands (part of Spain) and then the island of Madeira (part of Portugal): <a hrefhttps://photos.app.goo.gl/WpQnRnfVCbdZXgkb8 target="_blank" class="external">106 photos</a>. As always, click the <img src="images/IconInformation.jpg" alt="Information"> icon (or <img src="images/IconMenu.jpg" alt="Menu"> on mobile) once in Google Photos to see the captions.</p>
+	<p>We took a cruise on a smaller ship to the Canary Islands (part of Spain) and then the island of Madeira (part of Portugal): <a href="https://photos.app.goo.gl/WpQnRnfVCbdZXgkb8" target="_blank" class="external">106 photos</a>. As always, click the <img src="images/IconInformation.jpg" alt="Information"> icon (or <img src="images/IconMenu.jpg" alt="Menu"> on mobile) once in Google Photos to see the captions.</p>
 </div>
 <? setThumbnail("CanaryIslandsCruiseSm.jpg", "https://photos.app.goo.gl/WpQnRnfVCbdZXgkb8"); ?>
 
