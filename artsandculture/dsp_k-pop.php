@@ -86,7 +86,7 @@
 <div class="story">
 	<p>
 		If there was a song in my head since mid-2015, it was probably one of theirs. They are wonderful! As with most K-pop, it is not serious music but it is so much fun! Three of the members are Japanese and one is from Taiwan which led to a 
-			<a href="https://www.economist.com/asia/2016/01/21/twice-bitten&amp;sa=D&amp;ust=1590612821737000">diplomatic incident</a>
+			<a href="https://www.economist.com/asia/2016/01/21/twice-bitten">diplomatic incident</a>
 		 with China in 2016. Their songs all have bits of English in them, especially in the chorus, which is good marketing since it is everyone&apos;s second language no matter where you are in Asia. I think all the official music videos have English subtitles too. 
 	</p>
 
