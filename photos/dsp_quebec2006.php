@@ -61,8 +61,10 @@
 		"quebec43OldTown30Sm.jpg",
 		"quebec44OldTown31Sm.jpg",
 		"quebec45DayTrip01Sm.jpg",
-		"quebec46DayTrip02Sm.jpg",
-		"quebec47DayTrip03Sm.jpg",
+		"quebec46DayTrip02Sm.jpg"
+		/* Something has gone wrong and the server is missing the following photos.
+		,
+		"quebec47DayTrip03Sm.jpg"		,
 		"quebec48DayTrip04Sm.jpg",
 		"quebec49DayTrip05Sm.jpg",
 		"quebec50DayTrip06Sm.jpg",
@@ -73,6 +75,7 @@
 		"quebec55DayTrip11Sm.jpg",
 		"quebec56DayTrip12Sm.jpg",
 		"quebec58DayTrip13Sm.jpg",
-		"quebec59DayTrip14Sm.jpg"]);
+		"quebec59DayTrip14Sm.jpg" */
+		]);
   ?>
 </div>

@@ -9,7 +9,7 @@
 		Now that I&apos;m in my mid-40s, there are several options allowing me to deny to myself that I&apos;m getting older. I could have bought a red sports car for instance but being cheap, I elected to run a marathon instead. The mere fact that 26.2 miles or 42km is three times as far as I&apos;d ever run was not going to stop me. I actually attempted training last year but soon had to give up after hurting both feet. I found out that shoes were my problem, not just the particular running shoes but shoes in general.<sup><a href="#Note9">Note&nbsp;9</a></sup>  I switched to bare feet initially and then to &ldquo;gloves&rdquo; for my feet<sup><a href="#Note10">Note&nbsp;10</a></sup>  and that corrected my running style. I was thrilled with my time of 3:51:47.
 	</p>
 </div>
-<div class="photoAlbum">
+<div class="photo-gallery">
 	<?
 	setThumbnail(["RunToGeorgetown1.jpg", "MarathonWithCapitol1.jpg", "MarathonReward1.jpg"]);
 	?>

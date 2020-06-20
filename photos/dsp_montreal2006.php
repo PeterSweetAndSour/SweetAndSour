@@ -9,7 +9,7 @@
 	<p>There is one feature of the city that can&rsquo;t be adequetely shown in pictures and that is the network of underground shops and train stations that allow you to get around a good bit of downtown without needing to go outside. This <a href="http://www.stcum.qc.ca/English/metro/souterrain2006.pdf" target="_blank" class="external">map</a> might give you some clue though you really have to walk it to fully comprehend it. Given the ferocity of winter, this is a marvellous innovation though one of the guidebooks noted that there was no real plan but developers kepting adding more to the system. I believe Toronto has something similar.</p>
 	<p><a href="http://en.wikipedia.org/wiki/Montreal" target="_blank" class="external">Learn more</a> about Montreal.</p>
 </div>
-<div class="photoAlbum">
+<div class="photo-gallery">
 	<? setThumbnail([
 		"CanadaMapSm.gif",
 		"montreal001SideStreetSm.jpg",
@@ -18,7 +18,7 @@
 		"montreal004NearTownHallSm.jpg",
 		"montreal005TownHall1Sm.jpg",
 		"montreal006TownHallFloorSm.jpg",
-		"montreal009TownHall4Sm.jpg"
+		"montreal009TownHall4Sm.jpg",
 		"montreal010GovernorsHouseSm.jpg",
 		"montreal011OldTown1Sm.jpg",
 		"montreal012OldTown2Sm.jpg",

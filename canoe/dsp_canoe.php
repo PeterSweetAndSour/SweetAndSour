@@ -6,7 +6,7 @@
 <p>This model, the <a href="http://www.amtraders.com/c-detail.asp?Model=Feather&Material=WE" title="American Trader Feather">Feather</a>, is still produced and as you can see on the American Trader web site, the quality and craftmanship is reflected in the price. The site also has additional information on <a href="http://www.amtraders.com/c-epoxy_vs_canvas.htm" title="Construction details">construction details.</a> As the name suggests, it is lightweight at 49 pounds and can be carried on the shoulders by an adult. It's also reasonably car-toppable &ndash; we've drove it back from Tennessee on top of our Ford Escort wagon as shown.</p>
 </div>
 
-<div class="photoAlbum">
+<div class="photo-gallery">
 	<?
 	setThumbnail("Canoe_01Sm.jpg");
 	setThumbnail("Canoe_02Sm.jpg");

@@ -157,8 +157,8 @@
 			</ul> 
 		</li>
 		<li>
-			2019-09-23: <a href="https://www.youtube.com/watch?v=3ymwOvzhwHs" target="_blank" class="external"> Feel Special</a>. By way of comparison, check out <a href="https://www.youtube.com/watch?v=J3KA6WDAYPM" target="_blank" class="external">Dahyun's emotional solo</a>; I think the style is better suited to the lyrics of the song. 
-			This song comes after <a href="https://www.bbc.com/news/48948583&amp;sa=D&amp;ust=1590612821747000">Mina had to withdraw from performing</a> and her part starting at 1:30 addresses her crisis.
+			2019-09-23: <a href="https://www.youtube.com/watch?v=3ymwOvzhwHs" target="_blank" class="external">Feel Special</a>.
+			This song comes after <a href="https://www.bbc.com/news/48948583&amp;sa=D&amp;ust=1590612821747000">Mina had to withdraw from performing</a> and her part starting at 1:30 addresses her crisis. <br>By way of comparison, check out <a href="https://www.youtube.com/watch?v=J3KA6WDAYPM" target="_blank" class="external">Dahyun's emotional solo</a>; I think the style is better suited to the lyrics of the song. 
 		</li>
 		<li>
 			2019-10-29: <a href="https://www.youtube.com/watch?v=AlPHkOAT8hs" target="_blank" class="external">Luv Me</a> This is one of my favorite songs of theirs and until this live performance in Tokyo was posted, it only existed as a &ldquo;fan video&rdquo;. You will notice that Mina is back on stage as she felt comfortable enough to be on stage in Japan and you can hear the crowd show their appreciation when she sings.
@@ -166,7 +166,12 @@
 		<li>
 			2019-12-23: A Christmas present from Nayeon as she cover's <a href="https://www.youtube.com/watch?v=XO9GiPOLd3I">Santa Tell Me</a>
 		</li>
-		<li>2020-06-01 <a href="https://www.youtube.com/watch?v=mH0_XpSHkZo" target="_blank" class="external">More and More</a>. I am not sure I like it but I included it here because it is their latest and it seems to be popular. Just not with me.</li>
+		<li>
+			2020-06-01 <a href="https://www.youtube.com/watch?v=mH0_XpSHkZo" target="_blank" class="external">More and More</a>. I am not sure I like it but I included it here because it is their latest and it seems to be popular. Just not with me.
+		</li>
+		<li>
+			2020-06-18 <a href="https://www.youtube.com/watch?v=kRT174IdxuM" target="_blank" class="external">Fanfare</a>! This was a surprise as I had no idea that it was coming though that is usually the case for the Japanese releases and is a welcome return to bubble-gum pop. Bear in mind that only 3 of the 9 members speak Japanese so the other 6 had to just learn their lines phonetically. No English subtitles yet.
+		</li>
 	</ul>
 </div>
 

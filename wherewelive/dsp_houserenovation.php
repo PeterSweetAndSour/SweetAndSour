@@ -57,7 +57,7 @@
 	</div>
 		
 	<h2>What we started with</h2>
-	<div class="photoAlbum">
+	<div class="photo-gallery">
 		<?
 		setThumbnail([
 			"OriginalFrontSm.jpg",
@@ -69,7 +69,7 @@
 	</div>
 	
 	<h2>Excavation</h2>
-	<div class="photoAlbum">
+	<div class="photo-gallery">
 		<?
 		setThumbnail([
 			"InitialBasementExcavationSm.jpg",
@@ -87,7 +87,7 @@
 	</div>
 	
 	<h2>Subsidence</h2>
-	<div class="photoAlbum">
+	<div class="photo-gallery">
 		<?
 		setThumbnail([
 			"Subsidence1Sm.jpg",
@@ -113,7 +113,7 @@
 	</div>
 	
 	<h2>Basement</h2>
-	<div class="photoAlbum">
+	<div class="photo-gallery">
 		<?
 		setThumbnail([
 			"FloodedBasementSm.jpg",
@@ -139,7 +139,7 @@
 	</div>
 	
 	<h2>Floor</h2>
-	<div class="photoAlbum">
+	<div class="photo-gallery">
 		<?
 		setThumbnail([
 			"FloorboardRemovalSm.jpg",
@@ -155,7 +155,7 @@
 	</div>
 	
 	<h2>Painting and paint preparation</h2>
-	<div class="photoAlbum">
+	<div class="photo-gallery">
 		<?
 		setThumbnail([
 			"WindowBathroomSm.jpg",
@@ -180,7 +180,7 @@
 	</div>
 	
 	<h2>More issues</h2>
-	<div class="photoAlbum">
+	<div class="photo-gallery">
 		<?
 		setThumbnail([
 			"ChimneyTubesSm.jpg",

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#" debug="true">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
+    <meta charset="utf-8">
+
+    <title>PhotoSwipe: Responsive JavaScript Image Gallery</title>
+
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0"> 
+
+	<!-- Core CSS file -->
+	<link rel="stylesheet" href="css/photoswipe.css"> 
+	<!--link rel="stylesheet" href="/PhotoSwipePeter/dist/photoswipe.css"--> 
+
+	<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+		In the folder of skin CSS file there are also:
+		- .png and .svg icons sprite, 
+		- preloader.gif (for browsers that do not support CSS animations) -->
+	<link rel="stylesheet" href="css/default-skin/default-skin.css"> 
+	<!--link rel="stylesheet" href="/PhotoSwipePeter/dist/default-skin/default-skin.css"-->
+
+	<style>
+		.photo-gallery {
+		  display: flex;
+		  flex-direction: row;
+		  flex-wrap: wrap;
+		  justify-content: start;
+		  align-items: flex-start;
+		  align-content: start
+		}
+		.photo-gallery:after {
+		  display: block;
+		  content: " ";
+		  margin: 10px;
+		  flex: 999 999 auto;
+		}
+		figure {
+		  flex: 0 0 auto;
+		  width: 170px;
+		  margin: 10px;
+		  padding: 0;
+		}
+		figcaption.figure__caption--thumbnail {
+		  font-family: Verdana, Helvetica, sans-serif;
+		   font-size: 12px;
+		}
+		figcaption.figure__caption--fullsize {
+		  display: none; /* Contains the caption for the photo shown with PhotoSwipe. */
+		}
+		.image__thumbnail {
+		  box-shadow: 6px 6px 5px 0px #AAAAAA;
+		  margin-bottom: 5px;
+		}
+		.pswp__caption__center {
+			font-size: 15px;
+		}
+		.pswp__caption__center > p,
+		.pswp__caption__center > pre,
+		.pswp__caption__center > img,
+		.pswp__caption__center > iframe {
+			margin: 0 0 0.5em 10px;
+		}
+	 </style>
+</head>
+<body>
+	<div id="photo-test-gallery" class="photo-gallery">
+				<figure class="figure--thumbnail">
+					<a class="figure__link--gallery" href="//picsum.photos/id/142/780/527.jpg" data-size="780x527" data-author="Folkert Gorter">
+						<img class="thumbnail" src="//picsum.photos/id/142/150/102.jpg" />
+					</a>
+					<figcaption class="figure__caption--thumbnail">Lorem ipsum dolor sit amet, consectetur adipiscing elit</figcaption>
+					<figcaption class="figure__caption--fullsize">
+						<p>This version of Photoswipe supports captions of arbitrary length. When the photo first appears, the caption appears below the photo but if the caption is longer than the space available, a button will appear to expand it. As well as clicking/tapping the button, the caption can be expanded by tapping the Spacebar, or by rolling the mousewheel toward you when the mouse is over the caption. Similarly, the caption can be collapsed by those three methods.</p>
+						
+						<p>However, I also want to allow allow users of mobile devices to <strong>swipe up on a closed caption to expand it</strong> and <strong>then swipe down on an expanded caption to collapse it</strong> but I could not get that to work reliably so I commented that out. See lines 348, 569-591 and 719 of gestures.js. I spent a few days trying to understand what is going on inside that file but I remain baffled. Swiping up to expand generally worked but swiping down to collapse rarely did (but it did sometimes) and I could not figure out why they behaved differently. In particular, _currentPoints in _renderMovement doesn't seem to be populated when swiping down; I thought lines 348 and 719 concerning "downEvents" might help but it didn't</p>
+						<p><strong>If you can fix it, I'd be grateful as I think this is a worthwhile feature and something users will expect.</strong></p>
+						<hr />
+						<p>The options object used to instantiate Photoswipe contains:</p>
+						<pre>allowLongCaptions: true </pre>
+						<p>For this test page, I have two <code>figcaption</code> elements inside each <code>figure</code> and modified the initialization Javascript accordingly. The first a short one displayed with the thumbnail essentially as clickbait. The second one contains the extended description and may need to start with the short caption for users hitting next/previous once PhotoSwipe is open.</p>
+						<p>You can include any HTML in the caption you wish such as links to <a href="https://www.photoswipe.com">Photoswipe</a>, or another image</p>
+						<img src="https://picsum.photos/id/14/320/160.jpg" />
+						<p>Or a map to show where the photo was taken (but it is going to load regardless and will therefore slow down the page so use sparingly):</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d204682.62417879287!2d1.352225842085443!3d47.61978760804588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4add37eb82821%3A0x6d1fb075610e2871!2sCh%C3%A2teau%20de%20Chambord!5e0!3m2!1sen!2spt!4v1589366068152!5m2!1sen!2spt" width="320" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						<p>Captions can include unescaped single quotes (') and double quotes (").</p>
+						<p>The caption can be expanded by clicking on the button, dragging up on the part of the caption that is visible, or using the mouse wheel  (which I just discovered is failing silently in Firefox). The caption can be collapsed by rolling the mousewheel away when the caption is already at the top (again, not on Firefox till I find out why).</p>
+						<p>The arrow in the button is SVG so you change as you see fit but note it must be base64 encoded to work with IE11; I first tried a Unicode arrow but it failed on my phone then I tried a CSS arrow but that required markup inside the button (i tags) but clicking on the arrow did nothing since the click event was tied to the button plus there was a lot of CSS for something so simple.</p> 
+						<p>I have not yet waded into the animation code but it would be nice to have the caption slide up and down over a half second or less. Also, I have not yet looked into how to make it accessible for keyboard-only users.</p>
+						<p>There is new markup inside the .pswp__caption element:</p>
+						<pre>&lt;button class=&quot;pswp__button pswp__button--caption--ctrl&quot;  id=&quot;pswp__button--caption--ctrl&quot; title=&quot;Expand caption&quot;&gt;&lt;/button&gt;</pre>
+						<p>... however, the Javascript checks for its existance and will insert it if not already present.</p>
+						<p>This branch includes my <a href="https://github.com/dimsemenov/PhotoSwipe/pull/1687" target="_blank">pull request to update the grunt file</a> or it won't build.</p>
+						<p>I added some CSS to put a box at the end of the last paragraph of text to signal the end of the caption since no scroll bar is visible if the caption is less than the available heights: </p>
+					</figcaption>
+				</figure>
+
+				<figure class="figure--thumbnail">
+					<a class="figure__link--gallery" href="//picsum.photos/id/1015/406/600.jpg" data-size="406x600" data-author="Samuel Rohl">
+						<img class="thumbnail" src="//picsum.photos/id/1015/102/150.jpg" />
+					</a>
+					<figcaption class="figure__caption--thumbnail">Etiam blandit elementum libero.</figcaption>
+					<figcaption class="figure__caption--fullsize">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ac finibus dolor. Pellentesque eu mattis quam, sed lacinia odio. Aliquam erat volutpat. Maecenas dignissim ex vel turpis consectetur malesuada. Etiam ullamcorper odio ut nunc tincidunt efficitur. Ut mattis hendrerit luctus. Nunc posuere eget sapien sed congue. Maecenas imperdiet, purus sodales cursus facilisis, elit tortor faucibus purus, ac cursus nunc nibh ac neque. Fusce nec ligula elit. Curabitur et metus fringilla, blandit lorem non, euismod nunc. Duis nec mi quis velit semper pulvinar a vel orci. Vestibulum volutpat varius enim vitae suscipit. Vestibulum ac nisl non urna varius sodales. Proin quis mauris dolor. Donec eu nunc nisl.</p>				
+						<p>Etiam blandit elementum libero.</p>
+						<p>Ut malesuada nulla consectetur et. Nunc id pretium eros. Fusce lorem velit, commodo sit amet ultricies in, venenatis quis sapien. Sed accumsan lacus eget tempus euismod. Pellentesque et sodales eros. Etiam ut molestie mi, vitae pharetra erat. Proin mollis orci vulputate lorem fringilla, aliquam vulputate ligula ullamcorper.</p>
+					</figcaption>
+				</figure>
+
+				<figure class="figure--thumbnail">
+					<a class="figure__link--gallery" href="https://picsum.photos/id/1038/402/598.jpg" data-size="402x598" data-author="Alice Krivec">
+						<img class="thumbnail" src="\//picsum.photos/id/1038/102/150.jpg" />
+					</a>
+					<figcaption class="figure__caption--thumbnail">A very long caption</figcaption>
+					<figcaption class="figure__caption--fullsize">
+						<p>A very, very long caption.</p>
+						<p>Ut non augue in arcu mollis volutpat. Vestibulum dapibus felis ipsum, sit amet maximus tellus ultricies sed. Maecenas eu tellus aliquet, ultrices dui vel, lacinia nibh. Ut tempus iaculis condimentum. Donec nec convallis nisi, eu rutrum turpis. Praesent vestibulum vulputate velit, a scelerisque dolor sagittis commodo. Proin cursus enim et dolor cursus, non tristique urna feugiat. Sed consectetur, magna sit amet convallis pharetra, velit eros scelerisque dolor, ut vestibulum nisl massa vel ex. Nulla sit amet vehicula felis. In scelerisque sollicitudin ipsum, non gravida justo tincidunt ut. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam mollis purus eget leo posuere, faucibus aliquet justo suscipit. Cras ullamcorper risus at lobortis fermentum. Ut in ex metus.</p>
+						<p>Donec malesuada nisl et dui pulvinar, ut efficitur velit tempus. Donec eget mi vitae ligula porttitor laoreet. Suspendisse nunc lectus, semper gravida felis non, dignissim ultricies lectus. Phasellus sit amet tincidunt arcu. Praesent sit amet risus tincidunt lacus auctor euismod vel id metus. Nulla elementum ligula sed nisi egestas volutpat.</p>
+						<p>Donec elementum, velit a feugiat fringilla, elit neque elementum velit, bibendum hendrerit ex tellus vel massa. Nunc egestas libero ac luctus vestibulum. Etiam mollis nisi rhoncus ligula vehicula convallis. Quisque tristique dapibus ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In aliquet massa in ipsum dapibus egestas. Nullam quis libero quis dui condimentum elementum a nec ante. Proin imperdiet placerat nisi, id faucibus massa porta quis. Cras urna mauris, luctus vitae condimentum vitae, ornare non nisl. Vivamus ultrices convallis justo sed elementum. In eget tincidunt lacus. Donec dui massa, efficitur eu metus non, interdum accumsan nisl. Mauris faucibus vel eros a viverra. Pellentesque faucibus congue sapien, eu tincidunt libero convallis eget. Aliquam a justo sit amet sapien lobortis consequat.</p>
+						<p>Ut pellentesque mattis lectus vel interdum. Nunc at posuere nulla. Nulla non vestibulum eros. Nullam faucibus nulla felis, at ultricies lectus mattis in. In hac habitasse platea dictumst. Integer pharetra augue id blandit pellentesque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam dui turpis, lobortis ac leo sodales, sodales consectetur sapien. Sed cursus pellentesque ligula sit amet gravida. Quisque interdum risus sit amet lectus pretium, vitae cursus augue dapibus. Nullam varius turpis sed purus porta tristique.</p>
+						<p>Phasellus a lacinia massa, sit amet elementum mi. Fusce vehicula, nisi a eleifend eleifend, mi neque laoreet nisi, id commodo magna dui et ante. Aliquam ac ultrices turpis. Pellentesque ac lobortis metus. Ut sit amet sem quis arcu dapibus ultricies ut ac nisl. Etiam magna mi, bibendum a est sed, scelerisque ornare nibh. Cras gravida vitae quam eu accumsan. Maecenas non euismod erat, non lobortis quam. Nullam ullamcorper faucibus ipsum, sed egestas eros lobortis vel. Integer rutrum ultricies urna, ut dignissim nunc pellentesque ut. Sed metus lectus, tincidunt nec ligula id, vehicula maximus elit. Praesent porttitor semper iaculis. Morbi vulputate varius ipsum, eu venenatis sem interdum non.</p>
+						<p>Pellentesque sit amet ipsum id neque efficitur consectetur. Aliquam augue nisl, scelerisque id ipsum eget, vehicula consectetur lacus. Maecenas mattis diam vitae tempus finibus. Etiam vitae aliquet libero. Quisque feugiat suscipit arcu, nec efficitur magna porta quis. Vestibulum aliquam euismod posuere. Fusce sit amet ultricies ex. Vestibulum sed sodales enim, scelerisque suscipit risus. Nullam consequat rutrum velit a mollis.</p>
+						<p>Nulla fringilla malesuada lacus. Maecenas rutrum ipsum a nibh aliquet faucibus. Etiam ac placerat nibh. Aliquam condimentum interdum dapibus. Sed blandit est lorem, quis varius odio ultricies non. Nullam tellus erat, commodo eu laoreet non, vehicula at lectus. Maecenas et metus erat. Sed ornare id felis eu facilisis. Donec blandit odio eu lectus tristique, scelerisque faucibus ex venenatis. In hendrerit, nisi vitae molestie faucibus, est sapien venenatis ex, sit amet fermentum orci ante vitae dui. Curabitur et volutpat dolor, eu consectetur dui. Nam hendrerit in turpis sed cursus.</p>
+						<p>Ut tincidunt nunc quis augue tristique fringilla. Donec aliquam ullamcorper erat, sed consequat diam porta a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque et mauris nec lorem luctus viverra. Cras eu nulla dapibus, tristique orci vitae, tristique erat. Aenean augue magna, interdum a aliquet ut, posuere fringilla mauris. Pellentesque a tortor sit amet dui viverra congue eget eu ante. Nulla rhoncus, nisi scelerisque tristique auctor, augue turpis tristique arcu, nec blandit neque nisl a nibh. Integer feugiat, quam id sagittis elementum, nisi odio iaculis nisi, sodales ultricies massa leo imperdiet metus. Cras dignissim orci eget nulla dictum viverra. Sed interdum velit vel tristique maximus. Proin nunc dui, condimentum sed nulla et, placerat luctus neque. Nullam dictum nulla vel semper cursus. Etiam consequat quam vitae orci pulvinar pellentesque. Ut condimentum, leo porttitor laoreet volutpat, mauris elit sagittis dolor, non imperdiet mauris risus ut felis.</p>
+						<p>Donec hendrerit lectus ultricies ipsum luctus aliquet. Curabitur pulvinar tortor purus, vel vestibulum enim mattis at. Nunc eget volutpat quam. Quisque in mi et mauris blandit varius volutpat nec dolor. Duis pretium velit dolor, congue tincidunt sapien rhoncus id. Suspendisse potenti. Quisque finibus ultrices eleifend. Nam congue elit risus, tristique elementum leo luctus nec. Donec cursus tellus a tellus pharetra cursus. In eu venenatis mi. Suspendisse quis mi auctor, consectetur erat nec, ultrices turpis. Quisque sapien erat, ultricies eu porta volutpat, venenatis vel lorem.</p>
+						<p>Nullam non cursus nibh, in pharetra diam. Suspendisse vitae leo ligula. In eget tortor bibendum, ullamcorper nulla vitae, rhoncus arcu. Quisque vel tristique sem. Donec nec quam vel dolor semper varius. Sed arcu ligula, sodales in nibh eu, tincidunt pellentesque ligula. Etiam nec justo magna. Mauris mattis massa eget rhoncus gravida. Nunc erat erat, condimentum vel cursus eget, vulputate ac neque.</p>
+						<p>Suspendisse nisi mi, tempus a gravida in, tincidunt aliquet sapien. Donec suscipit convallis sem vitae pellentesque. Curabitur quis lorem dolor. Aenean lacinia lacinia nisi id volutpat. Cras a leo dapibus, hendrerit quam lacinia, semper tellus. Sed vitae odio sapien. Nulla facilisi. Etiam malesuada dolor et nisl egestas luctus. Suspendisse potenti. Ut varius ultricies pharetra.</p>
+						<p>Aliquam vitae nunc ut felis rhoncus auctor vel vel erat. In sollicitudin, sem sit amet faucibus mollis, lectus nisl ullamcorper turpis, quis efficitur lectus enim ac libero. Curabitur lobortis posuere dignissim. Aliquam tincidunt nisi eget erat molestie condimentum. Cras aliquet mauris eget dolor molestie eleifend. Cras vitae volutpat mi. Integer condimentum erat quis ipsum convallis semper. Sed dolor nisl, volutpat id eleifend et, pellentesque sit amet lectus. Donec nec pretium magna, non pharetra dolor. Vestibulum id eleifend nulla. Suspendisse viverra magna scelerisque, varius purus ac, rutrum erat. Phasellus id iaculis urna. Donec ultricies, tortor non viverra egestas, velit nisi vestibulum lectus, eget ultricies dolor erat vitae dui.</p>
+						<p>Praesent commodo nulla at efficitur bibendum. Integer sed faucibus magna, eget hendrerit velit. Fusce non mauris egestas mi gravida gravida. Nullam in luctus arcu. Etiam imperdiet, dolor in bibendum gravida, diam eros vulputate erat, ac varius dolor nibh nec nulla. Phasellus varius ipsum sem, nec viverra tortor molestie molestie. Donec cursus sed diam non tincidunt. Integer eu ipsum ante. Cras in venenatis ligula, ac finibus lacus. Integer et lectus felis. In quis rutrum nibh, nec dictum leo. Aenean elementum sit amet sem in luctus. Aenean pretium orci justo, vitae porttitor nisl tempor ut. Suspendisse porta semper mi, eu ultrices magna tempus non.</p>
+					</figcaption>
+				</figure>
+				
+				<figure class="figure--thumbnail">
+					<a class="figure__link--gallery" href="https://picsum.photos/id/1081/749/509.jpg" data-size="749x509" data-author="Michelle Hull">
+						<img class="thumbnail" src="https://picsum.photos/id/1081/150/102.jpg" />
+					</a>
+					<figcaption class="figure__caption--thumbnail">A very short caption.</figcaption>
+					<figcaption class="figure__caption--fullsize">
+						<p>Curabitur pellentesque augue ut dignissim ornare.</p>
+					</figcaption>
+				</figure>
+	</div>
+
+  
+    <div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+
+        <div class="pswp__scroll-wrap">
+
+          <div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+          </div>
+
+          <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+				<div class="pswp__counter"></div>
+
+				<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+				<button class="pswp__button pswp__button--share" title="Share"></button>
+
+				<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+				<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+					  <div class="pswp__preloader__cut">
+					    <div class="pswp__preloader__donut"></div>
+					  </div>
+					</div>
+				</div>
+            </div>
+
+
+			<!-- <div class="pswp__loading-indicator"><div class="pswp__loading-indicator__line"></div></div> -->
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+	            <div class="pswp__share-tooltip">
+					<!-- <a href="#" class="pswp__share--facebook"></a>
+					<a href="#" class="pswp__share--twitter"></a>
+					<a href="#" class="pswp__share--pinterest"></a>
+					<a href="#" download class="pswp__share--download"></a> -->
+	            </div>
+	        </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+            <div class="pswp__caption">
+                <button class="pswp__button pswp__button--caption--ctrl" id="pswp__button--caption--ctrl" title="Expand caption"></button>
+                <div class="pswp__caption__center"></div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+	<script src="js/photoswipe.js"></script>
+	<!--script src="/PhotoSwipePeter/dist/photoswipe.js"></script-->
+    <script src="js/photoswipe-ui-default.js"></script>	 
+    <!--script src="/PhotoSwipePeter/dist//photoswipe-ui-default.js"></script-->	 
+    <script src="js/photoswipe_setup.js"></script>
+</body>
+</html>

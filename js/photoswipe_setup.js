@@ -36,7 +36,7 @@
     
                         /* create slide object */
                         item = {
-                            src: anchor.dataset.linkedImageSrc, /* anchor.getAttribute('href'),*/
+                            src: anchor.dataset.linkedImageSrc ? anchor.dataset.linkedImageSrc : anchor.getAttribute('href'),
                             w: parseInt(size[0], 10),
                             h: parseInt(size[1], 10),
                             author: anchor.dataset.dataAuthor

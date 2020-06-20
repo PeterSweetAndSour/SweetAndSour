@@ -6,7 +6,7 @@
 	<p>Since the last major redesign in 2008 two major things have happened:</p>
 	<ol>
 		<li>People using the mobile phones to view the internet has become a thing</li>
-		<li>We started looking for a house in 2008 and bought a wreck in late 2009. Even after the builder finally &ldquot;finished&rdquo; in July 2011, it seemed that all my free time was now taken by home and garden improvement and this site was not updated to deal with #1.</li>
+		<li>We started looking for a house in 2008 and bought a wreck in late 2009. Even after the builder finally &ldquo;finished&rdquo; in July 2011, it seemed that all my free time was now taken by home and garden improvement and this site was not updated to deal with #1.</li>
 	</ol>
 	<p>Clicking on a thumbnail image on the old version of this site popped up a fake window to show the full size version. It was workable on a desktop. Most of the time. To make the site responsive I wanted a modern image gallery/slider but I could not find one that supported long captions. My thumbnails often have a few words of 'click bait" and then the main caption is displayed with the large photo which seems a great approach to me but apparently no one else. I liked <a href="https://www.photoswipe.com" target="_blank" class="external">Photoswipe</a> because it lazy-loads the photos and you can set it up to work with your page structure so I ended up modifying it which took quite some time. <a href="https://sweetandsour.org/photoswipe_demo.html">Demo page</a>.</p>
 	<p>I'll also be revisiting all the styles now that I'm using SASS and Grunt and browsers are now more capable.</p>
