@@ -35,7 +35,7 @@ include '../imagemgt/act_setThumbnailFunction.php';
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, min-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
 	<title>
 		<?= str_replace("<span>", "", (str_replace("</span>", "", isset($heading1Text) ? $heading1Text : ""))) ?> 

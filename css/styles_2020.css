@@ -107,6 +107,7 @@ select {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 15px;
+  overflow-x: hidden;
 }
 
 /* -----------------------------------------------------------------------------------------
