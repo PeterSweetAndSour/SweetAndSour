@@ -341,6 +341,22 @@ Miscellaneous
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1vcGFjaXR5PSIwIiBzdHJva2U9IiNjY2YiIHN0cm9rZS13aWR0aD0iMTAiCmQ9Im00MywzNUg1djYwaDYwVjU3TTQ1LDV2MTBsMTAsMTAtMzAsMzAgMjAsMjAgMzAtMzAgMTAsMTBoMTBWNXoiLz4KPC9zdmc+");
 }
 
+.feedback {
+  color: #666;
+  font-size: 13px;
+}
+
+.notice {
+  padding: 15px 20px 3px;
+  background-color: rgba(155, 228, 191, 0.418);
+  border: 1px solid #44a072;
+  border-radius: 10px;
+}
+.notice h2 {
+  color: #44a072;
+  margin-top: 0;
+}
+
 /* ***********************************************
 Mobile 
 ************************************************ */
