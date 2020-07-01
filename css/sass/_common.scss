@@ -122,7 +122,7 @@ Overlay and loading graphic
 }
   
 /* -----------------------------------------------------------------------------------------
-Error pages
+Errors
 ------------------------------------------------------------------------------------------ */
 
 .errorBanner {
@@ -136,6 +136,18 @@ Error pages
 	&.error500 {
 		background-image: url("/errorhandling/images/trainderailment.jpg");
 	}
+}
+
+.warning {
+	padding: 15px 20px 3px;
+	background-color: rgba(253, 171, 171, 0.418);
+	border: 1px solid rgb(222, 0, 0);
+	border-radius: 10px;
+
+	h2 {
+		color: rgb(222, 0, 0);
+		margin-top: 0;
+	}	
 }
 
 /* -----------------------------------------------------------------------------------------
@@ -211,6 +223,10 @@ CSS triangles for end of page navigation
 /* -----------------------------------------------------------------------------------------
 Miscellaneous
 ------------------------------------------------------------------------------------------ */
+
+.hidden {
+	display: none;
+}
 
 /* Used to indicate text of bumper sticker. */
 .sticker {
