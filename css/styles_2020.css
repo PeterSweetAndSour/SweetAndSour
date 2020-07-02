@@ -1,4 +1,7 @@
-/* Tints and shades: https://www.tutorialrepublic.com/html-reference/html-color-picker.php */
+/* 
+Tints and shades: https://www.tutorialrepublic.com/html-reference/html-color-picker.php 
+Each tint is two jumps down on the chart.
+*/
 /* ChowFun is a free font by Harold Lohner from http://www.haroldsfonts.com/chowfun.html */
 @font-face {
   font-family: "Conv_Chowfun";
@@ -235,17 +238,6 @@ Errors
   background-image: url("/errorhandling/images/trainderailment.jpg");
 }
 
-.warning {
-  padding: 15px 20px 3px;
-  background-color: rgba(253, 171, 171, 0.418);
-  border: 1px solid #de0000;
-  border-radius: 10px;
-}
-.warning h2 {
-  color: #de0000;
-  margin-top: 0;
-}
-
 /* -----------------------------------------------------------------------------------------
 CSS triangles for end of page navigation
 ------------------------------------------------------------------------------------------ */
@@ -316,6 +308,41 @@ CSS triangles for end of page navigation
 }
 
 /* -----------------------------------------------------------------------------------------
+Status notices
+------------------------------------------------------------------------------------------ */
+.notice {
+  padding: 15px 20px 3px;
+  margin: 20px 0;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+}
+.notice h2 {
+  margin-top: 0;
+}
+.notice.success {
+  background-color: #cfe1ce;
+  border-color: #126d0a;
+}
+.notice.success h2 {
+  color: #126d0a;
+}
+.notice.info {
+  background-color: #f5f6cc;
+  border-color: #8F9400;
+}
+.notice.info h2 {
+  color: #8F9400;
+}
+.notice.warning {
+  background-color: #eacccc;
+  border-color: #900;
+}
+.notice.warning h2 {
+  color: #900;
+}
+
+/* -----------------------------------------------------------------------------------------
 Miscellaneous
 ------------------------------------------------------------------------------------------ */
 .hidden {
@@ -359,17 +386,6 @@ Miscellaneous
 .feedback {
   color: #666;
   font-size: 13px;
-}
-
-.notice {
-  padding: 15px 20px 3px;
-  background-color: rgba(155, 228, 191, 0.418);
-  border: 1px solid #44a072;
-  border-radius: 10px;
-}
-.notice h2 {
-  color: #44a072;
-  margin-top: 0;
 }
 
 /* ***********************************************
@@ -1092,12 +1108,15 @@ button.continue:focus {
   box-shadow: inset 0 25px 0 0 rgba(255, 255, 255, 0.5), 0 1px 1px 0 rgba(0, 0, 0, 0.5);
   color: #000;
 }
+input.submit:disabled,
+button.continue:disabled {
+  opacity: 0.25;
+}
 
 .textAreaRow {
   margin-top: -28px;
 }
-
-label.textarea {
+.textAreaRow label {
   font-size: 18px;
   position: relative;
   top: 40px;
@@ -1107,7 +1126,7 @@ label.textarea {
   color: #767676;
   background-color: #fff;
 }
-label.textarea.focused {
+.textAreaRow label.focused {
   top: 8px;
   font-size: 14px;
   color: #000;
@@ -1119,6 +1138,12 @@ textarea {
   padding: 10px;
   border: solid 1px #D0DDEB;
 }
+textarea:focus {
+  border-bottom: solid 2px #14599E;
+  margin-bottom: 0;
+  outline: 0;
+  box-shadow: 0 2px 6px -8px rgba(20, 89, 158, 0.45);
+}
 
 .reCaptchaRow {
   margin: 20px 0;
@@ -1127,6 +1152,7 @@ textarea {
   display: block;
   margin-bottom: 6px;
   font-size: 18px;
+  color: #767676;
 }
 
 /* Note to future self on using inline SVG for Font Awesome icons:

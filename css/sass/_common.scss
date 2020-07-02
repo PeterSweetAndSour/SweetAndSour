@@ -138,17 +138,6 @@ Errors
 	}
 }
 
-.warning {
-	padding: 15px 20px 3px;
-	background-color: rgba(253, 171, 171, 0.418);
-	border: 1px solid rgb(222, 0, 0);
-	border-radius: 10px;
-
-	h2 {
-		color: rgb(222, 0, 0);
-		margin-top: 0;
-	}	
-}
 
 /* -----------------------------------------------------------------------------------------
 CSS triangles for end of page navigation
@@ -221,6 +210,48 @@ CSS triangles for end of page navigation
 }
 
 /* -----------------------------------------------------------------------------------------
+Status notices
+------------------------------------------------------------------------------------------ */
+.notice {
+	padding: 15px 20px 3px;
+	margin: 20px 0;
+	border-radius: 10px;
+	border-width: 1px;
+	border-style: solid;
+
+	h2 {
+		margin-top: 0;
+	}
+
+	&.success {
+		background-color: $greenTint4;
+		border-color: $greenDark;
+
+		h2 {
+			color: $greenDark;
+		}
+	}
+
+	&.info {
+		background-color: $yellowTint4;
+		border-color: $yellowDark;
+
+		h2 {
+			color: $yellowDark;
+		}
+	}
+
+	&.warning {
+		background-color: $redTint4;
+		border-color: $redDark;
+
+		h2 {
+			color: $redDark;
+		}
+	}
+}
+
+/* -----------------------------------------------------------------------------------------
 Miscellaneous
 ------------------------------------------------------------------------------------------ */
 
@@ -264,14 +295,4 @@ Miscellaneous
 	color: #666;
 	font-size: 13px;
 }
-.notice {
-	padding: 15px 20px 3px;
-	background-color: rgba(155, 228, 191, 0.418);
-	border: 1px solid rgb(68, 160, 114);
-	border-radius: 10px;
 
-	h2 {
-		color: rgb(68, 160, 114);
-		margin-top: 0;
-	}
-}

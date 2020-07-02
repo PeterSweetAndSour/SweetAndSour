@@ -22,19 +22,8 @@ switch ($fuseAction) {
 	case "contactUs":
 		$heading1Text = "Contact Us";
 		$showToTopLink = false;  //Page too short to include "To top" link.
-		$jsFiles[] = "<script src=\"" . <?=$rootRelativeUrl ?> . "js/contactUsForm.js\"></script>";
-		$jsFiles[] = "<script src=\"https://www.google.com/recaptcha/api.js\"></script>";
-		$jsFiles[] = <<<reCAPTCHA
+		$jsFiles[] = "<script src=\"" . $rootRelativeUrl . "js/contactUsForm.js\"></script>";
 
-<script type="text/javascript">
-	var onloadCallback = function() {
-		grecaptcha.render('reCAPTCHA-wrapper', {
-			'sitekey' : '$reCAPTCHA_siteKey'
-		});
-	};
-</script>
-
-reCAPTCHA;
 		$contentPage = 'dsp_contactUs.php';
 		include "../dsp_outline.php";
 		break;
@@ -44,6 +33,13 @@ reCAPTCHA;
 		include '../includes/act_callAPI.php';
 		include 'act_sendEmail.php';
 		break;
+
+	//Success
+	case "success":
+		$showToTopLink = false;
+		$contentPage = "dsp_success.php";
+		include "../dsp_outline.php";
+	break;
 
 	/**** Default case. ****/
 	default:

@@ -77,33 +77,45 @@ button.continue {
 		box-shadow: inset 0 25px 0 0 rgba(255,255,255,0.5), 0 1px 1px 0 rgba(0,0,0,0.5);
 		color: #000;
 	}
+	&:disabled {
+		opacity: 0.25;
+	}
 }
 
 .textAreaRow {
 	margin-top: -28px;
-}
+	
+	label {
+		font-size: 18px;
+		position: relative;
+		top: 40px;
+		left: 5px;
+		transition:  all .3s linear; 
+		padding: 0 5px;
+		color: #767676;
+		background-color: #fff;
 
-label.textarea {
-	font-size: 18px;
-	position: relative;
-	top: 40px;
-	left: 5px;
-	transition:  all .3s linear; 
-	padding: 0 5px;
-	color: #767676;
-	background-color: #fff;
-
-	&.focused {
-		top: 8px;
-		font-size: 14px;
-		color: #000;
+		&.focused {
+			top: 8px;
+			font-size: 14px;
+			color: #000;
+		}
 	}
 }
+
+
 textarea {
 	box-sizing:  border-box;
 	width: 100%;
 	padding: 10px;
 	border: solid 1px $blueTint4; 
+	
+	&:focus {
+		border-bottom:  solid 2px $blueDark; 
+		margin-bottom: 0;
+		outline: 0; 
+		box-shadow:  0 2px 6px -8px rgba($blueDark, .45);
+	}
 }
 
 .reCaptchaRow {
@@ -113,5 +125,6 @@ textarea {
 		display: block;
 		margin-bottom: 6px;
 		font-size: 18px;
+		color: #767676;
 	}
 }

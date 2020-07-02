@@ -1,7 +1,6 @@
 <?
 function CallAPI($method, $url, $data = false) {
     $curl = curl_init();
-	echo "This is CallAPI<br>";
 	
     switch ($method) {
         case "POST":
