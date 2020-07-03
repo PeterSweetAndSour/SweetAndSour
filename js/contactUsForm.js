@@ -72,6 +72,10 @@ const loadScript = src => {
 		document.querySelector("#submitBtn").removeAttribute("disabled");
 	};
 
+	var _disableSubmitButton = function() {
+		document.querySelector("#submitBtn").setAttribute("disabled", null);
+	};
+
 	var _loadReCAPTCHA = function () {
 		var reCAPTCHAWrapper = document.querySelector("#reCAPTCHAWrapper");
 		if(!reCAPTCHAWrapper) {
@@ -90,7 +94,7 @@ const loadScript = src => {
 		grecaptcha.render('reCAPTCHAWrapper', {
 			'sitekey' : siteKey
 		});
-	}
+	};
 
 	var _setTextAreaEventListeners = function() {
 		const msgTextArea = document.querySelector("#msgText");
@@ -129,7 +133,8 @@ const loadScript = src => {
 		initialize : _initialize,
 		loadReCAPTCHA: _loadReCAPTCHA,
 		renderReCAPTCHA: _renderReCAPTCHA,
-		enableSubmitButton: _enableSubmitButton
+		enableSubmitButton: _enableSubmitButton,
+		disableSubmitButton: _disableSubmitButton
 	};  
 })(); // the paranthesis will execute the function immediately. Do not remove.
 
@@ -153,5 +158,8 @@ var renderReCAPTCHA = function() {
 
 var enableSubmitButton = function() {
 	document.querySelector("#submitBtn").removeAttribute("disabled");
+};
+var disableSubmitButton = function() {
+	document.querySelector("#submitBtn").setAttribute("disabled", null);
 };
 
