@@ -4,5 +4,6 @@
 *.gif
 *.pdf
 *.doc
+*.log
 .directory
 node_modules
