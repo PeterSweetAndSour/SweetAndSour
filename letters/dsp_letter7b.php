@@ -19,7 +19,7 @@
 </div>
 <div class="photo-gallery">
 	<?
-	setThumbnail(["SpaceNeedle1.jpg", "Cabbages1.jpg", "RegalPrincess1.jpg", "UnEnteringShip1.jpg", "UsAtDinner1.jpg", "LanGlacier1.jpg", "PeterGlacier1.jpg", "ChilkootPass1.jpg", "SnowTrain1.jpg", "VictoriaBC1.jpg", "ButchardGardens1.jpg", "LanAtBGardens1.jpg", "TotemPole1.jpg", "SuspensionBridge1.jpg"]);
+	setThumbnail(["SpaceNeedle1.jpg", "Cabbages1.jpg", "RegalPrincess1.jpg", "UsEnteringShip1.jpg", "UsAtDinner1.jpg", "LanGlacier1.jpg", "PeterGlacier1.jpg", "ChilkootPass1.jpg", "SnowTrain1.jpg", "VictoriaBC1.jpg", "ButchardGardens1.jpg", "LanAtBGardens1.jpg", "TotemPole1.jpg", "SuspensionBridge1.jpg"]);
 	?>
 </div>
 

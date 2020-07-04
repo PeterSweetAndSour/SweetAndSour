@@ -260,12 +260,12 @@
 
 <h2>3 August 1999</h2>
 <div class="story">
-	<p class="endText">I've rearranged the "Interesting Things" section and made a category for <a href="<?= $rootRelativeUrl ?>technology/computers">Computers</a>.  In particular, you can now experience a complete waste of time with the <a href="<?=$rootRelativeUrl ?>technology/dsp_minesweeper.htm">Minesweeper game</a> that I wrote in Java.</p>
+	<p class="endText">I've rearranged the <span class="strikethrough">"Interesting Things" section</span> and made a category for Computers. In particular, you can now experience a complete waste of time with the <span class="strikethrough">Minesweeper game that I wrote in Java</span>. [2020: removed because the Java applet no longer worked.]</p>
 </div>
 
 <h2>10 July 1999</h2>
 <div class="story">
-	<p class="endText">For a bit of fun, I've added a Java animation on an "entry page."  If you are a Java programmer, please comment on my code.  I would like it to load faster and I don't think I've made proper use of object-oriented techniques.  It used to have continuously changing color but it took too long to load so I've scaled it back.</p>
+	<p class="endText">For a bit of fun, I've added a Java animation on an "entry page". [2020: That was removed in 2008! Animated entry pages were common on the early internet but they just wasted the time of site visitors so the solutioin at one point was to include a &ldquo;Skip intro&hellip;&rdquo; link. Eventually everyone realized they served no purpose so they are all gone now.] If you are a Java programmer, please comment on my code.  I would like it to load faster and I don't think I've made proper use of object-oriented techniques.  It used to have continuously changing color but it took too long to load so I've scaled it back.</p>
 </div>
 
 <h2>21 June 1999</h2>
