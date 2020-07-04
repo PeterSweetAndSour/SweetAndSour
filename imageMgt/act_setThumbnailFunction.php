@@ -92,6 +92,8 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 
 // Use this if you want a text link to the BIG image. Use the name of the SMALL image so the SQL works.
 function setTextLinkToPicture($photoName, $displayText) {
+	global $rootRelativeUrl;   //from config file
+
 	//Find the information related to this photo
 	$photos = getPhotoInfo(array($photoName));
 	
