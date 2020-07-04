@@ -24,7 +24,7 @@
 </div>
 <div class="photo-gallery">
 	<?
-	setThumbnail("AcrobatIcon_Ltr14.gif", $rootRelativeUrl . "files/Letter14.pdf");
+	setThumbnail("AcrobatIcon_Ltr14.gif", $rootRelativeUrl . "letters/files/Letter14.pdf");
 	setThumbnail("Passport1.jpg");
 	?>
 </div>

@@ -19,7 +19,7 @@
 </div>
 <div class="photo-gallery">
 	<?
-	setThumbnail("AcrobatIcon_Ltr15.gif", $rootRelativeUrl . "files/Letter15.pdf");
+	setThumbnail("AcrobatIcon_Ltr15.gif", $rootRelativeUrl . "letters/files/Letter15.pdf");
 	setThumbnail(["Thunderbirds1.jpg", "USMap1.gif", "RockyMtnNP1.jpg", "IceFountain1.jpg"]);
 	?>
 </div>

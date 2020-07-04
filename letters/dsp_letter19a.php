@@ -6,7 +6,7 @@
 	<p class="endText">It&apos;s been two full years since I wrote a proper letter and finally it seems that there is enough news to justify another. So here goes:</p>
 </div>
 <?
-setThumbnail("AcrobatIcon_Ltr19.gif", $rootRelativeUrl . "files/Letter19_Ltr.pdf");
+setThumbnail("AcrobatIcon_Ltr19.gif", $rootRelativeUrl . "letters/files/Letter19_Ltr.pdf");
 ?>
 
 <h2>We still have jobs!</h2>

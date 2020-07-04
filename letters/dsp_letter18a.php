@@ -6,7 +6,7 @@
 	<p class="endText">Let&apos;s get straight to it: we&apos;ve moved.</p>
 </div>
 <?
-setThumbnail("AcrobatIcon_Ltr18.gif", $rootRelativeUrl . "files/Letter18_Ltr.pdf");
+setThumbnail("AcrobatIcon_Ltr18.gif", $rootRelativeUrl . "letters/files/Letter18_Ltr.pdf");
 ?>
 
 <h2>Washington DC, 2nd attempt</h2>
