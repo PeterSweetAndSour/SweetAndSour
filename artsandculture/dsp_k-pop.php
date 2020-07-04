@@ -27,7 +27,8 @@
 		</li>
 		<li>
 			A song from, what was until recently, the most popular girl group:<br />
-			<? setThumbnail("CheerUp.jpg", "https://www.youtube.com/watch?v=c7rCyll5AeY", "figure--thumbnail-youtube"); ?>
+			<? setThumbnail("CheerUp.jpg", "https://www.youtube.com/watch?v=c7rCyll5AeY", "figure--thumbnail-youtube"); ?><br>
+			(See <strong>BlackPink</strong> below for the currently most popular girl group.)
 		</li>
 		<li>
 			Not really standard K-pop as it is a solo act with no dancing but it is beautiful (more explanation below):<br />
@@ -259,11 +260,11 @@
 
 <h3>BlackPink</h3>
 <div class="story">
-	<p>I had mild interest in some of their early songs but they have exploded in popularity with 
+	<p>Although I had mild interest in some of their early work, I don&apos;t particularly enjoy their recent songs but I am including them here because they are so popular &ndash; 
 		<a href="https://www.youtube.com/watch?v=IHNzOHi8sJs" target="_blank" class="external">DDU-DU DDU-DU</a>
-		now at 1.1 billion views. It didn't appeal to me but I am including them here because they are so popular. A former co-worker told me that they had done a collaboration with English singer <strong>Dua Lipa</strong> who I had never heard of but she has at least one song with over a billion views so I gather she is popular too. Here is <a href="https://www.youtube.com/watch?v=AX3Bsiq-13k&amp;sa=D&amp;ust=1590612821756000">Kiss and make up</a> (audio only)
+		now has 1.1 billion views!
 	</p>
-	<p>2020-06-26: They released <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank" class="external">How you like that</a> just 8 hours ago and it is already at 38 million views! It does not appeal to me &ndash; they seem too much like American wrappers &ndash; though I do appreciate the Arabic(?) vibe at 1:12.</p>
+	<p>They released <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank" class="external">How you like that</a> on 2020-06-26 and it set a new record on YouTube of <a href="https://www.forbes.com/sites/hughmcintyre/2020/06/29/blackpinks-new-music-video-officially-break-the-record-for-the-most-views-in-24-hours-on-youtube/#1c8b7429460d" target="_blank" class="external">86.3 million views in the first 24 hours</a>! However, it does not appeal to me &ndash; they seem too much like American wrappers &ndash; though I do appreciate the Arabic(?) vibe at 1:12.</p>
 </div>
 
 <h3>Astro</h3>
