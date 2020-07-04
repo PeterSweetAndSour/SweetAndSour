@@ -89,7 +89,7 @@ if($status != "success") {
 
 			<div class="reCaptchaRow">
 				<label>Prove  you are human</label>
-				<div id="reCAPTCHAWrapper" data-callback="enableSubmitButton" data-expired-callback="disableSubmitButton" data-site-key="<?= $reCAPTCHA_siteKey ?>"></div>
+				<div id="reCAPTCHAWrapper" data-site-key="<?= $reCAPTCHA_siteKey ?>"></div>
 			</div>
 
 			<div class="actionRow">

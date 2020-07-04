@@ -12,9 +12,9 @@ const loadScript = src => {
 	  script.src = src
 	  document.head.append(script)
 	})
-  }
+}
   
-  var ContactUs = (function() {
+var ContactUs = (function() { 
 
 	var _activateFormWhenAppropriate = function() {
 		const continueBtn = document.querySelector("#continueBtn");
@@ -76,24 +76,30 @@ const loadScript = src => {
 		document.querySelector("#submitBtn").setAttribute("disabled", null);
 	};
 
+	var _renderReCAPTCHA = function() {
+		var reCAPTCHAWrapper = document.querySelector("#reCAPTCHAWrapper");
+		var siteKey = reCAPTCHAWrapper.dataset.siteKey;
+
+		grecaptcha.render(reCAPTCHAWrapper, {
+			'sitekey' : siteKey,
+			'callback': _enableSubmitButton,
+			'expired-callback':_disableSubmitButton
+		});
+	};
+
 	var _loadReCAPTCHA = function () {
 		var reCAPTCHAWrapper = document.querySelector("#reCAPTCHAWrapper");
 		if(!reCAPTCHAWrapper) {
 			return;
 		}
 
+		// You must include onload=renderReCAPTCHA in the URL rather than calling renderReCAPTCHA inside .then().
+		// Google must modify the packaged returned when that information is made with the request.
+		// Also, you must call global function; perhaps it is not surprising that _renderReCAPTCHA does not work
+		// since it is private but neither does ContactUs.renderReCAPTCHA.
+		// https://stackoverflow.com/questions/27776964/new-google-recaptcha-javascript-namespace-callback.
 		loadScript('https://www.google.com/recaptcha/api.js?onload=renderReCAPTCHA&render=explicit')
-			.then(() => {})
-			.catch(() => console.error('Something went wrong.'));
-	};
-
-	
-	var _renderReCAPTCHA = function() {
-		var reCAPTCHAWrapper = document.querySelector("#reCAPTCHAWrapper");
-		var siteKey = reCAPTCHAWrapper.dataset.siteKey;
-		grecaptcha.render('reCAPTCHAWrapper', {
-			'sitekey' : siteKey
-		});
+			.catch(() => { console.error('Something went wrong and the reCAPTCHA did not load.'); });
 	};
 
 	var _setTextAreaEventListeners = function() {
@@ -145,21 +151,13 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 // ------------------------------------------------------------------------------------------------------------------------------------------------
-// I am baffled why I can't move the contents of renderReCAPTCHA inside the .then() inside _loadReCAPTCHA and why
-// data-callback="enableSubmitButton" in dsp_contactUs.php can't use data-callback="ContactUs.enableSubmitButton".
+// Creating a global function for the benefit of reCAPTCHA. See details above.
 // ------------------------------------------------------------------------------------------------------------------------------------------------
 var renderReCAPTCHA = function() {
-	var reCAPTCHAWrapper = document.querySelector("#reCAPTCHAWrapper");
-	var siteKey = reCAPTCHAWrapper.dataset.siteKey;
-	grecaptcha.render('reCAPTCHAWrapper', {
-		'sitekey' : siteKey
-	});
-}
+	ContactUs.renderReCAPTCHA();
+};
+// This works too (as you would expect but you can't set ...api.js?onload=ContactUs.renderReCAPTCHA&...)
+// window.renderReCAPTCHA = ContactUs.renderReCAPTCHA;
 
-var enableSubmitButton = function() {
-	document.querySelector("#submitBtn").removeAttribute("disabled");
-};
-var disableSubmitButton = function() {
-	document.querySelector("#submitBtn").setAttribute("disabled", null);
-};
+
 

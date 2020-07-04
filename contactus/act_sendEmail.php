@@ -21,7 +21,7 @@ $_SESSION["msgText"] = htmlspecialchars($_POST["msgText"]);
 $reCAPTCHA_url = "https://www.google.com/recaptcha/api/siteverify";
 $reCAPTCHA_data["secret"] = $reCAPTCHA_secretKey;
 $reCAPTCHA_data["response"] = $_POST["g-recaptcha-response"];
-$reCAPTCHA_data["remoteip"] = $_SERVER["REMOTE_ADDR"];	
+$reCAPTCHA_data["remoteip"] = $isLive ? $_SERVER["REMOTE_ADDR"] : "localhost"; // remoteip is ::1 but neither 127.0.0.1 or localhost works either despite registering them.
 
 $json_response = CallAPI("POST", $reCAPTCHA_url, $reCAPTCHA_data);
 $response = json_decode($json_response);

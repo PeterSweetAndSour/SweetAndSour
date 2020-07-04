@@ -34,12 +34,6 @@ switch ($fuseAction) {
 		include 'act_sendEmail.php';
 		break;
 
-	//Success
-	case "success":
-		$showToTopLink = false;
-		$contentPage = "dsp_success.php";
-		include "../dsp_outline.php";
-	break;
 
 	/**** Default case. ****/
 	default:
