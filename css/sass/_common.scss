@@ -30,7 +30,7 @@ h1, h2, h3, h4 {
   
 h1 {
 	font-family: 'Conv_Chowfun',Sans-Serif;
-	color: #b65039;
+	color: $terracotta;
 	font-size: 32px;
 	line-height: 1em;
 
@@ -224,7 +224,7 @@ Status notices
 	}
 
 	&.success {
-		background-color: $greenTint4;
+		background-color: $greenTint9;
 		border-color: $greenDark;
 
 		h2 {
@@ -233,20 +233,20 @@ Status notices
 	}
 
 	&.info {
-		background-color: $yellowTint4;
-		border-color: $yellowDark;
+		background-color: $yellowPale;
+		border-color: $terracotta;
 
 		h2 {
-			color: $yellowDark;
+			color: $terracotta;
 		}
 	}
 
 	&.warning {
-		background-color: $redTint4;
-		border-color: $redDark;
+		background-color: $terracottaTint9;
+		border-color: $terracotta;
 
 		h2 {
-			color: $redDark;
+			color: $terracotta;
 		}
 	}
 }

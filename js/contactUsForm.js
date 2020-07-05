@@ -1,4 +1,3 @@
-
 /**
  * Loads a JavaScript file and returns a Promise for when it is loaded
  * From https://aaronsmith.online/easily-load-an-external-script-using-javascript/
@@ -14,7 +13,12 @@ const loadScript = src => {
 	})
 }
   
+/* -----------------------------------------------------------------------------------------
+Javascript for the form
+------------------------------------------------------------------------------------------ */
 var ContactUs = (function() { 
+
+	var formData = {};
 
 	var _activateFormWhenAppropriate = function() {
 		const continueBtn = document.querySelector("#continueBtn");
@@ -38,10 +42,7 @@ var ContactUs = (function() {
 	var _removeFocusClassFromTextAreaLabel = function(event) {
 		const msgTextArea = event.target;
 		const msgTextAreaLabel = msgTextArea.parentNode.querySelector("label");
-		
-		if(!msgTextArea.value) {
-			msgTextAreaLabel.classList.remove("focused");
-		}
+		msgTextAreaLabel.classList.remove("focused");
 	};
 
 	var _updateCharacterCount = function(event) {
@@ -82,9 +83,21 @@ var ContactUs = (function() {
 
 		grecaptcha.render(reCAPTCHAWrapper, {
 			'sitekey' : siteKey,
-			'callback': _enableSubmitButton,
-			'expired-callback':_disableSubmitButton
+			'callback': _setReCAPTCHAValidity,
+			'expired-callback': _revokeReCAPTCHAValidity
 		});
+	};
+
+	var _setReCAPTCHAValidity = function() {
+		var reCAPTCHAIsValid = document.querySelector("#reCAPTCHAIsValid");
+		reCAPTCHAIsValid.value = true;
+		_checkFormValidity();
+	};
+
+	var _revokeReCAPTCHAValidity = function() {
+		var reCAPTCHAIsValid = document.querySelector("#reCAPTCHAIsValid");
+		reCAPTCHAIsValid.value = false;
+		_disableSubmitButton();
 	};
 
 	var _loadReCAPTCHA = function () {
@@ -102,19 +115,92 @@ var ContactUs = (function() {
 			.catch(() => { console.error('Something went wrong and the reCAPTCHA did not load.'); });
 	};
 
-	var _setTextAreaEventListeners = function() {
-		const msgTextArea = document.querySelector("#msgText");
+	var _setFormFieldEventListeners = function() {
+		var form = document.querySelector("#contactUsForm");
+		var senderNameField = form.querySelector("#senderName");
+		var senderEmailField = form.querySelector("#senderEmail");
+		var msgSubjectField = form.querySelector("#msgSubject");
+		var msgTextArea = form.querySelector("#msgText");
+
+		senderNameField.addEventListener("input", event => {
+			_checkFormValidity();
+		});
+		senderEmailField.addEventListener("input", event => {
+			_checkFormValidity();
+		});
+		msgSubjectField.addEventListener("input", event => {
+			_checkFormValidity();
+		});
 	
 		msgTextArea.addEventListener("focus", event => {
 			_addFocusClassToTextAreaLabel(event);
 		});
 	
 		msgTextArea.addEventListener("blur", event => {
-			_removeFocusClassFromTextAreaLabel(event);
+			if(!msgTextArea.value) {
+				_removeFocusClassFromTextAreaLabel(event);
+			}
 		});
 	
 		msgTextArea.addEventListener("input", event => {
 			_updateCharacterCount(event);
+			_checkFormValidity();
+		});
+	};
+
+	var _checkFormValidity = function() {
+		var contactUsForm = document.querySelector("#contactUsForm");
+		var senderNameField = contactUsForm.querySelector("#senderName");
+		var senderEmailField = contactUsForm.querySelector("#senderEmail");
+		var msgSubjectField = contactUsForm.querySelector("#msgSubject");
+		var msgTextArea = contactUsForm.querySelector("#msgText");
+		var reCAPTCHAIsValid = document.querySelector("#reCAPTCHAIsValid")
+
+		if(senderNameField.checkValidity() && 
+			senderEmailField.checkValidity() && 
+			msgSubjectField.checkValidity() && 
+			msgTextArea.checkValidity() && 
+			reCAPTCHAIsValid.value
+		) {
+			formData = new FormData(contactUsForm);
+			_enableSubmitButton();
+		}
+	};
+
+	var _setSubmitBtnEventListener = function() {
+		const submitBtn = document.querySelector("#submitBtn");
+		submitBtn.addEventListener("click", event => {
+			event.preventDefault();
+			_submitForm();
+		});
+	};
+
+	var _submitForm = function() {
+		var noticeSuccess = document.querySelector("#noticeSuccess");
+		var noticeWarning = document.querySelector("#noticeWarning");
+
+		fetch("index.php?fuseAction=sendEmail", {
+			method: 'POST',
+			body: formData,
+		})
+		.then(response => response.json())
+		.then(data => {
+			if(data.status === "success") {
+				noticeSuccess.innerHTML = "<h2>Success</h2><p>" + data.text + "</p>";
+				noticeSuccess.classList.remove("hidden");
+				noticeWarning.classList.add("hidden");
+				document.querySelector("#contactUsFormWrapper").classList.add("hidden");
+			}
+			else {
+				noticeWarning.innerHTML = "<h2>Something went wrong</h2><p>" + data.text + "</p>";
+				noticeWarning.classList.remove("hidden");
+				window.scrollTo(0, 0);
+			}
+		})
+		.catch((error) => {
+			noticeWarning.innerHTML = "<h2>Something went wrong</h2><p>" + error + "</p>";
+			noticeWarning.classList.remove("hidden");
+			window.scrollTo(0, 0);
 		});
 	};
 
@@ -122,8 +208,9 @@ var ContactUs = (function() {
 		_hideGDPRNotice();
 		_revealForm();
 		_loadReCAPTCHA();
-		_setTextAreaEventListeners();
-	}
+		_setFormFieldEventListeners();
+		_setSubmitBtnEventListener()
+	};
 
 	var _initialize = function() {
 		var contactUsForm = document.querySelector("#contactUsForm");

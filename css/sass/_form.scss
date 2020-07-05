@@ -21,7 +21,7 @@ the position of the label after the user has entered something. */
 		padding:  10px 10px; 
 		margin-bottom: 1px;
 		height:  56px; 
-		border:  solid 1px $blueTint4; 
+		border:  solid 1px $blueTint8; 
 		background:  #fff; 
 		box-sizing:  border-box; 
 		transition:  all .3s linear; 
@@ -67,8 +67,8 @@ button.continue {
 	border-radius: 20px;
 	background-clip: padding-box;
 	color: #666;
-	background-color: $blueTint4;
-	background-image: linear-gradient($blueTint5, $blueTint4);
+	background-color: $blueTint8;
+	background-image: linear-gradient($blueTint10, $blueTint8);
 	border: 1px solid $blueDark;
 
 	&:hover,
@@ -108,7 +108,8 @@ textarea {
 	box-sizing:  border-box;
 	width: 100%;
 	padding: 10px;
-	border: solid 1px $blueTint4; 
+	border: solid 1px $blueTint8; 
+	font-size: 16px;
 	
 	&:focus {
 		border-bottom:  solid 2px $blueDark; 

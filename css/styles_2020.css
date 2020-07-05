@@ -1,6 +1,5 @@
 /* 
 Tints and shades: https://www.tutorialrepublic.com/html-reference/html-color-picker.php 
-Each tint is two jumps down on the chart.
 */
 /* ChowFun is a free font by Harold Lohner from http://www.haroldsfonts.com/chowfun.html */
 @font-face {
@@ -135,7 +134,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-family: "Conv_Chowfun", Sans-Serif;
-  color: #b65039;
+  color: #e2725b;
   font-size: 32px;
   line-height: 1em;
 }
@@ -321,25 +320,25 @@ Status notices
   margin-top: 0;
 }
 .notice.success {
-  background-color: #cfe1ce;
+  background-color: #e7f0e6;
   border-color: #126d0a;
 }
 .notice.success h2 {
   color: #126d0a;
 }
 .notice.info {
-  background-color: #f5f6cc;
-  border-color: #8F9400;
+  background-color: #feffee;
+  border-color: #e2725b;
 }
 .notice.info h2 {
-  color: #8F9400;
+  color: #e2725b;
 }
 .notice.warning {
-  background-color: #eacccc;
-  border-color: #900;
+  background-color: #fcf0ee;
+  border-color: #e2725b;
 }
 .notice.warning h2 {
-  color: #900;
+  color: #e2725b;
 }
 
 /* -----------------------------------------------------------------------------------------
@@ -1137,6 +1136,7 @@ textarea {
   width: 100%;
   padding: 10px;
   border: solid 1px #D0DDEB;
+  font-size: 16px;
 }
 textarea:focus {
   border-bottom: solid 2px #14599E;

@@ -220,7 +220,7 @@ Image Menu
 	}
 	
 	ul.menu2 > li.selected > a {
-		background: linear-gradient(to bottom, $blueTint4 0%,#ffffff 100%) repeat-x;
+		background: linear-gradient(to bottom, $blueTint8 0%,#ffffff 100%) repeat-x;
 		font-weight: bold; 
 	}
 	
@@ -242,7 +242,7 @@ Image Menu
 		position: static;
 		float: left;
 		width: 956px;
-		border-bottom: 1px solid $blueTint1;
+		border-bottom: 1px solid $blueTint2;
 		background-image: none;
 		background-color: #fff;
 		display: none; 

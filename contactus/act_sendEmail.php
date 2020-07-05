@@ -6,40 +6,58 @@ Send mail message.
 =>| Form.senderEmail
 =>| Form.msgSubject
 =>| Form.msgText
-|=> URL.msgSent
-|=> Session.senderName
-|=> Session.senderEmail
-|=> Session.msgSubject
-|=> Session.msgText
+
+|=> response (json)
+
 */
 
-$_SESSION["senderName"] = htmlspecialchars($_POST["senderName"]);
-$_SESSION["senderEmail"] = htmlspecialchars($_POST["senderEmail"]);
-$_SESSION["msgSubject"] = htmlspecialchars($_POST["msgSubject"]);
-$_SESSION["msgText"] = htmlspecialchars($_POST["msgText"]);
+$senderName = htmlspecialchars($_POST["senderName"]);
+$senderEmail = htmlspecialchars($_POST["senderEmail"]);
+$msgSubject = htmlspecialchars($_POST["msgSubject"]);
+$msgText = htmlspecialchars($_POST["msgText"]);
 
 $reCAPTCHA_url = "https://www.google.com/recaptcha/api/siteverify";
 $reCAPTCHA_data["secret"] = $reCAPTCHA_secretKey;
 $reCAPTCHA_data["response"] = $_POST["g-recaptcha-response"];
 $reCAPTCHA_data["remoteip"] = $isLive ? $_SERVER["REMOTE_ADDR"] : "localhost"; // remoteip is ::1 but neither 127.0.0.1 or localhost works either despite registering them.
 
-$json_response = CallAPI("POST", $reCAPTCHA_url, $reCAPTCHA_data);
-$response = json_decode($json_response);
+if($isLive) {
+	$json_response = CallAPI("POST", $reCAPTCHA_url, $reCAPTCHA_data);
+	$response = json_decode($json_response);
+}
+else {
+	$response = (object) ["success" => True, "challenge_ts" => "2020-07-04 16:00:00+01:00", "hostname" => "localhost"];
+}
 
 if (!is_null($response) and $response->success) {
 	//Send the message
-	mail($myEmailAddr, $_SESSION["msgSubject"], $_SESSION["senderName"] . " wrote from SweetAndSour.org: \r\r" . $_SESSION["msgText"], "From: " . $_SESSION["senderEmail"]);
+	if($isLive) {
+		$result = mail($myEmailAddr, $msgSubject, $senderName . " wrote from SweetAndSour.org: \r\r" . $msgText, "From: " . $senderEmail);
+	}
+	else {
+		$result = True;
+	}
 
-	//Send user to "thank you" page
-	header("Location: index.php?fuseAction=contactUs&status=success");
+	if($result) {
+		$json = (object) ["status" => "success", "text" => "Thank you for your email! I will try to reply within 24 hours."]; 
+	}
+	else {
+		$json = (object) ["status" => "failure", "text" => "The mail function failed for some reason."]; 
+	}; 
 }
 else {
-	// The CAPTCHA failed or there was a server error.
-	$errorCodes = "Unknown error from the %26ldquo;Verify You Are Human%26rdquo; test";
-	if(!is_null($response) and !is_null($response->error-codes)) {
+	// The CAPTCHA failed.
+	$errorCodes = "";
+	if(is_null($response)) {
+		$errorCodes = "No response from reCAPTCHA verification";
+	}
+	else if(!is_null($response->error-codes)) {
 		$errorCodes = join(" | ", $response->error-codes);
 	}
- 	header("Location: index.php?fuseAction=contactUs&status=error&errorCodes=" . $errorCodes);
+
+ 	$json = (object) ["status" => "failure", "text" => "reCAPTCHA verification failed. Error codes: " . $errorCodes]; 
 }
+
+echo json_encode($json);
 ?>
 

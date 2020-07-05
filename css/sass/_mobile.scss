@@ -124,7 +124,7 @@ Mobile
 				padding: 8px 0 0 0;
 				font-size: 20px;
 				text-decoration: none;
-				border-top: 1px solid $blueTint3;
+				border-top: 1px solid $blueTint6;
 			}
 			&.hasChildren > a {
 				display: none
@@ -170,7 +170,7 @@ Mobile
 			border-top-style: none;
 		}
 		.menu1 > li:last-child > a {
-			border-bottom: 1px solid $blueTint3;
+			border-bottom: 1px solid $blueTint6;
 		}
 		.menu2 {
 			margin-left: 60px;
