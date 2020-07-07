@@ -328,10 +328,10 @@ Status notices
 }
 .notice.info {
   background-color: #feffee;
-  border-color: #e2725b;
+  border-color: #729BC4;
 }
 .notice.info h2 {
-  color: #e2725b;
+  color: #729BC4;
 }
 .notice.warning {
   background-color: #fcf0ee;
