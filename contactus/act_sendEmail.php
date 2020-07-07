@@ -32,6 +32,9 @@ else {
 if (!is_null($response) and $response->success) {
 	//Send the message
 	if($isLive) {
+		//$logText = PHP_EOL . "senderName: " . $senderName . PHP_EOL . "senderEmail: " . $senderEmail .PHP_EOL . "msgSubject: " . $msgSubject .PHP_EOL . "Timestamp: " .date("F j, Y, g:i a").PHP_EOL;
+		//file_put_contents('./reCAPTCHA.txt', $logText, FILE_APPEND);
+
 		$result = mail($myEmailAddr, $msgSubject, $senderName . " wrote from SweetAndSour.org: \r\r" . $msgText, "From: " . $senderEmail);
 	}
 	else {
