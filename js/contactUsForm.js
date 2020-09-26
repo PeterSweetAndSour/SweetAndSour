@@ -175,7 +175,7 @@ var ContactUs = (function() {
 		});
 	};
 
-	var _submitForm = function() {
+	var _submitForm = function() { 
 		var noticeSuccess = document.querySelector("#noticeSuccess");
 		var noticeWarning = document.querySelector("#noticeWarning");
 

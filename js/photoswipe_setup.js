@@ -174,7 +174,7 @@
     
                             return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
                         },
-                        allowLongCaptions: true,      /* NEW! */                 
+                        allowLongCaptions: false,      /* NEW! */                 
                         barsSize: {top:44, bottom:60} /* Allow a little extra space at the bottom. */
                     };
     
