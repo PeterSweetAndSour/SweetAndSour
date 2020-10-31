@@ -43,13 +43,14 @@
 
 <h2>Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 28<sup>th</sup> May 2020)</p>
+	<p class="subtitle">(As of 31<sup>th</sup> October 2020)</p>
 </div>
 
 <h3>BTS</h3>
 <div class="story">
 	<p>I have to mention boy band BTS first because if you have heard of any K-pop group, it was almost certainly BTS as they are huge. They generate more traffic on Twitter than either Taylor Swift or Justin Beiber. They are unusual in that they write a lot of their material</p>
-	<p>I love their 2019 hit <a href="https://www.youtube.com/watch?v=XsX3ATc3FbA" target="_blank" class="external"> Boy With Luv</a> (791 million views as of 2020-05-28) but that was the first song of theirs that I liked.</p>
+	<p>I love their 2019 hit <a href="https://www.youtube.com/watch?v=XsX3ATc3FbA" target="_blank" class="external">Boy With Luv</a> (791 million views as of 2020-05-28) but that was the first song of theirs that I liked.</p>
+	<p>The first video to hit 100m views on youtube in 24 hours: <a href="https://www.youtube.com/watch?v=gdZLi9oWNZg" target="_blank" class="external">Dynamite</a> which is also their first song in English.</p>
 	<p>	It is definitely also worth watching the <a href="https://www.youtube.com/watch?v=CzvfbRbEjww" target="_blank" class="external">&ldquo;dance practice&rdquo; video</a> so you can see the whole performance start to finish. In fact, I often prefer the dance practice videos and the live performances to the music videos. Indeed there is a huge sub-genre of dance covers and &ldquo;KPop in public&rdquo; performances where dance groups from around the world reproduce, or reinterpret, songs from popular groups. For <em>Boy With Luv</em>, I encourage you to check these out:</p>
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=2K6dRljmvGw" target="_blank" class="external"> 7 young men from Vietnam</a> (over 9 million views!)</li>
@@ -58,6 +59,7 @@
 		<li><a href="https://www.youtube.com/watch?v=_adOK0WFu90&amp;sa=D&amp;ust=1590612821733000">a fabulous collaboration of 3 members each from 4 girls groups</a></li>
 	</ul>
 	<p>&hellip;and so on.</p>
+	<p>Oh, and a lovely <a href="https://www.youtube.com/watch?v=am3iJavzYi8" target="_blank" class="external">English-language cover</a> that is <a href="https://youtu.be/JewlhY8DGTI?t=329" target="_blank" class="external">BTS-approved</a>! </p>
 
 	<p>Someone at my old office (Dilene) gave me this list of <em>her t</em>en favorite songs. See if you like them:</p>
 	<ul>
@@ -172,6 +174,9 @@
 		</li>
 		<li>
 			2020-06-18 <a href="https://www.youtube.com/watch?v=kRT174IdxuM" target="_blank" class="external">Fanfare</a>! This was a surprise as I had no idea that it was coming though that is usually the case for the Japanese releases and is a welcome return to bubble-gum pop. Bear in mind that only 3 of the 9 members speak Japanese so the other 6 had to just learn their lines phonetically. No English subtitles yet.
+		</li>
+		<li>
+			2020-10-26 <a href="https://www.youtube.com/watch?v=CM4CkVFmTds" target="_blank" class="external">I can't stop me</a>
 		</li>
 	</ul>
 </div>
@@ -294,6 +299,7 @@
 		</li>
 		<li><a href="https://www.youtube.com/watch?v=5DKU9GXibOU" target="_blank" class="external">Do whatever you want</a> (dance practice)</li>
 		<li><a href="https://www.youtube.com/watch?v=RTeOt6n90vM" target="_blank" class="external">Dazzle Dazzle</a></li>
+		<li><a href="https://www.youtube.com/watch?v=AHikmx0eVXM" target="_blank" class="external">Cool</a></li></li>
 	</ul>
 	<p>It is also worth mentioning that they are an 8-member group whereas almost all K-pop groups have an odd number of members. Having an odd number means that the person singing can be front and center with the other members symmetrically arranged on either side but with an even number they have to be more creative &ndash; which sometimes means hiding one member behind that person at the front and center.</p>
 </div>
