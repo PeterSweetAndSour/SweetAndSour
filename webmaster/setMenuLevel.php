@@ -1,4 +1,5 @@
 <?
+// You are probably looking for updatemenuTble.php. 
 // Ran this on each of the top level menu items to set the new menuLevel field in the db. 
 // (It timed out attempting to do everything.)
 

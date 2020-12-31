@@ -6,6 +6,12 @@
 	<p>Come along for the ride.  Summaries are below; make selection from menu at left.</p>
 </div>
 
+<h2>Update from Portugal #3 (31 Dec 2020)</h2>
+<div class="story">
+	<p>Lisbon and the Azores</p>
+	<p class="endText"><a href="<?= $rootRelativeUrl ?>letters/letter22">Read now&hellip;</a></p>
+</div>
+
 <h2>Update from Portugal #2 (24 Feb 2020)</h2>
 <div class="story">
 	<p>More sights around Lisbon, trips to Castello Branco and Mafra.</p>

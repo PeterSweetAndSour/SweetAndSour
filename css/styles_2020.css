@@ -134,7 +134,7 @@ h1, h2, h3, h4 {
 
 h1 {
   font-family: "Conv_Chowfun", Sans-Serif;
-  color: #e2725b;
+  color: #db640b;
   font-size: 32px;
   line-height: 1em;
 }
@@ -334,11 +334,11 @@ Status notices
   color: #729BC4;
 }
 .notice.warning {
-  background-color: #fcf0ee;
-  border-color: #e2725b;
+  background-color: #fbefe6;
+  border-color: #db640b;
 }
 .notice.warning h2 {
-  color: #e2725b;
+  color: #db640b;
 }
 
 /* -----------------------------------------------------------------------------------------

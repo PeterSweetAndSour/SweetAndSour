@@ -3,6 +3,13 @@
    <p>This is Peter's web site, a very slow-motion blog.</p>
 </div>
 
+
+<h2>31 December 2020</h2>
+<div class="story">
+	<p>An <a href="<?= $rootRelativeUrl ?>letters/letter22">update from Portugal</a> covering February through November this year.</p>
+</div>
+
+
 <h2>19 June 2020</h2>
 <div class="story">
 	<p>The site has been updated to work with phones, something I should have fixed a decade ago and I have added two new pages of content:</p>
@@ -51,7 +58,7 @@
 
 <h2>7 November 2013</h2>
 <div class="story">
-	<p>Two years since I last posted anything! Goodness. Since then we finished the main work on the house and been on trips together to The Netherlands, Sweden and Denmark then to the UK by plane and back across the Atlantic by ship. Lan has taken separate trips to Iceland and London, Paris &amp; Lyon. I failed in my effort to ride a bike to New York in a weekend but did make it to <a href="https://goo.gl/photos/ryAv4xveZaL7erpF8">Delaware</a>. I ran the 2013 Marine Corps Marathon in 3:14:40 (last year I ran injured and so was thrilled to manage 3:33:33) and will go to Australia shortly.</p>
+	<p>Two years since I last posted anything! Goodness. Since then we finished the main work on the house and been on trips together to The Netherlands, Sweden and Denmark then to the UK by plane and back across the Atlantic by ship. Lan has taken separate trips to Iceland and London, Paris &amp; Lyon. I failed in my effort to ride a bike to New York in a weekend but did make it to <a class="external" href="https://goo.gl/photos/WSuWmdcHGDU6neNZA" target="_blank">Delaware</a>. I ran the 2013 Marine Corps Marathon in 3:14:40 (last year I ran injured and so was thrilled to manage 3:33:33) and will go to Australia shortly.</p>
 </div>
 
 <h2>23 September 2011</h2>

@@ -435,9 +435,15 @@ switch ($fuseAction) {
 		include "../dsp_outline.php";
 		break;
 	
-		/**** Default case. ****/
+	case "letter22":
+		$heading1Text = "Update from Portugal #3";
+		$contentPage = 'dsp_letter22.php';
+		include "../dsp_outline.php";
+		break;
+		
+			/**** Default case. ****/
 	default:
-		echo "<p>" . $fuseAction . " is not a recognized fuse action in 'Coming to America' section!</p>";
+		echo "<p>" . $fuseAction . " is not a recognized fuse action in 'Newsletters' section!</p>";
 		break;
 }
 
