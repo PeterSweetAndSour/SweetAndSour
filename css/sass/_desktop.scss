@@ -2,7 +2,6 @@
 Desktop - see also _image-menu.scss.
 ************************************************ */
 
-
 @media only screen and (min-width: 960px) {
 	body {
 		background: $blueTint4 linear-gradient(to bottom, $blueDark 0%, $blueTint4 100%) repeat-x;
@@ -21,7 +20,7 @@ Desktop - see also _image-menu.scss.
 	}
 
 	main {
-		padding: 0 40px;
+		padding: 0 27px 0 40px;
 	}
 
 	footer {
@@ -32,10 +31,12 @@ Desktop - see also _image-menu.scss.
 	.story {
 		width: calc(100% - 210px);
 		float: left;
-		margin: 0 40px 1em 0;
+		margin: 0 29px 1em 0;
 	}
-
-
+	.photo-gallery-instagram {
+		grid-gap: 34px;
+		margin-right: 13px;
+	}
 	/* -----------------------------------------------------------------------------------------
 	Header
 	------------------------------------------------------------------------------------------ */
@@ -65,5 +66,4 @@ Desktop - see also _image-menu.scss.
 		height: 223px;
 		overflow: hidden;
 	}
-
 }

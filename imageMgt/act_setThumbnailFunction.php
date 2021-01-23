@@ -8,8 +8,9 @@ but an override URL can be specified if necessary.
 
 Must be called from a subdirectory or the paths for the included files are wrong.
 
-=>| photoNames    (a string for single photo or an array if multiple)
+=>| photoNames    (a string for single photo, or an array if multiple)
 =>| overrideURL   optional - can be used to override the URL carried in the DB.
+=>| cssClass      optional
 */
 include '../imagemgt/fn_getPhotoURL.php';      //Function that returns url
 include '../imagemgt/fn_getPhotoInfo.php';     //Function that returns $photos (associative array) or false
@@ -33,31 +34,30 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 	if(isset($photos)) {
 		
 		// Since the SQL result set will be in random order, need to extract correct result from the associative array $photos
-		foreach($photoNames as $photoName) {
+		foreach($photoNames as $index=>$photoName) {
+			if($index != 0) {
+				?> --><?
+			}
 
 			$imgSrc = getPhotoUrl($photoName, $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $rootRelativeUrl, $useVersionedFiles, $photos[$photoName]["version"]);
 
 			if($overrideURL == "") {
 				if($photos[$photoName]["linkedImg"] == "") { // Unlikely - there should be a linked image for every thumbnail
-					?>
-					<figure<?= $classString ?>>
+					?><figure<?= $classString ?>>
 						<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
 						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
-					</figure>
-					<?
+					</figure><?
 				}
 				else {
 					$fullSizeImgSrc = getPhotoUrl($photos[$photoName]["linkedImg"], $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $rootRelativeUrl, $useVersionedFiles, $photos[$photoName]["linkedImageVersion"]);
 					$urlPageWithLinkedImage = $rootRelativeUrl . "imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=" . $photos[$photoName]["linkedImg"];
-					?>
-					<figure<?= $classString ?>>
+					?><figure<?= $classString ?>>
 						<a class="figure__link--gallery" href="<?= $urlPageWithLinkedImage ?>" data-linked-image-src="<?= $fullSizeImgSrc ?>" data-size="<?= $photos[$photoName]["linkedImageWidth"] ?>x<?= $photos[$photoName]["linkedImageHeight"] ?>">
 							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
 						</a>
 						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
 						<figcaption class="figure__caption--fullsize"><?= $photos[$photoName]["linkedImageCaption"] ?></figcaption>	
-					</figure>
-					<?
+					</figure><?
 				}
 			}
 			else {
@@ -71,14 +71,16 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 					$linkURL = $linkParts[0];
 					$target  = $linkParts[1];
 				}
-				?>
-					<figure<?= $classString ?>>
+				?><figure<?= $classString ?>>
 						<a href="<?= $linkURL ?>" target="<?= $target ?>">
 							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="Please refer to following caption." />
 						</a>
 						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
-					</figure>
-				<?
+					</figure><?
+			}
+
+			if($index != count($photoNames)-1) {
+				?><!-- no white space!<?
 			}
 		}
 	}

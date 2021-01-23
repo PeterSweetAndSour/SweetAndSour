@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 31, 2020 at 06:53 PM
+-- Generation Time: Jan 23, 2021 at 03:32 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -130,8 +130,8 @@ INSERT INTO `menus2` (`menuID`, `displayText`, `parentID`, `folderID`, `fuseActi
 (8, 'Time for Justice', 0, 9, 'injustice', 8, 1, 1, 0, 272, 277),
 (9, 'Photos', 0, 10, 'portsmouth2009', 9, 1, 1, 0, 278, 317),
 (10, 'Contact us', 0, 8, 'contactUs', 10, 1, 1, 0, 318, 319),
-(20, 'Welcome', 1, 1, 'welcome', 1, 0, 2, 0, 3, 4),
-(21, 'Site Map', 1, 1, 'siteMap', 2, 0, 2, 0, 5, 6),
+(20, 'Welcome', 1, 1, 'welcome', 1, 1, 2, 0, 3, 4),
+(21, 'Instagram links', 1, 1, 'instagram', 2, 1, 2, 0, 5, 6),
 (25, 'About us', 2, 2, 'whoWeAre', 1, 1, 2, 0, 11, 12),
 (26, 'Old photos &ndash; Lan', 2, 2, 'oldPhotosLan', 2, 1, 2, 0, 13, 14),
 (27, 'Old photos &ndash; Peter', 2, 2, 'oldPhotosPeter', 3, 1, 2, 0, 15, 16),
@@ -2711,7 +2711,11 @@ INSERT INTO `photos` (`photoName`, `folderID`, `caption`, `linkedImg`, `linkToFu
 ('photoSetPortugal2.jpg', 66, 'The <a href=\"https://photos.app.goo.gl/F3aLYKPT9P728CJv9\" class=\"external\" target=\"_blank\">full photo set</a> has 199 photos but there is also a <a href=\"https://photos.app.goo.gl/5wEsopKmgfKwFthcA\" class=\"external\" target=\"_blank\">summary photo set</a> with just 30.', '', 'N', '20200612', 150, 113),
 ('photoSetPortugal2_summary.jpg', 66, 'Photo set summary (30 photos).', '', 'N', '20200612', 150, 113),
 ('photoSetPortugal3.jpg', 67, 'The <a href=\"https://photos.app.goo.gl/TMiUrwnyUabJcFe28\" class=\"external\" target=\"_blank\">full photo set</a> has 199 photos but there is also a <a href=\"https://photos.app.goo.gl/i6dZwLdAJJdkT3B29\" class=\"external\" target=\"_blank\">summary photo set</a> with just 30.', '', 'N', '20201231', 150, 113),
-('lighthouseAzores.jpg', 67, 'The <a href=\"https://photos.app.goo.gl/y7A7ikdH9zn3qDeT9\" class=\"external\" target=\"_blank\">full photo set</a> has 199 photos but there is also a <a href=\"https://photos.app.goo.gl/Kr3RNgd7E62JtjzH7\" class=\"external\" target=\"_blank\">summary photo set</a> with just 30.', '', 'N', '20201231', 150, 113);
+('lighthouseAzores.jpg', 67, 'The <a href=\"https://photos.app.goo.gl/y7A7ikdH9zn3qDeT9\" class=\"external\" target=\"_blank\">full photo set</a> has 199 photos but there is also a <a href=\"https://photos.app.goo.gl/Kr3RNgd7E62JtjzH7\" class=\"external\" target=\"_blank\">summary photo set</a> with just 30.', '', 'N', '20201231', 150, 113),
+('InstagramElections.jpg', 1, 'If \"Did Not Vote\" was a political party, its candidate would have won nearly every US Presidential election in the last century! In 2020 the final voter turnout was 66.7% so one-third of eligible voters did not vote and slightly more than one-third of eligible voters opted for Mr. Biden. Australia demonstrates that there are better ways to run elections that are more inclusive and fairer. Read more in \r\n<a href=\"https://theconversation.com/what-us-election-officials-could-learn-from-australia-about-boosting-voter-turnout-128617\" class=\"external\" target=\"_blank\">The Conversation</a>. Also, <a href=\"https://www.washingtonpost.com/graphics/2020/elections/voter-turnout/\" class=\"external\" target=\"_blank\">the article</a> from which the graphic is copied (Washington Post subscription required).', '', 'N', '20201107', 640, 640),
+('InstagramEarthrise.jpg', 1, 'If you haven\'t already, please, please watch <strong>A Life On Our Planet</strong> from David Attenborough. You can watch <a href=\"https://attenboroughfilm.com/\" class=\"external\" target=\"_blank\">the trailer</a> on his site and <a href=\"https://www.netflix.com/pt-en/title/80216393\" class=\"external\" target=\"_blank\">the full documentary/biography</a> on Netflix. We are all on this planet together so it is in everyone\'s interest to save it.', '', 'N', '20201005', 640, 640),
+('InstagramRevisionistHistory.jpg', 1, 'Although the massive suffering caused by the atomic bombs on Hiroshima and Nagasaki is well known, so is the technical achievement and the narrative that it brought the war to an abrupt end. However, the <em>fire bombing</em> of Japanese cities caused even more suffering but has been effectively forgotten, another example that history is written by the winners &ndash; or not written. Malcolm Gladwell attempts to correct our historical amnesia in his <a href=\"http://revisionisthistory.com/episodes/45-the-bomber-mafia\" class=\"external\" target=\"_blank\">Revisionist History podcast</a>.', '', 'N', '20200804', 640, 640),
+('InstagramWhoIsDying.jpg', 1, 'Perhaps Mr. Trump would have shown some interest in fighting the coronavirus if people likely to vote for him were disproportionally affected. However, the opposite is true. Read more in <a href=\"https://www.theatlantic.com/ideas/archive/2020/05/americas-racial-contract-showing/611389/\" class=\"external\" target=\"_blank\">The Atlantic</a>.', '', 'N', '20200512', 640, 640);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

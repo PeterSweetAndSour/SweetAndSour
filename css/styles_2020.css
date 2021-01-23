@@ -174,15 +174,24 @@ li {
 Photos and captions
 Overlay and loading graphic
 ------------------------------------------------------------------------------------------ */
-.figure--thumbnail {
+.figure, .figure--thumbnail-youtube, .figure--thumbnail {
   display: inline-block;
-  width: 150px;
   vertical-align: top;
-  margin: 0 20px 20px 0;
+}
+.figure--thumbnail {
+  width: 165px;
+  margin: 0 13px 20px 0;
 }
 .figure--thumbnail-youtube {
-  width: 246px;
-  margin-top: 10px;
+  width: 261px;
+  margin: 10px 10px 20px 0;
+}
+
+.photo-gallery-instagram {
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 20px;
 }
 
 .figure__caption--thumbnail {
@@ -201,6 +210,8 @@ Overlay and loading graphic
   margin-bottom: 8px;
   padding: 4px;
   border: 1px solid #aaa;
+  width: calc(100% - 15px);
+  height: auto;
 }
 
 .pswp__caption__center > p,
@@ -649,7 +660,7 @@ Desktop - see also _image-menu.scss.
   }
 
   main {
-    padding: 0 40px;
+    padding: 0 27px 0 40px;
   }
 
   footer {
@@ -660,7 +671,12 @@ Desktop - see also _image-menu.scss.
   .story {
     width: calc(100% - 210px);
     float: left;
-    margin: 0 40px 1em 0;
+    margin: 0 29px 1em 0;
+  }
+
+  .photo-gallery-instagram {
+    grid-gap: 34px;
+    margin-right: 13px;
   }
 
   /* -----------------------------------------------------------------------------------------

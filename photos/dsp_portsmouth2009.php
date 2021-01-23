@@ -2,11 +2,10 @@
 
 <h2>Portsmouth, New Hampshire, 16 Aug 2009</h2>
 <div class="story noSpaceBelow">
-   <p>This trip was mainly about Maine but our first stop was in Portsmouth which was pleasant though it would
+   <p>This trip was mainly about Maine but our first stop was in Portsmouth which was pleasant, though it would
 	have been nicer if it wasn't so hot, a problem that was to continue most of the week and was quite unexpected.</p>
-	<p>Our camera was having problems before we left but I thought I'd fixed it by cleaning the battery terminals.
-	I hadn't and it died almost immediately so all but a half-dozen pictures were taken with my mobile phone which means
-	the color is a bit weird sometimes and since there is no zoom, some objects of interest are still in the distance. Sorry.</p>
+	<p>Our camera had problems before we left but I thought I'd fixed it by cleaning the battery terminals.
+	It died almost immediately so all but a half-dozen pictures were taken with my mobile phone which had no zoom. Sorry.</p>
 </div>
 <div class="photo-gallery">
 	<?

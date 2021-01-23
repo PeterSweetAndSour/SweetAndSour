@@ -72,17 +72,30 @@ Photos and captions
 Overlay and loading graphic
 ------------------------------------------------------------------------------------------ */
 
-.figure--thumbnail {
+.figure {
 	display: inline-block;
-	width: 150px;
 	vertical-align: top;
-	margin: 0 20px 20px 0;
 
-	&-youtube {
-		width: 246px;
-		margin-top: 10px;
+	&--thumbnail {
+		@extend .figure;
+		width: 165px;
+		margin: 0 13px 20px 0;
+	}
+	&--thumbnail-youtube {
+		@extend .figure;
+		width: 261px;
+		margin: 10px 10px 20px 0;
 	}
 }
+
+.photo-gallery-instagram {
+	clear: both;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	grid-gap: 20px;
+}
+
+
 
 .figure__caption--thumbnail {
 	font-size: 13px;
@@ -94,11 +107,13 @@ Overlay and loading graphic
 	display: none; /* Contains the caption for the photo shown with PhotoSwipe. */
 }
 
-.figure__image{
+.figure__image {
 	box-shadow: 5px 5px 4px 0px #aaa;
 	margin-bottom: 8px;
 	padding: 4px;
 	border: 1px solid #aaa;
+	width: calc(100% - 15px);
+	height: auto;
 }
 
 .pswp__caption__center > p,

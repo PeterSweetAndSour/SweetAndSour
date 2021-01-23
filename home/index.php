@@ -23,6 +23,12 @@ switch ($fuseAction) {
 		$contentPage = 'dsp_welcome.php';
 		include "../dsp_outline.php";
 		break;
+
+	case "instagram":
+		$heading1Text = "Instagram links";
+		$contentPage = 'dsp_instagram.php';
+		include "../dsp_outline.php";
+		break;
 		
 	// Default case.
 	default:
