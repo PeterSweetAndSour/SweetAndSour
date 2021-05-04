@@ -300,6 +300,6 @@
 
 <h2>18 April 1999</h2>
 <div class="story">
-	<p class="endText">Beta site placed online.  Only a few sections but it did include the section on <a href="<?= $rootRelativeUrl ?>artsandculture/rockAndRoll_1">Australian music</a>.</p>
+	<p class="endText">Beta site placed online.  Only a few sections but it did include the section on <a href="<?= $rootRelativeUrl ?>artsandculture/rockAndRoll">Australian music</a>.</p>
 </div>
 
