@@ -27,7 +27,7 @@ Variables:
 
 	<div id="GDPRNotice" class="notice info">
 		<h2>GDPR Notice</h2>
-		<p>This is the only page on the site where I collect and temporarily store information about you so that you can send me an message. For this to work, cookies will be set but they will disappear when you close the tab/browser. 
+		<p>This is the only page on the site where I collect and temporarily store information about you so that you can send me a message. For this to work, cookies will be set but they will disappear when you close the tab/browser. 
 		If you are OK, with that&hellip;</p>
 		<p><button id="continueBtn">Continue</button></p>
 	</div>
