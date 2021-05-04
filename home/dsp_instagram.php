@@ -4,6 +4,7 @@
 </div>
 <div class="photo-gallery-instagram">
 	<? setThumbnail([
+		"InstagramAngelaBelindaHill.jpg",
 		"InstagramEarthrise.jpg",
 		"InstagramElections.jpg",
 		"InstagramRevisionistHistory.jpg",
