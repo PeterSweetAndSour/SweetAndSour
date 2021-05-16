@@ -43,7 +43,7 @@
 
 <h2>Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 31<sup>th</sup> October 2020)</p>
+	<p class="subtitle">(As of 16<sup>th</sup> May 2021)</p>
 </div>
 
 <h3>BTS</h3>
@@ -164,7 +164,7 @@
 			This song comes after <a href="https://www.bbc.com/news/48948583&amp;sa=D&amp;ust=1590612821747000">Mina had to withdraw from performing</a> and her part starting at 1:30 addresses her crisis. <br>By way of comparison, check out <a href="https://www.youtube.com/watch?v=J3KA6WDAYPM" target="_blank" class="external">Dahyun's emotional solo</a>; I think the style is better suited to the lyrics of the song. 
 		</li>
 		<li>
-			2019-10-29: <a href="https://www.youtube.com/watch?v=AlPHkOAT8hs" target="_blank" class="external">Luv Me</a> This is one of my favorite songs of theirs and until this live performance in Tokyo was posted, it only existed as a &ldquo;fan video&rdquo;. You will notice that Mina is back on stage as she felt comfortable enough to be on stage in Japan and you can hear the crowd show their appreciation when she sings.
+			2019-10-29: <a href="https://www.youtube.com/watch?v=0kWidNV5s3w" target="_blank" class="external">Luv Me</a> This is one of my favorite songs of theirs but unfortunately the live performance in Tokyo has been taken down, so you will have to make do with this fan music video (which is pretty good).
 		</li>
 		<li>
 			2019-12-23: A Christmas present from Nayeon as she cover's <a href="https://www.youtube.com/watch?v=XO9GiPOLd3I">Santa Tell Me</a>
@@ -176,7 +176,13 @@
 			2020-06-18 <a href="https://www.youtube.com/watch?v=kRT174IdxuM" target="_blank" class="external">Fanfare</a>! This was a surprise as I had no idea that it was coming though that is usually the case for the Japanese releases and is a welcome return to bubble-gum pop. Bear in mind that only 3 of the 9 members speak Japanese so the other 6 had to just learn their lines phonetically. No English subtitles yet.
 		</li>
 		<li>
-			2020-10-26 <a href="https://www.youtube.com/watch?v=CM4CkVFmTds" target="_blank" class="external">I can't stop me</a>
+			2020-05-13 <a href="https://www.youtube.com/watch?v=Vh99Tgmpsso" target="_blank" class="external">Strawberry</a>. This song was co-written by Chaeyoung and it took me a while to warm to it but now I love it.
+		</li>
+		<li>
+			2020-10-26 <a href="https://www.youtube.com/watch?v=CM4CkVFmTds" target="_blank" class="external">I can't stop me</a>.
+		</li>
+		<li>
+			2021-04-20 <a href="https://www.youtube.com/watch?v=BSS8Y-0hOlY" target="_blank" class="external">Kura Kura</a> for the Japanese market. Not a great song overall but it has a great chorus which prompted each of them to do a 30-second video such as this <a href="https://www.tiktok.com/@twice_tiktok_officialjp/video/6955018090971254018?lang=en&is_copy_url=1&is_from_webapp=v1" target="_blank" class="external">TikTok from Mina</a>.
 		</li>
 	</ul>
 </div>
@@ -261,6 +267,11 @@
 		<li><a href="https://www.youtube.com/watch?v=glXgSSOKlls" target="_blank" class="external">Ice cream cake</a></li>
 		<li><a href="https://www.youtube.com/watch?v=aiHSVQy9xN8" target="_blank" class="external">Power Up</a></li>
 	</ul>
+	<p>I was not paying attention to Red Velvet and so I was shocked to learn in May 2021 that Wendy fell 2.5m/8ft off a stage during a rehearsal on Christmas Day 2019 and sustained serious injuries. She was in hospital for 2 months and didn't reappear with the group until New Year's Day this year. Knowing this, it is sad to listen to two songs she released in April 2021:</p>
+	<ul>
+		<li><a href="https://www.youtube.com/watch?v=-Ih5UArd4zk" target="_blank" class="external">Like water</a> and even better...</li>
+		<li><a href="https://www.youtube.com/watch?v=tknKZe_TyqU" target="_blank" class="external">When this rain stops</a></li>
+	</ul>
 </div>
 
 <h3>BlackPink</h3>
@@ -284,6 +295,7 @@
 			<em>Lazy Ace Dia GO HOME ROCKY IS MINE</em>	
 		</li>
 		<li><a href="https://www.youtube.com/watch?v=wS7anrSXKrY" target="_blank" class="external">Blue Flame</a></li>
+		<li><a href="https://www.youtube.com/watch?v=XxlsLmHwCSk" target="_blank" class="external">One</a></li>
 	</ul>
 </div>
 
