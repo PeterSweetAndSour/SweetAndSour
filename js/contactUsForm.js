@@ -171,8 +171,16 @@ var ContactUs = (function() {
 		const submitBtn = document.querySelector("#submitBtn");
 		submitBtn.addEventListener("click", event => {
 			event.preventDefault();
+			_disableSubmitBtn();
 			_submitForm();
 		});
+	};
+
+	var _disableSubmitBtn = function() {
+		document.querySelector("#submitSpinnerWrapper").classList.remove("hidden");
+	};
+	var _enableSubmitBtn = function() {
+		document.querySelector("#submitSpinnerWrapper").classList.add("hidden");
 	};
 
 	var _submitForm = function() { 
@@ -195,12 +203,14 @@ var ContactUs = (function() {
 				noticeWarning.innerHTML = "<h2>Something went wrong</h2><p>" + data.text + "</p>";
 				noticeWarning.classList.remove("hidden");
 				window.scrollTo(0, 0);
+				_enableSubmitBtn();
 			}
 		})
 		.catch((error) => {
 			noticeWarning.innerHTML = "<h2>Something went wrong</h2><p>" + error + "</p>";
 			noticeWarning.classList.remove("hidden");
 			window.scrollTo(0, 0);
+			_enableSubmitBtn();
 		});
 	};
 

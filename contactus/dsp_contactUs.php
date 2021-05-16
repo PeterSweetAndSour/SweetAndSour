@@ -29,7 +29,7 @@ Variables:
 		<h2>GDPR Notice</h2>
 		<p>This is the only page on the site where I collect and temporarily store information about you so that you can send me a message. For this to work, cookies will be set but they will disappear when you close the tab/browser. 
 		If you are OK, with that&hellip;</p>
-		<p><button id="continueBtn">Continue</button></p>
+		<p><button id="continueBtn" class="continue">Continue</button></p>
 	</div>
 
 	<form id="contactUsForm" method="post" action="index.php?fuseAction=sendEmail" class="hidden">
@@ -62,7 +62,12 @@ Variables:
 		</div>
 
 		<div class="actionRow">
-			<input type="submit" id="submitBtn" class="submit" name="Send" value="Send" disabled>
+			<div class="buttonWrapper">
+				<input type="submit" id="submitBtn" class="submit" name="Send" value="Send" disabled>
+				<div id="submitSpinnerWrapper" class="submitSpinnerWrapper hidden">
+					<? include '../includes/dsp_spinner.html'; ?>
+				</div>
+			</div>
 		</div>
 	</form>
 </div>

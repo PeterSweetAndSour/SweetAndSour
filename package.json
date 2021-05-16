@@ -1,39 +1,42 @@
 {
-  "name": "sweet-and-sour",
-  "title": "Sweet and Sour",
-  "description": "My personal website.",
-  "version": "3.0.2",
-  "homepage": "https://sweetandsour.org",
-  "demo": "",
-  "docs": "",
-  "devDependencies": {
-    "grunt": "^1.1.0",
-    "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^3.0.0",
-    "grunt-contrib-jshint": "^2.1.0",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^4.0.1",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-jekyll": "^1.0.1",
-    "grunt-postcss": "^0.9.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/PeterSweetAndSour/SweetAndSour"
-  },
-  "bugs": "https://github.com/PeterSweetAndSour/SweetAndSour/issues",
-  "keywords": [
-    "personal"
-  ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/mit-license.php"
-    }
-  ],
-  "dependencies": {
-    "grunt-contrib-uglify-es": "github:gruntjs/grunt-contrib-uglify#harmony"
-  }
+	"name": "sweet-and-sour",
+	"title": "Sweet and Sour",
+	"description": "My personal website.",
+	"version": "3.0.2",
+	"homepage": "https://sweetandsour.org",
+	"browserslist" : [
+		"last 2 versions"
+	],
+	"demo": "",
+	"docs": "",
+	"devDependencies": {
+		"grunt": "^1.1.0",
+		"grunt-contrib-clean": "^2.0.0",
+		"grunt-contrib-concat": "^1.0.1",
+		"grunt-contrib-copy": "^1.0.0",
+		"grunt-contrib-cssmin": "^3.0.0",
+		"grunt-contrib-jshint": "^2.1.0",
+		"grunt-contrib-sass": "^1.0.0",
+		"grunt-contrib-uglify": "^4.0.1",
+		"grunt-contrib-watch": "^1.1.0",
+		"grunt-jekyll": "^1.0.1",
+		"grunt-postcss": "^0.9.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/PeterSweetAndSour/SweetAndSour"
+	},
+	"bugs": "https://github.com/PeterSweetAndSour/SweetAndSour/issues",
+	"keywords": [
+		"personal"
+	],
+	"licenses": [
+		{
+		"type": "MIT",
+		"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	],
+	"dependencies": {
+		"grunt-contrib-uglify-es": "github:gruntjs/grunt-contrib-uglify#harmony"
+	}
 }

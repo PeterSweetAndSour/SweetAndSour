@@ -9,22 +9,38 @@ Send mail message.
 
 |=> response (json)
 
+I could not get this to work locally, even when sending the IP address of live in the data. From 'ping' the IP address is 167.114.64.93
+but I just noticed that if I echo $_SERVER["REMOTE_ADDR"] on the site it is 79.169.27.30. Interesting. 
 */
 
+// the formData object does not have a $_POST("send"), so this fails. Taking it out for now.
+// Don't allow direct access to this file.
+// Homework: How to make sure the form is from my site. Apparently Referrer can be spoofed.
+// Perhaps a random number generator that puts a hidden form field on dsp_contactUs, the number is held server-side and checked here.
+//if (!isset($_POST['send'])) {
+//	exit;
+//}
+
+$mailServerEmail = "Do.Not.Reply@sweetandsour.org"; //The "From" domain has to match the server for reliable delivery
 $senderName = htmlspecialchars($_POST["senderName"]);
 $senderEmail = htmlspecialchars($_POST["senderEmail"]);
 $msgSubject = htmlspecialchars($_POST["msgSubject"]);
-$msgText = htmlspecialchars($_POST["msgText"]);
+$msgTextPreamble = "Sent from the Contact Us page of sweetandsour.org by " . $senderName . " (" . $senderEmail . "):";
+$msgText = $msgTextPreamble . PHP_EOL . PHP_EOL . htmlspecialchars($_POST["msgText"]);
 
 $reCAPTCHA_url = "https://www.google.com/recaptcha/api/siteverify";
 $reCAPTCHA_data["secret"] = $reCAPTCHA_secretKey;
 $reCAPTCHA_data["response"] = $_POST["g-recaptcha-response"];
 $reCAPTCHA_data["remoteip"] = $isLive ? $_SERVER["REMOTE_ADDR"] : "localhost"; // remoteip is ::1 but neither 127.0.0.1 or localhost works either despite registering them.
 
+
 if($isLive) {
 	$json_response = CallAPI("POST", $reCAPTCHA_url, $reCAPTCHA_data);
 	$response = json_decode($json_response);
-}
+
+	$logText = "Timestamp: " . date("F j, Y, g:i a") . ", Name: " . $senderName . ", Email: " . $senderEmail . ", IP: " . $reCAPTCHA_data["remoteip"] . PHP_EOL;
+	file_put_contents('./reCAPTCHA.txt', $logText, FILE_APPEND);
+	}
 else {
 	$response = (object) ["success" => True, "challenge_ts" => "2020-07-04 16:00:00+01:00", "hostname" => "localhost"];
 }
@@ -32,13 +48,10 @@ else {
 if (!is_null($response) and $response->success) {
 	//Send the message
 	if($isLive) {
-		//$logText = PHP_EOL . "senderName: " . $senderName . PHP_EOL . "senderEmail: " . $senderEmail .PHP_EOL . "msgSubject: " . $msgSubject .PHP_EOL . "Timestamp: " .date("F j, Y, g:i a").PHP_EOL;
-		//file_put_contents('./reCAPTCHA.txt', $logText, FILE_APPEND);
-
-		$result = mail($myEmailAddr, $msgSubject, $senderName . " wrote from SweetAndSour.org: \r\r" . $msgText, "From: " . $senderEmail);
+		$result = mail($myEmailAddr, $msgSubject, $msgText, "From: " . $mailServerEmail);
 	}
 	else {
-		$result = True;
+		$result = True; // Pretend that it works on local where no mail server is actually installed.
 	}
 
 	if($result) {
@@ -50,15 +63,18 @@ if (!is_null($response) and $response->success) {
 }
 else {
 	// The CAPTCHA failed.
-	$errorCodes = "";
+	$errorMsg = "";
 	if(is_null($response)) {
-		$errorCodes = "No response from reCAPTCHA verification";
+		$errorMsg = "No response from reCAPTCHA verification. Sorry.";
 	}
 	else if(!is_null($response->error-codes)) {
-		$errorCodes = join(" | ", $response->error-codes);
+		$errorMsg = join(" | ", " Error codes: " . $response->error-codes);
+	}
+	else {
+		$errorMsg = "Reason unknown. Details have been logged and hopefully this will be sorted out soon.";
 	}
 
- 	$json = (object) ["status" => "failure", "text" => "reCAPTCHA verification failed. Error codes: " . $errorCodes]; 
+ 	$json = (object) ["status" => "failure", "text" => "reCAPTCHA verification failed. " . $errorMsg]; 
 }
 
 echo json_encode($json);
