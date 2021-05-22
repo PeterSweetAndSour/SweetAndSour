@@ -102,7 +102,7 @@ if($fuseAction == "injustice") {
 	</div>
 
 	<div class="caption captionInColumn offset">
-		<p>Map 1: What the UN proposed. <span class="boldRed">You cannot understand the conflict in the Middle East without this map</span> but I had not seen it until I did my talk. Green sections were to be the Jewish state, red sections were to be the Arab state.  For more detail, see a <a href="<?=$rootRelativeUrl ?>imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=Partition2.jpg">larger map</a> (780 x 1530 pixels, 257k) or the <a class="external" href="http://domino.un.org/maps/m0082.gif">original document on the UN site</a> (1.4 MB).</p>
+		<p>Map 1: What the UN proposed. <span class="boldRed">You cannot understand the conflict in the Middle East without this map</span> but I had not seen it until I did my talk. Green sections were to be the Jewish state, red sections were to be the Arab state.  For more detail, see a <a href="<?=$rootRelativeUrl ?>imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=Partition2.jpg">larger map</a> (780 x 1530 pixels, 257k) or the <a class="external" href="https://web.archive.org/web/20160115004131/http://domino.un.org/maps/m0103_1b.gif">original document from the UN</a> (1.4 MB). No longer on the UN's site so taken from the Internet Archive which does show its original source. Possibly it was taken down at America's request for fear of people understanding the conflict. Sometimes <a href="https://www.bbc.com/news/57102499" class="external" target="_blank">they do the darndest things</a>.</p>
 	</div>
 </div>
 

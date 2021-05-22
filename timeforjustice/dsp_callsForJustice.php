@@ -19,19 +19,20 @@
    <p>If you immediately associate the word <i>Palestinian</i> with the word <i>terrorist</i>, then
    you probably need to get a more complete picture of the conflict. You might start by reviewing
    the text and graphics for a <a href="index.php?fuseAction=palestine">speech</a> I gave in my
-   public speaking class.</p>
+   public speaking class in 2000.</p>
    <p>After all, if you knew that American dropped atom bombs on Hiroshima and Nagasaki but were
    unaware of Pearl Harbor and the years of bloody fighting that followed, you would be easily pursuaded
-   that Americans were evil. Don't get me wrong, there is blame on both sides but you need to understand
-   that there are two sides, only one of which is widely reported in the US.</p> 
+   that Americans were evil. While you can argue that there is blame on both sides, you need to understand
+   that there are two sides, only one of which is widely reported in the US and that the there is widespread
+   oppression of one group by the other and that match is utterly uneven.</p> 
    <ul>
+		<li>18May21 <a href="<?= $rootRelativeUrl ?>timeforjustice/files/20210518_JoeBiden.txt">Message to President Joe Biden</a> (through whitehouse.gov)</li>
 		<li>5Aug14 <a href="<?= $rootRelativeUrl ?>timeforjustice/files/20140805_NBC.pdf">Message to NBC News</a> (145kb)</li>
 		<li>15Jul14 <a href="<?= $rootRelativeUrl ?>timeforjustice/files/20140715_IsraeliAmbassador.pdf">Letter to Israeli Ambassador</a> in response to the senseless destruction of the house of Dr Nasser Tatar, director general of Gaza's largest medical facility as noted in <a href="http://www.theguardian.com/world/2014/jul/14/gaza-home-destroyed-israel-shati" class="external" target="_blank">this article</a>. At this point 200 Palestinians had been killed but there were another 1600 after this. (49kb)</li>
-		
 		<li>12Dec11 <a href="<?= $rootRelativeUrl ?>timeforjustice/files/20111212_Gingrich.pdf">Message to Newt Gingrich</a> in response to <a href="http://www.guardian.co.uk/world/2011/dec/11/newt-gingrich-palestinian-comments-criticised?intcmp=239" class="external" target="_blank">outrageous comments</a> he made over the weekend. </li>
 		<li>6Jul10 <a href="<?= $rootRelativeUrl ?>timeforjustice/files/20100706_CBSNews.pdf">Message to CBS News</a> (38kb)</li>
 		<li>7Jun10 <a href="<?= $rootRelativeUrl ?>timeforjustice/files/20100607_MoranWebbWarnerObama.pdf" target="_blank">Letter to Congressman Moran, Senator Webb, Senator Warner and President Obama</a> in response to Israel's deadly raid on aid convoy. When I've sent letters to politians in the past I've often received replies but nothing arrived this time. (77kb)</li>
-		<li>15Mar10 <a href="<?= $rootRelativeUrl ?>timeforjustice/files/2010315_JoeBiden.pdf" target="_blank">Email to Joe Biden (though whitehouse.gov)</a> (39kb).</li>
+		<li>15Mar10 <a href="<?= $rootRelativeUrl ?>timeforjustice/files/20100315_JoeBiden.txt" target="_blank">Message to Vice President Joe Biden</a> (though whitehouse.gov) (39kb).</li>
 		<li>29Jan10 <a href="<?= $rootRelativeUrl ?>timeforjustice/files/20100130_IsraeliAmbassador.pdf" target="_blank">Letter to Israeli Ambassador</a> (39kb).</li>
 		<li>24Apr09 <a href="<?= $rootRelativeUrl ?>timeforjustice/files/20090424_IsraeliAmbassador.pdf" target="_blank">Letter to Israeli Ambassador</a> (25kb).</li>
 		<li>29Jan09 <a href="<?= $rootRelativeUrl ?>timeforjustice/files/20090129_60MinutesComments.pdf" target="_blank">Comments on <i>60 Minutes</i> discussion board</a> (76kb).</li>
@@ -88,8 +89,8 @@
 
 <h2>In support of East Timor</h2>
 <div class="story">
-   <p class="endText">I wrote a letter (actually I sent a fax) to both the Prime Minister and Foreign Minister
+   <p class="endText">I wrote a letter (actually I sent a fax) to both the Australian Prime Minister and Foreign Minister
    during the violence following the 1999 referendum for independence pleading for Australian intervention.
-   I can't believe I've lost both the paper copies and the electronic files but I can't find either!
+   I can't believe I lost both the paper copies and the electronic files but I could not find either!
    </p>
 </div>
