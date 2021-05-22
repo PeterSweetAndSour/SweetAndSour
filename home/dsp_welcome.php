@@ -6,7 +6,7 @@
 
 <h2>31 December 2020</h2>
 <div class="story">
-	<p>An <a href="<?= $rootRelativeUrl ?>letters/letter22">update from Portugal</a> covering February through November this year.</p>
+	<p>Another update from Portugal (<a href="<?= $rootRelativeUrl ?>letters/letter22">letter 22</a>) covering February through November this year.</p>
 </div>
 
 
@@ -17,7 +17,7 @@
 		<li><a href="<?= $rootRelativeUrl ?>wherewelive/lisbon">Lisbon</a></li>
 		<li><a href="<?= $rootRelativeUrl ?>artsandculture/kpop">K-pop!</a></li>
 	</ul>
-	<p>I also added some notes about the update on <a href="<?= $rootRelativeUrl ?>technology/thisWebSite">This web site</a> and included the two &ldquo;Update from Portugal&rdquo; emails I sent with links to the respective photosets as letters <a href="<?= $rootRelativeUrl ?>letters/letter20">20</a>  and <a href="<?= $rootRelativeUrl ?>letters/letter21">21</a> under Newsletters. However, the most time-consuming part of the project was modernizing all the code and modifying an existing image gallery to allow long captions.</p>
+	<p>I also added some notes about the update on <a href="<?= $rootRelativeUrl ?>technology/thisWebSite">This web site</a> and included the two &ldquo;Update from Portugal&rdquo; emails I sent with links to the respective photosets as <a href="<?= $rootRelativeUrl ?>letters/letter20">letter 20</a>  and <a href="<?= $rootRelativeUrl ?>letters/letter21">letter&nbsp;21</a> under Newsletters. However, the most time-consuming part of the project was modernizing all the code and modifying an existing image gallery to allow long captions.</p>
 </div>
 
 <h2>29 November 2018</h2>
