@@ -43,23 +43,36 @@
 
 <h2>Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 16<sup>th</sup> May 2021)</p>
+	<p class="subtitle">(As of 22<sup>nd</sup> May 2021)</p>
 </div>
 
 <h3>BTS</h3>
 <div class="story">
-	<p>I have to mention boy band BTS first because if you have heard of any K-pop group, it was almost certainly BTS as they are huge. They generate more traffic on Twitter than either Taylor Swift or Justin Beiber. They are unusual in that they write a lot of their material</p>
-	<p>I love their 2019 hit <a href="https://www.youtube.com/watch?v=XsX3ATc3FbA" target="_blank" class="external">Boy With Luv</a> (791 million views as of 2020-05-28) but that was the first song of theirs that I liked.</p>
-	<p>The first video to hit 100m views on youtube in 24 hours: <a href="https://www.youtube.com/watch?v=gdZLi9oWNZg" target="_blank" class="external">Dynamite</a> which is also their first song in English.</p>
-	<p>	It is definitely also worth watching the <a href="https://www.youtube.com/watch?v=CzvfbRbEjww" target="_blank" class="external">&ldquo;dance practice&rdquo; video</a> so you can see the whole performance start to finish. In fact, I often prefer the dance practice videos and the live performances to the music videos. Indeed there is a huge sub-genre of dance covers and &ldquo;KPop in public&rdquo; performances where dance groups from around the world reproduce, or reinterpret, songs from popular groups. For <em>Boy With Luv</em>, I encourage you to check these out:</p>
+	<p>I have to mention boy band BTS first because if you have heard of any K-pop group, it was almost certainly BTS as they are huge. They are unusual in that they write a lot of their material</p>
+
 	<ul>
-		<li><a href="https://www.youtube.com/watch?v=2K6dRljmvGw" target="_blank" class="external"> 7 young men from Vietnam</a> (over 9 million views!)</li>
-		<li><a href="https://www.youtube.com/watch?v=TMDS5v4brj8" target="_blank" class="external">a rotating cast of dance groups</a></li>
-		<li><a href="https://www.youtube.com/watch?v=TATGqCXMjj0" target="_blank" class="external"> 5 Korean? girls on top of a building</a></li>
-		<li><a href="https://www.youtube.com/watch?v=_adOK0WFu90&amp;sa=D&amp;ust=1590612821733000">a fabulous collaboration of 3 members each from 4 girls groups</a></li>
+		<li
+			<p><a href="https://www.youtube.com/watch?v=XsX3ATc3FbA" target="_blank" class="external">Boy With Luv</a> (1.2 billion views as of 2021-05-22) I <strong>love</strong> their 2019 hit but that was the first song of theirs that I liked.</p>
+			<p>	It is also well worth watching the <a href="https://www.youtube.com/watch?v=CzvfbRbEjww" target="_blank" class="external">&ldquo;dance practice&rdquo; video</a> so you can see the whole performance start to finish. In fact, I often prefer the dance practice videos and the live performances to the music videos.</p>
+			<p>Indeed there is a huge sub-genre of dance covers and &ldquo;KPop in public&rdquo; performances where dance groups from around the world reproduce, or reinterpret, songs from popular groups. For <em>Boy With Luv</em>, I encourage you to check these out:
+			</p>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=2K6dRljmvGw" target="_blank" class="external"> 7 young men from Vietnam</a> (over 9 million views!)</li>
+				<li><a href="https://www.youtube.com/watch?v=TMDS5v4brj8" target="_blank" class="external">a rotating cast of dance groups</a></li>
+				<li><a href="https://www.youtube.com/watch?v=TATGqCXMjj0" target="_blank" class="external"> 5 Korean(?)) girls on top of a building</a></li>
+				<li><a href="https://www.youtube.com/watch?v=_adOK0WFu90&amp;sa=D&amp;ust=1590612821733000">a fabulous collaboration of 3 members each from 4 girls groups</a></li>
+			</ul>
+			<p>&hellip;and so on.</p>
+			<p>Oh, and a lovely <a href="https://www.youtube.com/watch?v=am3iJavzYi8" target="_blank" class="external">English-language cover</a> that is <a href="https://youtu.be/JewlhY8DGTI?t=329" target="_blank" class="external">BTS-approved</a>!
+			</p>
+		</li>
+		<li><a href="https://www.youtube.com/watch?v=gdZLi9oWNZg" target="_blank" class="external">Dynamite</a> The first video to hit 100m views on youtube in 24 hours and perhaps not coincidentally, their first song in English.
+		</li>
+		<li><a href="https://www.youtube.com/watch?v=WMweEpGlu_U" target="_blank" class="external">Butter</a> BTS broke their own record with this song reaching 113 million views in 24 hours! 
+		</li>
 	</ul>
-	<p>&hellip;and so on.</p>
-	<p>Oh, and a lovely <a href="https://www.youtube.com/watch?v=am3iJavzYi8" target="_blank" class="external">English-language cover</a> that is <a href="https://youtu.be/JewlhY8DGTI?t=329" target="_blank" class="external">BTS-approved</a>! </p>
+
+	
 
 	<p>Someone at my old office (Dilene) gave me this list of <em>her t</em>en favorite songs. See if you like them:</p>
 	<ul>
@@ -74,7 +87,7 @@
 	</ul>
 
 	<p>
-		&quot;These ones are less upbeat but beautiful&quot;
+		She told me that, &quot;These ones are less upbeat but beautiful&quot;:
 	</p>
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=xEeFrLSkMm8" target="_blank" class="external"> Spring Day</a></li>
@@ -330,8 +343,7 @@
 	<p>
 		I love <a href="https://www.youtube.com/watch?v=0KGHiRo2apM" target="_blank" class="external"> Mr. Potter</a> and the <a href="https://www.youtube.com/watch?v=_Nx6lA6UzXQ&amp;sa=D&amp;ust=1590612821759000">dance practice</a>.
 	</p>
-	<p>However I am baffled why they have produced so little material in the years since. In 2019 there was just a 5-song mini-album <a href="https://www.youtube.com/watch?v=EIvRV38wWlk"  target="_blank" class="external">Newtro</a> &ndash; and one of those songs was an instrumental and the single <em>Woowa</em> failed to chart. The girls are presumably under contract and cannot leave to resume their studies or pursue other employment and MBK Entertainment is presumably still housing and feeding them &ndash; and I hope continuing to train them. There is a &ldquo;comebavck&rdquo; scheduled for 10<sup>th</sup> June 2020 so I hope whatever comes out is a hit.
-	</p>
+	<p>However I am baffled why they have produced so little material in the years since. In 2019 there was just a 5-song mini-album <a href="https://www.youtube.com/watch?v=EIvRV38wWlk"  target="_blank" class="external">Newtro</a> &ndash; and one of those songs was an instrumental and the single <em>Woowa</em> failed to chart. The girls are presumably under contract and cannot leave to resume their studies or pursue other employment and MBK Entertainment is presumably still housing and feeding them &ndash; and I hope continuing to train them. They released <a href="https://www.youtube.com/watch?v=TGaYUh782k4" target="_blank" class="external">Hug U</a> in mid-2020 but almost a year later, it has only 412,000 views. The final scene looks like they are taking one final photo before they disband. Maybe they have and can get on with their lives without being shackled to a mediocre entertainment company.</p>
 </div>
 
 <h3>Saturday</h3>
@@ -386,10 +398,19 @@
 	<p>I don't particularly like any of their songs that I know of but I am including them here because of them attempting their <a href="https://www.youtube.com/watch?v=lu7INrbDb68" target="_blank" class="external">dance routine while blindfolded</a>! </p>
 </div>
 
+<h3>aespa</h3>
+<div class="story">
+	<p>The company behind them, <a href="https://en.wikipedia.org/wiki/SM_Entertainment" target="_blank" class="external">S.M. Entertainment</a>, is one the big four entertainment companies in South Korea so they can nurture their trainees, create high-quality videos and run effective promotion. This is apparently their first new girl group in 6 years so these 4 young women must be outstanding.</p>
+	<ul>
+		<li><a href="https://www.youtube.com/watch?v=ZeerrnuLi5E" target="_blank" class="external">Black Mamba</a> Their debut single has 148 million views after 6 months! </li>
+		<li><a href="https://www.youtube.com/watch?v=4TWR90KJl84" target="_blank" class="external">Next Level</a> For anyone that knows about video production, I am intrigued by the spaceship module at 0:24&mdash;did they make a real, physical thing to show for 1 second in the video, or is it computer generated? Either way, it is impressive.</li>
+	</ul>
+</div>
+
 <h3>&hellip;and so much more!</h3>
 <div class="story">
 	<p>I feel I've only scratched the surface and there are new songs and new groups coming out all the time.  Other groups I've come across - and this is just the girl groups: 
 	A.O.A, APink, BerryGood, Bvndit, CLC,  cignature, Dreamcatcher, DreamNote, Exid, Everglow, Fromis_9, f(x), 
-Gugudan, Hwa Sa, I.O.I, Itzy (stablemate of Twice and successful because of it), I.Z. One, Kara, La Boum, Lovelyz, Orange Caramel, Pledis, Pristin, Purplebeck, S.I.S., UNI.T, WJSN (not to be confused with GWSN!).</p>
+Gugudan, Hwa Sa, I.O.I, Itzy (stablemate of Twice and successful partly because of it), I.Z. One, Kara, La Boum, Lovelyz, Orange Caramel, Pledis, Pristin, Purplebeck, S.I.S., UNI.T, WJSN (not to be confused with GWSN!).</p>
 </div>
 
