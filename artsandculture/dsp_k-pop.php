@@ -41,9 +41,9 @@
 	</ul>
 </div>
 
-<h2>Peter's K-pop selection</h2>
+<h2 id="peters-kpop-selection">Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 22<sup>nd</sup> May 2021)</p>
+	<p class="subtitle">(As of 12<sup>th</sup> June 2021)</p>
 </div>
 
 <h3>BTS</h3>
@@ -150,7 +150,7 @@
 			2018-08-16 <a href="https://www.youtube.com/watch?v=CMNahhgR_ss&amp;sa=D&amp;ust=1590612821743000">BDZ</a>
 			In Japanese) is not an outstanding song but I include it here for its strange video. It may or may not be a coincidence that the key words from the chorus happen to spell BTS. 
 		</li>
-		<li>2018-04-09 <a href="https://www.youtube.com/watch?v=i0p1bmr0EmE" target="_blank" class="external"> What is love?</a></li>
+		<li>2018-04-09 <a href="https://www.youtube.com/watch?v=i0p1bmr0EmE" target="_blank" class="external"> What is love?</a>. For a severe cringeworthy moment, see well-rehearsed  <a href="https://www.youtube.com/watch?v=Jw4QCu9vD2I" target="_blank" class="external">dance cover</a> and skip forward to 1:51 where some older women join in and get in the way.</li>
 		<li>
 			2018-05-21 <a href="https://www.youtube.com/watch?v=TqhQWwV9hSc" target="_blank" class="external"> Really Really</a>
 			This is a fun cover of the song by boy band 
@@ -169,7 +169,7 @@
 				<li><a href="https://www.youtube.com/watch?v=HWkJN5AHARs" target="_blank" class="external"> girls from Hong Kong</a> whose costumes mimic that Twice wore at a concert</li>
 				<li><a href="https://www.youtube.com/watch?v=U_7Q8RMLU1s&amp;sa=D&amp;ust=1590612821747000">another fabulous one from Vietnam</a> Watch carefully at 1:30!</li>
 				<li>a  <a href="http://www.youtube.com/watch?v=kn5wFzCujbQ">lone girl in Germany</a> who appears to be singing along in Korean</li>
-				<li<a href="https://www.youtube.com/watch?v=2suguYkh2C8" target="_blank" class="external">my favorite cover</a> by a dance group from Brazil at what I take to be a gay nightclub</li>
+				<li><a href="https://www.youtube.com/watch?v=2suguYkh2C8" target="_blank" class="external">my favorite cover</a> by a dance group from Brazil at what I take to be a gay nightclub</li>
 			</ul> 
 		</li>
 		<li>
@@ -180,7 +180,7 @@
 			2019-10-29: <a href="https://www.youtube.com/watch?v=0kWidNV5s3w" target="_blank" class="external">Luv Me</a> This is one of my favorite songs of theirs but unfortunately the live performance in Tokyo has been taken down, so you will have to make do with this fan music video (which is pretty good).
 		</li>
 		<li>
-			2019-12-23: A Christmas present from Nayeon as she cover's <a href="https://www.youtube.com/watch?v=XO9GiPOLd3I">Santa Tell Me</a>
+			2019-12-23: A Christmas present from Nayeon as she covers Ariana Grande's <a href="https://www.youtube.com/watch?v=XO9GiPOLd3I">Santa Tell Me</a>
 		</li>
 		<li>
 			2020-06-01 <a href="https://www.youtube.com/watch?v=mH0_XpSHkZo" target="_blank" class="external">More and More</a>. I am not sure I like it but I included it here because it is their latest and it seems to be popular. Just not with me.
@@ -196,6 +196,12 @@
 		</li>
 		<li>
 			2021-04-20 <a href="https://www.youtube.com/watch?v=BSS8Y-0hOlY" target="_blank" class="external">Kura Kura</a> for the Japanese market. Not a great song overall but it has a great chorus which prompted each of them to do a 30-second video such as this <a href="https://www.tiktok.com/@twice_tiktok_officialjp/video/6955018090971254018?lang=en&is_copy_url=1&is_from_webapp=v1" target="_blank" class="external">TikTok from Mina</a>.
+		</li>
+		<li>
+			2021-06-09 <a href="https://www.youtube.com/watch?v=XA2YEHn-A8Q" target="_blank" class="external">Alcohol Free</a> A bit of a departure for Twice as it has a Latin vibe to it and I am still not sure if I like it but it may yet get stuck in my head. Music groups with several years of success can either keep doing the same thing forever but that may get boring and they lose their audience&hellip; or they can try new musical directions but then they risk losing their audience. This is the single from the album <em>Taste of Love</em> and I've not listened to the other tracks yet. Will update this list soon.
+		</li>
+		<li>
+			2021-06-27 <a href="https://www.youtube.com/watch?v=IO1Nl9ErTsI" target="_blank" class="external">Me!</a> Actually, this is just Tzuyu doing a cover of Taylor's Swift's song but I love it! It is just the sort of catchy, upbeat song that drew me to Twice in the beginning. Also pleasing to see is that Tzuyu appears to have found her self-confidence as in many videos she appears to shy from attention. She should feel confident given all that she has achieved, notably in this video, singing in English. As a bonus, there is a <a href="https://www.youtube.com/watch?v=w495XsZ02vs" target="_blank" class="external">delightful video</a> of &ldquo;big sisters&rdquo; Momo and Nayeon seeing it for the first time.
 		</li>
 	</ul>
 </div>
@@ -278,12 +284,19 @@
 		<li><a href="https://www.youtube.com/watch?v=JFgv8bKfxEs" target="_blank" class="external">Happiness</a></li>
 		<li><a href="https://www.youtube.com/watch?v=QslJYDX3o8s" target="_blank" class="external">Russian roulette</a></li>
 		<li><a href="https://www.youtube.com/watch?v=glXgSSOKlls" target="_blank" class="external">Ice cream cake</a></li>
-		<li><a href="https://www.youtube.com/watch?v=aiHSVQy9xN8" target="_blank" class="external">Power Up</a></li>
+		<li><a href="https://www.youtube.com/watch?v=aiHSVQy9xN8" target="_blank" class="external">Power Up</a>. While we are here, I'll mention that I get more joy than I should watching this video of <a href="https://www.youtube.com/watch?v=7SW7oYJ8sQQ"  target="_blank" class="external">Twice members cheering on Red Velvet</a>! Someone in the comments suggests that Nayeon should be the president of ReVeluv, the Red Velvet fan club!</li>
 	</ul>
 	<p>I was not paying attention to Red Velvet and so I was shocked to learn in May 2021 that Wendy fell 2.5m/8ft off a stage during a rehearsal on Christmas Day 2019 and sustained serious injuries. She was in hospital for 2 months and didn't reappear with the group until New Year's Day this year. Knowing this, it is sad to listen to two songs she released in April 2021:</p>
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=-Ih5UArd4zk" target="_blank" class="external">Like water</a> and even better...</li>
 		<li><a href="https://www.youtube.com/watch?v=tknKZe_TyqU" target="_blank" class="external">When this rain stops</a></li>
+	</ul>
+</div>
+
+<h3>Joy (from Red Velvet)</h3>
+<div class="story">
+	<ul>
+		<li><a href="https://www.youtube.com/watch?v=lNvBbh5jDcA" target="_blank" class="external">Hello</a> This song is a bop! You can't avoid smiling.</li>
 	</ul>
 </div>
 
