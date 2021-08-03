@@ -1,7 +1,7 @@
 
 
 <div class="story">
-	<p>{Originally sent as an email on 10<sup>th</sup> December 2019.]</p>
+	<p>[Originally sent as an email on 10<sup>th</sup> December 2019.]</p>
 	<p>Dear friends,</p>
 	<p>I have assembled 99 photos that document our first 6 weeks in Portugal and you can see them here: https://photos.app.goo.gl/enKr25uNuk5FoKEt8. Make sure you click the <img src="<?=$rootRelativeUrl ?>home/images/IconInformation.jpg" alt="Information"> icon (or <img src="<?=$rootRelativeUrl ?>home/images/IconMenu.jpg" alt="Menu"> on mobile) once in Google Photos so that you can read the captions. If it fails to open, try opening the link in an incognito window. </p>
 	<p>In general, the move to Portugal has been a success and I don't foresee us moving back to the US. However, after we sorted out or official paperwork and obtained a local bank account in the first few days, I perhaps had unrealistic expectations of how long it would take to get settled in a new apartment; it took 5 or 6 weeks (and 4 trips to Ikea by bus and train) so it has only been in the past week or two that we've felt free to do things for fun rather than necessity. In the last week we've made two day trips outside Lisbon.</p>
