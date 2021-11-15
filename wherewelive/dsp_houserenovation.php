@@ -83,7 +83,7 @@
 		?>
 	</div>
 	<div class="story">
-		<p>Incidentally, given that we are on high ground, it seemed that the water in the ground must be coming from a broken pipe somewhere so I did an <a href="http://sweetandsour.org.s3.amazonaws.com/wherewelive/files/Elevation.pdf" target="_blank">analysis</a> of the surrounding land and found some higher than us.</p>
+		<p>Incidentally, given that we are on high ground, it seemed that the water in the ground must be coming from a broken pipe somewhere so I did an <a href="files/Elevation.pdf" target="_blank">analysis</a> of the surrounding land and found some higher than us.</p>
 	</div>
 	
 	<h2>Subsidence</h2>
