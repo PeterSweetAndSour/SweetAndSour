@@ -203,6 +203,23 @@
 		<li>
 			2021-06-27 <a href="https://www.youtube.com/watch?v=IO1Nl9ErTsI" target="_blank" class="external">Me!</a> Actually, this is just Tzuyu doing a cover of Taylor's Swift's song but I love it! It is just the sort of catchy, upbeat song that drew me to Twice in the beginning. Also pleasing to see is that Tzuyu appears to have found her self-confidence as in many videos she appears to shy from attention. She should feel confident given all that she has achieved, notably in this video, singing in English. As a bonus, there is a <a href="https://www.youtube.com/watch?v=w495XsZ02vs" target="_blank" class="external">delightful video</a> of &ldquo;big sisters&rdquo; Momo and Nayeon seeing it for the first time.
 		</li>
+
+		<li>
+			2021-10-10 <a href="https://www.youtube.com/watch?v=f5_wn8mexmM" target="_blank" class="external">The Feels</a> Their first English-language song! This got them on <em>The Tonight Show</em> and <em>Good Morning America</em> though apparently the hosts of the latter didn't get it. Their loss. Their loss I think it is one of their best. Also noteworthy:
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=90mwhuwIQco" target="_blank" class="external">choreography video 1</a> with a static camera</li>
+				<li><a href="https://www.youtube.com/watch?v=9j6_KM-uzfY" target="_blank" class="external">choreography video 2</a> with moving camera (31 million views as of 2021-11-17!)</li>
+				<li>hilarious <a href="https://www.youtube.com/watch?v=xwSG8viDbvI" target="_blank" class="external">&ldquo;random unit dance&rdquo;</a>, a variation on the &ldquo;relay dances&rdquo; that are often made in K-pop to make use of the vertical video format. They manage to incorporate a very Asian way of making decisions. If you only watch one video, watch this one! </li>
+			</ul>
+		</li>
+		<li>
+			2021-11-10 <a href="https://www.youtube.com/watch?v=vPwaXytZcgI" target="_blank" class="external">Scientist</a> A hypnotic song, I loved it from the first listen. As far as I know, this is the first time that Mina has been the opening singer. Some of the comments note that it is in a lower register and that Momo (starting at 2:04) is singing in her natural range and she has such a beautiful, sultry voice. This song is released as part of their <a href="https://www.youtube.com/watch?v=FOYH-CxtKI8&list=PLxA687tYuMWi_g7GaqOmRnO2rVZoOQbKE"  target="_blank" class="external">Formula of Love</a> album. Associated videos:
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=hUSqTW21Xl8" target="_blank" class="external">choreography video 1</a>, noteable becaues because Jeongyeon is in it. Like Mina before her, she's had to take time off because she was suffering anxiety attacks. At the end they show an earlier take where Tzuyu forgets the next move; I can feel her soul being crushed. She is the youngest in the group and I suspect that she rarely smiles in performances because she is concentrating so hard on getting her part right.</li>
+				<li><a href="https://www.youtube.com/watch?v=FWjMQ-XY2XY" target="_blank" class="external">choreography video 2</a> with moving camera</li>
+			</ul>
+		</li>
+
 	</ul>
 </div>
 
