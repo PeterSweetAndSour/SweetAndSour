@@ -1,6 +1,7 @@
 			<div class="story">
 				<div class="imgShadow">
 					<img src="images/instructions/HouseFrontView.jpg" alt="street view" />
+					<p>Our house at the time we bought it.</p>
 				</div>
 			</div>
 			
