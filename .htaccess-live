@@ -15,6 +15,11 @@ RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
 RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
 RewriteRule ^/?$ /home [PT,NC]
 
+# Redirect /1222Constitution to the instructionstobuilder fuseAction in the wherewelive folder
+RewriteCond %{HTTP_HOST}" "sweetandsour.org"
+RewriteRule ^/?1222Constitution/?$ /wherewelive/instructionstobuilder   [R]
+
+
 # Human friendly URLs need to be translated internally so the server knows how to handle requests.
 RewriteCond %{HTTP_HOST}" "sweetandsour.org"
 RewriteRule ^([a-z]+)/([a-zA-Z0-9-]+)/?$ /$1/index.php?fuseAction=$2 [PT,NC,QSA]
