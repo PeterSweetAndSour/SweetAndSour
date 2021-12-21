@@ -213,13 +213,15 @@
 			</ul>
 		</li>
 		<li>
-			2021-11-10 <a href="https://www.youtube.com/watch?v=vPwaXytZcgI" target="_blank" class="external">Scientist</a> A hypnotic song, I loved it from the first listen. As far as I know, this is the first time that Mina has been the opening singer. Some of the comments note that it is in a lower register and that Momo (starting at 2:04) is singing in her natural range and she has such a beautiful, sultry voice. This song is released as part of their <a href="https://www.youtube.com/watch?v=FOYH-CxtKI8&list=PLxA687tYuMWi_g7GaqOmRnO2rVZoOQbKE"  target="_blank" class="external">Formula of Love</a> album. Associated videos:
+			2021-11-10 <a href="https://www.youtube.com/watch?v=vPwaXytZcgI" target="_blank" class="external">Scientist</a> A hypnotic song, I loved it from the first listen. As far as I know, this is the first time that Mina has been the opening singer. Some of the comments note that it is in a lower register and that Momo (starting at 2:04) is singing in her natural range and she has such a beautiful, sultry voice. This song is released as part of their <a href="https://www.youtube.com/watch?v=FOYH-CxtKI8&list=PLxA687tYuMWi_g7GaqOmRnO2rVZoOQbKE" target="_blank" class="external">Formula of Love</a> album. Associated videos:
 			<ul>
 				<li><a href="https://www.youtube.com/watch?v=hUSqTW21Xl8" target="_blank" class="external">choreography video 1</a>, noteable becaues because Jeongyeon is in it. Like Mina before her, she's had to take time off because she was suffering anxiety attacks. At the end they show an earlier take where Tzuyu forgets the next move; I can feel her soul being crushed. She is the youngest in the group and I suspect that she rarely smiles in performances because she is concentrating so hard on getting her part right.</li>
 				<li><a href="https://www.youtube.com/watch?v=FWjMQ-XY2XY" target="_blank" class="external">choreography video 2</a> with moving camera</li>
 			</ul>
 		</li>
-
+		<li>
+			2021-12-19 <a href="https://www.youtube.com/watch?v=cAvMGWLZCHA" target="_blank" class="external">Snowman</a>, Mina's Melody Project, a cover of <a href="https://www.youtube.com/watch?v=gset79KMmt0" target="_blank" class="external">Sia&apos;s original</a>. <br><em>&ldquo;Please don't cry no tears now, it's Christmas, baby.&rdquo;</em> <br>How can we when Mina sings this? She is so sweet, so vulnerable, so precious. <br>I also draw to your attention to <a href="https://www.youtube.com/watch?v=AWmWO8ecgpo" target="_blank" class="external">another fabulous cover</a> by a Black man with a gorgeous voice. I have listened to both covers over and over trying not to cry. It has been a fabulous for us fans.
+		</li>
 	</ul>
 </div>
 
