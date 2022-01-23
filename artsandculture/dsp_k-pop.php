@@ -19,7 +19,7 @@
 
 <h2>Where to start?</h2>
 <div class="story">
-	<p>If K-pop is completely new to you, I suggest that you start with the following, each of which are mentioned again below</p>
+	<p>If K-pop is completely new to you, I suggest that you start with the following, each of which are mentioned again below. Click the "CC" (closed captions) button on YouTube since many have English subtitles but perhaps surprisingly, they aren't necessary to enjoy!</p>
 	<ul>
 		<li>
 			A song from the most popular boy band:<br/>
@@ -35,8 +35,12 @@
 			<? setThumbnail("EyesNoseLips.jpg", "https://www.youtube.com/watch?v=9un35OyWcN0", "figure--thumbnail-youtube") ?>
 		</li>
 		<li>
-			A fantastic song from a girl group that even K-pop fans probably know of only dimly, if at all. A great example of why you shouldn't limit yourself to just the most popular:</br>
+			A fantastic song from a girl group that even K-pop fans probably know of only dimly, if at all. A great example of why you shouldn't limit yourself to just the most popular and also of a great, really cheap music video:</br>
 			<? setThumbnail("ThisIsMe.jpg", "https://www.youtube.com/watch?v=9uhUmjANdQA", "figure--thumbnail-youtube") ?>
+		</li>
+		<li>
+			Such a fun, bouncy song that tells a heart-warming story so you can't help smiling by the end! The music doesn't actually start until about 35 seconds in:<br />
+			<? setThumbnail("Hello.jpg", "https://www.youtube.com/watch?v=lNvBbh5jDcA", "figure--thumbnail-youtube") ?>
 		</li>
 	</ul>
 </div>
@@ -220,7 +224,7 @@
 			</ul>
 		</li>
 		<li>
-			2021-12-19 <a href="https://www.youtube.com/watch?v=cAvMGWLZCHA" target="_blank" class="external">Snowman</a>, Mina's Melody Project, a cover of <a href="https://www.youtube.com/watch?v=gset79KMmt0" target="_blank" class="external">Sia&apos;s original</a>. <br><em>&ldquo;Please don't cry no tears now, it's Christmas, baby.&rdquo;</em> <br>How can we when Mina sings this? She is so sweet, so vulnerable, so precious. <br>I also draw to your attention to <a href="https://www.youtube.com/watch?v=AWmWO8ecgpo" target="_blank" class="external">another fabulous cover</a> by a Black man with a gorgeous voice. I have listened to both covers over and over trying not to cry. It has been a fabulous for us fans.
+			2021-12-19 <a href="https://www.youtube.com/watch?v=cAvMGWLZCHA" target="_blank" class="external">Snowman</a>, Mina's Melody Project, a cover of <a href="https://www.youtube.com/watch?v=gset79KMmt0" target="_blank" class="external">Sia&apos;s original</a>. <br><em>&ldquo;Please don't cry no tears now, it's Christmas, baby.&rdquo;</em> <br>How can we when Mina sings this? She is so sweet, so vulnerable, so precious. <br>I also draw to your attention to <a href="https://www.youtube.com/watch?v=AWmWO8ecgpo" target="_blank" class="external">another fabulous cover</a> by a Black man with a gorgeous voice. I have listened to both covers over and over trying not to cry. It has been a fabulous year for us fans.
 		</li>
 	</ul>
 </div>
