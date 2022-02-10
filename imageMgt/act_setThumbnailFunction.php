@@ -44,7 +44,7 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 			if($overrideURL == "") {
 				if($photos[$photoName]["linkedImg"] == "") { // Unlikely - there should be a linked image for every thumbnail
 					?><figure<?= $classString ?>>
-						<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
+						<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" loading="lazy" />
 						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
 					</figure><?
 				}
@@ -53,7 +53,7 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 					$urlPageWithLinkedImage = $rootRelativeUrl . "imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=" . $photos[$photoName]["linkedImg"];
 					?><figure<?= $classString ?>>
 						<a class="figure__link--gallery" href="<?= $urlPageWithLinkedImage ?>" data-linked-image-src="<?= $fullSizeImgSrc ?>" data-size="<?= $photos[$photoName]["linkedImageWidth"] ?>x<?= $photos[$photoName]["linkedImageHeight"] ?>">
-							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" />
+							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="" loading="lazy" />
 						</a>
 						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
 						<figcaption class="figure__caption--fullsize"><?= $photos[$photoName]["linkedImageCaption"] ?></figcaption>	
@@ -73,7 +73,7 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 				}
 				?><figure<?= $classString ?>>
 						<a href="<?= $linkURL ?>" target="<?= $target ?>">
-							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="Please refer to following caption." />
+							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="Please refer to following caption." loading="lazy" />
 						</a>
 						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
 					</figure><?
