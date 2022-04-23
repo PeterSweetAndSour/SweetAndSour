@@ -26,7 +26,7 @@
 </div>
 <? setThumbnail("CanaryIslandsCruiseSm.jpg", "https://photos.app.goo.gl/WpQnRnfVCbdZXgkb8"); ?>
 
-<h2>27 September 2017</h2>
+<h2 id="bikeCrash">27 September 2017</h2>
 <div class="story">
 	<p>Not something to celebrate in the normal sense but I had a crash while riding my bike to work which put in me in hospital for 2&half; days and then I was off work for a month recovering. It also left me completely deaf in my right ear.</p>
 	<p>What is worth celebrating, and is indeed quite humbling, is the <em>extraordinary</em> efforts my coworkers and neighbors went to to find me when I failed to show up at work at the normal time. Thank you. You know who you are. <a href="./images/WhereIsPeter.png" target="_blank">See the whole discussion</a> on our office communications system (last names are removed). Sorry, it is a screenshot and at 8.6MB it is a large image; it will load in a new tab, then click on it to expand.</p>
