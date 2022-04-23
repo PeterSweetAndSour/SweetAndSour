@@ -21,7 +21,7 @@
 			<header>
 				<p class="logo"><a href="http://www.sweetandsour.org/home" title="Go to home page">Sweet and Sour</a></p>
 				<p class="tagline">One is sweet and the other is &hellip; a web developer</p>
-				<p class="sr-only"><a href="#content" title="Jump to content">Jump to content</a></p><!-- Hidden except for screen readers -->
+				<p class="sr-only"><a href="#content">Jump to content</a></p><!-- Hidden except for screen readers -->
 			</header>	
 		
 			<main>
