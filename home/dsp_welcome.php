@@ -3,6 +3,22 @@
    <p>This is Peter's web site, a very slow-motion blog.</p>
 </div>
 
+<h2>25 April 2022</h2>
+<div class="story">
+	<p>It is <a href="https://en.wikipedia.org/wiki/Anzac_Day" class="external" target="_blank">Anzac Day</a> but that is not why I am posting something after a year and a half of silence. Instead, it is to share with you our drastic change of plans&hellip; I am coming out of retirement and will stay in Washington, DC for a few more years.</p>
+
+	<p>At the time we left for Portugal, my understanding was that I just had to re-enter the US once a year to keep my status active. Then I read that if you are away more than 6 months, you have to justify to the immigration official at the point of re-entry why you were away for so long and risk being sent back. Coming back for a perhaps a week every 6 months is a nuisance but still manageable. However, more recently I found out that US permanent residents are required to reside in the US permanently! Or more precisely, are required to spend more time in the US each year than out of it.</p>
+
+	<p>I got away with it last year because COVID made travel so difficult and many people were stranded. In early February 2021, when I thought I needed to be back, 3,000 people were dying every day in the US and most international flights were canceled. We decided that it wasn't worth the risk of catching a deadly disease so we came back within a few weeks of us both being vaccinated in June/July.</p>
+
+	<p>It makes no sense to spend half the year in the US and half in Portugal, partly for the expense of maintaining two households but also that I need more than emergency travel health insurance if I am in the US that long. So there are two options:</p>
+
+	<p>First, I can give up my green card and if I ever want to return to the US for a short visit, I come back on a tourist visa. This was my preferred option. There is an "expatriation" tax for citizens and permanent residents renouncing their status if they have assets are over a certain level, so we changed ownership of our house in DC to be only in Lan's name.</p>
+
+	<p>Second, I can become a US citizen which paradoxically allows me to leave and not have to come back.</p>
+		
+	<p>After much debate with Lan, we agreed last weekend that we, or at least I, will move back, get a job and submit the form for US citizenship, a process that can take 2 years or more. i really don't want to do this but it seems the least worst option. I am already in DC having just returned from Australia and so now I am applying for jobs. We bought a condo (US)/flat (UK)/home unit (AU) in SE DC last year to maintain a US "physical address" so I will live there.</p>
+</div>
 
 <h2>31 December 2020</h2>
 <div class="story">
