@@ -11,13 +11,7 @@
 
 	<p>I got away with it last year because COVID made travel so difficult and many people were stranded. In early February 2021, when I thought I needed to be back, 3,000 people were dying every day in the US and most international flights were canceled. We decided that it wasn't worth the risk of catching a deadly disease so we came back within a few weeks of us both being vaccinated in June/July.</p>
 
-	<p>It makes no sense to spend half the year in the US and half in Portugal, partly for the expense of maintaining two households but also that I need more than emergency travel health insurance if I am in the US that long. So there are two options:</p>
-
-	<p>First, I can give up my green card and if I ever want to return to the US for a short visit, I come back on a tourist visa. This was my preferred option. There is an "expatriation" tax for citizens and permanent residents renouncing their status if they have assets are over a certain level, so we changed ownership of our house in DC to be only in Lan's name.</p>
-
-	<p>Second, I can become a US citizen which paradoxically allows me to leave and not have to come back.</p>
-		
-	<p>After much debate with Lan, we agreed last weekend that we, or at least I, will move back, get a job and submit the form for US citizenship, a process that can take 2 years or more. i really don't want to do this but it seems the least worst option. I am already in DC having just returned from Australia and so now I am applying for jobs. We bought a condo (US)/flat (UK)/home unit (AU) in SE DC last year to maintain a US "physical address" so I will live there.</p>
+	<p>It makes no sense to spend half the year in the US and half in Portugal, partly for the expense of maintaining two households but also that I need more than emergency travel health insurance if I am in the US that long. So, after much debate with Lan, we agreed last weekend that we, or at least I, will move back and get a job. I am already in DC having just returned from Australia and so now I am applying for jobs. We bought a condo (US)/flat (UK)/home unit (AU) in SE DC last year to maintain a US "physical address" so I will live there.</p>
 </div>
 
 <h2>31 December 2020</h2>
