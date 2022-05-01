@@ -4,13 +4,13 @@
 	"description": "My personal website.",
 	"version": "3.0.2",
 	"homepage": "https://sweetandsour.org",
-	"browserslist" : [
+	"browserslist": [
 		"last 2 versions"
 	],
 	"demo": "",
 	"docs": "",
 	"devDependencies": {
-		"grunt": "^1.1.0",
+		"grunt": "^1.5.2",
 		"grunt-contrib-clean": "^2.0.0",
 		"grunt-contrib-concat": "^1.0.1",
 		"grunt-contrib-copy": "^1.0.0",
@@ -32,8 +32,8 @@
 	],
 	"licenses": [
 		{
-		"type": "MIT",
-		"url": "http://www.opensource.org/licenses/mit-license.php"
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
 		}
 	],
 	"dependencies": {
