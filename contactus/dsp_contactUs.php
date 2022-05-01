@@ -61,6 +61,24 @@ Variables:
 			<input type="hidden" id="reCAPTCHAIsValid">
 		</div>
 
+		<div class="floating-label">
+			<input type="text" class="wide" name="challenge" id="challenge" maxLength="20" value="" 
+			autocomplete="off" required placeholder="The Australian state referenced below?">
+			<label for="challenge">The Australian state referenced below?</label>
+			<span id="challengeMsg" class="hidden">That is not the answer I'm looking for.</span>
+		</div>
+		<p>Australian commentators <a href="https://en.wikipedia.org/wiki/Roy_and_HG" 
+			class="external" target="_blank">Roy & HG</a> proposed a simple test for sports players
+			who may have suffered a concussion injury on the field. The referee asks the 
+			following questions and if the player is unable to answer satisfactorily, he or she
+			is sent off the field:
+		</p>
+		<ol>
+			<li>What is your name?</li>
+			<li>What day of the week is it?</li>
+			<li>Who is the Deputy Premier of <strong>South Australia</strong>?</a></li>
+		</ol>
+
 		<div class="actionRow">
 			<div class="buttonWrapper">
 				<input type="submit" id="submitBtn" class="submit" name="Send" value="Send" disabled>
