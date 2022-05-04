@@ -1145,7 +1145,7 @@ the position of the label after the user has entered something. */
 }
 .floating-label label {
   position: absolute;
-  top: calc(50% - 10px);
+  top: 20px;
   left: 10px;
   font-size: 14px;
   opacity: 0;
@@ -1168,6 +1168,9 @@ the position of the label after the user has entered something. */
 .floating-label input.wide {
   width: 100%;
 }
+.floating-label input.error {
+  border: #cf2a2a;
+}
 .floating-label input:focus {
   border-bottom: solid 2px #14599E;
   margin-bottom: 0;
@@ -1178,7 +1181,9 @@ the position of the label after the user has entered something. */
   color: transparent;
 }
 .floating-label input:focus + label,
-.floating-label input:not(:placeholder-shown) + label {
+.floating-label input:not(:placeholder-shown) + label,
+.floating-label input:focus + span + label,
+.floating-label input:not(:placeholder-shown) + span + label {
   transform: translate(-5px, -31px);
   opacity: 1;
   background-color: #fff;
@@ -1261,6 +1266,16 @@ textarea:focus {
   margin-bottom: 6px;
   font-size: 18px;
   color: #767676;
+}
+
+.errorMsg {
+  border-color: #cf2a2a;
+}
+.errorMsg + label + span {
+  color: #cf2a2a;
+  background-color: #feffee;
+  display: block;
+  padding: 5px;
 }
 
 .buttonWrapper {

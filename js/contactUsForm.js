@@ -121,14 +121,18 @@ var ContactUs = (function() {
 		var senderEmailField = form.querySelector("#senderEmail");
 		var msgSubjectField = form.querySelector("#msgSubject");
 		var msgTextArea = form.querySelector("#msgText");
+		var challengeField = form.querySelector("#challenge");
 
-		senderNameField.addEventListener("input", event => {
+		senderNameField.addEventListener("blur", event => {
+			senderNameField.reportValidity();
 			_checkFormValidity();
 		});
-		senderEmailField.addEventListener("input", event => {
+		senderEmailField.addEventListener("blur", event => {
+			senderEmailField.reportValidity();
 			_checkFormValidity();
 		});
-		msgSubjectField.addEventListener("input", event => {
+		msgSubjectField.addEventListener("blur", event => {
+			msgSubjectField.reportValidity();
 			_checkFormValidity();
 		});
 	
@@ -140,12 +144,46 @@ var ContactUs = (function() {
 			if(!msgTextArea.value) {
 				_removeFocusClassFromTextAreaLabel(event);
 			}
+			msgTextArea.reportValidity();
+			_checkFormValidity();
 		});
 	
 		msgTextArea.addEventListener("input", event => {
 			_updateCharacterCount(event);
-			_checkFormValidity();
 		});
+
+		challengeField.addEventListener("blur", event => {
+			var challengeField = document.querySelector("#challenge");
+			if(challengeField.value === "") {
+				challengeField.reportValidity();
+				return;
+			}
+
+			var correctAnswer = _checkChallengeAnswer();
+			var challengeMsg = document.querySelector("#challengeMsg");
+
+			if(correctAnswer) {
+				challengeField.classList.remove("errorMsg");
+				challengeMsg.classList.add("hidden");
+				_checkFormValidity();
+			}
+			else {
+				challengeField.classList.add("errorMsg");
+				challengeMsg.classList.remove("hidden");
+			}
+		});
+	};
+
+	var _checkChallengeAnswer = function() {
+		var form = document.querySelector("#contactUsForm");
+		var challengeField = form.querySelector("#challenge");
+		var value = challengeField.value.toLowerCase().trim()
+		if(value === "south australia"){
+			return true;
+		}
+		else {
+			return false;
+		}
 	};
 
 	var _checkFormValidity = function() {
@@ -154,13 +192,16 @@ var ContactUs = (function() {
 		var senderEmailField = contactUsForm.querySelector("#senderEmail");
 		var msgSubjectField = contactUsForm.querySelector("#msgSubject");
 		var msgTextArea = contactUsForm.querySelector("#msgText");
-		var reCAPTCHAIsValid = document.querySelector("#reCAPTCHAIsValid")
+		var reCAPTCHAIsValid = document.querySelector("#reCAPTCHAIsValid");
+		var challengeField = document.querySelector("#challenge");
 
 		if(senderNameField.checkValidity() && 
 			senderEmailField.checkValidity() && 
 			msgSubjectField.checkValidity() && 
 			msgTextArea.checkValidity() && 
-			reCAPTCHAIsValid.value
+			reCAPTCHAIsValid.value &&
+			challengeField.checkValidity() &&
+			_checkChallengeAnswer()
 		) {
 			formData = new FormData(contactUsForm);
 			_enableSubmitButton();
@@ -170,8 +211,8 @@ var ContactUs = (function() {
 	var _setSubmitBtnEventListener = function() {
 		const submitBtn = document.querySelector("#submitBtn");
 		submitBtn.addEventListener("click", event => {
-			event.preventDefault();
 			_disableSubmitBtn();
+			event.preventDefault();
 			_submitForm();
 		});
 	};

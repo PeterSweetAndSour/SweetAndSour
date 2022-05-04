@@ -3,13 +3,32 @@ That example showed using :placeholder-shown pseudoclass but I changed to :focus
 really has focus if I click and there is no visible change but :placeholder-shown is still needed to retain
 the position of the label after the user has entered something. */
 
+@mixin visibile-input {
+	font-size:  18px; 
+	padding:  10px 10px; 
+	margin-bottom: 1px;
+	height:  56px; 
+	border:  solid 1px $blueTint8; 
+	background:  #fff; 
+	box-sizing:  border-box; 
+	transition:  all .3s linear; 
+	-webkit-appearance:  none; 
+}
+
+@mixin visible-input-focus {
+	border-bottom:  solid 2px $blueDark; 
+	margin-bottom: 0;
+	outline: 0; 
+	box-shadow:  0 2px 6px -8px rgba($blueDark, .45);
+}
+
 .floating-label {
 	position:  relative; 
 	margin:  24px 0; 
 
 	label {
 		position:  absolute; 
-		top: calc(50% - 10px);
+		top: 20px;
 		left:  10px; 
 		font-size:  14px; 
 		opacity:  0;
@@ -17,15 +36,7 @@ the position of the label after the user has entered something. */
 	}
 
 	input {
-		font-size:  18px; 
-		padding:  10px 10px; 
-		margin-bottom: 1px;
-		height:  56px; 
-		border:  solid 1px $blueTint8; 
-		background:  #fff; 
-		box-sizing:  border-box; 
-		transition:  all .3s linear; 
-		-webkit-appearance:  none; 
+		@include visibile-input;
 
 		&.narrow {
 			width: 260px;
@@ -33,11 +44,11 @@ the position of the label after the user has entered something. */
 		&.wide {
 			width: 100%;
 		}
+		&.error {
+			border: $redDark;
+		}
 		&:focus {
-			border-bottom:  solid 2px $blueDark; 
-			margin-bottom: 0;
-			outline: 0; 
-			box-shadow:  0 2px 6px -8px rgba($blueDark, .45);
+			@include visible-input-focus;
 
 			&::placeholder {
 				color: transparent;
@@ -46,7 +57,9 @@ the position of the label after the user has entered something. */
 	}
 	
 	input:focus + label,
-	input:not(:placeholder-shown) + label {
+	input:not(:placeholder-shown) + label,
+	input:focus + span + label,
+	input:not(:placeholder-shown) + span + label {
 		transform:  translate(-5px, -31px); 
 		opacity:  1;
 		background-color: #fff;
@@ -117,10 +130,7 @@ textarea {
 	font-size: 16px;
 	
 	&:focus {
-		border-bottom:  solid 2px $blueDark; 
-		margin-bottom: 0;
-		outline: 0; 
-		box-shadow:  0 2px 6px -8px rgba($blueDark, .45);
+		@include visible-input-focus;
 	}
 }
 
@@ -133,12 +143,25 @@ textarea {
 		font-size: 18px;
 		color: #767676;
 	}
+
+}
+
+.errorMsg {
+	border-color: $redDark;
+
+	& + label + span {
+		color: $redDark;
+		background-color: $yellowPale;
+		display: block;
+		padding: 5px;
+	}
 }
 
 .buttonWrapper {
 	display: inline-block;
 	position: relative;
 }
+
 .submitSpinnerWrapper {
 	position: absolute;
 	z-index: 2;
