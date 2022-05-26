@@ -19,7 +19,8 @@ $senderName = htmlspecialchars($_POST["senderName"]);
 $senderEmail = htmlspecialchars($_POST["senderEmail"]);
 $msgSubject = htmlspecialchars($_POST["msgSubject"]);
 $msgTextPreamble = "Sent from the Contact Us page of sweetandsour.org by " . $senderName . " (" . $senderEmail . "):";
-$msgText = $msgTextPreamble . PHP_EOL . PHP_EOL . htmlspecialchars($_POST["msgText"]);
+$msgText = htmlspecialchars($_POST["msgText"]);
+$msgTextWithPreamble = $msgTextPreamble . PHP_EOL . PHP_EOL . $msgText;
 
 $challenge =  strtolower(trim(htmlspecialchars($_POST["challenge"])));
 $correctChallengeResponse = $challenge === "south australia";
@@ -33,7 +34,7 @@ if($isLive) {
 	$json_response = CallAPI("POST", $reCAPTCHA_url, $reCAPTCHA_data);
 	$response = json_decode($json_response);
 
-	$logText = "Timestamp: " . date("F j, Y, g:i a") . ", Name: " . $senderName . ", Email: " . $senderEmail . ", IP: " . $reCAPTCHA_data["remoteip"] . PHP_EOL;
+	$logText = "Timestamp: " . date("F j, Y, g:i a") . ", Name: " . $senderName . ", Email: " . $senderEmail . ", IP: " . $reCAPTCHA_data["remoteip"]. ", Subject (first 32 chars): " . substr($msgSubject, 0, 32) . ", Text (first 64 chars)" . substr($msgText, 0, 64) . "&hellip;" . PHP_EOL;
 	file_put_contents('./reCAPTCHA.txt', $logText, FILE_APPEND);
 }
 else {
@@ -43,7 +44,7 @@ else {
 if (!is_null($response) and $response->success and $correctChallengeResponse) {
 	//Send the message
 	if($isLive) {
-		$result = mail($myEmailAddr, $msgSubject, $msgText, "From: " . $mailServerEmail);
+		$result = mail($myEmailAddr, $msgSubject, $msgTextWithPreamble, "From: " . $mailServerEmail);
 	}
 	else {
 		$result = True; // Pretend that it works on local where no mail server is actually installed.
