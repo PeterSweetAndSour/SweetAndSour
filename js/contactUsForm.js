@@ -15,6 +15,7 @@ const loadScript = src => {
   
 /* -----------------------------------------------------------------------------------------
 Javascript for the form
+Uses the Revealing Module Pattern https://coryrylan.com/blog/javascript-module-pattern-basics
 ------------------------------------------------------------------------------------------ */
 var ContactUs = (function() { 
 

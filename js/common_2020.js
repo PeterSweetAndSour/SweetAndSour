@@ -1,3 +1,7 @@
+/* -----------------------------------------------------------------------------------------
+Javascript for the menu. See contactUsForm.js for the script on the Contact Us page.
+Uses the Revealing Module Pattern https://coryrylan.com/blog/javascript-module-pattern-basics
+------------------------------------------------------------------------------------------ */
 var SweetAndSour = (function() {
 
 	var _loadAppropriateMenu = function(isMobile) {
