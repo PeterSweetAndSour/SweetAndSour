@@ -1,4 +1,5 @@
-<? /*
+<? 
+/*
 dsp_outline.php
 Sets framework into which all display pages (except individual photos) will be set.
 Provides photo at top left, heading, subheading, menu and sets a space for the content
@@ -9,11 +10,25 @@ page.
 =>| $contentPage       (from relevant case in index.php)
 =>| $displayMenu       (set on sweetandsour_conf.php, override on index.php if necessary)
 =>| $javascriptFile    (optional Javascript file)
+=>| $pageContentOnly   (used with contentToJsonInDb.php)
 */
+
+//Include function to set a thumbnail photo & caption. Called on content pages.
+include '../imagemgt/act_setThumbnailFunction.php';
+
+// ------------------------------------------------------------------------
+// For getting content into database with React site
+if(isset($_GET["pageContentOnly"]) && $_GET["pageContentOnly"] == "true") {
+	if(isset($heading1Text)) {
+		echo "<h1>" . $heading1Text . "</h1>";
+	}
+	include $contentPage;
+	return;
+}
+// ------------------------------------------------------------------------
 
 
 $topIconSrc = $rootRelativeUrl . "images/toTopLink.png";
-
 $backIconSrc = $rootRelativeUrl . "images/backLink.png";
 
 	// Construct the menu
@@ -27,8 +42,6 @@ else {
 	$str_menuHTML = "";
 }
 
-//Include function to set a thumbnail photo & caption. Called on content pages.
-include '../imagemgt/act_setThumbnailFunction.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
