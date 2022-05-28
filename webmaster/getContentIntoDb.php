@@ -40,12 +40,12 @@ for($j=0; $j < count($pathsToProcess); $j++){
 					ON DUPLICATE KEY UPDATE 
 					   html = VALUES(html)";
 
+	$shortenedPath = substr($path, 14);
 	if($stmt = $mysqli -> prepare($sql)) {
-		$stmt -> bind_param("ss", $path, $html);
+		$stmt -> bind_param("ss", $shortenedPath, $html);
 		$stmt -> execute();
 		$stmt -> close();
 	}
-	flush();
 }
 echo "Done";
 ?>
