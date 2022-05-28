@@ -6,51 +6,46 @@ means I can't embed setThumbnail(...) functions in PHP.
 Run http://localhost:8080/sweetandsour/webmaster/contentToJsonInDb.php after making changes to any content
 page to update the database but only run it for the required directories since it is slow.
 */
+$fuseAction = null;
 
-$directoriesToSearch = [];
-array_push($directoriesToSearch, "artsandculture");
-// array_push($directoriesToSearch, "canoe");
-// array_push($directoriesToSearch, "contactus");
-// array_push($directoriesToSearch, "home");
-// array_push($directoriesToSearch, "letters");
-// array_push($directoriesToSearch, "photos");
-// array_push($directoriesToSearch, "tehnology");
-// array_push($directoriesToSearch, "timeforjustice");
-// array_push($directoriesToSearch, "wherewelive");
-// array_push($directoriesToSearch, "whoweare");
+include '../../sweetandsour_conf.php';
+include '../../sweetandsour_db_admin.php'; // allow insert
+include '../includes/act_getDBConnection.php';
+include '../includes/qry_menu.php'; // gives $arr_menuData
 
-$pathToStartFolder = "../";
-$directory_iterator = new RecursiveDirectoryIterator($pathToStartFolder); // start from directory above "webmaster".
-$iterator = new RecursiveIteratorIterator($directory_iterator);
+// Get array of paths/URLs that form the menu (borrowing from act_constructMenu.php)
+// If editing just one or two files, put the paths in root relative format inside the square brackets,
+// otherwise it will do everything so, for example: /sweetandsour/wherewelive/washington
+$pathsToProcess = [];
 
-class CustomFilterIterator extends FilterIterator {
-	function accept() {
-		$current = $this -> getInnerIterator() -> current();
-		return (
-			$current -> isFile() &&
-			(substr(($current -> getFilename()), 0, 4) == "dsp_")
-		);
+if(count($pathsToProcess) == 0) {
+	for($i=0; $i < count($arr_menuData); $i++) {
+		$path = $rootRelativeUrl . $arr_menuData[$i]["folder_name"] . "/" . $arr_menuData[$i]["fuse_action"];
+		array_push($pathsToProcess, $path);
 	}
 }
 
-$filter_iterator = new CustomFilterIterator($iterator);
-$filesToProcess = [];
+for($j=0; $j < count($pathsToProcess); $j++){
 
-foreach ($filter_iterator as $file) {
-	$path = $file -> getPathname();
-	$topLevelFolder = explode("\\", $path)[1]; // Must escape the backslash
-	if(in_array($topLevelFolder, $directoriesToSearch)) {
-		array_push($filesToProcess, $path);
+	// Get the H1 from index.php and content from .php file for each page
+	$path = $pathsToProcess[$j];
+	echo $path . "<br />";
+	$localURL = "http://localhost:8080" . $path . "?pageContentOnly=true";
+
+	$html = file_get_contents($localURL);
+
+	// Insert it in the database if new, or update if existing
+	$sql = "INSERT INTO content(path, html) 
+	        VALUES (?, ?)
+					ON DUPLICATE KEY UPDATE 
+					   html = VALUES(html)";
+
+	if($stmt = $mysqli -> prepare($sql)) {
+		$stmt -> bind_param("ss", $path, $html);
+		$stmt -> execute();
+		$stmt -> close();
 	}
+	flush();
 }
-
-foreach ($filesToProcess as &$file) {
-    echo $file . "<br /  >";
-
-	// For each, run setThumbnail script to get output text
-
-	// store escaped json text in db
-
-}
-
+echo "Done";
 ?>

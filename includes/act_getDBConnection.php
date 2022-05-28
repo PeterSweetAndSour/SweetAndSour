@@ -9,6 +9,8 @@ Variables:
 =>| $dbname     database to use
 */
 
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+
 $mysqli = new mysqli($dbserver, $dbuser, $dbpassword, $dbname);
 
 /* check connection */
