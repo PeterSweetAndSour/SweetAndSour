@@ -34,21 +34,27 @@ $sql_menu = <<<SQL2
 	SELECT rgt, menuID, menuLevel, displayText, fuseAction, enabled, folderName
 	FROM menus2, folders
 	WHERE 
-		(lft BETWEEN $arr_root_node[lft] AND $arr_root_node[rgt]) 
+		(lft BETWEEN ? AND ?) 
 		AND menus2.folderID = folders.folderID 
 		AND enabled = 1
-		AND (fuseaction = '$fuseAction' OR displayOnPgOnly = 0)
+		AND (fuseaction = ? OR displayOnPgOnly = 0)
 	ORDER BY lft ASC;
 
 SQL2;
 
 //$time_start = microtime(true);
-$rs_descendants =$mysqli->query($sql_menu);
+$stmt = $mysqli->prepare($sql_menu);
+$stmt -> bind_param("iis", $arr_root_node["lft"], $arr_root_node["rgt"], $fuseAction);
+$stmt -> execute();
+$rs_descendants = $stmt->get_result();
+$numRows = $rs_menuId -> num_rows;
+
 //$time_end = microtime(true);
 //$time_diff_sec = round($time_end - $time_start, 4);
 
 if($rs_descendants) {
-	$allSQL .= "rs_descendants: " . $rs_descendants->num_rows . " records ";
+	if(!isset($allSQL)) { $allSQL = ""; }
+	$allSQL .= "rs_descendants: " . $numRows . " records ";
 	//$allSQL .= "returned in " . $time_diff_sec . " sec. ";
 	$allSQL .= "<br />" . $sql_menu . "<br /><br />";
 }
@@ -57,7 +63,7 @@ if($rs_descendants) {
 $arr_menuData = array();
 
 //$time_start = microtime(true);
-while ($row = $rs_descendants->fetch_array(MYSQLI_ASSOC)) {
+while ($row = $rs_descendants->fetch_assoc()) {
 	$arr_menuData[] = array("display_text" => $row['displayText'], "menu_id" => $row["menuID"], "folder_name" => $row['folderName'], "fuse_action" => $row['fuseAction'], "menu_level" => $row["menuLevel"]);
 }
 //$time_end = microtime(true);

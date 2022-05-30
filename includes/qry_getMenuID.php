@@ -14,64 +14,95 @@ Variables:
 |=> selectedID
 |=> parentID
 |=> grandparentID
+|=> responseCode
+|=> responseDesc
 */
+
+$selectedID    = NULL;
+$parentID      = NULL;
+$grandparentID = NULL;
+
 $sql_menuId = <<<EOT
 
 		SELECT M1.menuID, M1.parentID, M2.parentID AS grandparentID
 		FROM menus2 AS M1 
 		LEFT OUTER JOIN menus2 AS M2 ON M1.parentID = M2.menuID
-		WHERE M1.fuseAction = '$fuseAction'
+		WHERE M1.fuseAction = ?
 
 EOT;
 
-$rs_menuId = $mysqli->query($sql_menuId);
-if($rs_menuId) {
-	$numRows = $rs_menuId->num_rows;
-	$allSQL .= "rs_menuId (" .$numRows  . " records returned)<br />" . $sql_menuId . "<br /><br />";
+$sql = "SELECT * FROM content WHERE path=?";
+$stmt = $mysqli->prepare($sql_menuId);
+$stmt -> bind_param('s', $fuseAction);
+$stmt -> execute();
+$rs_menuId = $stmt->get_result();
+$numRows = $rs_menuId -> num_rows;
+
+if(!isset($allSQL)) { $allSQL = ""; }
+$allSQL .= "rs_menuId (" .$numRows  . " records returned)<br />" . $sql_menuId . "<br /><br />";
+
+if ($mysqli->connect_errno) {
+	$responseCode = 500;
+	$responseDesc = "No connection to DB. Error " . $mysqli->connect_errno . ": " . $mysqli->connect_error;
+	exit();
+}
+else if ($mysqli->errno) {
+	$responseCode = 500;
+	$responseDesc = "Database failure. Error: " . $mysqli->errno . ": " . $mysqli->error;
+}
+else if($numRows === 0) {
+	$responseCode = 400;
+	$responseDesc = "menuID not found for fuseAction " . $fuseAction;
+}
+else if($numRows === 1) { //If one row returned, set selected, parent & grandparent;
+	$row = $rs_menuId->fetch_array(MYSQLI_ASSOC);
+	$selectedID    = $row["menuID"];
+	$parentID      = $row["parentID"];
+	$grandparentID = $row["grandparentID"];
+	$responseCode = 200;
+	$responseDesc = "Success";
+}
+else if($numRows === 2) { // If 2 rows returned, have to figure out which is child
+	$row = $rs_menuId->fetch_array(MYSQLI_ASSOC);
+	$selectedID_1    = $row["menuID"];
+	$parentID_1      = $row["parentID"];
+	$grandparentID_1 = $row["grandparentID"];
 	
-	if($numRows == 1) { //If one row returned, set selected, parent & grandparent;
-		$row = $rs_menuId->fetch_array(MYSQLI_ASSOC);
-		$selectedID    = $row["menuID"];
-		$parentID      = $row["parentID"];
-		$grandparentID = $row["grandparentID"];
+	$row = $rs_menuId->fetch_array(MYSQLI_ASSOC);
+	$selectedID_2    = $row["menuID"];
+	$parentID_2      = $row["parentID"];
+	$grandparentID_2 = $row["grandparentID"];
+	
+	if($parentID_1 == $selectedID_2) {
+		$selectedID    = $selectedID_1;
+		$parentID      = $parentID_1;
+		$grandparentID = $grandparentID_1;
 	}
-	else if($numRows == 2){ // If 2 rows returned, have to figure out which is child
-		$row = $rs_menuId->fetch_array(MYSQLI_ASSOC);
-		$selectedID_1    = $row["menuID"];
-		$parentID_1      = $row["parentID"];
-		$grandparentID_1 = $row["grandparentID"];
-		
-		$row = $rs_menuId->fetch_array(MYSQLI_ASSOC);
-		$selectedID_2    = $row["menuID"];
-		$parentID_2      = $row["parentID"];
-		$grandparentID_2 = $row["grandparentID"];
-		
-		if($parentID_1 == $selectedID_2) {
-			$selectedID    = $selectedID_1;
-			$parentID      = $parentID_1;
-			$grandparentID = $grandparentID_1;
-		}
-		else {
-			$selectedID    = $selectedID_2;
-			$parentID      = $parentID_2;
-			$grandparentID = $grandparentID_2;
-		}
+	else {
+		$selectedID    = $selectedID_2;
+		$parentID      = $parentID_2;
+		$grandparentID = $grandparentID_2;
 	}
-	else { // 3 rows returned
-		for($i=0; $i<3; $i++) {
-			$row = $rs_menuId->fetch_array(MYSQLI_ASSOC); // If 3 rows returned, child row has grandparent != 0 and != -1
-			if($row["grandparentID"] > 0) {
-				$selectedID    = $row["menuID"];
-				$parentID      = $row["parentID"];
-				$grandparentID = $row["grandparentID"];
-				
-				break;
-			}
+	$responseCode = 200;
+	$responseDesc = "Success";
+}
+else if($numRows === 3) {
+	for($i=0; $i<3; $i++) {
+		$row = $rs_menuId->fetch_array(MYSQLI_ASSOC); // If 3 rows returned, child row has grandparent != 0 and != -1
+		if($row["grandparentID"] > 0) {
+			$selectedID    = $row["menuID"];
+			$parentID      = $row["parentID"];
+			$grandparentID = $row["grandparentID"];
+			
+			break;
 		}
 	}
-	//echo "<span style='color:yellow'>selectedID: " . $selectedID . "<br />parentID: " . $parentID . "<br />grandparentID: " . $grandparentID . "</span><br />";
+	$responseCode = 200;
+	$responseDesc = "Success";
 }
 else {
-	echo "Cannot find menu item for fuse action '" . $fuseAction . "'<br />";
+	$responseCode = 500;
+	$responseDesc = "Something weird happened and more than 4 rows were returned.";
 }
+
 ?>
