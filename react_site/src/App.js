@@ -1,5 +1,5 @@
 import React from 'react';
-//import UseScript from './useScript';
+import Spinner from './spinner';
 import SweetAndSour from './sweetandsour';
 
 class App extends React.Component {
@@ -10,11 +10,14 @@ class App extends React.Component {
 		const fuseAction = urlNoQueryString.split("/").pop();
 		const path = urlNoQueryString.split("/").pop() + "/" + fuseAction;
 
+		// WHERE DO URLREWRITE RULES GO IN REACT?
+		const homeUrl = (currentUrl.indexOf("localhost") > -1) ? "/sweetandsour/home/welcome" : "/home/welcome";
+
 		return (
 			<>
 				<a id="top"></a>
 				<div className="page">
-						<Header path={path} />
+						<Header path={path} homeUrl={homeUrl} />
 						<Content fuseAction={fuseAction} />
 						<Footer />
 				</div>
@@ -30,7 +33,8 @@ class Header extends React.Component {
     this.state = {
       error: null,
       menuAPICalled: false,
-      menuHTML: {}
+      menuHTML: {},
+			homeUrl: props.homeUrl
     };
 	}
 
@@ -70,7 +74,7 @@ class Header extends React.Component {
 		else {
       return (
 				<header>
-					<p className="logo"><a href="<?= $homeUrl ?>home" title="Go to home page">Sweet and Sour</a></p>
+					<p className="logo"><a href={this.props.homeUrl} title="Go to home page">Sweet and Sour</a></p>
 					<p className="tagline">One is sweet and the other is &hellip; a web developer</p>
 					<p className="sr-only"><a href="#content">Jump to content</a></p>{/* Hidden except for screen readers */}
 					<Menu menuHTML={this.state.menuHTML} />
@@ -91,7 +95,12 @@ class Menu extends React.Component {
 				<input className="menu" type="checkbox" id="menuToggle" />
 				<label id="menuBtn" className="menu" htmlFor="menuToggle" role="button" aria-label="Toggle menu" aria-controls="imageMenu">Open</label>
 				<div dangerouslySetInnerHTML = {this.createMarkup()} />
-				<div id="menuOverlay" className="menuOverlay"><div className="loading"><p><img src="<?=$rootRelativeUrl ?>images/loading_20080830.gif" alt="Just a moment ..." />Just a moment &hellip;</p></div></div>
+				<div id="menuOverlay" className="menuOverlay">
+					<div className="loading">
+						<Spinner />
+						<p>Just a moment &hellip;</p>
+					</div>
+				</div>
 			</form>
 		);
 	}
