@@ -51,7 +51,7 @@ else if ($mysqli->errno) {
 	$responseDesc = "Database failure. Error: " . $mysqli->errno . ": " . $mysqli->error;
 }
 else if($numRows === 0) {
-	$responseCode = 400;
+	$responseCode = 404;
 	$responseDesc = "menuID not found for fuseAction " . $fuseAction;
 }
 else if($numRows === 1) { //If one row returned, set selected, parent & grandparent;

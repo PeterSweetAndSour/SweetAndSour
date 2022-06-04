@@ -1,6 +1,8 @@
 <?php
-// First version to returns HTML. May do JSON version after and move act_constructMenu logic to client.
-// Will be getting requested with URL like /api/get_menu.php?path=home/welcome
+/* 
+  First version to returns HTML. May do JSON version after and move act_constructMenu logic to client.
+   Will be getting requested with URL like /api/get_menu.php?path=home/welcome
+*/
 
 // Capture the fuseaction to give to qry_getMenuID
 $url = $_SERVER['REQUEST_URI'];
@@ -13,14 +15,14 @@ include '../includes/qry_getMenuID.php';
 include '../includes/qry_menu.php'; 
 include '../includes/act_constructMenu.php';
 
-$response["selectedID"] = $selectedID;
-$response["parentID"] = $parentID;
-$response["grandparentID"] = $grandparentID;
-$response["menuHTML"] = $str_menuHTML;
-$response['response_code'] = $responseCode;
-$response['response_desc'] = $responseDesc;
+$response['responseCode'] = $responseCode;  // qry_getMenuID.php
+$response['responseDesc'] = $responseDesc;  // qry_getMenuID.php
+$response["selectedID"] = $selectedID;       // qry_getMenuID.php
+$response["parentID"] = $parentID;           // qry_getMenuID.php
+$response["grandparentID"] = $grandparentID; // qry_getMenuID.php
+$response["menuHTML"] = $str_menuHTML;       // act_constructMenu.php
 
-$json_response = json_encode($response);
+$json_response = json_encode($response, JSON_FORCE_OBJECT);
 
 header("Content-Type:application/json");
 echo $json_response;

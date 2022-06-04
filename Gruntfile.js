@@ -58,7 +58,7 @@ module.exports = function(grunt) {
 				src: [
 					'js/mobile-navigation.js', 
 					'js/desktop-navigation.js', 
-					'js/common_2020.js', 
+					'js/sweetandsour.js', 
 					'js/photoswipe.js', 
 					'js/photoswipe-ui-default.js', 
 					'js/photoswipe_setup.js'
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
 			all: [
 				'js/mobile-navigation.js', 
 				'js/desktop-navigation.js', 
-				'js/common_2020.js'
+				'js/sweetandsour.js'
 			],
 			options: {
 				jshintrc: '.jshintrc'

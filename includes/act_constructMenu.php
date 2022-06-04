@@ -15,12 +15,14 @@ Variables:
 |=> $str_menu2Txt
 |=> $str_menu3Txt
 */
-$time_start = microtime(true);
+//$time_start = microtime(true);
 
 $int_lastMenuLevel = 0;
 $str_lastMenuText = "";
 $int_indexLastLevel2 = 0;
 $int_topLevelCounter = 0;
+
+$isReact = substr($_SERVER['REQUEST_URI'], 0,2) === "r/";
 
 $arr_menuHTML = array();
 $str_menuJS = "";
@@ -109,7 +111,7 @@ for($i=0; $i < $int_len; $i++) {
 		$a_class = " class=\"photoLink\"";
 	}
 
-	$arr_menuHTML[] = "<a" . $a_class . " href=\"" . $rootRelativeUrl . $arr_menuData[$i]["folder_name"] . "/" . $arr_menuData[$i]["fuse_action"] . "\">";
+	$arr_menuHTML[] = "<a" . $a_class . " href=\"" . $rootRelativeUrl . ($isReact ? "r/" : "") . $arr_menuData[$i]["folder_name"] . "/" . $arr_menuData[$i]["fuse_action"] . "\">";
 
 
 	// If top-level menu, insert an empty span for image replacement
@@ -133,7 +135,7 @@ $arr_menuHTML[] = "</nav>\n";
 
 $str_menuHTML = join("", $arr_menuHTML);
 
-$time_end = microtime(true);
-$time_diff_sec = ($time_end - $time_start);
+//$time_end = microtime(true);
+//$time_diff_sec = ($time_end - $time_start);
 //echo "Time to print menu was " . round($time_end - $time_start, 4) . "<br />";
 ?>

@@ -22,9 +22,13 @@ RewriteRule ^/?1222Constitution/?$ /wherewelive/instructionstobuilder   [R]
 
 # Human friendly URLs need to be translated internally so the server knows how to handle requests.
 # So /home/instagram actually goes to /home/index.php?fuseAction=instagram
-# Won't catch /api/get_content.php?path=/home/instagram because of the underscore and dot.
+# Won't catch /api/get_content.php?path=/home/instagram
+# because of the underscore and dot.
 RewriteCond %{HTTP_HOST}" "sweetandsour.org"
 RewriteRule ^([a-z]+)/([a-zA-Z0-9-]+)/?$ /$1/index.php?fuseAction=$2 [PT,NC,QSA]
+
+RewriteCond %{HTTP_HOST}" "sweetandsour.org"
+RewriteRule ^r/([a-z]+)/([a-zA-Z0-9-]+)/?$ react_site/src/index.js?folder=$1&fuseAction=$2 [PT,NC,QSA]
 
 # Prevent hot linking of images and PDFs
 #RewriteCond %{HTTP_REFERER} !^$
