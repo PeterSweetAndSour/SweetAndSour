@@ -4,7 +4,7 @@ include '../includes/act_getDBConnection.php';
 
 header("Content-Type:application/json");
 
-if (isset($_GET['path']) && $_GET['path'] != "") {
+if (isset($_GET['path'])) {
 	$path = $_GET["path"];
 	$sql = "SELECT * FROM content WHERE path=?";
 	$stmt = $mysqli->prepare($sql);
@@ -14,34 +14,44 @@ if (isset($_GET['path']) && $_GET['path'] != "") {
 
 	if ($mysqli->connect_errno) {
 		$responseDesc = "No connection to DB. Error " . $mysqli->connect_errno . ": " . $mysqli->connect_error;
-		response(NULL, NULL, 500, $responseDesc);
-    exit();
+		response(NULL, NULL, NULL,NULL, 500, $responseDesc);
+		exit();
 	}
 	else if ($mysqli->errno) {
 		$responseDesc = "Database failure. Error: " . $mysqli->errno . ": " . $mysqli->error;
-		response(NULL, NULL, 500, $responseDesc);
+		response(NULL, NULL, NULL,NULL, 500, $responseDesc);
 	}
 	else if($result -> num_rows === 1) {
-    while ($arr = $result->fetch_assoc()) {
-			response($arr["path"], $arr["html"], 200, "Success");
+		while ($arr = $result->fetch_assoc()) {
+			response(
+				$arr["path"], 
+				$arr["html"],
+				$arr["showMenu"],
+				$arr["showLinkToTop"],
+				200, "
+				Success"
+			);
 		}
-		// this didn't work
+		
+		// this alternative method to capture a single row didn't work
 		//$stmt->store_result();
-		//$stmt->bind_result($path, $html);
+		//$stmt->bind_result($path, $html, $showMenu, $showLinkToTop, $responseCode, $responseDesc);
 		//$stmt->fetch();
 	}
 	else {
-		response(NULL, NULL, 200, "No Record Found");
+		response(NULL, NULL, NULL,NULL, 404, "No Record Found");
 	}
 	$stmt -> close();
 }
 else {
-	response(NULL, NULL, 400, "Invalid Request");
+	response(NULL, NULL, NULL,NULL, 400, "Invalid Request");
 }
 
-function response($path, $html, $responseCode, $responseDesc){
+function response($path, $contentHTML, $showMenu, $showLinkToTop, $responseCode, $responseDesc){
 	$response["path"] = $path;
-	$response["html"] = $html;
+	$response["contentHTML"] = $contentHTML;
+	$response["showMenu"] = $showMenu;
+	$response["showLinkToTop"] = $showLinkToTop;
 	$response['response_code'] = $responseCode;
 	$response['response_desc'] = $responseDesc;
 	

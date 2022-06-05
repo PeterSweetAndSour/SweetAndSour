@@ -6,7 +6,7 @@ include 'app_locals.php';
 
 
 //Set fuseaction
-if(isSet($_GET["fuseAction"])) {
+if(isset($_GET["fuseAction"])) {
 	$fuseAction = $_GET["fuseAction"];
 }
 else {

@@ -15,27 +15,27 @@ Variables:
 */
 	
 //Set local variables
-if(isSet($_GET["formType"])) {
+if(isset($_GET["formType"])) {
 	$formType = $_GET["formType"];
 }
-if(isSet($_GET["folderID"])) {
+if(isset($_GET["folderID"])) {
 	$folderID = $_GET["folderID"];
 }
-if(isSet($_GET["photoName"])) {
+if(isset($_GET["photoName"])) {
 	$photoName = $_GET["photoName"];
 }
 
 /*
-if(isSet($_GET["folder"])) {
+if(isset($_GET["folder"])) {
 	$folder = $_GET["folder"];
 }
-if(isSet($POST_["linkedImg"])) {
+if(isset($POST_["linkedImg"])) {
 	$linkedImg = $_GET["linkedImg"];
 }
-if(isSet($POST_["caption"])) {
+if(isset($POST_["caption"])) {
 	$caption = $_GET["caption"];
 }
-if(isSet($POST_["duplicateName"])) {
+if(isset($POST_["duplicateName"])) {
 	$duplicateName = $_GET["duplicateName"];
 }
 */

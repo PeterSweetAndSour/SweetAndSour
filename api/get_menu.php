@@ -5,9 +5,12 @@
 */
 
 // Capture the fuseaction to give to qry_getMenuID
-$url = $_SERVER['REQUEST_URI'];
-$urlArray = explode("/", $url);
-$fuseAction = end($urlArray); // Combining this line and the one above gives "Only variables should be passed by reference"
+if(isset($_GET["fuseAction"])) {
+	$fuseAction = $_GET["fuseAction"];
+}
+else {
+	$fuseAction = "";
+}
 
 include '../../sweetandsour_conf.php';
 include '../includes/act_getDBConnection.php';
@@ -15,12 +18,13 @@ include '../includes/qry_getMenuID.php';
 include '../includes/qry_menu.php'; 
 include '../includes/act_constructMenu.php';
 
-$response['responseCode'] = $responseCode;  // qry_getMenuID.php
-$response['responseDesc'] = $responseDesc;  // qry_getMenuID.php
+$response['responseCode'] = $responseCode;   // qry_getMenuID.php
+$response['responseDesc'] = $responseDesc;   // qry_getMenuID.php
 $response["selectedID"] = $selectedID;       // qry_getMenuID.php
 $response["parentID"] = $parentID;           // qry_getMenuID.php
 $response["grandparentID"] = $grandparentID; // qry_getMenuID.php
 $response["menuHTML"] = $str_menuHTML;       // act_constructMenu.php
+$response["menuData"] - $arr_menuData;       // act_qry_menu.php
 
 $json_response = json_encode($response, JSON_FORCE_OBJECT);
 

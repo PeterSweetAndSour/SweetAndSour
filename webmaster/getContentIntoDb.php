@@ -3,7 +3,7 @@
 To convert the site to React, I need the content available in JSON format ready to slot into the page which
 means I can't embed setThumbnail(...) functions in PHP. 
 
-Run http://localhost:8080/sweetandsour/webmaster/contentToJsonInDb.php after making changes to any content
+Run http://localhost:8080/sweetandsour/webmaster/getContentIntoDb.php after making changes to any content
 page to update the database but only run it for the required directories since it is slow.
 */
 $fuseAction = null;
@@ -16,7 +16,7 @@ include '../includes/qry_menu.php'; // gives $arr_menuData
 // Get array of paths/URLs that form the menu (borrowing from act_constructMenu.php)
 // If editing just one or two files, put the paths in root relative format inside the square brackets,
 // otherwise it will do everything so, for example: /sweetandsour/wherewelive/washington
-$pathsToProcess = [];
+$pathsToProcess = ["/sweetandsour/canoe/canoe"];
 
 if(count($pathsToProcess) == 0) {
 	for($i=0; $i < count($arr_menuData); $i++) {
