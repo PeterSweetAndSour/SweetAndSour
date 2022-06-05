@@ -24,7 +24,7 @@ $response["selectedID"] = $selectedID;       // qry_getMenuID.php
 $response["parentID"] = $parentID;           // qry_getMenuID.php
 $response["grandparentID"] = $grandparentID; // qry_getMenuID.php
 $response["menuHTML"] = $str_menuHTML;       // act_constructMenu.php
-$response["menuData"] - $arr_menuData;       // act_qry_menu.php
+$response["menuData"] = $arr_menuData;       // act_qry_menu.php
 
 $json_response = json_encode($response, JSON_FORCE_OBJECT);
 
