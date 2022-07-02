@@ -14,7 +14,7 @@ class Header extends React.Component {
 					<label id="menuBtn" className="menu" htmlFor="menuToggle" role="button" aria-label="Toggle menu" aria-controls="imageMenu">Open</label>
 
 					<Menu homeUrl={this.props.homeUrl} fuseAction={this.props.fuseAction} />
-					
+
 					<div id="menuOverlay" className="menuOverlay">
 						<div className="loading">
 							<Spinner />

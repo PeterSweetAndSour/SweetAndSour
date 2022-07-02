@@ -13,7 +13,7 @@ class App extends React.Component {
 		const path = urlParts.pop() + "/" + fuseAction;
 
 		// WHERE DO URLREWRITE RULES GO IN REACT?
-		const homeUrl = (currentUrl.indexOf("localhost") > -1) ? "/sweetandsour/home/welcome" : "/home/welcome";
+		const homeUrl = (currentUrl.indexOf("localhost") > -1) ? "/sweetandsour/" : "/";
 
 		return (
 			<>

@@ -42,17 +42,6 @@ for($i=0; $i < $int_len; $i++) {
 		$arr_menuData[$i]["menu_id"] == $grandparentID) {
 		$li_class[] =  "selected";
 		
-		// Hold menu text for use as heading(s) if not set by index.php or display page
-		if($arr_menuData[$i]["menu_level"] == 1) {
-			$str_menu1Txt = $arr_menuData[$i]["display_text"];
-		}
-		else if($arr_menuData[$i]["menu_level"] == 2) {
-			$str_menu2Txt = $arr_menuData[$i]["display_text"];
-		}
-		else {
-			$str_menu3Txt = $arr_menuData[$i]["display_text"];
-		}
-		
 		// If secondary menu, need to prevent display of pipe in preceding list item
 		if($arr_menuData[$i]["menu_level"] == 2 && $int_indexLastLevel2 != 0) {
 			array_splice($arr_menuHTML, $int_indexLastLevel2, 0, " class=\"beforeSelected\"");
@@ -61,7 +50,7 @@ for($i=0; $i < $int_len; $i++) {
 	
 	// For level 1 list items
 	if($arr_menuData[$i]["menu_level"] == 1) {
-		// Use the fuseAction as class for image menu control 
+		// Use the display text without spaces as class for image menu control 
 		$li_class[] = str_replace(" ", "", strtolower($arr_menuData[$i]["display_text"]));
 		
 		// Keep track of the index of the currently selected item so we know which panel to expand

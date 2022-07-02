@@ -14,7 +14,7 @@ var SweetAndSour = (function() {
 		var nav = document.querySelector("nav");
 		console.log("looking for nav");
 		if(!nav) {
-			console.log("     Exiting. Could not find nav!");
+			console.log(" Exiting. Could not find nav!");
 			return;
 		}
 
@@ -59,7 +59,7 @@ var SweetAndSour = (function() {
 })(); // the paranthesis will execute the function immediately. Do not remove.
 
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function(){ // Won't fire with React
 	SweetAndSour.initialize();
 });
 
