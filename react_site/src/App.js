@@ -4,23 +4,44 @@ import Content from './Content';
 import Footer from './Footer';
 
 class App extends React.Component {
-
-	render() {
+	constructor(props) {
+		super(props);
+		
 		const currentUrl = window.location.href;
 		const urlNoQueryString = currentUrl.split("?")[0];
 		const urlParts = urlNoQueryString.split("/")
 		const fuseAction = urlParts.pop();
-		const path = urlParts.pop() + "/" + fuseAction;
+		const initialPath = urlParts.pop() + "/" + fuseAction;
 
-		// WHERE DO URLREWRITE RULES GO IN REACT?
-		const homeUrl = (currentUrl.indexOf("localhost") > -1) ? "/sweetandsour/" : "/";
+		this.state = {
+			path: initialPath
+		}
 
+		this.isDevelopment = (currentUrl.indexOf("localhost") > -1) ? true : false;
+		this.urlAPIPrefix = this.isDevelopment ? "http://localhost:8080/sweetandsour" : "";
+		this.updatePath = this.updatePath.bind();
+	}
+
+	updatePath(path) {
+		this.setState({path: path});
+	}
+
+	render() {
 		return (
 			<>
 				<a id="top"></a>
 				<div className="page">
-						<Header fuseAction={fuseAction} homeUrl={homeUrl} />
-						<Content path={path} />
+						<Header 
+							path={this.state.path} 
+							updatePath={(path) => this.updatePath(path)} 
+							isDevelopment={this.isDevelopment}
+							urlAPIPrefix={this.urlAPIPrefix}
+						/>
+						<Content 
+							path={this.state.path}
+							isDevelopment={this.isDevelopment}
+							urlAPIPrefix={this.urlAPIPrefix}
+						/>
 						<Footer />
 				</div>
 			</>

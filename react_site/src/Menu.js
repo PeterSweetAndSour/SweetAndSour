@@ -7,10 +7,10 @@ class Menu extends React.Component {
 		super(props);
 
 		this.state = {
+			path: this.props.path,
 			menuAPICalled: false
 		};
 
-		this.homeUrl = props.homeUrl;
 		this.menuData = {};
 		this.flatMenuDataArray = [];
 		this.selectedID = null;
@@ -18,11 +18,16 @@ class Menu extends React.Component {
 		this.grandparentID = null;
 		this.heirarchicalMenuDataArray = null;
 		this.errorMsg = null;
+		
+		this.fuseAction = this.props.path.split("/")[1];
+		this.isDevelopment = this.props.isDevelopment;
+		this.urlAPIPrefix = this.props.urlAPIPrefix;
+		this.homeUrl = this.isDevelopment ? "/sweetandsour/" : "/";
 	}
 
 	componentDidMount() {
 		if(!this.state.menuAPICalled) {
-			const urlMenuAPI = "http://localhost:8080/sweetandsour/api/get_menu.php?fuseAction=" + this.props.fuseAction;
+			const urlMenuAPI = this.urlAPIPrefix + "/api/get_menu.php?fuseAction=" + this.fuseAction;
 			fetch(urlMenuAPI)
 			.then(response => response.json())
 			.then(
@@ -45,7 +50,7 @@ class Menu extends React.Component {
 	menuAPIHasReturned() {
 		this.setFlatMenuDataArray();
 		this.setClassList();
-		this.setLinkUrls();
+		this.setPathAndLinkUrls();
 		this.setState({menuAPICalled: true});
 		this.setHeirarchicalMenuDataArray();
 		SweetAndSour.initialize();
@@ -95,11 +100,13 @@ class Menu extends React.Component {
 		}
 	}
 
-	setLinkUrls() {
+	setPathAndLinkUrls() { /* Urls won't actually be used since will be calling event.preventDefault */
 		let menuItemData = null;
 		for(var i=0; i<this.flatMenuDataArray.length; i++) {
 			menuItemData = this.flatMenuDataArray[i];
-			menuItemData.linkUrl = this.homeUrl + menuItemData.folder_name + "/" + menuItemData.fuse_action;
+			const path = menuItemData.folder_name + "/" + menuItemData.fuse_action;
+			menuItemData.path = path;
+			menuItemData.linkUrl = this.homeUrl + path;;
 		}
 	}
 
@@ -183,6 +190,10 @@ class Menu extends React.Component {
 		this.heirarchicalMenuDataArray = tree.children; 
 	}
 
+	handleMenuClick(event) {
+    this.props.handleMenuClick(event);
+  }
+
 	render() {
 		if(!this.state.menuAPICalled) {
 			return (
@@ -204,10 +215,12 @@ class Menu extends React.Component {
 											key={menuItemData.menu_id} 
 											menuID={menuItemData.menu_id} 
 											classList={menuItemData.classList}
+											path={menuItemData.path}
 											linkUrl={menuItemData.linkUrl}
 											displayText={menuItemData.display_text}
 											menuLevel={menuItemData.menu_level}
 											children={menuItemData.children}
+											updatePath={(path) => this.updatePath(path)} 
 										/>
 					})}	
 				</ul>

@@ -1,6 +1,9 @@
 import React from 'react';
 
 class MenuItem extends React.Component {
+
+
+
 	render() {
 		const hasChildren = typeof this.props.children !== "undefined" ? true : false;
 		const inputName = "menuLevel" + this.props.menuLevel;
@@ -12,7 +15,7 @@ class MenuItem extends React.Component {
 
 		return (
 			<li className={this.props.classList}>
-				<a className={anchorClass} href={this.props.linkUrl}>
+				<a className={anchorClass} href={this.props.linkUrl} data-path={this.props.path}>
 					{isMenuLevel1 ? (
 						<>
 							<span></span>
@@ -33,10 +36,12 @@ class MenuItem extends React.Component {
 												key={menuItemData.menu_id} 
 												menuID={menuItemData.menu_id} 
 												classList={menuItemData.classList}
+												path={menuItemData.path}
 												linkUrl={menuItemData.linkUrl}
 												displayText={menuItemData.display_text}
 												menuLevel={menuItemData.menu_level}
 												children={menuItemData.children}
+												updatePath={(path) => this.updatePath(path)}
 											/>
 						})}	
 					</ul>
@@ -48,13 +53,3 @@ class MenuItem extends React.Component {
 }
 
 export default MenuItem;
-
-/*
-<MenuItem 
-											key={menuItemData.menu_id} 
-											classList={menuItemData.classList}
-											linkUrl={menuItemData.linkUrl}
-											displayText={menuItemData.display_text}
-											children={menuItemData.children}
-										/>
-*/
