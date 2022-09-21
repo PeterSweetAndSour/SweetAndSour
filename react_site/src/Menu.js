@@ -8,7 +8,8 @@ class Menu extends React.Component {
 
 		this.state = {
 			path: this.props.path,
-			menuAPICalled: false
+			menuAPICalled: false,
+			heirarchicalMenuDataArray: null
 		};
 
 		this.menuData = {};
@@ -16,13 +17,15 @@ class Menu extends React.Component {
 		this.selectedID = null;
 		this.parentID = null;
 		this.grandparentID = null;
-		this.heirarchicalMenuDataArray = null;
+
 		this.errorMsg = null;
 		
 		this.fuseAction = this.props.path.split("/")[1];
 		this.isDevelopment = this.props.isDevelopment;
 		this.urlAPIPrefix = this.props.urlAPIPrefix;
 		this.homeUrl = this.isDevelopment ? "/sweetandsour/" : "/";
+
+		this.handleMenuClick = this.handleMenuClick.bind();
 	}
 
 	componentDidMount() {
@@ -187,11 +190,23 @@ class Menu extends React.Component {
 			lastMenuLevel = currentMenuLevel;
 		}
 
-		this.heirarchicalMenuDataArray = tree.children; 
+		this.setState({heirarchicalMenuDataArray: tree.children}); 
 	}
 
 	handleMenuClick(event) {
-    this.props.handleMenuClick(event);
+		event.preventDefault();
+
+		const target = event.target;
+		const path = target.dataset.path;
+		this.props.updatePath(path);
+
+		//Remove "selected" class from currently selected list items. Automatic?
+
+		//Add "selected" class to target and any ancestors. Automatic?
+
+		//Change the visible URL by updating history
+		const newUrl = this.homeUrl + path;
+		window.history.pushState({}, '', newUrl);
   }
 
 	render() {
@@ -210,7 +225,7 @@ class Menu extends React.Component {
 		return (
 			<nav id="imageMenu" aria-hidden="true" aria-labelledby="menuBtn" role="navigation">
 				<ul className="menu1">
-					{this.heirarchicalMenuDataArray.map((menuItemData) => {
+					{this.state.heirarchicalMenuDataArray.map((menuItemData) => {
 						return <MenuItem 
 											key={menuItemData.menu_id} 
 											menuID={menuItemData.menu_id} 
@@ -221,6 +236,7 @@ class Menu extends React.Component {
 											menuLevel={menuItemData.menu_level}
 											children={menuItemData.children}
 											updatePath={(path) => this.updatePath(path)} 
+											onClick={function(e) {this.handleMenuClick(e);}}
 										/>
 					})}	
 				</ul>
