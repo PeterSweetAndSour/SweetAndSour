@@ -22,11 +22,11 @@
 	<p>If K-pop is completely new to you, I suggest that you start with the following, each of which are mentioned again below. Click the "CC" (closed captions) button on YouTube since many have English subtitles but perhaps surprisingly, they aren't necessary to enjoy!</p>
 	<ul>
 		<li>
-			A song from the most popular boy band:<br/>
+			A song from the world&apos;s most popular musical act:<br/>
 			<? setThumbnail("BoyWithLuv.jpg", "https://www.youtube.com/watch?v=XsX3ATc3FbA", "figure--thumbnail-youtube"); ?>
 		</li>
 		<li>
-			A song from, what was until recently, the most popular girl group:<br />
+			A song from, what was, the most popular girl group:<br />
 			<? setThumbnail("CheerUp.jpg", "https://www.youtube.com/watch?v=c7rCyll5AeY", "figure--thumbnail-youtube"); ?><br>
 			(See <strong>BlackPink</strong> below for the currently most popular girl group.)
 		</li>
@@ -47,7 +47,7 @@
 
 <h2 id="peters-kpop-selection">Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 12<sup>th</sup> June 2021)</p>
+	<p class="subtitle">(As of 20<sup>th</sup> September 2022)</p>
 </div>
 
 <h3>BTS</h3>
@@ -109,7 +109,7 @@
 			<a href="https://www.economist.com/asia/2016/01/21/twice-bitten">diplomatic incident</a>
 		 with China in 2016. Their songs all have bits of English in them, especially in the chorus, which is good marketing since it is everyone&apos;s second language no matter where you are in Asia. I think all the official music videos have English subtitles too. 
 	</p>
-
+	<p>To the relief of fan&apos;s everywhere, all 9 members have signed a new contract as the original ends in October 2022 and there was speculation as to whether they would go their separate ways.</p>
 	<ul>
 		<li>
 			2015-04-24 <a href="https://www.youtube.com/watch?v=c7rCyll5AeY" target="_blank" class="external"> Cheer Up!</a>
@@ -226,6 +226,18 @@
 		<li>
 			2021-12-19 <a href="https://www.youtube.com/watch?v=cAvMGWLZCHA" target="_blank" class="external">Snowman</a>, Mina's Melody Project, a cover of <a href="https://www.youtube.com/watch?v=gset79KMmt0" target="_blank" class="external">Sia&apos;s original</a>. <br><em>&ldquo;Please don't cry no tears now, it's Christmas, baby.&rdquo;</em> <br>How can we when Mina sings this? She is so sweet, so vulnerable, so precious. <br>I also draw to your attention to <a href="https://www.youtube.com/watch?v=AWmWO8ecgpo" target="_blank" class="external">another fabulous cover</a> by a Black man with a gorgeous voice. I have listened to both covers over and over trying not to cry. It has been a fabulous year for us fans.
 		</li>
+		<li>
+			2022-05-27 <a href="https://www.youtube.com/watch?v=SY2kZjVEd54" target="_blank" class="external">Monsters</a>, Dayhun's Melody Project, a cover of <a href="https://www.youtube.com/watch?v=FPyDLV-4XtI" target="_blank" class="external">Katie Sky&apos;s original</a>.
+		</li>
+		<li>
+			2022-06-24 <a href="https://www.youtube.com/watch?v=f6YDKF0LVWw" target="_blank" class="external">Pop!</a>. Nayeon's solo debut! I did see a comment on Reddit where someone said that Nayeon found it strange at first to work with other dancers rather than the other members of Twice since they have been together so long.
+		</li>
+		<li>
+			2022-07-14 <a href="https://www.youtube.com/watch?v=fMIn43MiwG8" target="_blank" class="external">Celebrate</a> (Japanese).
+		</li>
+		<li>
+			2022-08-26 <a href="https://www.youtube.com/watch?v=k6jqx9kZgPM" target="_blank" class="external">Talk that Talk</a>. This is the lead track from their album <em>Between 1 &amp; 2</em>.
+		</li>
 	</ul>
 </div>
 
@@ -243,6 +255,25 @@
 <div class="photo-gallery">
 	<? setThumbnail(["SNSDFlightAttendantsSm.jpg", "TwiceFlightAttendantsSm.jpg"]); ?>
 </div>
+
+<h3>Weki Medi</h3>
+<div class="story">
+	<p>My second favorite group after Twice!</p>
+	<ul>
+		<li>
+			The girl in Astro's music video for <em>Breathless</em> (below) is Yoo-jung and reading the comments I saw that she was a member of <strong>Weki Meki</strong>. At the time, they had released <em>Crush</em> which has this <a href="https://www.youtube.com/watch?v=bT2AMc8hI6A" target="_blank" class="external">music video</a> but again, they are best seen in the <a href="https://www.youtube.com/watch?v=wzoZRUnk1Xc" target="_blank" class="external">dance practice</a>. Great song!
+		</li>
+		<li>
+			One of my all-time favorite K-pop songs! <a href="https://www.youtube.com/watch?v=T9D6n-2afnM&amp;sa=D&amp;ust=1590612821758000">True valentine</a> (dance practice)
+		</li>
+		<li><a href="https://www.youtube.com/watch?v=ktcQZotG9DQ" target="_blank" class="external">Moya Moya</a> (dance practice)</li>
+		<li><a href="https://www.youtube.com/watch?v=5DKU9GXibOU" target="_blank" class="external">Do whatever you want</a> (dance practice)</li>
+		<li><a href="https://www.youtube.com/watch?v=RTeOt6n90vM" target="_blank" class="external">Dazzle Dazzle</a></li>
+		<li><a href="https://www.youtube.com/watch?v=AHikmx0eVXM" target="_blank" class="external">Cool</a></li>
+	</ul>
+	<p>It is also worth mentioning that they are an 8-member group whereas almost all K-pop groups have an odd number of members. Having an odd number means that the person singing can be front and center with the other members symmetrically arranged on either side but with an even number they have to be more creative &ndash; which sometimes means hiding one member behind that person at the front and center.</p>
+</div>
+	
 
 <h3>Taeyang</h3>
 <p class="subtitle">(From Big Bang.)</p>
@@ -283,7 +314,7 @@
 	<p>
 		Although he is famous for the novelty song
 		<a href="https://www.youtube.com/watch?v=9bZkp7q19f0" target="_blank" class="external">Gangnam Style</a>
-		(now 3.6 billion views at the time of writing!) but he is a serious entertainer. He does a lovely thoughtful song that has two very differnt versions&hellip;
+		(now 4.5 billion views as of Sept 2022!) but he is a serious entertainer. He does a lovely thoughtful song that has two very differnt versions&hellip;
 	</p>
 	<ul>
 		<li>
@@ -349,23 +380,6 @@
 </div>
 
 
-<h3>Weki Medi</h3>
-<div class="story">
-	<ul>
-		<li>
-			The girl in Astro's music video for <em>Breathless</em> is Yoo-jung and reading the comments I saw that she was a member of <strong>Weki Meki</strong>. At the time, they had released <em>Crush</em> which has this <a href="https://www.youtube.com/watch?v=bT2AMc8hI6A" target="_blank" class="external">music video</a> but again, they are best seen in the <a href="https://www.youtube.com/watch?v=wzoZRUnk1Xc" target="_blank" class="external">dance practice</a>. Great song!
-		</li>
-		<li>
-			One of my all-time favorite K-pop songs! <a href="https://www.youtube.com/watch?v=T9D6n-2afnM&amp;sa=D&amp;ust=1590612821758000">True valentine</a> (dance practice)
-		</li>
-		<li><a href="https://www.youtube.com/watch?v=5DKU9GXibOU" target="_blank" class="external">Do whatever you want</a> (dance practice)</li>
-		<li><a href="https://www.youtube.com/watch?v=RTeOt6n90vM" target="_blank" class="external">Dazzle Dazzle</a></li>
-		<li><a href="https://www.youtube.com/watch?v=AHikmx0eVXM" target="_blank" class="external">Cool</a></li></li>
-	</ul>
-	<p>It is also worth mentioning that they are an 8-member group whereas almost all K-pop groups have an odd number of members. Having an odd number means that the person singing can be front and center with the other members symmetrically arranged on either side but with an even number they have to be more creative &ndash; which sometimes means hiding one member behind that person at the front and center.</p>
-</div>
-	
-
 <h3>Cherry Bullet</h3>
 <div class="story">
 	<ul>
@@ -423,6 +437,7 @@
 
 <h3>Elris</h3>
 <div class="story">
+	<p>Another management company took them over and then renamed them <strong>Alice</strong> which is idiotic since you now can't search for them easily. They released a song <em>Power of Love</em> which is quite different to their earlier work which seems a great way to lose the few fans they had. I feel sad for these girls as there is only so much the performers can do if their management is incompetant and/or underfunded.</p>
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=iPAIlZM1VUU" target="_blank" class="external">Jackpot</a></li>
 		<li><a href="https://www.youtube.com/watch?v=9uhUmjANdQA" target="_blank" class="external">This Is Me</a> This song's a bop!</li>
