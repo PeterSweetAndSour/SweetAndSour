@@ -63,11 +63,11 @@
 			<ul>
 				<li><a href="https://www.youtube.com/watch?v=2K6dRljmvGw" target="_blank" class="external"> 7 young men from Vietnam</a> (over 9 million views!)</li>
 				<li><a href="https://www.youtube.com/watch?v=TMDS5v4brj8" target="_blank" class="external">a rotating cast of dance groups</a></li>
-				<li><a href="https://www.youtube.com/watch?v=TATGqCXMjj0" target="_blank" class="external"> 5 Korean(?)) girls on top of a building</a></li>
-				<li><a href="https://www.youtube.com/watch?v=_adOK0WFu90&amp;sa=D&amp;ust=1590612821733000">a fabulous collaboration of 3 members each from 4 girls groups</a></li>
+				<li><a href="https://www.youtube.com/watch?v=TATGqCXMjj0" target="_blank" class="external"> 5 Korean(?) girls on top of a building</a></li>
+				<li><a href="https://www.youtube.com/watch?v=_adOK0WFu90" target="_blank" class="external">a fabulous collaboration of 3 members each from 4 girls groups</a></li>
 			</ul>
 			<p>&hellip;and so on.</p>
-			<p>Oh, and a lovely <a href="https://www.youtube.com/watch?v=am3iJavzYi8" target="_blank" class="external">English-language cover</a> that is <a href="https://youtu.be/JewlhY8DGTI?t=329" target="_blank" class="external">BTS-approved</a>!
+			<p>Oh, and a lovely <a href="https://www.youtube.com/watch?v=am3iJavzYi8" target="_blank" class="external">English-language cover</a> that is <a href="https://www.youtube.com/watch?v=JewlhY8DGTI?t=329" target="_blank" class="external">BTS-approved</a>!
 			</p>
 		</li>
 		<li><a href="https://www.youtube.com/watch?v=gdZLi9oWNZg" target="_blank" class="external">Dynamite</a> The first video to hit 100m views on youtube in 24 hours and perhaps not coincidentally, their first song in English.
@@ -181,7 +181,7 @@
 			This song comes after <a href="https://www.bbc.com/news/48948583&amp;sa=D&amp;ust=1590612821747000">Mina had to withdraw from performing</a> and her part starting at 1:30 addresses her crisis. <br>By way of comparison, check out <a href="https://www.youtube.com/watch?v=J3KA6WDAYPM" target="_blank" class="external">Dahyun's emotional solo</a>; I think the style is better suited to the lyrics of the song. 
 		</li>
 		<li>
-			2019-10-29: <a href="https://www.youtube.com/watch?v=0kWidNV5s3w" target="_blank" class="external">Luv Me</a> This is one of my favorite songs of theirs but unfortunately the live performance in Tokyo has been taken down, so you will have to make do with this fan music video (which is pretty good).
+			2019-10-29: <a href="https://www.youtube.com/watch?v=Tc8Dk81xyV8" target="_blank" class="external">Luv Me</a> This is one of my favorite songs!
 		</li>
 		<li>
 			2019-12-23: A Christmas present from Nayeon as she covers Ariana Grande's <a href="https://www.youtube.com/watch?v=XO9GiPOLd3I">Santa Tell Me</a>
@@ -314,7 +314,7 @@
 	<p>
 		Although he is famous for the novelty song
 		<a href="https://www.youtube.com/watch?v=9bZkp7q19f0" target="_blank" class="external">Gangnam Style</a>
-		(now 4.5 billion views as of Sept 2022!) but he is a serious entertainer. He does a lovely thoughtful song that has two very differnt versions&hellip;
+		(now 4.5 billion views as of Sept 2022!) but he is a serious entertainer. He does a lovely thoughtful song that has two very different versions&hellip;
 	</p>
 	<ul>
 		<li>
@@ -354,13 +354,20 @@
 	</ul>
 </div>
 
+<h3>IVE</h3>
+<div class="story">
+	<ul>
+		<li><a href="https://www.youtube.com/watch?v=F0B7HDiY-10" target="_blank" class="external">After Like</a> I like this song instantly and it sounded vaguely familiar. I saw something claiming that IVE had sampled from Gloria Gaynor's 1979 anthem to the power of women <a href="https://www.youtube.com/watch?v=6dYWe1c3OyU" target="_blank" class="external">I will survive</a>. I had to check for myself and indeed it is true. Compare the section <a href="https://youtu.be/6dYWe1c3OyU?t=73" target="_blank" class="external">1:14</a> from Gloria with <a href="https://youtu.be/F0B7HDiY-10?t=49" target="_blank" class="external">0:50</a> from IVE. This song just reached 100 million views at the end of Sept 2022 and they have several other popular videos. I'm not sure how I failed to notice them earlier.</li>
+	</ul>
+</div>
+
 <h3>BlackPink</h3>
 <div class="story">
 	<p>Although I had mild interest in some of their early work, I don&apos;t particularly enjoy their recent songs but I am including them here because they are so popular &ndash; 
 		<a href="https://www.youtube.com/watch?v=IHNzOHi8sJs" target="_blank" class="external">DDU-DU DDU-DU</a>
 		now has 1.1 billion views!
 	</p>
-	<p>They released <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank" class="external">How you like that</a> on 2020-06-26 and it set a new record on YouTube of <a href="https://www.forbes.com/sites/hughmcintyre/2020/06/29/blackpinks-new-music-video-officially-break-the-record-for-the-most-views-in-24-hours-on-youtube/#1c8b7429460d" target="_blank" class="external">86.3 million views in the first 24 hours</a>! However, it does not appeal to me &ndash; they seem too much like American wrappers &ndash; though I do appreciate the Arabic(?) vibe at 1:12.</p>
+	<p>They released <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank" class="external">How you like that</a> on 2020-06-26 and it set a new record on YouTube of <a href="https://www.forbes.com/sites/hughmcintyre/2020/06/29/blackpinks-new-music-video-officially-break-the-record-for-the-most-views-in-24-hours-on-youtube/#1c8b7429460d" target="_blank" class="external">86.3 million views in the first 24 hours</a>! However, it does not appeal to me &ndash; they seem too much like American rappers &ndash; though I do appreciate the Arabic(?) vibe at 1:12.</p>
 </div>
 
 <h3>Astro</h3>
@@ -393,7 +400,7 @@
 	<p>
 		I love <a href="https://www.youtube.com/watch?v=0KGHiRo2apM" target="_blank" class="external"> Mr. Potter</a> and the <a href="https://www.youtube.com/watch?v=_Nx6lA6UzXQ&amp;sa=D&amp;ust=1590612821759000">dance practice</a>.
 	</p>
-	<p>However I am baffled why they have produced so little material in the years since. In 2019 there was just a 5-song mini-album <a href="https://www.youtube.com/watch?v=EIvRV38wWlk"  target="_blank" class="external">Newtro</a> &ndash; and one of those songs was an instrumental and the single <em>Woowa</em> failed to chart. The girls are presumably under contract and cannot leave to resume their studies or pursue other employment and MBK Entertainment is presumably still housing and feeding them &ndash; and I hope continuing to train them. They released <a href="https://www.youtube.com/watch?v=TGaYUh782k4" target="_blank" class="external">Hug U</a> in mid-2020 but almost a year later, it has only 412,000 views. The final scene looks like they are taking one final photo before they disband. Maybe they have and can get on with their lives without being shackled to a mediocre entertainment company.</p>
+	<p>However I am baffled why they have produced so little material in the years since. In 2019 there was just a 5-song mini-album <a href="https://www.youtube.com/watch?v=EIvRV38wWlk"  target="_blank" class="external">Newtro</a> &ndash; and one of those songs was an instrumental and the single <em>Woowa</em> failed to chart. The girls are presumably under contract and cannot leave to resume their studies or pursue other employment and MBK Entertainment is presumably still housing and feeding them &ndash; and I hope continuing to train them. They released <a href="https://www.youtube.com/watch?v=TGaYUh782k4" target="_blank" class="external">Hug U</a> in mid-2020 but almost a year later, it has only 412,000 views. The final scene looks like they are taking one final photo before they disband. Maybe they have and can get on with their lives without being shackled to a mediocre entertainment company. [Oct 2022 update: They have disbanded and this is their final song - their management company couldn't even post it to Youtube with an English title <a href="https://www.youtube.com/watch?v=1uYZEuA-mvE" target="_blank" class="external">Rooting For You</a>. </p>
 </div>
 
 <h3>Saturday</h3>
