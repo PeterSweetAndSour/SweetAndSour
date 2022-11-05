@@ -1,10 +1,12 @@
+// Run 'grunt' in the terminal and then any time a .scss or .js file is changed, grunt will run the relevant tasks.
+
 module.exports = function(grunt) {
  	 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 		
-		sass: {                              // Task
-			dist: {                          // Target
+		sass: {                          // Task
+			dist: {                        // Target
 				options: {                   // Target options
 					style: 'expanded'
 				},
@@ -21,7 +23,7 @@ module.exports = function(grunt) {
 				]
 			},
 			dist: {
-                src:  'css/styles_2020_unprefixed.css',
+        src:  'css/styles_2020_unprefixed.css',
 				dest: 'css/styles_2020.css'	   
 			}
 		},

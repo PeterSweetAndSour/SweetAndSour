@@ -48,7 +48,7 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
 					</figure><?
 				}
-				else {
+				else { // Normal situation with thumbnail linked to larger image
 					$fullSizeImgSrc = getPhotoUrl($photos[$photoName]["linkedImg"], $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $rootRelativeUrl, $useVersionedFiles, $photos[$photoName]["linkedImageVersion"]);
 					$urlPageWithLinkedImage = $rootRelativeUrl . "imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=" . $photos[$photoName]["linkedImg"];
 					?><figure<?= $classString ?>>
@@ -60,7 +60,7 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 					</figure><?
 				}
 			}
-			else {
+			else { // Override set so clicking on image takes you somewhere else
 				$numPipes = substr_count($overrideURL, "|");
 				if($numPipes == 0) {
 					$linkURL = $overrideURL;
@@ -74,6 +74,11 @@ function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
 				?><figure<?= $classString ?>>
 						<a href="<?= $linkURL ?>" target="<?= $target ?>">
 							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="Please refer to following caption." loading="lazy" />
+							<?  
+								if($cssClass == "figure--thumbnail-youtube") {?>
+									<div class="youtube-logo"></div>
+								<?}
+							?>
 						</a>
 						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
 					</figure><?

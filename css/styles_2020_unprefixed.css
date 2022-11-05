@@ -186,6 +186,29 @@ Overlay and loading graphic
   width: 261px;
   margin: 10px 10px 20px 0;
 }
+.figure--thumbnail-youtube a {
+  position: relative;
+  display: inline-block;
+}
+.figure--thumbnail-youtube a:hover .youtube-logo {
+  display: block;
+}
+
+.youtube-logo {
+  display: none;
+  position: absolute;
+  width: 60px;
+  height: 42px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  /* Source on Wikipedia https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg */
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTU5IiBoZWlnaHQ9IjExMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMTU0IDE3LjVjLTEuODItNi43My03LjA3LTEyLTEzLjgtMTMuOC05LjA0LTMuNDktOTYuNi01LjItMTIyIDAuMS02LjczIDEuODItMTIgNy4wNy0xMy44IDEzLjgtNC4wOCAxNy45LTQuMzkgNTYuNiAwLjEgNzQuOSAxLjgyIDYuNzMgNy4wNyAxMiAxMy44IDEzLjggMTcuOSA0LjEyIDEwMyA0LjcgMTIyIDAgNi43My0xLjgyIDEyLTcuMDcgMTMuOC0xMy44IDQuMzUtMTkuNSA0LjY2LTU1LjgtMC4xLTc1eiIgZmlsbD0iI2YwMCIvPjxwYXRoIGQ9Im0xMDUgNTUtNDAuOC0yMy40djQ2Ljh6IiBmaWxsPSIjZmZmIi8+PC9zdmc+Cg==");
+}
 
 .photo-gallery-instagram {
   clear: both;
