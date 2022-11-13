@@ -451,8 +451,8 @@ footer {
   Header
   ------------------------------------------------------------------------------------------ */
   .logo {
-    font-size: 31px;
-    padding: 12px 10px 0 0;
+    font-size: 36px;
+    padding: 8px 10px 0 0;
   }
   .logo > a {
     color: #fff;
@@ -669,6 +669,16 @@ nav ul.menu3 > li > label {
     left: 2px;
     color: white;
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .logo {
+    font-size: 31px;
+    padding-top: 15px;
+  }
+
+  .tagline {
+    font-size: 11px;
   }
 }
 /* ***********************************************

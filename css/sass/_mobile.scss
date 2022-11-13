@@ -23,8 +23,8 @@ Mobile
 	Header
 	------------------------------------------------------------------------------------------ */
 	.logo {
-		font-size: 31px;
-		padding: 12px 10px 0 0;
+		font-size: 36px;
+		padding: 8px 10px 0 0;
 	
 		> a {
 			color: #fff;
@@ -256,4 +256,14 @@ Mobile
 		}
 	}
 
+}
+
+@media only screen and (max-width: 420px) {
+	.logo {
+		font-size: 31px;
+		padding-top: 15px;
+	}
+	.tagline {
+		font-size: 11px;
+	}
 }
