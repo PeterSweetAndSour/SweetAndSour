@@ -342,9 +342,9 @@
 		<li><a href="https://www.youtube.com/watch?v=QslJYDX3o8s" target="_blank" class="external">Russian roulette</a></li>
 		<li><a href="https://www.youtube.com/watch?v=glXgSSOKlls" target="_blank" class="external">Ice cream cake</a></li>
 		<li><a href="https://www.youtube.com/watch?v=aiHSVQy9xN8" target="_blank" class="external">Power Up</a>. While we are here, I'll mention that I get more joy than I should watching this video of <a href="https://www.youtube.com/watch?v=7SW7oYJ8sQQ"  target="_blank" class="external">Twice members cheering on Red Velvet</a>! Someone in the comments suggests that Nayeon should be the president of ReVeluv, the Red Velvet fan club!</li>
-		<li><a href="https://www.youtube.com/watch?v=Ut1OzEVUiM4" target="_blank" class="external">Birthday</a></li>. 2022-12-09:I confess that I've not been keeping up with Red Velvet and I've probably missed a few great songs! I can't articulate what the Red Velvet sound is but this song definitely has it. Note the reference to "ice cream cake" in the lyrics.
+		<li><a href="https://www.youtube.com/watch?v=Ut1OzEVUiM4" target="_blank" class="external">Birthday</a>. I can't articulate what the Red Velvet sound is but this song definitely has it. Note the reference to &ldquo;ice cream cake&rdquo; in the lyrics.</li>
 	</ul>
-	<p>I was not paying attention to Red Velvet and so I was shocked to learn in May 2021 that Wendy fell 2.5m/8ft off a stage during a rehearsal on Christmas Day 2019 and sustained serious injuries. She was in hospital for 2 months and didn't reappear with the group until New Year's Day this year. Knowing this, it is sad to listen to two songs she released in April 2021:</p>
+	<p>I was not paying attention to Red Velvet and I've probably missed some great songs but I was shocked to learn in May 2021 that Wendy fell 2.5m/8ft off a stage during a rehearsal on Christmas Day 2019 and sustained serious injuries. She was in hospital for 2 months and didn't reappear with the group until New Year's Day this year. Knowing this, it is sad to listen to two songs she released in April 2021:</p>
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=-Ih5UArd4zk" target="_blank" class="external">Like water</a> and even better...</li>
 		<li><a href="https://www.youtube.com/watch?v=tknKZe_TyqU" target="_blank" class="external">When this rain stops</a></li>
