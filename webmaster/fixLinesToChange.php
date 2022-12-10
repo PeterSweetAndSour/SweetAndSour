@@ -1,4 +1,6 @@
  <?php
+ // 2022-12-10: It looks like I had captured the HTML from Slack in linesToChange.txt and was going to 
+ // intending to present whereIsPeter as an HTML file but for whatever reason, I ended up with a PNG image.
 
 $pattern1 = '/role="listitem" style="top: [0-9]{4}\.[0-9]{2}px;"/';
 $fileHandle = @fopen("linesToChange.txt", "r"); // Open file form read.
