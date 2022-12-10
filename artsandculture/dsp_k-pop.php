@@ -196,7 +196,10 @@
 			2020-05-13 <a href="https://www.youtube.com/watch?v=Vh99Tgmpsso" target="_blank" class="external">Strawberry</a>. This song was co-written by Chaeyoung and it took me a while to warm to it but now I love it.
 		</li>
 		<li>
-			2020-10-26 <a href="https://www.youtube.com/watch?v=CM4CkVFmTds" target="_blank" class="external">I can't stop me</a>.
+			2020-10-26 <a href="https://www.youtube.com/watch?v=CM4CkVFmTds" target="_blank" class="external">I can't stop me</a>, the &ldquo;comeback&rdquo; single from the <em>Eyes Wide Open</em> album.
+		</li>
+		<li>
+			2020-10-26 <a href="https://www.youtube.com/watch?v=VSc74fDej4I" target="_blank" class="external">Go hard</a> Another song from the <em>Eyes Wide Open</em> album that has an Arabic sound and has what I consider to be the best song lyric ever: <em>&ldquo;My opponent is the woman in the mirror&rdquo;</em>.
 		</li>
 		<li>
 			2021-04-20 <a href="https://www.youtube.com/watch?v=BSS8Y-0hOlY" target="_blank" class="external">Kura Kura</a> for the Japanese market. Not a great song overall but it has a great chorus which prompted each of them to do a 30-second video such as this <a href="https://www.tiktok.com/@twice_tiktok_officialjp/video/6955018090971254018?lang=en&is_copy_url=1&is_from_webapp=v1" target="_blank" class="external">TikTok from Mina</a>.
@@ -339,6 +342,7 @@
 		<li><a href="https://www.youtube.com/watch?v=QslJYDX3o8s" target="_blank" class="external">Russian roulette</a></li>
 		<li><a href="https://www.youtube.com/watch?v=glXgSSOKlls" target="_blank" class="external">Ice cream cake</a></li>
 		<li><a href="https://www.youtube.com/watch?v=aiHSVQy9xN8" target="_blank" class="external">Power Up</a>. While we are here, I'll mention that I get more joy than I should watching this video of <a href="https://www.youtube.com/watch?v=7SW7oYJ8sQQ"  target="_blank" class="external">Twice members cheering on Red Velvet</a>! Someone in the comments suggests that Nayeon should be the president of ReVeluv, the Red Velvet fan club!</li>
+		<li><a href="https://www.youtube.com/watch?v=Ut1OzEVUiM4" target="_blank" class="external">Birthday</a></li>. 2022-12-09:I confess that I've not been keeping up with Red Velvet and I've probably missed a few great songs! I can't articulate what the Red Velvet sound is but this song definitely has it. Note the reference to "ice cream cake" in the lyrics.
 	</ul>
 	<p>I was not paying attention to Red Velvet and so I was shocked to learn in May 2021 that Wendy fell 2.5m/8ft off a stage during a rehearsal on Christmas Day 2019 and sustained serious injuries. She was in hospital for 2 months and didn't reappear with the group until New Year's Day this year. Knowing this, it is sad to listen to two songs she released in April 2021:</p>
 	<ul>
@@ -400,7 +404,7 @@
 	<p>
 		I love <a href="https://www.youtube.com/watch?v=0KGHiRo2apM" target="_blank" class="external"> Mr. Potter</a> and the <a href="https://www.youtube.com/watch?v=_Nx6lA6UzXQ&amp;sa=D&amp;ust=1590612821759000">dance practice</a>.
 	</p>
-	<p>However I am baffled why they have produced so little material in the years since. In 2019 there was just a 5-song mini-album <a href="https://www.youtube.com/watch?v=EIvRV38wWlk"  target="_blank" class="external">Newtro</a> &ndash; and one of those songs was an instrumental and the single <em>Woowa</em> failed to chart. The girls are presumably under contract and cannot leave to resume their studies or pursue other employment and MBK Entertainment is presumably still housing and feeding them &ndash; and I hope continuing to train them. They released <a href="https://www.youtube.com/watch?v=TGaYUh782k4" target="_blank" class="external">Hug U</a> in mid-2020 but almost a year later, it has only 412,000 views. The final scene looks like they are taking one final photo before they disband. Maybe they have and can get on with their lives without being shackled to a mediocre entertainment company. [Oct 2022 update: They have disbanded and this is their final song - their management company couldn't even post it to Youtube with an English title <a href="https://www.youtube.com/watch?v=1uYZEuA-mvE" target="_blank" class="external">Rooting For You</a>. </p>
+	<p>However I am baffled why they produced so little material in the years since. In 2019 there was just a 5-song mini-album <a href="https://www.youtube.com/watch?v=EIvRV38wWlk"  target="_blank" class="external">Newtro</a> &ndash; and one of those songs was an instrumental and the single <em>Woowa</em> failed to chart. The girls are presumably under contract and cannot leave to resume their studies or pursue other employment and MBK Entertainment is presumably still housing and feeding them &ndash; and I hope continuing to train them. They released <a href="https://www.youtube.com/watch?v=TGaYUh782k4" target="_blank" class="external">Hug U</a> in mid-2020 but almost a year later, it has only 412,000 views. The final scene looks like they are taking one final photo before they disband. Maybe they have and can get on with their lives without being shackled to a mediocre entertainment company. [Oct 2022 update: They have disbanded and this is their final song - their management company couldn't even post it to Youtube with an English title <a href="https://www.youtube.com/watch?v=1uYZEuA-mvE" target="_blank" class="external">Rooting For You</a>. </p>
 </div>
 
 <h3>Saturday</h3>
@@ -423,9 +427,9 @@
 	<p><a href="https://www.youtube.com/watch?v=cO9DbwTF7rY">LALALILALA</a></p>
 </div>											
 
-
 <h3>Fanatics</h3>
 <div class="story">
+	<p>2022-12-09: Why hasn't their management company had them record anything in the 2&half; years since V.A.V.I. Girl. They should either do something or disband and let the members get on with their lives.</p>
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=lSIx8K_NMsk">Milkshake</a> music video and <a href="https://www.youtube.com/watch?v=E5y8a3zuUas" target="_blank" class="external"> dance practice</a></li>
 		<li><a href="https://www.youtube.com/watch?v=XhQHqH9QhFA" target="_blank" class="external">V.A.V.I. GIRL</a></li>
@@ -442,9 +446,9 @@
 	<p><a href="https://www.youtube.com/watch?v=wMj3sLP_azg" target="_blank" class="external">Bazooka!</a> (Thanks Stephanie!)</p>
 </div>
 
-<h3>Elris</h3>
+<h3>Alice, formerly Elris</h3>
 <div class="story">
-	<p>Another management company took them over and then renamed them <strong>Alice</strong> which is idiotic since you now can't search for them easily. They released a song <em>Power of Love</em> which is quite different to their earlier work which seems a great way to lose the few fans they had. I feel sad for these girls as there is only so much the performers can do if their management is incompetant and/or underfunded.</p>
+	<p>Another management company took them over and then renamed them <strong>Alice</strong> which seems idiotic since you now can't search for them easily but I read something that said the Korean characters are better rendered as Alice in English and there was some legal problem with the old name. They released a song <em>Power of Love</em> which is quite different to their earlier work which seems a great way to lose the few fans they had. I feel sad for these girls as there is only so much the performers can do if their management is incompetant and/or underfunded.</p>
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=iPAIlZM1VUU" target="_blank" class="external">Jackpot</a></li>
 		<li><a href="https://www.youtube.com/watch?v=9uhUmjANdQA" target="_blank" class="external">This Is Me</a> This song's a bop!</li>
@@ -465,10 +469,19 @@
 	</ul>
 </div>
 
+<h3>KARA</h3>
+<div class="story">
+	<p>This group has been around for quite some time with moderate success; I need to dig more into their back catalog. I was saddened to read that one of the members, <a href="https://en.wikipedia.org/wiki/Goo_Hara" target="_blank" class="external">Goo Hara</a> committed suicide as a result of an abusive boyfriend. Her plight and subsequent trial drew attention to sex crimes against women in South Korea.</p>
+	<ul>
+		<li><a href="https://www.youtube.com/watch?v=XwcK-twSXB4" target="_blank" class="external">When I move</a></li>
+	</ul>
+</div>
+
+
 <h3>&hellip;and so much more!</h3>
 <div class="story">
 	<p>I feel I've only scratched the surface and there are new songs and new groups coming out all the time.  Other groups I've come across - and this is just the girl groups: 
-	A.O.A, APink, BerryGood, Bvndit, CLC,  cignature, Dreamcatcher, DreamNote, Exid, Everglow, Fromis_9, f(x), 
-Gugudan, Hwa Sa, I.O.I, Itzy (stablemate of Twice and successful partly because of it), I.Z. One, Kara, La Boum, Lovelyz, Orange Caramel, Pledis, Pristin, Purplebeck, S.I.S., UNI.T, WJSN (not to be confused with GWSN!).</p>
+	A.O.A, APink, BerryGood, Bvndit, CLC, cignature, Dreamcatcher, DreamNote, Exid, Everglow, Fromis_9, f(x), 
+Gugudan, Hwa Sa, I.O.I, Itzy (stablemate of Twice and successful partly because of it), I.Z. One, La Boum, Lovelyz, Orange Caramel, New Jeans, Pledis, Pristin, Purplebeck, S.I.S., UNI.T, WJSN (not to be confused with GWSN!).</p>
 </div>
 
