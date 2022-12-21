@@ -365,6 +365,21 @@
 	</ul>
 </div>
 
+<h3>Alice, formerly Elris</h3>
+<div class="story">
+	<p>Another management company took them over and then renamed them <strong>Alice</strong> which seems idiotic since you now can't search for them easily but I read something that said the Korean characters are better rendered as Alice in English and there was some legal problem with the old name. They released a song <em>Power of Love</em> which is quite different to their earlier work which seems a great way to lose the few fans they had. I feel sad for these girls as there is only so much the performers can do if their management is incompetant and/or underfunded.</p>
+	<ul>
+		<li><a href="https://www.youtube.com/watch?v=iPAIlZM1VUU" target="_blank" class="external">Jackpot</a></li>
+		<li><a href="https://www.youtube.com/watch?v=9uhUmjANdQA" target="_blank" class="external">This Is Me</a> This song's a bop!</li>
+		<li><a href="https://www.youtube.com/watch?v=G__sh_LZcpo" target="_blank" class="external">Dance On</a> This song appeared on a list of the best K-pop of 2022 but still hasn't reached 2 million views yet. :-(</li>
+	</ul>
+</div>
+
+<h3>Woo!ah!</h3>
+<div class="story">
+	<p><a href="https://www.youtube.com/watch?v=KkyUE7TcBcs" target="_blank" class="external">Rollercoaster</a> Listen to this once and it will be in your head for a week! (A good thing.)</p>
+</div>
+
 <h3>BlackPink</h3>
 <div class="story">
 	<p>Although I had mild interest in some of their early work, I don&apos;t particularly enjoy their recent songs but I am including them here because they are so popular &ndash; 
@@ -444,15 +459,6 @@
 <h3>GWSN a.k.a. Girls in the Park</h3>
 <div class="story">
 	<p><a href="https://www.youtube.com/watch?v=wMj3sLP_azg" target="_blank" class="external">Bazooka!</a> (Thanks Stephanie!)</p>
-</div>
-
-<h3>Alice, formerly Elris</h3>
-<div class="story">
-	<p>Another management company took them over and then renamed them <strong>Alice</strong> which seems idiotic since you now can't search for them easily but I read something that said the Korean characters are better rendered as Alice in English and there was some legal problem with the old name. They released a song <em>Power of Love</em> which is quite different to their earlier work which seems a great way to lose the few fans they had. I feel sad for these girls as there is only so much the performers can do if their management is incompetant and/or underfunded.</p>
-	<ul>
-		<li><a href="https://www.youtube.com/watch?v=iPAIlZM1VUU" target="_blank" class="external">Jackpot</a></li>
-		<li><a href="https://www.youtube.com/watch?v=9uhUmjANdQA" target="_blank" class="external">This Is Me</a> This song's a bop!</li>
-	</ul>
 </div>
 
 <h3>GFriend</h3>
