@@ -64,7 +64,16 @@ $arr_menuData = array();
 
 //$time_start = microtime(true);
 while ($row = $rs_descendants->fetch_assoc()) {
-	$arr_menuData[] = array("display_text" => $row['displayText'], "menu_id" => $row["menuID"], "folder_name" => $row['folderName'], "fuse_action" => $row['fuseAction'], "menu_level" => $row["menuLevel"]);
+	// Before passing menuData back, change HTML entities to numbered equivalents
+	$displayText = $row['displayText'];
+	/*
+	$displayText = str_replace("&egrave;", "\u232;", $displayText);
+	$displayText = str_replace("&eacute;", "\u233;", $displayText);
+	$displayText = str_replace("&ndash;", "\u2013;", $displayText);
+	$displayText = str_replace("&mdash;", "\u2014;", $displayText);
+	*/
+
+	$arr_menuData[] = array("display_text" => $displayText, "menu_id" => $row["menuID"], "folder_name" => $row['folderName'], "fuse_action" => $row['fuseAction'], "menu_level" => $row["menuLevel"]);
 }
 //$time_end = microtime(true);
 //$time_diff_sec = ($time_end - $time_start);

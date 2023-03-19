@@ -54,8 +54,10 @@ function response($path, $contentHTML, $showMenu, $showLinkToTop, $responseCode,
 	$response["showLinkToTop"] = $showLinkToTop;
 	$response['response_code'] = $responseCode;
 	$response['response_desc'] = $responseDesc;
-	
-	$jsonResponse = json_encode($response);
+
+	$jsonResponse = json_encode($response, JSON_FORCE_OBJECT);
+
+	header("Content-Type:application/json");
 	echo $jsonResponse;
 }
 ?>

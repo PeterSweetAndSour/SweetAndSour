@@ -4,6 +4,7 @@
    Will be getting requested with URL like /api/get_menu.php?path=home/welcome
 */
 
+
 // Capture the fuseaction to give to qry_getMenuID
 if(isset($_GET["fuseAction"])) {
 	$fuseAction = $_GET["fuseAction"];
@@ -23,11 +24,11 @@ $response['responseDesc'] = $responseDesc;   // qry_getMenuID.php
 $response["selectedID"] = $selectedID;       // qry_getMenuID.php
 $response["parentID"] = $parentID;           // qry_getMenuID.php
 $response["grandparentID"] = $grandparentID; // qry_getMenuID.php
-$response["menuHTML"] = $str_menuHTML;       // act_constructMenu.php
-$response["menuData"] = $arr_menuData;       // act_qry_menu.php
+//$response["menuHTML"] = $str_menuHTML;       // act_constructMenu.php - not used
+$response["menuData"] = $arr_menuData;       // qry_menu.php
 
-$json_response = json_encode($response, JSON_FORCE_OBJECT);
+$jsonResponse = json_encode($response, JSON_FORCE_OBJECT);
 
 header("Content-Type:application/json");
-echo $json_response;
+echo $jsonResponse;
 ?>
