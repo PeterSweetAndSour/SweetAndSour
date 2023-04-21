@@ -1,5 +1,5 @@
 <div class="story">
-	<p>When I was on the Global team at The Motley Fool we had a wonderful intern named Chandler who had a list of &ldquo;My five favorite&hellip;&rdquo; on a range of topics including Korean pop music a.k.a. K-pop. I didn't care so much for the first, second and third but then <em>Cheer Up!</em> blew me away and I haven't looked back since! Thank you Chandler. There is so much great music coming out of Korea that it is hard to keep up with.</p>
+	<p>When I was on the Global team at The Motley Fool we had a intern named Chandler who had a list of &ldquo;My five favorite&hellip;&rdquo; on a range of topics including Korean pop music a.k.a. K-pop. I didn't care so much for the first, second and third but then <em>Cheer Up!</em> blew me away and I haven't looked back since! Thank you Chandler. There is so much great music coming out of Korea that it is hard to keep up with.</p>
 </div>
 
 <h2>Why K-pop is different&mdash;and awesome</h2>
@@ -47,7 +47,7 @@
 
 <h2 id="peters-kpop-selection">Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 20<sup>th</sup> September 2022)</p>
+	<p class="subtitle">(As of 20<sup>th</sup> April 2023)</p>
 </div>
 
 <h3>BTS</h3>
@@ -102,7 +102,7 @@
 	</ul>
 </div>
 
-<h3><span>Twice</h3>
+<h3 id="Twice">Twice</h3>
 <div class="story">
 	<p>
 		If there was a song in my head since mid-2015, it was probably one of theirs. They are wonderful! As with most K-pop, it is not serious music but it is so much fun! Three of the members are Japanese and one is from Taiwan which led to a 
@@ -241,10 +241,17 @@
 		<li>
 			2022-08-26 <a href="https://www.youtube.com/watch?v=k6jqx9kZgPM" target="_blank" class="external">Talk that Talk</a>. This is the lead track from their album <em>Between 1 &amp; 2</em>.
 		</li>
+		<li>
+			2023-03-10 <a href="https://www.youtube.com/watch?v=o_X-gtP-pxs" target="_blank" class="external">Set me free</a>, the lead single from their mini-album <em>Ready To Be</em>. Interestingly, the launched on the American <em>Tonight Show</em> rather than in Korea as they now have global ambitions. The <a href="https://www.facebook.com/empirestatebuilding/posts/pfbid0doXE3qEofYUFjNZE74aSQzGSdLfmVkoC9qmG9et5ZFyPnHV1XHwizHNiRmWN8ZHml?__cft__[0]=AZU5IHE4949IUYRUjfe4S_h0s7Z4d90kQGQFr6Ha0W-Ut3xmf6yMyeBjy-LpbwuklSdwKmkFU4ScUvJx--hKs29GckBODsqP6luF-zcvfDJbFbR6QLHDAIEBzclh3mBlZu8c1-e-GmuGc6IP9D978v5zaWydcaAwvg_-t9eEWR7gulpAw3X3OLcZVNBLsBFz1jGBg3I2Jt1hHXwQvug3mFt7&__tn__=%2CO%2CP-R" target="_blank" class="external">Empire State Building was lit up</a> in apricot & neon magenta, the group's colors and a &ldquo;world&rdquo; tour was announced that includes Australia for the first time but not Europe. I initially thought the song was boring but like I had the sense that it might grow on me and I now keep finding it in my head &ndash; I didn't initially love <em>Likey</em> or <em>Fancy</em> either but now I love them both. There is a real <a href="https://www.youtube.com/watch?v=w4cTYnOPdNk" target="_blank" class="external">music video</a> too, of course and having watched that, I encourage you to watch this fascinating analysis on the <a href="https://www.youtube.com/watch?v=ZRJDUIDSMcc" target="_blank" class="external">scene transitions</a>
+		</li>
+		<li>
+			2023-03-10 <a href="https://www.youtube.com/watch?v=ykh75U1O0cw" target="_blank" class="external">Blame it on me</a>. Twice meets rock music! This song, also from <em>Ready To Be</em>, <stong>instantly</stong> became one of my favorite Twice songs. When Jihyo starts singing at 0:55, I have visions of being knocked over by an ocean wave. There is no music video so I've linked to an unauthorized video where someone has provided translations and worked out who is singing which lines. JYP Entertainment has posted the <a href="https://www.youtube.com/watch?v=Mk8hIPg2dNE" target="_blank" class="external">official version</a> with just a picture of the album cover.
+		</li>
+		
 	</ul>
 </div>
 
-<h3>Girls Generation a.k.a SNSD</h3>
+<h3 id="SNSD">Girls Generation a.k.a SNSD</h3>
 <div class="story">
 	<p>An earlier nine-member girl group who I&#39;m sure were the model for Twice. Indeed Girls Generation dressed up as flight attendants (twice!) and later Twice did the same which led to accusations of copying though <a href="https://hellosekaiiken.wordpress.com/2012/11/03/girls-generation-copies-passpo-who-copied-canary-club/" target="_blank" class="external">the idea was not new</a>.</p>
 	<ul>
@@ -259,7 +266,7 @@
 	<? setThumbnail(["SNSDFlightAttendantsSm.jpg", "TwiceFlightAttendantsSm.jpg"]); ?>
 </div>
 
-<h3>Weki Medi</h3>
+<h3 id="Weki_Meki">Weki Meki</h3>
 <div class="story">
 	<p>My second favorite group after Twice!</p>
 	<ul>
@@ -278,7 +285,7 @@
 </div>
 	
 
-<h3>Taeyang</h3>
+<h3 id="Taeyang">Taeyang</h3>
 <p class="subtitle">(From Big Bang.)</p>
 <div class="story">
 	<p>I believe <strong>Big Bang</strong> were the biggest K-pop group before BTS but I have yet to find any of their songs that I really like. Two of members have done significant solo work since but the band had to break up because the members had to do their military service.</p>
@@ -286,9 +293,9 @@
 
 	<ul>
 		<li>
-			<em>Eyes, Nose, Lips</em> This song about lost love is not K-pop in the normal sense of happy &amp; bouncy but it is iconic. There are three different versions to see:
+			<em>Eyes, Nose, Lips</em> This song about lost love is not K-pop in the normal sense of happy &amp; bouncy but it is iconic. One of my favorite songs ever in any genre, ever. There are three different versions to see:
 				<ol>
-					<li>the <a href="https://www.youtube.com/watch?v=PuGjlfXYM74" target="_blank" class="external">music video with English subtitles</a> and also Romanized Korean so you can sing along. Don't be surprised by the low number of views as the <a href="https://www.youtube.com/watch?v=UwuAPyOImoI" target="_blank" class="external"> actual music video</a> has a 174 million views at the time of writing. I gather this video was somewhat controversial at the time because he appears shirtless&mdash;but he has a great body! If the comments to the video are to believed, he is married to the woman he broke up with and then wrote this song for her.</li>
+					<li>the <a href="https://www.youtube.com/watch?v=PuGjlfXYM74" target="_blank" class="external">music video with English subtitles</a> and also Romanized Korean so you can sing along. Don't be surprised by the low number of views as the <a href="https://www.youtube.com/watch?v=UwuAPyOImoI" target="_blank" class="external"> actual music video</a> has a 239 million views as of March 2023. I gather this video was somewhat controversial at the time because he appears shirtless&mdash;but he has a great body! If the comments to the video are to believed, he is married to the woman he broke up with and then wrote this song for her.</li>
 					<li>A <a href="https://www.youtube.com/watch?v=9un35OyWcN0" target="_blank" class="external">beautiful concert performance</a></li>
 					<li>
 						The <a href="https://www.youtube.com/watch?v=CxMvQkcdPl8" target="_blank" class="external"> best duet ever</a>! Seriously, this is amazing. Even more incredible is that they only had an hour or so to practice before filming. Apparently the format of the show is that people send in video of them singing a famous song and when they get that idol on the show, they select from the best videos sent in and let them sing together. The young woman had been on another talent show before but that was her only previous exposure.
@@ -372,12 +379,18 @@
 		<li><a href="https://www.youtube.com/watch?v=iPAIlZM1VUU" target="_blank" class="external">Jackpot</a></li>
 		<li><a href="https://www.youtube.com/watch?v=9uhUmjANdQA" target="_blank" class="external">This Is Me</a> This song's a bop!</li>
 		<li><a href="https://www.youtube.com/watch?v=G__sh_LZcpo" target="_blank" class="external">Dance On</a> This song appeared on a list of the best K-pop of 2022 but still hasn't reached 2 million views yet. :-(</li>
+		<li><a href="https://www.youtube.com/watch?v=9aJIa5iJkWM" target="_blank" class="external">Show Down</a></li>
 	</ul>
 </div>
 
 <h3>Woo!ah!</h3>
 <div class="story">
 	<p><a href="https://www.youtube.com/watch?v=KkyUE7TcBcs" target="_blank" class="external">Rollercoaster</a> Listen to this once and it will be in your head for a week! (A good thing.)</p>
+</div>
+
+<h3>Le Serafim</h3>
+<div class="story">
+	<p><a href="https://www.youtube.com/watch?v=Ccz123Jlflc" target="_blank" class="external">Impurities</a> This &ldquo;rookie&rdquo; group has been incredibly successful since launch. I'm not familiar with most of their music but I do enjoy this relaxing song.</p>
 </div>
 
 <h3>BlackPink</h3>
@@ -392,6 +405,7 @@
 <h3>Astro</h3>
 <div class="story">
 	<p>I don't pay much attention to the boy bands but this one caught my attention because they are so good! These guys should be way more famous than they are!</p>
+	<p>2023-04-20: Astro member Moonbin has apparently committed suicide. From the BBC: <a href="https://www.bbc.com/news/world-asia-65339082" target="_blank" class="external">Moonbin: Star's death renews scrutiny on pressures of K-pop</a>.</p>
 	<ul>
 		<li>
 			The <a href="https://www.youtube.com/watch?v=aBNyHAasnSM" target="_blank" class="external">official music video</a> for <strong>Breathless</strong> is OK but they really shine on the <a href="https://www.youtube.com/watch?v=_jJNJ2rZovg">dance practice video</a>. Keep your eye on the guy in the red and white shirt.  In the comments:<br><br>
@@ -411,6 +425,7 @@
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=uxTBkuo5YyA" target="_blank" class="external"> Really, Really</a> and also the <a href="https://www.youtube.com/watch?v=q7NKp2BqdCQ" target="_blank" class="external">dance practice</a></li>
 		<li><a href="https://www.youtube.com/watch?v=0It6vWbGOX0" target="_blank" class="external">Hands Up</a>. The group somehow lost three members and FNC Entertainment gave no explanation which naturally upset their fans. The entry for the company on Wikipedia claims that FNC stands for &ldquo;fish &apos;n&apos; cake&rdquo;: <em>The name is based on the miracle of feeding the multitude using only five loaves and the two fish. This is because Han Sung-ho is a devout Christian, he uses the name to hope for more miracles happen for the company.</em></li>
+		<li><a href="https://www.youtube.com/watch?v=85h-tVHNasg" target="_blank" class="external">P.O.W! (Play On the World)</a></li>
 	</ul>
 </div>
 
@@ -451,9 +466,20 @@
 	</ul>
 </div>
 
+<h3>CSR</h3>
+<div class="story">
+	<ul>
+		<li><a href="https://www.youtube.com/watch?v=OX6FRQH-Zyw&pp=ygUJY3NyIHRpY29u">Ticon</a> music video and <a href="https://www.youtube.com/watch?v=5woDKXyx120&pp=ygUJY3NyIHRpY29u" target="_blank" class="external">relay dance</a> and <a href="https://www.youtube.com/watch?v=zbW4Bwfqac0&pp=ygUJY3NyIHRpY29u" target="_blank" class="external">World Cup edition</a></li>
+		<li><a href="https://www.youtube.com/watch?v=XF_23xq5Kv8" target="_blank" class="external">Shining Bright</a></li>
+	</ul>
+</div>
+
 <h3>(G)I-DLE</h3>
 <div class="story">
-	<p>Not bouncy and happy at all but arresting, even mildly disturbing: <a href="https://www.youtube.com/watch?v=om3n2ni8luE" target="_blank" class="external">Oh My God</a></p>
+	<ul>
+		<li>Not bouncy and happy at all but arresting, even mildly disturbing: <a href="https://www.youtube.com/watch?v=om3n2ni8luE" target="_blank" class="external">Oh My God</a></li>
+		<li><a href="https://www.youtube.com/watch?v=Jh4QFaPmdss" target="_blank" class="external">Tomboy</a>. They aren't going to be messed around by some guy.</li>
+	</ul>
 </div>
 
 <h3>GWSN a.k.a. Girls in the Park</h3>
@@ -477,10 +503,18 @@
 
 <h3>KARA</h3>
 <div class="story">
-	<p>This group has been around for quite some time with moderate success; I need to dig more into their back catalog. I was saddened to read that one of the members, <a href="https://en.wikipedia.org/wiki/Goo_Hara" target="_blank" class="external">Goo Hara</a> committed suicide as a result of an abusive boyfriend. Her plight and subsequent trial drew attention to sex crimes against women in South Korea.</p>
+	<p>This group has been around since 2007 with moderate success; I need to dig more into their back catalog. I was saddened to read that one of the members, <a href="https://en.wikipedia.org/wiki/Goo_Hara" target="_blank" class="external">Goo Hara</a> committed suicide as a result of an abusive boyfriend. Her plight and subsequent trial drew attention to sex crimes against women in South Korea.</p>
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=XwcK-twSXB4" target="_blank" class="external">When I move</a></li>
 	</ul>
+</div>
+
+
+<h3>S.E.S.</h3>
+<div class="story">
+	<p>This group is I think what is referred to as &ldquo;second-generation&rdquo; as they started back in 1997. They had a hit with the utterly hypnotic <a href="https://www.youtube.com/watch?v=8uiR4SrDGZk" target="_blank" class="external">Dreams Come True</a> which was recently <a href="https://www.youtube.com/watch?v=H69tJmsgd9I" target="_blank" class="external">reinterpretted by aespa</a> (see above) which as of 2023-03-19 is closing in on 100 million views. Amazingly the S.E.S. verion is a cover of <a href="https://www.youtube.com/watch?v=mKK32ZB12bA" target="_blank" class="external">Rakastuin mä looseriin</a> (I fell in love with a loser) from <em>Finnish</em> duo Nylon Beat!
+
+	</p>
 </div>
 
 
@@ -488,6 +522,6 @@
 <div class="story">
 	<p>I feel I've only scratched the surface and there are new songs and new groups coming out all the time.  Other groups I've come across - and this is just the girl groups: 
 	A.O.A, APink, BerryGood, Bvndit, CLC, cignature, Dreamcatcher, DreamNote, Exid, Everglow, Fromis_9, f(x), 
-Gugudan, Hwa Sa, I.O.I, Itzy (stablemate of Twice and successful partly because of it), I.Z. One, La Boum, Lovelyz, Orange Caramel, New Jeans, Pledis, Pristin, Purplebeck, S.I.S., UNI.T, WJSN (not to be confused with GWSN!).</p>
+Gugudan, Hwa Sa, I.O.I, Itzy (stablemate of Twice and successful partly because of it), I.Z. One, La Boum, Lovelyz, Orange Caramel, New Jeans, Pledis, Pristin, Purplebeck, UNI.T, WJSN (not to be confused with GWSN!).</p>
 </div>
 
