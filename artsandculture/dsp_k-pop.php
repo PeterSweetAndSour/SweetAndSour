@@ -1,5 +1,5 @@
 <div class="story">
-	<p>When I was on the Global team at The Motley Fool we had a intern named Chandler who had a list of &ldquo;My five favorite&hellip;&rdquo; on a range of topics including Korean pop music a.k.a. K-pop. I didn't care so much for the first, second and third but then <em>Cheer Up!</em> blew me away and I haven't looked back since! Thank you Chandler. There is so much great music coming out of Korea that it is hard to keep up with.</p>
+	<p>When I was on the Global team at The Motley Fool we had a intern named Chandler who had a list of &ldquo;My five favorite&hellip;&rdquo; on a range of topics including Korean pop music a.k.a. K-pop. I didn't care so much for the first, second and third but then <em>Cheer Up!</em> blew me away and I haven't looked back since! Thank you Chandler! There is so much great music coming out of Korea that it is hard to keep up with.</p>
 </div>
 
 <h2>Why K-pop is different&mdash;and awesome</h2>
@@ -47,7 +47,7 @@
 
 <h2 id="peters-kpop-selection">Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 20<sup>th</sup> April 2023)</p>
+	<p class="subtitle">(As of 16<sup>th</sup> August 2023)</p>
 </div>
 
 <h3>BTS</h3>
@@ -245,10 +245,28 @@
 			2023-03-10 <a href="https://www.youtube.com/watch?v=o_X-gtP-pxs" target="_blank" class="external">Set me free</a>, the lead single from their mini-album <em>Ready To Be</em>. Interestingly, the launched on the American <em>Tonight Show</em> rather than in Korea as they now have global ambitions. The <a href="https://www.facebook.com/empirestatebuilding/posts/pfbid0doXE3qEofYUFjNZE74aSQzGSdLfmVkoC9qmG9et5ZFyPnHV1XHwizHNiRmWN8ZHml?__cft__[0]=AZU5IHE4949IUYRUjfe4S_h0s7Z4d90kQGQFr6Ha0W-Ut3xmf6yMyeBjy-LpbwuklSdwKmkFU4ScUvJx--hKs29GckBODsqP6luF-zcvfDJbFbR6QLHDAIEBzclh3mBlZu8c1-e-GmuGc6IP9D978v5zaWydcaAwvg_-t9eEWR7gulpAw3X3OLcZVNBLsBFz1jGBg3I2Jt1hHXwQvug3mFt7&__tn__=%2CO%2CP-R" target="_blank" class="external">Empire State Building was lit up</a> in apricot & neon magenta, the group's colors and a &ldquo;world&rdquo; tour was announced that includes Australia for the first time but not Europe. I initially thought the song was boring but like I had the sense that it might grow on me and I now keep finding it in my head &ndash; I didn't initially love <em>Likey</em> or <em>Fancy</em> either but now I love them both. There is a real <a href="https://www.youtube.com/watch?v=w4cTYnOPdNk" target="_blank" class="external">music video</a> too, of course and having watched that, I encourage you to watch this fascinating analysis on the <a href="https://www.youtube.com/watch?v=ZRJDUIDSMcc" target="_blank" class="external">scene transitions</a>
 		</li>
 		<li>
-			2023-03-10 <a href="https://www.youtube.com/watch?v=ykh75U1O0cw" target="_blank" class="external">Blame it on me</a>. Twice meets rock music! This song, also from <em>Ready To Be</em>, <stong>instantly</stong> became one of my favorite Twice songs. When Jihyo starts singing at 0:55, I have visions of being knocked over by an ocean wave. There is no music video so I've linked to an unauthorized video where someone has provided translations and worked out who is singing which lines. JYP Entertainment has posted the <a href="https://www.youtube.com/watch?v=Mk8hIPg2dNE" target="_blank" class="external">official version</a> with just a picture of the album cover.
+			2023-03-10 <a href="https://www.youtube.com/watch?v=ykh75U1O0cw" target="_blank" class="external">Blame it on me</a>. Twice meets rock music! This song, also from <em>Ready To Be</em>, <stong>instantly</stong> became one of my favorite Twice songs. When Jihyo starts singing at 0:55, I have visions of being knocked over by an ocean wave. There is no music video so I've linked to an unauthorized video where someone has provided translations and worked out who is singing which lines. JYP Entertainment has posted the <a href="https://www.youtube.com/watch?v=Mk8hIPg2dNE" target="_blank" class="external">official version</a> with just a picture of the album cover. I am surprised that it is the least popular song on the album based on views.
 		</li>
-		
+		<li>
+			2023-03-10 <a href="https://www.youtube.com/watch?v=J0EMiphyUFY" target="_blank" class="external">Got the thrills</a>. Another &ldquo;B-side&rdquo; but the second best song on the new album. It took a few listens for me warm to it but now I love it!
+		</li>
+		<li>
+			2023-03-10  <a href="https://www.youtube.com/watch?v=pupEHRXBU-w" target="_blank" class="external">Crazy Stupid Love</a>
+		</li>
+		<li>
+			2023-03-10  <a href="https://www.youtube.com/watch?v=VzIAZt8I7t8" target="_blank" class="external">Wallflower</a>. So now I've listed every song on the album except <em>Moonlight Sunrise</em> which was the album's pre-release single but I thought the weakest song on the album!
+		</li>
+		<li>
+			2023-07-27 <a href="https://www.youtube.com/watch?v=HddG4Yk9QYo" target="_blank" class="external">Bouquet (live)</a> from <strong>MiSaMo</strong>, the sub-unit of the Japanese members Mina, Sana and Momo. The <a href="https://www.youtube.com/watch?v=c64_lZErcOQ" target="_blank" class="external">music video </a> for the song was released on 2023-01-24 but at the time I did not really appreciate it whereas this version is just so beautiful it brought tears to my eyes when I heard it. All three of them are perfect in their own way but I am particularly proud of Momo who is primarily a dancer and normally forced to sing outside her natural range. If members had equal time on each song (they don't), she would normally have one-ninth of the singing but here it is one-third so I suspect she was out of her comfort zone. Her voice is instantly recognizable and here she it combines so well with Mina and Sana. <br /><br />They did five shows in Japan and at the end of this, the final concert, there was a <a href="https://www.youtube.com/watch?v=ta00Om6VE8Y" target="_blank" class="external">video of support messages</a> from the other members. While Sana and Momo are smiling, Mina appears overwhelmed with emotion. Obviously this was organized by JYPE but if the members don't truly love and care for each other, they are do an incredible job of faking it. <br /><br />Then it seems that <a href="https://www.youtube.com/watch?v=mv2RGhyvQak" target="_blank" class="external">MiSaMo were told that Nayeon was in the audience</a>! At 1:41 Mina appears to be trying desperately not to cry (or possibly she is upset that Nayeon is stealing some attention) but I think the former.
+		</li>
+		<li>
+			2023-06-15 <a href="https://www.youtube.com/watch?v=gAFgaI5D3Gc" target="_blank" class="external">Marshmallow</a> from MiSaMo.
+		</li>
+		<li>
+			2023-07-13 <a href="https://www.youtube.com/watch?v=woKq2sD8xho" target="_blank" class="external">Don't touch me</a> from MiSaMo. Like <a href="https://www.youtube.com/watch?v=qniDJuWrGyk" target="_blank" class="external">works of art</a> in a museum that are referenced in the video, you can admire but you cannot touch.
+		</li>
 	</ul>
+	<p>On the 6th of July (2023), I went to the Twice concert at the Metlife stadium near New York! What fantastic evening with 50,000+ other screaming fans!! I've not been to a concert bigger than a few hundred for over 20 years so I had nothing to really compare it to but the members, the band, the set, the everything was perfect. I love them even more now. I pusted <a href="https://www.instagram.com/p/Cuh4xbzOdjB/?img_index=1" target="_blank" class="external">a few photos on Instagram</a> and uploaded a video of <a href="https://www.youtube.com/watch?v=KzOUd0ecvus" target="_blank" class="external">Yes or yes, What is love & Cheer up</a></p>
 </div>
 
 <h3 id="SNSD">Girls Generation a.k.a SNSD</h3>
@@ -342,13 +360,14 @@
 	</p>
 </div>
 
-<h3>Red Velvet</h3>
+<h3 id="redVelvet">Red Velvet</h3>
 <div class="story">
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=JFgv8bKfxEs" target="_blank" class="external">Happiness</a></li>
 		<li><a href="https://www.youtube.com/watch?v=QslJYDX3o8s" target="_blank" class="external">Russian roulette</a></li>
 		<li><a href="https://www.youtube.com/watch?v=glXgSSOKlls" target="_blank" class="external">Ice cream cake</a></li>
 		<li><a href="https://www.youtube.com/watch?v=aiHSVQy9xN8" target="_blank" class="external">Power Up</a>. While we are here, I'll mention that I get more joy than I should watching this video of <a href="https://www.youtube.com/watch?v=7SW7oYJ8sQQ"  target="_blank" class="external">Twice members cheering on Red Velvet</a>! Someone in the comments suggests that Nayeon should be the president of ReVeluv, the Red Velvet fan club!</li>
+		<li><a href="https://www.youtube.com/watch?v=rRgTMs_bGuI" target="_blank" class="external">Cookie Jar</a></li>
 		<li><a href="https://www.youtube.com/watch?v=Ut1OzEVUiM4" target="_blank" class="external">Birthday</a>. I can't articulate what the Red Velvet sound is but this song definitely has it. Note the reference to &ldquo;ice cream cake&rdquo; in the lyrics.</li>
 	</ul>
 	<p>I was not paying attention to Red Velvet and I've probably missed some great songs but I was shocked to learn in May 2021 that Wendy fell 2.5m/8ft off a stage during a rehearsal on Christmas Day 2019 and sustained serious injuries. She was in hospital for 2 months and didn't reappear with the group until New Year's Day this year. Knowing this, it is sad to listen to two songs she released in April 2021:</p>
@@ -369,6 +388,7 @@
 <div class="story">
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=F0B7HDiY-10" target="_blank" class="external">After Like</a> I like this song instantly and it sounded vaguely familiar. I saw something claiming that IVE had sampled from Gloria Gaynor's 1979 anthem to the power of women <a href="https://www.youtube.com/watch?v=6dYWe1c3OyU" target="_blank" class="external">I will survive</a>. I had to check for myself and indeed it is true. Compare the section <a href="https://youtu.be/6dYWe1c3OyU?t=73" target="_blank" class="external">1:14</a> from Gloria with <a href="https://youtu.be/F0B7HDiY-10?t=49" target="_blank" class="external">0:50</a> from IVE. This song just reached 100 million views at the end of Sept 2022 and they have several other popular videos. I'm not sure how I failed to notice them earlier.</li>
+		<li><a href="https://www.youtube.com/watch?v=6ZUIwj3FgUY" target="_blank" class="external">I am</a></li>
 	</ul>
 </div>
 
@@ -393,6 +413,11 @@
 	<p><a href="https://www.youtube.com/watch?v=Ccz123Jlflc" target="_blank" class="external">Impurities</a> This &ldquo;rookie&rdquo; group has been incredibly successful since launch. I'm not familiar with most of their music but I do enjoy this relaxing song.</p>
 </div>
 
+<h3>STAYC</h3>
+<div class="story">
+	<p><a href="https://www.youtube.com/watch?v=3-ptVHZZdBg" target="_blank" class="external">Bubble</a> I loved this on the first time hearing it which isn't even true for many Twice songs. I need to review their back catalog.</p>
+</div>
+
 <h3>BlackPink</h3>
 <div class="story">
 	<p>Although I had mild interest in some of their early work, I don&apos;t particularly enjoy their recent songs but I am including them here because they are so popular &ndash; 
@@ -402,7 +427,7 @@
 	<p>They released <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank" class="external">How you like that</a> on 2020-06-26 and it set a new record on YouTube of <a href="https://www.forbes.com/sites/hughmcintyre/2020/06/29/blackpinks-new-music-video-officially-break-the-record-for-the-most-views-in-24-hours-on-youtube/#1c8b7429460d" target="_blank" class="external">86.3 million views in the first 24 hours</a>! However, it does not appeal to me &ndash; they seem too much like American rappers &ndash; though I do appreciate the Arabic(?) vibe at 1:12.</p>
 </div>
 
-<h3>Astro</h3>
+<h3 id="Astro">Astro</h3>
 <div class="story">
 	<p>I don't pay much attention to the boy bands but this one caught my attention because they are so good! These guys should be way more famous than they are!</p>
 	<p>2023-04-20: Astro member Moonbin has apparently committed suicide. From the BBC: <a href="https://www.bbc.com/news/world-asia-65339082" target="_blank" class="external">Moonbin: Star's death renews scrutiny on pressures of K-pop</a>.</p>
@@ -449,19 +474,22 @@
 													
 <h3>Oh My Girl</h3>												
 <div class="story">
-	<p><a href="https://www.youtube.com/watch?v=QTD_yleCK9Y">Bungee</a></p>
+	<ul>
+		<li><a href="https://www.youtube.com/watch?v=AJqhKWo89FQ" target="_blank" class="external">Windy Day</a>. I just learned (June 2023) that early Twice looked up to them as a model to emulate: <a href="https://www.youtube.com/watch?v=KLC8BbhgSW8" target="_blank" class="external">Twice being Oh My Girl&apos;s Fan for 15 minutes. Part 1.</a> and did <a href="https://www.youtube.com/watch?v=T8DbJhcLUXQ" target="_blank" class="external">a cover of Windy Day</a></li>
+		<li><a href="https://www.youtube.com/watch?v=QTD_yleCK9Y" target="_blank" class="external">Bungee</a></li>
+	</ul>
 </div>											
 
 <h3>April</h3>												
 <div class="story">
-	<p><a href="https://www.youtube.com/watch?v=cO9DbwTF7rY">LALALILALA</a></p>
+	<p><a href="https://www.youtube.com/watch?v=cO9DbwTF7rY" target="_blank" class="external">LALALILALA</a></p>
 </div>											
 
 <h3>Fanatics</h3>
 <div class="story">
 	<p>2022-12-09: Why hasn't their management company had them record anything in the 2&half; years since V.A.V.I. Girl. They should either do something or disband and let the members get on with their lives.</p>
 	<ul>
-		<li><a href="https://www.youtube.com/watch?v=lSIx8K_NMsk">Milkshake</a> music video and <a href="https://www.youtube.com/watch?v=E5y8a3zuUas" target="_blank" class="external"> dance practice</a></li>
+		<li><a href="https://www.youtube.com/watch?v=lSIx8K_NMsk" target="_blank" class="external">Milkshake</a> music video and <a href="https://www.youtube.com/watch?v=E5y8a3zuUas" target="_blank" class="external"> dance practice</a></li>
 		<li><a href="https://www.youtube.com/watch?v=XhQHqH9QhFA" target="_blank" class="external">V.A.V.I. GIRL</a></li>
 	</ul>
 </div>
