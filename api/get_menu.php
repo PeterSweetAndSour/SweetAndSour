@@ -27,7 +27,7 @@ $response["grandparentID"] = $grandparentID; // qry_getMenuID.php
 //$response["menuHTML"] = $str_menuHTML;       // act_constructMenu.php - not used
 $response["menuData"] = $arr_menuData;       // qry_menu.php
 
-$jsonResponse = json_encode($response, JSON_FORCE_OBJECT);
+$jsonResponse = json_encode($response);
 
 header("Content-Type:application/json");
 echo $jsonResponse;

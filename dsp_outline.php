@@ -5,7 +5,8 @@ Sets framework into which all display pages (except individual photos) will be s
 Provides photo at top left, heading, subheading, menu and sets a space for the content
 page.
 
-=>| $useAmazonS3       (from config file)    
+=>| $useAmazonS3       (from config file)  
+=>| $copyright         (from config file) 
 =>| $heading1Text
 =>| $contentPage       (from relevant case in index.php)
 =>| $displayMenu       (set on sweetandsour_conf.php, override on index.php if necessary)

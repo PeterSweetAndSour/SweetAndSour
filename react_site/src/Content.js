@@ -45,9 +45,6 @@ class Content extends React.Component {
 		this.getContent();
   }
 
-	createMarkup() {
-		return {__html: this.state.contentHTML};
-	}
 
 	render() {
 		if(this.state.error) {
@@ -56,8 +53,10 @@ class Content extends React.Component {
 			);
 		}
 
+		console.log("TypeOf contentHTML: " + typeof (this.state.contentHTML));
+		console.log("TypeOf path: " + typeof (this.state.path));
 		return (
-			<main id="content" dangerouslySetInnerHTML={this.createMarkup()} />
+			<main id="content">{this.state.contentHTML}</main> 
 		);
 	}
 }

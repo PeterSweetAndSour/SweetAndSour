@@ -1,6 +1,7 @@
 <?php
 include '../../sweetandsour_conf.php';
 include '../includes/act_getDBConnection.php';
+include '../includes/fn_transformHTMLEntities.php';
 
 header("Content-Type:application/json");
 
@@ -27,7 +28,7 @@ if (isset($_GET['path'])) {
 				$arr["path"], 
 				$arr["html"],
 				$arr["showMenu"],
-				$arr["showLinkToTop"],
+				$arr["showLinkToTop"], 
 				200, "
 				Success"
 			);
@@ -48,6 +49,9 @@ else {
 }
 
 function response($path, $contentHTML, $showMenu, $showLinkToTop, $responseCode, $responseDesc){
+	// Since React can't handle HTML entities, any in the content need to be transformed to hex codes.
+	$contentHTML = transformHTMLEntities($contentHTML);
+
 	$response["path"] = $path;
 	$response["contentHTML"] = $contentHTML;
 	$response["showMenu"] = $showMenu;
@@ -55,9 +59,10 @@ function response($path, $contentHTML, $showMenu, $showLinkToTop, $responseCode,
 	$response['response_code'] = $responseCode;
 	$response['response_desc'] = $responseDesc;
 
-	$jsonResponse = json_encode($response, JSON_FORCE_OBJECT);
+	$jsonResponse = json_encode($response);
 
 	header("Content-Type:application/json");
 	echo $jsonResponse;
 }
+
 ?>

@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 qry_menu.php
 This page creates a 2-D array of all menu items in display order.
 Algorithm from http://www.sitepoint.com/article/hierarchical-data-database/2
@@ -15,6 +15,7 @@ Variables:
 =>| fuseAction
 |=> $arr_menuData
 */
+include '../includes/fn_transformHTMLEntities.php';
 
 // retrieve the left and right value of the $root node
 $sql_root_node = <<<SQL1
@@ -66,12 +67,10 @@ $arr_menuData = array();
 while ($row = $rs_descendants->fetch_assoc()) {
 	// Before passing menuData back, change HTML entities to numbered equivalents
 	$displayText = $row['displayText'];
-	/*
-	$displayText = str_replace("&egrave;", "\u232;", $displayText);
-	$displayText = str_replace("&eacute;", "\u233;", $displayText);
-	$displayText = str_replace("&ndash;", "\u2013;", $displayText);
-	$displayText = str_replace("&mdash;", "\u2014;", $displayText);
-	*/
+	
+	// Since React can't handle HTML entities, any in the content need to be transformed to hex codes.
+	$displayText = transformHTMLEntities($displayText);
+
 
 	$arr_menuData[] = array("display_text" => $displayText, "menu_id" => $row["menuID"], "folder_name" => $row['folderName'], "fuse_action" => $row['fuseAction'], "menu_level" => $row["menuLevel"]);
 }
