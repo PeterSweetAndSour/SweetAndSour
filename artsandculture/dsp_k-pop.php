@@ -47,7 +47,7 @@
 
 <h2 id="peters-kpop-selection">Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 16<sup>th</sup> August 2023)</p>
+	<p class="subtitle">(As of 29<sup>th</sup> October 2023)</p>
 </div>
 
 <h3>BTS</h3>
@@ -529,6 +529,7 @@
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=ZeerrnuLi5E" target="_blank" class="external">Black Mamba</a> Their debut single has 148 million views after 6 months! </li>
 		<li><a href="https://www.youtube.com/watch?v=4TWR90KJl84" target="_blank" class="external">Next Level</a> For anyone that knows about video production, I am intrigued by the spaceship module at 0:24&mdash;did they make a real, physical thing to show for 1 second in the video, or is it computer generated? Either way, it is impressive.</li>
+		<li><a href="https://www.youtube.com/watch?v=Os_heh8vPfs" target="_blank" class="external">Spicy</a></li>
 	</ul>
 </div>
 
