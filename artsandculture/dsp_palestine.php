@@ -98,7 +98,7 @@ if($fuseAction == "injustice") {
   
 <div class="story">
 	<div class="imgInColumn">
-		<a href="<?=$rootRelativeUrl ?>imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=Partition2.jpg"><img src="<?=$rootRelativeUrl ?>artsandculture/images/Partition1.jpg" border="0"></a>
+		<a href="<?=$rootRelativeUrl ?>imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=Partition2.jpg"><img src="<?=$rootRelativeUrl ?>artsandculture/images/Partition1.jpg"></a>
 	</div>
 
 	<div class="caption captionInColumn offset">
@@ -110,7 +110,7 @@ if($fuseAction == "injustice") {
 <div class="story">
 	<ul class="endText">
 		<li>As the British were leaving in May 1948, the Jewish section of Palestine declared itself an independent country immediately plunging the new country into war with its Arab neighbours and native Palestinian population.</li>
-		<li>MAP 2: The Israelis captured all the land allocated to them under the 1947 plan plus a significant portion allocated to the Arabs:
+		<li>The Israelis captured all the land allocated to them under the 1947 plan PLUS a significant portion allocated to the Arabs:
 			<ol>
 				<li>HALF OF JERUSALEM which was supposed to be under international control</li>
 				<li>territory so that GAZA IS CUT OFF FROM THE WEST BANK</li>
@@ -121,21 +121,20 @@ if($fuseAction == "injustice") {
 
 <div class="story">
 	<div class="imgInColumn">
-		<? setThumbnail("IsraelMap.jpg", "https://www.cia.gov/library/publications/the-world-factbook/attachments/maps/IS-map.gif"); ?>
+		<a href="https://www.bbc.com/news/world-middle-east-54116567"><img src="<?=$rootRelativeUrl ?>artsandculture/images/IsraelMap_20231030.webp"></a>
 	</div>
 	<div class="caption captionInColumn offset">
-		<p>Map 2: The modern state of Israel as recognized by the non-Arab world (this map is from the 2000 CIA Factbook).  The map I used from 2000 had stars (*) next to the West Bank and Gaza Stip.  These areas, and the &quot;Golan Heights&quot; taken from Syria, were  were captured in 1967 and occupied since but the current map removes the stars (though the note talks about areas being subject to negotiation) and reflecting another change in US policy, now shows the Golan Heights as part of Israel.</p>
+		<p>Map 2: The borders of Israel <a href="https://en.wikipedia.org/wiki/International_recognition_of_Israel" class="external" target="_blank">as recognized</a> by most countries (many in the Arab world do not) follow the lines established by the armistice that ended the fighting. Click to see the original in &ldquo;Israel&apos;s borders explained in maps&rdquo; on the BBC website.</p>
 	</div>
 </div>
 
 
 <div class="story">
 	<ul class="endText">
-		<li>The lines drawn after the fighting stopped became the borders of the new state of Isreal that most of the world recognized - the Arab states did not.</li>
 		<li>The United Nations estimates 700,000 to 800,000 Palestinians were forced to flee their homes and land going to Arab Palestine and to surrounding countries (Egypt, Jordon, Syria and Lebanon)</li>
 		<li>Successive Israeli governments denied the Palestinian refugees the right of return, or any monetary compensation.</li>
-		<li>With the partial exception of Jordon, surrounding countries did not grant citizenship.  Assimilating the refugees would remove the problem of the Palestinians and Isreal from international attention and upset local ethnic balances.</li>
-		<li>Displaced Palestinians remained refugees.  Camps became permanent.  Palestinians are therefore stateless.  THEY STILL ARE.  They have been refugees for 52 years!  The original refugees have had grand-children born in the camps!  They have limited ability to work and travel.</li>
+		<li>With the partial exception of Jordon, surrounding countries did not grant citizenship. Assimilating the refugees would remove the problem of the Palestinians and Isreal from international attention and upset local ethnic balances.</li>
+		<li>Displaced Palestinians remained refugees. Camps became permanent.  Palestinians are therefore stateless. THEY STILL ARE. They have been refugees for 52 years! [Now 75 years in 2023!]  The original refugees have had grand-children born in the camps!  They have limited ability to work and travel.</li>
 		<li>150,000 stayed and became Israeli citizens</li>
 	</ul>
 </div>
@@ -155,17 +154,18 @@ if($fuseAction == "injustice") {
 		</ol>
 		<li>A new flood of 300,000 refugees followed, many of them refugees from the 1948 war.</li>
 		<li>Captured land is not recognized by any country, described as &quot;occupied territories&quot;</li>
-		<li>Map 3 - vigorous campaign of Jewish settlements in the occupied territories, including east Jerusalem to make it more difficult to give back</li>
+		<li>A vigorous campaign of Jewish settlements in the occupied territories, including east Jerusalem to make it more difficult to give back</li>
 	</ul>
 </div>
 
 <div class="story">
 	<div class="imgInColumn">
-		<? setThumbnail("Settlements.gif", "https://unispal.un.org/UNISPAL.NSF/cf02d057b04d356385256ddb006dc02f/96fd41bb37e40f8685256b98006ec72a?OpenDocument"); ?>
+		<? setThumbnail("Settlements.gif", "https://www.un.org/unispal/document/auto-insert-204082/"); ?>
 	</div>
 	<div class="caption captionInColumn offset">
-		<p>Map 4: While even the UN uses the term "settlements", it seems clear that the intent is to occupy the land making it difficult, if not impossible, to give back to any future Palestinian state.  With the "settlements" in place, Israel has an excuse to maintain a "security" (i.e. military) presence inside its neighbor and by fragmenting the state, makes it less viable.</p>
+		<p>Map 3: While even the UN uses the term "settlements", it seems clear that the intent is to occupy the land making it difficult, if not impossible, to give back to any future Palestinian state.  With the "settlements" in place, Israel has an excuse to maintain a "security" (i.e. military) presence inside its neighbor and by fragmenting the state, makes it less viable.</p>
 		<p>You can zoom in on the linked original document and read the text but even here, you can see that &ldquo;settlement&rdquo; has been comprehensive.</p>
+		<p>[Update: Israel forced the settlers in Gaza to leave and withdrew its military in 2005 but it maintains control of 6 of the 7 border crossings plus the airspace and access from the sea. Israel and Egypt reached agreement over control of the 7th border crossing (Rafah) and it is only for people, not goods.]</p>
 	</div>
 </div>
 

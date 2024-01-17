@@ -16,7 +16,7 @@ function getPhotoUrl($photoName, $folderName, $grandparentFolderName, $rootRelat
 	
 	//Determine whether to use the plain or versioned file name
 	if($useVersionedFiles) {
-		$photoFileName = preg_replace ('/\.(jpg|gif)/', "_" . $version . ".$1", $photoName);
+		$photoFileName = preg_replace ('/\.(jpg|gif|webp)/', "_" . $version . ".$1", $photoName);
 	}
 	else {
 		$photoFileName = $photoName;
