@@ -47,13 +47,13 @@
 
 <h2 id="peters-kpop-selection">Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 29<sup>th</sup> October 2023)</p>
+	<p class="subtitle">(As of 16<sup>th</sup> January 2024)</p>
 </div>
 
 <h3>BTS</h3>
 <div class="story">
 	<p>I have to mention boy band BTS first because if you have heard of any K-pop group, it was almost certainly BTS as they are huge. They are unusual in that they write a lot of their material</p>
-
+	<p>James Cardin did a hilarious <a href="https://www.youtube.com/watch?v=T4x7sDevVTY" target="_blank" class="external">Carpool Karaoke with BTS</a>. Such a nice group of young men.</p>
 	<ul>
 		<li
 			<p><a href="https://www.youtube.com/watch?v=XsX3ATc3FbA" target="_blank" class="external">Boy With Luv</a> (1.2 billion views as of 2021-05-22) I <strong>love</strong> their 2019 hit but that was the first song of theirs that I liked.</p>
@@ -428,6 +428,7 @@
 		now has 1.1 billion views!
 	</p>
 	<p>They released <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank" class="external">How you like that</a> on 2020-06-26 and it set a new record on YouTube of <a href="https://www.forbes.com/sites/hughmcintyre/2020/06/29/blackpinks-new-music-video-officially-break-the-record-for-the-most-views-in-24-hours-on-youtube/#1c8b7429460d" target="_blank" class="external">86.3 million views in the first 24 hours</a>! However, it does not appeal to me &ndash; they seem too much like American rappers &ndash; though I do appreciate the Arabic(?) vibe at 1:12.</p>
+	<p>James Cardin also did <a href="https://www.youtube.com/watch?v=gUmE_TRdp0s" target="_blank" class="external">Carpool Karaoke with Blackpink</a>!</p>
 </div>
 
 <h3 id="Astro">Astro</h3>
@@ -445,6 +446,11 @@
 		<li><a href="https://www.youtube.com/watch?v=wS7anrSXKrY" target="_blank" class="external">Blue Flame</a></li>
 		<li><a href="https://www.youtube.com/watch?v=XxlsLmHwCSk" target="_blank" class="external">One</a></li>
 	</ul>
+</div>
+
+<h3>Chuu fron LOONA</h3>
+<div class="story">
+	<p><a href="https://www.youtube.com/watch?v=BVVfMFS3mgc" target="_blank" class="external">Heart Attack</a>. From the Wikipedia article, &ldquo;<em>The group is composed of eleven members: Heejin, Hyunjin, Haseul, Vivi, Yeojin, Kim Lip, Jinsoul, Choerry, Yves, Go Won, and HyeJu (formerly Olivia Hye). Originally a twelve-member group, Chuu was removed from the line-up on November 25, 2022, due to a contract dispute.</em>&rdquo; The concensus on <a href="https://www.reddit.com/r/kpop/comments/z48d3r/blockberry_creative_kicks_chuu_from_loona/" target="_blank" class="external">K-pop Reddit</a> was that she was badly mistreated.</p>
 </div>
 
 
