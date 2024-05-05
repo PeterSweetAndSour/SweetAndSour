@@ -47,7 +47,7 @@
 
 <h2 id="peters-kpop-selection">Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 16<sup>th</sup> January 2024)</p>
+	<p class="subtitle">(As of 5<sup>th</sup> May 2024)</p>
 </div>
 
 <h3>BTS</h3>
@@ -269,7 +269,16 @@
 			2023-07-13 <a href="https://www.youtube.com/watch?v=woKq2sD8xho" target="_blank" class="external">Don't touch me</a> from MiSaMo. Like <a href="https://www.youtube.com/watch?v=qniDJuWrGyk" target="_blank" class="external">works of art</a> in a museum that are referenced in the video, you can admire but you cannot touch.
 		</li>
 	</ul>
-	<p>On the 6th of July (2023), I went to the Twice concert at the Metlife stadium near New York! What fantastic evening with 50,000+ other screaming fans!! There was a lot of screaming. I've not been to a concert bigger than a few hundred for over 20 years so I had nothing to really compare it to but the members, the band, the set, the everything was perfect. I love them even more now. I pusted <a href="https://www.instagram.com/p/Cuh4xbzOdjB/?img_index=1" target="_blank" class="external">a few photos on Instagram</a> and uploaded a video of <a href="https://www.youtube.com/watch?v=KzOUd0ecvus" target="_blank" class="external">Yes or yes, What is love & Cheer up</a></p>
+	<p>On the 6th of July (2023), I went to the Twice concert at the Metlife stadium near New York! What fantastic evening with 50,000+ other screaming fans!! There was a lot of screaming. I've not been to a concert bigger than a few hundred for over 20 years so I had nothing to really compare it to but the members, the band, the set, the everything was perfect. I love them even more now. I pusted <a href="https://www.instagram.com/p/Cuh4xbzOdjB/?img_index=1" target="_blank" class="external">a few photos on Instagram</a> and uploaded a video of <a href="https://www.youtube.com/watch?v=KzOUd0ecvus" target="_blank" class="external">Yes or yes, What is love & Cheer up</a>
+	</p>
+	<ul>
+		<li>
+			2024-02-01 <a href="https://www.youtube.com/watch?v=haf67eKF0uo" target="_blank" class="external">I got you</a>, the preview for their upcoming album. This is a more contemplative song than usual and while it did not grab me immediately, it keeps playing in my head and I've come to appreciate it. However, after watching the official music video, you <em>really</em> need to see the <a href="https://www.youtube.com/watch?v=fwPjD-jFsls" target="_blank" class="external">cheering guide</a> in which you see them at their raw, chaotic best&hellip; and they manage to stretch the word "Twice" into <em>too-why-ee-sa</em>. It's hilarious.
+		</li>
+		<li>
+			2024-02-24 <a href=https://www.youtube.com/watch?v=jCzez_q8si0" target="_blank" class="external">One Spark</a>, the single from <em>I GOT YOU-th</em>.
+		</li>
+	</ul>
 </div>
 
 <h3 id="SNSD">Girls Generation a.k.a SNSD</h3>
@@ -334,33 +343,20 @@
 <div class="story">
 	<p>He and Taeyang started as trainees when they were 12! I have to include two versions:</p>
 	<ul>
-		<li><a href="https://www.youtube.com/watch?v=q-QECyIy3QQ&amp;sa=D&amp;ust=1590612821752000">Missing You</a> with <strong>IU</strong> who is famous in her own right</li>
-		<li>The same song with <a href="https://www.youtube.com/watch?v=e0M-Mdmz4HM&amp;sa=D&amp;ust=1590612821752000">SooHyan</a>
+		<li><a href="https://www.youtube.com/watch?v=q-QECyIy3QQ&amp;sa=D&amp;ust=1590612821752000" target="_blank" class="external">Missing You</a> with <strong>IU</strong> who is famous in her own right</li>
+		<li>The same song with <a href="https://www.youtube.com/watch?v=e0M-Mdmz4HM&amp;sa=D&amp;ust=1590612821752000" target="_blank" class="external">SooHyan</a>
 			from brother/sister act <strong>AK Musician</strong>. This video is notable for what does NOT happen - at 3:29 he pretends to go for a hug but it seems touching is not acceptable behavior for South Korean audiences so they don't.</li>
 	</ul>
 </div>
 
-<h3>Psy</h3>
+<h3>BlackPink</h3>
 <div class="story">
-	<p>
-		Although he is famous for the novelty song
-		<a href="https://www.youtube.com/watch?v=9bZkp7q19f0" target="_blank" class="external">Gangnam Style</a>
-		(now 4.5 billion views as of Sept 2022!) but he is a serious entertainer. He does a lovely thoughtful song that has two very different versions&hellip;
+	<p>I am not a big fan of BlackPink but I am including them here because they are <strong>so</strong> popular. I learned only in 2023 that Rosé was born in New Zealand and grew up in Australia. (Jennie lived in New Zealand for five years starting at age 9 and so is also comfortable in English. Lisa, from Thailand, speaks English too and having 3 English speakers gave them an edge in the global music business.)</p>
+	
+	<p>As of February 2024, <a href="https://www.youtube.com/watch?v=IHNzOHi8sJs" target="_blank" class="external">DDU-DU DDU-DU</a> has 2.1 <em>billion</em> views! That puts them at #72 on the list of <a href="https://kworb.net/youtube/topvideos.html" target="_blank" class="external">most popular Youtube videos of all time</a>, ahead even of BTS (at #114). The <a href="https://www.youtube.com/watch?v=jOJbXvjZ-cQ" target="_blank" class="external">dance practice video</a> has another 498 millin views!
 	</p>
-	<ul>
-		<li>
-			<a href="https://www.youtube.com/watch?v=cHbNaFNoHCY" target="_blank" class="external">What would have been</a> with IU
-		</li>
-		<li>a <a href="https://www.youtube.com/watch?v=vk97viN2Xdk" target="_blank" class="external">faster version</a> with Park Bom.
-		</li>	
-	</ul>	
-</div>
-
-<h3>Park Bom</h3>
-<div class="story">
-	<p>
-		She was in a  from the cleverly named <strong>2NE1</strong> and released <a href="https://www.youtube.com/watch?v=ypit0NcNV-8&amp;sa=D&amp;ust=1590612821754000">Don&#39;t cry</a> as a solo effort.
-	</p>
+	<p>They released <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank" class="external">How you like that</a> on 2020-06-26 and it set a record on YouTube of <a href="https://www.forbes.com/sites/hughmcintyre/2020/06/29/blackpinks-new-music-video-officially-break-the-record-for-the-most-views-in-24-hours-on-youtube/#1c8b7429460d" target="_blank" class="external">86.3 million views in the first 24 hours</a>! (Later broken by BTS with <em>Butter</em> and <em>Dynamite</em>)</p>
+	<p>James Cardin did <a href="https://www.youtube.com/watch?v=gUmE_TRdp0s" target="_blank" class="external">Carpool Karaoke with Blackpink</a>!</p>
 </div>
 
 <h3 id="redVelvet">Red Velvet</h3>
@@ -406,6 +402,16 @@
 	</ul>
 </div>
 
+<h3>Illit</h3>
+<div class="story">
+	<p><a href="https://www.youtube.com/watch?v=Vk5-c_v4gMU" target="_blank" class="external">Magnetic</a></p>
+</div>
+
+<h3>Kep1er</h3>
+<div class="story">
+	<p><a href="https://www.youtube.com/watch?v=yzNY2lLqw6k" target="_blank" class="external">Giddy</a>. A fantastic song and an exceptional dance practice video. There is also the actual <a href="https://www.youtube.com/watch?v=w9ueRzymcU0" target="_blank" class="external">music video</a> with 24 million views as of 2024-03-09.</p>
+</div>
+
 <h3>Woo!ah!</h3>
 <div class="story">
 	<p><a href="https://www.youtube.com/watch?v=KkyUE7TcBcs" target="_blank" class="external">Rollercoaster</a> Listen to this once and it will be in your head for a week! (A good thing.)</p>
@@ -421,38 +427,10 @@
 	<p><a href="https://www.youtube.com/watch?v=3-ptVHZZdBg" target="_blank" class="external">Bubble</a> I loved this on the first time hearing it which isn't even true for many Twice songs. I need to review their back catalog.</p>
 </div>
 
-<h3>BlackPink</h3>
-<div class="story">
-	<p>Although I had mild interest in some of their early work, I don&apos;t particularly enjoy their recent songs but I am including them here because they are so popular &ndash; 
-		<a href="https://www.youtube.com/watch?v=IHNzOHi8sJs" target="_blank" class="external">DDU-DU DDU-DU</a>
-		now has 1.1 billion views!
-	</p>
-	<p>They released <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank" class="external">How you like that</a> on 2020-06-26 and it set a new record on YouTube of <a href="https://www.forbes.com/sites/hughmcintyre/2020/06/29/blackpinks-new-music-video-officially-break-the-record-for-the-most-views-in-24-hours-on-youtube/#1c8b7429460d" target="_blank" class="external">86.3 million views in the first 24 hours</a>! However, it does not appeal to me &ndash; they seem too much like American rappers &ndash; though I do appreciate the Arabic(?) vibe at 1:12.</p>
-	<p>James Cardin also did <a href="https://www.youtube.com/watch?v=gUmE_TRdp0s" target="_blank" class="external">Carpool Karaoke with Blackpink</a>!</p>
-</div>
-
-<h3 id="Astro">Astro</h3>
-<div class="story">
-	<p>I don't pay much attention to the boy bands but this one caught my attention because they are so good! These guys should be way more famous than they are!</p>
-	<p>2023-04-20: Astro member Moonbin has apparently committed suicide. From the BBC: <a href="https://www.bbc.com/news/world-asia-65339082" target="_blank" class="external">Moonbin: Star's death renews scrutiny on pressures of K-pop</a>.</p>
-	<ul>
-		<li>
-			The <a href="https://www.youtube.com/watch?v=aBNyHAasnSM" target="_blank" class="external">official music video</a> for <strong>Breathless</strong> is OK but they really shine on the <a href="https://www.youtube.com/watch?v=_jJNJ2rZovg">dance practice video</a>. Keep your eye on the guy in the red and white shirt.  In the comments:<br><br>
-			<strong>Lazy Ace Dia</strong>2 years ago<br>
-			<em>I&apos;m not (usually) gay but Rocky makes me feel things<br>I&#39;m fine with this</em><br><br>
-			<strong>xxPotato Queenxx</strong> 6 months ago<br>		
-			<em>Lazy Ace Dia GO HOME ROCKY IS MINE</em>	
-		</li>
-		<li><a href="https://www.youtube.com/watch?v=wS7anrSXKrY" target="_blank" class="external">Blue Flame</a></li>
-		<li><a href="https://www.youtube.com/watch?v=XxlsLmHwCSk" target="_blank" class="external">One</a></li>
-	</ul>
-</div>
-
 <h3>Chuu fron LOONA</h3>
 <div class="story">
 	<p><a href="https://www.youtube.com/watch?v=BVVfMFS3mgc" target="_blank" class="external">Heart Attack</a>. From the Wikipedia article, &ldquo;<em>The group is composed of eleven members: Heejin, Hyunjin, Haseul, Vivi, Yeojin, Kim Lip, Jinsoul, Choerry, Yves, Go Won, and HyeJu (formerly Olivia Hye). Originally a twelve-member group, Chuu was removed from the line-up on November 25, 2022, due to a contract dispute.</em>&rdquo; The concensus on <a href="https://www.reddit.com/r/kpop/comments/z48d3r/blockberry_creative_kicks_chuu_from_loona/" target="_blank" class="external">K-pop Reddit</a> was that she was badly mistreated.</p>
 </div>
-
 
 <h3>Cherry Bullet</h3>
 <div class="story">
@@ -555,6 +533,46 @@
 	</p>
 </div>
 
+
+<h3>Psy</h3>
+<div class="story">
+	<p>
+		Although he is famous for the novelty song
+		<a href="https://www.youtube.com/watch?v=9bZkp7q19f0" target="_blank" class="external">Gangnam Style</a>
+		(now 4.5 billion views as of Sept 2022!) but he is a serious entertainer. He does a lovely thoughtful song that has two very different versions&hellip;
+	</p>
+	<ul>
+		<li>
+			<a href="https://www.youtube.com/watch?v=cHbNaFNoHCY" target="_blank" class="external">What would have been</a> with IU
+		</li>
+		<li>a <a href="https://www.youtube.com/watch?v=vk97viN2Xdk" target="_blank" class="external">faster version</a> with Park Bom.
+		</li>	
+	</ul>	
+</div>
+
+<h3>Park Bom</h3>
+<div class="story">
+	<p>
+		She was in a  from the cleverly named <strong>2NE1</strong> and released <a href="https://www.youtube.com/watch?v=ypit0NcNV-8&amp;sa=D&amp;ust=1590612821754000">Don&#39;t cry</a> as a solo effort.
+	</p>
+</div>
+
+<h3 id="Astro">Astro</h3>
+<div class="story">
+	<p>I don't pay much attention to the boy bands but this one caught my attention because they are so good! These guys should be way more famous than they are!</p>
+	<p>2023-04-20: Astro member Moonbin has apparently committed suicide. From the BBC: <a href="https://www.bbc.com/news/world-asia-65339082" target="_blank" class="external">Moonbin: Star's death renews scrutiny on pressures of K-pop</a>.</p>
+	<ul>
+		<li>
+			The <a href="https://www.youtube.com/watch?v=aBNyHAasnSM" target="_blank" class="external">official music video</a> for <strong>Breathless</strong> is OK but they really shine on the <a href="https://www.youtube.com/watch?v=_jJNJ2rZovg">dance practice video</a>. Keep your eye on the guy in the red and white shirt.  In the comments:<br><br>
+			<strong>Lazy Ace Dia</strong>2 years ago<br>
+			<em>I&apos;m not (usually) gay but Rocky makes me feel things<br>I&#39;m fine with this</em><br><br>
+			<strong>xxPotato Queenxx</strong> 6 months ago<br>		
+			<em>Lazy Ace Dia GO HOME ROCKY IS MINE</em>	
+		</li>
+		<li><a href="https://www.youtube.com/watch?v=wS7anrSXKrY" target="_blank" class="external">Blue Flame</a></li>
+		<li><a href="https://www.youtube.com/watch?v=XxlsLmHwCSk" target="_blank" class="external">One</a></li>
+	</ul>
+</div>
 
 <h3>&hellip;and so much more!</h3>
 <div class="story">
