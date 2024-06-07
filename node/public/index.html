@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://dc.gov/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" href="index.css">
+    <style id="colorsStylesheet">
+        /* Updated dynamically */
+        .notARealStyle {color: black;}
+    </style>
+    <title>Minimlist chat App</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Send a message to everyone&hellip;</h1>
+        <div id="messages" class="messages"></div>
+
+        <form id="msgForm">
+            <div class="formRow" id="firstNameRow">
+							<input type="text" class="input" id="firstName" required />
+							<label class="floatingLabel">First name</label>              
+            </div>
+            
+						<div class="bottom">
+							<div class="msgForm formRow">
+								<input type="text" class="input" id="inputBox" required />
+								<label class="floatingLabel">Your message</label>
+
+								<input type="submit" class="btn" value="Send">
+								<p class="hidden" id="changeColor"><a>Change message color!</a></p>
+							</div>
+
+
+							<!-- Color Picker Script - ColorCodeHex.COM -->
+							<div class="formRow" id="colorPickerCtrl">
+									<div class="colorPickerOuter">
+										<div class="colorPickerInner">Pick message color</div>
+									</div>
+									<script src="https://ww.colorcodehex.com/color-picker/abcdef.html" type="text/javascript"></script></div> 
+							</div>
+							<!-- End of Color Picker Script -->
+						</div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        const ws = new WebSocket(`ws://${window.document.location.host}/node`);
+        ws.binaryType = "blob";
+
+        const styleSheets = document.styleSheets;
+        let stylesheet;
+        for (let i = 0; i < styleSheets.length; i++) {
+            if(styleSheets[i].ownerNode.id === "colorsStylesheet"){
+                stylesheet = styleSheets[i];
+             }
+        }
+
+ 
+
+        // Log socket opening and closing
+        ws.addEventListener("open", event => {
+            console.log("Websocket connection opened");
+        });
+
+        ws.addEventListener("close", event => {
+            console.log("Websocket connection closed");
+        });
+
+        ws.onmessage = function (data) {
+
+						/*
+            if (data.data instanceof Blob) { // Blob = binary large object. For file transfers, I guess.
+                reader = new FileReader();
+                reader.onload = () => {
+                    msgDiv.innerHTML = reader.result;
+                    document.getElementById('messages').appendChild(msgDiv);
+                };
+                reader.readAsText(data.data);
+            } 
+						else {
+							*/
+                const dataObj = JSON.parse(data.data); // an array
+								let msgObj = {};
+								for(let i=0; i<dataObj.length; i++) {
+									msgObj = dataObj[i];
+									displayMessage(msgObj);
+							}
+           //}
+        }
+
+        const form = document.querySelector('#msgForm');
+				const changeColorCtrl = document.querySelector("#colorPickerCtrl");
+
+				const changeColorLink = document.querySelector("#changeColor");
+				changeColorLink.addEventListener("click", function() {
+					changeColorCtrl.classList.remove("hidden");
+					changeColorLink.classList.add("hidden");
+				});
+
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            let messageTxt = document.querySelector("#inputBox").value;
+            const firstNameField = document.querySelector("#firstName");
+						const firstName = firstNameField.value;
+            let bgColor = document.querySelector("#colorhex").value;
+						let now = new Date();
+						let timestamp = now.toLocaleDateString();
+            ws.send(JSON.stringify({ "messageTxt": messageTxt, "firstName": firstName, "bgColor": bgColor, "timestamp":  timestamp}));
+           	messageTxt = "";
+						firstNameField.setAttribute("type", "hidden");
+						changeColorCtrl.classList.add("hidden");
+						changeColorLink.classList.remove("hidden");
+        })
+
+				const displayMessage = function(msgObj) {
+								const messageTxt = msgObj.messageTxt;
+                const firstName = msgObj.firstName;
+                const bgColor = msgObj.bgColor;
+                const colors = msgObj.colors;
+								const timestamp = msgObj.timestamp;
+								const messages = document.querySelector("#messages");
+
+                console.log("Result2: " + messageTxt);
+
+								const dateline = document.createElement("span");
+								dateline.classList.add("dateline");
+								dateline.innerHTML = timestamp;
+
+								const byline = document.createElement("p");
+								byline.classList.add("byline");
+								byline.innerHTML = firstName;
+								byline.appendChild(dateline);
+								messages.appendChild(byline);
+
+								const msgDiv = document.createElement('div');
+            		msgDiv.classList.add('message');
+                msgDiv.innerHTML = messageTxt;
+                msgDiv.classList.add(firstName);
+                messages.appendChild(msgDiv);
+
+                //Update stylesheet
+                const keys = Object.keys(colors);
+                let cssRuleFound = false;
+                keys.forEach((key, index) => {
+                    console.log(key + ": " + colors[key]);
+
+                    if(stylesheet && key === firstName) {
+                        let cssRules = stylesheet.cssRules;
+                         for(let j=0; j<cssRules.length; j++) {
+                            if(cssRules[j].selectorText === "." + key) {
+                                cssRuleFound = true;
+                                cssRules[j].style.backgroundColor = "#" + colors[key];
+                            }
+                        }
+                        if(!cssRuleFound) {
+                            stylesheet.insertRule("." +key + " {background-color: #" + colors[key] + " }");
+                        }
+                    }
+                });
+
+				}
+    </script>
+</body>
+
+</html>
