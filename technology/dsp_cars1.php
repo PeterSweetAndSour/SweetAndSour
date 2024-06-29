@@ -1,11 +1,11 @@
-<? //dsp_cars1.php ?>
+<?php //dsp_cars1.php ?>
 
 <div class="photo-gallery">
 	<h2>My favorite car</h2>
 	<div class="story">
 		<p>You'll be surprised! You'll be amazed! It&rsquo;s not a Ferrari. It&rsquo;s not a BMW. It&rsquo;s not even the 1984 Nissan Pulsar (right), though I did quite like that car. It&rsquo;s not big or fast but it is beautiful in a minimalist way and I haven't seen one for years. I wish I had bought one as soon as I had a driver&rsquo;s licence when there were still some left. I present, <a href="<?=$rootRelativeUrl ?>imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=Z600View1.jpg&forceCapBelow=true">my favorite car</a>.</p>
 	</div>
-	<? setThumbnail("NissanPulsar1.jpg"); ?>
+	<?php setThumbnail("NissanPulsar1.jpg"); ?>
 
 	<h2>General comments</h2>
 	<div class="story">
@@ -18,5 +18,5 @@
 		<p>However, I recognize that in Australian and American cities, riding a small motorbike is just too dangerous. Also, you get cold and wet if the weather is unfavorable. I've caught trains or buses to work at some of my jobs including here in Denver, but especially in most American cities, it is not practical to get around that way so it seems we are stuck with the car.</p>
 		<p>The models shown on the next page indicate where we may be headed. Each has some special features and I'd like one of each. It also needs updating since the world has moved since I originally did this in 1999.</p>
 	</div>
-	<? setThumbnail("MokeGreen1.jpg"); ?>
+	<?php setThumbnail("MokeGreen1.jpg"); ?>
 </div>

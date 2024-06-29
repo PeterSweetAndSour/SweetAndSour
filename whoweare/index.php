@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 index.php for "Who we are". */
 
 include '../../sweetandsour_conf.php';

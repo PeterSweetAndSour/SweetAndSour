@@ -1,4 +1,4 @@
-<? //dsp_letter7a.php ?>
+<?php //dsp_letter7a.php ?>
 
 <div class="story">
    <p>12 December 1996</p>
@@ -16,7 +16,7 @@
    <p class="endText">I have new competition for Lan&rsquo;s attention now.  You may recall that Lan started learning piano before we left but her sore shoulder prevented her from playing towards the end.  She has now been pianoless for two full years and is so happy to have another to practice on.  She has quickly returned to the point where she was and is now learning new material.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("LanAtPiano1.jpg");
 	?>
 </div>

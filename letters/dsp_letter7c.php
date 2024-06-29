@@ -1,4 +1,4 @@
-<? //dsp_letter7c.php ?>
+<?php //dsp_letter7c.php ?>
 
 <h2>Life in America</h2>
 <div class="story">
@@ -15,7 +15,7 @@
    <p class="endText">Interesting statistic:  just 3% those borrowing money to buy a car fail to keep up with loan payments and have the car repossessed. In contrast, 39% of divorced fathers directed to pay child support, fail to do so.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["VietnamWall1b.jpg", "VietnamWall1a.jpg"]);
 	?>
 </div>

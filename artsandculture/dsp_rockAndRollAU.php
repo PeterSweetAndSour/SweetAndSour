@@ -1,4 +1,4 @@
-<? //dsp_rockAndRoll_1.php ?>
+<?php //dsp_rockAndRoll_1.php ?>
 
 <h2>Introduction</h2>
 <div class="story">

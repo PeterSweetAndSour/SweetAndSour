@@ -1,4 +1,4 @@
-<? //dsp_letter14a.php ?>
+<?php //dsp_letter14a.php ?>
 
 <div class="story">
 	<p>7 March 2001</p>
@@ -23,7 +23,7 @@
 	<p class="endText">I've started doing the prerequisites to the prerequisites so I can get a master&rsquo;s degree in computer science at Colorado University but it will be years before I finish.  By the time I'm 40, I should be able to compete with 22-year-olds finishing their degree. Still, while employers value a degree, it will be largely useless garbage, just like my engineering degree, so there is a huge amount of current technology I need to learn and certifications I need to gain.  I still need to do one more class at the community college to finish my "Associate Degree" too.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("AcrobatIcon_Ltr14.gif", $rootRelativeUrl . "letters/files/Letter14.pdf");
 	setThumbnail("Passport1.jpg");
 	?>

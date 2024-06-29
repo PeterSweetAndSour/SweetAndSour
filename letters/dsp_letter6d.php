@@ -1,4 +1,4 @@
-<? //dsp_letter6d.php ?>
+<?php //dsp_letter6d.php ?>
 
 <h2>What&rsquo;s news in America</h2>
 <div class="clearfix">
@@ -28,7 +28,7 @@
 	<p class="endText">You may be interested know that if you live in Los Angeles, you have a lower chance of having your house burgled than if you live in Sydney but you are 20 times more likely to be murdered.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("MixedMarraige1.jpg");
 	?>
 </div>

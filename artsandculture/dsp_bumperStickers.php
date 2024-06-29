@@ -1,4 +1,4 @@
-<? //dsp_bumperStickers.php ?>
+<?php //dsp_bumperStickers.php ?>
 
 <h2>Purpose statement</h2>
 <div class="story">

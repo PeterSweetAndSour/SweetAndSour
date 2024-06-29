@@ -1,4 +1,4 @@
-<? /* 
+<?php /* 
 act_deletePhoto.php
 
 Deletes a photo from the database, not the photo itself.

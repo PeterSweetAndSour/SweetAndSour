@@ -2,7 +2,7 @@
 	<p class="endText">While looking for a computer book at the library, I stumbled over a paperback that suggested a list of books that we might read during a lifetime. Although I am not much of a reader, especially of fiction as most of the following are, I think it was a great concept and goal to aim at. To be an informed member of society, it is nice to know a little about the most important pieces of literature from around the world.  Some entries are for short books, others such as Shakespear's complete work are rather more ambitious.  Here then is the table of contents from <i>The New Lifetime Reading Plan</i> by Clifton Fadiman & John S. Major:</p>
 </div>
 <div class="photo-gallery">
-	<? setThumbnail("LanGoodWeekend1.jpg"); ?>
+	<?php setThumbnail("LanGoodWeekend1.jpg"); ?>
 </div>
 
 <h2>PART ONE</h2>

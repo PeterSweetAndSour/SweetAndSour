@@ -1,9 +1,9 @@
-<? //dsp_aust2007.php ?>
+<?php //dsp_aust2007.php ?>
 
 <h2>Australia 1 Dec 07 &ndash; 17 Dec 07</h2>
 
 <div class="photo-gallery">
-   <?
+   <?php
    setThumbnail([
 	   "001_harbourbridgefromtrainSm.jpg",
 		"002_mapSm.gif",

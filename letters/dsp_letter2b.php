@@ -1,4 +1,4 @@
-<? //dsp_letter2b.php ?>
+<?php //dsp_letter2b.php ?>
 
 <h2>First impressions</h2>
 <div class="story">

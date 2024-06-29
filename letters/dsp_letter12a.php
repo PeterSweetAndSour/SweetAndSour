@@ -1,4 +1,4 @@
-<? //dsp_letter12a.php ?>
+<?php //dsp_letter12a.php ?>
 
 <div class="story">
 	<p>12 January 1999

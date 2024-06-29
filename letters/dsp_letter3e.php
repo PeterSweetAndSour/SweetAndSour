@@ -1,4 +1,4 @@
-<? //dsp_letter3e.php ?>
+<?php //dsp_letter3e.php ?>
 
 <h2>In brief</h2>
 <div class="story">

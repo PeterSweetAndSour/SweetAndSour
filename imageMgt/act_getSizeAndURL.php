@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 act_getSizeAndURL.php
 Assumes images are always are in an images subdirectory.
 

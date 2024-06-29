@@ -1,4 +1,4 @@
-<? //dsp_kitchen.php 
+<?php //dsp_kitchen.php 
 //Views of kitchen renovation in Turramurra house.
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -16,7 +16,7 @@
 	<p>While it took far more time and money than I expected, I was quite pleased with the final result.</p>
 	</div>
 	<br class="clear" />
-   <?
+   <?php
    setThumbnail("Frame1.jpg");
    
    setThumbnail("KitchenViewA1.jpg");

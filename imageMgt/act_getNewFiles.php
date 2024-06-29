@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 act_getNewFiles.php
 Get the files in this image directory that are not already in the database
 

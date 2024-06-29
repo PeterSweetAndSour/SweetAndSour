@@ -1,4 +1,4 @@
-<? //dsp_letter17d.php ?>
+<?php //dsp_letter17d.php ?>
 
 <h2>Miscellaneous</h2>
 <div class="story">
@@ -12,7 +12,7 @@
    <p class="endText">If you use the internet and still use Microsoft&apos;s <i>Internet Explorer</i>, I&apos;m guessing that&apos;s because you are unaware of a new and better alternative. <i>Firefox</i> offers much better security, tabbed browsing, popup blockers and more. It is one of a new breed of &apos;standards-compliant&apos; browsers including <i>Opera</i>, <i>Safari</i> and <i>Konqueror</i> that are built around open standards rather than locking you into one company&apos;s (i.e. Microsoft&apos;s) vision of how the internet should operate. Download it now: <a class="external" href="http://www.mozilla.org/" target="_blank">http://www.mozilla.org/</a>.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["CharlotteEleanor1.jpg", "PeterBowling1.jpg"]);
 	?>
 </div>

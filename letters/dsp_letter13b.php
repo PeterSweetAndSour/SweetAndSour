@@ -1,4 +1,4 @@
-<? //dsp_letter13b.php ?>
+<?php //dsp_letter13b.php ?>
 
 <h2>Travels</h2>
 <div class="story">
@@ -19,7 +19,7 @@
 	<p class="endText">I intended visiting Fort Sumter at the mouth of Charleston Harbor where the first shots of the Civil War were fired.  However, I misunderstood the boat schedule and we couldn't get a ferry before we had to leave town to visit Lan&rsquo;s sister and her family in Charlotte, North Carolina.  We were there only from about 3pm one day until breakfast the next but it was well worth the trip to see them.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["PetrifiedStump1.jpg", "FloridaRoute1.jpg", "CastilloDeSanMarcos1.jpg", "FortMatanzasUs1.jpg", "Lighthouse1.jpg", "LighthouseSteps1.jpg", "SpanishMoss1.jpg", "SwampGarden1.jpg"]);
 	?>
 </div>

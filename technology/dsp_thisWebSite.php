@@ -1,4 +1,4 @@
-<? 
+<?php 
 //dsp_thisWebSite.php
 ?>
 <h2>2020 Site overhaul</h2>
@@ -85,7 +85,7 @@
    <p>Photographs are placed using the database which holds the name, caption, folder and any linked image for every photograph.  The file act_setThumbnailFunction.php defines a function called once for each thumbnail that writes out the HTML for the floating DIV, the image, link URL and caption.  If necessary, the link URL can be overridden.  The large image is shown using dsp_photoAndCaption.php which makes a call to the database to find the caption and places the caption to the side or below the image depending on its size.</p>
 </div>
 <div class="photo-gallery">
-	<? setThumbnail(["PeterAtWork1.jpg", "MoirePattern1.jpg", "WebSafeColors1.gif"]); ?>
+	<?php setThumbnail(["PeterAtWork1.jpg", "MoirePattern1.jpg", "WebSafeColors1.gif"]); ?>
 </div>
 
 

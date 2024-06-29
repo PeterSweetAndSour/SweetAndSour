@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 act_setVideo.php
 
 This function creates a clickable thumbnail to play videos inside the popup window. 
@@ -27,6 +27,6 @@ function setVideo($windowTitle, $linkUrl, $linkImg, $videoList) {
 			<img src="<?= $linkImg ?>" alt="<?= $windowTitle ?>" />
 		</a>
 	</div>
-	<?
+	<?php
 } 
 ?>

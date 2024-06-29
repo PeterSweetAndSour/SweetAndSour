@@ -1,4 +1,4 @@
-<? //dsp_sydney.php ?>
+<?php //dsp_sydney.php ?>
 <div class="story">
    <p>Sydney is a stunningly beautiful city, at least around the harbour, of 4 million people. As you can imagine, the harbour is the reason for the city&rsquo;s existance.</p>
    <p>Captain Cook sailed past in 1770 and noted it looked like a fine harbour, naming it Port Jackson. The first settlers arrived in 1788 though most of them did not come willingly. After the American revolution, England had no place to dump prisoners, so with the jails overflowing, 13 (?) ships were sent to Botany Bay where Cook landed.  It was quickly realized that there was no adequete water supply so they relocated Port Jackson, the next bay to the north. The Tank Stream provided water, Port Jackson was found to be extensive with deep water and permanent settlement was established. The central business district now occupies this site.</p>
@@ -9,7 +9,7 @@
    <p class="endText">A few years after we married, we moved to Turramurra, the name meaning &quot;big hill&quot; in the local aboriginal language (as with most of the country, when white settlers moved in, the aboriginies were forced out). The result is that rain-bearing clouds gain altitude as they cross Turramurra and dump their moisture giving us the highest rainfall in Sydney. We have no view but are surrounded by big trees. There are lots of birds.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail([
 		"OperaBridge1.jpg",
 		"City1.jpg",

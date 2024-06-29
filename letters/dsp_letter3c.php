@@ -1,4 +1,4 @@
-<? //dsp_letter3c.php ?>
+<?php //dsp_letter3c.php ?>
 
 <h2>Travels</h2>
 <div class="story">
@@ -16,7 +16,7 @@
 </div>
 
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["ColoradoNM1.jpg", "BookCliffs1.jpg", "ElkStatue1.jpg", "FishCreekFalls1.jpg", "Zoro1.jpg", "BerthoudPass1.jpg", "WallOfSnow1.jpg", "BeaverDam1.jpg", "BighornSheep1.jpg", "MtEvans1.jpg", "Staircase1.jpg", "Santafe1.jpg", "TaosPueblo1.jpg", "BridgeTaos1.jpg", "GreatSandDunes1.jpg"]);
 	?>
 </div>

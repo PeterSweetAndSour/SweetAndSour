@@ -3,7 +3,7 @@
 	<p>We have a bunch of photos on Google's platform for you to enjoy. Make sure that you turn on the captions or a lot of them won't make sense.</p>
 </div>
 <div class="clear">
-	<?
+	<?php
 	setThumbnail("album_01.jpg", "https://photos.app.goo.gl/enKr25uNuk5FoKEt8", "figure--thumbnail-youtube");
 	setThumbnail("album_02.jpg", "https://photos.app.goo.gl/F3aLYKPT9P728CJv9", "figure--thumbnail-youtube");
 	setThumbnail("portuguesePaving.jpg", "https://photos.app.goo.gl/5Gxid4aW1eAGn6Fq8", "figure--thumbnail-youtube");
@@ -14,7 +14,7 @@
 	<p>I also post occasionally on Instagram.</p>
 </div>
 <div class="clear">
-	<?
+	<?php
 	setThumbnail("instagram.jpg", "https://www.instagram.com/petersweetandsour/", "figure--thumbnail-youtube");
 	?>
 </div>

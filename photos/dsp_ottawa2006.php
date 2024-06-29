@@ -1,4 +1,4 @@
-<? //dsp_ottawa2006.php ?>
+<?php //dsp_ottawa2006.php ?>
 
 <h2>Ottawa, 7, 8 Oct 06</h2>
 <div class="story noSpaceBelow">
@@ -6,7 +6,7 @@
 	<p><a href="http://en.wikipedia.org/wiki/Ottawa" target="_blank" class="external">Learn more</a>.</p>
 </div>
 <div class="photo-gallery clear">
-	<?
+	<?php
 	setThumbnail([
 		"ottawa01ParliamentEast1Sm.jpg",
 		"ottawa02ParliamentEast2Sm.jpg",

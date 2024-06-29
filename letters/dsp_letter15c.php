@@ -1,4 +1,4 @@
-<? //dsp_letter15c.php ?>
+<?php //dsp_letter15c.php ?>
 
 <h2>September 11 and all that</h2>
 <div class="story">
@@ -21,7 +21,7 @@
 	<p class="endText">If you missed it, I urge you read a refreshing alternative view on America in <i>Beyond Good and Evil</i>, an essay that appeared in the <i>Sydney Morning Herald</i>. (No longer on the <a class="external" href="http://www.richardneville.com" target="_blank">author&rsquo;s web site.)</a></p>
 </div>
 <div class="photo-gallery">
-	<? setThumbnail("FakePhoto1.jpg"); ?>
+	<?php setThumbnail("FakePhoto1.jpg"); ?>
 </div>
 
 <div class="story">

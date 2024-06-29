@@ -1,11 +1,11 @@
-<? //dsp_aust2005cherryblossoms.php ?>
+<?php //dsp_aust2005cherryblossoms.php ?>
 
 <h2>Washington D.C.</h2>
 <div class="story noSpaceBelow">
    <p>I came to visit Lan in Washington on April 1st and we took a look at the cherry trees donated by Japan in 1912 and now a major tourist attraction when in bloom. <a href="http://en.wikipedia.org/wiki/National_Cherry_Blossom_Festival" target="_blank" class="external">Learn more</a>.</p>
 </div>
 <div class="photo-gallery clear">
-	<?
+	<?php
 	setThumbnail([
 		"cherry_01sm.jpg", 
 		"cherry_02sm.jpg" , 

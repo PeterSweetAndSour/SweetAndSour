@@ -1,4 +1,4 @@
-<?
+<?php
 // Use this file to update the "lft" and "rgt" values in the menus table after adding/deleting elements;
 // these are used in includes/qry_menu.php to build the menu result set.
 // Assumes all the menuLevel and parentID values are correctly set.

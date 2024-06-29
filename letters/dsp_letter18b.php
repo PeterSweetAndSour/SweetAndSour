@@ -1,4 +1,4 @@
-<? //dsp_letter17b.php ?>
+<?php //dsp_letter17b.php ?>
 
 <h2>The Great American South-West</h2>
 <div class="story">
@@ -7,7 +7,7 @@
    <p>Most exciting was our visit to the Grand Canyon with our best friends from Sydney. We were there in 1998 but arrived so late in the day we only saw where the canyon would be if the lights were turned on. This time we had two nights in a nice hotel just outside the park and a full day of sightseeing. To add to the celebration, Lan cooked a full turkey dinner in Denver which we brought with us, along with a microwave oven in which to heat it! Having children with us made me very conscious of the numerous places where an impetuous move could have tragic consequences.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("ZionNP01sm.jpg");
 	setThumbnail("BryceCanyonNP5sm.jpg");
 	setThumbnail("grandcanyon_01sm.jpg");
@@ -21,7 +21,7 @@
    <p class="endText">For the moment, the Smithsonian Museums have beaten us but we particularly enjoyed the newly-renovated National Portrait Museum and three concerts at the Kennedy Center for the Performing Arts&mdash;the Air Force Big Band, a blues singer Marcia Ball and a Dixie Jazz band&dash;all the more so because it was Open Day so they were free!</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["WithBillSm.jpg", "masonMemorial1Sm.jpg"]);
 	?>
 </div>
@@ -32,7 +32,7 @@
    <p class="endText"><a name="Note11Ref"></a><a name="Note1Ref"></a>The most interesting thing I learned was that the American Revolution had a major impact on the development of Canada. The Americans expected the French speakers to be eager to join with them against the British, a point they made forcefully by attempting to invade in 1775. It turned out that the French weren&apos;t interested and the Americans were sent home licking their wounds<sup><a href="#Note11">Note&nbsp;11</a></sup>. However, those loyal to the British within America found life uncomfortable and many fled to Canada seeking refuge.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("ottawa03ParliamentCenter1Sm.jpg");
 	?>
 </div>

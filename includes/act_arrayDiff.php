@@ -1,4 +1,4 @@
-<? 
+<?php 
 /* my_array_diff.php
    The regular array_diff function doesn't appear to work so I'll make my own
    for practice. 

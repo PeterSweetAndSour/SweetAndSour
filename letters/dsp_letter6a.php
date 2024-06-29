@@ -1,4 +1,4 @@
-<? //dsp_letter6a.php ?>
+<?php //dsp_letter6a.php ?>
 
 <div class="story">
    <p>11 August 1996</p>
@@ -14,7 +14,7 @@
    <p class="endText">Lan will be starting a C++ computer programming course in a few weeks at a local college.  We have benefited from a law passed last week that allows foreigners to pay the same fees as locals if they have been working and paying taxes in Colorado for more than 12 months.  The course will now cost $300 instead of $1300.  Good timing!</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("LanOnBike1.jpg");
 	?>
 </div>

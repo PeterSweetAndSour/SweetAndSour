@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 Page to enter/edit photo details.  If photo name is already in the
 database, will get sent back here.
@@ -91,7 +91,7 @@ else {
 			window.location.href = newURL;
 		}
 
-		<? if($formType == "new") { ?>
+		<?php if($formType == "new") { ?>
 		//If new photo and user selects a photo, redraw the page so it can be displayed
 		function showPhoto() {
 			formType = document.forms[0].formType.value;
@@ -103,12 +103,12 @@ else {
 			//alert(newURL);
 			window.location.href = newURL;
 		}
-		<? } ?>
+		<?php } ?>
 		
 		//If new photo and linked image is empty, initialize with modified $photoName when 
 		//clicking in this field. Most are ...1.jpg or ...1.gif so change 1 to 2.
 		function initializeLink() {
-			<? if($formType == "new") { ?>
+			<?php if($formType == "new") { ?>
 				selCtrlPhotoName = document.getElementById("selCtrlPhotoName");;
 				photoName = selCtrlPhotoName[selCtrlPhotoName.selectedIndex].value;
 				
@@ -121,7 +121,7 @@ else {
 					linkedImage = photoName.replace(/Sm/, "Lg");
 
 				document.forms[0].linkedImg.value = linkedImage;
-			<? } ?>
+			<?php } ?>
 			return;
 		}
 		
@@ -155,11 +155,11 @@ else {
 	<form name="form_photo" action="/sweetAndSour.org/imagemgt/index.php?fuseAction=savePhoto" method="post" onSubmit="return validateForm()">
 		<input type="hidden" name="formType" value="<?= $formType ?>" />
 
-		<? if($formType == "new"): ?>
+		<?php if($formType == "new"): ?>
  			<h1 align="center">Add photo</h1>
-		<? else: ?>
+		<?php else: ?>
 		   <h1 align="center">Edit photo details</h1>
-		<? endif; ?>
+		<?php endif; ?>
 
 		<table width="800" border="0" cellspacing="1" cellpadding="2">
 			<tr> 
@@ -170,7 +170,8 @@ else {
 
 				<!-- Select control for folders. -->
 				<td>
-					<? /*If a new photo and user selects new folder; redraw so files in that directory 
+					<?php 
+					/*If a new photo and user selects new folder; redraw so files in that directory 
 					can be obtained; if editing an existing photo, don't redraw as user is indicating
 					photo in in a different folder. */
 					if($formType == "new")
@@ -180,64 +181,64 @@ else {
 					?>
 					<select id="selCtrlFolderId" name="folderID" style="width:224px" onChange="<?= $onChange ?>">
 						<option value="0">*Select folder*</option>
-						<? while( $row = mysql_fetch_array( $rs_folders ) ) {
+						<?php while( $row = mysql_fetch_array( $rs_folders ) ) {
 							if($row["folderID"] == $folderID): 
 								$folderName  = $row["folderName"]; ?>
 								<option selected value="<?= $row["folderID"] ?>"> <?= $row["folderID"] ?>. <?= $row["folderName"] ?></option>
-							<? else: ?>
+							<?php else: ?>
 								<option          value="<?= $row["folderID"] ?>"> <?= $row["folderID"] ?>. <?= $row["folderName"] ?></option>
-							<? endif; 
-						} ?>
+							<?php endif; ?>
+						<?php } ?>
 					</select>
 				</td>
 
 				<!-- Display the selected image, if applicable. -->
 				<td rowspan="5" align="center">
 					<img src="clear1px.gif" alt="" width="504" height="1" /><br />
-					<? 
+					<?php 
 					if(isset($imageSize)) {
 						//Display the photo based on whether the width or height is greater
 						if( $width > $height ) {
 							if($width/$height > 204/116) { /* Sep 09: I wonder why I chose those number */ ?>
-								<img src="<?= $localImgSrc ?>" width="204" border="1" alt="" /> <?
+								<img src="<?= $localImgSrc ?>" width="204" border="1" alt="" /> <?php
  							}
 							else { ?>
-								<img src="<?= $localImgSrc ?>" height="116" border="1" alt="" />	<?
+								<img src="<?= $localImgSrc ?>" height="116" border="1" alt="" />	<?php
 							}
 						}
 						else {  /*height is greater than width so just make 116 pixels tall.*/ ?>
-								<img src="<?= $localImgSrc ?>" height="116" border="1" alt="" />	<?
+								<img src="<?= $localImgSrc ?>" height="116" border="1" alt="" />	<?php
 						}
 					}
 					else if(isset($photoName) && $photoName != "") { //If the photoName has been specified and photo not found, issue a warning; if photo not specified, do nothing. ?>
-						<p>Image not found at<br /> <?= $localImgSrc ?>.</p> <?
+						<p>Image not found at<br /> <?= $localImgSrc ?>.</p> <?php
 					} ?>
 				</td>
 			</tr>
 			<tr>
 				<td><p>Photo:</p></td>
 				<td colspan="2">
-					<? if($formType == "new") { ?>
+					<?php if($formType == "new") { ?>
 						<!-- List photos in this directory that are not already in the database. -->
 						<select id="selCtrlPhotoName" name="photoName" style="width:204px" onChange="showPhoto()">
 							<option value="0">*Select a photo*</option>
-							<? //Loop through the newFiles array
+							<?php //Loop through the newFiles array
 							for($i=0; $i<count($newFiles); $i++) {
 								if($newFiles[$i] == $photoName) { ?>
-									<option selected value="<?= $newFiles[$i] ?>"><?= $newFiles[$i] ?></option><?
+									<option selected value="<?= $newFiles[$i] ?>"><?= $newFiles[$i] ?></option><?php
 								}
 								else { ?>
-									<option          value="<?= $newFiles[$i] ?>"><?= $newFiles[$i] ?></option><?
+									<option          value="<?= $newFiles[$i] ?>"><?= $newFiles[$i] ?></option><?php
 								}
 							} ?>
-						</select> <?
+						</select> <?php
 					}
 					else { ?>
-					   <input type="text" name="photoName" value="<?= $photoName ?>" style="width:204px" /> <?
+					   <input type="text" name="photoName" value="<?= $photoName ?>" style="width:204px" /> <?php
 					} ?>
 				</td>
 			</tr>
-			<?
+			<?php
 			if(isset($imageSize)) { ?>
 				<tr>
 					<td><p>Width:</p></td>
@@ -253,7 +254,7 @@ else {
 						<input type="hidden" name="height" value="<?= $height ?>" />
 					</td>
 				</tr>
-			<? }
+			<?php }
 			if(isset($dateModified)) {
 				?>
 				<tr>
@@ -267,7 +268,7 @@ else {
 				<tr>
 					<td><p>Link image:</p></td>
 					<td colspan="2">
-						<input type="text" name="linkedImg" value="<? if(isset($photoName) && isset($photos[$photoName]["linkedImg"])) {?><?= $photos[$photoName]["linkedImg"] ?><?}?>" style="width:204px" onFocus="initializeLink()" />
+						<input type="text" name="linkedImg" value="<?php if(isset($photoName) && isset($photos[$photoName]["linkedImg"])) {?><?= $photos[$photoName]["linkedImg"] ?><?php } ?>" style="width:204px" onFocus="initializeLink()" />
 					</td>
 				</tr>
 				
@@ -276,10 +277,10 @@ else {
 						<p>Caption:<br /><span class="small">(Do not add &lt;p&gt; tags for thumbnails.)</span></p>
 					</td>
 					<td colspan="2">
-						<textarea name="caption" cols="78" rows="10" wrap="soft"><? if(isset($photoName) && isset($photos[$photoName]["caption"])) { ?><?= $photos[$photoName]["caption"] ?><? } ?></textarea>
+						<textarea name="caption" cols="78" rows="10" wrap="soft"><?php if(isset($photoName) && isset($photos[$photoName]["caption"])) { ?><?= $photos[$photoName]["caption"] ?><?php } ?></textarea>
 					</td>
 				</tr>
-				<? 
+				<?php 
 			} ?>
 			<tr>
 				<td colspan="3" align="center">

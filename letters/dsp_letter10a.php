@@ -1,4 +1,4 @@
-<? //dsp_letter10a.php ?>
+<?php //dsp_letter10a.php ?>
 
 <div class="story">
    <p>19 March 1998*</p>
@@ -18,7 +18,7 @@
    <p class="endText">I'm not sure how long we will stay in Australia but it probably be less than 3 years.  Lan was disappointed by what she saw in Tuesday&rsquo;s Australian which carries most of the computer jobs.  It seems there are many, many more opportunities for her sort of skills in either the US or the UK.  The UK may be more practical as I have a British passport as well as Australian, so we wont have the hassle with visas we had in the US and therefore have to work at salaries below market rates.  It could be our next adventure.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["Dad1.jpg", "FriendsAtIsoTech1.jpg"]);
 	?>
 </div>

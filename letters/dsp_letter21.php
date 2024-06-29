@@ -17,7 +17,7 @@
 	<p>As always, I'd love to hear your news too so do write when the opportunity arises.</p>
 	<p>Best wishes,<br>Peter</p>
 </div>
-<?
+<?php
 setThumbnail("photoSetPortugal2.jpg", "https://photos.app.goo.gl/F3aLYKPT9P728CJv9");
 ?>
 

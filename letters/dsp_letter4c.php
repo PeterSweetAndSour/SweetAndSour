@@ -1,4 +1,4 @@
-<? //dsp_letter4c.php ?>
+<?php //dsp_letter4c.php ?>
 
 <h2>Strange and curious things</h2>
 <div class="story">

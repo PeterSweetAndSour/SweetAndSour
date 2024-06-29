@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 qry_menu.php
 This page creates a 2-D array of all menu items in display order.
 Algorithm from http://www.sitepoint.com/article/hierarchical-data-database/2

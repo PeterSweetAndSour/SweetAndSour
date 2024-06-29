@@ -31,7 +31,7 @@
 	<p>I&apos;d love to hear your news to so please write when you can.</p>
 	<p>Peter</p>
 </div>
-<?
+<?php
 setThumbnail("photoSetPortugal3.jpg", "https://photos.app.goo.gl/TMiUrwnyUabJcFe28");
 setThumbnail("lighthouseAzores.jpg", "https://photos.app.goo.gl/y7A7ikdH9zn3qDeT9");
 ?>

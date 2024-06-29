@@ -1,4 +1,4 @@
-<? //dsp_letter3d.php ?>
+<?php //dsp_letter3d.php ?>
 
 <h2>I do like ...</h2>
 <div class="story">

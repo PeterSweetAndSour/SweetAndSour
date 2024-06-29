@@ -1,4 +1,4 @@
-<? //dsp_letter5d.php ?>
+<?php //dsp_letter5d.php ?>
 
 <h2>Life in America as we see it</h2>
 <div class="story">
@@ -12,7 +12,7 @@
    <p class="endText">I've been impressed by school buses (apparently called <i>cheese buses</i> by the kids because of their color) and that when they stop to pick up children, cars on both sides of the road must stop.  Pedestrian crossings near a school normally have a person with a stop/go sign and yellow lights flash to warn drivers that the speed limit is reduced to 20 mph (32 km/h).  I think school buses were introduced across America (in the 1960s?) to transport children to schools outside their area so that schools would became racially integrated.  However, since schools are run by local government and "busing" is within the county, white folks moved out of areas where there was a large black population.  Partly as a result, many inner cities across America are largely black and the schools are too.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("ChristmasLights1.jpg");
 	?>
 </div

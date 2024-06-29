@@ -1,4 +1,4 @@
-<? //dsp_farnsworth.php?>
+<?php //dsp_farnsworth.php?>
 
 <h2>Preamble <span>(not part of the original presentation)</span></h2>
 <div class="story">
@@ -14,7 +14,7 @@
    <p class="endText">Today I want to share with you the incredible story of Philo T. Farnsworth, the man who invented all-electronic television; a  man who Time magazine named him in their 1999 list of the 100 most important people of the 20th century, yet he died in obscurity.  We will see how a teenager came up with the fundamental principles of television then went on to develop working models and later staged the first public demonstration.  We will see how he was cheated out of fame and fortune by a giant of corporate America and unfortunate timing of world events.</p>
 </div>
 <div class="photo-gallery">
-	<? setThumbnail("Farnsworth1.gif") ?>
+	<?php setThumbnail("Farnsworth1.gif") ?>
 </div>
 
 

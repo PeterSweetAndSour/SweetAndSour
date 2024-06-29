@@ -1,4 +1,4 @@
-<? //dsp_letter16g.php ?>
+<?php //dsp_letter16g.php ?>
 
 <h2>Guns, germs and steel</h2>
 <div class="story">

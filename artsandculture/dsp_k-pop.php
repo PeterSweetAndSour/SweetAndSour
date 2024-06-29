@@ -23,24 +23,24 @@
 	<ul>
 		<li>
 			A song from the world&apos;s most popular musical act:<br/>
-			<? setThumbnail("BoyWithLuv.jpg", "https://www.youtube.com/watch?v=XsX3ATc3FbA", "figure--thumbnail-youtube"); ?>
+			<?php setThumbnail("BoyWithLuv.jpg", "https://www.youtube.com/watch?v=XsX3ATc3FbA", "figure--thumbnail-youtube"); ?>
 		</li>
 		<li>
 			A song from, what was, the most popular girl group:<br />
-			<? setThumbnail("CheerUp.jpg", "https://www.youtube.com/watch?v=c7rCyll5AeY", "figure--thumbnail-youtube"); ?><br>
+			<?php setThumbnail("CheerUp.jpg", "https://www.youtube.com/watch?v=c7rCyll5AeY", "figure--thumbnail-youtube"); ?><br>
 			(See <strong>BlackPink</strong> below for the currently most popular girl group.)
 		</li>
 		<li>
 			Not really standard K-pop as it is a solo act with no dancing but it is beautiful (more explanation below):<br />
-			<? setThumbnail("EyesNoseLips.jpg", "https://www.youtube.com/watch?v=9un35OyWcN0", "figure--thumbnail-youtube") ?>
+			<?php setThumbnail("EyesNoseLips.jpg", "https://www.youtube.com/watch?v=9un35OyWcN0", "figure--thumbnail-youtube") ?>
 		</li>
 		<li>
 			A fantastic song from a girl group that even K-pop fans probably know of only dimly, if at all. A great example of why you shouldn't limit yourself to just the most popular and also of a great, really cheap music video:</br>
-			<? setThumbnail("ThisIsMe.jpg", "https://www.youtube.com/watch?v=9uhUmjANdQA", "figure--thumbnail-youtube") ?>
+			<?php setThumbnail("ThisIsMe.jpg", "https://www.youtube.com/watch?v=9uhUmjANdQA", "figure--thumbnail-youtube") ?>
 		</li>
 		<li>
 			Such a fun, bouncy song that tells a heart-warming story so you can't help smiling by the end! The music doesn't actually start until about 35 seconds in:<br />
-			<? setThumbnail("Hello.jpg", "https://www.youtube.com/watch?v=lNvBbh5jDcA", "figure--thumbnail-youtube") ?>
+			<?php setThumbnail("Hello.jpg", "https://www.youtube.com/watch?v=lNvBbh5jDcA", "figure--thumbnail-youtube") ?>
 		</li>
 	</ul>
 </div>
@@ -293,7 +293,7 @@
 	</ul>
 </div>
 <div class="photo-gallery">
-	<? setThumbnail(["SNSDFlightAttendantsSm.jpg", "TwiceFlightAttendantsSm.jpg"]); ?>
+	<?php setThumbnail(["SNSDFlightAttendantsSm.jpg", "TwiceFlightAttendantsSm.jpg"]); ?>
 </div>
 
 <h3 id="Weki_Meki">Weki Meki</h3>

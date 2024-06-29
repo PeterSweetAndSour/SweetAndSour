@@ -1,4 +1,4 @@
-<?
+<?php
 header("Cache-Control: no-cache");
 header("text/html");
 header("Pragma: nocache");
@@ -73,11 +73,11 @@ if($photos) {
 	<div class="footer">
 		<p id="photoLink" class="end">URL to this photo: http://www.sweetandsour.org/imagemgt/index.php?fuseAction=showPhotoAndCaption&amp;photoName=<?= $photoName ?></p>
 	</div>
-	<?
+	<?php
 }
 else {
 	?>
 	<p>Oops. <?= $photoName ?> not found.</p>
-	<?
+	<?php
 }
 ?>

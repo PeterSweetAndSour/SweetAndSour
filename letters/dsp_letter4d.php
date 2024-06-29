@@ -1,4 +1,4 @@
-<? //dsp_letter4d.php ?>
+<?php //dsp_letter4d.php ?>
 
 <h2>Lan&rsquo;s letter</h2>
 <div class="story">

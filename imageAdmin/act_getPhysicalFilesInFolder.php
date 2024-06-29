@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 act_getPhysicalFilesInFolder.php
 Get all the files in an image directory
 

@@ -1,4 +1,4 @@
-<? //dsp_callsForJustice.php
+<?php //dsp_callsForJustice.php
 ?>
 <div class="story">
 	<p><i>&quot;All that is necessary for the triumph of evil is that good men do nothing.&quot;<br /></i>&mdash;<a href="http://en.wikipedia.org/wiki/Edmund_Burke" target="_blank" class="external">Edmund Burke</a></p>

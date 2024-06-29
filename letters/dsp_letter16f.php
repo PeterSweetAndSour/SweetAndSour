@@ -1,4 +1,4 @@
-<? //dsp_letter16e.php (France, part 3)?>
+<?php //dsp_letter16e.php (France, part 3)?>
 
 <div class="story">
 	<p>After the Americans entered World War 2 in December 1941, Hitler grew concerned about an invasion so he ordered the construction of the Atlantic Wall, a system of 15,000 gun emplacements and obstacles along the coast all the way from Denmark to Spain. Fortunately for the Allies, it was not quite complete for D-Day, the 6th of June 1944, when they surged ashore on the Normandy beaches.</p>
@@ -13,7 +13,7 @@
 	<p class="endText">I've pondered how long we remember a war and concluded as long as survivors are still alive. The Napoleonic Wars changed Europe just as drastically, yet I feel no link with them. The very last survivors of WW1 are dying now and that chapter of history is closing. A hundred years from now, the trenches will be barely distinguishable, the evidence gone.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["OmahaBeach1.jpg", "BayeuxTapestry1.jpg", "AmiensCathedral1.jpg", "AmiensCarvings1.jpg", "SommeTrenches1.jpg", "DangerUXB1.jpg"]);
 	?>
 </div>

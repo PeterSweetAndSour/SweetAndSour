@@ -1,4 +1,4 @@
-<? //dsp_letter14d.php ?>
+<?php //dsp_letter14d.php ?>
 
 <h2>In other news</h2>
 <div class="story">
@@ -14,7 +14,7 @@
 	<p class="endText">For the 19th consecutive year, the best-selling vehicle in America was Ford&rsquo;s full-size pickup truck with sales of 876,716 and EPA fuel consumption range 14-21 mpg (lower figure for city driving/thirstiest model; higher figure for highway driving/best model.).  Next best was the equivalent GM product, then the Ford Explorer 4WD/SUV.  In fourth place was the best selling car, the Toyota Camry with 422,961, or less than half the best but mileage of 20-33, or 50% better.  It is my impression that most of the pickups perform the same job as the cars - going to work, getting groceries and picking up the kids from school. Such a waste.  To make up, the new President has promised oil drilling in the Arctic National Wildlife Refuge.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("OfficeTree1.jpg");
 	?>
 </div>

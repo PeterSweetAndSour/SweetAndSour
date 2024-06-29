@@ -1,4 +1,4 @@
-<? //dsp_letter16a.php ?>
+<?php //dsp_letter16a.php ?>
 
 <div class="story">
 	<p>6 July 2003</p>
@@ -22,7 +22,7 @@
 	<p class="endText">In the last week I've spent a lot of time working on our car which recently passed 150,000 miles/240,000km.  I wasn't expecting it to pass the emissions test but it did so we still have the dear thing.  While I was testing the new muffler I installed, the water pump failed so I had to undo the work I did replacing the timing belt to get to it.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("AcrobatIcon_Ltr16_A4.gif", $rootRelativeUrl . "letters/files/Letter16_A4.pdf"); 
 	setThumbnail("AcrobatIcon_Ltr16_Ltr.gif", $rootRelativeUrl . "letters/files/Letter16_Ltr.pdf");
 	?>

@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 act_getFilesInDBForFolder.php
 Get all the files in an image directory
 

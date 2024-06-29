@@ -1,4 +1,4 @@
-<?
+<?php
 /* act_sendEmail
 Send mail message.
 

@@ -1,4 +1,4 @@
-<? //dsp_letter19b.php ?>
+<?php //dsp_letter19b.php ?>
 
 <h2>Out and about elsewhere</h2>
 <div class="story">
@@ -11,7 +11,7 @@
 	<p><a id="Note4Ref"></a>However the highlight of my mother&apos;s time with us was the 3-day expedition we made to Toronto and Niagara Falls!<sup><a href="#Note4">Note&nbsp;4</a></sup>. </p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["029_melbournecity05Sm.jpg", "082_creswick1Sm.jpg", "102_echucawaterfront6Sm.jpg", "GardensAtNiagara1.jpg", "GardensAtNiagaraPink1.jpg", "TorontoSkyline1.jpg", "AmericanFalls1.jpg", "CanadianFalls1.jpg", "NiagaraAtNight1.jpg", "UniOfVirginia1.jpg", "Charlottesville1.jpg"]);
 	?>
 </div>
@@ -24,7 +24,7 @@
 	<p class="endText">The Amish people live by choice without most modern conveniences but they have a strong tradition of quilting, something in which Lan has an interest. There is a museum a few hours away in Lancaster, Pennsylvania which was well worth a visit. The building housed a bank that collapsed in the Depression and remained vacant for 50 years! The first task for renovators was to clear 2ft/60cm of pigeon droppings!</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["AlbaMadonnaByRaphael1.jpg", "TheOldOak1.jpg", "KenilworthGardens1.jpg", "Quilt1.jpg", "QuiltMuseum1.jpg"]);
 	?>
 </div>

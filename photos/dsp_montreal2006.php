@@ -1,4 +1,4 @@
-<? //dsp_montreal2006.php ?>
+<?php //dsp_montreal2006.php ?>
 <h2>Montr&eacute;al, 30 Sep 06 &ndash; 3 Oct 06</h2>
 <div class="story noSpaceBelow">
    <p>Montr&eacute;al is the largest city in French-speaking province of Quebec and was the first destination on our trip. Happily for me, virtually everyone is bilingual.</p>
@@ -10,7 +10,7 @@
 	<p><a href="http://en.wikipedia.org/wiki/Montreal" target="_blank" class="external">Learn more</a> about Montreal.</p>
 </div>
 <div class="photo-gallery">
-	<? setThumbnail([
+	<?php setThumbnail([
 		"CanadaMapSm.gif",
 		"montreal001SideStreetSm.jpg",
 		"montreal002WaterfrontSm.jpg",

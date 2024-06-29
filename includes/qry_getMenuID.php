@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 qry_getMenuID.php
 Get the menuID of the menu item with this fuseAction.
 

@@ -1,4 +1,4 @@
-<? /* Change the file names to include "Sm" or "Lg" (or whatever) before the file extension. */
+<?php /* Change the file names to include "Sm" or "Lg" (or whatever) before the file extension. */
 
 
 $directory = "D:\Inetpub\wwwroot\sweetAndSour\photos\images\Maine2009\folder700";

@@ -1,4 +1,4 @@
-<? //dsp_whoWeAre.php ?>
+<?php //dsp_whoWeAre.php ?>
 
 <div class="story">
 	<p>For those who don't know us, we are Australians and both of us are now computer programmers living in Lisbon, Portugal.</p>
@@ -16,7 +16,7 @@
 	<p class="endText">Then <a href="<?= $rootRelativeUrl ?>/wherewelive/index.php?fuseAction=lisbon">we moved to Lisbon</a> in 2019.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["WeddingChurch1.jpg", "VietnameseDress1.jpg","WeddingCake1.jpg"]);
 	?> 
 </div>

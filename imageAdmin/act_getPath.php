@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 act_getPath.php
 
 Get the name of the folder and if applicable, the name of the grandparent folder, 

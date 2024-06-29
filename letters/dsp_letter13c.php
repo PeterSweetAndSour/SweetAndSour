@@ -1,4 +1,4 @@
-<? //dsp_letter13c.php ?>
+<?php //dsp_letter13c.php ?>
 
 <div>
 	<div class="story">
@@ -13,7 +13,7 @@
 		<p class="endText">Bridges link a series of islands (keys) south of Florida, allowing comfortable travel 100 miles (160 km) from the mainland.  Almost all the original road bridges have been replaced and now stand derelict, often with sections missing (an earlier railway was blown away in 1924).  I don't know if it was Hurricane Andrew in 1992, or just corrosion that did the damage.  We stopped at one bridge and saw a fish about as big as Lan.  I'm sure it will be the biggest fish I'll ever see in the wild and I was happy to see it there.
 	</div>
 	<div class="photo-gallery">
-		<?
+		<?php
 		setThumbnail(["Pedestrians1.jpg", "FortPulaski1.jpg", "WeekiWatchie1.jpg", "SkylineBridge1.jpg", "Naples1.jpg", "Wetland1.jpg", "Mangroves1.jpg", "Alligator1.jpg", "7MileBridge1.jpg", "BridgeTooFar1.jpg"]);
 		?>
 	</div>

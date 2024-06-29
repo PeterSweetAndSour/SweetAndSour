@@ -1,4 +1,4 @@
-<? //dsp_letter8c.php ?>
+<?php //dsp_letter8c.php ?>
 
 <h2>Life in America</h2>
 <div class="story">

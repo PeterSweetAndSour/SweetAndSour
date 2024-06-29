@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 dsp_menuID.php
 
 Must be called from a subdirectory or the paths for the included files are wrong.

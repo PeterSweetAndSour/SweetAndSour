@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 dsp_videoPage.php
 This file is called via an Ajax request and will load inside the fake popup window.
 
@@ -15,7 +15,7 @@ $videoToPlay = $_GET["videoToPlay"];
 if($videoToPlay != 0) {
 	?>
 	<p>
-	<?
+	<?php
 }
 
 for($i=0; $i < $count; $i++) {
@@ -24,7 +24,7 @@ for($i=0; $i < $count; $i++) {
 		if($videoToPlay != 0) {
 			?>
 			</p>
-			<?
+			<?php
 		}
 		?>
 		<object width="425" height="344">
@@ -32,11 +32,11 @@ for($i=0; $i < $count; $i++) {
 			<param name="allowFullScreen" value="true"></param>
 			<embed src="<?= $videoArray[$i] ?>" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed>
 		</object>
-		<?
+		<?php
 		if($videoToPlay != $count - 1) {
 			?>
 			<p>
-			<?
+			<?php
 		}
 	}
 	else {
@@ -47,18 +47,18 @@ for($i=0; $i < $count; $i++) {
 		$ajaxUrl .= "&videoToPlay=" . $i;
 		?>
 		<a href="javascript:void(0)" onclick="SweetAndSour.ajaxPopup('<?= $ajaxUrl ?>', '<?= rawurlencode($windowTitle) ?>')">Part <?= $i + 1 ?></a>
-		<?
+		<?php
 		if($i < $count - 1) {
 			?>
 			<br />
-			<?
+			<?php
 		}
 	}
 	
 	if($videoToPlay != $count - 1) {
 	?>
 	</p>
-	<?
+	<?php
 }
 
 }

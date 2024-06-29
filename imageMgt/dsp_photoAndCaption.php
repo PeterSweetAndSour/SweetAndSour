@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 dsp_displayPhotoAndCaption.php
 
 Will put caption to the right of the photo if there is 200px space available unless forceCaptionBelow is true.
@@ -21,11 +21,11 @@ if($photos) {
 		<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="See caption" />
 		<figcaption class="figure__caption"><?= $photos[$photoName]["caption"] ?></figcaption>
 	</figure>
-	<?
+	<?php
 }
 else {
 	?>
 	<p class="error">Photo not found.</p>
-	<?
+	<?php
 }
 ?>

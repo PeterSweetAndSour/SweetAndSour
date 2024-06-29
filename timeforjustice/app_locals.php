@@ -1,4 +1,4 @@
-<? /* app_locals for "Technology" */
+<?php /* app_locals for "Technology" */
 
 //Photograph for top left set on index.php so that different subsections have different pictures.
 //$sectionPhoto = "";

@@ -1,4 +1,4 @@
-<? //dsp_letter17a.php ?>
+<?php //dsp_letter17a.php ?>
 
 <div class="story">
 	<p>2<sup>nd</sup> April 2005</p>
@@ -10,7 +10,7 @@
 	<p class="endText">It is hard to believe but yesterday marked 10 years since we arrived in Denver. When we came to America, we expected to stay for only 9 to 12 months. Somehow we got stuck here. It is also a surprise that we are still in Denver but more about that later.</p>
 </div>
 <div class="photo-gallery">
-<?
+<?php
 setThumbnail("AcrobatIcon_Ltr17.gif", $rootRelativeUrl . "letters/files/Letter17_Ltr.pdf");
 ?>
 
@@ -22,7 +22,7 @@ setThumbnail("AcrobatIcon_Ltr17.gif", $rootRelativeUrl . "letters/files/Letter17
    <p class="endText">Lan was there through to the end of June 2004. Her life was made more miserable by being without a car and real cooking facilities in her hotel room, so she was limited to restaurants that she could walk to from her hotel in the late afternoon heat. However, she made friends among the drivers of the hotel shuttle bus, almost all Mexican, who took her to and from work. I think they appreciated Lan&rsquo;s kind words and shared immigrant experience.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["saguaroCactus1.jpg", "PhoenixBotanical1.jpg"]);
 	?>
 </div>

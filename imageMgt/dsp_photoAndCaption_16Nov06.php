@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 dsp_displayPhotoAndCaption.php
 
 Will put caption to the right of the photo if there is 200px space available unless forceCaptionBelow is true.
@@ -116,7 +116,7 @@ if($panorama == "true") {
 </head>
 
 <body>
-<? 
+<?php 
 if($photoInfoFound) {
 		?>
 		<div class="caption captionFull">
@@ -138,11 +138,11 @@ if($photoInfoFound) {
   		<script type="text/javascript">document.write(divString);document.close()</script>
   			<?= $caption ?>
 		</div>
-		<?
+		<?php
 } else {
 	?>
 	<p>Oops. Photo not found.
-	<?
+	<?php
 }
 ?>
 </body>

@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 dsp_outline.php
 Sets framework into which all display pages (except individual photos) will be set.
 Provides photo at top left, heading, subheading, menu and sets a space for the content
@@ -42,25 +42,25 @@ include '../imagemgt/act_setThumbnailFunction.php';
 		[Sweet and Sour]
 	</title>
 	
-	<? 
+	<?php 
 	if($fuseAction == "welcome" || $fuseAction == "thisWebSite") {
-		include $_SERVER['DOCUMENT_ROOT'] . $rootRelativeUrl. "includes/asciiPV.txt";
+		include "../includes/asciiPV.txt";
 	}
 	?>
 	<link rel="shortcut icon" type="images/x-icon" href="<?=$rootRelativeUrl ?>favicon.ico" />
 
-	<? 
+	<?php 
 	if($compress) {
 		?>
 		<link rel="stylesheet" type="text/css" href="<?=$rootRelativeUrl ?>css/combined.min.css" />
-		<?
+		<?php
 	}
 	else {
 		?>
 		<link rel="stylesheet" type="text/css" href="<?=$rootRelativeUrl ?>css/styles_2020.css" />
 		<link rel="stylesheet" type="text/css" href="<?=$rootRelativeUrl ?>css/photoswipe.css" />
 		<link rel="stylesheet" type="text/css" href="<?=$rootRelativeUrl ?>css/default-skin/default-skin.css" />
-		<?
+		<?php
 	}
 	?>
 
@@ -73,7 +73,7 @@ include '../imagemgt/act_setThumbnailFunction.php';
 			<p class="logo"><a href="<?= $homeUrl ?>home" title="Go to home page">Sweet and Sour</a></p>
 			<p class="tagline">One is sweet and the other is &hellip; a web developer</p>
 			<p class="sr-only"><a href="#content">Jump to content</a></p><!-- Hidden except for screen readers -->
-			<? 
+			<?php 
 			if($displayMenu) {
 				?>
 				<form class="menu">
@@ -82,13 +82,13 @@ include '../imagemgt/act_setThumbnailFunction.php';
 					<?= $str_menuHTML ?>
 					<div id="menuOverlay" class="menuOverlay"><div class="loading"><p><img src="<?=$rootRelativeUrl ?>images/loading_20080830.gif" alt="Just a moment ..." />Just a moment &hellip;</p></div></div>
 				</form>
-				<?
+				<?php
 			}
 			?>
 		</header>	
 	
 		<main id="content">
-			<?
+			<?php
 			if($useInPageHeader == true) {
 				; // Do nothing
 			}
@@ -96,19 +96,19 @@ include '../imagemgt/act_setThumbnailFunction.php';
 				echo "<h1>" . $heading1Text . "</h1>";
 			}
 			?>
-			<? include $contentPage; ?>
+			<?php include $contentPage; ?>
 		</main>
 
 		<footer>
-			<? if($showToTopLink == true) { ?>
+			<?php if($showToTopLink == true) { ?>
 				<!-- Link to top of page. -->
 				<p><a class="toTop" href='#top'>To top</a></p>
-			<? } ?>
+			<?php } ?>
 			<!-- Copyright notice. -->
 			<p class="copyright"><?= $copyright ?></p>
 		</footer>
 
-	   <?
+	   <?php
 	   if($showDebugInfo == true) {
 	      include '../includes/act_showDebugInfo.php';
 	      //phpinfo();
@@ -116,13 +116,13 @@ include '../imagemgt/act_setThumbnailFunction.php';
 	   ?>
 	</div>
 	
-	<? 
+	<?php 
 	include '../includes/dsp_photoswipe.php';
 
 	if($compress) {
 		?>
 		<script src="<?=$rootRelativeUrl ?>js/combined.min.js"></script>
-		<?
+		<?php
 	}
 	else {
 		?>
@@ -133,15 +133,15 @@ include '../imagemgt/act_setThumbnailFunction.php';
 		<script src="<?=$rootRelativeUrl ?>js/photoswipe.js"></script>
 		<script src="<?=$rootRelativeUrl ?>js/photoswipe-ui-default.js"></script>
 		<script src="<?=$rootRelativeUrl ?>js/photoswipe_setup.js"></script>
-		<?
+		<?php
 	}
 
 	/* Extra js files for specific pages may have been added on index.php files */
 	foreach ($jsFiles as $file) {
 		if (strncmp(trim($file), "<script", 7) === 0) {
-			?><?= $file ?><? 
+			?><?= $file ?><?php 
 		} else { 
-			?><script type="text/javascript" src="<?=$rootRelativeUrl ?>js/<?= $file ?>"></script><?
+			?><script type="text/javascript" src="<?=$rootRelativeUrl ?>js/<?= $file ?>"></script><?php
 		}
 	}
 	?>

@@ -1,4 +1,4 @@
-<? //dsp_letter8a.php ?>
+<?php //dsp_letter8a.php ?>
 
 <div class="story">
    <p>10 May, 1997</p>

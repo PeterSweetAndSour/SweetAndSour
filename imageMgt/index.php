@@ -1,4 +1,4 @@
-<? /* index.php page assembles pages based on the specified fuse action
+<?php /* index.php page assembles pages based on the specified fuse action
 
 Variable conventions:
 +++ included file

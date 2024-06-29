@@ -1,4 +1,4 @@
-<?
+<?php
 /* dsp_contactUs.php
 
 This page presents a form to the user to send an email back to site owner, or thanks them for sending it.
@@ -83,7 +83,7 @@ Variables:
 			<div class="buttonWrapper">
 				<input type="submit" id="submitBtn" class="submit" name="Send" value="Send" disabled>
 				<div id="submitSpinnerWrapper" class="submitSpinnerWrapper hidden">
-					<? include '../includes/dsp_spinner.html'; ?>
+					<?php include '../includes/dsp_spinner.html'; ?>
 				</div>
 			</div>
 		</div>

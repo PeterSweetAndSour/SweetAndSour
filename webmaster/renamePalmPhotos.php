@@ -1,4 +1,4 @@
-<? /* Change the file names. By default is US-style MMDDYY but needs to be YYMMDD or YYYYMMDD to sort by date. */
+<?php /* Change the file names. By default is US-style MMDDYY but needs to be YYMMDD or YYYYMMDD to sort by date. */
 
 
 $directory = "C:\Documents and Settings\user\My Documents\My Pictures\_disk10\Palm\ToBeRenamed";

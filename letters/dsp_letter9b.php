@@ -1,4 +1,4 @@
-<? //dsp_letter9b.php ?>
+<?php //dsp_letter9b.php ?>
 
 <h2>Travels and adventures</h2>
 <div class="story">
@@ -13,7 +13,7 @@
    <p class="endText">I made it home at 7.30am, 10 hours after my plane arrived and 26 hours after I left home the previous morning.  If I didn't get out on the bus, I probably would have been one of those trapped in the airport for two nights.  I found out later that it was -25&deg;F/-31&deg;C with wind chill (the effective temperature when the wind is taken into account) so being outside was life-threatening.  Indeed, 6 people (and 30,000 cattle!) died in Colorado.  My boss called the hotel and complained and we got a free dinner at the restaurant so all is forgiven.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["MNStateCapitol1.jpg", "Cathedral1.jpg", "TwoHarbors1.jpg", "SplitRockLight1.jpg", "MallOfAmerica1.jpg", "InsideMall1.jpg"]);
 	?>
 </div>

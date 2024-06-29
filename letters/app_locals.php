@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 app_locals.php for "Coming to America" (letters subdirectory). */
 
 //Set photograph for top left

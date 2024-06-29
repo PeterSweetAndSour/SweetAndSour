@@ -1,4 +1,4 @@
-<? //dsp_letter13a.php ?>
+<?php //dsp_letter13a.php ?>
 
 <div class="story">
    <p>Dear everyone,</p>
@@ -18,7 +18,7 @@
    <p>Our neighbors across the corridor gave us a wonderful and unexpected Christmas present&mdash;they moved out!  Without going into details, they made life very tense and we considered moving. Lan looked at perhaps 20 houses but I wanted to postpone buying until after I got a job so we could choose a convenient area.  Now that issue has gone, we just need to worry about the building falling apart.</p>
    <p class="endText">We ended the year with a big splash.  Putting aside any Y2K concerns, we saw Neil Diamond at a New Year&rsquo;s Eve concert.  I have never seen anyone so famous, the nearest being Midnight Oil at the Horden Pavilion, so it was quite an experience!  Unfortunately, it was held in a sports arena rather than a concert hallthe basketball and ice hockey players were gone but the lousy acoustics remained.  There was absolutely no stereo effect, so it was like listening to the TV turned up loud.</p>
 </div>
-<?
+<?php
 setThumbnail("AcrobatIcon_Ltr13.gif", $rootRelativeUrl . "letters/files/Letter13.pdf");
 ?>
 

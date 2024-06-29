@@ -1,4 +1,4 @@
- <? /*
+ <?php /*
 qry_menu_getChildren.php
 Get the active children of the specified menu item
 

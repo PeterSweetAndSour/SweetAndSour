@@ -1,4 +1,4 @@
-<? /* Get list of image file names to use in setThumbnail function */
+<?php /* Get list of image file names to use in setThumbnail function */
 
 $directory = "D:\Inetpub\wwwroot\sweetAndSour\photos\images\Maine2009";
 

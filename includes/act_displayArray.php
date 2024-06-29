@@ -1,4 +1,4 @@
-<?
+<?php
 //Function to display the contents of an array where
 //$name is the display name like "Broken records"
 //$array1 is the actual name like "bknRcds"

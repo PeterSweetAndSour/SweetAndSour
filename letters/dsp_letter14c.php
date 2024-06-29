@@ -1,4 +1,4 @@
-<? //dsp_letter14c.php ?>
+<?php //dsp_letter14c.php ?>
 
 <h2>Bumper stickers</h2>
 <div class="story">

@@ -1,4 +1,4 @@
-<?
+<?php
 function markupForAdminThumbnail($folderUrl, $filename, $width, $height) {
 	$maxDimension = 200;
 	if($height > $maxDimension || $width > $maxDimension) {

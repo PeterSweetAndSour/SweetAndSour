@@ -1,4 +1,4 @@
-<? //dsp_portsmouth2009.php ?>
+<?php //dsp_portsmouth2009.php ?>
 
 <h2>Portsmouth, New Hampshire, 16 Aug 2009</h2>
 <div class="story noSpaceBelow">
@@ -8,7 +8,7 @@
 	It died almost immediately so all but a half-dozen pictures were taken with my mobile phone which had no zoom. Sorry.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail([
 		"MapMaineTripSm.jpg",
 		"20090816_portsmouth01Sm.jpg",

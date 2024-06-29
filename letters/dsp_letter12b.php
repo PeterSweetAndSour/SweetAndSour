@@ -1,4 +1,4 @@
-<? //dsp_letter12b.php ?>
+<?php //dsp_letter12b.php ?>
 
 <h2>Adventure to California</h2>
 <div class="story">
@@ -20,7 +20,7 @@
 	<p>The next day we visited the <a href="www.getty.edu/center/center.htm" target="_blank">Getty Center</a> which is an art museum in spectacular new building in the hills above Santa Monica.  However we spent most of the day getting there and back. There is extremely limited parking (reserved 3&frac12; weeks in advance the day we went), which is unusual for America and amazing for Los Angeles which is so car dependent.  We took a local bus from Santa Monica but if it hadn't been Sunday, we would not have been able to park in the street.  I suspect this was done to limit the crowds and there is mention in the brochure that there may be long lines and it may not be possible to enter at all if capacity has been reached.  Getting in is bizarre as you have to take a train ride up the hill from the car park where the bus drops you off and then it seems you are going in the back door as the passage way is dark and so narrow that you have to walk single file if there are people coming in the opposite direction.  The train is slow and has only two carriages so they were running buses as well which seemed to defeat the purpose.  Anyway, it was worth the effort when we got to the top.  Amongst other things, there was an exhibition of 500 year old Flemish "illuminated manuscripts".  These books are exquisitely illustrated, often with gold leaf highlights but the tradition died out in the late 1500s, presumably because the printing press made reproduction so much cheaper.  Very interesting.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["SeaLions1.jpg", "PeterGoldenGate1.jpg", "TransAmerica1.jpg", "Houseboats1.jpg", "YosemiteFalls1.jpg", "Stratus1.jpg", "LuxorOutside1.jpg", "LuxorInside1.jpg", "HooverDam1.jpg", "SeaWorld1.jpg", "Illuminate1.jpg"]);
 	?>
 </div>
@@ -33,7 +33,7 @@
 	</div>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["GrandCanyon1.jpg", "I40NewMexico1.jpg"]);
 	?>
 </div>

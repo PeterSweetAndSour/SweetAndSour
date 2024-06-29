@@ -1,4 +1,4 @@
-<? //dsp_acadia2009.php ?>
+<?php //dsp_acadia2009.php ?>
 
 <h2>Acadia National Park &amp; points north, 16&ndash;18 Aug 2009</h2>
 <div class="story noSpaceBelow">
@@ -8,7 +8,7 @@
 	we drove all the way to Canada.</p>
 </div>
 <div class="photo-gallery clear">
-	<?
+	<?php
 	setThumbnail("20090816_belfast01Sm.jpg");
 	setThumbnail("20090816_belfast02Sm.jpg", "http://www.youtube.com/watch?v=DCNUb50bJQg");
     setThumbnail([

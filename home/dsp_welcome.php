@@ -1,4 +1,4 @@
-<? //dsp_welcome.php ?>
+<?php //dsp_welcome.php ?>
 <div class="story">
    <p>This is Peter's web site, a very slow-motion blog.</p>
 </div>
@@ -34,7 +34,7 @@
 <div class="story">
 	<p>We took a cruise on a smaller ship to the Canary Islands (part of Spain) and then the island of Madeira (part of Portugal): <a href="https://photos.app.goo.gl/WpQnRnfVCbdZXgkb8" target="_blank" class="external">106 photos</a>. As always, click the <img src="images/IconInformation.jpg" alt="Information"> icon (or <img src="images/IconMenu.jpg" alt="Menu"> on mobile) once in Google Photos to see the captions.</p>
 </div>
-<? setThumbnail("CanaryIslandsCruiseSm.jpg", "https://photos.app.goo.gl/WpQnRnfVCbdZXgkb8"); ?>
+<?php setThumbnail("CanaryIslandsCruiseSm.jpg", "https://photos.app.goo.gl/WpQnRnfVCbdZXgkb8"); ?>
 
 <h2 id="bikeCrash">27 September 2017</h2>
 <div class="story">
@@ -46,7 +46,7 @@
 <div class="story">
 	<p>Trip to Japan! Two sets of photos depending on your level of interest: <a class="external" href="https://goo.gl/photos/qagK54GcwmfMpafEA" target="_blank">~500 photos</a> and <a class="external" href="https://goo.gl/photos/mNFazJxxcihsxuMQ7" target="_blank">~100 photos</a> but click the <img src="images/IconInformation.jpg" alt="Information"> icon once in Google Photos to see the captions.</p>
 </div>
-<? setThumbnail("JapaneseChildrenSm.jpg", "https://photos.app.goo.gl/xPFH8CcA6gA93VtRA"); ?>
+<?php setThumbnail("JapaneseChildrenSm.jpg", "https://photos.app.goo.gl/xPFH8CcA6gA93VtRA"); ?>
 
 <h2>14 August 2016</h2>
 <div class="story">
@@ -57,13 +57,13 @@
 <div class="story">
 	<p>Trip to Brazil! Two sets of photos depending on your interest: <a class="external" href="https://photos.app.goo.gl/M1Xi8SIyd54ROwnl1" target="_blank">~500 photos</a> and <a class="external" href="https://photos.app.goo.gl/oYNUHoxkNJUmERtg1" target="_blank">~100 photos</a> but click the <img src="images/IconInformation.jpg" alt="Information"> icon once in Google Photos to see the captions.</p>
 </div>
-<? setThumbnail("BraziliaCathedralSm.jpg", "https://photos.google.com/share/AF1QipPEf2pYOajgA2jJG06hjTZZ8PBDqyfUK6lq4z6v9YGtr_SFqftXxIiKwSpoY0Q5wg/photo/AF1QipNqgjHfd_df1YYLMdWQ6PZkethwSMRTKSDQ0bYo?key=X2NxcFBHNTRfWUNUVVdmbHF1ellSU3FjS05iRE9B"); ?>
+<?php setThumbnail("BraziliaCathedralSm.jpg", "https://photos.google.com/share/AF1QipPEf2pYOajgA2jJG06hjTZZ8PBDqyfUK6lq4z6v9YGtr_SFqftXxIiKwSpoY0Q5wg/photo/AF1QipNqgjHfd_df1YYLMdWQ6PZkethwSMRTKSDQ0bYo?key=X2NxcFBHNTRfWUNUVVdmbHF1ellSU3FjS05iRE9B"); ?>
 
 <h2>5 October 2014</h2>
 <div class="story">
 	<p>I made a weekend trip from DC to NYC by bike! <a class="external" href="https://goo.gl/photos/ryAv4xveZaL7erpF8" target="_blank">See the photos</a> but click the <img src="images/IconInformation.jpg" alt="Information"> icon once in Google Photos to see the captions.</p>
 </div>
-<? setThumbnail("RedBikeSm.jpg", "https://photos.google.com/share/AF1QipOsShLctoZimkxr4QDe0FzN10e3RTl1NOENLBO1s7JdihHm9LPyL4gzCfmm6MU7xQ/photo/AF1QipOBSul_jaVOs1V1sK3-RSkKlBK2NYvk7fSIK1As?key=RGFFYUlmc1VKZnJRMmIyUzhXQ2Y0UlpUV01oUGFB"); ?>
+<?php setThumbnail("RedBikeSm.jpg", "https://photos.google.com/share/AF1QipOsShLctoZimkxr4QDe0FzN10e3RTl1NOENLBO1s7JdihHm9LPyL4gzCfmm6MU7xQ/photo/AF1QipOBSul_jaVOs1V1sK3-RSkKlBK2NYvk7fSIK1As?key=RGFFYUlmc1VKZnJRMmIyUzhXQ2Y0UlpUV01oUGFB"); ?>
 
 
 <h2>7 November 2013</h2>
@@ -108,7 +108,7 @@
 	<p>I ran the Marine Corp Marathon and was thrilled to finish with a time of 3:51:47! Well, I ran most of they way&mdash;I'm a big believer in walking breaks to rest up a little and I took the photo at right during an early stop with a disposable camera.</p>
 	<p>You might be amused by my footwear: Vibram Five Fingers <a href="http://vibramfivefingers.com/products/products_Sprint_m.cfm" target="_blank" class="external" title="Vibram Five Fingers">Sprint</a>! To me there is convincing evidence that running shoes encourage the non-elite runner to a adopt a bad technique which ultimately results in injuries. Of course Nike and the other shoe companies don't want you to think this way. Their solution to injury avoidance is ever more sophisticated and expensive shoes. Ideally we'd run barefoot but this is the next best thing though you have to build up gradually since, unlike the Kenyans and Ethiopians who ran 5 miles barefoot to school each day, the muscles and ligaments inside our feet are weak and the soles of our feet are soft. Read more about why taking of your shoes is the solution to the problem that  <a href="http://nymag.com/health/features/46213/" target="_blank" class="external">You Walk Wrong</a></p>
 </div>
-<? setThumbnail("RunToGeorgetown1.jpg"); ?>
+<?php setThumbnail("RunToGeorgetown1.jpg"); ?>
 
 <h2>12 October 2008</h2>
 <div class="story">
@@ -120,7 +120,7 @@
 	<p>My mother came to visit and the three of us took a trip to Toronto and Niagara Falls which was wonderful but brief. There is a <a href="http://flickr.com/photos/30215275@N03/sets/72157607555550650" class="external" target="_blank">photoset on Flickr</a>. Start at the picture above and to the right of the pink flower. When you get to the Jefferson Memorial, you know you are back in America.</p>
 	<p>Of particular note was the &quot;Journey Behind the Falls&quot; at which I attempted to capture the noise and violence of the water using the camera's video mode, now on <a href="http://www.youtube.com/watch?v=sMSLoLgusWQ" class="external" target="_blank">Youtube</a>.</p>
 </div>
-<? setThumbnail("Canada2008OnFlickr.jpg", "http://flickr.com/photos/30215275@N03/sets/72157607555550650/?page=2"); ?>
+<?php setThumbnail("Canada2008OnFlickr.jpg", "http://flickr.com/photos/30215275@N03/sets/72157607555550650/?page=2"); ?>
 
 <h2>21 December 2007</h2>
 <div class="story">

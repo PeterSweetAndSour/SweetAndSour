@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 fn_getPhotoInfo.php
 This file takes the photo name to get the relevant record from the database.
 It then determines the url to photo and finds its size.

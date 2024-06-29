@@ -1,11 +1,11 @@
-<? //dsp_letter18a.php ?>
+<?php //dsp_letter18a.php ?>
 
 <div class="story">
 	<p>10<sup>th</sup> December 2006</p>
 	<p>Dear everyone,</p>
 	<p class="endText">Let&apos;s get straight to it: we&apos;ve moved.</p>
 </div>
-<?
+<?php
 setThumbnail("AcrobatIcon_Ltr18.gif", $rootRelativeUrl . "letters/files/Letter18_Ltr.pdf");
 ?>
 
@@ -20,7 +20,7 @@ setThumbnail("AcrobatIcon_Ltr18.gif", $rootRelativeUrl . "letters/files/Letter18
    <p class="endText">After briefly sharing an apartment, Lan found a nice one for us in Alexandria, Virginia that is just 3km/2 miles from her new job and 8km/5 miles from mine.  Real estate prices appear to have tripled in the 5 years before we arrived but rents have not so we&apos;re waiting for the bubble to fully burst before we buy anything.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("cherry_26sm.jpg");
 	setThumbnail("motleyFoolSm.jpg");
 	?>

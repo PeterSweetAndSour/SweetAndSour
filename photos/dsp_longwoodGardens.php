@@ -1,4 +1,4 @@
-<? //dsp_troisRivieres2006.php ?>
+<?php //dsp_troisRivieres2006.php ?>
 
 <h2>Longwood Gardens, 27 May 06</h2>
 <div class="story noSpaceBelow">
@@ -6,7 +6,7 @@
 	 <p>We enjoyed the company of our friends Ying and Jack but the gardens are so vast that we had tired legs and sore feet by the end of the day. It was most impressive though as you can see.</p>
 </div>
 <div class="photo-gallery clear">
-   <?
+   <?php
    setThumbnail([
 	   "LongwoodGardens01Sm.jpg",
 		"LongwoodGardens02Sm.jpg",

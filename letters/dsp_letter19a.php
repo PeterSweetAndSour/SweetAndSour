@@ -1,11 +1,11 @@
-<? //dsp_letter17a.php ?>
+<?php //dsp_letter17a.php ?>
 
 <div class="story">
 	<p>19<sup>th</sup> December 2008</p>
 	<p>Dear everyone,</p>
 	<p class="endText">It&apos;s been two full years since I wrote a proper letter and finally it seems that there is enough news to justify another. So here goes:</p>
 </div>
-<?
+<?php
 setThumbnail("AcrobatIcon_Ltr19.gif", $rootRelativeUrl . "letters/files/Letter19_Ltr.pdf");
 ?>
 

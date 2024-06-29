@@ -1,4 +1,4 @@
-<? //dsp_letter2a.php ?>
+<?php //dsp_letter2a.php ?>
 
 <div class="story">
    <p>22nd April 1995</p>
@@ -21,7 +21,7 @@
    <p>Next: <a class="next" href="<?= $rootRelativeUrl ?>letters/letter2b">First impressions</a></p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["DenverLocation.jpg", "StateCapitol1.jpg", "RedRocks1.jpg", "ViewPointNE1.jpg", "ViewPointNW1.jpg", "Hyundai1.jpg", "SeatBelt.jpg"]);
 	?>
 </div>

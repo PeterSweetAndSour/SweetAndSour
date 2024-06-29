@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 act_getDBConnection.php
 Establish database connection
 

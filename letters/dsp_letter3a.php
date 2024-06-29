@@ -1,4 +1,4 @@
-<? //dsp_letter3a.php ?>
+<?php //dsp_letter3a.php ?>
 
 <div class="story">
    <p>4 August 95</p>
@@ -18,7 +18,7 @@
    <p class="endText">We borrowed a book from the library which included Henry Lawson's short story <i>The Loaded Dog</i>.  If you haven't read it since you were a child, or haven't read it all, make a priority to read it soon.  It&rsquo;s hilarious.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["UnionBlvd1.jpg", "ShovellingSnow1.jpg", "SnowOnCar1.jpg", "Icicle1.jpg"]);
 	?>
 </div>

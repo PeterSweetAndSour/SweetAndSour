@@ -1,4 +1,4 @@
-<? //dsp_letter16d.php (France, part 1) ?>
+<?php //dsp_letter16d.php (France, part 1) ?>
 
 <h2>France</h2>
 <div class="story">
@@ -18,7 +18,7 @@
 	<p class="endText">In downtown Nimes we passed a hair salon with the words Ne pas jalous painted boldly on the window. This translates as "Do not be jealous [of someone with a better haircut]" and we found it extremely amusing. Ever since we got married, Lan would say "You just being very jealous" if I offered a compliment or commented on something she had. Now we both use the French version.</p>
 </div>
 <div class="photo-gallery">
-	<? 
+	<?php 
 	setThumbnail(["Twingo1.jpg", "TheaterOrange1.jpg", "ArchOrange1.jpg", "Vaucluse1.jpg", "AvignonBridge1.jpg", "PontDuGard1.jpg", "FormuleOne1.jpg"]);
 	?>
 </div>

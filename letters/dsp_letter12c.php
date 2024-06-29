@@ -1,4 +1,4 @@
-<? //dsp_letter12c.php ?>
+<?php //dsp_letter12c.php ?>
 
 <h2>Life in America</h2>
 <div class="story">

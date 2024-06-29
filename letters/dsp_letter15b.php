@@ -1,4 +1,4 @@
-<? //dsp_letter15b.php ?>
+<?php //dsp_letter15b.php ?>
 
 <h2>New Orleans</h2>
 <div class="story">
@@ -13,7 +13,7 @@
 	<p class="endText"><a href="http://en.wikipedia.org/wiki/Lake_Pontchartrain" target="_blank" class="external">Lake Pontchartrain</a> sits to the north of the city and there is a 24 miles (39km) bridge across it! It looks to me like a <i>pork</i> project&mdash;some congressman won Federal money to build a bridge, even if there was not much on the other end.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["CathedralNO1.jpg", "Nachez1.jpg", "GardenDistrict1.jpg", "Nottaway1.jpg", "InfiniteBridge1.jpg", "PoliceFish1.jpg"]);
 	?>
 </div>

@@ -1,4 +1,4 @@
-<?
+<?php
 	/*
 	showphotos.php
 	This page allows the user to choose a folder within the application based on the structure
@@ -89,7 +89,7 @@
 			window.location.href = newURL;
 		}
 		
-		<? if(isset($photoName)) { ?>
+		<?php if(isset($photoName)) { ?>
 		function editPhoto() {
 			window.location.href = "index.php?fuseAction=formPhoto&formType=edit&folderId=<?= $folderId ?>&photoName=<?= $photoName ?>";
 		}
@@ -101,7 +101,7 @@
 				window.location.href = newUrl;
 			}
 		}
-		<? } ?>
+		<?php } ?>
 		// ]]>
 	</script>
 </head>
@@ -125,14 +125,14 @@
 								<!-- List folders in the "folders" table. Drop down menu. -->
 								<select name="folderId" style="width:204px" onChange="getPhotosInDB()">
 									<option value="0">*Select folder*
-									<? 
+									<?php 
 									while( $row = mysql_fetch_array( $rs_folders ) ) {
 										if($row["folderId"] == $folderId):
 											$folderName  = $row["folderName"]; ?>
 											<option selected value="<?= $row["folderId"] ?>"> <?= $row["folderId"] ?>. <?= $row["folderName"] ?></option>
-										<? else: ?>
+										<?php else: ?>
 											<option          value="<?= $row["folderId"] ?>"> <?= $row["folderId"] ?>. <?= $row["folderName"] ?></option>
-										<? endif;
+										<?php endif;
 									} ?>
 								</select>
 							</td>
@@ -140,17 +140,17 @@
 						<tr>
 							<td>
 								<!-- List photos in the "photos" table. Select list. -->
-								<? if( isset($folderID) ): ?>
+								<?php if( isset($folderID) ): ?>
 									<select name="photoName" style="width:204px" size="24" onChange="getPhotoDetails()">
-										<? while( $row = mysql_fetch_array( $rs_photos ) ) {
+										<?php while( $row = mysql_fetch_array( $rs_photos ) ) {
 										if($row["photoName"] == $photoName): ?>
 											<option selected value="<?= $row["photoName"] ?>"> <?= $row["photoName"] ?>
-										<? else: ?>
+										<?php else: ?>
 											<option          value="<?= $row["photoName"] ?>"> <?= $row["photoName"] ?>
-										<? endif; 
+										<?php endif; 
 									} ?>
 									</select>
-								<? endif; ?>
+								<?php endif; ?>
 							</td>
 						</tr>
 					</table>
@@ -160,30 +160,30 @@
 						<table width="414" border="0" cellspacing="0" cellpadding="0">
 							<tr style="height:156px">
 								<td valign="top">
-									<? if( isset($photos) ) { ?>
+									<?php if( isset($photos) ) { ?>
 									<p><img src="clear1px.gif" alt="" width="94" height="1"><br />Photo:</p>
-									<? }; ?></p>
+									<?php }; ?></p>
 								</td>
 								<td valign="top">
 									<img src="clear1px.gif" alt="" width="198" height="1"><br />
-									<? if($photoName != "" && $photos[$photoName]["width"] && $photos[$photoName]["height"]) : 
+									<?php if($photoName != "" && $photos[$photoName]["width"] && $photos[$photoName]["height"]) : 
 										//Display the photo based on whether the width or height is greater
 										if($photos[$photoName]["width"] > $photos[$photoName]["height"]): ?>
 											<img src="<?= $localImgSrc ?>" width="150" border="1">							  
-										<? else: ?>
+										<?php else: ?>
 											<img src="<?= $localImgSrc ?>" height="150" border="1">							  
-										<? endif; ?>
-									<? endif; ?>
+										<?php endif; ?>
+									<?php endif; ?>
 								</td>
 								<td rowspan="5" align="left" valign="top">
 									<input type="button" name="add"       value="add photo"    onclick="addPhoto()"    style="height:24px; width:94px" /><br />
-									<? if($photoName != ""): ?>
+									<?php if($photoName != ""): ?>
 										<input type="button" name="edit"   value="edit photo"   onclick="editPhoto()"   style="height:24px; width:94px" /><br />
 										<input type="button" name="delete" value="delete photo" onclick="deletePhoto()" style="height:24px; width:94px" /><br />
-									<? endif; ?>
+									<?php endif; ?>
 								</td>
 							</tr>
-							<?
+							<?php
 							if( isset($dateModified) ) {
 								?>
 								<tr>
@@ -193,7 +193,7 @@
 										<input type="hidden" name="dateModified" value="<?= str_replace("-", "", $dateModified) ?>" />
 									</td>
 								</tr>
-								<?
+								<?php
 							}
 							if( isset($photos) ) { ?>
 								<tr>
@@ -212,7 +212,7 @@
 									<td valign="top"><p>Caption:</p></td>
 									<td colspan="2"><textarea disabled rows="13" wrap="soft" cols="40"><?= $photos[$photoName]["caption"] ?></textarea></td>
 								</tr>
-							<? }; ?>
+							<?php }; ?>
 							
 						</table>
 					

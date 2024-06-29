@@ -1,4 +1,4 @@
-<?
+<?php
 include '../../sweetandsour_conf.php';
 include '../includes/act_getDBConnection.php';
 

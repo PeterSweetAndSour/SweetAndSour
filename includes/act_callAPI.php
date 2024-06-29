@@ -1,4 +1,4 @@
-<?
+<?php
 function CallAPI($method, $url, $data = false) {
     $curl = curl_init();
 	

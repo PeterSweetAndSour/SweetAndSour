@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 Get complete filename
 
 

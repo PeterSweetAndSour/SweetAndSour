@@ -1,7 +1,7 @@
-<? //dsp_humor4.php ?>
+<?php //dsp_humor4.php ?>
 <h2>Pillsbury Doughboy</h2>
 <div class="photo-gallery">
-	<? setThumbnail("Doughboy1.jpg"); ?>
+	<?php setThumbnail("Doughboy1.jpg"); ?>
 </div>
 
 <h2>McDonalds Job Application</h2>

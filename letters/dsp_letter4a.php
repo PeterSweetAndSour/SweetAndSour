@@ -1,4 +1,4 @@
-<? //dsp_letter4a.php ?>
+<?php //dsp_letter4a.php ?>
 
 <div class="story">
 	<p class="endText">26th November 1995</p>
@@ -31,7 +31,7 @@
    <p class="endText">You may recall in our first letter from Denver, I included a picture of the Red Rocks outdoor theatre that is close to us.  Apparently the Beatles played there and U2&rsquo;s Live under a blood red sky was recorded there.  I've heard INXS played many times on the radio, Crowded House several times and the Divinyls and Icehouse once or twice.  Unfortunately, there is no government station like JJJ which means that to listen to music, you have to listen to advertising or constantly change stations.  I tend to stay with current affairs on public radio.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["LanBlackCanyon1.jpg", "BlackCanyon1.jpg", "MtRushmore1.jpg", "DevilsTower1.jpg", "OldFaithful1.jpg", "Buffalo1.jpg", "RedRocks1.jpg"]);
 	?>
 </div>

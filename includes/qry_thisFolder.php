@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 qry_thisFolder.php
 Get name of the folder given the folderID
 

@@ -1,4 +1,4 @@
-<? //dsp_letter17b.php ?>
+<?php //dsp_letter17b.php ?>
 
 <h2>Washington D.C.</h2>
 <div class="clearfix">
@@ -20,7 +20,7 @@
 		<p>She did find some wonderful neighbors though, particularly two older gentlemen Bob, and Roy who served in both WW2 and in Korea. Both were a valuable source of local knowledge, kind words and good humor. Lan later discovered she was living next door to another woman originally from Vietnam. </p>
 	</div>
 	<div class="photo-gallery">
-		<?
+		<?php
 		setThumbnail(["archStLouis1.jpg","I-70Trucking1.jpg"]);
 		?>
 	</div>
@@ -38,7 +38,7 @@
 	<p class="endText">Despite trying without luck for 3 years before leaving for Washington, Lan got another job in Denver within a week of returning. It is with <a class="external" href="http://www.trizetto.com" target="_blank">TriZetto</a> which serves health insurance firms.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["baptism1.jpg", "WashingtonMonument1.jpg", "RenoRdAngle1.jpg", "boneShip1.jpg", "99Escort1.jpg"]);
 	?>
 </div>

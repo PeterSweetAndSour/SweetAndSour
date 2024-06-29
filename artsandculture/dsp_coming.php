@@ -1,4 +1,4 @@
-<? //dsp_coming.php ?>
+<?php //dsp_coming.php ?>
 
 <h2>Cooking with Lan</h2>
 <div class="story">

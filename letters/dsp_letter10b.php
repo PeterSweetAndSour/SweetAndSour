@@ -1,4 +1,4 @@
-<? //dsp_letter10b.php ?>
+<?php //dsp_letter10b.php ?>
 
 <h2>Australia</h2>
 <div class="story">

@@ -1,4 +1,4 @@
-<? //dsp_letter13e.php ?>
+<?php //dsp_letter13e.php ?>
 
 <h2>America</h2>
 <div class="story">

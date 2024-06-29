@@ -1,4 +1,4 @@
-<? //dsp_letter4b.php ?>
+<?php //dsp_letter4b.php ?>
 
 <h2>News in America (or the lack of it)</h2>
 <div class="story">

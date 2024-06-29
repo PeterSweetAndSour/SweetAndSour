@@ -1,4 +1,4 @@
-<? 
+<?php 
 /*
 =>| $showFirstPage
 =>| $showLastPage
@@ -11,35 +11,35 @@
 =>| folderId
 */
 ?>
-	<p class="pagination" data-folderid="<?= $folderId ?>"><?
+	<p class="pagination" data-folderid="<?= $folderId ?>"><?php
 		if($showFirstPage) {
-			?><a href="#" title="First page" class="firstPage" data-page="1">&laquo;</a> <?
+			?><a href="#" title="First page" class="firstPage" data-page="1">&laquo;</a> <?php
 		}
 		else {
-			?>&laquo; <?
+			?>&laquo; <?php
 		}
 
 		if($showPreviousPage) {
-			?><a href="#" title="Previous page" class="previousPage" data-page="<?= $previousPage ?>">&lsaquo;</a> <?
+			?><a href="#" title="Previous page" class="previousPage" data-page="<?= $previousPage ?>">&lsaquo;</a> <?php
 		}
 		else {
-			?>&lsaquo; <?
+			?>&lsaquo; <?php
 		}
 
-		?><?= $page ?> <?
+		?><?= $page ?> <?php
 
 		if($showNextPage) {
-			?><a href="#" title="Next page" class="nextPage" data-page="<?= $nextPage ?>">&rsaquo;</a> <?
+			?><a href="#" title="Next page" class="nextPage" data-page="<?= $nextPage ?>">&rsaquo;</a> <?php
 		}
 		else {
-			?>&rsaquo; <?
+			?>&rsaquo; <?php
 		}
 
 		if($showLastPage) {
-			?><a href="#" title="Last" class="lastPage" data-page="<?= $lastPage ?>">&raquo;</a> <?
+			?><a href="#" title="Last" class="lastPage" data-page="<?= $lastPage ?>">&raquo;</a> <?php
 		}
 		else {
-			?>&raquo; <?
+			?>&raquo; <?php
 		}
 		?>
 		&nbsp;&nbsp;(Page <?= $page ?> of <?= $lastPage ?>)

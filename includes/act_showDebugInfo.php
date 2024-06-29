@@ -1,5 +1,5 @@
 <div id="showDebugInfo">
-	<?
+	<?php
 	//Include this to see php variables
 	function dump_array($array) {
 		if(is_array($array)) {

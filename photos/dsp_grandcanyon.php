@@ -1,4 +1,4 @@
-<? //dsp_aust2005.php ?>
+<?php //dsp_aust2005.php ?>
 
 <div class="story">
    <p>Our friends Richard and Lily announced they were coming to America almost a year in advance but since there was a good chance of us leaving Denver, we urged them not to come here. We are still here but wanted to see them and the closest they were going to get was the Grand Canyon. Since we <a href="<?= $rootRelativeUrl ?>letters/letter12b#grandcanyon">barely saw it</a> last time, we decided to take a long weekend so we could see the Canyon with them. At 1095km/680 miles away from home, we had a full day&rsquo;s drive down on Friday January 14th, spent the day together on Saturday and drove home on Sunday. We even brought a cooked turkey with us! The family had already been traveling for a few weeks by the time we met them and Lan thought they would enjoy some home-cooked meals for a change.</p>
@@ -10,7 +10,7 @@
    <p>On the way there on US163. A lovely surprise. <a href="http://en.wikipedia.org/wiki/Monument_Valley" target="_blank" class="external">Learn more</a>.</p>
 </div>
 <div class="photo-gallery clear">
- 	<?
+ 	<?php
 	setThumbnail([
 		"monumentvalley_01sm.jpg",
 		"monumentvalley_02sm.jpg",
@@ -28,7 +28,7 @@
    <p>You expect it to be spectacular and it is. <a href="http://en.wikipedia.org/wiki/Grand_Canyon" target="_blank" class="external">Learn more</a>.</p>
 </div>
 <div class="photo-gallery clear">
-	<?
+	<?php
 	setThumbnail([
 		"highway64_sm.jpg",
 		"grandcanyon_01sm.jpg",

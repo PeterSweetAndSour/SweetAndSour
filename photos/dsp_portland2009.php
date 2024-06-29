@@ -1,4 +1,4 @@
-<? //dsp_portland2009.php ?>
+<?php //dsp_portland2009.php ?>
 
 <h2>Portland, 20 &ndash; 22 Aug 2009</h2>
 <div class="story noSpaceBelow">
@@ -6,7 +6,7 @@
 	that the winter is long. It was sad to leave and I hope we go back one day.</p>
 </div>
 <div class="photo-gallery clear">
-	<? 
+	<?php 
 	setThumbnail([
 		"20090820_portland01Sm.jpg",
 		"20090820_portland02Sm.jpg",

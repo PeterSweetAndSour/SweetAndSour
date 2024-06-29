@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 fn_getPhotoURL.php
 Assumes images are always in an images subdirectory.
 

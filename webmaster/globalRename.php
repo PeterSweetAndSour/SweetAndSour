@@ -4,7 +4,7 @@
 </head>
 <body>
 <h1>Global rename</h1>
-<?
+<?php
 // Prepare for upload to Amazon S3. Set pattern in rglob call to give some control over files selected.
 
 // Set date, width and height for images in photos table

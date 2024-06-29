@@ -1,4 +1,4 @@
-<? //dsp_letter5c.php ?>
+<?php //dsp_letter5c.php ?>
 
 <h2>Election and American politics</h2>
 <div class="clearfix">
@@ -33,7 +33,7 @@
 		<p class="endText"><a name="Note8Ref"></a>For the record, as of today, there are at least 17,316 reported civilian casualties <sup><a href="#Note8">Note&nbsp;8</a></sup>&mdash;more than five times the number killed on 11th September 2001. A report in <i>The Lancet</i> <sup><a href="#Note9">Note&nbsp;9</a></sup> estimated the toll to be 98,000 within a wide range. It included Iraqi army personnel (mainly unwilling conscripts) killed during the invasion as well as civilians and extrapolated from samples.</p>
 	</div>
 	<div class="photo-gallery">
-		<?
+		<?php
 		setThumbnail(["debateBulge1.jpg", "electionMap1.jpg"]);
 		?>
 	</div>

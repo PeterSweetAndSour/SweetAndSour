@@ -1,4 +1,4 @@
-<? //dsp_letter14b.php ?>
+<?php //dsp_letter14b.php ?>
 
 <h2>Out and about</h2>
 <div class="story">
@@ -22,7 +22,7 @@
 	<p class="endText">In our letter last year, I commented on the wonderful time we had with Lan&rsquo;s <a href="http://users.kua.net/~jmiller/" target="_blank">aunt Tuyet</a> in Orlando, Florida.  We suffered a great loss this year when she died unexpectedly of luekemia.  She went to the doctor thinking she had the flu and died a few weeks later.  She was only 47.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["LanAndXuan1.jpg", "SearsTower1.jpg", "Dino_NM_Us1.jpg", "Dino_NM1.jpg"]);
 	?>
 </div>

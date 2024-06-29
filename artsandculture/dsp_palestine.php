@@ -1,12 +1,12 @@
-<? //dsp_palestine.php ?>
+<?php //dsp_palestine.php ?>
 
-<?
+<?php
 if($fuseAction == "injustice") {
 	?>
 	<div class="story">
 		<p>In 2000 I did a public-speaking class in which we had to do four presentations (here is the <a href="<?= $rootRelativeUrl ?>artsandculture/farnsworth">first talk</a> and the others are linked from there). For the one that was to &quot;pursuasive&quot;, I chose to do one about the plight of the Palestinians.</p>
 </div>
-	<?
+	<?php
 }
 ?>
 
@@ -32,7 +32,7 @@ if($fuseAction == "injustice") {
 	</ul>
 </div>
 <div class="photo-gallery">
-	<? setThumbnail("NeverTooYoungSm.jpg"); ?>
+	<?php setThumbnail("NeverTooYoungSm.jpg"); ?>
 </div>
 
 <h2>Jan 2009 update</h2>
@@ -160,7 +160,7 @@ if($fuseAction == "injustice") {
 
 <div class="story">
 	<div class="imgInColumn">
-		<? setThumbnail("Settlements.gif", "https://www.un.org/unispal/document/auto-insert-204082/"); ?>
+		<?php setThumbnail("Settlements.gif", "https://www.un.org/unispal/document/auto-insert-204082/"); ?>
 	</div>
 	<div class="caption captionInColumn offset">
 		<p>Map 3: While even the UN uses the term "settlements", it seems clear that the intent is to occupy the land making it difficult, if not impossible, to give back to any future Palestinian state.  With the "settlements" in place, Israel has an excuse to maintain a "security" (i.e. military) presence inside its neighbor and by fragmenting the state, makes it less viable.</p>

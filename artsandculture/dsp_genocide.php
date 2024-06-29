@@ -1,4 +1,4 @@
-<? //dsp_genocide.php ?>
+<?php //dsp_genocide.php ?>
 
 <div class="photo-gallery">
 	<h2>Purpose statement</h2>
@@ -48,7 +48,7 @@
 			<li>Overall though, Stalin's campaign against the Ukrainians was only part of his ongoing terror that lasted decades.  In a paper published by the National Center for Policy Analysis, it is estimated that Hitler caused the death of 16 million people, not including combat fatalities and this includes the 6 million Jews of the Holocaust.  As monstrous as this is, it is estimated that more than double that number, 34.4  million, or more than the entire population of California, perished in Mao's China, while an incredible 42.7 million died under Stalin, the population of California, Oregon AND Washington.</li>
 		</ul>
 	</div>
-	<? setThumbnail("mapUkraine1.gif"); ?>
+	<?php setThumbnail("mapUkraine1.gif"); ?>
 
 	<h3>The genocide of the Armenians by the Ottoman Turks in 1915</h3>
 	<div class="story">
@@ -61,7 +61,7 @@
 			<li>Testimony in 1996 to a hearing before the Committee on International Relations, says that 1&frac12; million died along the way.  This out of a pre-war population of about 2 million.
 		</ul>
 	</div>
-	<? setThumbnail("mapTurkey1.gif"); ?>
+	<?php setThumbnail("mapTurkey1.gif"); ?>
 
 	<h3>Why the others were forgotten</h3>
 	<div class="story">

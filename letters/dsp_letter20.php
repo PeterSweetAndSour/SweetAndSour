@@ -11,7 +11,7 @@
 	<p>I would be thrilled to hear your news so please write when the opportunity arises,</p>
 	<p>with love<br>Peter</p>
 </div>
-<?
+<?php
 setThumbnail("photoSetPortugal1.jpg", "https://photos.app.goo.gl/enKr25uNuk5FoKEt8");
 ?>
 

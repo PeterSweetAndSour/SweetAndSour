@@ -1,4 +1,4 @@
-<? /* Save photo after add or edit
+<?php /* Save photo after add or edit
 
 Variables:
 |=> $folderID  	a number indicating the folder

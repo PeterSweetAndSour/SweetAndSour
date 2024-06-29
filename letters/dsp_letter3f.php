@@ -1,4 +1,4 @@
-<? //dsp_letter3f.php ?>
+<?php //dsp_letter3f.php ?>
 
 <h2>The world</h2></p>
 <div class="story">

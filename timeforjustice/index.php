@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 index.php for "Time for justice". */
 
 include '../../sweetandsour_conf.php';

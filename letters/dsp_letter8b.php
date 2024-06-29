@@ -1,4 +1,4 @@
-<? //dsp_letter8b.php ?>
+<?php //dsp_letter8b.php ?>
 
 <h2>Trip to southwest corner</h2>
 <div class="story">
@@ -8,7 +8,7 @@
    <p class="endText">The <i>Delicate Arch</i> can normally be seen from a lookout near the road but it was foggy on the day we visited so we took a l-o-n-g trail up the hill to see it.  The sign at the start of the trail said 1.5 miles (2.4 km) which we thought was the distance there <i>and back</i>.  We were wrong; it was the distance in one direction only.  We were tired but it was cool.  It would be unbearable in summer.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["LanMesaVerde1.jpg", "PeterMesaVerde1.jpg", "LandscapeArch1.jpg", "DelicateArch1.jpg", "NorthSouthArch1.jpg"]);
 	?>
 </div>

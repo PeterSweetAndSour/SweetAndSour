@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 index.php  for the "Coming to America" (letters subdirectory). */
 
 include '../../sweetandsour_conf.php';

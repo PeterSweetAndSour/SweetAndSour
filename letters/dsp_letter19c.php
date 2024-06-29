@@ -1,4 +1,4 @@
-<? //dsp_letter19c.php ?>
+<?php //dsp_letter19c.php ?>
 
 <h2>In sickness and in health</h2>
 <div class="story">
@@ -10,7 +10,7 @@
 	</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["RunToGeorgetown1.jpg", "MarathonWithCapitol1.jpg", "MarathonReward1.jpg"]);
 	?>
 </div>

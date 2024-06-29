@@ -1,4 +1,4 @@
-<?
+<?php
 session_start();
 
 // Check for a post
@@ -104,11 +104,11 @@ if ($_POST['submit']) {
 <body>
 <div id="wrapper">
 	<h1>Send an HTML Email</h1>
-	<? if ($result) : ?>
+	<?php if ($result) : ?>
 		<div class="message"><?= $_SESSION['message'] ?></div>
-	<? elseif ($_POST['postFlag']) : ?>
+	<?php elseif ($_POST['postFlag']) : ?>
 			<div class="error"><?= $_SESSION['message'] ?></div>
-	<? endif; ?>
+	<?php endif; ?>
 	<form action="index.php" method="post">
 		<p>
 			<strong>Subject:</strong><br />

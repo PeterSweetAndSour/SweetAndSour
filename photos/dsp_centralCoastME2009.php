@@ -1,4 +1,4 @@
-<? //dsp_centralCoastME2009.php ?>
+<?php //dsp_centralCoastME2009.php ?>
 
 <h2>Maine central coast, 19&ndash;20 Aug 2009</h2>
 <div class="story noSpaceBelow">
@@ -6,7 +6,7 @@
 	plentiful fresh seafood and ocean views.</p>
 </div>
 <div class="photo-gallery clear">
-	<?
+	<?php
    setThumbnail(["20090819_bucksport03Sm.jpg",
 		"20090819_bucksport06Sm.jpg",
 		"20090819_bucksport05Sm.jpg",

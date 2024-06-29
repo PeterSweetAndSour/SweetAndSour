@@ -1,4 +1,4 @@
-<? //dsp_letter9a.php ?>
+<?php //dsp_letter9a.php ?>
 
 <div class="story">
    <p>23 November 1997</p>

@@ -1,4 +1,4 @@
-<? //dsp_letter5b.php ?>
+<?php //dsp_letter5b.php ?>
 
 <h2>More news</h2>
 <div class="story">

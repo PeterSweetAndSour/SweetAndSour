@@ -1,4 +1,4 @@
-<? //dsp_blizzard97.php ?>
+<?php //dsp_blizzard97.php ?>
 
 <div class="story">
 	<p class="endText">This is a report on the considerable adventure I had getting home from Denver Intenational Airport as the city was being shut down by the snow storm of October 24, 1997. I wrote this to email to everyone at work the following Monday to save retelling the story to everyone individually.</p>
@@ -21,7 +21,7 @@
    <p>Short of being on a snow plough, a bus is probably the best way to get around on the road. On Colfax, there was an abandoned car roughly every 100 yards but we just cruised on through. Everyone on the bus was smiling, pleased to be out of the cold and on their way with some confidence that they would arrive. Many were on their way to work including a man from U-Haul who commented what a dreadful day it was for moving! He was expecting a busy day too as it was the last Saturday of the month. The man sitting opposite with me was going to work but he didn't have a key and was relying on someone else to make it there to let him in.</p>
    <p class="endText">Once off the bus, I only had a short distance to walk up Poplar St through 20" of snow which seemed to be less than other parts of town had. I made it home at 7.30am, just 10 hours after my plane arrived at DIA and 26 hours after I left home the previous morning. If I didn't get out on the RTD bus, I probably would have been one of those trapped in DIA for two nights. If only we got paid hourly ...</p>
 </div>
-<?
+<?php
 setThumbnail("PeterBlizzard1.jpg");
 setThumbnail("SnowAngel1.jpg");
 setThumbnail("BackSteps1.jpg");

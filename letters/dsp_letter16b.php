@@ -1,4 +1,4 @@
-<? //dsp_letter16b.php ?>
+<?php //dsp_letter16b.php ?>
 
 <h2>I love New York</h2>
 <div class="clearfix">
@@ -19,7 +19,7 @@
 		<p>The <i>Guggenheim Museum</i>, designed by Frank Lloyd Wright, is world-famous for its <a href="http://www.guggenheim.com/the_building.html" target="_blank">unusual building</a> with a cork-screw interior. However, the art in the museum was modern and with one exception, to my eyes, completely worthless. That exception was a huge white piece with a single black line running across the middle of it. At first it appeared to be abstract art but on closer inspection it was a photograph taken near to the ground of a snow-covered beach in Iceland, a narrow strip of dark ocean then overcast sky above. Brilliant. </p>
 	</div>
 	<div class="photo-gallery">
-		<?
+		<?php
 		setThumbnail("StatueOfLiberty1.jpg");
 		?>
 	</div>
@@ -36,7 +36,7 @@
 	<p class="endText">We wandered around low-rise <i>Greenwich Village</i> and took a short cable car ride to Roosevelt Island. One night we saw a Broadway show, <i>Thoroughly Modern Millie</i>, which was fun but expensive. We got our tickets at half price from the booth in Times Square but at US$48 each, I wonder who pays full price.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["Intrepid1.jpg", "Turtle1.jpg", "FlatironBuilding1.jpg", "CentralPark1.jpg"]);
 	?>
 </div>

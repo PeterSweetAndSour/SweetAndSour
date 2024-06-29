@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 qry_menu_countChildren.php
 Count the number of active children of the specified menu item.
 

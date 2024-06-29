@@ -1,4 +1,4 @@
-<? //dsp_quebec2006.php ?>
+<?php //dsp_quebec2006.php ?>
 
 <h2>Qu&eacute;bec, 4 &ndash; 6 Oct 06</h2>
 <div class="story noSpaceBelow">
@@ -13,7 +13,7 @@
 </div>
 
 <div class="photo-gallery clientArea">
-	<?
+	<?php
 	setThumbnail([
 		"quebec01Parliament1Sm.jpg",
 		"quebec02Parliament2Sm.jpg",

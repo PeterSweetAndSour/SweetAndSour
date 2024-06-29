@@ -1,4 +1,4 @@
-<? //dsp_letter13d.php ?>
+<?php //dsp_letter13d.php ?>
 
 <div class="story">
    <p>Key West is as far south as you can go in America without getting wet.  It was warm (86&deg;F/30&deg;C while it was freezing in Denver), picturesque and full of history.  Once a base for pirates extracting wealth from passing ships, it is now home to merchants extracting wealth from passing tourists.  The Customs office meets all construction regulations for Federal government buildings, including the one that demands that the roof support 4 ft (1.2 m) of snow!  After taking the bus tour we took a ride in a glass-bottom boat to see the coral reef but the reef is virtually dead.  Apparently, the reef along all the Florida Keys is nearly dead for several reasons but essentially we are the problem.</p>
@@ -13,7 +13,7 @@
    <p class="endText">We flew home the next day exhausted but knowing we had used our time well and were further delighted when our car started without hesitation after being left for almost 3 weeks.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["BanyanTree1.jpg", "Epcot1.jpg", "SaturnV1.jpg", "SpaceKennedy1.jpg", "Poinsettia1.jpg"]);
 	?>
 </div>

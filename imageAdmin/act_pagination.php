@@ -1,4 +1,4 @@
-<? /* act_pagination.php
+<?php /* act_pagination.php
 =>| $filesInFolder
 =>| $_GET["page"]
 |=> $imagesPerPage

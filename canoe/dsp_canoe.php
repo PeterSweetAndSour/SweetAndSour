@@ -7,7 +7,7 @@
 </div>
 
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("Canoe_01Sm.jpg");
 	setThumbnail("Canoe_02Sm.jpg");
 	setThumbnail("Canoe_03Sm.jpg");

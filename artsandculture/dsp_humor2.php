@@ -1,4 +1,4 @@
-<? //dsp_humor2.php ?>
+<?php //dsp_humor2.php ?>
 
 <h2>Frontline</h2>
 <div class="story">
@@ -21,7 +21,7 @@
    <p class="endText">More: <a class="external" href="http://en.wikipedia.org/wiki/Home_Improvement_(TV_series)" target="_blank"><i>Home Improvement</i> on Wikipedia</a></p>
 </div>
 <div class="photo-gallery clear">
-	<?
+	<?php
 	setThumbnail("HomeImprovementSm.jpg");
 	setThumbnail("HeidiSm.jpg");
 	?>

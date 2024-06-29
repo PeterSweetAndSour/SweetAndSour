@@ -1,4 +1,4 @@
-<? /*
+<?php /*
 	PassOnVars.php
 	This page passes on whatever form variables are received by making a form with
 	hidden form variables and then submitting the form. Useful on multi-part forms
@@ -18,14 +18,14 @@
 	<html><head></head>
 	<body>
 		<form action="<?= $formAction ?>" method="post">
-			<? while($element = each($HTTP_POST_VARS)) { ?>
+			<?php while($element = each($HTTP_POST_VARS)) { ?>
 			   <input type="hidden" name="<?= $element["key"] ?>" value="<?= $element["value"] ?>">
-			<? } ?>
+			<?php } ?>
 		</form>
 		<script type="text/javascript">
-			<? if($displayMsg != "") { ?>
+			<?php if($displayMsg != "") { ?>
 				alert("<?= $displayMsg ?>");
-			<? } ?>
+			<?php } ?>
 			//document.forms[0].submit();
 		</script>
 	</body>

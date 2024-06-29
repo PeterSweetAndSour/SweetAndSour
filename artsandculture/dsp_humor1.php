@@ -1,4 +1,4 @@
-<? //dsp_humor1.php ?>
+<?php //dsp_humor1.php ?>
 <div class="photo-gallery">
 	<div class="story">
 		<p>The following British comedies had an impact on me and I've been very happy that Lan has had the opportunity of seeing reruns so they can be part of our shared experience. I've finally found a link for <i><a href="http://www.bbc.co.uk/comedy/guide/articles/t/tworonniesthe_7776575.shtml" target="_blank">The Two Ronnies</a></i> and I was happy to see how much is out there on some of the other programs.</p>
@@ -14,7 +14,7 @@
 			<a class="external" href="http://en.wikipedia.org/wiki/The_Goodies" target="_blank">The Goodies on Wikipedia</a>
 		</p>
 	</div>
-	<? setThumbnail("Goodies1.jpg"); ?>
+	<?php setThumbnail("Goodies1.jpg"); ?>
 	
 	<h2>Fawlty Towers</h2>
 	<div class="story">
@@ -27,7 +27,7 @@
 			<a class="external" href="http://en.wikipedia.org/wiki/Fawlty_Towers" target="_blank">Fawlty Towers on Wikipedia</a>
 		</p>
 	</div>
-	<? setThumbnail("FawltyTowers.gif"); ?>
+	<?php setThumbnail("FawltyTowers.gif"); ?>
 				
 	<h2>Are you being served?</h2>
 	<div class="story">
@@ -38,7 +38,7 @@
 		<p>
 		<p class="endText"><i><a href="https://www.youtube.com/watch?v=cfPjMSLiBTg" target="_blank" class="external">German Week</a></i> episode on Youtube. Lan and I still occasionally laugh at the joke at 2:59.</p>
 	</div>
-	<? setThumbnail("AreYouC1.jpg"); ?>
+	<?php setThumbnail("AreYouC1.jpg"); ?>
 
 	<h2>Yes [Prime] Minister</h2>
 	<div class="story">
@@ -56,7 +56,7 @@
 		</p>
 		<p class="endText"><i><a href="https://www.youtube.com/watch?v=S8etmZyCB0A" class="external" target="_blank">Battle School</a></i> in which the platoon learn how to engage the enemy.</p>
 	</div>
-	<? setThumbnail("DadsArmy1.jpg"); ?>
+	<?php setThumbnail("DadsArmy1.jpg"); ?>
 
 	<h2>&apos;Allo &apos;Allo!</h2>
 	<div class="story">

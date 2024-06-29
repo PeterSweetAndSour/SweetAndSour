@@ -1,4 +1,4 @@
-<?
+<?php
 	//qry_folderNames.php
 	//Get all folder names
 	$sql = "SELECT folderID, folderName FROM folders ORDER BY folderID";

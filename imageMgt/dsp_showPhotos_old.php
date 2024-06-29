@@ -1,4 +1,4 @@
-<?
+<?php
 	/*showphotos.php
 	This page allows the user to choose a folder within the application based on the structure
 	indicated in the "folders" table.  If the image file is in the specified location, it will
@@ -77,7 +77,7 @@
 			window.location.href = newURL;
 		}
 		
-		<? if(isset($photoName)) { ?>
+		<?php if(isset($photoName)) { ?>
 		function editPhoto() {
 			window.location.href = "index.php?fuseAction=formPhoto&formType=edit&folderID=<?= $folderID ?>&photoName=<?= $photoName ?>";
 		}
@@ -86,7 +86,7 @@
 			if(confirm("Are you sure you want to remove this photo from the database? \n\n(The file itself will not be deleted.)"))
 				window.location.href = "index.php?fuseAction=deletePhoto&folderID=<?= $folderID ?>&photoName=<?= $photoName ?>";
 		}
-		<? } ?>
+		<?php } ?>
 		// ]]>
 	</script>
 </head>
@@ -110,13 +110,13 @@
 								<!-- List folders in the "folders" table. Drop down menu. -->
 								<select name="folderID" style="width:204px" onChange="getPhotosInDB()">
 									<option value="0">*Select folder*
-									<? while( $row = mysql_fetch_array( $rs_folders ) ) {
+									<?php while( $row = mysql_fetch_array( $rs_folders ) ) {
 										if($row["folderID"] == $folderID):
 											$folderName  = $row["folderName"]; ?>
 											<option selected value="<?= $row["folderID"] ?>"> <?= $row["folderID"] ?>. <?= $row["folderName"] ?></option>
-										<? else: ?>
+										<?php else: ?>
 											<option          value="<?= $row["folderID"] ?>"> <?= $row["folderID"] ?>. <?= $row["folderName"] ?></option>
-										<? endif;
+										<?php endif;
 									} ?>
 								</select>
 							</td>
@@ -124,17 +124,17 @@
 						<tr>
 							<td>
 								<!-- List photos in the "photos" table. Select list. -->
-								<? if( isset($folderID) ): ?>
+								<?php if( isset($folderID) ): ?>
 									<select name="photoName" style="width:204px" size="24" onChange="getPhotoDetails()">
-										<? while( $row = mysql_fetch_array( $rs_photos ) ) {
+										<?php while( $row = mysql_fetch_array( $rs_photos ) ) {
 										if($row["photoName"] == $photoName): ?>
 											<option selected value="<?= $row["photoName"] ?>"> <?= $row["photoName"] ?>
-										<? else: ?>
+										<?php else: ?>
 											<option          value="<?= $row["photoName"] ?>"> <?= $row["photoName"] ?>
-										<? endif; 
+										<?php endif; 
 									} ?>
 									</select>
-								<? endif; ?>
+								<?php endif; ?>
 							</td>
 						</tr>
 					</table>
@@ -146,29 +146,29 @@
 						<tr style="height:156px">
 							<td valign="top">
 								<p><img src="clear1px.gif" alt="" width="94" height="1"><br />
-								<? if($photoInfoFound == true) { ?>Photo:<? } ?>
+								<?php if($photoInfoFound == true) { ?>Photo:<?php } ?>
 								</p>
 							</td>
 							<td valign="top">
 								<p><img src="clear1px.gif" alt="" width="198" height="1"><br />
-								<? if($photoInfoFound == true) { 
+								<?php if($photoInfoFound == true) { 
 									//Display the photo based on whether the width or height is greater
 									if( $width > $height ): ?>
 										<img src="<?= $url ?>" width="150" border="1">							  
-									<? else: ?>
+									<?php else: ?>
 										<img src="<?= $url ?>" height="150" border="1">							  
-									<? endif;
+									<?php endif;
 								}; ?></p>
 							</td>
 							<td rowspan="5" align="left" valign="top">
 								<input type="button" name="add"        value="add photo"    onclick="addPhoto()"    style="height:24px; width:94px" /><br />
-								<? if( isset($photoName) ): ?>
+								<?php if( isset($photoName) ): ?>
 									<input type="button" name="edit"   value="edit photo"   onclick="editPhoto()"   style="height:24px; width:94px" /><br />
 									<input type="button" name="delete" value="delete photo" onclick="deletePhoto()" style="height:24px; width:94px" /><br />
-								<? endif; ?>
+								<?php endif; ?>
 							</td>
 						</tr>
-						<? if($photoInfoFound == true): ?>
+						<?php if($photoInfoFound == true): ?>
 						<tr>
 							<td><p>Width (px):</p></td>
 							<td colspan="2"><p><?= $width ?></p></td>
@@ -185,7 +185,7 @@
 							<td valign="top"><p>Caption:</p></td>
 							<td colspan="2"><textarea disabled rows="13" wrap="soft" cols="40"><?= $caption ?></textarea></td><!-- If you specify a "style" attribute, the wrapping stops working in Navigator/Mozilla so must specify approximate width with columns. -->
 						</tr>
-						<? endif; ?>
+						<?php endif; ?>
 					</table>
 					
 				</td>

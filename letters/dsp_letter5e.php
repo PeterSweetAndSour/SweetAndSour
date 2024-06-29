@@ -1,4 +1,4 @@
-<? //dsp_letter5e.php ?>
+<?php //dsp_letter5e.php ?>
 
 <h2>Interesting things</h2>
 <div class="story">

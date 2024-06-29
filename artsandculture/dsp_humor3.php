@@ -1,4 +1,4 @@
-<? //dsp_humor3.php ?>
+<?php //dsp_humor3.php ?>
 
 <div class="story">
 	<p class="endText">Before we get started, let me say that I do not hold copyright on anything that follows. If you are the copyright holder and would prefer that I remove something, just send me a note from the Contact us page.</p>

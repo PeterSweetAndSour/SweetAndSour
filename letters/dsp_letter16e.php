@@ -1,4 +1,4 @@
-<? //dsp_letter16e.php (France, part 2) ?>
+<?php //dsp_letter16e.php (France, part 2) ?>
 
 
 <div class="story">
@@ -18,7 +18,7 @@
 	<p class="endText"><i>Mont St. Michel</i> rises above the mudflats on a granite outcrop just offshore like a huge ship at sea. The first Christian building on the site was built in 708 and it gradually grew from there along with fortifications and a village at the bottom of the slopes. In fact, the statue of St Michael on top of the steep is a mere century old. After the Revolution, it was used as a prison for a time. The car park is flooded during very high tides so a sign tells you in French, English and German how long you can stay.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["CanalDuMidi1.jpg", "Carcassone1.jpg", "Chenonceau1.jpg", "Villandry1.jpg", "AzayLeRideau1.jpg", "Usse1.jpg", "Chambord1.jpg", "MontStMichel1.jpg"]);
 	?>
 </div>

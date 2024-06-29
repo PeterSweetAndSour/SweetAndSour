@@ -1,4 +1,4 @@
-<? //dsp_lettersOverview.php ?>
+<?php //dsp_lettersOverview.php ?>
 
 <div class="story">
 	<p>Lan and I came to America in 1995 with the intention of staying 9 to 12 months but it has now been eight years (2003)!  As much as anything, I write these letters to document our experiences and impressions for our own benefit - a glorified photo album. I also hope that they keep us in touch with our friends and family so that they will know who we are when we go home. Originally the letters were mailed but that became unnecessarily expensive so now most get an email from me to tell them that a new letter is available for download.</p>

@@ -1,4 +1,4 @@
-<? //dsp_letter6c.php ?>
+<?php //dsp_letter6c.php ?>
 
 <h2>Life in America</h2>
 <div class="story">
@@ -11,7 +11,7 @@
    <p class="endText">Let me end this section with a joke that has nothing at all to do with us:  "A man is called by his bank and the bank employee says, <i>'Sir, we have found out that your credit card was stolen 6 months ago.  Why didn't you inform us?'</i>. The man replied, <i>'I saw no need to. The thief spends less than my wife.'</i>"</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("GooseCrossing.jpg");
 	?>
 </div>

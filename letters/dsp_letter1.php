@@ -1,4 +1,4 @@
-<? //dsp_letter1.php ?>
+<?php //dsp_letter1.php ?>
 
 <div class="story followOn">
    <p>20th March 1995</p>
@@ -19,7 +19,7 @@
       <p class="endText">That&rsquo;s about all for the moment.  When we have an address, I&rsquo;ll let you know.</p>
 	</div>
 	<div class="photo-gallery">
-		<?
+		<?php
 		setThumbnail(["GeneralMotors1.jpg", "FarmingtonHills1.jpg", "LakeStClair1.jpg", "IceFishing1.jpg"]);
 		?>
 	</div>

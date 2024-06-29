@@ -1,4 +1,4 @@
-<? //dsp_letter11.php ?>
+<?php //dsp_letter11.php ?>
 
 <div class="story followOn">
 	<p>8 November 1998</p>
@@ -26,7 +26,7 @@
 		<p class="endText">Peter V</p>
 	</div>
 	<div class="photo-gallery">
-		<?
+		<?php
 		setThumbnail("FriendsAtTNA1.jpg");
 		setThumbnail("ChilavertInAction1.jpg");
 		setThumbnail("ChilavertUpClose1.jpg");

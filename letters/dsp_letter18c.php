@@ -1,4 +1,4 @@
-<? //dsp_letter5c.php ?>
+<?php //dsp_letter5c.php ?>
 
 <h2>Disconnect from reality</h2>
 <div class="story">

@@ -1,4 +1,4 @@
-<? //dsp_washington.php
+<?php //dsp_washington.php
 
 ?>
 <div class="story">
@@ -26,7 +26,7 @@
 	</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail([
 		"watergateSm.jpg",
 		"sunsetAlexandriaSm.jpg",

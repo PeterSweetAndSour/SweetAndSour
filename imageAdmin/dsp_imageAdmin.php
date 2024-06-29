@@ -18,7 +18,7 @@
 				<form>
 					<select class="folderId">
 						<option value="0">*Select folder*
-						<? 
+						<?php 
 						while( $row = mysql_fetch_array($rs_folders) ) {
 							$thisFolderName = $row["folderName"]; 
 							$thisFolderId = $row["folderId"];
@@ -26,7 +26,7 @@
 								<option <?= isset($folderId) && ($folderId == $thisFolderId) ? 'selected="selected"' : '' ?> value="<?= $thisFolderId ?>">
 									<?= $thisFolderId ?>. <?= $thisFolderName ?>
 								</option>
-								<? 
+								<?php 
 						} ?>
 					</select>
 				</form>

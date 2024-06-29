@@ -1,7 +1,7 @@
-<? //dsp_oldPhotosLan.php
+<?php //dsp_oldPhotosLan.php
 ?>
 <div class="photo-gallery">
-	<?
+	<?php
 	 setThumbnail([
 		 "LanChild1.jpg",
 		 "LansFamily1.jpg",

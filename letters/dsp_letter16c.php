@@ -1,4 +1,4 @@
-<? //dsp_letter16c.php ?>
+<?php //dsp_letter16c.php ?>
 
 <h2>The Netherlands</h2>
 <div class="story">
@@ -13,11 +13,11 @@
 	<p>In conversation, we discovered that English-language films are generally not subtitled into the local European language but dubbed.  Famous actors use the same foreign voice actor for every film so that European audiences associate a voice with a particular actor. The Tom Hanks you hear in Italy is not the Tom Hanks you hear in France or Germany. Indeed, it is not Tom Hanks.</p>
 	<p class="endText">Unfortunately we couldn't stay in Amsterdam long but we will definitely be back. I can even imagine living in Amsterdam which is not impossible since I have an British (i.e. E.U.) passport and almost everyone speaks English (and probably French and German as well). The Dutch are amazing.</p>
 </div>
-<?
+<?php
 setThumbnail("FranceMap1.gif", "index.php?fuseAction=mapFrance|_blank|SweetAndSour.popup('index.php?fuseAction=mapFrance', 1100, 985, 'menubar=no,location=no,scrollbars=yes,toolbar=no'); return false");
 ?>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["MuidenCastle1.jpg", "QuintaTheDog1.jpg", "DinnerWithFriends1.jpg"]);
 	?>
 </div>

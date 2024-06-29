@@ -1,8 +1,8 @@
-<? 
+<?php 
 //dsp_oldPhotosPeter.php
 ?>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail([
 		"PeterBaby1.jpg", 
 		"PeterAndBasil1.jpg",

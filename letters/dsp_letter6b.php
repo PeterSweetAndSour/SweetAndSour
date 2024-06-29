@@ -1,4 +1,4 @@
-<? //dsp_letter6b.php ?>
+<?php //dsp_letter6b.php ?>
 
 <h2>Trip to South Dakota</h2>
 <div class="story">
@@ -15,7 +15,7 @@
    <p class="endText">Those of you who have been on a "beach mission" with me will be surprised to know that we camped in a tent while we were away.  You would think I would have learned how horrible it can be.  We borrowed a tent and survived a thunderstorm that made the tent flap around so much that I worried about having to return the tent in several pieces.  Tent design has improved enormously since the crude things that we used on scout camps.  Just having a sewn-floor makes a huge difference as you can crawl inside and be in a clean environment.  It was very small though with just enought room for our inflatable matress.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["LanMtRushmore1.jpg", "CrazyHorse1.jpg", "MenAtWork1.jpg", "BadlandsSDakota1.jpg", "PetrifiedLog1.jpg", "DevilsTower1.jpg", "Camping1.jpg"]);
 	?>
 </div>

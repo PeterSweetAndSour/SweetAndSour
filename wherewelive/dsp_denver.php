@@ -1,4 +1,4 @@
-<? //dsp_denver.php
+<?php //dsp_denver.php
 
 ?>
 <div class="story">
@@ -9,7 +9,7 @@
 </div>
 
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail([
 		"DenverMorning1.jpg",
 		"CityAndCouncilBldg1.jpg",

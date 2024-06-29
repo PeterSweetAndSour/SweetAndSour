@@ -1,4 +1,4 @@
-<? //dsp_aust2005.php ?>
+<?php //dsp_aust2005.php ?>
 
 <h2>Sydney</h2>
 <div class="story noSpaceBelow">
@@ -6,7 +6,7 @@
   <p>The first photo below used to be a low-quality panorama I made by stitching together multiple photos but now I can just give you the <a href="https://goo.gl/maps/HBJqnYh31kKp4b7U6" target="_blank" class="external">Google StreetView for the same location</a> at Mrs. Macquarie's Point near the Opera House.</p>
 </div>
 <div class="photo-gallery clear">
-	<?
+	<?php
 	setThumbnail([
 		"trousersaheadsm.jpg",
 		"skylinefromgardenssm.jpg",
@@ -48,7 +48,7 @@
 	<p><a href="http://en.wikipedia.org/wiki/Adelaide" target="_blank" class="external">Adelaide</a> is lovely but underrated. Lan has more family there than in Sydney. I'll get a shot of downtown next time.</p>
 </div>
 <div class="photoAlbum spaceBelow">
-	<?
+	<?php
 	setThumbnail([
 		"rundlemall2sm.jpg",
 		"portadelaide1sm.jpg",

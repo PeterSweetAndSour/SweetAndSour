@@ -1,4 +1,4 @@
-<? /* dsp_photos.php
+<?php /* dsp_photos.php
 
 =>| $imagesPerPage
 =>| $folderPath
@@ -11,9 +11,9 @@
 
 ?>
 <div class="clearfix">
-	<? include 'dsp_pagination.php' ?>
+	<?php include 'dsp_pagination.php' ?>
 </div>
-<?
+<?php
 $firstOnPage = $imagesPerPage * ($page - 1);
 $remainingFiles = count($filesInFolder) - (($page-1) * $imagesPerPage);
 $lastOnPage = $firstOnPage + min($remainingFiles, $imagesPerPage);
@@ -48,13 +48,13 @@ for($i = $firstOnPage; $i < $lastOnPage; $i++) {
 		<p><?= $width ?> x <?= $height ?> pixels</p>
 		<p>File date: <?= date("F d Y H:i:s.", filemtime($folderPath . $filename)); ?></p>
 		<p>Url: <?= $relativeUrl ?></p>
-		<? if($inDB) { ?>
+		<?php if($inDB) { ?>
 			
-		<? } ?>
+		<?php } ?>
 	</section>
-	<?
+	<?php
 }
-?><? include 'dsp_pagination.php' ?><?
+?><?php include 'dsp_pagination.php' ?><?php
 
 include '../includes/act_showDebugInfo.php';
 ?>

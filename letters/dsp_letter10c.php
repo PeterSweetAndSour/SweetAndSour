@@ -1,4 +1,4 @@
-<? //dsp_letter10c.php ?>
+<?php //dsp_letter10c.php ?>
 
 <h2>America</h2>
 <div class="story">

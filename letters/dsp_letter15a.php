@@ -1,4 +1,4 @@
-<? //dsp_letter15a.php ?>
+<?php //dsp_letter15a.php ?>
 
 <div class="story">
 	<p>27 July 2002</p>
@@ -18,7 +18,7 @@
 	<p class="endText">I normally think that following sports is a complete waste of time but I make an exception every four years for the World Cup. To paraphrase someone speaking about playing for the English national championships, soccer is not a matter of life or death; it&apos;s more important than that. With that in mind, I enjoyed watching the World Cup coverage&mdash;in Spanish! The ABC network had the rights to broadcast the games in America but they showed it live on cable TV only. Few Americans care and indeed in the first Sunday newspaper after the tournament started, coverage began on page 20 of the sports section following the baseball, basketball, golf, ice ho</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail("AcrobatIcon_Ltr15.gif", $rootRelativeUrl . "letters/files/Letter15.pdf");
 	setThumbnail(["Thunderbirds1.jpg", "USMap1.gif", "RockyMtnNP1.jpg", "IceFountain1.jpg"]);
 	?>

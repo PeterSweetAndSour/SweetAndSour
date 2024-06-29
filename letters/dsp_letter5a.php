@@ -1,4 +1,4 @@
-<? //dsp_letter5a.php ?>
+<?php //dsp_letter5a.php ?>
 
 <div class="story followOn">
 	<p>2nd March 1996</p>
@@ -14,7 +14,7 @@
    </div>
 </div>
 <div class="photo-gallery">
-   <?
+   <?php
    setThumbnail(["Madrid1.jpg","MadridBack1.jpg", "LadiesInWaiting1.jpg", "SegoviaAquaduct1.jpg", "SegoviaCastle1.jpg"]);
    ?>
 </div>

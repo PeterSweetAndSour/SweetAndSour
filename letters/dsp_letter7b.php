@@ -1,4 +1,4 @@
-<? //dsp_letter7b.php ?>
+<?php //dsp_letter7b.php ?>
 
 <h2>Alaska holiday</h2>
 
@@ -18,7 +18,7 @@
    <p class="endText">When we arrived in Vancouver, we picked up a rental car and headed for Victoria which has a reputation for being more English than England.  We didn't see any cricket matches but we did see some fine buildings and some gardens that impressed even me.  When we made it back to Vancouver, Lan changed her mind on wanting to move to Seattle as she thinks Vancouver is better still.  It has a huge Chinatown.  Many Hong Kong Chinese have arrived in the city over the last decade because of the uncertainty over the Chinese handover next year.</p>
 </div>
 <div class="photo-gallery">
-	<?
+	<?php
 	setThumbnail(["SpaceNeedle1.jpg", "Cabbages1.jpg", "RegalPrincess1.jpg", "UsEnteringShip1.jpg", "UsAtDinner1.jpg", "LanGlacier1.jpg", "PeterGlacier1.jpg", "ChilkootPass1.jpg", "SnowTrain1.jpg", "VictoriaBC1.jpg", "ButchardGardens1.jpg", "LanAtBGardens1.jpg", "TotemPole1.jpg", "SuspensionBridge1.jpg"]);
 	?>
 </div>
