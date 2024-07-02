@@ -54,7 +54,7 @@ function getPhotoInfo($photoNames) {
 	$sql.= "INNER JOIN folders AS tbl_1 ON photos.folderID = tbl_1.folderID ";
 	$sql.= "LEFT JOIN folders AS tbl_2 ON tbl_1.grandparentFolderID = tbl_2.folderID ";
 	$sql.= "LEFT JOIN photos AS linkedImage ON photos.linkedImg = linkedImage.photoName ";
-	$sql.= "WHERE photos.photoName IN ('" . implode($photoNames, "','") . "')";
+	$sql.= "WHERE photos.photoName IN ('" . implode("','", $photoNames) . "')";
 		
 	$rs_photoInfo = $mysqli->query($sql);
 	if($rs_photoInfo) { //Check that there is a result set
