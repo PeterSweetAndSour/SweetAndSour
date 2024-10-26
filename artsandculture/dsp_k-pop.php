@@ -47,7 +47,7 @@
 
 <h2 id="peters-kpop-selection">Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 5<sup>th</sup> May 2024)</p>
+	<p class="subtitle">(As of 14<sup>th</sup> September 2024)</p>
 </div>
 
 <h3>BTS</h3>
@@ -269,15 +269,23 @@
 			2023-07-13 <a href="https://www.youtube.com/watch?v=woKq2sD8xho" target="_blank" class="external">Don't touch me</a> from MiSaMo. Like <a href="https://www.youtube.com/watch?v=qniDJuWrGyk" target="_blank" class="external">works of art</a> in a museum that are referenced in the video, you can admire but you cannot touch.
 		</li>
 	</ul>
-	<p>On the 6th of July (2023), I went to the Twice concert at the Metlife stadium near New York! What fantastic evening with 50,000+ other screaming fans!! There was a lot of screaming. I've not been to a concert bigger than a few hundred for over 20 years so I had nothing to really compare it to but the members, the band, the set, the everything was perfect. I love them even more now. I pusted <a href="https://www.instagram.com/p/Cuh4xbzOdjB/?img_index=1" target="_blank" class="external">a few photos on Instagram</a> and uploaded a video of <a href="https://www.youtube.com/watch?v=KzOUd0ecvus" target="_blank" class="external">Yes or yes, What is love & Cheer up</a>
-	</p>
+
+	<hr>
+	<p>On the 6th of July (2023), I went to the <strong>Twice concert</strong> at the Metlife stadium near New York! What fantastic evening with 50,000+ other screaming fans!! There was a lot of screaming. I've not been to a concert bigger than a few hundred for over 20 years so I had nothing to really compare it to but the members, the band, the set, the everything was perfect. I love them even more now. I pusted <a href="https://www.instagram.com/p/Cuh4xbzOdjB/?img_index=1" target="_blank" class="external">a few photos on Instagram</a> and uploaded a video of <a href="https://www.youtube.com/watch?v=KzOUd0ecvus" target="_blank" class="external">Yes or yes, What is love & Cheer up</a></p>
+	<hr>
+
 	<ul>
 		<li>
 			2024-02-01 <a href="https://www.youtube.com/watch?v=haf67eKF0uo" target="_blank" class="external">I got you</a>, the preview for their upcoming album. This is a more contemplative song than usual and while it did not grab me immediately, it keeps playing in my head and I've come to appreciate it. However, after watching the official music video, you <em>really</em> need to see the <a href="https://www.youtube.com/watch?v=fwPjD-jFsls" target="_blank" class="external">cheering guide</a> in which you see them at their raw, chaotic best&hellip; and they manage to stretch the word "Twice" into <em>too-why-ee-sa</em>. It's hilarious.
 		</li>
 		<li>
-			2024-02-24 <a href=https://www.youtube.com/watch?v=jCzez_q8si0" target="_blank" class="external">One Spark</a>, the single from <em>I GOT YOU-th</em>.
+			2024-02-24 <a href="https://www.youtube.com/watch?v=jCzez_q8si0" target="_blank" class="external">One Spark</a>, the single from <em>I GOT YOU-th</em>.
 		</li>
+
+		<li>
+			2024-09-06 <a href="https://www.youtube.com/watch?v=YofelpFMWzg" target="_blank" class="external">Run Away</a> Tzuyu has a solo album, <em>AbouTZU</em>! I need to listen to the rest of the album. It is lovely to see the other members helping to promote the work of the youngest of the group: <a href="https://www.youtube.com/shorts/xHJbqSLcUJE" target="_blank" class="external">Nayeon</a>, <a href="https://www.youtube.com/shorts/QWG2Vt9bCkI" target="_blank" class="external">Dahyun</a>, <a href="https://www.youtube.com/shorts/jkDA763YhRU" target="_blank" class="external">Nayeon and Dahyun</a>, <a href="https://www.youtube.com/shorts/4CKdGuTeg1U" target="_blank" class="external">Jihyo</a>, <a href="https://www.youtube.com/shorts/OLCdckWVGbo" target="_blank" class="external">Chaeyoung</a> and most especially, <a href="https://www.youtube.com/shorts/0C0BJEUKTm4" target="_blank" class="external">Sana</a>
+		</li>
+
 	</ul>
 </div>
 
@@ -307,6 +315,7 @@
 			One of my all-time favorite K-pop songs! <a href="https://www.youtube.com/watch?v=T9D6n-2afnM&amp;sa=D&amp;ust=1590612821758000">True valentine</a> (dance practice)
 		</li>
 		<li><a href="https://www.youtube.com/watch?v=ktcQZotG9DQ" target="_blank" class="external">Moya Moya</a> (dance practice)</li>
+		<li><a href="https://www.youtube.com/watch?v=Q9WcU6DXJOU" target="_blank" class="external">Sweet Dreams</a> (live performance)</li>
 		<li><a href="https://www.youtube.com/watch?v=5DKU9GXibOU" target="_blank" class="external">Do whatever you want</a> (dance practice)</li>
 		<li><a href="https://www.youtube.com/watch?v=RTeOt6n90vM" target="_blank" class="external">Dazzle Dazzle</a></li>
 		<li><a href="https://www.youtube.com/watch?v=AHikmx0eVXM" target="_blank" class="external">Cool</a></li>
@@ -452,6 +461,11 @@
 <h3>Saturday</h3>
 <div class="story">
 	<p>Cuteness overload ahead! The <a href="https://www.youtube.com/watch?v=jYumUDNryjw" target="_blank" class="external">Gwiyomi song</a>. How can this have just 167,000 views? To be fair, it is a derivative of this <a href="https://www.youtube.com/watch?v=vmByrwq0kDk" target="_blank" class="external">this</a>. They had more success with <a href="https://www.youtube.com/watch?v=5L8FXg8zbDA" target="_blank" class="external">WiFi</a> a song that to me sounds similar to <strong>Momoland's hugely successful </strong><em>Bboom Bboom</em> (see below). By the time they arrived at <a href="https://www.youtube.com/watch?v=klwQKQTt7UM" target="_blank" class="external">Bbyong</a> they had lost 4 members and gained 2.</p>
+</div>
+
+<h3>LOCA</h3>
+<div class="story">
+	<p><a href="https://www.youtube.com/watch?v=M4nZjrXc1BQ" target="_blank" class="external">Favorite</a></p>
 </div>
 
 <h3>Momoland</h3>
