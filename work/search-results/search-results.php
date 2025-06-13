@@ -137,7 +137,7 @@ if($searchResultsList) {
 											</div>
 										</div>
 										<a name="DC_NEW_LOGO" class="ps-anchor"></a>
-										<div class="ps_box-staticimg"><img src="//careers.dc.gov/cs/erecruit/cache/DC_NEW_PS_LOGO_1.png" class="ps-staticimg" alt="Static Image" title="Static Image"></div>
+										<div class="ps_box-staticimg"><img src="images/DC_NEW_PS_LOGO_1.png" class="ps-staticimg" alt="Static Image" title="Static Image"></div>
 									</div>
 								</div>
 								<div class=" ps_pagetitle_cont">
