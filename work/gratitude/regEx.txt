@@ -1,0 +1,78 @@
+Story [0-9]+: (?'quote'.*)\n*
+
+<p>&ldquo;${quote}&rdquo;</p>
+=================================
+^(?'groupId'[0-9]{1,3}),(?'displayName'[^,]+),(?'website'[^,]*),(?'street'\?\?\?|[0-9 a-zA-Z.#]*),(?'city'\?\?\?|[ a-zA-Z]*),(?'state'\?\?\?|(?:[A-Z]{2})?),(?'zipCode'\?\?\?|(?:[0-9]{5})?),(?'numberOfCitations'[0-9]{1,2}),"(?'quote'[^"\n]*)\n*",(?'latitude'38\.[0-9]{3,8}),(?'longitude'-7[6|7]\.[0-9]{3,8}),"?(?'caption'[^,"]*(?:(?:""|, )[^,"]*)*),(?'photoURL'.*),(?'categoryName'[\-a-zA-Z ]*),Cluster (?'neighborhoodClusterId'[0-9]+),"?(?'neighborhoodClusterComponents'[\-\/,.' a-zA-Z]+?)"?,(?'categoryId'[0-9]+)$
+
+{\n\t"latitudeLongitude": [${latitude}, ${longitude}], \n\t"displayName": "${displayName}", \n\t"quote": "${quote}", \n\t"numberOfCitations": ${numberOfCitations}, \n\t"website": "${website}",\n\t"photoUrl": "${photoURL}",\n\t"altText": "Photo of the ${displayName}",\n\t"caption": "${caption}",\n\t"categoryId": ${categoryId},\n\t"categoryName": "${categoryName}",\n\t"neighborhoodClusterId": ${neighborhoodClusterId},\n\t"neighborhoodClusterComponents": "${neighborhoodClusterComponents}"\n},
+=================================
+""https
+
+\\"https
+=================================
+"">
+
+\\">
+=================================
+Photo credit: ""
+
+Photo credit: "https://innovate.dc.gov/sites/default/files/dc/sites/MOPI/abstractImage600x800.jpg"
+=================================
+
+
+.close-legend-btn {
+	box-sizing: border-box;
+	height: 36px;
+	width: 36px;
+	border-radius: 18px;
+	color: black;
+	font-size: 36px;
+	line-height: 20px;
+	padding: 0 5px 4px;
+	transition: .3s ease;
+	color: white;
+	background-color: #072c3a;
+	background-clip: padding-box;
+	background-image: linear-gradient(#516b75, #072c3a);
+  border: 1px solid #072c3a;
+}
+.close-legend-btn:hover {
+	box-shadow: inset 0 32px 0 0 rgba(255,255,255,.5), 0 1px 1px 0 rgba(7,44,58,.5);
+	color: black;
+}
+
+
+https://www.freecounterstat.com/index.php
+<div id="sfcblgpmn7tk1qz4sz2k2mlgfpbt1d65ac2"></div>
+<script type="text/javascript" src="https://counter11.optistats.ovh/private/counter.js?c=blgpmn7tk1qz4sz2k2mlgfpbt1d65ac2&down=async" async></script>
+
+
+		let icons = [];
+			icons[1]  = "fa-cross" /* Churches */;
+			icons[2]  = "fa-heart" /* CBO */;
+			icons[3]  = "fa-landmark" /* Cultural institutions */;
+			icons[4]  = "fa-landmark-flag" /*  DC govt */;
+			icons[5]  = "fa-leaf"; /* Farmers' market and community gardens */
+			icons[6]  = "fa-volleyball"; /* Gyms and recreation centers */
+			icons[7]  = "fa-book"; /* Libararies */
+			icons[8]  = "fa-shop"; /* Local businesses */
+			icons[9]  = "fa-house-medical"; /* Medical care */
+			icons[10] = "fa-person-walking"; /* Parks and trails */
+			icons[11] = "fa-utensils"; /* Restaurants and grocery stores */
+			icons[12] = "fa-person-chalkboard"; /* Schools */
+
+
+
+			let numberRange = 1;
+			switch (true) {
+				case (place.numberofCitations === 1):
+					break;
+				case (place.numberofCitations === 2):
+					numberRange = 2;
+					break
+				case (place.numberofCitations <= 4):
+					numberRange = 3;
+					break;
+				default:
+					numberRange = 4;
+			}

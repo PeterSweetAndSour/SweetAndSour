@@ -1,0 +1,85 @@
+<div id="feedbackButton" class="feedbackButton expanded" tabindex="0" role="button">
+	<span class="hidden">Help improve this site</span>
+</div>
+
+<div class="interceptSurvey hidden" id="interceptSurvey">
+	<div class="surveyBtn closeSurveyBtn" id="closeSurveyBtn" role="button" aria-label="Close survey">&times;</div>
+
+	<form id="interceptSurveyForm" action="#">
+		
+			<div id="surveyPanel_1" class="surveyPanel">
+				<p>Help us improve our site, your feedback matters.</p>
+				<div class="actionBar">
+					<button class="surveyBtn btnSecondary" id="exitSurvey">Exit</button>
+					<button class="surveyBtn btnPrimary" id="goToSurvey">Go to survey</button>
+				</div>
+			</div>
+
+			<div id="surveyPanel_2" class="surveyPanel surveyPanel_2 hidden">
+				<p>Q1 (of 3) What do you hope to achieve in your visit today?</p>
+				<fieldset>
+					<div class="surveyOption">
+						<input type="radio" name="taskID" id="taskIDRadio_1" value="1">
+						<label for="taskIDRadio_1" id="taskIDLabel_1">See if there are any jobs I can apply to</label>
+					</div>
+					<div class="surveyOption">
+						<input type="radio" name="taskID" id="taskIDRadio_2" value="2">
+						<label for="taskIDRadio_2" id="taskIDLabel_2">Apply for a job I found earlier</label>
+					</div>
+					<div class="surveyOption">
+						<input type="radio" name="taskID" id="taskIDRadio_3" value="3">
+						<label for="taskIDRadio_3" id="taskIDLabel_3">Complete an application that I started earlier</label>
+					</div>
+					<div class="surveyOption">
+						<input type="radio" name="taskID" id="taskIDRadio_4" value="4">
+						<label for="taskIDRadio_4" id="taskIDLabel_4">Something else</label>
+						<input type="text" name="otherTask" class="hidden" id="otherTask" value="" maxlength="64">
+					</div>
+				</fieldset>
+				<div class="actionBar">
+					<button class="surveyBtn btnPrimary disabled" id="goToSurveyPanel_3" disabled>Next</button>
+				</div>
+			</div>
+
+			<div id="surveyPanel_3" class="surveyPanel hidden">
+				<p>Q2. How easy was it for you to complete the task? Come back here if you just arrived and haven't done anything yet.</p>
+				<div>
+					<div class="ratingsBar">
+						<button class="surveyBtn ratingBtn" id="difficulty_1">1</button>
+						<button class="surveyBtn ratingBtn" id="difficulty_2">2</button>
+						<button class="surveyBtn ratingBtn" id="difficulty_3">3</button>
+						<button class="surveyBtn ratingBtn" id="difficulty_4">4</button>
+						<button class="surveyBtn ratingBtn" id="difficulty_5">5</button>
+					</div>
+					<div class="ratingDescription">
+						<div>Very difficult</div>
+						<div>Very easy</div>
+					</div>
+
+					<fieldset class="hidden">
+						<input type="radio" name="difficultyID" id="difficultyID_1" value="1">
+						<input type="radio" name="difficultyID" id="difficultyID_2" value="2">
+						<input type="radio" name="difficultyID" id="difficultyID_3" value="3">
+						<input type="radio" name="difficultyID" id="difficultyID_4" value="4">
+						<input type="radio" name="difficultyID" id="difficultyID_5" value="5">
+					</fieldset>
+				</div>
+			</div>
+
+			<div id="surveyPanel_4" class="surveyPanel surveyPanel_4 hidden">
+				<p>Q3. Please tell us anything you'd like us to know about your experience on this site. Any comments shared will only be reviewed and potentially used for website improvements.</p>
+				<textarea id="comments" name="comments" class="surveyTextArea" rows="5" maxlength="1000"></textarea>
+				<p class="explanation"><span id="charCountIndicator">0</span> characters. (Maximum 1000.)</Counter></p>
+
+				<div class="actionBar">
+					<button class="surveyBtn btnPrimary" id="submitSurveyBtn">Submit</button>
+				</div>
+			</div>
+
+			<div id="surveyPanel_5" class="surveyPanel hidden">
+				<p>Thank you!</p>
+			</div>
+
+			<input type="hidden" name="IPAddress" id="IPAddress">
+	</form>
+</div>

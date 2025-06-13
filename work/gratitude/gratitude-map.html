@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gratitude powers DC</title>
+	<link rel="shortcut icon" href="https://dc.gov/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/leaflet-search.css" />
+	<style>	/* Supplemenary styles since not getting innovate.dc.gov defaults */
+		body {
+			font-size: 16px;
+			font-family: Lato;
+		}
+		header {
+			background-color: #065597;
+			height: 80px;
+			color: white;
+			text-align: center;
+			box-sizing: border-box;
+			padding-top: 30px;
+		}
+		/* Desktop */
+		@media screen and (min-width: 960px) {
+			header {
+				height: 120px;
+				padding-top: 50px;
+			}
+		}
+	</style>
+
+	<link href="css/gratitudeMap.css?version=1" rel="stylesheet" />
+	<link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" rel="stylesheet" crossorigin="" />
+
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+	<script src="https://kit.fontawesome.com/c7aaba00fa.js" crossorigin="anonymous"></script>
+	<script src="js/leaflet-search.js"></script>
+</head>
+
+<body>
+	<header id="section-header">Placeholder for the header</header>
+<div class="mapContent">
+	<h1 aria-hidden="true" class="alternateH1">Gratitude Powers DC</h1>
+
+	<div class="searchOuterContainer">
+		<div id="searchContainer"><span class="hidden">Drupal removes empty DIVs so need something here</span></div>
+	</div>
+
+	<div class="mapContainer" id="mapContainer">&nbsp;</div><!--
+	Do not remove comment or whitespace between inline-block elements will break layout
+	--><div class="placeInfo" id="placeInfo"><a aria-label="Close" class="closeButton" href="#" id="closeButton" role="button"><span>&nbsp;</span></a>
+
+		<h1>Gratitude Powers DC</h1>
+
+		<div id="introText">
+			<p>Welcome to the Gratitude Map, brought to you by the Mayor&#39;s Office of Innovation (MOI). MOI launched a gratitude survey to uncover the people, places, and things that those who work, live, and play in the District of Columbia are grateful for.</p>
+			<p><span class="hideMobile">Click</span><span class="hideDesktop">Dismiss this message and tap</span> a marker on the map to see places that residents are grateful for. Zoom in and out like Google Maps; click on the <strong>Legend</strong> button at the bottom-left to see the categories.</p>
+		</div>
+
+		<div class="photoContainer hidden"><img alt="" src="https://moi.dc.gov/sites/default/files/dc/sites/MOPI/page_content/images/pixel.png" />
+			<p class="caption" id="caption">&nbsp;</p>
+		</div>
+
+		<h2 class="displayName hidden">Accessibility checker complains about empty header despite display:none</h2>
+
+		<div class="quoteContainer hidden">&nbsp;</div>
+
+		<p class="learnMoreContainer hidden">To learn more: <a class="ext" href="#" id="learnMoreLink" target="_blank">Must have something here or Drupal will delete it!</a></p>
+
+		<p class="surveyLink">Do want to tell us about something in D.C. you are grateful for? <a class="ext" href="https://docs.google.com/forms/d/e/1FAIpQLSeAyMScu0yQPPEtHOqr9NuwVrbSuqNoVf3uGy_tz9axXUOVlA/viewform" target="_blank">Take the survey!</a></p>
+	</div>
+</div>
+
+
+	<script type="module" src="js/gratitudeMap.js"></script>
+</body>
+
+</html>
