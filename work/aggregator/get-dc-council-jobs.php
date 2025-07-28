@@ -1,8 +1,9 @@
 <?php
 
 include_once("../includes/simple_html_dom.php");
-include_once("../includes/alt_autoload.php");
-include_once("function-get-html.php");
+include_once("../includes/fn_loadPDFParser.php");
+include_once("../includes/function-get-html.php");
+include_once("../includes/fn_prettyPrintJSON.php");
 
 ob_end_flush();
 ob_implicit_flush();
@@ -80,66 +81,6 @@ function get_other_text($text) {
 	return $other_text;
 }
 
-/**
- * Formats a JSON string for pretty printing
- *
- * @param string $json The JSON to make pretty
- * @param bool $html Insert nonbreaking spaces and <br />s for tabs and linebreaks
- * @return string The prettified output
- * @author Jay Roberts
- */
-function format_json($json, $html = false) {
-	$tabcount = 0; 
-	$result = ''; 
-	$inquote = false; 
-	$ignorenext = false; 
-	if ($html) { 
-			$tab = "&nbsp;&nbsp;&nbsp;"; 
-			$newline = "<br/>";
-	} else { 
-			$tab = "\t"; 
-			$newline = "\n"; 
-	} 
-	for($i = 0; $i < strlen($json); $i++) { 
-			$char = $json[$i]; 
-			$previous_char = $json[$i - 1]; 
-			if ($ignorenext) { 
-					$result .= $char; 
-					$ignorenext = false; 
-			} else { 
-					switch($char) { 
-							case '{': 
-									$tabcount++; 
-									$result .= $char . $newline . str_repeat($tab, $tabcount); 
-									break; 
-							case '}': 
-									$tabcount--; 
-									$result = trim($result) . $newline . str_repeat($tab, $tabcount) . $char; 
-									break; 
-							case ',': 
-									if($previous_char == "\"") {
-										$result .= $char . $newline . str_repeat($tab, $tabcount); 
-									}
-									else {
-										$result .= $char; 
-									}
-									break; 
-							case '"': 
-									$inquote = !$inquote; 
-									$result .= $char; 
-									break; 
-							case '\\': 
-									if ($inquote) $ignorenext = true; 
-									$result .= $char; 
-									break; 
-							default: 
-									$result .= $char; 
-					} 
-			} 
-	} 
-	return $result; 
-}
-
 $parser = new Smalot\PdfParser\Parser();
 
 $url = "https://dccouncil.gov/jobs-solicitations21/";
@@ -159,19 +100,19 @@ if($DC_Council_jobs_page) {
 			$link_to_document = $page_with_pdf_link->find("a.icon--pdf.icon-link");
 
 			if($link_to_document) {
-				$document_url =	$link_to_document[0]->href;
+				$vacancy_announcement_url =	$link_to_document[0]->href;
 	
 				// Conirm it is a PDF because on 21-Feb-25 one is a Word document
-				if(!preg_match('/.*\.pdf$/', $document_url)) {
+				if(!preg_match('/.*\.pdf$/', $vacancy_announcement_url)) {
 					continue;
 				}
 
 				// Step 4: Download and parse the pdf
-				$pdf_content = file_get_contents($document_url);
+				$pdf_content = file_get_contents($vacancy_announcement_url);
 				$pdf = $parser->parseContent($pdf_content);
 				$text = $pdf->getText();
 
-				$announcement_id = get_job_id($text);
+				$position_id = get_job_id($text);
 				$open_date = get_open_date($text);
 				$close_date = get_close_date($text);
 				$salary_range = get_salary_range($text);
@@ -181,9 +122,18 @@ if($DC_Council_jobs_page) {
 				$location = get_location($text);
 				$other_text = get_other_text($text);
 
-				//$json .= '{"jobTitle": "' . $job_title . '", "jobId": "' . $announcement_id . '", "url": "' . $document_url . '", "location": "' . $location . '", "department": "' . $office . '", "postedDate": "' . $open_date . '", "closeDate": "' . $close_date . '", "salaryRange": "' . $salary_range . '"},';	
 				$this_job = <<<THIS_JOB
-				{"jobTitle": "$job_title", "jobId": "$announcement_id", "url": "$document_url", "location": "$location", "department": "$office", "postedDate": "$open_date", "closeDate": "$close_date", "salaryRange": "$salary_range", "otherText": "$other_text"}
+				{
+					"jobTitle": "$job_title", 
+					"positionId": "$position_id", 
+					"url": "$vacancy_announcement_url", 
+					"location": "$location", 
+					"department": "$office", 
+					"postedDate": "$open_date", 
+					"closeDate": "$close_date", 
+					"salaryRange": "$salary_range", 
+					"otherText": "$other_text"
+				}
 				THIS_JOB;
 				$json .= $this_job . ",";
 			}
@@ -195,31 +145,26 @@ if($DC_Council_jobs_page) {
 			continue;
 		}
 	}
-	// Strip the last comma
-	$json = substr($json, 0, strlen($json)-1);
-	$json .= ']';
-	//$json = json_encode($json, JSON_PRETTY_PRINT);
-	$json = format_json($json, true);
+	
+	$json = substr($json, 0, strlen($json)-1); // Strip the last comma
+	$json .= ']'; // Close the array
+	$json = pretty_print_json($json, true); // Make it look nice for humans. Remove if actual JSON is desired.
 
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML5 Boilerplate</title>
+  <title>DC Council jobs</title>
+	<link rel="shortcut icon" href="https://dc.gov/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
   <style>
 		body {font-family: Helvetica,Arial;}
 	</style>
 </head>
-
 <body>
   <h1>DC Council jobs (in JSON format)</h1>
-
-		<?= $json ?>
-
+	<?= $json ?>
 </body>
-
 </html>

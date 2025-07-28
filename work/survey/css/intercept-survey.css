@@ -1,0 +1,195 @@
+/* Remove second vertical scroll bar on careers home page. */
+html, body, form {
+	height: unset;
+}
+
+body {
+	--darkBlue: #395bc2;
+	--lightBlue: #ebeff9;
+}
+
+.feedbackButton {
+	position: fixed;
+	right: 0;
+	top: 50vh;
+	width: 26px;
+	height: 26px;
+	background-color: var(--darkBlue);
+	background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjEuODYgMTIyLjg4Ij48dGl0bGU+Y29tbWVudDwvdGl0bGU+PHBhdGggZD0iTTMwLjI4LDExMC4wOSw0OS4zNyw5MS43OEEzLjg0LDMuODQsMCwwLDEsNTIsOTAuNzJoNjBhMi4xNSwyLjE1LDAsMCwwLDIuMTYtMi4xNlY5LjgyYTIuMTYsMi4xNiwwLDAsMC0uNjQtMS41MkEyLjE5LDIuMTksMCwwLDAsMTEyLDcuNjZIOS44MkEyLjI0LDIuMjQsMCwwLDAsNy42NSw5LjgyVjg4LjU1YTIuMTksMi4xOSwwLDAsMCwyLjE3LDIuMTZIMjYuNDZhMy44MywzLjgzLDAsMCwxLDMuODIsMy44M3YxNS41NVpNMjguNDUsNjMuNTZhMy44MywzLjgzLDAsMSwxLDAtNy42Nmg1M2EzLjgzLDMuODMsMCwwLDEsMCw3LjY2Wm0wLTI0Ljg2YTMuODMsMy44MywwLDEsMSwwLTcuNjVoNjVhMy44MywzLjgzLDAsMCwxLDAsNy42NVpNNTMuNTQsOTguMzYsMjkuMjcsMTIxLjY0YTMuODIsMy44MiwwLDAsMS02LjY0LTIuNTlWOTguMzZIOS44MkE5Ljg3LDkuODcsMCwwLDEsMCw4OC41NVY5LjgyQTkuOSw5LjksMCwwLDEsOS44MiwwSDExMmE5Ljg3LDkuODcsMCwwLDEsOS44Miw5LjgyVjg4LjU1QTkuODUsOS44NSwwLDAsMSwxMTIsOTguMzZaIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+"); 
+	background-size: 19px 20px;
+	background-repeat: no-repeat;
+	background-position: 4px 3px;
+
+	color: white;
+	box-sizing: border-box;
+	padding: 0;
+	font-size: 16px;
+	cursor: pointer;
+
+	transform: rotate(0deg) translate(0, 0px);
+	transition-property: transform;
+	transition-duration: 0.5s;
+}
+.feedbackButton.expanded {
+	width: 194px;
+	background-position: 8px 3px;
+	padding: 0px 0 0 36px;
+	transform: rotate(90deg) translate(0, -84px);
+
+	transition-property: transform;
+	transition-duration: 0.5s;
+}
+
+.feedbackButton.expanded > span {
+	display: inline-block;
+}
+
+.interceptSurvey {
+	box-sizing: border-box;
+	max-width: 400px;
+	position: fixed;
+	z-index: 2;
+	right: 20px;
+	bottom: 20px;
+	background-color: white;
+	border: 1px solid #666;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #666;
+	padding: 20px;
+	margin-left: 20px;
+	font-size: 16px;
+}
+
+.surveyBtn {
+	border: 1px solid #666;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+.closeSurveyBtn {
+	border-radius: 11px;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	line-height: 18px;
+	text-align: center;
+	margin-top: -10px;
+	margin-right: -10px;
+	float: right;
+	cursor: pointer;
+}
+
+.surveyPanel_2 > .actionBar,
+.surveyPanel_4 > .actionBar {
+		text-align: right;
+}
+
+.btnPrimary,
+.btnSecondary {
+	box-sizing: border-box;
+	width: calc(50% - 5px);
+}
+
+.btnPrimary.disabled,
+.btnSecondar.disabled {
+	opacity: 0.2;
+}
+
+
+.ratingsBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.ratingBtn {
+	width: calc(20% - 5px);
+}
+
+.btnPrimary,
+.ratingBtn:hover {
+	color: white;
+	background-color: var(--darkBlue);
+}
+
+.closeSurveyBtn,
+.btnSecondary,
+.ratingBtn {
+	color: var(--darkBlue);
+	background-color: var(--lightBlue);
+}
+
+.ratingDescription {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 6px;
+}
+.ratingDescription > div {
+	display: inline-block;
+	font-size: 12px;
+}
+.ratingDescription > div:last-child {
+	text-align: right;
+}
+
+p.explanation {
+	color: #666;
+	font-size: 12px;
+	margin-top: 3px;
+}
+
+fieldset {
+	border-style: none;
+	padding: 0;
+}
+
+.surveyOption {
+	border: 1px solid #666;
+	border-radius: 5px;
+	background-color: var(--lightBlue);
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.surveyOption > input[type=radio] {
+	float: left;
+}
+.surveyOption > label {
+	display: block;
+	margin-left: 30px;
+}
+.surveyOption > input[type=text] {
+	font-size: 16px;
+	padding: 5px;
+	margin: 6px 0 0 30px;
+	border-radius: 5px;
+	width: calc(100% - 44px);
+}
+
+.surveyTextArea {
+	width: calc(100% - 6px);
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.hidden {
+	display: none;
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 640px) {
+	.feedbackButton {
+		width: 44px;
+		height: 44px;
+		background-position: 11px 12px;
+	}
+	.feedbackButton.expanded {
+		width: 200px;
+		background-position: 11px 12px; /* Need to respecify or will be overridden by default (mobile) setting. */
+		padding: 13px 0 0 44px;
+		transform: rotate(90deg) translate(0, -84px);
+	}
+}
+

@@ -19,7 +19,7 @@ $IPAddress = htmlspecialchars(substr($_POST["IPAddress"], 0, 15));
 $comments = htmlspecialchars(substr($_POST["comments"], 0, 1000));
 
 // Save to database
-include '../includes/getSQLServerDBConnection.php';
+include './includes/getSQLServerDBConnection.php';
 
 //try {
 	$conn = OpenConnection();
@@ -47,7 +47,7 @@ include '../includes/getSQLServerDBConnection.php';
 		$comments = "DATABASE INSERT FAILED!<br>" . $comments;
 	}
 	else {
-		while($row = sqlsrv_fetch_array($tsqlResponse, SQLSRV_FETCH_ASSOC)) {
+		while($row = sqlsrv_fetch_array(      $tsqlResponse                  , SQLSRV_FETCH_ASSOC)) {
 			$taskDesc = $row["taskDesc"];
 			$difficultyDesc = $row["difficultyDesc"];
 			$timestamp = $row["timestamp"];
@@ -57,14 +57,14 @@ include '../includes/getSQLServerDBConnection.php';
 	sqlsrv_close($conn);
 
 	//Create file with headers if it does not already exist
-	$file = "../logs/survey-responses.csv";
+	$file = "./logs/survey-responses.csv";
 	if (!file_exists($file)) {
 		$headers = "Timestamp,Task,Other task,Difficulty,Comments,IP Address\n";
-		file_put_contents($file, $headers);
+		file_put_contents($file, $headers); // does not seem to work
 	}
 
 	// Write to file
-	$comments = str_replace(array("\r\n", "\r", "\n"), " ", $comments); // new lines mess with .csv files
+	$comments = str_replace(array("\r\n", "\r", "\n"), " ", $comments); // new lines in comments mess with .csv files so remove them
 	$responseString = $timestamp . "," . $taskID . " (\"" . $taskDesc . "\")," . $otherTask . "," . $difficultyID . " (" . $difficultyDesc . "),\"" . $comments . "\"," . $IPAddress . "\n";
 	file_put_contents($file, $responseString, FILE_APPEND | LOCK_EX);
 
