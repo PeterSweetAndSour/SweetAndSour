@@ -1,21 +1,27 @@
 <?php
-if(isset($_GET["limit"])) {
-	// Block inputs larger than 3 characters to guard against SQLinjection but allow limit to 999.
-	$limit = substr($_GET["limit"], 0, 3);
-}
-else {
+// Block inputs larger than 3/5 characters to guard against SQLinjection
+$limit = substr($_GET["limit"], 0, 3);
+$offset = substr($_GET["offset"], 0, 5);
+
+if($limit == "") {
 	$limit = "250";
 }
-
-if(isset($_GET["offset"])) {
-	// Block inputs larger than 3 characters to guard against SQLinjection but allow offset to 99,999.
-	$offset = substr($_GET["offset"], 0, 5);
-}
-else {
+if($offset == "") {
 	$offset = "0";
 }
 
-include './includes/getSQLServerDBConnection.php';
+include '../../../sweetandsour_conf.php';
+include '../../includes/act_getDBConnection.php';
+
+$sql  = "SELECT timestamp, survey_responses.taskID AS taskID, tasks.taskDesc AS taskDesc, otherTask, survey_responses.difficultyID AS difficultyID, difficulty.difficultyDesc as difficultyDesc, comments, IPAddress ";
+$sql .= "FROM survey_responses ";
+$sql .= "INNER JOIN tasks ON tasks.taskID = survey_responses.taskID ";
+$sql .= "INNER JOIN difficulty ON difficulty.difficultyID = survey_responses.difficultyID ";
+$sql .= "ORDER BY timestamp DESC ";
+$sql .= "LIMIT " . $limit . " ";
+$sql .= "OFFSET " . $offset;
+
+$rs_surveyResponses = $mysqli->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -65,44 +71,18 @@ include './includes/getSQLServerDBConnection.php';
 		for the next set after that, and so on. (You can change the number displayed to 100 by adding 
 		&ldquo;?offset=250&amp;limit=100&rdquo; for example.)
 	</p>
-
 	<p>
 		The IP address identifies your computer to the outside world although since we are inside
 		a network, I think all computers inside the building will have the same IP address.
 	</p>
-
-	<p>
-		<a href="../logs/survey-responses.csv" download>Download survey responses</a> (in .csv format) to open in Excel.
-		Unfortunately, Excel does not understand the timestamp format so, by default, will display "2025-05-27 10:49:28.220" as "49:28.2"! 
-		In theory, setting the column to data type "Text" should make Excel display the data as-is but that does not work. 
-		The best solution is to:
-	</p>
-	<ol>
-		<li>Select column A</li>
-		<li>Click the "expand" arrow at the bottom-right of the data format section of the header</li>
-		<li>Select "Custom"</li>
-		<li>Under "Type", click any of the suggested formats under "General" and then specify the new format as "yyyy-MM-dd hh:mm:ss".</li>
-		<li>Click "OK".</li>
-	</ol>
+	<p><a href="survey-responses.csv" download>Download survey responses</a> (in .csv format)</p>
 	
 	<?php
-	$sql  = "SELECT timestamp, survey_responses.taskID AS taskID, tasks.taskDesc AS taskDesc, otherTask, survey_responses.difficultyID AS difficultyID, difficulty.difficultyDesc as difficultyDesc, comments, IPAddress ";
-	$sql .= "FROM survey_responses ";
-	$sql .= "INNER JOIN tasks ON tasks.taskID = survey_responses.taskID ";
-	$sql .= "INNER JOIN difficulty ON difficulty.difficultyID = survey_responses.difficultyID ";
-	$sql .= "ORDER BY timestamp DESC ";
-	$sql .= "OFFSET " . $offset . " ROWS ";
-	$sql .= "FETCH NEXT " . $limit . " ROWS ONLY";
-
-
-	//try {
-		$conn = OpenConnection();
-		$getSurveyResponses = sqlsrv_query($conn, $sql);
-		if ($getSurveyResponses == FALSE) {
-			//var_dump(sqlsrv_errors());
-			exit("Sorry. Something went drastically wrong.");
-		}
-		?>
+	if($rs_surveyResponses) { //Check that there is a result set
+		$numRows = $rs_surveyResponses->num_rows;
+	
+		if($numRows > 0) { //Check that the result set contains more than zero rows.
+			?>
 			<table>
 				<thead>
 					<tr>
@@ -114,39 +94,38 @@ include './includes/getSQLServerDBConnection.php';
 						<th>IP Address</th>
 					</tr>
 				</thead>
-				<tbody>			
+				<tbody>
 					<?php
-						while($row = sqlsrv_fetch_array($getSurveyResponses, SQLSRV_FETCH_ASSOC)) {
-							$timestamp = $row["timestamp"];
-							$taskID = $row["taskID"];
-							$taskDesc = $row["taskDesc"];
-							$otherTask = $row["otherTask"];
-							$difficultyID = $row["difficultyID"];
-							$difficultyDesc = $row["difficultyDesc"];
-							$comments = $row["comments"];
-							$comments = str_replace(array("\r\n", "\r", "\n"), "<br>", $comments); // new lines need break tag for html display
-							$IPAddress = $row["IPAddress"];
-							?>
-								<tr>
-									<td><?= $timestamp ?></td>
-									<td><?= $taskID ?> (<?= $taskDesc ?>)</td>
-									<td><?= $otherTask ?></td>
-									<td><?= $difficultyID ?> (<?= $difficultyDesc ?>)</td>
-									<td><?= $comments ?></td>
-									<td><?= $IPAddress ?></td>
-								</tr>
-							<?php
-						}
-						sqlsrv_free_stmt($getSurveyResponses);
-						sqlsrv_close($conn);
+					while ($row = $rs_surveyResponses->fetch_array(MYSQLI_ASSOC)) {
+						$timestamp = $row["timestamp"];
+						$taskID = $row["taskID"];
+						$taskDesc = $row["taskDesc"];
+						$otherTask = $row["otherTask"];
+						$difficultyID = $row["difficultyID"];
+						$difficultyDesc = $row["difficultyDesc"];
+						$comments = $row["comments"];
+						$comments = str_replace(array("\r\n", "\r", "\n"), "<br>", $comments); // new lines need break tag for html display
+						$IPAddress = $row["IPAddress"];
+						?>
+						<tr>
+							<td><?= $timestamp ?></td>
+							<td><?= $taskID ?> (<?= $taskDesc ?>)</td>
+							<td><?= $otherTask ?></td>
+							<td><?= $difficultyID ?> (<?= $difficultyDesc ?>)</td>
+							<td><?= $comments ?></td>
+							<td><?= $IPAddress ?></td>
+						</tr>
+						<?php
+					}
 					?>
-				</tbody>
+					</tbody>
 			</table>
-		<?php
-	//}
-	//catch(Exception $e) {
-	//		echo("Error!");
-	//}
+			<?php
+		}
+	}
+	// Close the database connection
+	$mysqli->close();
 	?>
+
 </body>
 </html>

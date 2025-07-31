@@ -42,24 +42,46 @@ const searchResults = (function() {
 		let link = document.createElement("link");
 		link.rel = "stylesheet";
 		link.type = "text/css";
-		link.href = "./css/intercept-survey.css";
+		link.href = "https://interceptsurvey.dc.gov/css/intercept-survey.css"; // Live - not there yet
 		head.appendChild(link);
+
+		link.onerror = (err) => {
+			console.warn("Unable to locate survey stylesheet at live URL. Trying again with another URL", err);
+
+			// Try again using another URL
+			link.href = "./css/intercept-survey.css"; // Test
+			head.appendChild(link);
+		};
 	};
 
 	const _displaySurvey = function() {
-		fetch("./intercept-survey.html").then((response) => {
+		fetch("https://interceptsurvey.dc.gov/intercept-survey.html").then((response) => { // Live
 			return response.text();
 		}).then((html) => {
-			let surveyContainer = document.createElement("div");
+			_displaySurveyAfterPromiseReturns(html);
+		}).catch((err => {
+			console.warn("Unable to load survey HTML using live URL. Trying again with another URL", err);
+
+			fetch("./intercept-survey.html").then((response) => { // Test
+				return response.text();
+			}).then((html) => {
+				_displaySurveyAfterPromiseReturns(html);
+			}).catch((err => {
+				console.warn("Something still wrong. Cannot load survey.", err);
+			}));
+
+		}));
+	};
+
+	const _displaySurveyAfterPromiseReturns = function(html) {
+		let surveyContainer = document.createElement("div");
 			surveyContainer.innerHTML = html;
 			let body = document.querySelector("body");
 			body.appendChild(surveyContainer);
 			_setEventListeners();
 			_setIPAddress();
-		}).catch((err => {
-			console.warn("Something went wrong.", err);
-		}));
-	};
+
+	}
 
 	const _setEventListeners = function() {
 		_setFeedbackButtonEventListener();
@@ -129,12 +151,22 @@ const searchResults = (function() {
 				// POST the form data
 				const interceptSurveyForm2 = document.querySelector("#interceptSurveyForm"); //
 				formData = new FormData(interceptSurveyForm2);
-				fetch("./saveSurveyResponse.php", {
+				
+				fetch("https://interceptsurvey.dc.gov/saveSurveyResponse.php", { // Live
 					method: 'POST',
 					body: formData,
 				})		
-				.catch((error) => {
-					console.warn(error);
+				.catch((err) => {
+					console.warn("Unable to save survey data using live URL. Trying again with another URL.", err);
+
+					fetch("./saveSurveyResponse.php?XDEBUG_SESSION=1", {
+						method: 'POST',
+						body: formData,
+					})
+					.catch ((err) => {
+						console.warn("Still unable to save");
+					});
+
 				});
 			}
 

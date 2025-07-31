@@ -120,7 +120,6 @@ function get_next_name_value_pair($string, $index_start, &$name_value_pairs) {
 	$value_and_index_start_next_tag = get_value_after_colon($index_colon, $string);
 
 	$value = $value_and_index_start_next_tag["value"];
-	$index_start_next_tag = $value_and_index_start_next_tag["index_start_next_tag"];
 
 	if(str_contains(strtolower($name), "position") or str_contains(strtolower($name), "title")) {
 		$name = "job_title";
@@ -143,8 +142,12 @@ function get_next_name_value_pair($string, $index_start, &$name_value_pairs) {
 
 	array_push($name_value_pairs, [$name, $value]);
 
+	$index_start_next_tag = $value_and_index_start_next_tag["index_start_next_tag"];
+	if($index_start_next_tag == null) {
+		return null;
+	}
+	
 	$index_start = $index_start_next_tag + 1;
-
 	return $index_start;
 }
 
@@ -328,7 +331,7 @@ if($MOTA_jobs_page) {
 	}
 	$json = substr($json, 0, strlen($json)-1); // Strip the last comma
 	$json .= ']'; // Close the array
-	$json = pretty_print_json($json, true); // Make it look nice for humans. Remove if actual JSON is desired.
+	$json = pretty_print_json($json, true); // Make it look nice for humans. Remove if actual JSON is desired (without <br> tags).
 }
 ?>
 <!DOCTYPE html>
