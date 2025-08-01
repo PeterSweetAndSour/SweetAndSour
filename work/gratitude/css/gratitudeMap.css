@@ -133,19 +133,19 @@ div.leaflet-container a.leaflet-popup-close-button:hover {
 }
 .marker-pin:focus-visible {
 	outline: none;
-	background-image: url("../images/marker-pin-focus.png");
+	background-image: url("../images/marker-pin-focus.svg");
 }
 .marker-pin-range-1 {
-	background-image: url("../images/marker-pin-range-1.png?version=5");
+	background-image: url("../images/marker-pin-range-1.svg?version=5");
 }
 .marker-pin-range-2 {
-	background-image: url("../images/marker-pin-range-2.png?version=4");
+	background-image: url("../images/marker-pin-range-2.svg?version=4");
 }
 .marker-pin-range-3 {
-	background-image: url("../images/marker-pin-range-3.png?version=4");
+	background-image: url("../images/marker-pin-range-3.svg?version=4");
 }
 .marker-pin-range-4 {
-	background-image: url("../images/marker-pin-range-4.png?version=4");
+	background-image: url("../images/marker-pin-range-4.svg?version=4");
 }
 
 i.fa-solid {
