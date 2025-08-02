@@ -65,8 +65,8 @@ const searchResults = (function() {
 		const pilotAgencies = "Office of the Chief Technology Officer, Office of Contracting & Procurement and the Department of Parks & Recreation";
 		const searchParams = new URLSearchParams(window.location.search);
 		const searchTerm = searchParams.get("position");
-		const server_Peoplesoft_URL = "https://sweetandsour.org/work/api/search-results-peoplesoft.js?search-term=" + searchTerm; // To PeopleSoft
-		const server_New_ATS_URL = "https://sweetandsour.org/work/api/search-results-new-ats.js?search-term=" + searchTerm; // To new ATS for pilot agencies
+		const server_Peoplesoft_URL = "./api/search-results-peoplesoft.js?search-term=" + searchTerm; // To PeopleSoft
+		const server_New_ATS_URL = "./api/search-results-new-ats.js?search-term=" + searchTerm; // To new ATS for pilot agencies
 	
 		const request1 = fetch(server_Peoplesoft_URL)
 			.then(response => {
@@ -135,7 +135,7 @@ const searchResults = (function() {
 	const _setUrlToNewATSVacancyAnnouncement = function(searchResult) {
 		const jobTitle = searchResult.jobTitle;
 		const jobId = searchResult.jobId;
-		const urlToVacancyAnnouncement = "https://sweetandsour.org/files/job-posting.php?jobTitle=" + encodeURI(jobTitle) + "&jobId=" + jobId;
+		const urlToVacancyAnnouncement = "./job-posting.php?jobTitle=" + encodeURI(jobTitle) + "&jobId=" + jobId;
 		searchResult.url = urlToVacancyAnnouncement;
 		searchResult.source = "New ATS"; // Just for demonstration.Remove from final.
 		searchResult.class = "newAts";
@@ -373,9 +373,10 @@ const searchResults = (function() {
 
 	const _getBaseAddress = function(rawAddress) {
 		let baseAddress = rawAddress.replaceAll("&amp;","&").replaceAll("&#039;", "'").replaceAll(/\.|,|&nbsp/g, ""); // Remove punctuation and html entities
+		baseAddress = baseAddress.replace("N.W.", "NW").replace("N.E.", "NE").replace("S.E.", "SE").replace("S.W.", "SW"); // Remove dots from abbreviations
+		baseAddress = baseAddress.replace(/(NE|NW|SE|SW) .*$/, "$1"); // Remove anything after the quadrant such as " Suite 123", " 10th Floor" or " (DC Armory)"
 		baseAddress = capitalizeAddress(baseAddress);
 		baseAddress = baseAddress.replace("Street", "St").replace("Avenue", "Ave").replace("Road", "Rd").replace("Place", "Pl"); // Standardize on types with 2 characters
-		baseAddress = baseAddress.replace(/(NE|NW|SE|SW) .*$/, "$1"); // Remove anything after the quadrant such as " Suite 123" or " (DC Armory)"
 		return baseAddress
 	}
 

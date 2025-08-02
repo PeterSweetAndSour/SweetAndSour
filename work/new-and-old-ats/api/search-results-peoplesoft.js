@@ -5,7 +5,7 @@
 	{"jobTitle": "Emergency Medical Services Program Manager", "jobId": 29004, "location": "899 N. Capitol Street NE", "department": "HEPRA-Office of the Senior Dep", "postedDate": "01/31/2025", "closeDate": "03/02/2025"}, 
 	{"jobTitle": "SUPERVISORY PSYCHIATRIC NURSE", "jobId": 29003, "location": "1100 Alabama Avenue, SE", "department": "Forensic Nursing", "postedDate": "01/31/2025", "closeDate": "07/29/2025"}, 
 	{"jobTitle": "Trial Attorney", "jobId": 29010, "location": "400 6th Street NW", "department": "Juvenile Section", "postedDate": "01/31/2025", "closeDate": "02/14/2025"}, 
-	{"jobTitle": "Service Coordinator I", "jobId": 28949, "location": "250 E Street SW", "department": "Disability Services, Dept on", "postedDate": "01/29/2025", "closeDate": "02/08/2025"}, 
+	{"jobTitle": "Service Coordinator I", "jobId": 28949, "location": "250 E Street SW", "department": "Disability Services, Dept of", "postedDate": "01/29/2025", "closeDate": "02/08/2025"}, 
 	{"jobTitle": "Safety and Occupational Health Manager", "jobId": 28909, "location": "899 N. Capitol Street NE", "department": "Risk Management", "postedDate": "01/28/2025", "closeDate": "02/07/2025"}, 
 	{"jobTitle": "Supervisory Transportation Managment Planner", "jobId": 28315, "location": "250 M Street SE", "department": "PD/PSD/PPB", "postedDate": "01/28/2025", "closeDate": "02/16/2025"}, 
 	{"jobTitle": "Data Scientist", "jobId": 28872, "location": "899 N. Capitol Street NE", "department": "Works (Office of the Director)", "postedDate": "01/23/2025", "closeDate": "02/07/2025"}, 
