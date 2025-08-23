@@ -23,31 +23,31 @@
 	<ul>
 		<li>
 			A song from the world&apos;s most popular musical act:<br/>
-			<?php setThumbnail("BoyWithLuv.jpg", "https://www.youtube.com/watch?v=XsX3ATc3FbA", "figure--thumbnail-youtube"); ?>
+			<?php setThumbnail(["photoName"=>"BoyWithLuv.jpg", "overrideURL"=>"https://www.youtube.com/watch?v=XsX3ATc3FbA", "cssClass"=>"figure--thumbnail-large", "logo"=>"youtube"]); ?>
 		</li>
 		<li>
 			A song from, what was, the most popular girl group:<br />
-			<?php setThumbnail("CheerUp.jpg", "https://www.youtube.com/watch?v=c7rCyll5AeY", "figure--thumbnail-youtube"); ?><br>
+			<?php setThumbnail(["photoName"=>"CheerUp.jpg", "overrideURL"=>"https://www.youtube.com/watch?v=c7rCyll5AeY", "cssClass"=>"figure--thumbnail-large", "logo"=>"youtube"]); ?><br>
 			(See <strong>BlackPink</strong> below for the currently most popular girl group.)
 		</li>
 		<li>
 			Not really standard K-pop as it is a solo act with no dancing but it is beautiful (more explanation below):<br />
-			<?php setThumbnail("EyesNoseLips.jpg", "https://www.youtube.com/watch?v=9un35OyWcN0", "figure--thumbnail-youtube") ?>
+			<?php setThumbnail(["photoName"=>"EyesNoseLips.jpg", "overrideURL"=>"https://www.youtube.com/watch?v=9un35OyWcN0", "cssClass"=>"figure--thumbnail-large", "logo"=>"youtube"]) ?>
 		</li>
 		<li>
 			A fantastic song from a girl group that even K-pop fans probably know of only dimly, if at all. A great example of why you shouldn't limit yourself to just the most popular and also of a great, really cheap music video:</br>
-			<?php setThumbnail("ThisIsMe.jpg", "https://www.youtube.com/watch?v=9uhUmjANdQA", "figure--thumbnail-youtube") ?>
+			<?php setThumbnail(["photoName"=>"ThisIsMe.jpg", "overrideURL"=>"https://www.youtube.com/watch?v=9uhUmjANdQA", "cssClass"=>"figure--thumbnail-large", "logo"=>"youtube"]) ?>
 		</li>
 		<li>
 			Such a fun, bouncy song that tells a heart-warming story so you can't help smiling by the end! The music doesn't actually start until about 35 seconds in:<br />
-			<?php setThumbnail("Hello.jpg", "https://www.youtube.com/watch?v=lNvBbh5jDcA", "figure--thumbnail-youtube") ?>
+			<?php setThumbnail(["photoName"=>"Hello.jpg", "overrideURL"=>"https://www.youtube.com/watch?v=lNvBbh5jDcA", "cssClass"=>"figure--thumbnail-large", "logo"=>"youtube"]) ?>
 		</li>
 	</ul>
 </div>
 
 <h2 id="peters-kpop-selection">Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 14<sup>th</sup> September 2024)</p>
+	<p class="subtitle">(As of 14<sup>th</sup> August 2025)</p>
 </div>
 
 <h3>BTS</h3>
@@ -70,15 +70,20 @@
 			<p>Oh, and a lovely <a href="https://www.youtube.com/watch?v=am3iJavzYi8" target="_blank" class="external">English-language cover</a> that is <a href="https://www.youtube.com/watch?v=JewlhY8DGTI?t=329" target="_blank" class="external">BTS-approved</a>!
 			</p>
 		</li>
-		<li><a href="https://www.youtube.com/watch?v=gdZLi9oWNZg" target="_blank" class="external">Dynamite</a> The first video to hit 100m views on youtube in 24 hours and perhaps not coincidentally, their first song in English.
+		<li>
+			<a href="https://www.youtube.com/watch?v=kXpOEzNZ8hQ" target="_blank" class="external">Yet To Come (The Most Beautiful Moment)</a>
 		</li>
-		<li><a href="https://www.youtube.com/watch?v=WMweEpGlu_U" target="_blank" class="external">Butter</a> BTS broke their own record with this song reaching 113 million views in 24 hours! 
+		<li>
+			<a href="https://www.youtube.com/watch?v=gdZLi9oWNZg" target="_blank" class="external">Dynamite</a> The first video to hit 100m views on youtube in 24 hours and perhaps not coincidentally, their first song in English.
+		</li>
+		<li>
+			<a href="https://www.youtube.com/watch?v=WMweEpGlu_U" target="_blank" class="external">Butter</a> BTS broke their own record with this song reaching 113 million views in 24 hours! 
 		</li>
 	</ul>
 
 	
 
-	<p>Someone at my old office (Dilene) gave me this list of <em>her t</em>en favorite songs. See if you like them:</p>
+	<p>Someone at my old office (Dilene) gave me this list of <em>her</em> ten favorite songs. See if you like them:</p>
 	<ul>
 		<li><a href="https://www.youtube.com/watch?v=NMdTd9e-LEI">I need U</a></li>
 		<li><a href="https://www.youtube.com/watch?v=eotYGFuLKXM" target="_blank" class="external"> Best of me</a></li>
@@ -260,31 +265,61 @@
 			2023-03-10  <a href="https://www.youtube.com/watch?v=VzIAZt8I7t8" target="_blank" class="external">Wallflower</a>. Don't be fooled by this song's melancholy tone as it will get into your head and stay there. The lyrics about social isolation resonate with a lot of people &ndash; it is the most popular B-side on the album. Now I've listed every song on the album except <em>Moonlight Sunrise</em> which was the album's pre-release single but I thought the weakest song on the album!
 		</li>
 		<li>
-			2023-07-27 <a href="https://www.youtube.com/watch?v=HddG4Yk9QYo" target="_blank" class="external">Bouquet (live)</a> from <strong>MiSaMo</strong>, the sub-unit of the Japanese members Mina, Sana and Momo. The <a href="https://www.youtube.com/watch?v=c64_lZErcOQ" target="_blank" class="external">music video </a> for the song was released on 2023-01-24 but at the time I did not really appreciate it whereas this version is just so beautiful it brought tears to my eyes when I heard it. All three of them are perfect in their own way but I am particularly proud of Momo who is primarily a dancer and normally forced to sing outside her natural range. If members had equal time on each song (they don't), she would normally have one-ninth of the singing but here it is one-third so I suspect she was out of her comfort zone. Her voice is instantly recognizable and here she it combines so well with Mina and Sana. <br /><br />They did five shows in Japan and at the end of this, the final concert, there was <a href="https://www.youtube.com/watch?v=S5hn776NxA0" target="_blank" class="external">a video of support messages</a> from the other members. While Sana and Momo are smiling, Mina appears overwhelmed with emotion. Obviously this was organized by JYPE but if the members don't truly love and care for each other, they are do an incredible job of faking it. <br /><br />Then MiSaMo were told that Nayeon was in the audience! At 13:12 Mina appears to be trying desperately not to cry (or possibly she is upset that Nayeon is stealing some attention) but I think the former.
-		</li>
-		<li>
 			2023-06-15 <a href="https://www.youtube.com/watch?v=gAFgaI5D3Gc" target="_blank" class="external">Marshmallow</a> from MiSaMo.
 		</li>
+	</ul>
+</div>
+<div class="photo-gallery clear">
+	<hr>
+	<p>On the 6th of July (2023), I went to the <strong>Twice concert</strong> at the Metlife stadium near New York! What fantastic evening with 50,000+ other screaming fans!! There was a lot of screaming. I've not been to a concert bigger than a few hundred for over 20 years so I had nothing to really compare it to but the members, the band, the set, the everything was perfect. I love them even more now.</p>
+	<?php setThumbnail(["TwiceConcert_01Sm.jpg", "TwiceConcert_02Sm.jpg", "TwiceConcert_03Sm.jpg", "TwiceConcert_04Sm.jpg", "TwiceConcert_05Sm.jpg", "TwiceConcert_06Sm.jpg", "TwiceConcert_07Sm.jpg", ["photoName"=>"TwiceConcert_08Sm.jpg", "cssClass"=>"figure--thumbnail-portrait"], "TwiceConcert_09Sm.jpg", ["photoName"=>"TwiceConcert_10Sm.png", "overrideURL"=>"https://www.youtube.com/watch?v=KzOUd0ecvus", "cssClass"=>"figure--thumbnail-large", "logo"=>"youtube"]]) ?>
+	<hr>
+</div>
+<div class="story">
+	<ul>
 		<li>
 			2023-07-13 <a href="https://www.youtube.com/watch?v=woKq2sD8xho" target="_blank" class="external">Don't touch me</a> from MiSaMo. Like <a href="https://www.youtube.com/watch?v=qniDJuWrGyk" target="_blank" class="external">works of art</a> in a museum that are referenced in the video, you can admire but you cannot touch.
 		</li>
-	</ul>
-
-	<hr>
-	<p>On the 6th of July (2023), I went to the <strong>Twice concert</strong> at the Metlife stadium near New York! What fantastic evening with 50,000+ other screaming fans!! There was a lot of screaming. I've not been to a concert bigger than a few hundred for over 20 years so I had nothing to really compare it to but the members, the band, the set, the everything was perfect. I love them even more now. I pusted <a href="https://www.instagram.com/p/Cuh4xbzOdjB/?img_index=1" target="_blank" class="external">a few photos on Instagram</a> and uploaded a video of <a href="https://www.youtube.com/watch?v=KzOUd0ecvus" target="_blank" class="external">Yes or yes, What is love & Cheer up</a></p>
-	<hr>
-
-	<ul>
 		<li>
-			2024-02-01 <a href="https://www.youtube.com/watch?v=haf67eKF0uo" target="_blank" class="external">I got you</a>, the preview for their upcoming album. This is a more contemplative song than usual and while it did not grab me immediately, it keeps playing in my head and I've come to appreciate it. However, after watching the official music video, you <em>really</em> need to see the <a href="https://www.youtube.com/watch?v=fwPjD-jFsls" target="_blank" class="external">cheering guide</a> in which you see them at their raw, chaotic best&hellip; and they manage to stretch the word "Twice" into <em>too-why-ee-sa</em>. It's hilarious.
+			2023-07-27 <a href="https://www.youtube.com/watch?v=HddG4Yk9QYo" target="_blank" class="external">Bouquet (live)</a> from <strong>MiSaMo</strong>, the sub-unit of the Japanese members Mina, Sana and Momo. The <a href="https://www.youtube.com/watch?v=c64_lZErcOQ" target="_blank" class="external">music video </a> for the song was released on 2023-01-24 but at the time I did not really appreciate it whereas this version is just so beautiful it brought tears to my eyes when I heard it. All three of them are perfect in their own way but I am particularly proud of Momo who is primarily a dancer and normally forced to sing outside her natural range. If members had equal time on each song (they don't), she would normally have one-ninth of the singing but here it is one-third so I suspect she was out of her comfort zone. Her voice is instantly recognizable and here she it combines so well with Mina and Sana. <br /><br />They did five shows in Japan and at the end of this, the final concert, there was <a href="https://www.youtube.com/watch?v=S5hn776NxA0" target="_blank" class="external">a video of support messages</a> from the other members. While Sana and Momo are smiling, Mina appears overwhelmed with emotion. Obviously this was organized by JYPE but if the members don't truly love and care for each other, they are do an incredible job of faking it. <br /><br />Then MiSaMo were told that Nayeon was in the audience! At 13:12 Mina appears to be trying desperately not to cry (or possibly she is upset that Nayeon is stealing some attention) but I think the former.
+		</li>
+		<li>
+			2024-02-01 <a href="https://www.youtube.com/watch?v=haf67eKF0uo" target="_blank" class="external">I Got You</a>, the preview for their upcoming album. This is a more contemplative song than usual and while it did not grab me immediately, it keeps playing in my head and I've come to appreciate it. However, after watching the official music video, you <em>really</em> need to see the <a href="https://www.youtube.com/watch?v=fwPjD-jFsls" target="_blank" class="external">cheering guide</a> in which you see them at their raw, chaotic best&hellip; and they manage to stretch the word "Twice" into <em>too-why-ee-sa</em>. It's hilarious.
 		</li>
 		<li>
 			2024-02-24 <a href="https://www.youtube.com/watch?v=jCzez_q8si0" target="_blank" class="external">One Spark</a>, the single from <em>I GOT YOU-th</em>.
 		</li>
-
 		<li>
 			2024-09-06 <a href="https://www.youtube.com/watch?v=YofelpFMWzg" target="_blank" class="external">Run Away</a> Tzuyu has a solo album, <em>AbouTZU</em>! I need to listen to the rest of the album. It is lovely to see the other members helping to promote the work of the youngest of the group: <a href="https://www.youtube.com/shorts/xHJbqSLcUJE" target="_blank" class="external">Nayeon</a>, <a href="https://www.youtube.com/shorts/QWG2Vt9bCkI" target="_blank" class="external">Dahyun</a>, <a href="https://www.youtube.com/shorts/jkDA763YhRU" target="_blank" class="external">Nayeon and Dahyun</a>, <a href="https://www.youtube.com/shorts/4CKdGuTeg1U" target="_blank" class="external">Jihyo</a>, <a href="https://www.youtube.com/shorts/OLCdckWVGbo" target="_blank" class="external">Chaeyoung</a> and most especially, <a href="https://www.youtube.com/shorts/0C0BJEUKTm4" target="_blank" class="external">Sana</a>
 		</li>
+		<li>
+			2024-10-27 <a href="https://www.youtube.com/watch?v=-J_w9K6DgRo" target="_blank" class="external">Identity</a> The spectacular backdrops are both in Spain—the <a href="https://en.wikipedia.org/wiki/City_of_Arts_and_Sciences" target="_blank" class="external">City of Arts and Sciences</a> in Valencia and the <a href="https://en.wikipedia.org/wiki/Old_Cathedral_of_Lleida" target="_blank" class="external">Old_Cathedral_of_Lleida</a>.
+		</li>
+		<li>
+			2024-11-05 <a href="https://www.youtube.com/watch?v=KrSQJeTBIpI" target="_blank" class="external">Runway</a> from Misamo.
+		</li>		
+		<li>
+			2024-11-05 <a href="https://www.youtube.com/watch?v=wkXE4-VpSec" target="_blank" class="external">Misty</a> by Mina on the same Haute Culture mini-album as Identity and Runway. She has such a gorgeous voice. The <a href="https://www.youtube.com/watch?v=O9q-Zx_tJ0k" target="_blank" class="external">live version</a> is the one I normally listen to.
+		</li>		
+		<li>
+			2024-12-23 <a href="https://www.youtube.com/watch?v=nKlCkB_Iicc" target="_blank" class="external">Magical</a>. As I noted in the comments, I love the whole thing but what really caught my attention was 1. Mina's smile at 1:04, 2. At 2:07 Nayeon sending informationi by mental telepathy to Tzuyu which she gets and acknowledges (or at least that is how I interpret what I see), and 3. their English pronunciation is fantastic!
+		</li>
+		<li>
+			2025-02-02 <a href="https://www.youtube.com/watch?v=HtiUs2vn27A" target="_blank" class="external">Kimagure Romantic</a>. Nayeon does a cover of a hit from 20 years ago by <a href="https://www.youtube.com/watch?v=5XCSt_0lwOE" target="_blank" class="external">IKIMONOGAKARI</a>. It is in Japanese which she does not speak and I saw one comment that she has a softer voice when singing in Japanese than Korean, presumably because she is concentrating to get the pronunciation right, or at least intelligible since I can't judge.
+		</li>		
+		<li>
+			2025-06-23 <a href="https://www.youtube.com/watch?v=l8Dr7vzMSVE" target="_blank" class="external">Takedown</a> (Jihyo, Jeongyeon and Chaeyoung) from the surprise blockbuster <em>Kpop Demon Hunters</em>.
+		</li>		
+		<li>
+			2025-07-11 <a href="https://www.youtube.com/watch?v=dTsP-nmggyc" target="_blank" class="external">Let Love Go</a> (Jeongyeon, Momo Sana and Tzuyu. This is the best song on the new album as I have not (yet) fully-embraced "This Is For". Momo's deeper, husky voice works so well in this song.
+		</li>		
+		<li>
+			2025-07-11 <a href="https://www.youtube.com/watch?v=N1ExjhcpLso" target="_blank" class="external">Mars</a>.  
+		</li>		
+		<li>
+			2025-07-11 <a href="https://www.youtube.com/watch?v=POxNm2NNyps" target="_blank" class="external">Dat Ahh Dat Ooh</a> (Sana, Jihyo, Dahyun, Chaeyoung, Tzuyu) This is an unusual song and initially I passed over it but then bit of it got stuck in my head. 
+		</li>		
+	
 
 	</ul>
 </div>
@@ -362,11 +397,17 @@
 <div class="story">
 	<p>I am not a big fan of BlackPink but I am including them here because they are <strong>so</strong> popular. I learned only in 2023 that Rosé was born in New Zealand and grew up in Australia. (Jennie lived in New Zealand for five years starting at age 9 and so is also comfortable in English. Lisa, from Thailand, speaks English too and having 3 English speakers gave them an edge in the global music business.)</p>
 	
-	<p>As of February 2024, <a href="https://www.youtube.com/watch?v=IHNzOHi8sJs" target="_blank" class="external">DDU-DU DDU-DU</a> has 2.1 <em>billion</em> views! That puts them at #72 on the list of <a href="https://kworb.net/youtube/topvideos.html" target="_blank" class="external">most popular Youtube videos of all time</a>, ahead even of BTS (at #114). The <a href="https://www.youtube.com/watch?v=jOJbXvjZ-cQ" target="_blank" class="external">dance practice video</a> has another 498 millin views!
-	</p>
+	<p>As of February 2024, <a href="https://www.youtube.com/watch?v=IHNzOHi8sJs" target="_blank" class="external">DDU-DU DDU-DU</a> has 2.1 <em>billion</em> views! That puts them at #72 on the list of <a href="https://kworb.net/youtube/topvideos.html" target="_blank" class="external">most popular Youtube videos of all time</a>, ahead even of BTS (at #114). The <a href="https://www.youtube.com/watch?v=jOJbXvjZ-cQ" target="_blank" class="external">dance practice video</a> has another 498 millin views!</p>
 	<p>They released <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank" class="external">How you like that</a> on 2020-06-26 and it set a record on YouTube of <a href="https://www.forbes.com/sites/hughmcintyre/2020/06/29/blackpinks-new-music-video-officially-break-the-record-for-the-most-views-in-24-hours-on-youtube/#1c8b7429460d" target="_blank" class="external">86.3 million views in the first 24 hours</a>! (Later broken by BTS with <em>Butter</em> and <em>Dynamite</em>)</p>
 	<p>James Cardin did <a href="https://www.youtube.com/watch?v=gUmE_TRdp0s" target="_blank" class="external">Carpool Karaoke with Blackpink</a>!</p>
 </div>
+
+<h3>Rosé from BlackPink and Bruno Mars</h3>
+<div class="story">
+	<p>Rosé and Bruno Mars collaborated on <a href="https://www.youtube.com/watch?v=ekr2nIex040" target="_blank" class="external">APT</a>, released 2024-10-18 and as of 2025-08-06 has 1,892,243,135 views! Perhaps not surprising when you get two of the biggest names in popular music with a really catchy song. I love the section from 1:45 as Rosé sounds so great—I need to go back and listen to the more recent BlackPink stuff and the members' solo works see what I've missed. Also a <a href="https://www.instagram.com/reel/DFs5KCENj2Z/" target="_blank" class="external">study motivator version</a> from China!</p>
+</div>
+
+
 
 <h3 id="redVelvet">Red Velvet</h3>
 <div class="story">
