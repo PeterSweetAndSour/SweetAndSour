@@ -1,3 +1,5 @@
+@use "_variables.scss";
+
 /* ***********************************************
 Mobile 
 ************************************************ */
@@ -8,7 +10,7 @@ Mobile
 	Layout
 	------------------------------------------------------------------------------------------ */
 	header {
-		background-color: $blueDark;
+		background-color: variables.$blueDark;
 		color: #fff;
 		text-align: right;
 		height: 83px;
@@ -108,7 +110,7 @@ Mobile
 		top: 0px;
 		left: 0;
 		transform: translate(calc(100% + 64%));
-		background-color: $blueDark;
+		background-color: variables.$blueDark;
 		text-align: left;
 
 		li {
@@ -124,7 +126,7 @@ Mobile
 				padding: 8px 0 0 0;
 				font-size: 20px;
 				text-decoration: none;
-				border-top: 1px solid $blueTint6;
+				border-top: 1px solid variables.$blueTint6;
 			}
 			&.hasChildren > a {
 				display: none
@@ -170,7 +172,7 @@ Mobile
 			border-top-style: none;
 		}
 		.menu1 > li:last-child > a {
-			border-bottom: 1px solid $blueTint6;
+			border-bottom: 1px solid variables.$blueTint6;
 		}
 		.menu2 {
 			margin-left: 60px;

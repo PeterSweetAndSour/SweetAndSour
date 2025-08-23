@@ -1,3 +1,5 @@
+@use "_variables.scss";
+
 /* Modified from https://medium.com/@eugeniolujambio/accessible-css-only-floating-labels-74bf9173bc5f. 
 That example showed using :placeholder-shown pseudoclass but I changed to :focus since I wonder if the input 
 really has focus if I click and there is no visible change but :placeholder-shown is still needed to retain
@@ -8,7 +10,7 @@ the position of the label after the user has entered something. */
 	padding:  10px 10px; 
 	margin-bottom: 1px;
 	height:  56px; 
-	border:  solid 1px $blueTint8; 
+	border:  solid 1px variables.$blueTint8; 
 	background:  #fff; 
 	box-sizing:  border-box; 
 	transition:  all .3s linear; 
@@ -16,10 +18,10 @@ the position of the label after the user has entered something. */
 }
 
 @mixin visible-input-focus {
-	border-bottom:  solid 2px $blueDark; 
+	border-bottom:  solid 2px variables.$blueDark; 
 	margin-bottom: 0;
 	outline: 0; 
-	box-shadow:  0 2px 6px -8px rgba($blueDark, .45);
+	box-shadow:  0 2px 6px -8px rgba(variables.$blueDark, .45);
 }
 
 .floating-label {
@@ -45,7 +47,7 @@ the position of the label after the user has entered something. */
 			width: 100%;
 		}
 		&.error {
-			border: $redDark;
+			border: variables.$redDark;
 		}
 		&:focus {
 			@include visible-input-focus;
@@ -80,9 +82,9 @@ button.continue {
 	border-radius: 20px;
 	background-clip: padding-box;
 	color: #666;
-	background-color: $blueTint8;
-	background-image: linear-gradient($blueTint10, $blueTint8);
-	border: 1px solid $blueDark;
+	background-color: variables.$blueTint8;
+	background-image: linear-gradient(variables.$blueTint10, variables.$blueTint8);
+	border: 1px solid variables.$blueDark;
 
 	&:hover,
 	&:focus {
@@ -92,8 +94,8 @@ button.continue {
 	&:active {
 		transition: 0s;
 		color: #fff;
-		background-color: $blueDark;
-		background-image: linear-gradient($blueTint4, $blueTint2);
+		background-color: variables.$blueDark;
+		background-image: linear-gradient(variables.$blueTint4, variables.$blueTint2);
 	}
 		&:disabled {
 		opacity: 0.25;
@@ -126,7 +128,7 @@ textarea {
 	box-sizing:  border-box;
 	width: 100%;
 	padding: 10px;
-	border: solid 1px $blueTint8; 
+	border: solid 1px variables.$blueTint8; 
 	font-size: 16px;
 	
 	&:focus {
@@ -147,11 +149,11 @@ textarea {
 }
 
 .errorMsg {
-	border-color: $redDark;
+	border-color: variables.$redDark;
 
 	& + label + span {
-		color: $redDark;
-		background-color: $yellowPale;
+		color: variables.$redDark;
+		background-color: variables.$yellowPale;
 		display: block;
 		padding: 5px;
 	}
