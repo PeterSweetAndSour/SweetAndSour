@@ -1,6 +1,18 @@
 body {
 	margin: 0;
+	font-size: 16px;
+	font-family: Lato, Helvetica, sans-serif;
 }
+
+header {
+	background-color: #065597;
+	height: 60px;
+	color: white;
+	text-align: center;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+
 #section-footer {
 	display: none;
 }
@@ -16,8 +28,14 @@ body {
 }
 
 #mapContainer,
-#placeInfo {
+#placeInfo,
+#overlayContent {
 	box-sizing: border-box;
+}
+
+#mapContainer {
+	z-index: 1;
+	position: relative;
 }
 
 #placeInfo {
@@ -27,6 +45,10 @@ body {
 	overflow: auto;
 	color: #fff;
 	border-top: 1px solid white;
+}
+
+#overlayContent {
+	overflow: auto;
 }
 
 .quoteContainer p {
@@ -253,7 +275,7 @@ div.leaflet-popup-content {
 	margin: 6px 0;
 }
 
-a.ext { /* external - Drupal adds this class automatically */
+a.ext { /* external */
 	background-image: url("https://dc.gov/sites/all/modules/extlink/extlink.png");
 	background-repeat: no-repeat;
 	background-position: 100% 8px;
@@ -301,6 +323,58 @@ textarea {
 	line-height: 1.1em;
 }
 
+
+.overlay {
+	position: absolute;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0 , 0, 0.5);
+}
+.overlayContent {
+	position: absolute;
+	z-index: 11;
+	padding: 20px;
+	background-color: white;
+}
+
+	.closeButton {
+		position: absolute;
+		right: 12px;
+		top: 12px;
+		width: 32px;
+		height: 32px;
+		opacity: 1;
+	}
+	.closeButton > span {
+		color: transparent;
+		display: inline-block;
+		width: 0;
+	}
+
+	.closeButton:before, 
+	.closeButton:after {
+		position: absolute;
+		left: 15px;
+		content: ' ';
+		height: 33px;
+		width: 4px;
+		background-color: #fff;
+	}
+	.closeButton:before {
+		transform: rotate(45deg);
+	}
+	.closeButton:after {
+		transform: rotate(-45deg);
+	}
+	.overlayContent > .closeButton:before,
+	.overlayContent > .closeButton:after {
+		background-color: #000;
+	}
+
+
 /* Mobile */
 @media screen and (max-width: 959px) {
 	#section-footer {
@@ -308,8 +382,6 @@ textarea {
 	}
 
 	#mapContainer {
-		z-index: 1;
-		position: relative;
 		height: 100vh;
 		width: 100%;
 	}
@@ -356,48 +428,26 @@ textarea {
 	}
 	
 
-	#placeInfo {
+	#placeInfo,
+	#overlayContent {
 		position: absolute;
-		z-index: 4;
 		width: calc(100% - 48px);
-		height: calc(100vh - 48px);
+		height: calc(100vh - 108px);
 		left: 24px;
 		top: 24px;
+	}
+	#placeInfo {
+		z-index: 4;
 		filter: drop-shadow(#666 6px 6px 6px);
+	}
+	#overlayContent {
+		z-index: 11;
 	}
 	.placeInfo h1 {
 		margin: 0 40px 20px;
 		text-align: center;
 	}
-	.closeButton {
-		position: absolute;
-		right: 12px;
-		top: 12px;
-		width: 32px;
-		height: 32px;
-		opacity: 1;
-	}
-	.closeButton > span {
-		color: transparent;
-		display: inline-block;
-		width: 0;
-	}
 
-	.closeButton:before, 
-	.closeButton:after {
-		position: absolute;
-		left: 15px;
-		content: ' ';
-		height: 33px;
-		width: 4px;
-		background-color: #fff;
-	}
-	.closeButton:before {
-		transform: rotate(45deg);
-	}
-	.closeButton:after {
-		transform: rotate(-45deg);
-	}
 	.hideMobile {
 		display: none;
 	}
@@ -412,12 +462,17 @@ textarea {
 	body {
 		height: 100vh; /* I can't figure out what is making the page too tall if this is not here and causing a scrollbar to appear.*/
 	}
-	
+
+	header {
+		height: 100px;
+		padding-top: 40px;
+	}
+
 	#mapContainer,
 	#placeInfo {
 		display: inline-block;
 		width: 50%; 
-		height: calc(100vh - 120px); 
+		height: calc(100vh - 100px); 
 	}
 	
 	#mapContainer { 
@@ -427,8 +482,8 @@ textarea {
 	h1.alternateH1 {
 		display: none;
 	}
-	
-	.closeButton {
+
+	.placeInfo > .closeButton {
 		display: none;
 	}
 	
@@ -448,6 +503,14 @@ textarea {
 	}
 	.leaflet-control-search .search-cancel {
     top: 1px;
+	}
+
+	.overlayContent {
+		width: 50vw;
+		height: calc(100vh - 140px);
+		left: 25vw;
+		top: 20px;
+		overflow: auto;
 	}
 }
 /* End desktop */

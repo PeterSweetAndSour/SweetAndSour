@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test header</title>
+</head>
+<body>
+<style type="text/css">
+		@media (min-device-width: 740px) and (min-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation: landscape) {
+				.right-float {
+						width: 50%;
+				}
+		}
+
+		:root {
+			--octo-blue: #065597;
+			--octo-green: #98b857;
+			--logo-width: 50vw;
+			--logo-height: calc(var(--logo-width) * 163/1276); /* proportions are from size of .png */
+		}
+		@keyframes animate-color {
+			0%   { 
+				background-color: var(--octo-green); 
+			}
+			50%   { 
+				background-color: white; 
+			}
+			100% { 
+				background-color: var(--octo-blue); 
+			}
+		}
+
+		@keyframes animate-opacity {
+			0%   { 
+				opacity: 0;
+			}
+			50%   { 
+				opacity: 1;
+			}
+			100% { 
+				opacity: 0;
+			}
+		}
+
+		@keyframes animate-color-and-opacity {
+			0%   { 
+				background-color: var(--octo-green); 
+				opacity: 1;
+			}
+			50%   { 
+				background-color: white; 
+				opacity: 0;
+			}
+			100% { 
+				background-color: var(--octo-blue); 
+				opacity: 1;
+			}
+		}
+
+		@keyframes animate-rotation {
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+		@keyframes animate-red-line-color {
+			50% { background-color: hsl(180deg 100% 50%); }
+			100% { background-color: hsl(360deg 100% 50%); }
+		}
+		@keyframes animate-orange-line-color {
+			50% { background-color: hsl(215deg 100% 50%); }
+			100% { background-color: hsl(395deg 100% 50%); }
+		}
+		@keyframes animate-yellow-line-color {
+			50% { background-color: hsl(234deg 100% 50%); }
+			100% { background-color: hsl(414deg 100% 50%); }
+		}
+		@keyframes animate-green-line-color {
+			50% { background-color: hsl(300deg 100% 50%); }
+			100% { background-color: hsl(480deg 100% 50%); }
+		}
+		@keyframes animate-blue-line-color {
+			50% { background-color: hsl(390deg 100% 50%); }
+			100% { background-color: hsl(570deg 100% 50%); }
+		}
+		@keyframes animate-purple-line-color {
+			50% { background-color: hsl(460deg 100% 50%); }
+			100% { background-color: hsl(640deg 100% 50%); }
+		}
+		
+		header#section-header,
+		div#zone-header-wrapper,
+		div.header,
+		div.header-menu {
+			height: auto;
+		}
+
+		.get-your-attention,
+		.angled-line-container,
+		.angled-line,
+		.logo-backer-mask,
+		.logo,
+		.logo-reverse {
+			animation-delay: 1s;
+			animation-duration: 4s;
+			animation-direction: normal;
+			animation-fill-mode: forwards;
+			animation-iteration-count: 1;
+		}
+
+		.get-your-attention {
+			position: relative;
+			z-index: 1;
+			height: 30vw;
+			max-height: 500px;
+			background-color: var(--octo-green);
+			overflow: hidden;
+			animation-name: animate-color;
+			border-bottom: 2px solid white;
+		}
+
+		.angled-line-container {
+			position: absolute;
+			z-index: 2;
+			overflow: visible;
+			width: 50vw;
+			height: 6px;
+			top: calc(50% - 3px);
+			left: 50vw;
+			animation-name: animate-rotation;
+			transform-origin: 0 0;
+		}
+		.angled-line {
+			width: 50vw;
+			height: 6px;
+			background-color: white;
+			transform-origin: 0 3px;
+			position: absolute;
+		}
+		.angled-line:nth-child(1) {
+			background-color: hsl(0deg 100% 50%); /* red */
+			transform: rotate(10deg);
+			animation-name: animate-red-line-color;
+		}
+		.angled-line:nth-child(2) { 
+			background-color: hsl(35deg 100% 50%); /* orange */
+			transform: rotate(40deg);
+			animation-name: animate-orange-line-color;
+		}
+		.angled-line:nth-child(3) {
+			background-color: hsl(54deg 100% 50%); /* yellow */
+			transform: rotate(70deg);
+			animation-name: animate-yellow-line-color;
+		}
+		.angled-line:nth-child(4) {
+			background-color: hsl(120deg 100% 50%); /* green */
+			transform: rotate(100deg);
+			animation-name: animate-green-line-color;
+		}
+		.angled-line:nth-child(5) {
+			background-color: hsl(210deg 100% 50%); /* blue */
+			transform: rotate(130deg);
+			animation-name: animate-blue-line-color;
+		}
+		.angled-line:nth-child(6) {
+			background-color: hsl(280deg 100% 50%); /* purple */
+			transform: rotate(160deg);
+			animation-name: animate-purple-line-color;
+		}
+		.angled-line:nth-child(7) {
+			background-color: hsl(0 100% 50%); /* red */
+			transform: rotate(190deg);
+			animation-name: animate-red-line-color;
+		}
+		.angled-line:nth-child(8) {
+			background-color: hsl(35deg 100% 50%); /* orange */
+			transform: rotate(220deg);
+			animation-name: animate-orange-line-color;
+		}
+		.angled-line:nth-child(9) {
+			background-color: hsl(54deg 100% 50%); /* yellow */
+			transform: rotate(250deg);
+			animation-name: animate-yellow-line-color;
+		}
+		.angled-line:nth-child(10) {
+			background-color: hsl(120deg 100% 50%); /* green */
+			transform: rotate(280deg);
+			animation-name: animate-green-line-color;
+		}
+		.angled-line:nth-child(11) {
+			background-color: hsl(210deg 100% 50%); /* blue */
+			transform: rotate(310deg);
+			animation-name: animate-blue-line-color;
+		}
+		.angled-line:nth-child(12) {
+			background-color: hsl(280deg 100% 50%); /* purple */
+			transform: rotate(340deg);
+			animation-name: animate-purple-line-color;
+		}
+
+		.logo-backer-mask {
+			width: calc(var(--logo-width) + 20px);
+			height: calc(var(--logo-height) + 20px); /* proportions are from size of .png */
+			position: absolute;
+			z-index: 3;
+			left: calc(50vw - var(--logo-width)/2 - 10px);
+			background-color: var(--octo-green);
+			animation-name: animate-color;
+		}
+
+		.logo-container {
+			width: var(--logo-width);
+			height: var(--logo-height); /* proportions are from size of .png */
+			position: absolute;
+			z-index: 4;
+			left: calc(50vw - var(--logo-width)/2);
+		}
+		.logo,
+		.logo-reverse {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		.logo {
+			background-image: url(../images/logo-OCTOinnovation.svg);
+			opacity: 0;
+			animation-name: animate-opacity;
+		}
+		.logo-reverse {
+			background-color: var(--octo-green);
+			background-image: url("../images/logo-OCTOinnovation-reverse.svg");
+			opacity: 1;
+			animation-name: animate-color-and-opacity;
+		}
+
+
+		
+		div#desktop-main-menu-container {
+			margin: 10px 0 0;
+		}
+		ul#desktop-main-menu {
+			margin: 0;
+		}
+		#desktop-main-menu-container ul li a {
+			height: auto;
+		}
+
+		div.header-menu {
+			width: 30px;
+			margin: 0 2% 10px 0;
+		}
+
+ 		div#desktop-main-menu-container ul li a:hover {
+			height: auto;
+		}
+
+		/* ################################ member photos ################################ */
+		.team {
+			align-items: flex-start;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 100%;
+			margin: 0px auto;
+		}
+		.team-member {
+			position: relative;
+			z-index: 1;
+			width: 220px;
+			height: 317px;
+			background-size: 220px auto;
+			flex-basis: 220px;
+			margin-bottom: 30px;
+			overflow: hidden;
+			width: unset;
+		}
+
+		.team-member > .member > a {
+			display: block;
+			font-family: 'Roboto', sans-serif !important;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 15px;
+			text-align: left;
+			height: auto;
+			width: 180px;
+			padding:0;
+		}
+
+		.not-front .pic-left .team-image img,
+		.not-front .pic-right .team-image img {
+			margin-bottom: 50px;
+		}
+		.team-member > a > img {
+			width: 100%;
+			position: relative;
+			z-index: 1;
+		}
+		.member-overlay {
+			position: absolute;
+			z-index: 2;
+			top: 0;
+			left: 0;
+			background: linear-gradient(to bottom, rgba(100,100,100,0.1) 0%,rgba(0,0,0,0.9) 100%);
+			width: 100%;
+			height: 100%;
+		}
+		.member-overlay:hover {
+			opacity: 0;
+		}
+		.member {
+			position: absolute;
+			z-index: 3;
+			top: 240px;
+			left: 20px;
+			width: fit-content;
+		}
+		.member-name {
+			color: #fff;
+		}
+		.member-title {
+			color: #fff;
+			border-top: 3px solid #FFB13A;
+			display: block;
+			font-size: 12px;
+			margin-top: 10px;
+			padding-top: 10px;
+		}
+		.blk-txt-on-hover:hover > p > a > span {
+			color: #000;
+		}
+		.blk-txt-on-hover:hover > p:hover > a > span {
+			color: #fff;
+		}
+</style>
+<div class="get-your-attention">
+	<div class="logo-container">
+		<div class="logo" id="logo">&nbsp;</div>
+		<div class="logo-reverse" id="logo-reverse">&nbsp;</div>
+	</div>
+
+	<div class="logo-backer-mask"></div>
+
+	<div class="angled-line-container">
+		<div class="angled-line">&nbsp;</div>
+		<div class="angled-line">&nbsp;</div>
+		<div class="angled-line">&nbsp;</div>
+		<div class="angled-line">&nbsp;</div>
+		<div class="angled-line">&nbsp;</div>
+		<div class="angled-line">&nbsp;</div>
+		<div class="angled-line">&nbsp;</div>
+		<div class="angled-line">&nbsp;</div>
+		<div class="angled-line">&nbsp;</div>
+		<div class="angled-line">&nbsp;</div>
+		<div class="angled-line">&nbsp;</div>
+		<div class="angled-line">&nbsp;</div>
+	</div>
+</div>
+<h1>Demonstration header</h1>
+<p>My boss wanted our website to better convey the energy that the Innovation Team hopes to bring to projects
+	and she had previously expressed interest in a header graphic for a city innovation event in Columbia which
+	featured blinking lines at various angles so that was the inspiration. That was a massive .gif file; this is 
+	markup and CSS so very lightweight. There was never any thought that we would really adopt this for the site
+	though given that the novelty of animations very quickly turns to annoyance.
+</p>
+<script>
+		var NewSite = (function() {
+			var _positionLogoContainerAndMask = function() {
+				const getYourAttention = document.querySelector(".get-your-attention");
+				const logoContainer = document.querySelector(".logo-container");
+				const mask = document.querySelector(".logo-backer-mask");
+
+				const heightGetYourAttention = getYourAttention.clientHeight;
+				const heightLogoContainer = logoContainer.clientHeight;
+
+				const logoTop = ((heightGetYourAttention - heightLogoContainer)/2);
+				logoContainer.style.top = logoTop + "px";
+				mask.style.top = (logoTop - 10) + "px";
+			}
+			
+			var _placeGetYourAttentionInHeader = function() {
+				const header = document.querySelector("header");
+				const currentLogo = document.querySelector(".header-top");
+				const getYourAttention = document.querySelector(".get-your-attention");
+				
+				// Remove existing logo
+				const currentLogoParent = currentLogo.parentNode;
+				currentLogoParent.removeChild(currentLogo);
+				
+				// Insert get-your-attention
+				header.insertBefore(getYourAttention, header.firstChild);
+			}
+
+			var _initialize = function() {
+				_positionLogoContainerAndMask();
+				_placeGetYourAttentionInHeader();
+			};
+
+			// ------------------------------------------------------------------------------------------------------------------------------------------------
+			// Public methods
+			return {  
+				initialize : _initialize
+			};  
+		})(); // the paranthesis will execute the function immediately. Do not remove.
+
+		window.addEventListener("DOMContentLoaded", function(){
+			NewSite.initialize();
+		});
+		window.addEventListener("resize", function() {
+			NewSite.initialize();
+		});
+	</script>
+</body>
+
+</html>

@@ -51,13 +51,13 @@ var gratitudeDC = (function() {
   };
 	
 	const _isMobile = function() {
-			return window.orientation > -1;
+		return window.screen.orientation.type.indexOf("portrait") == 0;
 	}
   
 	const _setHeights = function() {
 		let usableHeight = window.innerHeight;
-		mapContainer.style.height = (usableHeight - 80) + "px";
-		placeInfo.style.height = (usableHeight - 128) + "px";
+		mapContainer.style.height = (usableHeight - 60) + "px";
+		placeInfo.style.height = (usableHeight - 60 - 48) + "px";
 	};
 	
 	const _setOnResize = function() {
@@ -264,7 +264,7 @@ var gratitudeDC = (function() {
 		});
 	};
 
-	const _avoidOverlapOnLegendDisplay = function() {
+	const _avoidOverlapOnLegendDisplay = function() {window.screen.orientation.type
 			// Hide the alternateH1 and zoom controls when legend is displayed
 			const alternateH1 = document.querySelector(".alternateH1");
 			const zoomCtrlsContainer = document.querySelector(".leaflet-left");
@@ -488,6 +488,23 @@ var gratitudeDC = (function() {
 		learnMoreContainer.classList.add("hidden");
 	};
 
+	const _setOpenCloseTechDetails = function() {
+		const overlay = document.querySelector("#overlay");
+		const overlayContent = document.querySelector("#overlayContent");
+
+		const techDetailsLink = document.querySelector("#techDetailsLink");
+		techDetailsLink.addEventListener("click", ()=>{
+			overlay.classList.remove("hidden");
+			overlayContent.classList.remove("hidden");
+		});
+
+		const closeOverlayBtn = document.querySelector("#closeOverlayBtn");
+		closeOverlayBtn.addEventListener("click", ()=>{
+			overlay.classList.add("hidden");
+			overlayContent.classList.add("hidden");
+		});
+	}
+
 
 	const _initialize = function() {
 		_fixDOM();
@@ -502,6 +519,7 @@ var gratitudeDC = (function() {
 		_setClosePlaceButton();
 		_createLegend();
 		_displayPlaceInfoOnLoad();
+		_setOpenCloseTechDetails();
 
 		// Handle forward/back buttons
 		window.addEventListener("popstate", (event) => {
