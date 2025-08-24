@@ -8,78 +8,140 @@ but an override URL can be specified if necessary.
 
 Must be called from a subdirectory or the paths for the included files are wrong.
 
-=>| photoNames    (a string for single photo, or an array if multiple)
-=>| overrideURL   optional - can be used to override the URL carried in the DB.
-=>| cssClass      optional
+=>| photosToPlace which could be:
+    * a string for single photo name
+			"photo01Sm.jpg"
+			which will get converted to
+			["photo01Sm.jpg"]
+			so that we can use array loop
+
+		* an array for a single photo
+			["photoName"=>"photo01Sm.jpg", "overrideURL"=>"https://youtube.com...", "cssClass"=>"figure--thumbnail-large", "logo"=>"instagram"]
+
+		* an array for multiple photos that can contain strings and/or arrays
+      ["photo01Sm.jpg", "photo02Sm.jpg", ["photoName"=>"photo03Sm.jpg", "overrideURL"=>"https://youtube.com..."]]
+
 */
 include '../imagemgt/fn_getPhotoURL.php';      //Function that returns url
 include '../imagemgt/fn_getPhotoInfo.php';     //Function that returns $photos (associative array) or false
 
-function setThumbnail($photoNames, $overrideURL = "", $cssClass = "") {
+function setThumbnail($photosToPlace) {
 	global $useVersionedFiles; //from config file
 	global $useAmazonS3;       //from config file
 	global $rootRelativeUrl;   //from config file
 	global $mysqli;
-	
-	// If a string, change to an array
-	if(is_string($photoNames)) {
-		$photoNames = array($photoNames);
+
+
+	// Make a new associative array with $photoName as the key and elements $overrideURL and $cssClass
+	// but note that $photosToPlace may already be in this form.
+	$allPhotoDetails = [];
+
+	// Make another array of just the names of the photos
+	$photoNames = [];
+
+	// Set single photos in an array
+	if(is_string($photosToPlace)) {
+		$photosToPlace = array($photosToPlace);
+	}
+	else if(is_array($photosToPlace) and array_key_exists("photoName", $photosToPlace)) { // An associative array with photoName and other keys
+		$photosToPlace = [ $photosToPlace ];
 	}
 
-	$classString = ' class="' . ($cssClass ? $cssClass  . '"' : 'figure--thumbnail"');
+	foreach($photosToPlace as $photoToPlace) {
+		$photoDetails = [];
+
+		if(is_string($photoToPlace)) { // A string with just a photo name
+			array_push($photoNames, $photoToPlace);
+
+			$photoDetails["figureCssClass"] = "figure--thumbnail";
+			$photoDetails["overrideURL"] = "";
+
+			$allPhotoDetails[$photoToPlace] = $photoDetails;
+		}
+		else if(is_array($photoToPlace)) { // An array with $photoName and either/both $overrideURL and $cssClass
+			array_push($photoNames, $photoToPlace["photoName"]);
+
+			if(array_key_exists("cssClass", $photoToPlace)) {
+				$photoDetails["figureCssClass"] = $photoToPlace["cssClass"];
+			}
+			else {
+				$photoDetails["figureCssClass"] = "figure--thumbnail";
+			}
+
+			if(array_key_exists("logo", $photoToPlace)) {
+				$photoDetails["logoCssClass"] = $photoToPlace["logo"];
+			}
+
+			if(array_key_exists("overrideURL", $photoToPlace)) {
+				$photoDetails["overrideURL"] = $photoToPlace["overrideURL"];
+			}
+			else {
+				$photoDetails["overrideURL"] = "";
+			}
+
+			$allPhotoDetails[$photoToPlace["photoName"]] = $photoDetails;
+		}
+	}
 
 	//Find the information related to this photo, or these photos.
-	$photos = getPhotoInfo($photoNames);
-	
-	if(isset($photos)) {
+	$photoInfoFromDB = getPhotoInfo($photoNames);
+
+	if(isset($photoInfoFromDB)) {
+		// Combine the two associative arrays, one element at a time since array_merge and "+" will lose lose data as it will see key clashes
+		foreach($photoNames as $photoName) {
+			$allPhotoDetails[$photoName] = array_merge($allPhotoDetails[$photoName], $photoInfoFromDB[$photoName]);
+		}
 		
-		// Since the SQL result set will be in random order, need to extract correct result from the associative array $photos
+		// Since the SQL result set will be in random order, need to extract correct result from the associative arrays
 		foreach($photoNames as $index=>$photoName) {
+			$thisPhoto = $allPhotoDetails[$photoName];
+
 			if($index != 0) {
 				?> --><?php
 			}
 
-			$imgSrc = getPhotoUrl($photoName, $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $rootRelativeUrl, $useVersionedFiles, $photos[$photoName]["version"]);
+			$imgSrc = getPhotoUrl($photoName, $thisPhoto["folderName"], $thisPhoto["grandparentFolderName"], $rootRelativeUrl, $useVersionedFiles, $thisPhoto["version"]);
 
-			if($overrideURL == "") {
-				if($photos[$photoName]["linkedImg"] == "") { // Unlikely - there should be a linked image for every thumbnail
-					?><figure<?= $classString ?>>
-						<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="Please refer to following caption." loading="lazy" />
-						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
+			$overrideURL = $thisPhoto["overrideURL"];
+			if($overrideURL == NULL) {
+				if($thisPhoto["linkedImg"] == "") { // Unlikely - there should be a linked image for every thumbnail
+					?><figure class="<?= $thisPhoto["figureCssClass"] ?>">
+						<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $thisPhoto["width"] ?>" height="<?= $thisPhoto["height"] ?>" alt="Please refer to following caption." loading="lazy" />
+						<figcaption class="figure__caption--thumbnail"><?= $thisPhoto["caption"] ?></figcaption>
 					</figure><?php
 				}
 				else { // Normal situation with thumbnail linked to larger image
-					$fullSizeImgSrc = getPhotoUrl($photos[$photoName]["linkedImg"], $photos[$photoName]["folderName"], $photos[$photoName]["grandparentFolderName"], $rootRelativeUrl, $useVersionedFiles, $photos[$photoName]["linkedImageVersion"]);
-					$urlPageWithLinkedImage = $rootRelativeUrl . "imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=" . $photos[$photoName]["linkedImg"];
+					$fullSizeImgSrc = getPhotoUrl($thisPhoto["linkedImg"], $thisPhoto["folderName"], $thisPhoto["grandparentFolderName"], $rootRelativeUrl, $useVersionedFiles, $thisPhoto["linkedImageVersion"]);
+					$urlPageWithLinkedImage = $rootRelativeUrl . "imagemgt/index.php?fuseAction=showPhotoAndCaption&photoName=" . $thisPhoto["linkedImg"];
 					?>
-					<figure<?= $classString ?>>
-						<a class="figure__link--gallery" href="<?= $urlPageWithLinkedImage ?>" data-linked-image-src="<?= $fullSizeImgSrc ?>" data-size="<?= $photos[$photoName]["linkedImageWidth"] ?>x<?= $photos[$photoName]["linkedImageHeight"] ?>">
-							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="Please refer to following caption." loading="lazy" />
+					<figure class="<?= $thisPhoto["figureCssClass"] ?>">
+						<a class="figure__link--gallery" href="<?= $urlPageWithLinkedImage ?>" data-linked-image-src="<?= $fullSizeImgSrc ?>" data-size="<?= $thisPhoto["linkedImageWidth"] ?>x<?= $thisPhoto["linkedImageHeight"] ?>">
+							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $thisPhoto["width"] ?>" height="<?= $thisPhoto["height"] ?>" alt="Please refer to following caption." loading="lazy" />
 						</a>
-						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
-						<figcaption class="figure__caption--fullsize"><?= $photos[$photoName]["linkedImageCaption"] ?></figcaption>	
+						<figcaption class="figure__caption--thumbnail"><?= $thisPhoto["caption"] ?></figcaption>
+						<figcaption class="figure__caption--fullsize"><?= $thisPhoto["linkedImageCaption"] ?></figcaption>	
 					</figure><?php
 				}
 			}
 			else { // Override set so clicking on image takes you somewhere else
 				$numPipes = substr_count($overrideURL, "|");
 				if($numPipes == 0) {
-					$linkURL = $overrideURL;
+					$linkURL = $allPhotoDetails[$photoName]["overrideURL"];
 					$target = "_blank";
 				}
 				else {
-					$linkParts = explode("|", $overrideURL);
+					$linkParts = explode("|", $allPhotoDetails[$photoName]["overrideURL"]);
 					$linkURL = $linkParts[0];
 					$target  = $linkParts[1];
 				}
-				?><figure<?= $classString ?>>
+				?><figure class="<?= $thisPhoto["figureCssClass"] ?>">
 						<a href="<?= $linkURL ?>" target="<?= $target ?>">
-							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $photos[$photoName]["width"] ?>" height="<?= $photos[$photoName]["height"] ?>" alt="Please refer to following caption." loading="lazy" />
-							<?php if($cssClass == "figure--thumbnail-youtube") { ?>
-								<div class="youtube-logo"></div>
+							<img class="figure__image" src="<?= $imgSrc ?>" width="<?= $thisPhoto["width"] ?>" height="<?= $thisPhoto["height"] ?>" alt="Please refer to following caption." loading="lazy" />
+							<?php if(array_key_exists("logoCssClass", $thisPhoto)) { ?>
+								<div class="<?= $thisPhoto["logoCssClass"] . "-logo" ?>"></div>
 							<?php } ?>
 						</a>
-						<figcaption class="figure__caption--thumbnail"><?= $photos[$photoName]["caption"] ?></figcaption>
+						<figcaption class="figure__caption--thumbnail"><?= $thisPhoto["caption"] ?></figcaption>
 					</figure><?php
 			}
 

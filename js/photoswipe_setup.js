@@ -3,7 +3,7 @@
             var initPhotoSwipeFromDOM = function(gallerySelector) {
     
                 var parseThumbnailElements = function(el) {
-                    var figureElements = el.querySelectorAll("figure.figure--thumbnail"),
+                    var figureElements = el.querySelectorAll("figure.figure--thumbnail, figure.figure--thumbnail-portrait"),
 				
                         numNodes = figureElements.length,
                         items = [],

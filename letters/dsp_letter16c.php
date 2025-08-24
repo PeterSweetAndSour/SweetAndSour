@@ -14,7 +14,7 @@
 	<p class="endText">Unfortunately we couldn't stay in Amsterdam long but we will definitely be back. I can even imagine living in Amsterdam which is not impossible since I have an British (i.e. E.U.) passport and almost everyone speaks English (and probably French and German as well). The Dutch are amazing.</p>
 </div>
 <?php
-setThumbnail("FranceMap1.gif", "index.php?fuseAction=mapFrance|_blank|SweetAndSour.popup('index.php?fuseAction=mapFrance', 1100, 985, 'menubar=no,location=no,scrollbars=yes,toolbar=no'); return false");
+setThumbnail(["photoName"=>"FranceMap1.gif", "overrideURL"=>"index.php?fuseAction=mapFrance|_blank|SweetAndSour.popup('index.php?fuseAction=mapFrance', 1100, 985,'menubar=no,location=no,scrollbars=yes,toolbar=no'); return false"]);
 ?>
 <div class="photo-gallery">
 	<?php

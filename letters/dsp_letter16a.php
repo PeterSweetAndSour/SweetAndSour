@@ -23,8 +23,8 @@
 </div>
 <div class="photo-gallery">
 	<?php
-	setThumbnail("AcrobatIcon_Ltr16_A4.gif", $rootRelativeUrl . "letters/files/Letter16_A4.pdf"); 
-	setThumbnail("AcrobatIcon_Ltr16_Ltr.gif", $rootRelativeUrl . "letters/files/Letter16_Ltr.pdf");
+	setThumbnail(["photoName"=>"AcrobatIcon_Ltr16_A4.gif", "overrideURL"=>$rootRelativeUrl . "letters/files/Letter16_A4.pdf"]); 
+	setThumbnail(["photoName"=>"AcrobatIcon_Ltr16_Ltr.gif", "overrideURL"=>$rootRelativeUrl . "letters/files/Letter16_Ltr.pdf"]);
 	?>
 </div>
 

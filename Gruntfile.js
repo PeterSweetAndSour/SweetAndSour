@@ -11,11 +11,12 @@ module.exports = function(grunt) {
 					style: 'expanded'
 				},
 				files: {                     // Dictionary of files
-					'css/styles_2020_unprefixed.css': 'css/sass/styles_2020.scss'       // 'destination': 'source'
+					'css/styles_2020.css': 'css/sass/styles_2020.scss'       // 'destination': 'source'
 				}
 			}
 		},
 
+		/*
 		postcss: {
 			options: {
 				processors: [
@@ -27,6 +28,7 @@ module.exports = function(grunt) {
 				dest: 'css/styles_2020.css'	   
 			}
 		},
+		*/
 
 		/*
 		concat: {
@@ -80,10 +82,10 @@ module.exports = function(grunt) {
 			}
 		},
 	  
-		watch: { // for development run 'grunt watch'
+		watch: { // for development run 'grunt watch' in the terminal
 			css: {
 				files: 'css/sass/*.scss',
-				tasks: ['sass', 'postcss', 'cssmin'],
+				tasks: ['sass', 'cssmin'], //, 'postcss'
 			},
 			js: {
 				files: 'js/*.js',
@@ -92,16 +94,20 @@ module.exports = function(grunt) {
 		}
 	});
 	 
-	grunt.loadNpmTasks('grunt-contrib-watch');
 	// grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-postcss');
+	//grunt.loadNpmTasks('grunt-postcss');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	// Default task
-	grunt.registerTask('default', ['sass', 'postcss', 'cssmin', 'jshint', 'uglify']); // , 'concat'
+	grunt.registerTask('default', ['sass', 'cssmin', 'jshint', 'uglify']); // , 'postcss', 'concat'
 	grunt.registerTask('default', ['watch']);
 }
+/*
+	"grunt-postcss": "^0.9.0",
+	"postcss": "^8.5.6",
+	"postcss-cli": "^11.0.1",
+*/

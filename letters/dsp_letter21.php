@@ -18,7 +18,7 @@
 	<p>Best wishes,<br>Peter</p>
 </div>
 <?php
-setThumbnail("photoSetPortugal2.jpg", "https://photos.app.goo.gl/F3aLYKPT9P728CJv9");
+setThumbnail(["photoName"=>"photoSetPortugal2.jpg", "overrideURL"=>"https://photos.app.goo.gl/F3aLYKPT9P728CJv9"]);
 ?>
 
 

@@ -4,9 +4,9 @@
 </div>
 <div class="clear">
 	<?php
-	setThumbnail("album_01.jpg", "https://photos.app.goo.gl/enKr25uNuk5FoKEt8", "figure--thumbnail-youtube");
-	setThumbnail("album_02.jpg", "https://photos.app.goo.gl/F3aLYKPT9P728CJv9", "figure--thumbnail-youtube");
-	setThumbnail("portuguesePaving.jpg", "https://photos.app.goo.gl/5Gxid4aW1eAGn6Fq8", "figure--thumbnail-youtube");
+	setThumbnail(["photoName"=>"album_01.jpg", "overrideURL"=>"https://photos.app.goo.gl/enKr25uNuk5FoKEt8", "cssClass"=>"figure--thumbnail-large", "logo"=>"google-photos"]);
+	setThumbnail(["photoName"=>"album_02.jpg", "overrideURL"=>"https://photos.app.goo.gl/F3aLYKPT9P728CJv9", "cssClass"=>"figure--thumbnail-large", "logo"=>"google-photos"]);
+	setThumbnail(["photoName"=>"portuguesePaving.jpg", "overrideURL"=>"https://photos.app.goo.gl/5Gxid4aW1eAGn6Fq8", "cssClass"=>"figure--thumbnail-large", "logo"=>"google-photos"]);
 	?>
 </div>
 
@@ -15,6 +15,6 @@
 </div>
 <div class="clear">
 	<?php
-	setThumbnail("instagram.jpg", "https://www.instagram.com/petersweetandsour/", "figure--thumbnail-youtube");
+	setThumbnail(["photoName"=>"instagram.jpg", "overrideURL"=>"https://www.instagram.com/petersweetandsour/", "cssClass"=>"figure--thumbnail-large", "logo"=>"instagram"]);
 	?>
 </div>

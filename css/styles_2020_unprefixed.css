@@ -144,8 +144,7 @@ h1 span {
 
 h2 {
   font-size: 20px;
-  color: #145a9e;
-  /*  */
+  color: #145a9e; /*  */
   clear: both;
 }
 h2 span {
@@ -184,7 +183,7 @@ Overlay and loading graphic
 }
 .figure--thumbnail-youtube {
   width: 261px;
-  margin: 10px 10px 20px 0;
+  margin: 0 10px 20px 0;
 }
 .figure--thumbnail-youtube a {
   position: relative;
@@ -192,6 +191,10 @@ Overlay and loading graphic
 }
 .figure--thumbnail-youtube a:hover .youtube-logo {
   display: block;
+}
+
+li > .figure--thumbnail-youtube {
+  margin-top: 10px;
 }
 
 .youtube-logo {
@@ -224,8 +227,7 @@ Overlay and loading graphic
 }
 
 .figure__caption--fullsize {
-  display: none;
-  /* Contains the caption for the photo shown with PhotoSwipe. */
+  display: none; /* Contains the caption for the photo shown with PhotoSwipe. */
 }
 
 .figure__image {
@@ -434,13 +436,11 @@ Mobile
     text-align: right;
     height: 83px;
   }
-
   main,
-footer {
+  footer {
     background-color: #fff;
     padding: 20px;
   }
-
   /* -----------------------------------------------------------------------------------------
   Header
   ------------------------------------------------------------------------------------------ */
@@ -451,7 +451,6 @@ footer {
   .logo > a {
     color: #fff;
   }
-
   .tagline {
     padding-right: 13px;
     padding-bottom: 8px;
@@ -459,7 +458,6 @@ footer {
     font-style: italic;
     margin-top: -10px;
   }
-
   /* -----------------------------------------------------------------------------------------
   Open/close navigation
   ------------------------------------------------------------------------------------------ */
@@ -493,7 +491,6 @@ footer {
     color: white;
     font-size: 12px;
   }
-
   input.menu {
     display: none;
   }
@@ -512,7 +509,6 @@ footer {
   input.menu:checked + label.menu + nav + .menuOverlay {
     display: block;
   }
-
   /* -----------------------------------------------------------------------------------------
   Navigation
   ------------------------------------------------------------------------------------------ */
@@ -523,7 +519,7 @@ footer {
     z-index: 2;
     top: 0px;
     left: 0;
-    transform: translate(calc(100% + 64%));
+    transform: translate(164%);
     background-color: #14599E;
     text-align: left;
   }
@@ -532,7 +528,7 @@ footer {
     margin-bottom: 0;
   }
   nav li > a,
-nav li label {
+  nav li label {
     box-sizing: border-box;
     color: #fff;
     display: block;
@@ -601,24 +597,21 @@ nav li label {
     padding-left: 60px;
   }
   nav ul.menu2 > li > a,
-nav ul.menu3 > li > a {
+  nav ul.menu3 > li > a {
     padding-left: 0px;
   }
   nav ul.menu2 > li > label,
-nav ul.menu3 > li > label {
+  nav ul.menu3 > li > label {
     padding-left: 40px;
   }
-
   /* -----------------------------------------------------------------------------------------
   Overlay
   ------------------------------------------------------------------------------------------ */
   .menuOverlay {
     z-index: 1;
     top: 83px;
-    height: 1000px;
-    /* Reset to document height if Javascript is working. */
+    height: 1000px; /* Reset to document height if Javascript is working. */
   }
-
   /* -----------------------------------------------------------------------------------------
   Error pages
   ------------------------------------------------------------------------------------------ */
@@ -629,9 +622,7 @@ nav ul.menu3 > li > label {
     overflow: hidden;
     background-size: 100%;
   }
-
-  a.mobileLinkToHome {
-    /* Definitely repeating myself here. */
+  a.mobileLinkToHome { /* Definitely repeating myself here. */
     display: block;
     position: absolute;
     z-index: 2;
@@ -665,7 +656,6 @@ nav ul.menu3 > li > label {
     font-size: 31px;
     padding-top: 15px;
   }
-
   .tagline {
     font-size: 11px;
   }
@@ -678,7 +668,6 @@ Desktop - see also _image-menu.scss.
     background: #729BC4 linear-gradient(to bottom, #14599E 0%, #729BC4 100%) repeat-x;
     background-size: 100% 1000px;
   }
-
   /* -----------------------------------------------------------------------------------------
   Layout
   ------------------------------------------------------------------------------------------ */
@@ -689,27 +678,22 @@ Desktop - see also _image-menu.scss.
     position: relative;
     border-radius: 20px;
   }
-
   main {
     padding: 0 27px 0 40px;
   }
-
   footer {
     clear: both;
     padding: 20px 40px;
   }
-
   .story {
     width: calc(100% - 210px);
     float: left;
     margin: 0 29px 1em 0;
   }
-
   .photo-gallery-instagram {
     grid-gap: 34px;
     margin-right: 13px;
   }
-
   /* -----------------------------------------------------------------------------------------
   Header
   ------------------------------------------------------------------------------------------ */
@@ -721,13 +705,11 @@ Desktop - see also _image-menu.scss.
   p.logo > a {
     color: #000;
   }
-
   .tagline {
     font-style: italic;
     margin-top: -10px;
     padding-left: 20px;
   }
-
   /* -----------------------------------------------------------------------------------------
   Error pages
   ------------------------------------------------------------------------------------------ */
@@ -745,12 +727,10 @@ Image Menu
   #imageMenu {
     position: relative;
     width: 956px;
-    height: 300px;
-    /* Primary, secondary and tertiary menus. */
+    height: 300px; /* Primary, secondary and tertiary menus. */
     overflow: hidden;
     margin: 10px 0 10px 2px;
   }
-
   /*
   body.whoWeAre #imageMenu,
   body.whereWeLive #imageMenu,
@@ -770,7 +750,6 @@ Image Menu
     width: 1500px;
     overflow: hidden;
   }
-
   /* LI */
   ul.menu1 > li {
     float: left;
@@ -782,7 +761,6 @@ Image Menu
     display: block;
     border-right: 2px solid white;
   }
-
   ul.menu1 > li.selected {
     background-color: green;
     width: 500px;
@@ -790,14 +768,12 @@ Image Menu
     transition-delay: 0.1s;
     transition-timing-function: linear;
   }
-
   ul.menu1 > li.selected.off {
     width: 55px;
     transition: width 0.5s;
     transition-delay: 0.1s;
     transition-timing-function: linear;
   }
-
   ul.menu1 > li.on {
     background-color: red;
     border-bottom: 4px solid #fff;
@@ -807,7 +783,6 @@ Image Menu
     transition-timing-function: linear;
     /* Need the LI to extend down at least to the top of the submenu so that a mouseout event is not registered when moving to the child UL submenu */
   }
-
   /* Top level will use the Gilder/Levin image replacement method (www.mezzoblue.com/tests/revised-image-replacement/#gilderlevin)  */
   ul.menu1 > li > a.photoLink {
     width: 100%;
@@ -820,7 +795,6 @@ Image Menu
     overflow: hidden;
     /* or the text will be visible in the gap between photos */
   }
-
   /* SPAN */
   ul.menu1 > li a.photoLink > span {
     position: absolute;
@@ -833,49 +807,38 @@ Image Menu
     background-repeat: no-repeat;
     background-attachment: scroll;
   }
-
   body.mediaFromLocal ul.menu1 > li > a.photoLink span {
     background-image: url(../images/headerSprite_20200611.jpg);
   }
-
   ul.menu1 > li.home > a > span {
     background-position: 0 0;
   }
-
   ul.menu1 > li.whoweare > a > span {
     background-position: -500px 0;
   }
-
   ul.menu1 > li.wherewelive > a > span {
     background-position: -1000px 0;
   }
-
   ul.menu1 > li.newsletters > a > span {
     background-position: -1500px 0;
   }
-
   ul.menu1 > li.technology > a > span {
     background-position: -2000px 0;
   }
-
   ul.menu1 > li.artsandculture > a > span {
     background-position: -2500px 0;
   }
-
   ul.menu1 > li.timeforjustice > a > span {
     background-position: -3000px 0;
   }
-
   ul.menu1 > li.photos > a > span {
     background-position: -3500px 0;
   }
-
   ul.menu1 > li.contactus > a > span {
     background-position: -4000px 0;
   }
-
   a.photoLink > .verticalText,
-li.selected.off > a > .verticalText {
+  li.selected.off > a > .verticalText {
     transform: rotate(-90deg);
     transform-origin: 0.4em 0.5em;
     transition-property: transform;
@@ -893,20 +856,17 @@ li.selected.off > a > .verticalText {
     margin: 0;
     white-space: nowrap;
   }
-
   li.on > a > .verticalText,
-li.selected > a > .verticalText {
+  li.selected > a > .verticalText {
     transform: rotate(0deg);
     transform-origin: 0.4em 0.5em;
     transition-property: transform;
     transition-duration: 0.5s;
     transition-delay: 0.1s;
   }
-
   .clear {
     clear: both;
   }
-
   /* -----------------------------------------------------------------------------------------
   Secondary menu
   ------------------------------------------------------------------------------------------ */
@@ -919,68 +879,57 @@ li.selected > a > .verticalText {
     float: left;
     width: 956px;
     list-style: none;
-    background: #3671ac linear-gradient(to bottom, #3671ac 0%, #3973ad 100%) repeat-x;
-    /* Should match page background. */
+    background: #3671ac linear-gradient(to bottom, #3671ac 0%, #3973ad 100%) repeat-x; /* Should match page background. */
     background-size: 100% 32px;
     font-size: 14px;
     line-height: 1em;
   }
-
   ul.menu1 > li.selected > ul,
-ul.menu1 > li.on > ul {
+  ul.menu1 > li.on > ul {
     display: block;
   }
-
   ul.menu1 > li.off > ul {
     display: none;
   }
-
   /* LI */
   ul.menu2 > li,
-ul.menu3 > li {
+  ul.menu3 > li {
     float: none;
     display: inline;
   }
-
   /* A */
   ul.menu2 > li > a,
-ul.menu3 > li > a {
+  ul.menu3 > li > a {
     display: inline-block;
     padding: 10px 8px 8px 8px;
     background-color: transparent;
     background-image: none;
     text-decoration: none;
   }
-
   ul.menu2 > li > a {
     color: #fff;
     border-right: 1px solid white;
     border-bottom-style: none;
   }
-
   ul.menu2 > li.selected > a,
-ul.menu2 > li.on > a,
-ul.menu2 > li:hover > a,
-ul.menu2 > li.off > a {
+  ul.menu2 > li.on > a,
+  ul.menu2 > li:hover > a,
+  ul.menu2 > li.off > a {
     color: #14599E;
     background-color: #fff;
   }
-
   ul.menu2 > li.selected > a {
     background: linear-gradient(to bottom, #D0DDEB 0%, #ffffff 100%) repeat-x;
     font-weight: bold;
   }
-
   ul.menu2 > li > a:hover {
     text-decoration: underline;
   }
-
   ul.menu2 > li.selected > a:hover {
     /* Want no visible change when moving mouse over currently selected item */
     text-decoration: none;
     cursor: default;
   }
-
   /* -----------------------------------------------------------------------------------------
   Tertiary menu
   ------------------------------------------------------------------------------------------ */
@@ -994,21 +943,17 @@ ul.menu2 > li.off > a {
     background-color: #fff;
     display: none;
   }
-
   ul.menu2 > li.selected > ul,
-ul.menu2 > li.on > ul {
+  ul.menu2 > li.on > ul {
     display: block;
   }
-
   ul.menu2 > li.off > ul {
     display: none;
   }
-
   /* LI */
   ul.menu3 > li {
     font-weight: normal;
   }
-
   /* A */
   ul.menu3 > li > a {
     color: #14599E;
@@ -1016,32 +961,26 @@ ul.menu2 > li.on > ul {
     background-image: none;
     font-weight: normal;
   }
-
   ul.menu3 > li > a:hover {
     text-decoration: underline;
   }
-
   ul.menu3 > li.selected > a {
     font-weight: bold;
   }
-
   ul.menu3 > li.selected > a:hover {
     text-decoration: none;
   }
-
   /* -----------------------------------------------------------------------------------------
   Controls used on mobile menu
   ------------------------------------------------------------------------------------------ */
   nav input,
-nav label {
+  nav label {
     display: none;
   }
-
   label.menu,
-input.menu {
+  input.menu {
     display: none;
   }
-
   /* -----------------------------------------------------------------------------------------
   Menu overlay and loading graphic
   ------------------------------------------------------------------------------------------ */
@@ -1050,7 +989,6 @@ input.menu {
     top: 105px;
     z-index: 3;
   }
-
   .loading {
     position: absolute;
     z-index: 4;
@@ -1062,11 +1000,9 @@ input.menu {
     width: 160px;
     border-radius: 10px;
   }
-
   .loading p {
     margin: 0;
   }
-
   .loading img {
     margin: 10px auto;
     display: block;
@@ -1078,7 +1014,7 @@ input.menu {
   width: 20px;
   height: 20px;
 }
-.ispinner > .ispinner-blade {
+.ispinner .ispinner-blade {
   position: absolute;
   top: 6.5px;
   left: 8.5px;
@@ -1089,35 +1025,35 @@ input.menu {
   animation: iSpinnerBlade 1s linear infinite;
   will-change: opacity;
 }
-.ispinner > .ispinner-blade:nth-child(1) {
+.ispinner .ispinner-blade:nth-child(1) {
   transform: rotate(45deg) translateY(-6.5px);
   animation-delay: -1.625s;
 }
-.ispinner > .ispinner-blade:nth-child(2) {
+.ispinner .ispinner-blade:nth-child(2) {
   transform: rotate(90deg) translateY(-6.5px);
   animation-delay: -1.5s;
 }
-.ispinner > .ispinner-blade:nth-child(3) {
+.ispinner .ispinner-blade:nth-child(3) {
   transform: rotate(135deg) translateY(-6.5px);
   animation-delay: -1.375s;
 }
-.ispinner > .ispinner-blade:nth-child(4) {
+.ispinner .ispinner-blade:nth-child(4) {
   transform: rotate(180deg) translateY(-6.5px);
   animation-delay: -1.25s;
 }
-.ispinner > .ispinner-blade:nth-child(5) {
+.ispinner .ispinner-blade:nth-child(5) {
   transform: rotate(225deg) translateY(-6.5px);
   animation-delay: -1.125s;
 }
-.ispinner > .ispinner-blade:nth-child(6) {
+.ispinner .ispinner-blade:nth-child(6) {
   transform: rotate(270deg) translateY(-6.5px);
   animation-delay: -1s;
 }
-.ispinner > .ispinner-blade:nth-child(7) {
+.ispinner .ispinner-blade:nth-child(7) {
   transform: rotate(315deg) translateY(-6.5px);
   animation-delay: -0.875s;
 }
-.ispinner > .ispinner-blade:nth-child(8) {
+.ispinner .ispinner-blade:nth-child(8) {
   transform: rotate(360deg) translateY(-6.5px);
   animation-delay: -0.75s;
 }
@@ -1125,35 +1061,35 @@ input.menu {
   width: 35px;
   height: 35px;
 }
-.ispinner.ispinner-large > .ispinner-blade {
+.ispinner.ispinner-large .ispinner-blade {
   top: 11.5px;
   left: 15px;
   width: 5px;
   height: 12px;
   border-radius: 2.5px;
 }
-.ispinner.ispinner-large > .ispinner-blade:nth-child(1) {
+.ispinner.ispinner-large .ispinner-blade:nth-child(1) {
   transform: rotate(45deg) translateY(-11.5px);
 }
-.ispinner.ispinner-large > .ispinner-blade:nth-child(2) {
+.ispinner.ispinner-large .ispinner-blade:nth-child(2) {
   transform: rotate(90deg) translateY(-11.5px);
 }
-.ispinner.ispinner-large > .ispinner-blade:nth-child(3) {
+.ispinner.ispinner-large .ispinner-blade:nth-child(3) {
   transform: rotate(135deg) translateY(-11.5px);
 }
-.ispinner.ispinner-large > .ispinner-blade:nth-child(4) {
+.ispinner.ispinner-large .ispinner-blade:nth-child(4) {
   transform: rotate(180deg) translateY(-11.5px);
 }
-.ispinner.ispinner-large > .ispinner-blade:nth-child(5) {
+.ispinner.ispinner-large .ispinner-blade:nth-child(5) {
   transform: rotate(225deg) translateY(-11.5px);
 }
-.ispinner.ispinner-large > .ispinner-blade:nth-child(6) {
+.ispinner.ispinner-large .ispinner-blade:nth-child(6) {
   transform: rotate(270deg) translateY(-11.5px);
 }
-.ispinner.ispinner-large > .ispinner-blade:nth-child(7) {
+.ispinner.ispinner-large .ispinner-blade:nth-child(7) {
   transform: rotate(315deg) translateY(-11.5px);
 }
-.ispinner.ispinner-large > .ispinner-blade:nth-child(8) {
+.ispinner.ispinner-large .ispinner-blade:nth-child(8) {
   transform: rotate(360deg) translateY(-11.5px);
 }
 
@@ -1325,7 +1261,7 @@ textarea:focus {
   top: 0;
 }
 .submitSpinnerWrapper > .ispinner {
-  left: calc(50% - (35px)/2);
+  left: calc(50% - 17.5px);
   top: 2px;
 }
 

@@ -24,7 +24,7 @@
 </div>
 <div class="photo-gallery">
 	<?php
-	setThumbnail("AcrobatIcon_Ltr14.gif", $rootRelativeUrl . "letters/files/Letter14.pdf");
+	setThumbnail(["photoName"=>"AcrobatIcon_Ltr14.gif", "overrideURL"=>$rootRelativeUrl . "letters/files/Letter14.pdf"]);
 	setThumbnail("Passport1.jpg");
 	?>
 </div>

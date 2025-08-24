@@ -160,7 +160,7 @@ if($fuseAction == "injustice") {
 
 <div class="story">
 	<div class="imgInColumn">
-		<?php setThumbnail("Settlements.gif", "https://www.un.org/unispal/document/auto-insert-204082/"); ?>
+		<?php setThumbnail(["photoName"=>"Settlements.gif", "overrideURL"=>"https://www.un.org/unispal/document/auto-insert-204082/"]); ?>
 	</div>
 	<div class="caption captionInColumn offset">
 		<p>Map 3: While even the UN uses the term "settlements", it seems clear that the intent is to occupy the land making it difficult, if not impossible, to give back to any future Palestinian state.  With the "settlements" in place, Israel has an excuse to maintain a "security" (i.e. military) presence inside its neighbor and by fragmenting the state, makes it less viable.</p>

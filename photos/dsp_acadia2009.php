@@ -10,7 +10,7 @@
 <div class="photo-gallery clear">
 	<?php
 	setThumbnail("20090816_belfast01Sm.jpg");
-	setThumbnail("20090816_belfast02Sm.jpg", "http://www.youtube.com/watch?v=DCNUb50bJQg");
+	setThumbnail(["photoName"=>"20090816_belfast02Sm.jpg", "overrideURL"=>"http://www.youtube.com/watch?v=DCNUb50bJQg"]);
     setThumbnail([
 		"20090816_bucksport01Sm.jpg",
 		"20090816_bucksport02Sm.jpg",

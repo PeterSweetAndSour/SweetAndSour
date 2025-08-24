@@ -11,7 +11,7 @@
 </div>
 <div class="photo-gallery">
 <?php
-setThumbnail("AcrobatIcon_Ltr17.gif", $rootRelativeUrl . "letters/files/Letter17_Ltr.pdf");
+setThumbnail(["photoName"=>"AcrobatIcon_Ltr17.gif", "overrideURL"=>$rootRelativeUrl . "letters/files/Letter17_Ltr.pdf"]);
 ?>
 
 <h2>Work</h2>

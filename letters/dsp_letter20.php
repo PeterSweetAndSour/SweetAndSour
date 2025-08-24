@@ -12,7 +12,7 @@
 	<p>with love<br>Peter</p>
 </div>
 <?php
-setThumbnail("photoSetPortugal1.jpg", "https://photos.app.goo.gl/enKr25uNuk5FoKEt8");
+setThumbnail(["photoName"=>"photoSetPortugal1.jpg", "overrideURL"=>"https://photos.app.goo.gl/enKr25uNuk5FoKEt8"]);
 ?>
 
 

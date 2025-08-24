@@ -28,7 +28,7 @@
 		"3sisters1.jpg",
 		"House1.jpg",
 		"Cockatoo1.jpg"]);
-	setThumbnail("KitchenViewA1.jpg", "index.php?fuseAction=kitchen|_self");
+	setThumbnail(["photoName"=>"KitchenViewA1.jpg", "overrideURL"=>"index.php?fuseAction=kitchen|_self"]);
 	?>
 </div>
 

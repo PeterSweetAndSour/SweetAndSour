@@ -67,7 +67,7 @@ function getPhotoInfo($photoNames) {
 			while ($row = $rs_photoInfo->fetch_array(MYSQLI_ASSOC)) {
 				$photoName = $row["photoName"];
 				$photos[$photoName] = $row;
-				/*
+				/* This section replaced by the line above
 				$folderID              = $row["folderID"];
 				$folderName            = $row["folderName"];
 				$parentFolderName      = $row["parentFolderName"];

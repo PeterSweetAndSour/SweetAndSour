@@ -34,7 +34,7 @@
 <div class="story">
 	<p>We took a cruise on a smaller ship to the Canary Islands (part of Spain) and then the island of Madeira (part of Portugal): <a href="https://photos.app.goo.gl/WpQnRnfVCbdZXgkb8" target="_blank" class="external">106 photos</a>. As always, click the <img src="images/IconInformation.jpg" alt="Information"> icon (or <img src="images/IconMenu.jpg" alt="Menu"> on mobile) once in Google Photos to see the captions.</p>
 </div>
-<?php setThumbnail("CanaryIslandsCruiseSm.jpg", "https://photos.app.goo.gl/WpQnRnfVCbdZXgkb8"); ?>
+<?php setThumbnail(["photoName"=>"CanaryIslandsCruiseSm.jpg", "overrideURL"=>"https://photos.app.goo.gl/WpQnRnfVCbdZXgkb8", "logo"=>"google-photos"]); ?>
 
 <h2 id="bikeCrash">27 September 2017</h2>
 <div class="story">
@@ -46,7 +46,7 @@
 <div class="story">
 	<p>Trip to Japan! Two sets of photos depending on your level of interest: <a class="external" href="https://goo.gl/photos/qagK54GcwmfMpafEA" target="_blank">~500 photos</a> and <a class="external" href="https://goo.gl/photos/mNFazJxxcihsxuMQ7" target="_blank">~100 photos</a> but click the <img src="images/IconInformation.jpg" alt="Information"> icon once in Google Photos to see the captions.</p>
 </div>
-<?php setThumbnail("JapaneseChildrenSm.jpg", "https://photos.app.goo.gl/xPFH8CcA6gA93VtRA"); ?>
+<?php setThumbnail(["photoName"=>"JapaneseChildrenSm.jpg", "overrideURL"=>"https://goo.gl/photos/qagK54GcwmfMpafEA", "logo"=>"google-photos"]); ?>
 
 <h2>14 August 2016</h2>
 <div class="story">
@@ -57,18 +57,20 @@
 <div class="story">
 	<p>Trip to Brazil! Two sets of photos depending on your interest: <a class="external" href="https://photos.app.goo.gl/M1Xi8SIyd54ROwnl1" target="_blank">~500 photos</a> and <a class="external" href="https://photos.app.goo.gl/oYNUHoxkNJUmERtg1" target="_blank">~100 photos</a> but click the <img src="images/IconInformation.jpg" alt="Information"> icon once in Google Photos to see the captions.</p>
 </div>
-<?php setThumbnail("BraziliaCathedralSm.jpg", "https://photos.google.com/share/AF1QipPEf2pYOajgA2jJG06hjTZZ8PBDqyfUK6lq4z6v9YGtr_SFqftXxIiKwSpoY0Q5wg/photo/AF1QipNqgjHfd_df1YYLMdWQ6PZkethwSMRTKSDQ0bYo?key=X2NxcFBHNTRfWUNUVVdmbHF1ellSU3FjS05iRE9B"); ?>
+<?php setThumbnail(["photoName"=>"BraziliaCathedralSm.jpg", "overrideURL"=>"https://photos.app.goo.gl/M1Xi8SIyd54ROwnl1", "logo"=>"google-photos"]); ?>
 
 <h2>5 October 2014</h2>
 <div class="story">
 	<p>I made a weekend trip from DC to NYC by bike! <a class="external" href="https://goo.gl/photos/ryAv4xveZaL7erpF8" target="_blank">See the photos</a> but click the <img src="images/IconInformation.jpg" alt="Information"> icon once in Google Photos to see the captions.</p>
 </div>
-<?php setThumbnail("RedBikeSm.jpg", "https://photos.google.com/share/AF1QipOsShLctoZimkxr4QDe0FzN10e3RTl1NOENLBO1s7JdihHm9LPyL4gzCfmm6MU7xQ/photo/AF1QipOBSul_jaVOs1V1sK3-RSkKlBK2NYvk7fSIK1As?key=RGFFYUlmc1VKZnJRMmIyUzhXQ2Y0UlpUV01oUGFB"); ?>
+<?php setThumbnail(["photoName"=>"RedBikeSm.jpg", "overrideURL"=>"https://goo.gl/photos/ryAv4xveZaL7erpF8", "logo"=>"google-photos"]); ?>
 
 
 <h2>7 November 2013</h2>
 <div class="story">
-	<p>Two years since I last posted anything! Goodness. Since then we finished the main work on the house and been on trips together to The Netherlands, Sweden and Denmark then to the UK by plane and back across the Atlantic by ship. Lan has taken separate trips to Iceland and London, Paris &amp; Lyon. I failed in my effort to ride a bike to New York in a weekend but did make it to <a class="external" href="https://goo.gl/photos/WSuWmdcHGDU6neNZA" target="_blank">Delaware</a>. I ran the 2013 Marine Corps Marathon in 3:14:40 (last year I ran injured and so was thrilled to manage 3:33:33) and will go to Australia shortly.</p>
+	<p>It is two years since I last posted anything! Goodness. Since then we finished the main work on the house and been on trips together to The Netherlands, Sweden and Denmark, then to the UK by plane and back across the Atlantic by ship. Lan has taken separate trips to Iceland and London, Paris &amp; Lyon.</p>
+	<p>I failed in my effort to ride a bike to New York in a weekend but did make it to <a class="external" href="https://goo.gl/photos/WSuWmdcHGDU6neNZA" target="_blank">Delaware</a>. </p>
+	<p>I ran the 2013 Marine Corps Marathon in <strong>3:14:40</strong> (last year I ran injured and so was thrilled to manage 3:33:33) and will go to Australia shortly.</p>
 </div>
 
 <h2>23 September 2011</h2>
@@ -120,7 +122,7 @@
 	<p>My mother came to visit and the three of us took a trip to Toronto and Niagara Falls which was wonderful but brief. There is a <a href="http://flickr.com/photos/30215275@N03/sets/72157607555550650" class="external" target="_blank">photoset on Flickr</a>. Start at the picture above and to the right of the pink flower. When you get to the Jefferson Memorial, you know you are back in America.</p>
 	<p>Of particular note was the &quot;Journey Behind the Falls&quot; at which I attempted to capture the noise and violence of the water using the camera's video mode, now on <a href="http://www.youtube.com/watch?v=sMSLoLgusWQ" class="external" target="_blank">Youtube</a>.</p>
 </div>
-<?php setThumbnail("Canada2008OnFlickr.jpg", "http://flickr.com/photos/30215275@N03/sets/72157607555550650/?page=2"); ?>
+<?php setThumbnail(["photoName"=>"Canada2008OnFlickr.jpg", "overrideURL"=>"http://flickr.com/photos/30215275@N03/sets/72157607555550650/?page=2"]); ?>
 
 <h2>21 December 2007</h2>
 <div class="story">

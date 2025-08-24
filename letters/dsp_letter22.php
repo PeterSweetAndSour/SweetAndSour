@@ -32,8 +32,8 @@
 	<p>Peter</p>
 </div>
 <?php
-setThumbnail("photoSetPortugal3.jpg", "https://photos.app.goo.gl/TMiUrwnyUabJcFe28");
-setThumbnail("lighthouseAzores.jpg", "https://photos.app.goo.gl/y7A7ikdH9zn3qDeT9");
+setThumbnail(["photoName"=>"photoSetPortugal3.jpg", "overrideURL"=>"https://photos.app.goo.gl/TMiUrwnyUabJcFe28"]);
+setThumbnail(["photoName"=>"lighthouseAzores.jpg", "overrideURL"=>"https://photos.app.goo.gl/y7A7ikdH9zn3qDeT9"]);
 ?>
 
 
