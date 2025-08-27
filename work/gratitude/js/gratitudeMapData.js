@@ -1268,7 +1268,7 @@ export const places = [
         "quote": "<p>&ldquo;I'm grateful for culture at the French Embassy.&rdquo;</p>",
         "numberOfCitations": 1,
         "website": "https://franceintheus.org/",
-        "photoUrl": "./images/gratitude_Embassy_of_France.jpg",
+        "photoUrl": "./images/gratitude-Embassy_of_France.jpg",
         "altText": "Photo of the Embassy of France",
         "caption": "Bringing people together at the Embassy of France. <br>Photo credit: Emilie Nguyen / Franceintheus",
         "categoryId": 3,
