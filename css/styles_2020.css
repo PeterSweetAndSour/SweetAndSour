@@ -281,7 +281,7 @@ li > .figure--thumbnail-large {
 }
 
 /* -----------------------------------------------------------------------------------------
-Overlay and loading graphic
+Loading overlay and graphic
 ------------------------------------------------------------------------------------------ */
 .menuOverlay {
   display: none;
@@ -416,6 +416,10 @@ Miscellaneous
 ------------------------------------------------------------------------------------------ */
 .hidden {
   display: none;
+}
+
+pre {
+  overflow: auto;
 }
 
 /* Used to indicate text of bumper sticker. */

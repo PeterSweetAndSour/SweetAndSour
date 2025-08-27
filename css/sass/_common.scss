@@ -336,6 +336,10 @@ Miscellaneous
 	display: none;
 }
 
+pre {
+	overflow: auto;
+}
+
 /* Used to indicate text of bumper sticker. */
 .sticker {
 	color: #006666;
