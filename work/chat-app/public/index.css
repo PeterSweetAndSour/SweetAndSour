@@ -1,0 +1,85 @@
+	html{
+		font-size: 62.5%;
+	}
+	body {
+		margin:0;
+		padding: 0;
+		display:flex;
+		justify-content:center;
+	}
+	.container {
+		margin-top: 5rem;
+		/* display:flex;
+		flex-direction:column; */
+		width: 30%;
+		height: 70vh;
+	}
+	.msg {
+		color:blueviolet;
+		font-size: 2rem;
+	}
+	.msgCtn {
+		margin: 1rem 0;
+		color: white;
+		padding: 1rem 1rem;
+		background-color: blueviolet;
+		border-radius: 6px;
+		font-size: 2rem
+	}
+	.msgForm {
+		display:flex;
+		flex-direction:row;
+	}
+	.input {
+		height: 50px;
+		flex: 5;
+		margin-right: 2rem;
+		border:none;
+		border-radius: .5rem;
+		padding: 2px 1rem;
+		font-size: 1.5rem;
+		background-color:aliceblue;
+	}
+	.input:focus {
+		background-color:white;
+	}
+	.btn {
+		height:5rem;
+		flex: 1;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		border-radius: .5rem;
+		background-color:blueviolet;
+		color: whitesmoke;
+		border:none;
+		font-size: 1.6rem;
+	}
+
+	.formRow {
+		margin: 0 0 24px 0;
+	}
+	.colorPickerOuter {
+		font-family:Arial,Helvetica,sans-serif;
+		border:solid 1px #CCCCCC;
+		position:relative;
+		width:240px;
+		height:326px;
+		background: #fefdf9;
+		box-shadow:0 0 6px rgba(0,0,0,.25);
+		border-radius: 5px;
+	}
+	.colorPickerInner {
+		background-color:#2D6AB4;
+		position: relative;
+		top:0px;left:0px; 
+		width:100%; 
+		height:22px;
+		text-align:center;
+		padding-top:5px;
+		font-size: 12px;
+		font-weight:bold;
+		color: white;
+		border-top-right-radius:5px;
+		border-top-left-radius:5px;
+	}
