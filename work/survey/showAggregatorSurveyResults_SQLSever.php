@@ -24,7 +24,7 @@ include './includes/getSQLServerDBConnection.php';
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Careers page intercept survey results</title>
+  <title>Aggregator page intercept survey results</title>
 	<link rel="shortcut icon" href="https://dc.gov/sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
   <style>
 		body {
@@ -57,7 +57,7 @@ include './includes/getSQLServerDBConnection.php';
 </head>
 
 <body>
-  <h1>Intercept survey results for the Careers home page </h1>
+  <h1>Intercept survey results for the Jobs Aggregator page</h1>
 
 	<p>This page shows the most recent 250 survey responses with the newest at the top and you can download
 		all results as a .csv file to import into Excel for detailed analysis. You can also change the displayed
@@ -72,7 +72,7 @@ include './includes/getSQLServerDBConnection.php';
 	</p>
 
 	<p>
-		<a href="./logs/survey-responses.csv" download>Download survey responses</a> (in .csv format) to open in Excel.
+		<a href="./logs/survey-responses-aggregator.csv" download>Download survey responses</a> (in .csv format) to open in Excel.
 		Unfortunately, Excel does not understand the timestamp format so, by default, will display "2025-05-27 10:49:28.220" as "49:28.2"! 
 		In theory, setting the column to data type "Text" should make Excel display the data as-is but that does not work. 
 		The best solution is to:
@@ -86,11 +86,9 @@ include './includes/getSQLServerDBConnection.php';
 	</ol>
 	
 	<?php
-	$sql  = "SELECT timestamp, survey_responses.taskID AS taskID, tasks.taskDesc AS taskDesc, otherTask, survey_responses.difficultyID AS difficultyID, difficulty.difficultyDesc as difficultyDesc, comments, IPAddress ";
+	$sql  = "SELECT timestamp, foundInfo, comments, IPAddress ";
 	$sql .= "FROM survey_responses ";
-	$sql .= "INNER JOIN tasks ON tasks.taskID = survey_responses.taskID ";
-	$sql .= "INNER JOIN difficulty ON difficulty.difficultyID = survey_responses.difficultyID ";
-	$sql .= "WHERE siteID = 1 ";
+	$sql .= "WHERE siteID = 2 ";
 	$sql .= "ORDER BY timestamp DESC ";
 	$sql .= "OFFSET " . $offset . " ROWS ";
 	$sql .= "FETCH NEXT " . $limit . " ROWS ONLY";
@@ -108,9 +106,7 @@ include './includes/getSQLServerDBConnection.php';
 				<thead>
 					<tr>
 						<th>Timestamp</th>
-						<th>Task</th>
-						<th>Other task</th>
-						<th>Difficulty</th>
+						<th>Found Info</th>
 						<th>Comments</th>
 						<th>IP Address</th>
 					</tr>
@@ -119,20 +115,14 @@ include './includes/getSQLServerDBConnection.php';
 					<?php
 						while($row = sqlsrv_fetch_array($getSurveyResponses, SQLSRV_FETCH_ASSOC)) {
 							$timestamp = $row["timestamp"];
-							$taskID = $row["taskID"];
-							$taskDesc = $row["taskDesc"];
-							$otherTask = $row["otherTask"];
-							$difficultyID = $row["difficultyID"];
-							$difficultyDesc = $row["difficultyDesc"];
+							$foundInfo = $row["foundInfo"];
 							$comments = $row["comments"];
 							$comments = str_replace(array("\r\n", "\r", "\n"), "<br>", $comments); // new lines need break tag for html display
 							$IPAddress = $row["IPAddress"];
 							?>
 								<tr>
 									<td><?= $timestamp ?></td>
-									<td><?= $taskID ?> (<?= $taskDesc ?>)</td>
-									<td><?= $otherTask ?></td>
-									<td><?= $difficultyID ?> (<?= $difficultyDesc ?>)</td>
+									<td><?= $foundInfo ?></td>
 									<td><?= $comments ?></td>
 									<td><?= $IPAddress ?></td>
 								</tr>

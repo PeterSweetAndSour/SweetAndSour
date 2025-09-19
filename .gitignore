@@ -1,4 +1,4 @@
-﻿*.jpg
+*.jpg
 *.png
 *.pdn
 *.gif
@@ -8,3 +8,4 @@
 .directory
 node_modules
 reCAPTCHA.txt
+work/survey/logs/survey-responses-aggregator.csv

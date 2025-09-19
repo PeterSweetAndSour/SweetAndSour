@@ -6,6 +6,9 @@ html, body, form {
 body {
 	--darkBlue: #395bc2;
 	--lightBlue: #ebeff9;
+
+	--darkBlueOnHover: hsl(from var(--darkBlue) h s calc(l + 10)); /* https://stackoverflow.com/questions/55329996/how-to-create-color-shades-using-css-variables-similar-to-darken-of-sass */
+	--lightBlueOnHover:  hsl(from var(--lightBlue) h s calc(l - 10));
 }
 
 .feedbackButton {
@@ -81,7 +84,8 @@ body {
 }
 
 .surveyPanel_2 > .actionBar,
-.surveyPanel_4 > .actionBar {
+.surveyPanel_4 > .actionBar,
+.surveyPanel_6 > .actionBar {
 		text-align: right;
 }
 
@@ -107,11 +111,19 @@ body {
 	width: calc(20% - 5px);
 }
 
-.btnPrimary,
-.ratingBtn:hover {
+.btnPrimary {
 	color: white;
 	background-color: var(--darkBlue);
 }
+.btnPrimary:hover {
+	color: var(--darkBlue);
+	background-color: white;
+}
+.btnSecondary:hover + .btnPrimary {
+	color: var(--darkBlue);
+	background-color: var(--lightBlueOnHover);
+}
+
 
 .closeSurveyBtn,
 .btnSecondary,
@@ -119,6 +131,18 @@ body {
 	color: var(--darkBlue);
 	background-color: var(--lightBlue);
 }
+.closeSurveyBtn:hover,
+.btnSecondary:hover,
+.ratingBtn:hover {
+	color: white;
+	background-color: var(--darkBlue);
+}
+
+.closeSurveyBtn {
+	font-size: 20px;
+	line-height: 22px;
+}
+
 
 .ratingDescription {
 	display: flex;
@@ -150,6 +174,10 @@ fieldset {
 	background-color: var(--lightBlue);
 	padding: 10px;
 	margin-bottom: 10px;
+}
+.surveyOption:hover {
+	color: white;
+	background-color: var(--darkBlue);
 }
 
 .surveyOption > input[type=radio] {

@@ -207,7 +207,6 @@ div.leaflet-popup-content {
 .open-legend-btn:focus-visible {
 	outline: 2px dotted red;
 	box-shadow: inset 0 40px 0 0 #f2f72f, 0 1px 1px #92941c;
-	
 }
 .legend {
 	background-color: white;

@@ -1,0 +1,43 @@
+<div id="feedbackButton" class="feedbackButton expanded" tabindex="0" role="button">
+	<span class="hidden">Help improve this site</span>
+</div>
+
+<div class="interceptSurvey hidden" id="interceptSurvey">
+	<div class="surveyBtn closeSurveyBtn" id="closeSurveyBtn" role="button" aria-label="Close survey">&times;</div>
+
+	<form id="interceptSurveyForm" action="saveAggregatorSurveyResponse.php">
+		<div id="surveyPanel_1" class="surveyPanel">
+			<p>Help us improve our site, your feedback matters.</p>
+			<div class="actionBar">
+				<button class="surveyBtn btnSecondary" id="exitSurvey">Exit</button>
+				<button class="surveyBtn btnPrimary" id="goToSurvey">Go to survey</button>
+			</div>
+		</div>
+
+		<div id="surveyPanel_2" class="surveyPanel hidden">
+			<p>Are you able to find the information you need to help you apply for a job?</p>
+			<div class="actionBar">
+				<button class="surveyBtn btnSecondary" id="goToSurveyPanel_6_no">No</button>
+				<button class="surveyBtn btnSecondary" id="goToSurveyPanel_6_yes">Yes</button>
+			</div>
+		</div>
+
+		<div id="surveyPanel_6" class="surveyPanel surveyPanel_6 hidden">
+			<p id="aggregatorCommentsQuestion"></p>
+			<textarea id="comments" name="comments" class="surveyTextArea" rows="5" maxlength="1000"></textarea>
+			<p class="explanation"><span id="charCountIndicator">0</span> characters. (Maximum 1000.)</Counter></p>
+
+			<div class="actionBar">
+				<button class="surveyBtn btnPrimary" id="submitSurveyBtn">Submit</button>
+			</div>
+		</div>
+
+
+		<div id="surveyPanel_5" class="surveyPanel hidden">
+			<p>Thank you!</p>
+		</div>
+
+		<input type="hidden" name="IPAddress" id="IPAddress">
+		<input type="hidden" name="foundInfo" id="foundInfo">
+	</form>
+</div>
