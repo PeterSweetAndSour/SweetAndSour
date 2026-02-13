@@ -12,7 +12,7 @@
   "dependencies": {
     "http": "^0.0.1-security",
     "serve-handler": "^6.1.5",
-    "ws": "^8.14.2"
+    "ws": "^8.17.1"
   },
   "devDependencies": {},
   "keywords": []
