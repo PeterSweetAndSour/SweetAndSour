@@ -50,67 +50,10 @@
 	<p class="subtitle">(As of 14<sup>th</sup> August 2025)</p>
 </div>
 
-<h3>BTS</h3>
-<div class="story">
-	<p>I have to mention boy band BTS first because if you have heard of any K-pop group, it was almost certainly BTS as they are huge. They are unusual in that they write a lot of their material</p>
-	<p>James Cardin did a hilarious <a href="https://www.youtube.com/watch?v=T4x7sDevVTY" target="_blank" class="external">Carpool Karaoke with BTS</a>. Such a nice group of young men.</p>
-	<ul>
-		<li
-			<p><a href="https://www.youtube.com/watch?v=XsX3ATc3FbA" target="_blank" class="external">Boy With Luv</a> (1.2 billion views as of 2021-05-22) I <strong>love</strong> their 2019 hit but that was the first song of theirs that I liked.</p>
-			<p>	It is also well worth watching the <a href="https://www.youtube.com/watch?v=CzvfbRbEjww" target="_blank" class="external">&ldquo;dance practice&rdquo; video</a> so you can see the whole performance start to finish. In fact, I often prefer the dance practice videos and the live performances to the music videos.</p>
-			<p>Indeed there is a huge sub-genre of dance covers and &ldquo;KPop in public&rdquo; performances where dance groups from around the world reproduce, or reinterpret, songs from popular groups. For <em>Boy With Luv</em>, I encourage you to check these out:
-			</p>
-			<ul>
-				<li><a href="https://www.youtube.com/watch?v=2K6dRljmvGw" target="_blank" class="external"> 7 young men from Vietnam</a> (over 9 million views!)</li>
-				<li><a href="https://www.youtube.com/watch?v=TMDS5v4brj8" target="_blank" class="external">a rotating cast of dance groups</a></li>
-				<li><a href="https://www.youtube.com/watch?v=TATGqCXMjj0" target="_blank" class="external"> 5 Korean(?) girls on top of a building</a></li>
-				<li><a href="https://www.youtube.com/watch?v=_adOK0WFu90" target="_blank" class="external">a fabulous collaboration of 3 members each from 4 girls groups</a></li>
-			</ul>
-			<p>&hellip;and so on.</p>
-			<p>Oh, and a lovely <a href="https://www.youtube.com/watch?v=am3iJavzYi8" target="_blank" class="external">English-language cover</a> that is <a href="https://www.youtube.com/watch?v=JewlhY8DGTI?t=329" target="_blank" class="external">BTS-approved</a>!
-			</p>
-		</li>
-		<li>
-			<a href="https://www.youtube.com/watch?v=kXpOEzNZ8hQ" target="_blank" class="external">Yet To Come (The Most Beautiful Moment)</a>
-		</li>
-		<li>
-			<a href="https://www.youtube.com/watch?v=gdZLi9oWNZg" target="_blank" class="external">Dynamite</a> The first video to hit 100m views on youtube in 24 hours and perhaps not coincidentally, their first song in English.
-		</li>
-		<li>
-			<a href="https://www.youtube.com/watch?v=WMweEpGlu_U" target="_blank" class="external">Butter</a> BTS broke their own record with this song reaching 113 million views in 24 hours! 
-		</li>
-	</ul>
-
-	
-
-	<p>Someone at my old office (Dilene) gave me this list of <em>her</em> ten favorite songs. See if you like them:</p>
-	<ul>
-		<li><a href="https://www.youtube.com/watch?v=NMdTd9e-LEI">I need U</a></li>
-		<li><a href="https://www.youtube.com/watch?v=eotYGFuLKXM" target="_blank" class="external"> Best of me</a></li>
-		<li><a href="https://www.youtube.com/watch?v=hmE9f-TEutc">Blood sweat &amp; tears</a></li>
-		<li><a href="https://www.youtube.com/watch?v=m8MfJg68oCs" target="_blank" class="external"> Boy in luv</a>
-			Click on [CC] control to turn on subtitles. I found the lyrics disturbing, especially 
-			<br /><em>&ldquo;Hold tight on to me/before I jump on you.&rdquo;</em>.
-		</li>
-		<li><a href="https://www.youtube.com/watch?v=9DwzBICPhdM" target="_blank" class="external">Not today</a></li>
-	</ul>
-
-	<p>
-		She told me that, &quot;These ones are less upbeat but beautiful&quot;:
-	</p>
-	<ul>
-		<li><a href="https://www.youtube.com/watch?v=xEeFrLSkMm8" target="_blank" class="external"> Spring Day</a></li>
-		<li><a href="https://www.youtube.com/watch?v=qX8OXHyB37U" target="_blank" class="external"> Butterfly</a></li>
-		<li><a href="https://www.youtube.com/watch?v=3i34dFsjRY4" target="_blank" class="external"> Stigma</a></li>
-		<li><a href="https://www.youtube.com/watch?v=sCiRWXnIZwM" target="_blank" class="external"> Hold me tight</a></li>
-		<li><a href="https://www.youtube.com/watch?v=uVp85uFSuyU" target="_blank" class="external"> Let me know</a></li>
-	</ul>
-</div>
-
 <h3 id="Twice">Twice</h3>
 <div class="story">
 	<p>
-		If there was a song in my head since mid-2015, it was probably one of theirs. They are wonderful! As with most K-pop, it is not serious music but it is so much fun! Three of the members are Japanese and one is from Taiwan which led to a 
+		If there was a song in my head since mid-2016, it was probably one of theirs. They are wonderful! As with most K-pop, it is not serious music but it is so much fun! Three of the members are Japanese and one is from Taiwan which led to a 
 			<a href="https://www.economist.com/asia/2016/01/21/twice-bitten">diplomatic incident</a>
 		 with China in 2016. Their songs all have bits of English in them, especially in the chorus, which is good marketing since it is everyone&apos;s second language no matter where you are in Asia. I think all the official music videos have English subtitles too. 
 	</p>
@@ -339,9 +282,64 @@
 	<?php setThumbnail(["SNSDFlightAttendantsSm.jpg", "TwiceFlightAttendantsSm.jpg"]); ?>
 </div>
 
+<h3>BTS</h3>
+<div class="story">
+	<p>I have to mention boy band BTS first because if you have heard of any K-pop group, it was probably BTS as they are huge&mdash;or at least were since the group has been on hiatus while the members did their mandatory military duty. However, with that obligation complete, there is a <a href="https://www.bbc.com/news/articles/c3355y3pkk6o" class="external" target="_blank">new album and tour</a> in 2026. They are unusual in that they write a lot of their material</p>
+	<p>James Cardin did a hilarious <a href="https://www.youtube.com/watch?v=T4x7sDevVTY" target="_blank" class="external">Carpool Karaoke with BTS</a>. Such a nice group of young men.</p>
+	<ul>
+		<li
+			<p><a href="https://www.youtube.com/watch?v=XsX3ATc3FbA" target="_blank" class="external">Boy With Luv</a> (1.2 billion views as of 2021-05-22) I <strong>love</strong> their 2019 hit but that was the first song of theirs that I liked.</p>
+			<p>	It is also well worth watching the <a href="https://www.youtube.com/watch?v=CzvfbRbEjww" target="_blank" class="external">&ldquo;dance practice&rdquo; video</a> so you can see the whole performance start to finish. In fact, I often prefer the dance practice videos and the live performances to the music videos.</p>
+			<p>Indeed there is a huge sub-genre of dance covers and &ldquo;KPop in public&rdquo; performances where dance groups from around the world reproduce, or reinterpret, songs from popular groups. For <em>Boy With Luv</em>, I encourage you to check these out:
+			</p>
+			<ul>
+				<li><a href="https://www.youtube.com/watch?v=2K6dRljmvGw" target="_blank" class="external"> 7 young men from Vietnam</a> (over 9 million views!)</li>
+				<li><a href="https://www.youtube.com/watch?v=TMDS5v4brj8" target="_blank" class="external">a rotating cast of dance groups</a></li>
+				<li><a href="https://www.youtube.com/watch?v=TATGqCXMjj0" target="_blank" class="external"> 5 Korean(?) girls on top of a building</a></li>
+				<li><a href="https://www.youtube.com/watch?v=_adOK0WFu90" target="_blank" class="external">a fabulous collaboration of 3 members each from 4 girls groups</a></li>
+			</ul>
+			<p>&hellip;and so on.</p>
+			<p>Oh, and a lovely <a href="https://www.youtube.com/watch?v=am3iJavzYi8" target="_blank" class="external">English-language cover</a> that is <a href="https://www.youtube.com/watch?v=JewlhY8DGTI?t=329" target="_blank" class="external">BTS-approved</a>!
+			</p>
+		</li>
+		<li>
+			<a href="https://www.youtube.com/watch?v=kXpOEzNZ8hQ" target="_blank" class="external">Yet To Come (The Most Beautiful Moment)</a>
+		</li>
+		<li>
+			<a href="https://www.youtube.com/watch?v=gdZLi9oWNZg" target="_blank" class="external">Dynamite</a> The first video to hit 100m views on youtube in 24 hours and perhaps not coincidentally, their first song in English.
+		</li>
+		<li>
+			<a href="https://www.youtube.com/watch?v=WMweEpGlu_U" target="_blank" class="external">Butter</a> BTS broke their own record with this song reaching 113 million views in 24 hours! 
+		</li>
+	</ul>
+
+	<p>Someone at my old office (Dilene) gave me this list of <em>her</em> ten favorite songs. See if you like them:</p>
+	<ul>
+		<li><a href="https://www.youtube.com/watch?v=NMdTd9e-LEI">I need U</a></li>
+		<li><a href="https://www.youtube.com/watch?v=eotYGFuLKXM" target="_blank" class="external"> Best of me</a></li>
+		<li><a href="https://www.youtube.com/watch?v=hmE9f-TEutc">Blood sweat &amp; tears</a></li>
+		<li><a href="https://www.youtube.com/watch?v=m8MfJg68oCs" target="_blank" class="external"> Boy in luv</a>
+			Click on [CC] control to turn on subtitles. I found the lyrics disturbing, especially 
+			<br /><em>&ldquo;Hold tight on to me/before I jump on you.&rdquo;</em>.
+		</li>
+		<li><a href="https://www.youtube.com/watch?v=9DwzBICPhdM" target="_blank" class="external">Not today</a></li>
+	</ul>
+
+	<p>
+		She told me that, &quot;These ones are less upbeat but beautiful&quot;:
+	</p>
+	<ul>
+		<li><a href="https://www.youtube.com/watch?v=xEeFrLSkMm8" target="_blank" class="external"> Spring Day</a></li>
+		<li><a href="https://www.youtube.com/watch?v=qX8OXHyB37U" target="_blank" class="external"> Butterfly</a></li>
+		<li><a href="https://www.youtube.com/watch?v=3i34dFsjRY4" target="_blank" class="external"> Stigma</a></li>
+		<li><a href="https://www.youtube.com/watch?v=sCiRWXnIZwM" target="_blank" class="external"> Hold me tight</a></li>
+		<li><a href="https://www.youtube.com/watch?v=uVp85uFSuyU" target="_blank" class="external"> Let me know</a></li>
+	</ul>
+</div>
+
 <h3 id="Weki_Meki">Weki Meki</h3>
 <div class="story">
-	<p>My second favorite group after Twice!</p>
+	<p>I really enjoyed their music and I think they could have been huge but Fantagio, their management company, was hopeless, indeed mean making them wait out their 7 year contract with no releases in the last 3 years until a single song at the very end. Someone in the comments to their <a href="https://www.youtube.com/watch?v=SH84Pir3QhA" target="_blank" class="external">last song</a> said "the girls did the song, mv, concept pics and editing by themselves ☹️💔 and PAID FOR THE SET".</p>
 	<ul>
 		<li>
 			The girl in Astro's music video for <em>Breathless</em> (below) is Yoo-jung and reading the comments I saw that she was a member of <strong>Weki Meki</strong>. At the time, they had released <em>Crush</em> which has this <a href="https://www.youtube.com/watch?v=bT2AMc8hI6A" target="_blank" class="external">music video</a> but again, they are best seen in the <a href="https://www.youtube.com/watch?v=wzoZRUnk1Xc" target="_blank" class="external">dance practice</a>. Great song!
@@ -397,7 +395,7 @@
 <div class="story">
 	<p>I am not a big fan of BlackPink but I am including them here because they are <strong>so</strong> popular. I learned only in 2023 that Rosé was born in New Zealand and grew up in Australia. (Jennie lived in New Zealand for five years starting at age 9 and so is also comfortable in English. Lisa, from Thailand, speaks English too and having 3 English speakers gave them an edge in the global music business.)</p>
 	
-	<p>As of February 2024, <a href="https://www.youtube.com/watch?v=IHNzOHi8sJs" target="_blank" class="external">DDU-DU DDU-DU</a> has 2.1 <em>billion</em> views! That puts them at #72 on the list of <a href="https://kworb.net/youtube/topvideos.html" target="_blank" class="external">most popular Youtube videos of all time</a>, ahead even of BTS (at #114). The <a href="https://www.youtube.com/watch?v=jOJbXvjZ-cQ" target="_blank" class="external">dance practice video</a> has another 498 millin views!</p>
+	<p>As of February 2026, <a href="https://www.youtube.com/watch?v=IHNzOHi8sJs" target="_blank" class="external">DDU-DU DDU-DU</a> has 2.4 <em>billion</em> views! That puts them at #72 on the list of <a href="https://kworb.net/youtube/topvideos.html" target="_blank" class="external">most popular Youtube videos of all time</a>, ahead even of BTS (at #114). The <a href="https://www.youtube.com/watch?v=jOJbXvjZ-cQ" target="_blank" class="external">dance practice video</a> has another 498 millin views!</p>
 	<p>They released <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank" class="external">How you like that</a> on 2020-06-26 and it set a record on YouTube of <a href="https://www.forbes.com/sites/hughmcintyre/2020/06/29/blackpinks-new-music-video-officially-break-the-record-for-the-most-views-in-24-hours-on-youtube/#1c8b7429460d" target="_blank" class="external">86.3 million views in the first 24 hours</a>! (Later broken by BTS with <em>Butter</em> and <em>Dynamite</em>)</p>
 	<p>James Cardin did <a href="https://www.youtube.com/watch?v=gUmE_TRdp0s" target="_blank" class="external">Carpool Karaoke with Blackpink</a>!</p>
 </div>
