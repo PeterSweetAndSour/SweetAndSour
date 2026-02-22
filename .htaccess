@@ -1,0 +1,24 @@
+# This .htaccess file is only for local development!
+
+RewriteEngine On
+RewriteBase /sweetandsour/
+
+## Redirect URLs for images on React site to actual places on PHP site
+RewriteCond %{HTTP_HOST} "localhost:3000"
+#RewriteRule ^([a-zA-Z]*)/images/(.*)?$ http://localhost:80/sweetandsour/$1/images/$2 [R]
+
+# Redirect /1222Constitution to the instructionstobuilder fuseAction
+RewriteCond %{HTTP_HOST} "localhost"
+RewriteRule ^1222Constitution/?$ wherewelive/instructionstobuilder [R]
+
+# Human friendly URLs need to be translated internally so the server knows how to handle requests.
+# So /sweetandsour/home/instagram actually goes to /sweetandsour/home/index.php?fuseAction=instagram
+RewriteCond %{HTTP_HOST} localhost
+RewriteRule ^([a-z]+)/([a-z0-9-]+)/?$ $1/index.php?fuseAction=$2 [PT,NC,QSA]
+
+# For live site later if I can everything working in React
+# RewriteCond %{HTTP_HOST} "sweetandsour.org"
+# RewriteRule ^sweetandsour/r/([a-z]+)/([a-zA-Z0-9-]+)/?$ sweetandsour/react_site/src/index.js?#folder=$1&fuseAction=$2 [PT,NC,QSA]
+
+
+
