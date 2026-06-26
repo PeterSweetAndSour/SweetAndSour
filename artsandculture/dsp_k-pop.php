@@ -215,7 +215,18 @@
 <div class="photo-gallery clear">
 	<hr>
 	<p>On the 6th of July (2023), I went to the <strong>Twice concert</strong> at the Metlife stadium near New York! What fantastic evening with 50,000+ other screaming fans!! There was a lot of screaming. I've not been to a concert bigger than a few hundred for over 20 years so I had nothing to really compare it to but the members, the band, the set, the everything was perfect. I love them even more now.</p>
-	<?php setThumbnail(["TwiceConcert_01Sm.jpg", "TwiceConcert_02Sm.jpg", "TwiceConcert_03Sm.jpg", "TwiceConcert_04Sm.jpg", "TwiceConcert_05Sm.jpg", "TwiceConcert_06Sm.jpg", "TwiceConcert_07Sm.jpg", ["photoName"=>"TwiceConcert_08Sm.jpg", "cssClass"=>"figure--thumbnail-portrait"], "TwiceConcert_09Sm.jpg", ["photoName"=>"TwiceConcert_10Sm.png", "overrideURL"=>"https://www.youtube.com/watch?v=KzOUd0ecvus", "cssClass"=>"figure--thumbnail-large", "logo"=>"youtube"]]) ?>
+	<?php setThumbnail([
+			"TwiceConcert_01Sm.jpg", 
+			"TwiceConcert_02Sm.jpg", 
+			"TwiceConcert_03Sm.jpg", 
+			"TwiceConcert_04Sm.jpg", 
+			"TwiceConcert_05Sm.jpg", 
+			"TwiceConcert_06Sm.jpg", 
+			"TwiceConcert_07Sm.jpg", 
+			["photoName"=>"TwiceConcert_08Sm.jpg", "cssClass"=>"figure--thumbnail-portrait"], 
+			"TwiceConcert_09Sm.jpg", 
+			["photoName"=>"TwiceConcert_10Sm.png", "overrideURL"=>"https://www.youtube.com/watch?v=KzOUd0ecvus", "cssClass"=>"figure--thumbnail-large", "logo"=>"youtube"]
+		]) ?>
 	<hr>
 </div>
 <div class="story">
@@ -262,12 +273,34 @@
 		<li>
 			2025-07-11 <a href="https://www.youtube.com/watch?v=POxNm2NNyps" target="_blank" class="external">Dat Ahh Dat Ooh</a> (Sana, Jihyo, Dahyun, Chaeyoung, Tzuyu) This is an unusual song and initially I passed over it but then bit of it got stuck in my head. 
 		</li>		
-	
-
+		<li>
+			2025-10-10 <a href="https://www.youtube.com/watch?v=vnA8--MCU_A" target="_blank" class="external"></a> The AI summary for this song written by Nayeon gets it about right: NAYEON delivers a confident vocal performance, asserting boundaries and exploring themes of attraction with a direct tone. The upbeat track highlights a firm stance on not being trifled with.
+		</li>		
 	</ul>
 </div>
+<div class="photo-gallery clear">
+	<hr>
+	<p>Twice announced that their &ldquo;This is for&hellip;&rdquo; tour would be in indoor arenas instead of stadiums and they were coming to DC so I had to go. Ticketmaster allowed you to register interest and then shortly before tickets went on sale, we were told our place in line which I think was randomly generated. I had a number around 11,000 and I was doubtful that I would get a ticket since the local arena has a capacity of about 20,000 and almost every buyer would get 2 tickets and often more. I did get in and was lucky to get one of the last 20 or so tickets and in the very back row which suited me so I didn't block anyone's view.</p>
+	<?php setThumbnail([
+			"TwiceConcert2_01Sm.jpg", 
+			"TwiceConcert2_02Sm.jpg", 
+			"TwiceConcert2_03Sm.jpg", 
+			"TwiceConcert2_04Sm.jpg", 
+			"TwiceConcert2_05Sm.jpg", 
+			"TwiceConcert2_06Sm.jpg", 
+			"TwiceConcert2_07Sm.jpg", 
+			"TwiceConcert2_08Sm.jpg", 
+			"TwiceConcert2_09Sm.jpg", 
+			"TwiceConcert2_10Sm.jpg", 
+			"TwiceConcert2_11Sm.jpg", 
+			"TwiceConcert2_12Sm.jpg", 
+			"TwiceConcert2_13Sm.jpg", 
+			"TwiceConcert2_14Sm.jpg"
+		]) ?>
+	<hr>
+</div>
 
-<h3 id="SNSD">Girls Generation a.k.a SNSD</h3>
+<h3 id="SNSD">Girls Generation a.k.a. SNSD</h3>
 <div class="story">
 	<p>An earlier nine-member girl group who I&#39;m sure were the model for Twice. Indeed Girls Generation dressed up as flight attendants (twice!) and later Twice did the same which led to accusations of copying though <a href="https://hellosekaiiken.wordpress.com/2012/11/03/girls-generation-copies-passpo-who-copied-canary-club/" target="_blank" class="external">the idea was not new</a>.</p>
 	<ul>
@@ -567,6 +600,7 @@
 		<li><a href="https://www.youtube.com/watch?v=ZeerrnuLi5E" target="_blank" class="external">Black Mamba</a> Their debut single has 148 million views after 6 months! </li>
 		<li><a href="https://www.youtube.com/watch?v=4TWR90KJl84" target="_blank" class="external">Next Level</a> For anyone that knows about video production, I am intrigued by the spaceship module at 0:24&mdash;did they make a real, physical thing to show for 1 second in the video, or is it computer generated? Either way, it is impressive.</li>
 		<li><a href="https://www.youtube.com/watch?v=Os_heh8vPfs" target="_blank" class="external">Spicy</a></li>
+		<li><a href="https://www.youtube.com/watch?v=5oQVTnq-UKk" target="_blank" class="external">Rich Man</a></li>
 	</ul>
 </div>
 
