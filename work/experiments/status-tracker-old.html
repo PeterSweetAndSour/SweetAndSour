@@ -1,0 +1,442 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Applicant Status Tracker</title> 
+    <style> 
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        } 
+ 
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            min-height: 100vh; 
+        } 
+ 
+        .container { 
+            max-width: 1000px; 
+            margin: 0 auto; 
+        } 
+ 
+        h3 {
+            margin-bottom: 20px; 
+        }
+ 
+        .applicant-card { 
+            padding: 25px; 
+        } 
+
+        .card-header { 
+            display: grid; 
+            grid-template-columns: 1fr auto; 
+            gap: 20px; 
+            align-items: stretch; 
+            margin-bottom: 20px; 
+        } 
+ 
+        .applicant-info h3 { 
+            color: #333; 
+            font-size: 18px; 
+            margin-bottom: 5px; 
+        } 
+ 
+        .applicant-info p { 
+            color: #666; 
+            font-size: 14px; 
+            margin: 3px 0; 
+        } 
+ 
+        .app-id { 
+            background: #f0f0f0; 
+            padding: 8px 12px; 
+            border-radius: 5px; 
+            font-size: 14px; 
+            color: #666; 
+            font-family: monospace; 
+        } 
+ 
+        .status-badge { 
+            padding: 10px 20px; 
+            color: White; 
+            font-weight: bold; 
+            font-size: 14px; 
+            border: none; 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            min-width: 150px; 
+            justify-content: center; 
+        } 
+
+ 
+        /* Status Color Mapping */ 
+        .status-notapplied { background-color: #000; }
+        .status-applied { background-color: #667eea; } 
+        .status-reviewed { background-color: #3B82F6; } 
+        .status-screen { background-color: #06B6D4; } 
+        .status-routeunderconsideration { background-color: #06B6D4; } 
+        .status-interview { background-color: #F59E0B; } 
+        .status-offer { background-color: #10B981; } 
+        .status-offeraccepted { background-color: #059669; } 
+        .status-readytohire { background-color: #047857; } 
+        .status-hired { background-color: #047857; }
+        .status-hold { background-color: #EAB308; } 
+        .status-reject { background-color: #EF4444; } 
+        .status-withdrawn { background-color: #6B7280; } 
+
+ 
+        /* Timeline Visualization */ 
+        .timeline-tracker {  /* .trackerSteps in PV's version */
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding-inline-start: 0px;
+            margin-bottom: 20px;
+        } 
+ 
+        .timeline-step {  /* .step in PV's version */
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+        } 
+
+        .bar {
+            background-color: #e0e0e0;
+            width: 12px;
+            margin-right: 10px;
+        }
+        .completed .bar,
+        .current .bar {
+            background-color: #395bc2;
+        }
+        .indicator {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+ 
+        .timeline-dot { /* .stepNumber in PV's version */
+            width: 28px; 
+            height: 28px; 
+            border-radius: 50%; 
+            background: #e0e0e0; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-size: 13px; 
+            font-weight: bold; 
+            color: white; 
+            border: 2px solid #ddd; 
+            margin: 6px 10px;
+            box-sizing: border-box;
+        } 
+ 
+        .completed .timeline-dot { 
+            background: linear-gradient(135deg, #667eea, #764ba2); 
+            border-color: #667eea; 
+        } 
+ 
+        .current .timeline-dot { 
+            background: #F59E0B; 
+            border-color: #F59E0B; 
+            animation: pulse 2s infinite; 
+            padding-bottom: 4px;
+        } 
+ 
+        @keyframes pulse { 
+            0%, 100% { transform: scale(1); } 
+            50% { transform: scale(1.1); } 
+        } 
+ 
+        .timeline-label {  /* .label in PV's version */
+            font-size: 13px; 
+            font-weight: bold; 
+            color: #333; 
+            line-height: 1.2; 
+        } 
+ 
+        .completed .timeline-label { 
+            color: #10B981; 
+        } 
+ 
+        .current .timeline-label { 
+            color: #F59E0B; 
+        } 
+ 
+        /*.breakOnWide {
+            display: none;
+        }*/
+ 
+        @media screen and (max-width: 768px) { 
+            .card-header { 
+                grid-template-columns: 1fr; 
+            } 
+ 
+            .status-badge { 
+                min-width: auto; 
+            } 
+        }
+
+        @media screen and (min-width: 768px) { 
+            .timeline-tracker {
+                flex-direction: row;
+            }
+            .timeline-step {
+                flex-direction: column;
+                width: 10%;
+            }
+            .timeline-dot {
+                margin: 0 0 6px 0;
+            }
+            .bar {
+                width: auto;
+                height: 12px;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            .indicator {
+                flex-direction: column;
+                text-align: center;
+                margin: 0 5px;
+                padding-bottom: 0;
+            }
+            /*.breakOnWide {
+                display: inline;
+            }*/
+        } 
+    </style> 
+    <link href="headerStylesForDemo.css" type="text/css" rel="stylesheet"/>
+</head> 
+<body> 
+    <!-- Utter garbage header from Peoplesoft. Sai, don't copy this over to the real thing. -->
+    <div class="ps_header" id="PT_HEADER">
+        <div class="ps_header_panel" id="PT_HEADER_PANEL">
+            <div class="ps_pspagecontainer_hdr" id="win0divPSPAGECONTAINER_HDR">
+                <div class="ps_box-group psc_layout ps_header_bar-container" id="win0hdrdivPTLAYOUT_HEADER_GROUPBOX0">
+                    <div role="banner" class=" ps_header_bar" id="win0hdrdivPTLAYOUT_HEADER_GROUPBOX1">
+                        <div class=" ps_header_bar_cont" id="win0hdrdivHEADER_BAR_CONT">
+                            <div class=" ps_back_cont" id="win0hdrdivPT_NAV_CONT">
+                                <div class=" ps_system_cont" id="win0hdrdivPTLAYOUT_HEADER_GROUPBOX4">
+                                    <div class="ps_box-group" id="win0hdrdivPTLAYOUT_PT_AG_GROUPBOX10">
+                                        <div class="ps_box-staticimg" id="win0hdrdiv$ICField96"><img src="//careers.dc.gov/cs/erecruit/cache/DC_NEW_PS_LOGO_1.png" class="ps-staticimg" alt="Static Image" title="Static Image"></div>
+                                    </div>
+                                    <div class="ps_box-group psc_layout" id="win0hdrdiv$ICField69"></div>
+                                </div>
+                                <div class=" ps_custom_cont ps_target-custleft" id="win0hdrdivPT_CUSTOM_LEFT"></div>
+                            </div>
+                            <div class=" ps_pagetitle_cont" id="win0hdrdivPT_TITLE_CONT">
+                                <div class=" ps_system_cont  ps_target-title" id="win0hdrdivPT_PAGETITLE">
+                                    <h1 id="PT_PAGETITLE" class="ps_pagetitle"><span class="ps-text" id="PT_PAGETITLElbl">Your application status</span></h1>
+                                </div>
+                                <div class=" ps_custom_cont ps_target-custmiddle" id="win0hdrdivPT_CUSTOM_MIDDLE"></div>
+                            </div>
+                            <div class=" ps_actions_cont" id="win0hdrdivPT_ACTION_CONT">
+                                <div class=" ps_custom_cont  ps_target-custright" id="win0hdrdivPT_CUSTOM_RIGHT"></div>
+                                <div class=" ps_system_cont" id="win0hdrdivPTLAYOUT_HEADER_GROUPBOX6">
+                                    <div class="ps_box-group psc_layout ps_header_button ps_search-custom psc_hide-BP3" id="win0hdrdivPT_CUSTOM_SEARCH"></div>
+                                    <div class=" ps_header_button psc_header-all" id="win0hdrdiv$ICField54">
+                                        <div class="ps_box-group psc_has_popup ps_box-button  psc_menu-act  ps_header_button psc_header-all psc_image_only" id="win0hdrdivPT_ACTION_MENU">
+                                            <span class="ps-button-wrapper" title="Actions"><a class="ps-button" role="button" id="PT_ACTION_MENU$PIMG" href="#"><img class="ps-img" src="//careers.dc.gov/cs/erecruit/cache/PT_HEADER_ACTIONS_287.SVG" alt=""></a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container"> 
+        <div id="applicantContainer"></div> 
+    </div> 
+ 
+    <script> 
+        // All possible statuses in order 
+        const STATUS_ORDER = [ 
+            'Not Applied', 
+            'Applied', 
+            'Reviewed', 
+            'Screen', 
+            'Route (Under Consideration)', 
+            'Interview', 
+            'Offer', 
+            'Offer Accepted', 
+			//'Under Consideration', // adding the status for HOLD  
+            'Ready to Hire', 
+            'Hired' 
+        ]; 
+ 
+        // Global applicant array - will be populated from PeopleCode 
+        var applicants = []; 
+ 
+        // Function to be called from PeopleCode - receives array 
+        function setApplicantData(applicantArray) { 
+            try { 
+                if (applicantArray && Array.isArray(applicantArray) && applicantArray.length > 0) { 
+                    applicants = applicantArray; 
+                    renderApplicant(); 
+                    console.log("Tracker initialized with applicant"); 
+                } else { 
+                    console.error("Invalid applicant data format or empty array"); 
+                    showNoData(); 
+                } 
+            } catch (error) { 
+                console.error("Error setting applicant data: " + error); 
+                showNoData(); 
+            } 
+        } 
+ 
+        function getStatusClass(status) { 
+            if (!status) return 'status-applied'; 
+            return 'status-' + status.toLowerCase().replace(/[ ()]]*/g, ''); 
+        } 
+ 
+        function getStatusIcon(status) { 
+            const icons = { 
+                'Not Applied': '⭕', /* Users won't be able to get to this page if they have not applied so this is not useful. */
+                'Applied': '', 
+                'Reviewed': '', 
+                'Screen': '', 
+                'Route (Under Consideration)': '', 
+                'Interview': '', 
+                'Offer': '', 
+                'Offer Accepted': '✅', 
+				//'Under Consideration', 
+                'Ready to Hire': '', 
+                'Hired': '' 
+            }; 
+            return icons[status] || '●'; 
+        } 
+ 
+        function renderTimelineTracker(status) { 
+            const currentIndex = STATUS_ORDER.indexOf(status); 
+            return STATUS_ORDER.map((step, idx) => { 
+                let stepClass = ''; 
+                if (idx < currentIndex) { 
+                    stepClass = 'completed'; 
+                } else if (idx === currentIndex) { 
+                    stepClass = 'current'; 
+                } 
+                return ` 
+                    <li class="timeline-step ${stepClass}"> 
+                        <div class="bar"></div>
+                        <div class="indicator">
+                            <div class="timeline-dot"> 
+                                ${idx < currentIndex ? '✓' : idx === currentIndex ? '●' : idx + 1} 
+                            </div> 
+                            <div class="timeline-label">${step}</div> 
+                        </div>
+                    </li> 
+                `; 
+            }).join(''); 
+        } 
+ 
+        function formatDate(dateStr) { 
+            if (!dateStr) return 'N/A'; 
+            try { 
+                const date = new Date(dateStr); 
+                return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }); 
+            } catch (e) { 
+                return dateStr; 
+            } 
+        } 
+
+
+        function getExplanation(status) { 
+            const explanation = { 
+                'Not Applied': 0, 
+                'Applied': "Your application has been received", 
+                'Reviewed': "Your application has been reviewed for completeness but no decision has been made yet on whether to move forward with the applicaiton.", 
+                'Screen': "The answers you gave in the application have been scored allowing us to judge whether you meet the minimum standards to be considered for this role.", 
+                'Route (Under Consideration)': "Your resume has been marked by the hiring manager as being worthy of consideration.", 
+                'Interview': "The hiring manager has selected you to be among the group that will be, or has been, interviewed for this position.", 
+                'Offer': "Congratulations! You have been selected for this position and you will receive a formal offer shortly, if you haven't already.", 
+                'Offer Accepted': "You accepted our offer! We are making arrangements to get you on board which may include background checks.", 
+				//'Under Consideration': 80, 
+                'Ready to Hire': "We are excited to see you soon!", 
+                'Hired': "We hope you are enjoying your new job!",
+                'Reject': "Sorry, we chose someone else",
+                'Hold': "It's not  you; it's us. Hiring for this position is on hold for some reason such as loss of budget to fund the position."
+            }; 
+            return explanation[status] || ""; 
+        } 
+
+ 
+        function renderApplicant() { 
+            if (!applicants || applicants.length === 0) { 
+                showNoData(); 
+                return; 
+            } 
+ 
+            const app = applicants[0]; // Get first applicant from array 
+            const container = document.getElementById('applicantContainer'); 
+             
+            container.innerHTML = ` 
+                <div class="applicant-card"> 
+                    <h3>${app.position || 'Position Not Specified'}</h3> 
+                    <div class="card-header"> 
+                         <div class="applicant-info"> 
+                            <div class="app-id"> 
+                                Job ID: ${app.id || 'N/A'}<br/> 
+                                Department:  ${app.department || 'N/A'}<br/>
+                                Description: ${app.description || 'N/A'}<br/>
+                                Applied: ${formatDate(app.appliedDate)} 
+                            </div> 
+                        </div> 
+                        <div class="status-badge ${getStatusClass(app.status)}"> 
+                            Status: ${app.status || 'Applied'} ${getStatusIcon(app.status)}
+                        </div> 
+                    </div> 
+ 
+                    <ul class="timeline-tracker"> 
+                        ${renderTimelineTracker(app.status)} 
+                    </ul> 
+
+                    <p id="explanation"><strong>${app.status}:</strong> ${getExplanation(app.status)}</p>
+                </div> 
+            `; 
+        } 
+ 
+        function showDetails() { 
+            if (!applicants || applicants.length === 0) return; 
+ 
+            const app = applicants[0]; 
+            const currentIndex = STATUS_ORDER.indexOf(app.status); 
+        } 
+
+ 
+        function showNoData() { 
+            const container = document.getElementById('applicantContainer'); 
+            container.innerHTML = '<div class="no-data">No applicant data available. Please provide applicant information.</div>'; 
+        } 
+
+        // Initialize on page load 
+        window.onload = function() { 
+            console.log("Applicant Tracker HTML loaded and ready for data"); 
+
+            var applicantData = [{ /* SAMPLE DATA FOR TESTING */
+                "name": "John Doe",
+                "position": "Program Analyst",
+                "appliedDate": 1765577155547,
+                "status": "Screen",
+                "id": 12345,
+                "department": "Department of Transportation",
+                "description": "Lorem ipsum"
+            }];
+             
+            // Check if data was passed from PeopleCode 
+            if (typeof applicantData !== 'undefined') { 
+                setApplicantData(applicantData); 
+            } else { 
+                showNoData(); 
+            } 
+        }; 
+    </script> 
+</body> 
+</html> 

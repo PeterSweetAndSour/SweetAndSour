@@ -1,0 +1,92 @@
+
+.ps_header::before {
+  content: '';
+  background-image: url(//careers.dc.gov/cs/erecruit/cache/DCH_HEADER_BANNER_1.PNG);
+    background-repeat: repeat;
+    background-size: auto;
+  height: 13px;
+  width: 100%;
+  background-size: 100% 100%;
+  display: block;
+  vertical-align: top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ps_header_bar {
+  background: #fff;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  box-shadow: 1px 3px 5px 2px #ddd;
+  border-bottom: 0px !important;
+	margin-bottom: 60px;
+}
+
+.ps_header_bar_cont {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.ps_back_cont {
+  flex: 0 0 auto;
+  padding: 0.25em;
+  align-items: center;
+  display: flex;
+}
+
+.ps_system_cont {
+  display: inline-block;
+}
+
+.ps_pagetitle_cont {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	flex: 1 1 auto;
+  min-width: 0;
+}
+
+.ps_actions_cont {
+  flex: 0 0 auto;
+  padding: 0.25em;
+  white-space: nowrap;
+  margin-left: auto;
+  align-items: center;
+  display: flex;
+}
+
+.ps_box-button.ps_header_button .ps-button::after, 
+.ps_header_bar_cont + .ps_pagetitle_cont .ps_box-button.psc_image_only.psc_button-transparent .ps-button::after,
+.ps_box-button.psc_menu-act > .ps-button-wrapper > .ps-button::after {
+  position: absolute;
+  height: 1.72em;
+  padding: 0.345em;
+  width: 1.72em;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: -1px;
+}
+.ps_pagetitle span.ps-text {
+  font-family: 'Roboto-Bold', sans-serif;
+  line-height: 42px;
+  color: #20394F;
+  text-transform: none;
+  font-size: 28px;
+  letter-spacing: -0.8px;
+}
+.ps_pagetitle_cont h1 {
+  font-weight: normal;
+}
+.ps_pagetitle_cont h1 .ps-text {
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: normal;
+  margin-bottom: -0.25em;
+}

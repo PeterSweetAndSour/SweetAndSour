@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test survey source</title>
+</head>
+
+<body>
+	<a id="surveyLink" href="https://forms.office.com/Pages/ResponsePage.aspx?id=8Unkj5SLt0-ZBm-Tnagtc8s7css6pEVEi9hvDYLApT1UOVFQTVhNV0kwUE1YSk1PRlZBQ0VOUjZKQi4u&r4485c38fab39420e9915b163a073bd00=dc.gov">Please complete the survey</a>
+
+  <script>
+		document.addEventListener("DOMContentLoaded", (event) => {
+			var currentUrl = encodeURIComponent(window.location.href);
+			var link = document.getElementById("surveyLink");
+			var currentHrefUrl = link.href;
+			link.href = currentHrefUrl.replace("dc.gov", currentUrl);
+		});
+	</script>
+</body>
+
+</html>

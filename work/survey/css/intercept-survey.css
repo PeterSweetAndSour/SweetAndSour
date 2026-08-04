@@ -6,9 +6,19 @@ html, body, form {
 body {
 	--darkBlue: #395bc2;
 	--lightBlue: #ebeff9;
-
 	--darkBlueOnHover: hsl(from var(--darkBlue) h s calc(l + 10)); /* https://stackoverflow.com/questions/55329996/how-to-create-color-shades-using-css-variables-similar-to-darken-of-sass */
 	--lightBlueOnHover:  hsl(from var(--lightBlue) h s calc(l - 10));
+
+	--darkRed: #ba172a;
+	--lightRed: #fde8eb;
+	--darkRedOnHover: hsl(from var(--darkRed) h s calc(l + 10));
+	--lightRedOnHover:  hsl(from var(--lightRed) h s calc(l - 10));
+
+
+	--darkBlue2: #0774E4;
+	--lightBlue2: #e6f1fc;
+	--darkBlue2OnHover: hsl(from var(--darkBlue) h s calc(l + 10)); /* https://stackoverflow.com/questions/55329996/how-to-create-color-shades-using-css-variables-similar-to-darken-of-sass */
+	--lightBlue2OnHover:  hsl(from var(--lightBlue) h s calc(l - 10));
 }
 
 .feedbackButton {
@@ -17,7 +27,6 @@ body {
 	top: 50vh;
 	width: 26px;
 	height: 26px;
-	background-color: var(--darkBlue);
 	background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjEuODYgMTIyLjg4Ij48dGl0bGU+Y29tbWVudDwvdGl0bGU+PHBhdGggZD0iTTMwLjI4LDExMC4wOSw0OS4zNyw5MS43OEEzLjg0LDMuODQsMCwwLDEsNTIsOTAuNzJoNjBhMi4xNSwyLjE1LDAsMCwwLDIuMTYtMi4xNlY5LjgyYTIuMTYsMi4xNiwwLDAsMC0uNjQtMS41MkEyLjE5LDIuMTksMCwwLDAsMTEyLDcuNjZIOS44MkEyLjI0LDIuMjQsMCwwLDAsNy42NSw5LjgyVjg4LjU1YTIuMTksMi4xOSwwLDAsMCwyLjE3LDIuMTZIMjYuNDZhMy44MywzLjgzLDAsMCwxLDMuODIsMy44M3YxNS41NVpNMjguNDUsNjMuNTZhMy44MywzLjgzLDAsMSwxLDAtNy42Nmg1M2EzLjgzLDMuODMsMCwwLDEsMCw3LjY2Wm0wLTI0Ljg2YTMuODMsMy44MywwLDEsMSwwLTcuNjVoNjVhMy44MywzLjgzLDAsMCwxLDAsNy42NVpNNTMuNTQsOTguMzYsMjkuMjcsMTIxLjY0YTMuODIsMy44MiwwLDAsMS02LjY0LTIuNTlWOTguMzZIOS44MkE5Ljg3LDkuODcsMCwwLDEsMCw4OC41NVY5LjgyQTkuOSw5LjksMCwwLDEsOS44MiwwSDExMmE5Ljg3LDkuODcsMCwwLDEsOS44Miw5LjgyVjg4LjU1QTkuODUsOS44NSwwLDAsMSwxMTIsOTguMzZaIiBmaWxsPSIjZmZmZmZmIi8+PC9zdmc+"); 
 	background-size: 19px 20px;
 	background-repeat: no-repeat;
@@ -26,7 +35,6 @@ body {
 	color: white;
 	box-sizing: border-box;
 	padding: 0;
-	font-size: 16px;
 	cursor: pointer;
 
 	transform: rotate(0deg) translate(0, 0px);
@@ -45,6 +53,22 @@ body {
 
 .feedbackButton.expanded > span {
 	display: inline-block;
+}
+.feedbackButton.careers {
+	background-color: var(--darkBlue);
+}
+.feedbackButton.aggregator {
+	background-color: var(--darkBlue2);
+}
+
+.feedbackButton.careers, /* font-family set to "Source Sans 3", sans-serif on body with !important :-( */
+.interceptSurvey.careers {
+	font-size: 16px;
+}
+.feedbackButton.aggregator,
+.interceptSurvey.aggregator {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
 }
 
 .interceptSurvey {
@@ -113,34 +137,66 @@ body {
 
 .btnPrimary {
 	color: white;
+}
+.careers .btnPrimary {
 	background-color: var(--darkBlue);
 }
+.aggregator .btnPrimary {
+	background-color: var(--darkBlue2);
+}
+
 .btnPrimary:hover {
-	color: var(--darkBlue);
 	background-color: white;
 }
-.btnSecondary:hover + .btnPrimary {
+.careers .btnPrimary:hover {
 	color: var(--darkBlue);
-	background-color: var(--lightBlueOnHover);
+}
+.aggregator .btnPrimary:hover {
+	color: var(--darkBlue2);
+}
+
+.careers .btnSecondary:hover + .btnPrimary {
+	color: var(--darkBlue);
+	background-color: var(--lightblueOnHover);
+}
+.aggregator .btnSecondary:hover + .btnPrimary {
+	color: var(--darkBlue2);
+	background-color: var(--lightBlue2OnHover);
 }
 
 
-.closeSurveyBtn,
-.btnSecondary,
-.ratingBtn {
+.careers .closeSurveyBtn,
+.careers .btnSecondary,
+.careers .ratingBtn {
 	color: var(--darkBlue);
 	background-color: var(--lightBlue);
 }
+.aggregator .closeSurveyBtn,
+.aggregator .btnSecondary,
+.aggregator .ratingBtn {
+	color: var(--darkBlue2);
+	background-color: var(--lightBlue2);
+}
+
 .closeSurveyBtn:hover,
 .btnSecondary:hover,
 .ratingBtn:hover {
 	color: white;
+}
+.closeSurveyBtn:hover,
+.btnSecondary:hover,
+.ratingBtn:hover {
 	background-color: var(--darkBlue);
+}
+.aggregator .closeSurveyBtn:hover,
+.aggregator .btnSecondary:hover,
+.aggregator .ratingBtn:hover {
+	background-color: var(--darkBlue2);
 }
 
 .closeSurveyBtn {
 	font-size: 20px;
-	line-height: 22px;
+	line-height: 20px;
 }
 
 
@@ -171,13 +227,21 @@ fieldset {
 .surveyOption {
 	border: 1px solid #666;
 	border-radius: 5px;
-	background-color: var(--lightBlue);
 	padding: 10px;
 	margin-bottom: 10px;
 }
-.surveyOption:hover {
-	color: white;
+.careers .surveyOption {
+	background-color: var(--lightBlue);
+}
+.aggregator .surveyOption {
+	background-color: var(--lightBlue2);
+}
+
+.careers .surveyOption:hover {
 	background-color: var(--darkBlue);
+}
+.aggregator .surveyOption:hover {
+	background-color: var(--darkBlue2);
 }
 
 .surveyOption > input[type=radio] {
@@ -186,6 +250,11 @@ fieldset {
 .surveyOption > label {
 	display: block;
 	margin-left: 30px;
+	color: black;
+	font-weight: normal;
+}
+.surveyOption:hover > label {
+	color: white;
 }
 .surveyOption > input[type=text] {
 	font-size: 16px;
@@ -201,7 +270,7 @@ fieldset {
 	font-size: 16px;
 }
 
-.hidden {
+.surveyContainer .hidden {
 	display: none;
 }
 
