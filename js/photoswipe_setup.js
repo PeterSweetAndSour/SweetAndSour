@@ -45,7 +45,8 @@
                         item.el = anchor; /* save link to element for getThumbBoundsFn */
 						item.msrc = thumbnailImage.getAttribute('src'); /* thumbnail url */
 
-						// Get the content for the caption which will be the contents of the two figcaptions 
+						// Get the content for the caption which will be the contents of the two figcaptions. (If the user is 
+                        // clicking the Next/Previous buttons, they won't see the thumbnail caption so it has to be included.)
 						// PLUS a link to a standalone page with the photo.
 						figCaptionThumbnail = figure.querySelector(".figure__caption--thumbnail");
 						figCaptionFullSize = figure.querySelector(".figure__caption--fullsize");
