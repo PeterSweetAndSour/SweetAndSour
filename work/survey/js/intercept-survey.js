@@ -1,13 +1,41 @@
-const searchResults = (function() {
+
+const popupSurvey = (function() {
 
 	let siteName = "";
+	let baseUrl = "";
 
-	// currentScript does not work with callback functions so is called at the end of this file
-	const _setSiteName = function() {
-		var queryString = document.currentScript.src.substring( document.currentScript.src.indexOf("?") ); 
-		var urlParams = new URLSearchParams( queryString );
-		siteName = urlParams.get("site");
-	}
+	const baseUrls = {
+										"live":  "https://interceptsurvey.dc.gov/",
+										"test":  "https://interceptsurvey.in.dc.gov/",
+										"local": "//localhost/sweetandsour/work/survey/"
+									 };
+
+	// Need to know on which site the script is loaded and from which server to pull files. 
+	const _setSiteNameAndBaseUrl = function() {
+		const host = window.location.hostname.toLowerCase();
+		const path = window.location.pathname.toLowerCase();
+
+		if(host.indexOf("careers") === 0 || path.indexOf("test-survey.html") > 0) {
+			siteName = "careers";
+		}
+		else if(path === "/jobs" || path.indexOf("test-aggregator-survey.html") > 0) {
+			siteName = "aggregator";
+		}
+		else {
+			console.warn("Not sure about siteName. Please check URL against function _setSiteNameAndBaseUrl");
+			siteName = "careers";
+		}
+
+		if(host === "careers.dc.gov" || host === "dc.gov") {
+			baseUrl = baseUrls["live"];
+		}
+		else if(host === "localhost") {
+			baseUrl = baseUrls["local"];
+		}
+		else {
+			baseUrl = baseUrls["test"];
+		}
+	};
 
 	const _checkPriorInteractionCookie = function() {
 		const cookieStr = document.cookie;
@@ -26,7 +54,7 @@ const searchResults = (function() {
 			_initiatizeSurvey();
 		}
 		else {
-			console.log(interceptSurveyCookie);
+			//console.log(interceptSurveyCookie);
 		}
 	};
 
@@ -52,17 +80,18 @@ const searchResults = (function() {
 	};
 
 	const _initiatizeSurvey = function() {
+		_setSiteNameAndBaseUrl();
 		_insertStylesheet();
 		_displaySurvey();
 	};
 
 	const _insertStylesheet = function() {
 		let head = document.querySelector("head");
-		let link = document.createElement("link");
-		link.rel = "stylesheet";
-		link.type = "text/css";
-		link.href = "./css/intercept-survey.css";
-		head.appendChild(link);
+		let linkToStyles = document.createElement("link");
+		linkToStyles.rel = "stylesheet";
+		linkToStyles.type = "text/css";
+		linkToStyles.href = baseUrl + "css/intercept-survey.css";
+		head.appendChild(linkToStyles);
 	};
 
 	const _displaySurvey = function() {
@@ -74,10 +103,11 @@ const searchResults = (function() {
 			surveyHtmlFile = "intercept-survey-aggregator.html";
 		}
  
-		fetch("./" + surveyHtmlFile).then((response) => {
+		fetch(baseUrl + surveyHtmlFile).then((response) => {
 			return response.text();
 		}).then((html) => {
 			let surveyContainer = document.createElement("div");
+			surveyContainer.classList.add("surveyContainer")
 			surveyContainer.innerHTML = html;
 			let body = document.querySelector("body");
 			body.appendChild(surveyContainer);
@@ -170,7 +200,9 @@ const searchResults = (function() {
 
 				// POST the form data
 				const interceptSurveyForm2 = document.querySelector("#interceptSurveyForm"); 
-				const formActionUrl = interceptSurveyForm2.getAttribute("action"); // + "?XDEBUG_SESSION";
+				const formActionFile = interceptSurveyForm2.getAttribute("action"); // + "?XDEBUG_SESSION";
+				const formActionUrl = baseUrl + formActionFile;
+		
 				formData = new FormData(interceptSurveyForm2);
 
 				fetch(formActionUrl, {
@@ -254,17 +286,17 @@ const searchResults = (function() {
 	// Public methods
 	return {  
 		initialize: _initialize,
-		setFeedbackButton: _setFeedbackButtonPosition,
-		setSiteName: _setSiteName
+		setFeedbackButton: _setFeedbackButtonPosition
 	};  
 })(); // the parenthesis will execute the function immediately. Do not remove.
 
+
+// Initialize the survey. 
 document.addEventListener("DOMContentLoaded", function(){
-	searchResults.initialize();
+	popupSurvey.initialize();
 });
 
 document.addEventListener("scroll", function(){
-	searchResults.setFeedbackButton();
+	popupSurvey.setFeedbackButton();
 });
 
-searchResults.setSiteName();

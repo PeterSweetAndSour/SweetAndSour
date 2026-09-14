@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Banner for Careers Connect</title>
+  <style>
+		body {
+			background-color: #2b4888; 
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+		}
+		h1 { color: white; }
+
+		.box_content {
+			background-color: white;
+			box-shadow: none;
+			padding: 10px 20px;
+			outline: 0px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: rgb(102, 102, 102);
+			white-space: normal;
+			border-radius: 0.35em;
+		}
+
+
+		.column1 {
+			text-align: center;
+		}
+		.column1 > img {
+			width: 240px;
+			height: auto;
+			margin-bottom: 12px;
+		}
+
+		h2.ps_label {
+			color: #03438d;
+			font-size: 36px;
+			margin: 0;
+		}
+		.column1 > .subheading {
+			color: #03438d;
+			width: 330px;
+			font-size: 17px;
+			font-weight: bold;
+			margin: 10px auto 20px;
+			line-height: 1.3;
+			text-align: center;
+		}
+		.column1 > .subheading > a {
+			color: #0878fe;
+		}
+
+		ul.checkMarkBullets,
+		ul.blackBoxBullets {
+			margin: 0;
+			padding-left: 32px;
+			text-align: left;
+		}
+		
+		ul.checkMarkBullets {
+			list-style: url("./checkMarkBullet.jpg");
+		}
+		ul.blackBoxBullets {
+			list-style: url("./blackBoxBullet.jpg");
+		}
+
+		.column2 > p,
+		.column2 > h3,
+		.column2 > ul > li {
+			font-size: 20px;
+			margin: 0 0 4px;
+			line-height: 1.25;
+		}
+
+		.column2 > h3 {
+			margin-top: 20px;
+			text-align: left;
+			font-weight: bold;
+		}
+
+		@media  (min-width: 992px) { /* div.box-content will be 858px wide and gets wider at page widths above 1200px. */
+			.box_content {
+				display: flex;
+				justify-content: space-between;
+				padding: 30px 20px;
+			}
+			.column {
+				vertical-align: top;
+			}
+			.column1 {
+				width: 35%;
+			}
+			.column2 {
+				width: 60%;
+				padding-top: 10px;
+			}
+
+			.column1 > img {
+				width: 360px;
+				margin-bottom: 0;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+  <h1>Banner for Careers Connect</h1>
+  
+	<div class="box_content">
+		<div class="column column1">
+			<h2 class="ps_label spotlight-label">District Spotlight News</h2>
+			<p class="subheading">
+				Introducing <a href="https://dc.gov/jobs" target="_blank">DC Careers Connect</a>
+				A better way to find and share DC&nbsp;Government jobs
+			</p>
+			<img src="careersConnect.jpg">
+		</div>
+		<div class="column column2">
+			<p>
+				<strong>DC Careers Connect</strong> is the new home for <strong>DC Government career opportunities</strong>.<br>Instead of hunting across multiple agency websites, you&mdash;and the people you know&mdash;can now start in one place and explore roles across the District.
+			</p>
+			<h3>What's new:</h3>
+			<ul class="checkMarkBullets">
+				 <li>One website to browse opportunities across DC agencies</li>
+				 <li>Simple, broad job categories to help candidates find a good fit</li>
+			</ul>
+
+			<h3>Coming soon:</h3>
+			<ul class="blackBoxBullets">
+				<li>Employee video spotlights and career journeys</li>
+				<li>More agencies and roles added regularly</li>
+			</ul>
+
+			<h3>You can help:</h3>
+			<p>Share <a href="https://dc.gov/jobs" target="_blank">dc.gov/jobs</a> with your family, friends, and neighbors and help make DC government an employer of choice.</p>
+		</div>
+	</div>
+</body>
+
+</html>

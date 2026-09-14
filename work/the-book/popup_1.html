@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organizational chart popup</title>
+  <style>
+		.moving-background {
+			width: 1232px;
+			height: 657px;
+			position: relative;
+			z-index: 1;
+			
+			/* Add your custom image link here */
+			background-image: url('https://picsum.photos/3000/657'); 
+			/* Allows the image to tile seamlessly */
+			background-repeat: repeat-x; 
+			/* Triggers the keyframe animation */
+			animation: scrollBackground 90s linear infinite; 
+		}
+
+		/* Define the movement path */
+		@keyframes scrollBackground {
+			from {
+				background-position: 0 0;
+			}
+			to {
+				background-position: -3000px 0; /* Match this number to your image's actual pixel width */
+			}
+		}
+
+		.overlay {
+			position: absolute;
+			z-index: 2;
+			width: 1232px;
+			height: 657px;
+			opacity: 0.33;
+			background-color: black;
+		}
+		.overlayContent {
+			padding: 20px 40px 0;
+			font-family: Verdana, sans-serif;
+			position: absolute;
+			z-index: 3;
+		}
+		.overlayContent > h1,
+		.overlayContent > p {
+			background-color: rgba(0, 0, 0, 0.25);
+			color: white;
+		}
+		.overlayContent > h1 {
+			display: inline-block;
+		}
+		.overlayContent > p {
+			font-size: 16px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="moving-background">
+		<div class="overlay">
+		</div>
+		
+		<div class="overlayContent">   
+			<h1>Heading for popup 1</h1>
+			
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis gravida libero, a fringilla magna bibendum et. Quisque finibus diam enim, vel sollicitudin ligula finibus ut. Sed pellentesque dui et gravida placerat. Integer molestie, lectus et pulvinar vehicula, lectus dolor volutpat nisl, ac ultricies erat urna ac nibh. In dapibus dolor eu sapien ornare, vitae convallis turpis congue. Fusce consequat metus odio, nec condimentum erat efficitur quis. Sed mollis dui dolor, ut varius massa varius quis. Mauris tempor purus eu sem maximus, vitae ornare enim porta. Nullam at pretium lectus. Nunc gravida mauris quis ante placerat, gravida auctor dui commodo. Donec dictum vestibulum suscipit. Sed tempor elit dui, scelerisque sagittis odio gravida ut.
+			</p>
+			<p>
+			Vestibulum a ultricies ex. Donec vel mauris lorem. Sed ullamcorper magna eu luctus ornare. Donec eu tellus ultricies, luctus arcu non, ornare odio. Aliquam a diam tincidunt, iaculis metus sed, faucibus mi. Phasellus tincidunt tempus ultricies. Vivamus tristique sit amet eros ut imperdiet.
+			</p>
+			<p>
+			Vestibulum ac turpis tellus. Pellentesque faucibus, massa a lobortis euismod, massa leo tincidunt dui, sed porta nisl nunc eget augue. Suspendisse mollis diam quis turpis porttitor, nec eleifend justo ultricies. Donec ligula erat, bibendum nec ultrices at, facilisis eu nulla. Etiam ac metus ut sapien ullamcorper maximus. Nunc est elit, convallis vel magna eget, tempus auctor nisl. Integer semper cursus aliquam.
+			</p>
+			<p>
+			Phasellus non tincidunt ligula, sit amet pretium tortor. Donec gravida odio quam, nec tempor ligula vehicula et. Morbi rutrum eget lacus ac volutpat. Praesent nulla tellus, efficitur ut sem in, feugiat tempus felis. In varius viverra elementum. Proin quam dolor, malesuada nec dolor sed, aliquam tincidunt sapien. Morbi feugiat imperdiet orci eu condimentum. Sed euismod et dolor ut dictum.
+			</p>
+			<p>
+			In pretium, odio pellentesque semper sollicitudin, tellus sem imperdiet ex, in bibendum massa risus quis risus. In laoreet lacus id gravida ornare. Nam varius pellentesque enim, quis blandit odio dignissim non. Duis fringilla sagittis lorem eu malesuada. Quisque mattis eros tincidunt egestas cursus. Sed nibh mi, facilisis eu nisl a, tempus dignissim libero. Vestibulum at euismod lorem. Morbi aliquet in enim at interdum. Duis sollicitudin lacus eget tempus condimentum.
+			</p>  
+		</div>
+	</div>
+</body>
+</html>

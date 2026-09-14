@@ -1,0 +1,280 @@
+  :root {
+    --dc-red: #bd2025;
+    --dc-yellow: #ffde59;
+    --dc-black: #0a0a0a;
+    --dc-white: #ffffff;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+     color: var(--dc-white);
+  }
+
+  .flyer {
+    max-width: 800px;
+    height: 60%;
+    margin: 0 auto 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* Skip link for keyboard/screen reader users */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--dc-white);
+    color: var(--dc-black);
+    padding: 0.5em 1em;
+    z-index: 100;
+  }
+  .skip-link:focus {
+    left: 0.5em;
+    top: 0.5em;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    background: #1a1a1a;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: 78% center;
+    filter: grayscale(1) contrast(1.05);
+  }
+
+  /* Diagonal scrim so headline text stays legible over the photo,
+     echoing the angled light shapes in the original flyer */
+  .hero-darkener {
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 25%;
+  }
+  .hero-darkener-1 {
+    transform-origin: top left;
+    transform: rotate(26deg);
+  }
+  .hero-darkener-2 {
+    transform-origin: 46% 0;
+    transform: translate(-20%, 0) rotate(26deg);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    padding: 2.2em 2.5em 2em;
+    width: 100%;
+  }
+
+  .hero-heading {
+    margin: 0;
+    font-family: "Arial Black", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.1rem, 4rem, 5rem);
+    line-height: 1.02;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
+  .hero-heading .line-accent {
+    color: var(--dc-yellow);
+  }
+
+  .hero-body {
+    margin: 0.9em 0 0;
+    max-width: 34em;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  /* ---------- SCHEDULE SECTION ---------- */
+  .schedule-section {
+    background: var(--dc-black);
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .schedule-label-col {
+    flex: 0 0 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6em;
+  }
+
+  .rule {
+    border: none;
+    height: 2px;
+    width: 100%;
+    margin: 0;
+  }
+  .rule--left-1 { background: var(--dc-red); width: 90%; margin-bottom: -3px;}
+  .rule--left-2 { background: var(--dc-white); width: 100%}
+  .rule--left-3 { background: var(--dc-red); width: 70%;}
+  .rule--left-4 { background: var(--dc-white); width: 55%; margin-top: -3px;}
+  .rule--white { background: var(--dc-white); width: 70%;}
+
+  .schedule-heading {
+    margin: 0;
+    padding: 20px 20px;
+    color: var(--dc-red);
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-transform: none;
+  }
+
+  .schedule-list-col {
+    flex: 1 1 260px;
+  }
+
+  .schedule-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .schedule-list li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid var(--dc-white);
+    font-size: 0.75rem;
+  }
+  .schedule-list li:last-child {
+    border-bottom: none;
+  }
+
+  .session-date {
+    color: var(--dc-yellow);
+    font-weight: 800;
+  }
+
+  .register-col {
+    flex: 0 0 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+    text-align: center;
+  }
+
+  .register-heading {
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+  .flyer-footer {
+    max-height: 40px;
+    background: var(--dc-red);
+    padding: 0 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    align-items: center;
+    font-weight: 800;
+    font-size: 0.95rem;
+  }
+
+  .footer-contact a {
+    color: var(--dc-white);
+    text-decoration: none;
+  }
+  .footer-contact a:hover,
+  .footer-contact a:focus {
+    text-decoration: underline;
+  }
+
+  .footer-contact .tinyurl-path {
+    color: var(--dc-yellow);
+  }
+
+  .footer-logos {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+  }
+
+  /*.footer-logos img {
+    height: 36px;
+    width: auto;
+    display: block;
+  }*/
+  .logo-dob {
+    max-width: 75px;
+  }
+  .logo-dc {
+    max-width: 160px;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (max-width: 640px) {
+    .schedule-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .schedule-list-col {
+      flex: none;
+    }
+    .register-col {
+      align-items: flex-start;
+      text-align: left;
+    }
+    .flyer-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0 20px 20px;
+      max-height: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { scroll-behavior: auto !important; }
+  }

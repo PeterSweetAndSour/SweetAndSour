@@ -1,0 +1,855 @@
+# ----------------------------------------
+# Pages and screens: Page path and screen class
+# Account: dc.gov
+# Property: dcgov GA4
+# ----------------------------------------
+# 
+# Hostname exactly matches ouc.dc.gov
+# Start date: 20250916
+# End date: 20251216
+Page title and screen class,Page path and screen class,Views,Active users,Views per active user,Average engagement time per active user,Event count,Key events,Total revenue
+| OUC,/,4755,2991,1.5897693079237714,20.321297225008358,14266,0,0
+311 for City Services | OUC,/page/311-city-services,4216,3009,1.4011299435028248,29.20106347623795,12920,0,0
+Become a 911 Professional! | OUC,/page/become-911-professional,3242,1802,1.7991120976692563,49.44617092119867,12169,0,0
+Call 311 for Police Non-Emergencies | OUC,/page/call-311-police-non-emergencies,2800,1873,1.4949279231179926,24.681793913507743,7222,0,0
+911 Performance Dashboard BETA | OUC,/page/911-performance-dashboard-beta,1642,1152,1.4253472222222223,56.734375,5741,0,0
+About 311 | OUC,/page/311-about,1041,793,1.3127364438839848,56.89155107187894,2666,0,0
+DC 311 Mobile App | OUC,/page/dc-311-mobile-app,814,576,1.4131944444444444,21.708333333333332,2154,0,0
+911 for Emergency Services | OUC,/page/911-for-emergency-services,641,503,1.2743538767395626,28.314115308151095,2125,0,0
+311 - The Citywide Call Center | OUC,/featured-content/311-citywide-call-center,603,466,1.293991416309013,36.94206008583691,1849,0,0
+Telephone Reporting Unit (TRU) | OUC,/page/telephone-reporting-unit-tru,439,271,1.6199261992619927,61.28044280442804,1249,0,0
+Make the Right Call | OUC,/maketherightcall,425,372,1.14247311827957,8.24731182795699,1691,0,0
+OUC’s Public Safety In-building Radio Systems Requirements | OUC,/page/oucs-public-safety-building-radio-systems-requirements,399,191,2.089005235602094,65.45549738219896,1512,0,0
+About 911 | OUC,/page/911-about,322,251,1.2828685258964143,24.756972111553786,755,0,0
+OUC Feedback Form | OUC,/page/feedback,261,117,2.230769230769231,32.64102564102564,698,0,0
+About OUC | OUC,/page/about-ouc,257,190,1.3526315789473684,26.563157894736843,705,0,0
+Heather McGaffin | OUC,/biography/heather-mcgaffin,237,200,1.185,26.27,669,0,0
+Public Transparency | OUC,/page/public-transparency,228,195,1.1692307692307693,33.83589743589744,729,0,0
+Our Offices and Divisions | OUC,/page/our-offices-and-divisions,212,177,1.1977401129943503,29.124293785310734,640,0,0
+Text to 311 | OUC,/service/text-311,211,149,1.4161073825503356,35.147651006711406,564,0,0
+What Is Smart911? | OUC,/page/what-smart911,211,170,1.2411764705882353,45.42941176470588,756,0,0
+Subpoenas | OUC,/page/subpoenas,205,128,1.6015625,35.5390625,619,0,0
+OUC Training and Development | OUC,/page/ouc-training-and-development,192,153,1.2549019607843137,52.50326797385621,504,0,0
+Supporting our Heroes in Headsets: OUC's Executive Team | OUC,/page/supporting-our-heroes-headsets-oucs-executive-team,184,145,1.2689655172413794,31.889655172413793,501,0,0
+Open Government and FOIA - OUC | OUC,/page/open-government-and-foia-ouc,183,135,1.3555555555555556,53.925925925925924,501,0,0
+Text to 911 | OUC,/page/text-911,182,131,1.3893129770992367,25.740458015267176,523,0,0
+"Right Care, Right Now | OUC",/page/right-care-right-now1,174,125,1.392,38.368,591,0,0
+THOR - Tactical Homeland Operations Response | OUC,/service/thor-tactical-homeland-operations-response,169,121,1.396694214876033,33.570247933884296,561,0,0
+News Room | OUC,/newsroom,153,131,1.16793893129771,14.908396946564885,473,0,0
+We Answer The Call | OUC,/page/WATC,140,118,1.1864406779661016,42.940677966101696,385,0,0
+Telecommunications Equipment Operator (911 Call Taker) | OUC,/release/telecommunications-equipment-operator-911-call-taker,135,95,1.4210526315789473,53.09473684210526,351,0,0
+OUC Information Technology | OUC,/page/ouc-information-technology,121,88,1.375,32.23863636363637,324,0,0
+Spanish (Español) | OUC,/node/735162,113,99,1.1414141414141414,6.484848484848484,360,0,0
+News Room | Page 2 | OUC,/newsroom,106,101,1.0495049504950495,3.0594059405940595,472,0,0
+OUC Junior Academy | OUC,/page/junior-academy,106,74,1.4324324324324325,38.75675675675676,299,0,0
+Contact Agency Directors | OUC,/page/contact-agency-directors,103,84,1.2261904761904763,12.916666666666666,378,0,0
+News Room | Page 7 | OUC,/newsroom,99,94,1.053191489361702,3.351063829787234,434,0,0
+911 Fund | OUC,/page/911-fund,97,71,1.3661971830985915,29.35211267605634,273,0,0
+What is Text to 311? | OUC,/page/what-text-311,95,70,1.3571428571428572,47,213,0,0
+Office of Unified Communications | OUC,/agency/office-unified-communications,94,78,1.205128205128205,14.025641025641026,311,0,0
+History of OUC | OUC,/page/history-ouc,85,66,1.2878787878787878,41,226,0,0
+News Room | Page 8 | OUC,/newsroom,83,83,1,2.6144578313253013,382,0,0
+OUC Radio Engineering | OUC,/page/ouc-radio-engineering,80,48,1.6666666666666667,23.5625,218,0,0
+911 and 311 Industry News | OUC,/release/911-and-311-industry-news,77,32,2.40625,22.21875,228,0,0
+PulsePoint | OUC,/page/pulsepoint,74,56,1.3214285714285714,5.839285714285714,240,0,0
+About the Unified Communications Center (UCC) | OUC,/page/about-unified-communications-center-ucc,69,56,1.2321428571428572,19.910714285714285,215,0,0
+911 Operations Audit Road Map | OUC,/page/911-operations-audit-road-map,68,51,1.3333333333333333,47.03921568627451,168,0,0
+911 Statistics Performance Dashboard | OUC,/page/911-statistics-performance-dashboard,68,63,1.0793650793650793,13.253968253968255,239,0,0
+Page not found | OUC,/page/open-government-and-foia-ouc.”,67,67,1,3.91044776119403,257,0,0
+OUC Network | OUC,/page/ouc-network,64,52,1.2307692307692308,22.01923076923077,197,0,0
+911 (E911) Fee Remittance Report | OUC,/publication/911-e911-fee-remittance-report,62,49,1.2653061224489797,5.408163265306122,217,0,0
+About Our Dispatch System | OUC,/page/about-our-dispatch-system,60,41,1.4634146341463414,17.78048780487805,151,0,0
+Criteria Based Dispatch Training | OUC,/event/criteria-based-dispatch-training-8,59,45,1.3111111111111111,21.977777777777778,188,0,0
+"2720 Martin Luther King Jr Avenue, SE | OUC",/address/2720-martin-luther-king-jr-avenue-se,58,41,1.4146341463414633,26.024390243902438,192,0,0
+News Room | Page 5 | OUC,/newsroom,55,55,1,18.90909090909091,244,0,0
+911 Operations Audit Road Map | OUC,/node/1622646,53,51,1.0392156862745099,19.901960784313726,127,0,0
+911 and 311 Industry News | OUC,/ar/release/911-and-311-industry-news,53,53,1,6.471698113207547,235,0,0
+News Room | Page 4 | OUC,/newsroom,53,52,1.0192307692307692,2.5384615384615383,224,0,0
+News Room | Page 9 | OUC,/newsroom,52,52,1,3.1346153846153846,237,0,0
+DBH and OUC Mental Health Emergency Dispatch Program | OUC,/page/dbh-and-ouc-mental-health-emergency-dispatch-program,51,42,1.2142857142857142,28.61904761904762,155,0,0
+911 Direct Connect Program | OUC,/page/911-direct-connect-program,50,44,1.1363636363636365,15.795454545454545,136,0,0
+News Room | OUC,/newsroom/press-releases,50,46,1.0869565217391304,2.1739130434782608,230,0,0
+News Room | OUC,/am/newsroom,49,46,1.065217391304348,2.652173913043478,219,0,0
+OUC Feedback Form | OUC,/am/node/1647421,49,47,1.0425531914893618,4.085106382978723,218,0,0
+News Room | Page 6 | OUC,/newsroom,48,46,1.0434782608695652,1.934782608695652,207,0,0
+OUC Feedback Form | OUC,/ar/node/1647421,47,43,1.0930232558139534,5.1395348837209305,213,0,0
+OUC Feedback Form | OUC,/es/node/1647421,46,45,1.0222222222222221,3.1333333333333333,204,0,0
+Our Offices and Divisions | OUC,/am/node/1610186,46,44,1.0454545454545454,2.7045454545454546,206,0,0
+Contáctese con los directores | OUC,/es/page/contact-agency-directors,45,45,1,2.2888888888888888,201,0,0
+News Room | OUC,/ar/newsroom,45,44,1.0227272727272727,1.6136363636363635,200,0,0
+OUC Community Outreach | OUC,/service/ouc-community-outreach,45,40,1.125,12.9,125,0,0
+የኤጀንሲው ዳይሬክተሮችን ያግኙ | OUC,/am/page/contact-agency-directors,44,42,1.0476190476190477,2.380952380952381,205,0,0
+News Room | OUC,/newsroom/12,43,42,1.0238095238095237,1.9285714285714286,202,0,0
+OUC in Pictures | OUC,/page/ouc-pictures,43,41,1.048780487804878,18.048780487804876,124,0,0
+OUC Feedback Form | OUC,/node/1647421,42,41,1.024390243902439,4.073170731707317,189,0,0
+Our Offices and Divisions | OUC,/node/1610186,42,42,1,1.619047619047619,172,0,0
+Overview | OUC,/page/overview-update,42,34,1.2352941176470589,31.58823529411765,115,0,0
+News Room | OUC,/es/newsroom,41,42,0.9761904761904762,2.2857142857142856,193,0,0
+OUC Training and Development | OUC,/node/1502476,40,34,1.1764705882352942,27.676470588235293,103,0,0
+News Room | Page 10 | OUC,/newsroom,39,39,1,2.6923076923076925,177,0,0
+Our Offices and Divisions | OUC,/ar/node/1610186,38,41,0.926829268292683,3.682926829268293,182,0,0
+User account | OUC,/user,38,3,12.666666666666666,34.333333333333336,117,0,0
+Our Offices and Divisions | OUC,/es/node/1610186,36,37,0.972972972972973,1.7837837837837838,171,0,0
+Assistant Watch Commander | OUC,/release/assistant-watch-commander,35,26,1.3461538461538463,42.96153846153846,83,0,0
+911 Performance Dashboard BETA | OUC,/ko/node/1679601,33,33,1,19.424242424242426,131,0,0
+Open Government and FOIA - OUC | OUC,/node/14802,33,27,1.2222222222222223,23.74074074074074,81,0,0
+COMT Training Course | OUC,/event/comt-training-course,30,22,1.3636363636363635,33.40909090909091,122,0,0
+Feedback | OUC,/page/feedback2,29,19,1.5263157894736843,17.63157894736842,86,0,0
+We are sorry; the page you requested is no longer available. | OUC,/release/assistant-watch-commander,29,29,1,5.0344827586206895,102,0,0
+Dispatcher | OUC,/release/dispatcher,27,14,1.9285714285714286,70.28571428571429,56,0,0
+Halloween Safety Tips | OUC,/publication/halloween-safety-tips,27,25,1.08,18.24,116,0,0
+We are sorry; the page you requested is no longer available. | OUC,/release/dispatcher,27,19,1.4210526315789473,7.684210526315789,89,0,0
+Schedule a Presentation | OUC,/service/schedule-presentation,23,17,1.3529411764705883,7.823529411764706,64,0,0
+911 Performance Dashboard BETA | OUC,/es/node/1679601,22,22,1,5.409090909090909,84,0,0
+Ask the Director - OUC | OUC,/external-link/ask-director-ouc,22,16,1.375,0.875,43,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/new-fiscal-year-updates,22,11,2,1.6363636363636365,48,0,0
+| OUC,/node,22,18,1.2222222222222223,16.944444444444443,73,0,0
+| Page 3 | OUC,/node,22,25,0.88,2.8,86,0,0
+Request a Site Visit or Tour | OUC,/service/request-site-visit-or-tour,19,17,1.1176470588235294,20,52,0,0
+Testimony of Director Heather McGaffin - FY24 Agency Performance Oversight Hearing | OUC,/release/testimony-director-heather-mcgaffin-fy24-agency-performance-oversight-hearing,19,16,1.1875,3.5625,57,0,0
+Office of Unified Communications Receives Industry Technology Award and Program Accreditation at APCO | OUC,/release/office-unified-communications-receives-industry-technology-award-and-program-accreditation,18,12,1.5,35.416666666666664,50,0,0
+Testimony of Director Heather McGaffin - FY26 Budget Oversight Hearing | OUC,/release/testimony-director-heather-mcgaffin-fy26-budget-oversight-hearing,18,16,1.125,5.0625,63,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/ouc-complaints-data,18,18,1,2.3333333333333335,82,0,0
+| Page 6 | OUC,/node,18,18,1,2.4444444444444446,78,0,0
+Bowser Administration Introduces Rave Panic Button to Streamline Data and Communication Sharing During Emergency Events | OUC,/release/bowser-administration-introduces-rave-panic-button-streamline-data-and-communication-sharing,17,15,1.1333333333333333,64.26666666666667,65,0,0
+"Mayor Bowser Reopens the Public Safety Communications Center Following $18.5M Renovation, Highlights FY26 Public Safety Investments | OUC",/release/mayor-bowser-reopens-public-safety-communications-center-following-185m-renovation,17,13,1.3076923076923077,39.84615384615385,51,0,0
+UCC Project Summary Sheet | OUC,/publication/ucc-project-summary-sheet,17,16,1.0625,2.8125,57,0,0
+danielle.drumgoole | OUC,/users/danielledrumgoole,17,2,8.5,37.5,36,0,0
+"Bowser Administration Launches New “Make the Right Call” Campaign, Urging Residents to Only Use 911 for Emergencies | OUC",/release/bowser-administration-launches-new-“make-right-call”-campaign-urging-residents-only-use-911,16,14,1.1428571428571428,9,51,0,0
+Office of Unified Communications Tour Request Form | OUC,/node/1659571,16,13,1.2307692307692308,5.461538461538462,44,0,0
+We are sorry; the page you requested is no longer available. | OUC,/node/1686866,16,15,1.0666666666666667,3.2666666666666666,67,0,0
+We are sorry; the page you requested is no longer available. | OUC,/release/ouc-statement-october-10-2022-incident-1300-block-massachusetts-ave-nw,16,13,1.2307692307692308,2.769230769230769,70,0,0
+911 for Emergency Services | OUC,/fr/page/911-for-emergency-services,15,13,1.1538461538461537,14.461538461538462,49,0,0
+Page not found | OUC,/arcgis/rest/services,15,15,1,3.466666666666667,59,0,0
+Services | OUC,/services,15,15,1,14.333333333333334,41,0,0
+| Page 7 | OUC,/node,15,15,1,1.8666666666666667,59,0,0
+| Page 9 | OUC,/node,15,15,1,2.2666666666666666,56,0,0
+911 Education | OUC,/page/911-education,14,13,1.0769230769230769,27.307692307692307,91,0,0
+311 Hits Million Mark for 2008 | OUC,/release/311-hits-million-mark-2008,13,9,1.4444444444444444,3.3333333333333335,53,0,0
+Incident Tactical Dispatch (INTD) Training Class | OUC,/event/incident-tactical-dispatch-intd-training-class,13,10,1.3,30.5,49,0,0
+Korean (한국어) | OUC,/page/korean1-한국어,13,13,1,6.846153846153846,51,0,0
+OUC Statement on New Dashboard – September 8 | OUC,/release/ouc-statement-new-dashboard-–-september-8,13,13,1,2.230769230769231,51,0,0
+The Department of General Services (DGS) is now apart of the 311 system | OUC,/page/department-general-services-dgs-now-apart-311-system,13,9,1.4444444444444444,38.22222222222222,36,0,0
+"Washington, DC Office of Unified Communications Modernizes its 311 System on Salesforce | OUC",/release/washington-dc-office-unified-communications-modernizes-its-311-system-salesforce,13,12,1.0833333333333333,3.3333333333333335,50,0,0
+Amharic (አማርኛ) | OUC,/page/amharic1-አማርኛ-,12,12,1,13.666666666666666,46,0,0
+Confirmation Resolution for Acting OUC Director Karima Holmes Draws Broad Support | OUC,/release/confirmation-resolution-acting-ouc-director-karima-holmes-draws-broad-support,12,11,1.0909090909090908,6.454545454545454,41,0,0
+OUC Statement on Radio Interference | OUC,/release/ouc-statement-radio-interference,12,9,1.3333333333333333,44,34,0,0
+Smart911 - Français | OUC,/publication/smart911-français,12,11,1.0909090909090908,1.7272727272727273,51,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/french-français-1,12,10,1.2,2.1,49,0,0
+We are sorry; the page you requested is no longer available. | OUC,/release/testimony-acting-director-karima-holmes-public-oversight-roundtable-9-1-1-operations-office,12,13,0.9230769230769231,2.230769230769231,53,0,0
+Karima Holmes is Confirmed as Director of the Office of Unified Communications | OUC,/release/karima-holmes-confirmed-director-office-unified-communications,11,10,1.1,5.4,45,0,0
+Make the Right Call | OUC,/es/maketherightcall,11,10,1.1,13.9,37,0,0
+New Call Takers Join OUC Staff | OUC,/release/new-call-takers-join-ouc-staff,11,10,1.1,0.9,47,0,0
+News Room | Page 3 | OUC,/newsroom,11,8,1.375,4.25,39,0,0
+OUC Statement on the Launch of PowerPhone | OUC,/release/ouc-statement-launch-powerphone,11,9,1.2222222222222223,12,40,0,0
+Page not found | OUC,/page/cmlnaHQtY2,11,11,1,14.272727272727273,25,0,0
+THOR FAQs | OUC,/publication/thor-faqs,11,10,1.1,3.4,26,0,0
+Unified Communications Center Photo Gallery | OUC,/page/unified-communications-center-photo-gallery,11,11,1,3.6363636363636362,38,0,0
+We Answer The Call | OUC,/vi/node/1594706,11,10,1.1,15.5,32,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/911-performance-statistics,11,11,1,48.45454545454545,35,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/who-we-are0,11,11,1,1.3636363636363635,42,0,0
+| Page 2 | OUC,/node,11,12,0.9166666666666666,2.75,49,0,0
+| Page 4 | OUC,/node,11,11,1,2.3636363636363638,48,0,0
+Events | OUC,/calendar/month/2025-04,10,10,1,22.2,42,0,0
+Mayor Bowser to Announce Life-Saving Technologies for DC Residents | OUC,/release/mayor-bowser-announce-life-saving-technologies-dc-residents,10,10,1,2.8,42,0,0
+OUC Information Technology | OUC,/am/page/ouc-information-technology,10,10,1,13.3,31,0,0
+OUC Opens Call Simulation Lab | OUC,/release/ouc-opens-call-simulation-lab,10,10,1,11,40,0,0
+Office of Unified Communications named 9-1-1 Center of the Year by DATAMARK Technologies | OUC,/release/office-unified-communications-named-9-1-1-center-year-datamark-technologies,10,8,1.25,21.375,24,0,0
+| Page 8 | OUC,/node,10,11,0.9090909090909091,2.4545454545454546,41,0,0
+911 Call Taker’s Actions Helps Save Woman’s Life | OUC,/release/911-call-taker’s-actions-helps-save-woman’s-life,9,8,1.125,5.75,28,0,0
+911 and 311 Industry News | OUC,/ar/node/1647446,9,8,1.125,11.5,31,0,0
+DC Agencies Partner with DC311 Call Center to Raise Awareness About Pandemic Relief for Utility Consumers | OUC,/release/dc-agencies-partner-dc311-call-center-raise-awareness-about-pandemic-relief-utility,9,9,1,27.444444444444443,36,0,0
+District Integrates 311-Service Request System with SeeClickFix | OUC,/release/district-integrates-311-service-request-system-seeclickfix,9,8,1.125,3.5,34,0,0
+Incident Tactical Dispatch (INTD) Training Class | 4 Day Training | OUC,/event/incident-tactical-dispatch-intd-training-class-4-day-training,9,7,1.2857142857142858,13,29,0,0
+"Mayor Bowser Launches Text to 911 in Washington, DC | OUC",/release/mayor-bowser-launches-text-911-washington-dc,9,9,1,2.4444444444444446,22,0,0
+My School DC Application Opens | OUC,/event/my-school-dc-application-opens,9,8,1.125,3.125,40,0,0
+OUC Brochure - Español | OUC,/publication/ouc-brochure-español,9,8,1.125,0.375,37,0,0
+OUC Is Honored by NG911 Institute | OUC,/release/ouc-honored-ng911-institute,9,9,1,3,40,0,0
+OUC Statement on DC 911 Operations Staffing - September 8 | OUC,/node/1679551,9,7,1.2857142857142858,2.7142857142857144,40,0,0
+Page not found | OUC,/sites/default/files/dc/sites/,9,7,1.2857142857142858,0,21,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/publication/,9,7,1.2857142857142858,0.2857142857142857,20,0,0
+Passing of OUC Chief Administrative Officer Yvonne McManus | OUC,/release/passing-ouc-chief-administrative-officer-yvonne-mcmanus,9,8,1.125,42.5,32,0,0
+Submit a FOIA request online | OUC,/external-link/submit-foia-request-online,9,8,1.125,0.125,28,0,0
+Supporting our Heroes in Headsets: OUC's Executive Team | OUC,/es/node/1456446,9,9,1,3.2222222222222223,42,0,0
+The District of Columbia Office of Unified Communications Receives National Honor for 9-1-1 Program | OUC,/release/district-columbia-office-unified-communications-receives-national-honor-9-1-1-program,9,8,1.125,1.375,36,0,0
+Veteran Public Affairs/Media Pro to Conduct OUC Outreach | OUC,/release/veteran-public-affairsmedia-pro-conduct-ouc-outreach,9,9,1,1.3333333333333333,37,0,0
+We are sorry; the page you requested is no longer available. | OUC,/node/240522,9,9,1,2.6666666666666665,41,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/freedom-information-act-foia,9,9,1,2.111111111111111,33,0,0
+| Page 11 | OUC,/node,9,9,1,4.888888888888889,39,0,0
+| Page 5 | OUC,/node,9,9,1,2,34,0,0
+911 Performance Dashboard BETA | OUC,/node/1679601,8,8,1,18,31,0,0
+911 for Emergency Services | OUC,/es/page/911-for-emergency-services,8,8,1,4.125,34,0,0
+District Unveils Unified Communications Center | OUC,/release/district-unveils-unified-communications-center,8,9,0.8888888888888888,5,37,0,0
+FCC Chairperson Genachowski Visits the Office of Unified Communications | OUC,/release/fcc-chairperson-genachowski-visits-office-unified-communications,8,8,1,2.375,36,0,0
+OUC Celebrates National 911 Education Month 2009 | OUC,/release/ouc-celebrates-national-911-education-month-2009,8,7,1.1428571428571428,2,31,0,0
+OUC Celebrates National Customer Service Week (Oct. 2-6) | OUC,/release/ouc-celebrates-national-customer-service-week-oct-2-6,8,8,1,2.875,38,0,0
+Online Services | OUC,/online-services,8,6,1.3333333333333333,11.166666666666666,22,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/page_content/attachments/60_OUC_Approved_Vendors_24.pdf,8,7,1.1428571428571428,8.428571428571429,19,0,0
+Professional Development Day (No School for Students) | OUC,/event/professional-development-day-no-school-students-3,8,8,1,1.375,37,0,0
+Testimony of Director Heather McGaffin - FY23 Agency Performance Oversight Hearing | OUC,/release/testimony-director-heather-mcgaffin-fy23-agency-performance-oversight-hearing,8,7,1.1428571428571428,2.7142857142857144,30,0,0
+"Testimony of Director Heather McGaffin - Public Hearing on B25-0953, the ""Transparency in Emergency Response Amendment Act of 2024"" | OUC",/release/testimony-director-heather-mcgaffin-public-hearing-b25-0953-transparency-emergency-response,8,8,1,0.875,29,0,0
+Testimony of Director Heather McGaffin - Public Roundtable on Recent Operational Failures and Incidents at the Office of Unified Communications | OUC,/release/testimony-director-heather-mcgaffin-public-roundtable-recent-operational-failures-and,8,8,1,1.25,33,0,0
+Thanksgiving Break (No School for Students) | OUC,/event/thanksgiving-break-no-school-students,8,8,1,1.875,34,0,0
+The Office of Unified Communications Responds to Council Member Charles Allen’s Inquiry Regarding the March 14 Washington Channel Incident | OUC,/release/office-unified-communications-responds-council-member-charles-allens-inquiry-regarding,8,7,1.1428571428571428,1.7142857142857142,30,0,0
+The Office of Unified Communications' Interoperability Summit | OUC,/event/office-unified-communications-interoperability-summit,8,6,1.3333333333333333,25.333333333333332,30,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/911-performance-dashboard,8,8,1,2.875,30,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/feedback,8,4,2,34.25,17,0,0
+| Page 10 | OUC,/node,8,8,1,5.875,30,0,0
+| Page 12 | OUC,/node,8,9,0.8888888888888888,4.555555555555555,33,0,0
+"1015 Half Street, SE, 9th Floor | OUC",/address/1015-half-street-se-9th-floor,7,8,0.875,3.125,29,0,0
+"1800 Martin Luther King Jr. Avenue, SE | OUC",/address/1800-martin-luther-king-jr-avenue-se,7,6,1.1666666666666667,5.833333333333333,32,0,0
+311 for City Services | OUC,/node/110182,7,2,3.5,8.5,14,0,0
+911 and 311 Industry News | OUC,/node/1647446,7,6,1.1666666666666667,2.6666666666666665,26,0,0
+911 for Emergency Services | OUC,/page/911-emergency-services,7,7,1,4,30,0,0
+ACT Test Date | OUC,/event/act-test-date-8,7,6,1.1666666666666667,5.166666666666667,31,0,0
+Chinese (中文) | OUC,/page/chinese1-中文-2,7,6,1.1666666666666667,29.666666666666668,19,0,0
+DC 9-1-1 Operator Wins Prestigious 9-1-1 Professional Award | OUC,/release/dc-9-1-1-operator-wins-prestigious-9-1-1-professional-award,7,7,1,1.1428571428571428,31,0,0
+District Integrates 311-Service Request System with SeeClickFix | OUC,/fr/release/district-integrates-311-service-request-system-seeclickfix,7,6,1.1666666666666667,0,19,0,0
+District of Columbia Selects PURVIS Systems for Fire Station Alerting System | OUC,/release/district-columbia-selects-purvis-systems-fire-station-alerting-system,7,6,1.1666666666666667,3.5,30,0,0
+Haga la llamada correcta | OUC,/ar/node/1770311,7,7,1,1.7142857142857142,30,0,0
+Janice Quintana Is Confirmed as OUC Director | OUC,/release/janice-quintana-confirmed-ouc-director,7,7,1,7.571428571428571,29,0,0
+Mayor Bowser Announces Key Appointments   | OUC,/release/mayor-bowser-announces-key-appointments  ,7,8,0.875,5,28,0,0
+Mayor Gray Announces Launch of New Smart-Phone App for 311 Users | OUC,/release/mayor-gray-announces-launch-new-smart-phone-app-311-users,7,7,1,2.2857142857142856,29,0,0
+"Mayor Muriel Bowser Announces Safer, Stronger, Brighter Initiative | OUC",/release/mayor-muriel-bowser-announces-safer-stronger-brighter-initiative,7,7,1,2.7142857142857144,33,0,0
+News Room | Page 2 | OUC,/es/newsroom,7,7,1,3.142857142857143,29,0,0
+OUC Announces New Junior Academy to Expose Students to Career Opportunities | OUC,/release/ouc-announces-new-junior-academy-expose-students-career-opportunities,7,6,1.1666666666666667,23,27,0,0
+OUC Brochure - አማርኛ | OUC,/es/publication/ouc-brochure-አማርኛ,7,7,1,3,30,0,0
+OUC Earns Platinum Award Status for One Fund Campaign Contributions | OUC,/release/ouc-earns-platinum-award-status-one-fund-campaign-contributions,7,7,1,4.428571428571429,30,0,0
+OUC Statement on DC 911 Operations Staffing - September 8 | OUC,/release/ouc-statement-dc-911-operations-staffing-september-8,7,7,1,16.285714285714285,18,0,0
+Page not found | OUC,/arcgis/rest/services/911PerformanceDashboard/FeatureServer,7,7,1,3.5714285714285716,28,0,0
+Page not found | OUC,/page/oucs-public-safety-building-radio-systems-requirements.,7,3,2.3333333333333335,32.333333333333336,16,0,0
+Public Transparency | OUC,/vi/node/1610201,7,6,1.1666666666666667,11,24,0,0
+Quicker 911 Operators Touted by DC Mayor | OUC,/release/quicker-911-operators-touted-dc-mayor,7,6,1.1666666666666667,12.666666666666666,29,0,0
+Smart911 - Español | OUC,/es/publication/smart-911-flyer-spanish,7,6,1.1666666666666667,7,30,0,0
+Smart911 - Español | OUC,/publication/smart911-español,7,7,1,3.2857142857142856,30,0,0
+Spanish (Español) | OUC,/es/node/735162,7,5,1.4,4.8,25,0,0
+Subpoenas | OUC,/es/page/subpoenas,7,6,1.1666666666666667,1.8333333333333333,28,0,0
+Testimony of Acting Director Heather McGaffin - Agency Performance Oversight Hearing | OUC,/release/testimony-acting-director-heather-mcgaffin-agency-performance-oversight-hearing,7,7,1,2.2857142857142856,29,0,0
+Text to 911 | OUC,/am/node/1265836,7,7,1,4.142857142857143,34,0,0
+Vietnamese (Tiếng Việt) | OUC,/am/page/vietnamese-tiếng-việt1,7,6,1.1666666666666667,2.3333333333333335,27,0,0
+Vietnamese (Tiếng Việt) | OUC,/page/vietnamese-tiếng-việt1,7,7,1,20.571428571428573,23,0,0
+| Page 56 | OUC,/node,7,8,0.875,3.625,32,0,0
+| Page 58 | OUC,/node,7,7,1,2.857142857142857,31,0,0
+| Page 59 | OUC,/node,7,7,1,4.857142857142857,32,0,0
+911 Performance Dashboard BETA | OUC,/zh-hant/node/1679601,6,6,1,14.666666666666666,26,0,0
+Amharic (አማርኛ) | OUC,/ar/page/amharic1-አማርኛ-,6,6,1,1.6666666666666667,26,0,0
+Become a 911 Professional! | OUC,/ar/node/1658746,6,5,1.2,4,25,0,0
+Chinese (中文) | OUC,/es/page/chinese1-中文-2,6,6,1,3.3333333333333335,28,0,0
+Cleo Subido appointed Interim Director of the Office of Unified Communications | OUC,/node/1518596,6,6,1,6.166666666666667,25,0,0
+Critical Incidents - Total Disaster Response | OUC,/event/critical-incidents-total-disaster-response,6,6,1,2.1666666666666665,28,0,0
+DC Implements ASAP | OUC,/release/dc-implements-asap,6,6,1,6.333333333333333,24,0,0
+Harvard Kennedy School Government Performance Lab Announces 2022-2023 Alternative 911 Emergency Response Implementation Cohort | OUC,/release/harvard-kennedy-school-government-performance-lab-announces-2022-2023-alternative-911,6,6,1,1.1666666666666667,24,0,0
+Mayor Bowser Launching New Mental Health Emergency Dispatch Pilot Program | OUC,/release/mayor-bowser-launching-new-mental-health-emergency-dispatch-pilot-program-0,6,7,0.8571428571428571,2.7142857142857144,28,0,0
+"Mayor Bowser to Launch Text to 911 in Washington, DC | OUC",/release/mayor-bowser-launch-text-911-washington-dc,6,6,1,2.5,25,0,0
+OUC Brochure - 中文 | OUC,/am/publication/ouc-brochure-中文,6,6,1,2.6666666666666665,24,0,0
+OUC Director Discusses State of the Agency | OUC,/release/ouc-director-discusses-state-agency,6,7,0.8571428571428571,3.2857142857142856,23,0,0
+OUC Named PSAP of the Year by NICE Comms | OUC,/release/ouc-named-psap-year-nice-comms,6,6,1,2.3333333333333335,25,0,0
+"OUC to Host 9-1-1 Community Block Party on Friday, April 22 | OUC",/release/ouc-host-9-1-1-community-block-party-friday-april-22,6,7,0.8571428571428571,2.2857142857142856,29,0,0
+Office of Unified Communications launches Next Generation Training Academy | OUC,/release/office-unified-communications-launches-next-generation-training-academy,6,7,0.8571428571428571,4.285714285714286,23,0,0
+Office of Unified Communications named 9-1-1 Center of the Year by DATAMARK Technologies | OUC,/node/1779651,6,7,0.8571428571428571,3.4285714285714284,25,0,0
+Request a Site Visit or Tour | OUC,/es/service/request-site-visit-or-tour,6,6,1,0.3333333333333333,23,0,0
+Smart911 - 한국어 | OUC,/ar/publication/smart-911-flyer-korean,6,5,1.2,0.4,25,0,0
+THOR Equipment Dimensions and Weights | OUC,/publication/thor-equipment-dimensions-and-weights,6,6,1,3,16,0,0
+Testimony of Director Heather McGaffin - FY25 Budget Oversight Hearing | OUC,/release/testimony-director-heather-mcgaffin-fy25-budget-oversight-hearing,6,6,1,2.8333333333333335,27,0,0
+"Testimony of Director Heather McGaffin - Public Hearing on B25-0953, the ""Transparency in Emergency Response Amendment Act of 2024"" | OUC",/node/1761206,6,7,0.8571428571428571,2.5714285714285716,29,0,0
+UCC Wins NASCIO Award for Business Continuity and Disaster Recovery | OUC,/release/ucc-wins-nascio-award-business-continuity-and-disaster-recovery,6,5,1.2,2,24,0,0
+Vietnamese (Tiếng Việt) | OUC,/ar/page/vietnamese-tiếng-việt1,6,6,1,0.8333333333333334,23,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/ddoe-french,6,6,1,2.6666666666666665,27,0,0
+We are sorry; the page you requested is no longer available. | OUC,/publication/ouc-organizational-chart,6,6,1,2,25,0,0
+| Page 13 | OUC,/node,6,6,1,3.6666666666666665,27,0,0
+2020-2022 Strategic Plan | OUC,/publication/2020-2022-strategic-plan,5,3,1.6666666666666667,4,12,0,0
+About 911 | OUC,/es/page/911-about,5,5,1,1.6,21,0,0
+About Our Dispatch System | OUC,/ar/page/about-our-dispatch-system,5,4,1.25,2.5,19,0,0
+About Our Dispatch System | OUC,/es/page/about-our-dispatch-system,5,5,1,3.2,22,0,0
+About the Unified Communications Center (UCC) | OUC,/ar/page/about-unified-communications-center-ucc,5,5,1,2.4,22,0,0
+Become a 911 Professional! | OUC,/node/1658746,5,4,1.25,43,11,0,0
+Bowser Administration Announces a Police Non-Emergency Line | OUC,/release/bowser-administration-announces-police-non-emergency-line,5,5,1,4.4,22,0,0
+DC 3-1-1 and DPR’s Crank Music Program Integrate Go-Go Music into Customer Service Calls | OUC,/release/dc-3-1-1-and-dpr’s-crank-music-program-integrate-go-go-music-customer-service-calls,5,5,1,4,20,0,0
+District Consolidates Law Enforcement Call Centers at UCC | OUC,/release/district-consolidates-law-enforcement-call-centers-ucc,5,5,1,2.2,25,0,0
+"Executive Summary of After Action Report: Frederick Douglass Memorial Bridge Incident on Thursday, April 20, 2023 | OUC",/node/1672831,5,5,1,1.2,20,0,0
+"Executive Summary of After Action Report: Frederick Douglass Memorial Bridge Incident on Thursday, April 20, 2023 | OUC",/release/executive-summary-after-action-report-frederick-douglass-memorial-bridge-incident-thursday,5,5,1,1.8,20,0,0
+Fire Service Communications | OUC,/event/fire-service-communications,5,4,1.25,4.25,17,0,0
+GỌI ĐÚNG SỐ | OUC,/ar/node/1770336,5,5,1,1.8,22,0,0
+History of OUC | OUC,/es/page/history-ouc,5,6,0.8333333333333334,7,26,0,0
+Mayor Bowser and District Officials Commemorate 10th Anniversary of 911 and 311 Consolidation | OUC,/release/mayor-bowser-and-district-officials-commemorate-10th-anniversary-911-and-311-consolidation,5,6,0.8333333333333334,3.8333333333333335,24,0,0
+Mayor Bowser to Highlight Tips to Avoid “Smash and Grab” Thefts | OUC,/release/mayor-bowser-highlight-tips-avoid-“smash-and-grab”-thefts,5,6,0.8333333333333334,4.833333333333333,28,0,0
+Mayor Vincent C. Gray Launches DC’s New Smart911 Service | OUC,/release/mayor-vincent-c-gray-launches-dc’s-new-smart911-service1,5,5,1,3.6,21,0,0
+NG9-1-1 Institute Celebrates April as National 9-1-1 Education Month | OUC,/release/ng9-1-1-institute-celebrates-april-national-9-1-1-education-month,5,5,1,4.2,24,0,0
+News Room | OUC,/newsroom/in_the_news,5,6,0.8333333333333334,2.8333333333333335,23,0,0
+OUC Brochure - Español | OUC,/ar/publication/ouc-brochure-español,5,5,1,3,22,0,0
+OUC Holds First 911 Telecommunicator Prospect Day | OUC,/node/1660286,5,5,1,1.2,21,0,0
+OUC Response to DC Auditor's 9-1-1 Operations Division Audit and Process Improvement Recommendations Follow-Up Report | OUC,/node/1651726,5,5,1,2,24,0,0
+OUC in Pictures | OUC,/am/page/ouc-pictures,5,5,1,3,23,0,0
+OUC to Host Second Annual Technology Rally | OUC,/release/ouc-host-second-annual-technology-rally,5,5,1,0.6,18,0,0
+OUC’s Public Safety In-building Radio Systems Requirements | OUC,/ar/node/1248551,5,5,1,4,21,0,0
+Page not found | OUC,/api/v1,5,5,1,1.6,19,0,0
+Page not found | OUC,/arcgis/rest/services/911PerformanceDashboardBeta/FeatureServer,5,5,1,4.4,20,0,0
+Page not found | OUC,/page/b3Vjcy1wdW,5,4,1.25,6.75,15,0,0
+Page not found | OUC,/page/oucs-public-safety-building-radio-systems­requirements,5,2,2.5,0,12,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/publication/attachments/,5,4,1.25,0.75,12,0,0
+Para solicitar la presencia de un Policía para asuntos que NO sean de Emergencias | OUC,/ar/node/1770316,5,5,1,3.4,22,0,0
+Passing of 311 Operations Chief Erick Hines | OUC,/release/passing-311-operations-chief-erick-hines,5,5,1,12.4,18,0,0
+Pour la police Pas d’urgence | OUC,/ar/node/1770326,5,5,1,0.8,19,0,0
+Procedures for the Remittance and Reporting of 911 Fees | OUC,/publication/procedures-remittance-and-reporting-911-fees,5,5,1,3,24,0,0
+Smart 911 Registration for Seniors | OUC,/event/smart-911-registration-seniors,5,2,2.5,10,14,0,0
+Smart911 - Español | OUC,/publication/smart-911-flyer-spanish,5,5,1,2,22,0,0
+Smart911 - Français | OUC,/ar/publication/smart911-français,5,5,1,3.6,21,0,0
+Smart911 - Français | OUC,/publication/smart-911-flyer-french,5,5,1,2.4,20,0,0
+Supporting our Heroes in Headsets: OUC's Executive Team | OUC,/ar/node/1456446,5,4,1.25,0.75,22,0,0
+Supporting our Heroes in Headsets: OUC's Executive Team | OUC,/node/1456446,5,5,1,1.4,19,0,0
+Testimony of Acting Director Heather McGaffin - Agency Performance Oversight Hearing | OUC,/node/1647861,5,5,1,3.8,22,0,0
+Testimony of Director Heather McGaffin - Joint Public Roundtable on Technology and Inter-Agency Coordination Issues at the Office of Unified Communications | OUC,/node/1761211,5,5,1,3,22,0,0
+The DC311 Call Center Celebrates National 3-1-1 Day | OUC,/release/dc311-call-center-celebrates-national-3-1-1-day,5,5,1,1.8,21,0,0
+Unified Communications Center Loses Electrical Power | OUC,/release/unified-communications-center-loses-electrical-power,5,5,1,2.4,22,0,0
+Unofficial Transcript 10-12-2015 Incident | OUC,/release/unofficial-transcript-10-12-2015-incident,5,6,0.8333333333333334,2.3333333333333335,23,0,0
+Washington DC Wins 2013-2015 Citizen-Engaged Community Award | OUC,/am/release/washington-dc-wins-2013-2015-citizen-engaged-community-award,5,4,1.25,4.25,18,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/ouc-performance-metrics1,5,5,1,1.6,23,0,0
+We are sorry; the page you requested is no longer available. | OUC,/user/logout,5,1,5,88,10,0,0
+| Page 17 | OUC,/node,5,4,1.25,0.75,17,0,0
+| Page 61 | OUC,/node,5,5,1,5,24,0,0
+ትክክለኛው ቁጥር ላይ ይደውሉ (Amharic) | OUC,/ar/node/1770301,5,5,1,1.6,18,0,0
+다음을 포함한 경찰 비긴급 상황의 경우 | OUC,/ar/node/1770361,5,5,1,1.2,19,0,0
+911 Direct Connect Program | OUC,/am/page/911-direct-connect-program,4,4,1,1.5,17,0,0
+911 Service Interruption | OUC,/release/911-service-interruption,4,4,1,4.5,15,0,0
+Agency Performance - OUC | OUC,/external-link/agency-performance-ouc,4,4,1,0,12,0,0
+COML Training Course | OUC,/event/coml-training-course,4,4,1,13,16,0,0
+Cleo Subido appointed Interim Director of the Office of Unified Communications | OUC,/release/cleo-subido-appointed-interim-director-office-unified-communications,4,3,1.3333333333333333,277.6666666666667,9,0,0
+Department of General Services Requests for Service are Expanded on the DC311 System | OUC,/release/department-general-services-requests-service-are-expanded-dc311-system-0,4,4,1,0.5,17,0,0
+Emergency Management Assistance Compact (EMAC) | OUC,/event/emergency-management-assistance-compact-emac,4,3,1.3333333333333333,12,11,0,0
+"Final Review of 600 Block of Park Rd NW Call on August 9, 2022 | OUC",/release/final-review-600-block-park-rd-nw-call-august-9-2022,4,4,1,2.25,17,0,0
+French (Français) | OUC,/page/french-français1,4,4,1,0.5,9,0,0
+Interoperability and Mutual Aid Awareness for | OUC,/event/interoperability-and-mutual-aid-awareness,4,3,1.3333333333333333,10,12,0,0
+It’s Spooky to Not Know Your Address | OUC,/release/it’s-spooky-not-know-your-address,4,4,1,3.75,17,0,0
+Mayor Bowser Announces Director of the Office of Unified Communications | OUC,/am/release/mayor-bowser-announces-director-office-unified-communications,4,4,1,2.75,17,0,0
+Mayor Bowser Announces New Life-Saving Technologies | OUC,/release/mayor-bowser-announces-new-life-saving-technologies,4,4,1,4.25,15,0,0
+"Mayor Bowser Launches Text to 911 in Washington, DC | OUC",/ar/release/mayor-bowser-launches-text-911-washington-dc,4,4,1,2.5,19,0,0
+NG 9-1-1 Institute Hosts Tour of OUC Facility | OUC,/release/ng-9-1-1-institute-hosts-tour-ouc-facility,4,4,1,1,17,0,0
+OUC Announces New Junior Academy to Expose Students to Career Opportunities | OUC,/node/1646066,4,4,1,1.5,16,0,0
+OUC Brochure - Français | OUC,/es/publication/ouc-brochure-français,4,4,1,0.75,16,0,0
+OUC Celebrates National 911 Education Month 2010 | OUC,/release/ouc-celebrates-national-911-education-month-2010,4,4,1,2.5,19,0,0
+OUC Citizen Engagement Academy | OUC,/page/ouc-citizen-engagement-academy,4,4,1,4,17,0,0
+OUC Donates Nearly 1000 Pounds of Food to Those in Need | OUC,/release/ouc-donates-nearly-1000-pounds-food-those-need,4,4,1,0.75,17,0,0
+OUC Employee Awards Ceremony | OUC,/am/node/1310846,4,5,0.8,5.4,22,0,0
+OUC Job Fair Draws Over 800 Applicants | OUC,/release/ouc-job-fair-draws-over-800-applicants,4,5,0.8,5.4,18,0,0
+OUC Radio Engineering | OUC,/ar/page/ouc-radio-engineering,4,4,1,1.75,18,0,0
+"OUC Statement on July 3, 2022 Incident on Savannah Terrace, SE | OUC",/release/ouc-statement-july-3-2022-incident-savannah-terrace-se,4,5,0.8,3.6,18,0,0
+OUC Statement on Radio Interference | OUC,/node/1771041,4,5,0.8,6.8,20,0,0
+Open Government and FOIA - OUC | OUC,/ar/page/open-government-and-foia-ouc,4,4,1,4,15,0,0
+Page not found | OUC,/api,4,4,1,1.5,15,0,0
+Page not found | OUC,/arcgis/rest/services/911Performance/FeatureServer,4,4,1,145,14,0,0
+Page not found | OUC,/arcgis/rest/services/911PerformanceDashboard/MapServer,4,4,1,2.25,16,0,0
+Page not found | OUC,/page/oucs-public-safety-building-radiosystems-requirements,4,2,2,5.5,10,0,0
+Page not found | OUC,/performance,4,4,1,17.75,15,0,0
+Page not found | OUC,/sites/default/files/,4,3,1.3333333333333333,0,6,0,0
+Page not found | OUC,/sites/default/files/dc/,4,4,1,1,12,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/page_content/attachments/6.1 Transmission authorization request form.pdf,4,2,2,9.5,10,0,0
+Passing of 311 Operations Chief Erick Hines | OUC,/node/1476846,4,4,1,2,18,0,0
+Quicker 911 Operators Touted by DC Mayor | OUC,/fr/release/quicker-911-operators-touted-dc-mayor,4,2,2,0,6,0,0
+Repeats | OUC,/node/1310846/repeats,4,5,0.8,4.8,19,0,0
+Smart 911 Flyer - Tiếng Việt | OUC,/ar/publication/smart-911-flyer-tiếng-việt,4,4,1,4.25,18,0,0
+Smart 911 Flyer - 中文 | OUC,/am/publication/smart-911-flyer-chinese,4,5,0.8,5.2,16,0,0
+Smart 911 Flyer - 中文 | OUC,/ar/publication/smart-911-flyer-chinese,4,4,1,2.75,19,0,0
+Smart911 - Español | OUC,/fr/publication/smart911-español,4,4,1,1.75,17,0,0
+Smart911 - አማርኛ | OUC,/es/publication/smart-911-flyer-amharic,4,4,1,3,20,0,0
+Supporting our Heroes in Headsets: OUC's Executive Team | OUC,/am/node/1456446,4,4,1,7.25,12,0,0
+Term 2 Midpoint (Progress Reports Mailed) | OUC,/event/term-2-midpoint-progress-reports-mailed,4,5,0.8,5.2,18,0,0
+Testimony of Acting Director Heather McGaffin - FY24 Budget Oversight Hearing | OUC,/node/1653006,4,4,1,1,18,0,0
+Testimony of Acting Director Heather McGaffin - FY24 Budget Oversight Hearing | OUC,/release/testimony-acting-director-heather-mcgaffin-fy24-budget-oversight-hearing,4,4,1,1,15,0,0
+Testimony of Director Heather McGaffin - FY23 Agency Performance Oversight Hearing | OUC,/node/1706336,4,4,1,4.25,18,0,0
+Testimony of Director Heather McGaffin - FY25 Budget Oversight Hearing | OUC,/node/1721111,4,4,1,3.75,18,0,0
+UCC Grand Opening Day Program | OUC,/publication/ucc-grand-opening-day-program,4,4,1,1,17,0,0
+Unified Communications Center Loses Electrical Power - Update | OUC,/release/unified-communications-center-loses-electrical-power-update,4,5,0.8,3.6,19,0,0
+Washington DC Wins 2013-2015 Citizen-Engaged Community Award | OUC,/ar/release/washington-dc-wins-2013-2015-citizen-engaged-community-award,4,4,1,3,16,0,0
+We Answer The Call | OUC,/node/1594706,4,4,1,2.25,14,0,0
+| OUC,/es,4,4,1,1.5,17,0,0
+| Page 2 | OUC,/es/node,4,4,1,2,17,0,0
+| Page 57 | OUC,/node,4,4,1,7.5,18,0,0
+| Page 60 | OUC,/node,4,4,1,2,18,0,0
+| Page 64 | OUC,/node,4,4,1,2,17,0,0
+ትክክለኛው ቁጥር ላይ ይደውሉ (Amharic) | OUC,/vi/node/1770301,4,4,1,3.75,20,0,0
+對於警察非緊急情況 | OUC,/ar/node/1770356,4,4,1,1.5,17,0,0
+撥打正確的電話 | OUC,/ar/node/1770341,4,5,0.8,4.4,17,0,0
+다음을 포함한 경찰 비긴급 상황의 경우 | OUC,/es/node/1770361,4,4,1,2.5,17,0,0
+"1015 Half Street, SE, 9th Floor | OUC",/es/node/1332701,3,3,1,3,14,0,0
+311 Community Walks | OUC,/page/311-community-walks,3,3,1,12,8,0,0
+911 Education | OUC,/fr/node/1525001,3,3,1,17,21,0,0
+911 Fund | OUC,/am/page/911-fund,3,3,1,1.3333333333333333,13,0,0
+About OUC | OUC,/ar/page/about-ouc,3,3,1,1.3333333333333333,14,0,0
+About OUC | OUC,/vi/page/about-ouc,3,1,3,2,11,0,0
+"Bowser Administration Launches New “Make the Right Call” Campaign, Urging Residents to Only Use 911 for Emergencies | OUC",/node/1754346,3,2,1.5,33.5,6,0,0
+Communications Training Officer | OUC,/event/communications-training-officer,3,3,1,23,11,0,0
+DC 311 Mobile App | OUC,/page/dc-311-smartphone-app,3,3,1,2,15,0,0
+DC 311 Mobile App | OUC,/page/dc311-mobile-app,3,3,1,2,13,0,0
+Electronics Engineer | OUC,/release/electronics-engineer,3,3,1,6,12,0,0
+Feedback | OUC,/page/feedback-0,3,3,1,2,13,0,0
+"Frequently Asked Questions Right Care, Right Now | OUC",/page/frequently-asked-questions-right-care-right-now,3,3,1,14,12,0,0
+Korean (한국어) | OUC,/ar/page/korean1-한국어,3,3,1,4.333333333333333,12,0,0
+Liability Issues in the 9-1-1 Center | OUC,/event/liability-issues-9-1-1-center,3,3,1,6,10,0,0
+OUC Brochure - Français | OUC,/publication/ouc-brochure-français,3,3,1,0,13,0,0
+OUC Brochure - 中文 | OUC,/publication/ouc-brochure-中文,3,3,1,0,13,0,0
+OUC Brochure - 한국어 | OUC,/ar/publication/ouc-brochure-한국어,3,3,1,2.6666666666666665,14,0,0
+OUC Community Outreach | OUC,/ar/service/ouc-community-outreach,3,3,1,0.6666666666666666,14,0,0
+OUC Feedback Form | OUC,/fr/node/1647421,3,3,1,6,13,0,0
+OUC Radio Engineering | OUC,/es/page/ouc-radio-engineering,3,3,1,112.33333333333333,11,0,0
+OUC Response to DC Auditor's 9-1-1 Operations Division Audit and Process Improvement Recommendations Follow-Up Report | OUC,/release/ouc-response-dc-auditors-9-1-1-operations-division-audit-and-process-improvement,3,5,0.6,4.8,17,0,0
+OUC Statement on Radio Interference | OUC,/vi/node/1771041,3,3,1,2.3333333333333335,10,0,0
+OUC/311 on Twitter | OUC,/external-link/ouc311-twitter,3,3,1,0.3333333333333333,4,0,0
+OUC’s Public Safety In-building Radio Systems Requirements | OUC,/node/1248551,3,3,1,3,15,0,0
+Open Government and FOIA - OUC | OUC,/am/page/open-government-and-foia-ouc,3,4,0.75,5.25,14,0,0
+Our Offices and Divisions | OUC,/vi/node/1610186,3,3,1,14.333333333333334,7,0,0
+PASSEZ LE BON APPEL | OUC,/ar/node/1770321,3,3,1,1,12,0,0
+PASSEZ LE BON APPEL | OUC,/node/1770321,3,3,1,1,13,0,0
+Page not found | OUC,/2025/04/30,3,3,1,4,12,0,0
+Page not found | OUC,/911-performance-dashboard-beta,3,3,1,2.6666666666666665,12,0,0
+Page not found | OUC,/api/v1/911,3,3,1,2,12,0,0
+Page not found | OUC,/arcgis/rest/services/911 Performance Dashboard Beta/FeatureServer,3,3,1,3,12,0,0
+Page not found | OUC,/page/911-performance-dashboard-beta/FeatureServer,3,3,1,3.3333333333333335,12,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/,3,3,1,0,3,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/page_content/attachments/OUC Statistics & Data FY22 to date.pdf,3,3,1,1.3333333333333333,11,0,0
+Public Transparency | OUC,/page/ouc-statistics-data,3,3,1,4.666666666666667,13,0,0
+Smart911 - አማርኛ | OUC,/node/957392,3,3,1,3,14,0,0
+Smart911 - 한국어 | OUC,/es/publication/smart-911-flyer-korean,3,3,1,3.3333333333333335,15,0,0
+Sovereign Citizen Extremists | OUC,/event/sovereign-citizen-extremists-0,3,3,1,17.333333333333332,12,0,0
+Testimony of Director Heather McGaffin - Joint Public Roundtable on Technology and Inter-Agency Coordination Issues at the Office of Unified Communications | OUC,/release/testimony-director-heather-mcgaffin-joint-public-roundtable-technology-and-inter-agency,3,3,1,2.6666666666666665,9,0,0
+We are sorry; the page you requested is no longer available. | OUC,/node/1647421,3,2,1.5,1,11,0,0
+| Page 16 | OUC,/node,3,3,1,3,12,0,0
+| Page 47 | OUC,/node,3,3,1,4.666666666666667,14,0,0
+| Page 5 | OUC,/es/node,3,3,1,1,11,0,0
+| Page 55 | OUC,/node,3,3,1,1.3333333333333333,12,0,0
+| Page 62 | OUC,/node,3,3,1,2.6666666666666665,12,0,0
+| Page 9 | OUC,/es/node,3,3,1,4.666666666666667,11,0,0
+ድንገተኛ አስቸኳይ ሆኑ ጉዳዮች ቀጥሎ የተመለከቱትን ጨምሮ | OUC,/ar/node/1770306,3,3,1,3.6666666666666665,15,0,0
+필요에 맞는 전화를 하십시오 | OUC,/ar/node/1770331,3,3,1,6.666666666666667,13,0,0
+9-1-1 Center Supervisor Program | OUC,/event/9-1-1-center-supervisor-program,2,1,2,30,6,0,0
+911 Direct Connect Program | OUC,/es/page/911-direct-connect-program,2,2,1,5.5,8,0,0
+911 Fund | OUC,/ar/page/911-fund,2,2,1,5,11,0,0
+911 Operations Audit Road Map | OUC,/ko/node/1622646,2,2,1,0,6,0,0
+911 Performance Dashboard BETA | OUC,/ar/node/1679601,2,2,1,6,8,0,0
+911 Performance Dashboard BETA | OUC,/fr/node/1679601,2,2,1,22.5,8,0,0
+Active Shooter Incidents for Public Safety Communications | OUC,/node/1314086/metrics/aggregate,2,2,1,4.5,8,0,0
+"Bowser Administration and Uber Launch 911 In-App Feature, Improving Emergency Responses for DC Ride-Sharing Passengers | OUC",/release/bowser-administration-and-uber-launch-911-app-feature-improving-emergency-responses-dc-ride,2,2,1,3.5,8,0,0
+Call 311 for Police Non-Emergencies | OUC,/node/1379591,2,2,1,1.5,8,0,0
+Chancellor Community Forums | OUC,/event/chancellor-community-forums-0,2,2,1,5.5,10,0,0
+DC Office of Unified Communications and RapidSOS Roll Out New Lifesaving 911 Technology Deployed Across the District | OUC,/release/dc-office-unified-communications-and-rapidsos-roll-out-new-lifesaving-911-technology,2,2,1,0,6,0,0
+Department of General Services Accepts Grounds Maintenance Requests Via 311 | OUC,/release/department-general-services-accepts-grounds-maintenance-requests-311-ouc,2,2,1,37.5,7,0,0
+Deputy Mayor’s Report Regarding Rhode Island Avenue Incident | OUC,/release/deputy-mayor’s-report-regarding-rhode-island-avenue-incident,2,2,1,1,12,0,0
+Disability Awareness for 911 Telecommunications | OUC,/event/disability-awareness-911-telecommunications,2,1,2,0,4,0,0
+District Unveils Unified Communications Center | OUC,/am/release/district-unveils-unified-communications-center,2,2,1,1.5,10,0,0
+District of Columbia Selects PURVIS Systems for Fire Station Alerting System | OUC,/am/release/district-columbia-selects-purvis-systems-fire-station-alerting-system,2,2,1,0,6,0,0
+E911 Caucus Co-Chairs Senator Clinton and Representative Shimkus and FCC Public Safety Bureau Chief Poarch Honor Public Safety Telecommunicators | OUC,/release/e911-caucus-co-chairs-senator-clinton-and-representative-shimkus-and-fcc-public-safety,2,2,1,0,10,0,0
+EdFest | OUC,/es/node/1285646,2,2,1,0.5,8,0,0
+EdFest | OUC,/event/edfest-1,2,2,1,25,9,0,0
+Events | OUC,/calendar/month/2025-02,2,2,1,9,9,0,0
+Events | OUC,/calendar/month/2025-07,2,2,1,2.5,9,0,0
+Fenty Launches 311 Phone Number to Request City Services | OUC,/release/fenty-launches-311-phone-number-request-city-services,2,2,1,4.5,9,0,0
+French (Français) | OUC,/es/page/french-français1,2,2,1,2,8,0,0
+Heather McGaffin | OUC,/biography/karima-holmes,2,2,1,2,10,0,0
+History of OUC | OUC,/am/page/history-ouc,2,1,2,36,6,0,0
+Industry Council for Emergency Response Technologies (iCERT) | OUC,/external-link/industry-council-emergency-response-technologies-icert,2,2,1,0,8,0,0
+Korean (한국어) | OUC,/es/page/korean1-한국어,2,2,1,12.5,7,0,0
+Mayor Bowser Announces Director of the Office of Unified Communications | OUC,/release/mayor-bowser-announces-director-office-unified-communications,2,2,1,0,9,0,0
+News Room | Page 4 | OUC,/es/newsroom,2,2,1,0,8,0,0
+News Room | Page 8 | OUC,/es/newsroom,2,2,1,7,9,0,0
+News Room | Page 9 | OUC,/ar/newsroom,2,2,1,4.5,10,0,0
+OUC 2014 Open Government Report | OUC,/publication/ouc-2014-open-government-report,2,2,1,0,10,0,0
+OUC Brochure - Tiếng Việt | OUC,/publication/ouc-brochure-tiếng-việt,2,3,0.6666666666666666,0,8,0,0
+OUC Brochure - አማርኛ | OUC,/publication/ouc-brochure-አማርኛ,2,2,1,0,8,0,0
+OUC Brochure - 한국어 | OUC,/publication/ouc-brochure-한국어,2,2,1,0.5,10,0,0
+OUC Employee Awards Ceremony | OUC,/node/1310846,2,2,1,5.5,8,0,0
+OUC Holds First 911 Telecommunicator Prospect Day | OUC,/release/ouc-holds-first-911-telecommunicator-prospect-day,2,2,1,5.5,6,0,0
+OUC Junior Academy | OUC,/am/page/junior-academy,2,2,1,2.5,8,0,0
+OUC Statement on Text to 911 - September 6 | OUC,/release/ouc-statement-text-911-september-6,2,2,1,3,10,0,0
+"OUC Statement on the September 18, 2022 Incident in the 600 block of H Street, NE | OUC",/release/ouc-statement-september-18-2022-incident-600-block-h-street-ne,2,3,0.6666666666666666,6,11,0,0
+Page not found | OUC,/911-performance-dashboard,2,2,1,61.5,6,0,0
+Page not found | OUC,/api/data/911-performance,2,2,1,0,6,0,0
+Page not found | OUC,/api/v1/averageAnswerTime,2,2,1,2,8,0,0
+Page not found | OUC,/apps/911-performance-dashboard-beta,2,2,1,4.5,8,0,0
+Page not found | OUC,/apps/DCGIS::911-performance-dashboard-beta,2,2,1,4,8,0,0
+Page not found | OUC,/arcgis,2,2,1,8.5,8,0,0
+Page not found | OUC,/arcgis/rest/services/911PerformanceDashboard/FeatureServer/0/query,2,2,1,4,8,0,0
+Page not found | OUC,/arcgis/rest/services/911PerformanceDashboardBeta/MapServer,2,2,1,2,7,0,0
+Page not found | OUC,/arcgis/rest/services/UP/DCS/911_Performance_Beta/MapServer/0/query,2,2,1,0,6,0,0
+Page not found | OUC,/calendar/2025-04-30,2,2,1,2,9,0,0
+Page not found | OUC,/ogc/api/records/1.0/collections,2,2,1,3,8,0,0
+Page not found | OUC,/page/911-performance-dashboard-beta/rows.json,2,2,1,0,6,0,0
+Page not found | OUC,/page/Y2FsbC0zMT,2,2,1,25.5,4,0,0
+Page not found | OUC,/page/ZGMtMzExLW,2,2,1,8.5,5,0,0
+Page not found | OUC,/page/connect-ouc,2,1,2,0,3,0,0
+Page not found | OUC,/page/dbh-and-ouc-mental-health-emergency-dispatch-programv,2,2,1,4.5,8,0,0
+Page not found | OUC,/page/fy-2025-performance-plan,2,2,1,1,5,0,0
+Page not found | OUC,/page/open-government-and-foia-ouc.”](https:/ouc.dc.gov/page/open-government-and-foia-ouc.”,2,2,1,8.5,8,0,0
+Page not found | OUC,/page/oucs-public-safetybuilding-radio-systems-requirements,2,1,2,4,5,0,0
+Page not found | OUC,/page/oucspublic-safety-building-radio-systems-requirements,2,2,1,7.5,7,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/OUC_2025-04-30.pdf,2,2,1,17.5,6,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/page_content/attachments/OUC Statistics & Data_FY23 to date.pdf,2,2,1,3.5,8,0,0
+Page not found | OUC,/sites/default/files/public/911-performance/2023-04-30/average_answer_time.json,2,2,1,0,6,0,0
+Page not found | OUC,/sites/default/files/public/911-performance/2024-04-30/average_answer_time.json,2,2,1,0,6,0,0
+Publications List | OUC,/publications-list,2,2,1,5.5,7,0,0
+Publications | OUC,/publications,2,2,1,7.5,8,0,0
+Publications | Page 3 | OUC,/publications,2,2,1,3,7,0,0
+Repeats | OUC,/node/1346506/repeats,2,1,2,9,3,0,0
+Smart 911 Flyer - Tiếng Việt | OUC,/es/publication/smart-911-flyer-vietnamese,2,2,1,2,9,0,0
+Smart 911 Flyer - 中文 | OUC,/publication/smart-911-flyer-chinese,2,2,1,1,11,0,0
+Smart911 - 한국어 | OUC,/publication/smart-911-flyer-korean,2,2,1,0.5,11,0,0
+Testimony of Director Heather McGaffin - FY24 Agency Performance Oversight Hearing | OUC,/ko/node/1767101,2,2,1,2.5,8,0,0
+Testimony of Director Heather McGaffin - FY26 Budget Oversight Hearing | OUC,/vi/node/1785881,2,2,1,2.5,8,0,0
+Text to 911 | OUC,/vi/node/1265836,2,2,1,3,9,0,0
+The District of Columbia Office of Unified Communications Receives National Honor for 9-1-1 Program | OUC,/ko/release/district-columbia-office-unified-communications-receives-national-honor-9-1-1-program,2,2,1,0,4,0,0
+The Office of Unified Communications Celebrates National 9-1-1 Education Month | OUC,/release/office-unified-communications-celebrates-national-9-1-1-education-month,2,4,0.5,5.5,12,0,0
+Unified Communications Center Photo Gallery | OUC,/ar/page/unified-communications-center-photo-gallery,2,2,1,0,7,0,0
+Unofficial Transcript 10-12-2015 Incident | OUC,/am/release/unofficial-transcript-10-12-2015-incident,2,2,1,5,11,0,0
+We are sorry; the page you requested is no longer available. | OUC,/biography/cleo-subido,2,2,1,2.5,8,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/contact-us,2,2,1,0,4,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/office-professional-standards-and-development,2,2,1,1,7,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/ouc-who-we-are,2,2,1,3,9,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/performance,2,2,1,1,7,0,0
+We are sorry; the page you requested is no longer available. | OUC,/release/telecommunications-equipment-operator-911-call-taker,2,2,1,25.5,5,0,0
+We are sorry; the page you requested is no longer available. | OUC,/search,2,2,1,1,7,0,0
+Webcasts | DC,/webcasts,2,1,2,0,6,0,0
+What is Text to 311? | OUC,/ar/page/what-text-311,2,2,1,7.5,9,0,0
+| OUC,/es/node,2,2,1,5.5,9,0,0
+| Page 14 | OUC,/node,2,2,1,3.5,8,0,0
+| Page 54 | OUC,/node,2,2,1,2.5,10,0,0
+| Page 7 | OUC,/es/node,2,2,1,5,8,0,0
+ትክክለኛው ቁጥር ላይ ይደውሉ (Amharic) | OUC,/node/1770301,2,2,1,4.5,10,0,0
+311 Community Walks | OUC,/fr/node/1610196,1,1,1,0,3,0,0
+911 Direct Connect Program | OUC,/ar/page/911-direct-connect-program,1,1,1,1,5,0,0
+911 Fund | OUC,/fr/page/911-fund,1,1,1,1,3,0,0
+911 Performance Dashboard BETA | OUC,/vi/node/1679601,1,1,1,13,4,0,0
+911 Statistics Performance Dashboard | OUC,/am/node/1679491,1,1,1,3,4,0,0
+911 and 311 Industry News | OUC,/fr/node/1647446,1,1,1,2,4,0,0
+911 and 311 Industry News | OUC,/release/911-and-311-industry-news-week-march-20-2023,1,1,1,0,5,0,0
+911 for Emergency Services | OUC,/ar/page/911-for-emergency-services,1,1,1,48,2,0,0
+911 untuk Layanan Darurat | OUC,/page/911-for-emergency-services,1,1,1,12,4,0,0
+About 311 | OUC,/vi/page/311-about,1,2,0.5,11,6,0,0
+Amharic (አማርኛ) | OUC,/page/amharic-አማርኛ-2,1,1,1,0,5,0,0
+Assistant Watch Commander | OUC,/node/1686866,1,1,1,64,3,0,0
+"Bowser Administration Launches New “Make the Right Call” Campaign, Urging Residents to Only Use 911 for Emergencies | OUC",/release/bowser-administration-launches-new-make-right-call-campaign-urging-residents-only-use-91-0,1,1,1,3,2,0,0
+Call 311 for Police Non-Emergencies | OUC,/es/node/1379591,1,1,1,0,3,0,0
+Call 311 for Police Non-Emergencies | OUC,/page/call-311-police-non-emergencies/,1,1,1,31,2,0,0
+Chinese (中文) | OUC,/page/chinese-中文-2,1,1,1,0,5,0,0
+Criteria Based Dispatch Training | OUC,/event/criteria-based-dispatch-training-6,1,1,1,216,5,0,0
+DC 311 Mobile App | OUC,/es/page/dc311-mobile-app,1,1,1,0,3,0,0
+District Consolidates Law Enforcement Call Centers at UCC | OUC,/ar/release/district-consolidates-law-enforcement-call-centers-ucc,1,1,1,11,4,0,0
+E911 Caucus Co-Chairs Senator Clinton and Representative Shimkus and FCC Public Safety Bureau Chief Poarch Honor Public Safety Telecommunicators | OUC,/vi/release/e911-caucus-co-chairs-senator-clinton-and-representative-shimkus-and-fcc-public-safety,1,1,1,0,3,0,0
+Electronics Engineer | OUC,/node/1686876,1,1,1,7,5,0,0
+Events | OUC,/calendar/month,1,1,1,4,4,0,0
+Events | OUC,/calendar/month/2023-04/aggregate,1,1,1,5,5,0,0
+Events | OUC,/calendar/month/2024-07/aggregate,1,1,1,9,4,0,0
+Events | OUC,/calendar/month/2025-04/aggregate,1,1,1,3,4,0,0
+Events | OUC,/calendar/month/2025-10/aggregate,1,1,1,2,4,0,0
+Events | OUC,/calendar/month/2026-04,1,1,1,5,5,0,0
+Events | OUC,/calendar/year,1,1,1,12,4,0,0
+Events | OUC,/calendar/year/2025,1,1,1,8,5,0,0
+"Executive Summary of After Action Report: Frederick Douglass Memorial Bridge Incident on Thursday, April 20, 2023 | OUC",/vi/node/1672831,1,1,1,12,4,0,0
+FY19 Annual Report Page | OUC,/page/fy19-annual-report-page,1,1,1,2,5,0,0
+French (Français) | OUC,/vi/page/french-français1,1,1,1,19,4,0,0
+"Frequently Asked Questions Right Care, Right Now | OUC",/es/node/1313601,1,1,1,224,4,0,0
+Karima Holmes is Confirmed as Director of the Office of Unified Communications | OUC,/ar/release/karima-holmes-confirmed-director-office-unified-communications,1,1,1,12,5,0,0
+Không Khẩn Cấp | OUC,/am/node/1770351,1,1,1,8,5,0,0
+Korean (한국어) | OUC,/page/korean-한국어-2,1,1,1,0,4,0,0
+LIVE.LONG.DC. 3.0 data snapshot | OUC,/page/livelongdc-30-data-snapshot,1,1,1,17,3,0,0
+Lessons Learned: Denise Amber Lee Story | OUC,/event/lessons-learned-denise-amber-lee-story-0,1,1,1,2,4,0,0
+Make the Right Call | OUC,/am/maketherightcall,1,1,1,0,3,0,0
+"Mayor Bowser to Launch Text to 911 in Washington, DC | OUC",/ar/release/mayor-bowser-launch-text-911-washington-dc,1,1,1,5,2,0,0
+"Mayor Bowser to Launch Text to 911 in Washington, DC | OUC",/es/release/mayor-bowser-launch-text-911-washington-dc,1,1,1,0,3,0,0
+News Room | Page 11 | OUC,/es/newsroom,1,1,1,0,5,0,0
+News Room | Page 2 | OUC,/newsroom/press-releases,1,1,1,2,5,0,0
+News Room | Page 4 | OUC,/newsroom/press-releases,1,1,1,3,4,0,0
+OUC Brochure - 한국어 | OUC,/es/publication/ouc-brochure-한국어,1,1,1,0,4,0,0
+OUC Employee Awards Ceremony | OUC,/event/ouc-employee-awards-ceremony-0,1,1,1,6,5,0,0
+OUC Highlights Recent Innovations During Visit from National Highway Traffic Safety Administration | OUC,/node/1704456,1,1,1,6,5,0,0
+OUC Information Technology | OUC,/node/18322,1,2,0.5,10.5,3,0,0
+OUC Open House | OUC,/event/ouc-open-house,1,1,1,0,1,0,0
+OUC Statement on New Dashboard – September 8 | OUC,/node/1679501,1,1,1,4,4,0,0
+OUC Statement on the Launch of PowerPhone | OUC,/fr/node/1709371,1,1,1,0,3,0,0
+OUC and the Coronavirus (COVID-19) | OUC,/ko/node/1469156,1,1,1,0,3,0,0
+OUC and the Coronavirus (COVID-19) | OUC,/page/ouc-and-coronavirus-covid-19,1,1,1,5,5,0,0
+OUC’s Public Safety In-building Radio Systems Requirements | OUC,/page/ouc’s-public-safety-building-radio-systems-requirements,1,1,1,0,3,0,0
+Office of Unified Communications Tour Request Form | OUC,/publication/ucc-tour-request-form,1,1,1,0,4,0,0
+Page not found | OUC,/2025-04-30,1,1,1,13,4,0,0
+Page not found | OUC,/2025-04/911-performance-dashboard-beta,1,1,1,2,4,0,0
+Page not found | OUC,/2025/04/911-performance-dashboard-beta,1,1,1,9,4,0,0
+Page not found | OUC,/911,1,1,1,18,4,0,0
+Page not found | OUC,/911-performance-statistics,1,1,1,2,4,0,0
+Page not found | OUC,/911-stats,1,1,1,3,4,0,0
+Page not found | OUC,/911/2025-04-30,1,1,1,2,4,0,0
+Page not found | OUC,/911/performance/2025-04-30,1,1,1,2,4,0,0
+Page not found | OUC,/Performance,1,1,1,1,4,0,0
+Page not found | OUC,/answer-times/2025/04/30,1,1,1,3,4,0,0
+Page not found | OUC,/api/,1,1,1,1,4,0,0
+Page not found | OUC,/api/2,1,1,1,2,4,0,0
+Page not found | OUC,/api/911-performance,1,1,1,3,4,0,0
+Page not found | OUC,/api/911/daily,1,1,1,3,4,0,0
+Page not found | OUC,/api/911/performance,1,1,1,4,4,0,0
+Page not found | OUC,/api/answerTime,1,1,1,2,4,0,0
+Page not found | OUC,/api/average-answer-time,1,1,1,2,4,0,0
+Page not found | OUC,/api/averageAnswerTime,1,1,1,11,4,0,0
+Page not found | OUC,/api/average_answer_time,1,1,1,2,4,0,0
+Page not found | OUC,/api/dataset/911-performance,1,1,1,3,4,0,0
+Page not found | OUC,/api/pages/1679601,1,1,1,0,3,0,0
+Page not found | OUC,/api/performance,1,1,1,4,4,0,0
+Page not found | OUC,/api/records,1,1,1,2,4,0,0
+Page not found | OUC,/api/resource/911-performance,1,1,1,0,3,0,0
+Page not found | OUC,/api/v1/,1,1,1,1,4,0,0
+Page not found | OUC,/api/v1/911-performance,1,1,1,2,4,0,0
+Page not found | OUC,/api/v1/911/performance,1,1,1,4,4,0,0
+Page not found | OUC,/api/v1/911/performances,1,1,1,1,4,0,0
+Page not found | OUC,/api/v1/911_performance,1,1,1,8,4,0,0
+Page not found | OUC,/api/v1/average-answer-time,1,1,1,7,4,0,0
+Page not found | OUC,/api/v1/average_answer_time,1,1,1,2,4,0,0
+Page not found | OUC,/api/v1/dashboard,1,1,1,6,4,0,0
+Page not found | OUC,/api/v1/data/911-perf,1,1,1,0,3,0,0
+Page not found | OUC,/api/v1/datasets,1,1,1,2,4,0,0
+Page not found | OUC,/api/v1/nodes/1610201,1,1,1,5,4,0,0
+Page not found | OUC,/api/v1/performance,1,1,1,2,4,0,0
+Page not found | OUC,/api/v1/performance/average_answer_time,1,1,1,7,4,0,0
+Page not found | OUC,/api/v2/911/average-answer-time,1,1,1,2,4,0,0
+Page not found | OUC,/api/v2/answers,1,1,1,0,3,0,0
+Page not found | OUC,/api/v2/average-answer-time,1,1,1,3,4,0,0
+Page not found | OUC,/api/v2/average_answer_time,1,1,1,67,4,0,0
+Page not found | OUC,/api/website/v1/911/performance,1,1,1,0,3,0,0
+Page not found | OUC,/apps/911-performance-dashboard,1,1,1,2,4,0,0
+Page not found | OUC,/apps/911performance-dashboard-beta/api/FeatureServer,1,1,1,6,4,0,0
+Page not found | OUC,/apps/911performance-dashboard-beta/api/FeatureServer/0,1,1,1,4,4,0,0
+Page not found | OUC,/apps/911performance-dashboard-beta/api/services/MapServer,1,1,1,5,4,0,0
+Page not found | OUC,/apps/DCGIS::911-performance-dashboard-beta/,1,1,1,2,4,0,0
+Page not found | OUC,/apps/DCGIS::911-performance-dashboard-beta/config,1,1,1,4,4,0,0
+Page not found | OUC,/apps/DCGIS::911-performance-dashboard-beta/data,1,1,1,2,4,0,0
+Page not found | OUC,/apps/dashboards/b81dddf99d6546118441abe75de5acf4,1,1,1,1,4,0,0
+Page not found | OUC,/apps/opsdashboard/index.html,1,1,1,2,4,0,0
+Page not found | OUC,/arcgis/rest,1,1,1,3,4,0,0
+Page not found | OUC,/arcgis/rest/services/,1,1,1,3,4,0,0
+Page not found | OUC,/arcgis/rest/services/911 Performance Dashboard Beta/FeatureServer/0,1,1,1,2,4,0,0
+Page not found | OUC,/arcgis/rest/services/911 Performance Dashboard Beta/FeatureServer/0/query,1,1,1,2,4,0,0
+Page not found | OUC,/arcgis/rest/services/911Performance/FeatureServer/0,1,1,1,5,4,0,0
+Page not found | OUC,/arcgis/rest/services/911Performance/FeatureService/0,1,1,1,1,4,0,0
+Page not found | OUC,/arcgis/rest/services/911Performance/MapServer,1,1,1,2,4,0,0
+Page not found | OUC,/arcgis/rest/services/911PerformanceDashboard/FeatureServer/0,1,1,1,2,4,0,0
+Page not found | OUC,/arcgis/rest/services/911PerformanceDashboard/MapServer/0,1,1,1,4,4,0,0
+Page not found | OUC,/arcgis/rest/services/911PerformanceDashboardBeta/FeatureServer/0,1,1,1,3,4,0,0
+Page not found | OUC,/arcgis/rest/services/911PerformanceDashboardBeta/MapServer/0,1,1,1,2,4,0,0
+Page not found | OUC,/arcgis/rest/services/911Statistics,1,1,1,3,4,0,0
+Page not found | OUC,/arcgis/rest/services/911_Performance_Dashboard_BETA/FeatureServer,1,1,1,2,4,0,0
+Page not found | OUC,/arcgis/rest/services/911_Performance_Dashboard_Beta/FeatureServer,1,1,1,6,4,0,0
+Page not found | OUC,/arcgis/rest/services/OUC_911_Performance/911_Performance_Dashboard/FeatureServer,1,1,1,1,4,0,0
+Page not found | OUC,/arcgis/rest/services/Performance/911Performance/FeatureServer,1,1,1,4,4,0,0
+Page not found | OUC,/arcgis/rest/services/a038dcd7-1bb5-4134-91dc-4c9d654e5cba/FeatureServer,1,1,1,10,4,0,0
+Page not found | OUC,/arcgis/rest/services/b81dddf99d6546118441abe75de5acf4/FeatureServer,1,1,1,1,4,0,0
+Page not found | OUC,/assets/911/performance/2025-04-30.pdf,1,1,1,6,4,0,0
+Page not found | OUC,/data.json,1,1,1,0,1,0,0
+Page not found | OUC,/data/911-performance-dashboard,1,1,1,6,4,0,0
+Page not found | OUC,/en/node/1679601,1,1,1,4,4,0,0
+Page not found | OUC,/en/performance,1,1,1,6,4,0,0
+Page not found | OUC,/feedback,1,1,1,12,3,0,0
+Page not found | OUC,/harvest/object/790ee1a9-8480-493d-8a3a-91829eaf1e51,1,1,1,3,4,0,0
+Page not found | OUC,/ko/node/1679200,1,1,1,2,4,0,0
+Page not found | OUC,/ko/node/1679600,1,1,1,12,4,0,0
+Page not found | OUC,/kpi/2025-04-30,1,1,1,6,4,0,0
+Page not found | OUC,/metrics,1,1,1,1,4,0,0
+Page not found | OUC,/metrics/2025-04-30,1,1,1,1,4,0,0
+Page not found | OUC,/node/1679601.json,1,1,1,2,4,0,0
+Page not found | OUC,/ogc/api/records,1,1,1,0,3,0,0
+Page not found | OUC,/ogc/api/records/1.0/collections/911-performance-dashboard-beta/items,1,1,1,9,4,0,0
+Page not found | OUC,/open-data,1,1,1,2,4,0,0
+Page not found | OUC,/page/911-performance-dashboard-bet,1,1,1,10,3,0,0
+Page not found | OUC,/page/911-performance-dashboard-beta.,1,1,1,0,2,0,0
+Page not found | OUC,/page/911-performance-dashboard-beta.json,1,1,1,2,4,0,0
+Page not found | OUC,/page/911-performance-dashboard-beta/2025-04-30,1,1,1,2,4,0,0
+Page not found | OUC,/page/911-performance-dashboard-beta/MapServer,1,1,1,3,4,0,0
+Page not found | OUC,/page/911-performance-dashboard-beta/api,1,1,1,6,4,0,0
+Page not found | OUC,/page/911-performance-dashboard-beta/daily/2025-04-30,1,1,1,2,4,0,0
+Page not found | OUC,/page/911-performance-dashboard-beta/resource/a038dcd7-1bb5-4134-91dc-4c9d654e5cba,1,1,1,0,2,0,0
+Page not found | OUC,/page/911-performance-report,1,1,1,0,3,0,0
+Page not found | OUC,/page/911-performance-report-april-2025,1,1,1,0,3,0,0
+Page not found | OUC,/page/911-performance-stats,1,1,1,2,4,0,0
+Page not found | OUC,/page/911-statistics,1,1,1,2,4,0,0
+Page not found | OUC,/page/OTExLXBlcm,1,1,1,19,4,0,0
+Page not found | OUC,/page/api,1,1,1,6,4,0,0
+Page not found | OUC,/page/daily-metrics,1,1,1,2,4,0,0
+Page not found | OUC,/page/key-performance-indicators-911-311,1,1,1,2,4,0,0
+Page not found | OUC,/page/key-performance-indicators-911-311-operations,1,1,1,7,4,0,0
+Page not found | OUC,/page/kpi-911-311,1,1,1,4,4,0,0
+Page not found | OUC,/page/oucs-,1,1,1,17,4,0,0
+Page not found | OUC,/page/oucs-public-safety-building-radio-systems-,1,1,1,5,2,0,0
+Page not found | OUC,/page/oucs-public-safety-building-radio-systems-requirements),1,0,0,0,3,0,0
+Page not found | OUC,/page/oucs-public-safety-buildingradio-systems-requirements,1,1,1,1,2,0,0
+Page not found | OUC,/pages/911-performance-statistics,1,1,1,7,4,0,0
+Page not found | OUC,/pages/public-transparency,1,1,1,3,4,0,0
+Page not found | OUC,/performance-911,1,1,1,4,4,0,0
+Page not found | OUC,/performance/2025-04-30,1,1,1,2,4,0,0
+Page not found | OUC,/performance/2025/04/30,1,1,1,3,4,0,0
+Page not found | OUC,/performance/911/2025/04/30,1,1,1,0,3,0,0
+Page not found | OUC,/performance/v1/average_answer_time,1,1,1,2,4,0,0
+Page not found | OUC,/po/911-performance-dashboard,1,1,1,0,3,0,0
+Page not found | OUC,/release/s,1,1,1,0,5,0,0
+Page not found | OUC,/release/testimony-director-heather-mcgaffin-fy24-budget-oversight-hearing,1,1,1,2,4,0,0
+Page not found | OUC,/reports/911-performance-dashboard,1,1,1,0,3,0,0
+Page not found | OUC,/service/311,1,1,1,2,2,0,0
+Page not found | OUC,/service/radio,1,1,1,0,3,0,0
+Page not found | OUC,/sharing/rest/content/items/a038dcd7-1bb5-4134-91dc-4c9d654e5cba,1,1,1,5,4,0,0
+Page not found | OUC,/sharing/rest/content/items/a038dcd7-1bb5-4134-91dc-4c9d654e5cba/download,1,1,1,2,4,0,0
+Page not found | OUC,/sharing/rest/content/items/b81dddf99d6546118441abe75de5acf4,1,1,1,2,4,0,0
+Page not found | OUC,/sharing/rest/content/items/b81dddf99d6546118441abe75de5acf4/FeatureServer,1,1,1,6,4,0,0
+Page not found | OUC,/sharing/rest/content/items/b81dddf99d6546118441abe75de5acf4/FeatureServer/0,1,1,1,2,4,0,0
+Page not found | OUC,/sharing/rest/content/items/b81dddf99d6546118441abe75de5acf4/data,1,1,1,5,4,0,0
+Page not found | OUC,/sites/default/files/2025-02/OUC_911_Performance_Statistics_Embedded.pdf,1,1,1,2,4,0,0
+Page not found | OUC,/sites/default/files/911-performance/average_answer_time_2024-04-30.json,1,1,1,0,3,0,0
+Page not found | OUC,/sites/default/files/attachments/2025-04/911 Performance Dashboard Data Report 2025-04-30.xlsx,1,1,1,0,3,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/2025-04-30.pdf,1,1,1,1,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/911_daily_2025-04-30.csv,1,1,1,462,2,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/911performance_dashboard.pdf,1,1,1,2,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/OUC_2025-04-29.pdf,1,1,1,212,2,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/OUC_2025.pdf,1,1,1,1,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/attachments/OUC Statistics & Data FY23 to date.pdf,1,1,1,2,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/page_content/attachments/,1,1,1,2,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/page_content/attachments/6.2 OUC public safety frequencies .pdf,1,1,1,749,2,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/page_content/attachments/6.4 Design checklist.xlsx,1,1,1,9,2,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/page_content/attachments/OUC Statistics & Data FY25 to date.pdf,1,1,1,3,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/page_content/attachments/OUC Statistics & Data_FY25 to date.pdf,1,1,1,4,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/page_content/attachments/OUC_Statistics & Data FY24.pdf,1,1,1,2,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/page_content/attachments/OUC_Statistics_and_Data_FY25.pdf,1,1,1,3,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/release_content/attachments/,1,1,1,3,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/release_content/attachments/OUC FY2024 Performance Highlights.pdf,1,1,1,0,1,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/release_content/attachments/OUC FY23 Agency Performance Oversight Hearing Testimony - FINAL.pdf,1,1,1,2,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/release_content/attachments/OUC FY23 Performance Oversight Testimony - FINAL.pdf,1,1,1,9,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/release_content/attachments/OUC FY24 Agency Performance Oversight Hearing Testimony - FINAL.pdf,1,1,1,3,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/release_content/attachments/OUC FY24 Agency Performance Oversight Testimony_2.8.24.pdf,1,1,1,4,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/release_content/attachments/OUC FY24 Testimony FY24-25 Performance Oversight.pdf,1,1,1,2,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/release_content/attachments/OUC Performance Hearing Presentation - 12-4-2024.pdf,1,1,1,1,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/release_content/attachments/OUC Performance Hearing- 12-4-2024.pdf,1,1,1,3,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/OUC/release_content/attachments/OUC-Testimony-FY24-25-Performance-Oversight.pdf,1,1,1,2,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/ouc/page_content/attachments/OUC FY25 Budget Hearing Testimony - FINAL.pdf,1,1,1,2,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/ouc/publication/attachments/911 Performance Dashboard BETA.html,1,1,1,1,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/ouc/publication/attachments/911_performance_dashboard_beta_data.xlsx,1,1,1,5,4,0,0
+Page not found | OUC,/sites/default/files/dc/sites/ouc/publication/attachments/PublicSafetyInBuildingRadioSystemsRequirements.pdf,1,1,1,0,1,0,0
+Page not found | OUC,/sites/default/files/dc/sites/ouc/service_content/attachments/OZ-Subpoena Requests 2017.pdf,1,1,1,0,1,0,0
+Page not found | OUC,/sites/default/files/public/911-performance/2024-03-31/average_answer_time.json,1,1,1,0,3,0,0
+Page not found | OUC,/sites/default/files/public/911-performance/2024-05-01/average_answer_time.json,1,1,1,0,3,0,0
+Page not found | OUC,/sites/default/files/public/911-performance/2025-04-30/average_answer_time.json,1,1,1,0,3,0,0
+Page not found | OUC,/sites/default/files/public/911-performance/average_answer_time.json,1,1,1,0,3,0,0
+Page not found | OUC,/sites/default/files/public/911-performance/average_answer_time_2024-03-31.json,1,1,1,0,3,0,0
+Page not found | OUC,/sites/default/files/public/911-performance/average_answer_time_2024-04-30.json,1,1,1,0,3,0,0
+Page not found | OUC,/stats/2025-04-30,1,1,1,2,4,0,0
+Page not found | OUC,/t/OCTO/views/OUC_911_Performance_Statistics_Embedded/911CallHandlingStatistics/,1,1,1,2,4,0,0
+Page not found | OUC,/t/OCTO/views/OUC_911_Performance_Statistics_Embedded/v/911CallHandlingStatistics,1,1,1,4,4,0,0
+Page not found | OUC,/t/OUC_911_Performance_Statistics_Embedded,1,1,1,2,4,0,0
+Page not found | OUC,/uesr,1,1,1,5,2,0,0
+Page not found | OUC,/users,1,1,1,1,2,0,0
+Page not found | OUC,/usr,1,1,1,0,1,0,0
+Page not found | OUC,/wp-content/uploads/2025/02/attachment_q45.pdf,1,1,1,0,3,0,0
+Page not found | OUC,/wp-json/wp/v2/pages,1,1,1,2,4,0,0
+Passing of OUC Chief Administrative Officer Yvonne McManus | OUC,/fr/node/1506021,1,1,1,0,3,0,0
+Professional Development Day (No School for Students) | OUC,/node/1285616,1,1,1,1,5,0,0
+Public Safety Telecommunicator | OUC,/event/public-safety-telecommunicator,1,1,1,6,2,0,0
+Public Transparency | OUC,/es/node/1610201,1,1,1,2,4,0,0
+Publications | Page 4 | OUC,/publications,1,1,1,2,4,0,0
+RSS Feeds | DC,/rss,1,1,1,0,3,0,0
+Repeats | OUC,/node/1314051/repeats,1,1,1,4,5,0,0
+Repeats | OUC,/node/1314181/repeats,1,1,1,4,2,0,0
+Repeats | OUC,/node/1314196/repeats,1,1,1,2,4,0,0
+Repeats | OUC,/node/1344496/repeats,1,1,1,2,2,0,0
+Repeats | OUC,/node/1456071/repeats,1,1,1,5,2,0,0
+Repeats | OUC,/node/1489331/repeats,1,1,1,5,2,0,0
+Reset password | OUC,/user/reset/77101/1758292301/confirm,1,1,1,3,4,0,0
+Resilience Training | OUC,/event/resilience-training,1,1,1,28,5,0,0
+SAT Test Date | OUC,/event/sat-test-date-11,1,1,1,1,5,0,0
+Schedule a Presentation | OUC,/ar/service/schedule-presentation,1,1,1,8,5,0,0
+Smart 911 Flyer - Tiếng Việt | OUC,/am/publication/smart-911-flyer-tiếng-việt,1,1,1,0,4,0,0
+Smart 911 Flyer - Tiếng Việt | OUC,/publication/smart-911-flyer-tiếng-việt,1,1,1,0,5,0,0
+Smart 911 Flyer - Tiếng Việt | OUC,/publication/smart-911-flyer-vietnamese,1,1,1,0,5,0,0
+Smart911 - Español | OUC,/es/publication/smart911-español,1,1,1,0,2,0,0
+Smart911 - አማርኛ | OUC,/es/node/957392,1,1,1,0,4,0,0
+Smart911 - አማርኛ | OUC,/publication/smart-911-flyer-amharic,1,1,1,0,4,0,0
+Spanish (Español) | OUC,/fr/node/735162,1,1,1,35,3,0,0
+Supporting our Heroes in Headsets: OUC's Executive Team | OUC,/fr/node/1456446,1,1,1,70,3,0,0
+THOR - Tactical Homeland Operations Response | OUC,/am/node/1424086,1,1,1,0,1,0,0
+Tactical Dispatch for the Telecommunicator Training | OUC,/event/tactical-dispatch-telecommunicator-training,1,1,1,61,5,0,0
+Telecommunicator Crisis Intervention | OUC,/event/telecommunicator-crisis-intervention-3,1,1,1,0,5,0,0
+Testimony of Director Heather McGaffin - Public Roundtable on Recent Operational Failures and Incidents at the Office of Unified Communications | OUC,/node/1761201,1,1,1,0,3,0,0
+Thanksgiving Day (No School) | OUC,/event/thanksgiving-day-no-school-0,1,1,1,0,4,0,0
+US Senate Endorses April as National 9-1-1 Education Month | OUC,/release/us-senate-endorses-april-national-9-1-1-education-month,1,1,1,1,5,0,0
+Unified Communications Center Wins CMAA 2006 Award for Construction Projects | OUC,/release/unified-communications-center-wins-cmaa-2006-award-construction-projects,1,1,1,10,5,0,0
+Vietnamese (Tiếng Việt) | OUC,/page/vietnamese-tiếng-việt-2,1,1,1,0,4,0,0
+We Answer The Call eNewsletter Archive | OUC,/page/we-answer-call-enewsletter-archive,1,1,1,6,4,0,0
+We Answer The Call | OUC,/fr/node/1594706,1,1,1,17,3,0,0
+We are sorry; the page you requested is no longer available. | OUC,/am/node/1647421,1,1,1,7,5,0,0
+We are sorry; the page you requested is no longer available. | OUC,/am/publication/ouc-organizational-chart,1,1,1,12,2,0,0
+We are sorry; the page you requested is no longer available. | OUC,/careers,1,1,1,3,2,0,0
+We are sorry; the page you requested is no longer available. | OUC,/connect,1,1,1,11,4,0,0
+We are sorry; the page you requested is no longer available. | OUC,/es/node/1610456,1,1,1,0,4,0,0
+We are sorry; the page you requested is no longer available. | OUC,/es/node/1647421,1,1,1,9,5,0,0
+We are sorry; the page you requested is no longer available. | OUC,/external-link/data-catalog,1,1,1,6,4,0,0
+We are sorry; the page you requested is no longer available. | OUC,/node/1686886,1,1,1,30,5,0,0
+We are sorry; the page you requested is no longer available. | OUC,/node/783702,1,1,1,0,3,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/311-customer-satisfaction-survey,1,1,1,1,5,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/911-customer-service-satisfaction-survey,1,1,1,0,4,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/april-9-1-1-education-month,1,1,1,0,4,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/data,1,1,1,0,1,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/foia,1,1,1,0,1,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/newsroom,1,1,1,0,3,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/open-government-and-freedom-information-act-dc-health,1,1,1,0,3,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/public-transparency-open-data-reports,1,1,1,2,4,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/upcoming-training-courses,1,1,1,9,4,0,0
+We are sorry; the page you requested is no longer available. | OUC,/page/who-we-are-0,1,1,1,0,3,0,0
+We are sorry; the page you requested is no longer available. | OUC,/release/oapia-assists-public-safety-efforts-promoting-smart911-program,1,1,1,0,5,0,0
+We are sorry; the page you requested is no longer available. | OUC,/release/ouc-director-presents-testimony-during-confirmation-resolution-2011,1,1,1,1,5,0,0
+We are sorry; the page you requested is no longer available. | OUC,/service/contact-community-action-team-cat,1,1,1,0,3,0,0
+We are sorry; the page you requested is no longer available. | OUC,/system-use/we-are-sorry-page-you-requested-no-longer-available,1,1,1,0,4,0,0
+We are sorry; the page you requested is no longer available. | OUC,/users/jonathanpeterson,1,1,1,3,2,0,0
+What Is Smart911? | OUC,/es/page/what-smart911,1,1,1,21,4,0,0
+What is Text to 311? | OUC,/page/text-dc311-makes-311-easy,1,1,1,4,5,0,0
+danielle.drumgoole | OUC,/user,1,1,1,0,1,0,0
+evan.gidney | OUC,/user,1,1,1,62,2,0,0
+jonathan.peterson | OUC,/users/jonathanpeterson,1,1,1,16,2,0,0
+| OUC,//checkout/,1,1,1,5,4,0,0
+| OUC,/am,1,1,1,0,1,0,0
+| OUC,/am/node,1,1,1,2,4,0,0
+| OUC,/ar/node,1,1,1,1,5,0,0
+| OUC,/blog,1,1,1,3,4,0,0
+| Page 12 | OUC,/es/node,1,1,1,5,5,0,0
+| Page 3 | OUC,/es/node,1,1,1,0,3,0,0
+| Page 39 | OUC,/node,1,1,1,1,4,0,0
+| Page 4 | OUC,/es/node,1,1,1,0,3,0,0
+| Page 40 | OUC,/node,1,1,1,1,5,0,0
+| Page 41 | OUC,/node,1,1,1,2,5,0,0
+| Page 42 | OUC,/node,1,1,1,4,5,0,0
+| Page 43 | OUC,/node,1,1,1,5,5,0,0
+| Page 44 | OUC,/node,1,1,1,1,4,0,0
+| Page 45 | OUC,/node,1,1,1,3,5,0,0
+| Page 46 | OUC,/node,1,1,1,0,4,0,0
+| Page 52 | OUC,/node,1,1,1,5,5,0,0
+| Page 62 | OUC,/es/node,1,1,1,0,3,0,0
+| Page 63 | OUC,/node,1,1,1,1,5,0,0
+ትክክለኛው ቁጥር ላይ ይደውሉ (Amharic) | OUC,/am/publication/ትክክለኛው-ቁጥር-ላይ-ይደውሉ-amharic,1,1,1,2,4,0,0
+311 para Serviços Municipais | OUC,/page/311-city-services,0,1,0,61,3,0,0
+311 para servicios municipales | OUC,/page/311-city-services,0,2,0,323.5,2,0,0
+311 城市服务 |东联,/page/311-city-services,0,1,0,24,1,0,0
+311について | OUC,/page/311-about,0,1,0,15,1,0,0
+911 性能仪表盘 BETA 版 | OUC,/page/911-performance-dashboard-beta,0,1,0,17,1,0,0
+911 直连计划 |东联,/page/911-direct-connect-program,0,1,0,9,1,0,0
+911 紧急服务 |东联,/page/911-for-emergency-services,0,1,0,101,1,0,0
+911 运营审计路线图 |东联,/node/1622646,0,1,0,27,1,0,0
+911性能仪表盘BETA |OUC,/page/911-performance-dashboard-beta,0,1,0,82,2,0,0
+Aplicación móvil DC 311 | OUC,/page/dc-311-mobile-app,0,2,0,62,8,0,0
+"District’s Fire, Police and 911/311 All Receive ‘A-level’ Grades on Service | OUC",/release/district’s-fire-police-and-911311-all-receive-‘-level’-grades-service,0,1,0,17,2,0,0
+OUC Information Technology | OUC,/es/page/ouc-information-technology,0,1,0,12,1,0,0
+OUC slaví Národní týden zákaznických služeb (2.–6. října) | OUC,/release/ouc-celebrates-national-customer-service-week-oct-2-6,0,1,0,31,1,0,0
+OUC 公共安全室內無線電系統需求 | OUC,/page/oucs-public-safety-building-radio-systems-requirements,0,1,0,17,6,0,0
+|,/,0,1,0,19,1,0,0
+| Page 6 | OUC,/es/node,0,1,0,6,1,0,0
+| جامعة أوك,/,0,1,0,6,1,0,0
+| 国家开放大学,/,0,1,0,132,2,0,0
+东大少年学院 |东联,/page/junior-academy,0,1,0,11,2,0,0
+东联网络 |东联,/page/ouc-network,0,1,0,19,1,0,0
+东联资讯科技 |东联,/page/ouc-information-technology,0,1,0,15,1,0,0
+关于 911 |东联,/page/911-about,0,1,0,42,1,0,0
+关于311 | 开放大学,/page/311-about,0,1,0,23,1,0,0
+关于我们的调度系统 |东联,/page/about-our-dispatch-system,0,1,0,13,1,0,0
+华盛顿特区统一通信办公室在 Salesforce 上对其 311 系统进行现代化改造 |东联,/release/washington-dc-office-unified-communications-modernizes-its-311-system-salesforce,0,1,0,100,1,0,0
+市役所サービス 311 | OUC,/page/311-city-services,0,1,0,16,1,0,0
+我们响应号召 |东联,/page/WATC,0,1,0,71,2,0,0
+新闻中心 |东联,/newsroom,0,1,0,20,1,0,0
+电话报告组 （TRU） |东联,/page/telephone-reporting-unit-tru,0,1,0,6,2,0,0
+緊急時以外の警察への通報は311番へ | OUC,/page/call-311-police-non-emergencies,0,1,0,300,2,0,0
+非紧急情况请拨打 311 报警 | OUC,/page/call-311-police-non-emergencies,0,1,0,32,1,0,0
