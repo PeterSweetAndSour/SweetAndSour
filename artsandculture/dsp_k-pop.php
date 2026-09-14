@@ -274,7 +274,7 @@
 			2025-07-11 <a href="https://www.youtube.com/watch?v=POxNm2NNyps" target="_blank" class="external">Dat Ahh Dat Ooh</a> (Sana, Jihyo, Dahyun, Chaeyoung, Tzuyu) This is an unusual song and initially I passed over it but then bit of it got stuck in my head. 
 		</li>		
 		<li>
-			2025-10-10 <a href="https://www.youtube.com/watch?v=vnA8--MCU_A" target="_blank" class="external"></a> The AI summary for this song written by Nayeon gets it about right: NAYEON delivers a confident vocal performance, asserting boundaries and exploring themes of attraction with a direct tone. The upbeat track highlights a firm stance on not being trifled with.
+			2025-10-10 <a href="https://www.youtube.com/watch?v=vnA8--MCU_A" target="_blank" class="external">Meeeeee</a> The AI summary for this song written by Nayeon gets it about right: NAYEON delivers a confident vocal performance, asserting boundaries and exploring themes of attraction with a direct tone. The upbeat track highlights a firm stance on not being trifled with.
 		</li>		
 	</ul>
 </div>
