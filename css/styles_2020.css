@@ -254,6 +254,10 @@ li > .figure--thumbnail-large {
   grid-gap: 20px;
 }
 
+.photo-gallery.list-indent {
+  padding-left: 24px;
+}
+
 .figure__caption--thumbnail {
   font-size: 13px;
   font-style: italic;
@@ -581,8 +585,6 @@ Mobile
   }
   nav li > input {
     display: none;
-    /* This will remove the down angle when the submenu is expanded without relying on Javascript */
-    /* If Javascript is running then reset the arrow to point up. */
   }
   nav li > input + label:before {
     content: " ";
@@ -597,8 +599,14 @@ Mobile
     /* Font Awesome 'chevron-down' */
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMjA3LjAyOSAzODEuNDc2TDEyLjY4NiAxODcuMTMyYy05LjM3My05LjM3My05LjM3My0yNC41NjkgMC0zMy45NDFsMjIuNjY3LTIyLjY2N2M5LjM1Ny05LjM1NyAyNC41MjItOS4zNzUgMzMuOTAxLS4wNEwyMjQgMjg0LjUwNWwxNTQuNzQ1LTE1NC4wMjFjOS4zNzktOS4zMzUgMjQuNTQ0LTkuMzE3IDMzLjkwMS4wNGwyMi42NjcgMjIuNjY3YzkuMzczIDkuMzczIDkuMzczIDI0LjU2OSAwIDMzLjk0MUwyNDAuOTcxIDM4MS40NzZjLTkuMzczIDkuMzcyLTI0LjU2OSA5LjM3Mi0zMy45NDIgMHoiLz48L3N2Zz4=");
   }
+  nav li > input {
+    /* This will remove the down angle when the submenu is expanded without relying on Javascript */
+  }
   nav li > input:checked + label:before {
     background-image: none;
+  }
+  nav li > input {
+    /* If Javascript is running then reset the arrow to point up. */
   }
   nav li > input:checked + label.checked:before {
     /* Font Awesome 'chevron-up' */

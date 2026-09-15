@@ -212,7 +212,7 @@
 		</li>
 	</ul>
 </div>
-<div class="photo-gallery clear">
+<div class="photo-gallery list-indent clear">
 	<hr>
 	<p>On the 6th of July (2023), I went to the <strong>Twice concert</strong> at the Metlife stadium near New York! What fantastic evening with 50,000+ other screaming fans!! There was a lot of screaming. I've not been to a concert bigger than a few hundred for over 20 years so I had nothing to really compare it to but the members, the band, the set, the everything was perfect. I love them even more now.</p>
 	<?php setThumbnail([
@@ -278,7 +278,7 @@
 		</li>		
 	</ul>
 </div>
-<div class="photo-gallery clear">
+<div class="photo-gallery list-indent clear">
 	<hr>
 	<p>Twice announced that their &ldquo;This is for&hellip;&rdquo; tour would be in indoor arenas instead of stadiums and they were coming to DC so I had to go. Ticketmaster allowed you to register interest and then shortly before tickets went on sale, we were told our place in line which I think was randomly generated. I had a number around 11,000 and I was doubtful that I would get a ticket since the local arena has a capacity of about 20,000 and almost every buyer would get 2 tickets and often more. I did get in and was lucky to get one of the last 20 or so tickets and in the very back row which suited me so I didn't block anyone's view.</p>
 	<?php setThumbnail([
