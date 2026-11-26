@@ -47,7 +47,7 @@
 
 <h2 id="peters-kpop-selection">Peter's K-pop selection</h2>
 <div class="story">
-	<p class="subtitle">(As of 14<sup>th</sup> August 2025)</p>
+	<p class="subtitle">(As of 25<sup>th</sup> November 2026)</p>
 </div>
 
 <h3 id="Twice">Twice</h3>
@@ -247,7 +247,7 @@
 			2024-09-06 <a href="https://www.youtube.com/watch?v=YofelpFMWzg" target="_blank" class="external">Run Away</a> Tzuyu has a solo album, <em>AbouTZU</em>! I need to listen to the rest of the album. It is lovely to see the other members helping to promote the work of the youngest of the group: <a href="https://www.youtube.com/shorts/xHJbqSLcUJE" target="_blank" class="external">Nayeon</a>, <a href="https://www.youtube.com/shorts/QWG2Vt9bCkI" target="_blank" class="external">Dahyun</a>, <a href="https://www.youtube.com/shorts/jkDA763YhRU" target="_blank" class="external">Nayeon and Dahyun</a>, <a href="https://www.youtube.com/shorts/4CKdGuTeg1U" target="_blank" class="external">Jihyo</a>, <a href="https://www.youtube.com/shorts/OLCdckWVGbo" target="_blank" class="external">Chaeyoung</a> and most especially, <a href="https://www.youtube.com/shorts/0C0BJEUKTm4" target="_blank" class="external">Sana</a>
 		</li>
 		<li>
-			2024-10-27 <a href="https://www.youtube.com/watch?v=-J_w9K6DgRo" target="_blank" class="external">Identity</a> The spectacular backdrops are both in Spain—the <a href="https://en.wikipedia.org/wiki/City_of_Arts_and_Sciences" target="_blank" class="external">City of Arts and Sciences</a> in Valencia and the <a href="https://en.wikipedia.org/wiki/Old_Cathedral_of_Lleida" target="_blank" class="external">Old_Cathedral_of_Lleida</a>.
+			2024-10-27 <a href="https://www.youtube.com/watch?v=-J_w9K6DgRo" target="_blank" class="external">Identity</a>. The spectacular backdrops are both in Spain—the <a href="https://en.wikipedia.org/wiki/City_of_Arts_and_Sciences" target="_blank" class="external">City of Arts and Sciences</a> in Valencia and the <a href="https://en.wikipedia.org/wiki/Old_Cathedral_of_Lleida" target="_blank" class="external">Old_Cathedral_of_Lleida</a>.
 		</li>
 		<li>
 			2024-11-05 <a href="https://www.youtube.com/watch?v=KrSQJeTBIpI" target="_blank" class="external">Runway</a> from Misamo.
@@ -299,6 +299,14 @@
 		]) ?>
 	<hr>
 </div>
+<div class="story">
+	<ul>
+		<li>
+			2026-11-20 <a href="https://www.youtube.com/watch?v=8Ub0Ab8mV24" target="_blank" class="external">Boy</a>. Nayeon released a solo EP called <em>Baby Angel</em> but I think <em>Boy</em> is a way better song than the title track and a lot of people in the comments to the video agree. I was hoping for another bouncy ear-worm like <em>Pop!</em> so I was initially a little disappointed.
+		</li>		
+	</ul>
+</div>
+
 
 <h3 id="SNSD">Girls Generation a.k.a. SNSD</h3>
 <div class="story">
@@ -370,25 +378,6 @@
 	</ul>
 </div>
 
-<h3 id="Weki_Meki">Weki Meki</h3>
-<div class="story">
-	<p>I really enjoyed their music and I think they could have been huge but Fantagio, their management company, was hopeless, indeed mean making them wait out their 7 year contract with no releases in the last 3 years until a single song at the very end. Someone in the comments to their <a href="https://www.youtube.com/watch?v=SH84Pir3QhA" target="_blank" class="external">last song</a> said "the girls did the song, mv, concept pics and editing by themselves ☹️💔 and PAID FOR THE SET".</p>
-	<ul>
-		<li>
-			The girl in Astro's music video for <em>Breathless</em> (below) is Yoo-jung and reading the comments I saw that she was a member of <strong>Weki Meki</strong>. At the time, they had released <em>Crush</em> which has this <a href="https://www.youtube.com/watch?v=bT2AMc8hI6A" target="_blank" class="external">music video</a> but again, they are best seen in the <a href="https://www.youtube.com/watch?v=wzoZRUnk1Xc" target="_blank" class="external">dance practice</a>. Great song!
-		</li>
-		<li>
-			One of my all-time favorite K-pop songs! <a href="https://www.youtube.com/watch?v=T9D6n-2afnM&amp;sa=D&amp;ust=1590612821758000">True valentine</a> (dance practice)
-		</li>
-		<li><a href="https://www.youtube.com/watch?v=ktcQZotG9DQ" target="_blank" class="external">Moya Moya</a> (dance practice)</li>
-		<li><a href="https://www.youtube.com/watch?v=Q9WcU6DXJOU" target="_blank" class="external">Sweet Dreams</a> (live performance)</li>
-		<li><a href="https://www.youtube.com/watch?v=5DKU9GXibOU" target="_blank" class="external">Do whatever you want</a> (dance practice)</li>
-		<li><a href="https://www.youtube.com/watch?v=RTeOt6n90vM" target="_blank" class="external">Dazzle Dazzle</a></li>
-		<li><a href="https://www.youtube.com/watch?v=AHikmx0eVXM" target="_blank" class="external">Cool</a></li>
-	</ul>
-	<p>It is also worth mentioning that they are an 8-member group whereas almost all K-pop groups have an odd number of members. Having an odd number means that the person singing can be front and center with the other members symmetrically arranged on either side but with an even number they have to be more creative &ndash; which sometimes means hiding one member behind that person at the front and center.</p>
-</div>
-	
 
 <h3 id="Taeyang">Taeyang</h3>
 <p class="subtitle">(From Big Bang.)</p>
@@ -428,7 +417,7 @@
 <div class="story">
 	<p>I am not a big fan of BlackPink but I am including them here because they are <strong>so</strong> popular. I learned only in 2023 that Rosé was born in New Zealand and grew up in Australia. (Jennie lived in New Zealand for five years starting at age 9 and so is also comfortable in English. Lisa, from Thailand, speaks English too and having 3 English speakers gave them an edge in the global music business.)</p>
 	
-	<p>As of February 2026, <a href="https://www.youtube.com/watch?v=IHNzOHi8sJs" target="_blank" class="external">DDU-DU DDU-DU</a> has 2.4 <em>billion</em> views! That puts them at #72 on the list of <a href="https://kworb.net/youtube/topvideos.html" target="_blank" class="external">most popular Youtube videos of all time</a>, ahead even of BTS (at #114). The <a href="https://www.youtube.com/watch?v=jOJbXvjZ-cQ" target="_blank" class="external">dance practice video</a> has another 498 millin views!</p>
+	<p>As of November 2026, <a href="https://www.youtube.com/watch?v=IHNzOHi8sJs" target="_blank" class="external">DDU-DU DDU-DU</a> has 2.4 <em>billion</em> views! That puts them at #72 on the list of <a href="https://kworb.net/youtube/topvideos.html" target="_blank" class="external">most popular Youtube videos of all time</a>, ahead even of BTS (at #114). The <a href="https://www.youtube.com/watch?v=jOJbXvjZ-cQ" target="_blank" class="external">dance practice video</a> has another 498 millin views!</p>
 	<p>They released <a href="https://www.youtube.com/watch?v=ioNng23DkIM" target="_blank" class="external">How you like that</a> on 2020-06-26 and it set a record on YouTube of <a href="https://www.forbes.com/sites/hughmcintyre/2020/06/29/blackpinks-new-music-video-officially-break-the-record-for-the-most-views-in-24-hours-on-youtube/#1c8b7429460d" target="_blank" class="external">86.3 million views in the first 24 hours</a>! (Later broken by BTS with <em>Butter</em> and <em>Dynamite</em>)</p>
 	<p>James Cardin did <a href="https://www.youtube.com/watch?v=gUmE_TRdp0s" target="_blank" class="external">Carpool Karaoke with Blackpink</a>!</p>
 </div>
@@ -472,6 +461,25 @@
 	</ul>
 </div>
 
+<h3 id="Weki_Meki">Weki Meki</h3>
+<div class="story">
+	<p>I really enjoyed their music and I think they could have been huge but Fantagio, their management company, was hopeless, indeed mean making them wait out their 7 year contract with no releases in the last 3 years until a single song at the very end. Someone in the comments to their <a href="https://www.youtube.com/watch?v=SH84Pir3QhA" target="_blank" class="external">last song</a> said "the girls did the song, mv, concept pics and editing by themselves ☹️💔 and PAID FOR THE SET".</p>
+	<ul>
+		<li>
+			The girl in Astro's music video for <em>Breathless</em> (below) is Yoo-jung and reading the comments I saw that she was a member of <strong>Weki Meki</strong>. At the time, they had released <em>Crush</em> which has this <a href="https://www.youtube.com/watch?v=bT2AMc8hI6A" target="_blank" class="external">music video</a> but again, they are best seen in the <a href="https://www.youtube.com/watch?v=wzoZRUnk1Xc" target="_blank" class="external">dance practice</a>. Great song!
+		</li>
+		<li>
+			One of my all-time favorite K-pop songs! <a href="https://www.youtube.com/watch?v=T9D6n-2afnM&amp;sa=D&amp;ust=1590612821758000">True valentine</a> (dance practice)
+		</li>
+		<li><a href="https://www.youtube.com/watch?v=ktcQZotG9DQ" target="_blank" class="external">Moya Moya</a> (dance practice)</li>
+		<li><a href="https://www.youtube.com/watch?v=Q9WcU6DXJOU" target="_blank" class="external">Sweet Dreams</a> (live performance)</li>
+		<li><a href="https://www.youtube.com/watch?v=5DKU9GXibOU" target="_blank" class="external">Do whatever you want</a> (dance practice)</li>
+		<li><a href="https://www.youtube.com/watch?v=RTeOt6n90vM" target="_blank" class="external">Dazzle Dazzle</a></li>
+		<li><a href="https://www.youtube.com/watch?v=AHikmx0eVXM" target="_blank" class="external">Cool</a></li>
+	</ul>
+	<p>It is also worth mentioning that they are an 8-member group whereas almost all K-pop groups have an odd number of members. Having an odd number means that the person singing can be front and center with the other members symmetrically arranged on either side but with an even number they have to be more creative &ndash; which sometimes means hiding one member behind that person at the front and center.</p>
+</div>
+	
 <h3>Alice, formerly Elris</h3>
 <div class="story">
 	<p>Another management company took them over and then renamed them <strong>Alice</strong> which seems idiotic since you now can't search for them easily but I read something that said the Korean characters are better rendered as Alice in English and there was some legal problem with the old name. They released a song <em>Power of Love</em> which is quite different to their earlier work which seems a great way to lose the few fans they had. I feel sad for these girls as there is only so much the performers can do if their management is incompetant and/or underfunded.</p>
@@ -486,6 +494,16 @@
 <h3>Illit</h3>
 <div class="story">
 	<p><a href="https://www.youtube.com/watch?v=Vk5-c_v4gMU" target="_blank" class="external">Magnetic</a></p>
+</div>
+
+<h3>Unchild</h3>
+<div class="story">
+	<p><a href="https://www.youtube.com/watch?v=zPkhs5qxpnU" target="_blank" class="external">Ting Ting</a></p>
+</div>
+
+<h3>XG</h3>
+<div class="story">
+	<p><a href="https://www.youtube.com/watch?v=cUfDOS2SINM" target="_blank" class="external">Hypnotize</a> XG are 7 Japanese girls that trained in Korea but sing in English!</p>
 </div>
 
 <h3>Kep1er</h3>
